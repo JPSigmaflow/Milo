@@ -233,25 +233,35 @@ async function init() {
   }
 
   // Chart - aggregate portfolio value over time
+  // Group prices into time buckets (round to nearest 5 min) so all coins in same snapshot count together
   const ph = data.price_history || [];
-  // Group by recorded_at timestamp
-  const timeMap = {};
-  ph.forEach(p => {
-    const t = p.recorded_at;
-    if (!timeMap[t]) timeMap[t] = {};
-    timeMap[t][p.symbol] = p.price;
-  });
+  const bucketMs = 5 * 60 * 1000; // 5 min buckets
+  const bucketMap = {}; // bucketKey -> { symbol -> price }
   
-  // Calculate total value at each timestamp
-  const timestamps = Object.keys(timeMap).sort();
-  const chartData = timestamps.map(t => {
+  ph.forEach(p => {
+    if (!active.find(h => h.symbol === p.symbol)) return; // only active holdings
+    const ts = new Date(p.recorded_at + (p.recorded_at.includes('Z') ? '' : ' UTC')).getTime();
+    const bucket = Math.round(ts / bucketMs) * bucketMs;
+    if (!bucketMap[bucket]) bucketMap[bucket] = {};
+    bucketMap[bucket][p.symbol] = p.price;
+  });
+
+  // Only use buckets where we have prices for at least 80% of active coins
+  const minCoins = Math.ceil(active.length * 0.8);
+  const buckets = Object.keys(bucketMap).map(Number).sort().filter(b => Object.keys(bucketMap[b]).length >= minCoins);
+
+  // For missing coins in a bucket, carry forward from previous bucket
+  let lastPrices = {};
+  const chartData = buckets.map(b => {
+    const prices = { ...lastPrices, ...bucketMap[b] };
+    lastPrices = prices;
     let total = 0;
     active.forEach(h => {
-      if (timeMap[t][h.symbol] != null) {
-        total += h.amount * timeMap[t][h.symbol];
+      if (prices[h.symbol] != null) {
+        total += h.amount * prices[h.symbol];
       }
     });
-    return { t, total };
+    return { t: b, total };
   }).filter(d => d.total > 0);
 
   if (chartData.length > 1) {
@@ -259,7 +269,7 @@ async function init() {
       type: 'line',
       data: {
         labels: chartData.map(d => {
-          const dt = new Date(d.t + 'Z');
+          const dt = new Date(d.t);
           return dt.toLocaleString('de-DE', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
         }),
         datasets: [{
@@ -269,7 +279,7 @@ async function init() {
           backgroundColor: 'rgba(247,147,26,0.1)',
           fill: true,
           tension: 0.3,
-          pointRadius: 2
+          pointRadius: 3
         }]
       },
       options: {
@@ -278,12 +288,12 @@ async function init() {
         plugins: { legend: { labels: { color: '#e0e0e0' } } },
         scales: {
           x: { ticks: { color: '#888', maxTicksLimit: 8 }, grid: { color: '#2a2a3a' } },
-          y: { ticks: { color: '#888', callback: v => '$'+v.toLocaleString() }, grid: { color: '#2a2a3a' } }
+          y: { ticks: { color: '#888', callback: v => '$'+v.toLocaleString() }, grid: { color: '#2a2a3a' }, beginAtZero: false }
         }
       }
     });
   } else {
-    $('#priceChart').parentElement.innerHTML = '<div class="dim" style="padding:40px;text-align:center">Noch nicht genug Daten für Chart (mindestens 2 Snapshots nötig)</div>';
+    $('#priceChart').parentElement.innerHTML = '<div class="dim" style="padding:40px;text-align:center">📊 Chart braucht mehr Datenpunkte — wird mit jedem Scanner-Lauf besser (alle 4h)</div>';
   }
 
   // Lessons
