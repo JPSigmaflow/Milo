@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milo Crypto System</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--card:#14141f;--border:#2a2a3a;--text:#e0e0e0;--dim:#888;--green:#00e676;--red:#ff5252;--orange:#f7931a;--blue:#64b5f6;--header-bg:#1a1a2e}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:12px;max-width:1200px;margin:0 auto;line-height:1.5}
+h1{color:var(--orange);font-size:1.8rem;margin-bottom:4px}
+h2{color:var(--blue);font-size:1.2rem;margin:24px 0 12px;border-bottom:1px solid var(--border);padding-bottom:6px}
+.sub{color:var(--dim);font-size:.85rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
+.stat .label{color:var(--dim);font-size:.75rem;text-transform:uppercase;letter-spacing:1px}
+.stat .value{font-size:1.5rem;font-weight:700;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:.85rem}
+th{background:var(--header-bg);color:var(--blue);text-align:left;padding:8px 6px;position:sticky;top:0}
+td{padding:7px 6px;border-bottom:1px solid var(--border)}
+tr:hover{background:rgba(255,255,255,.03)}
+.green{color:var(--green)}.red{color:var(--red)}.dim{color:var(--dim)}
+.badge{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.7rem;font-weight:600;text-transform:uppercase}
+.badge-active{background:rgba(0,230,118,.15);color:var(--green)}
+.badge-watchlist{background:rgba(100,181,246,.15);color:var(--blue)}
+.badge-sold{background:rgba(255,82,82,.15);color:var(--red)}
+.badge-nogo{background:rgba(255,82,82,.15);color:var(--red)}
+.badge-deepdive{background:rgba(247,147,26,.15);color:var(--orange)}
+.badge-setup{background:rgba(0,230,118,.15);color:var(--green)}
+.badge-bought{background:rgba(0,230,118,.15);color:var(--green)}
+.badge-rejected{background:rgba(255,82,82,.12);color:var(--red)}
+.overflow-x{overflow-x:auto}
+.chart-wrap{height:300px;position:relative}
+.lesson{margin-bottom:12px;padding:12px;background:rgba(247,147,26,.05);border-left:3px solid var(--orange);border-radius:0 8px 8px 0}
+.lesson .code{color:var(--orange);font-weight:700;margin-right:8px}
+.lesson .rule{color:var(--green);font-size:.82rem;margin-top:4px}
+#loading{text-align:center;padding:60px;color:var(--dim);font-size:1.2rem}
+@media(max-width:600px){h1{font-size:1.4rem}table{font-size:.75rem}td,th{padding:5px 3px}.stat .value{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<div id="loading">⏳ Loading data...</div>
+<div id="app" style="display:none">
+
+<header style="margin-bottom:20px">
+<h1>🔶 Milo Crypto System</h1>
+<div class="sub" id="lastUpdate"></div>
+</header>
+
+<div class="stats" id="statsGrid"></div>
+
+<h2>📊 Portfolio Holdings</h2>
+<div class="card overflow-x"><table id="holdingsTable"><thead><tr>
+<th>Coin</th><th>Menge</th><th>Entry</th><th>Aktuell</th><th>Wert</th><th>P&L%</th><th>Status</th>
+</tr></thead><tbody></tbody></table></div>
+
+<h2>👁️ Watchlist</h2>
+<div class="card overflow-x" id="watchlistSection"></div>
+
+<h2>🔍 Scanner Ergebnisse</h2>
+<div class="card overflow-x"><table id="scannerTable"><thead><tr>
+<th>Coin</th><th>Chain</th><th>Narrativ</th><th>MC</th><th>Score</th><th>Result</th><th>Reason</th>
+</tr></thead><tbody></tbody></table></div>
+
+<h2>📈 Portfolio Entwicklung</h2>
+<div class="card chart-wrap"><canvas id="priceChart"></canvas></div>
+
+<h2>📚 Lessons Learned</h2>
+<div class="card" id="lessonsSection"></div>
+
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const fmt = (n,d=2) => n!=null ? Number(n).toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d}) : '–';
+const fmtUsd = n => '$' + fmt(n);
+const fmtCompact = n => {
+  if(!n) return '–';
+  if(n>=1e9) return '$'+fmt(n/1e9,1)+'B';
+  if(n>=1e6) return '$'+fmt(n/1e6,1)+'M';
+  if(n>=1e3) return '$'+fmt(n/1e3,1)+'K';
+  return '$'+fmt(n);
+};
+const pnlClass = v => v >= 0 ? 'green' : 'red';
+const pnlSign = v => v >= 0 ? '+' : '';
+
+async function init() {
+  let data;
+  try {
+    const r = await fetch('data.json');
+    data = await r.json();
+  } catch(e) {
+    $('#loading').textContent = '❌ Could not load data.json';
+    return;
+  }
+  $('#loading').style.display = 'none';
+  $('#app').style.display = 'block';
+
+  // Header
+  const d = new Date(data.exported_at);
+  $('#lastUpdate').textContent = `Letzte Aktualisierung: ${d.toLocaleDateString('de-DE')} ${d.toLocaleTimeString('de-DE')} UTC`;
+
+  // Active holdings
+  const active = data.holdings.filter(h => h.status === 'active');
+  const watchlistHoldings = data.holdings.filter(h => h.status === 'watchlist');
+
+  // Stats
+  let totalValue = 0, totalInvested = 0;
+  active.forEach(h => {
+    const val = h.amount * (h.current_price || 0);
+    const inv = h.amount * h.entry_price;
+    totalValue += val;
+    totalInvested += inv;
+  });
+  const totalPnl = totalInvested > 0 ? ((totalValue - totalInvested) / totalInvested * 100) : 0;
+  const totalPnlAbs = totalValue - totalInvested;
+
+  $('#statsGrid').innerHTML = `
+    <div class="stat"><div class="label">Portfolio Wert</div><div class="value">${fmtUsd(totalValue)}</div></div>
+    <div class="stat"><div class="label">Investiert</div><div class="value">${fmtUsd(totalInvested)}</div></div>
+    <div class="stat"><div class="label">P&L</div><div class="value ${pnlClass(totalPnlAbs)}">${pnlSign(totalPnlAbs)}${fmtUsd(totalPnlAbs)} (${pnlSign(totalPnl)}${fmt(totalPnl)}%)</div></div>
+    <div class="stat"><div class="label">USDT Frei</div><div class="value">${fmtUsd(data.usdt_free)}</div></div>
+    <div class="stat"><div class="label">Positionen</div><div class="value">${active.length}</div></div>
+  `;
+
+  // Holdings table
+  const tbody = $('#holdingsTable tbody');
+  active.forEach(h => {
+    const val = h.amount * (h.current_price || 0);
+    const pnl = h.entry_price > 0 ? ((h.current_price - h.entry_price) / h.entry_price * 100) : 0;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${h.symbol}</strong><br><span class="dim">${h.name}</span></td>
+      <td>${fmt(h.amount,0)}</td>
+      <td>${fmtUsd(h.entry_price < 0.01 ? Number(h.entry_price).toFixed(5) : h.entry_price)}</td>
+      <td>${fmtUsd(h.current_price < 0.01 ? Number(h.current_price).toFixed(5) : h.current_price)}</td>
+      <td>${fmtUsd(val)}</td>
+      <td class="${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></td>
+      <td><span class="badge badge-${h.status}">${h.status}</span></td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // Sold holdings (FHE)
+  const sold = data.holdings.filter(h => h.status === 'sold' || (h.sold_price && h.sold_price > 0));
+  if (sold.length) {
+    sold.forEach(h => {
+      const pnl = h.entry_price > 0 && h.sold_price ? ((h.sold_price - h.entry_price) / h.entry_price * 100) : 0;
+      const tr = document.createElement('tr');
+      tr.style.opacity = '0.6';
+      tr.innerHTML = `
+        <td><strong>${h.symbol}</strong><br><span class="dim">${h.name}</span></td>
+        <td>${fmt(h.amount,0)}</td>
+        <td>${fmtUsd(h.entry_price)}</td>
+        <td>${h.sold_price ? fmtUsd(h.sold_price) : '–'}</td>
+        <td>–</td>
+        <td class="${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></td>
+        <td><span class="badge badge-sold">${h.sold_date ? 'sold '+h.sold_date : h.status}</span></td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Watchlist
+  const wlDiv = $('#watchlistSection');
+  const allWl = [...watchlistHoldings, ...data.holdings.filter(h => h.status === 'watchlist' && h.amount === 0)];
+  // Deduplicate
+  const seen = new Set();
+  const wlUnique = allWl.filter(h => { if(seen.has(h.symbol)) return false; seen.add(h.symbol); return true; });
+  
+  if (wlUnique.length) {
+    let html = '<table><thead><tr><th>Coin</th><th>Chain</th><th>Preis</th><th>Entry</th></tr></thead><tbody>';
+    wlUnique.forEach(h => {
+      html += `<tr><td><strong>${h.symbol}</strong> ${h.name}</td><td>${h.chain||'–'}</td><td>${h.current_price ? fmtUsd(h.current_price < 0.01 ? Number(h.current_price).toFixed(5) : h.current_price) : '–'}</td><td>${h.entry_price > 0 ? fmtUsd(h.entry_price) : '–'}</td></tr>`;
+    });
+    html += '</tbody></table>';
+    wlDiv.innerHTML = html;
+  } else {
+    wlDiv.innerHTML = '<div class="dim">Keine Coins auf der Watchlist</div>';
+  }
+
+  // Scanner
+  const stbody = $('#scannerTable tbody');
+  (data.scanner_coins||[]).forEach(c => {
+    const badgeCls = 'badge-' + (c.result||'').replace('-','');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${c.symbol}</strong><br><span class="dim">${c.name}</span></td>
+      <td>${c.chain||'–'}</td>
+      <td>${c.narrative||'–'}</td>
+      <td>${fmtCompact(c.market_cap)}</td>
+      <td><strong>${c.score||0}</strong></td>
+      <td><span class="badge ${badgeCls}">${c.result||'–'}</span></td>
+      <td class="dim" style="max-width:250px">${c.reason||'–'}</td>
+    `;
+    stbody.appendChild(tr);
+  });
+
+  // Chart - aggregate portfolio value over time
+  const ph = data.price_history || [];
+  // Group by recorded_at timestamp
+  const timeMap = {};
+  ph.forEach(p => {
+    const t = p.recorded_at;
+    if (!timeMap[t]) timeMap[t] = {};
+    timeMap[t][p.symbol] = p.price;
+  });
+  
+  // Calculate total value at each timestamp
+  const timestamps = Object.keys(timeMap).sort();
+  const chartData = timestamps.map(t => {
+    let total = 0;
+    active.forEach(h => {
+      if (timeMap[t][h.symbol] != null) {
+        total += h.amount * timeMap[t][h.symbol];
+      }
+    });
+    return { t, total };
+  }).filter(d => d.total > 0);
+
+  if (chartData.length > 1) {
+    new Chart($('#priceChart'), {
+      type: 'line',
+      data: {
+        labels: chartData.map(d => {
+          const dt = new Date(d.t + 'Z');
+          return dt.toLocaleString('de-DE', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
+        }),
+        datasets: [{
+          label: 'Portfolio Wert ($)',
+          data: chartData.map(d => d.total),
+          borderColor: '#f7931a',
+          backgroundColor: 'rgba(247,147,26,0.1)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { labels: { color: '#e0e0e0' } } },
+        scales: {
+          x: { ticks: { color: '#888', maxTicksLimit: 8 }, grid: { color: '#2a2a3a' } },
+          y: { ticks: { color: '#888', callback: v => '$'+v.toLocaleString() }, grid: { color: '#2a2a3a' } }
+        }
+      }
+    });
+  } else {
+    $('#priceChart').parentElement.innerHTML = '<div class="dim" style="padding:40px;text-align:center">Noch nicht genug Daten für Chart (mindestens 2 Snapshots nötig)</div>';
+  }
+
+  // Lessons
+  const lDiv = $('#lessonsSection');
+  if (data.lessons && data.lessons.length) {
+    lDiv.innerHTML = data.lessons.map(l => `
+      <div class="lesson">
+        <span class="code">${l.code}</span><strong>${l.title}</strong>
+        <div class="dim">${l.description||''}</div>
+        <div class="rule">→ ${l.rule}</div>
+      </div>
+    `).join('');
+  } else {
+    lDiv.innerHTML = '<div class="dim">Keine Lessons</div>';
+  }
+}
+
+init();
+</script>
+</body>
+</html>
