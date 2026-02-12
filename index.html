@@ -37,6 +37,23 @@ tr:hover{background:rgba(255,255,255,.03)}
 .lesson .code{color:var(--orange);font-weight:700;margin-right:8px}
 .lesson .rule{color:var(--green);font-size:.82rem;margin-top:4px}
 #loading{text-align:center;padding:60px;color:var(--dim);font-size:1.2rem}
+/* Accordion Scanner Cards */
+.scanner-card{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.scanner-header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;cursor:pointer;user-select:none;gap:10px}
+.scanner-header:hover{background:rgba(255,255,255,.03)}
+.scanner-left{display:flex;align-items:center;gap:10px;flex:1;min-width:0}
+.scanner-symbol{font-weight:700;font-size:1.1rem;white-space:nowrap}
+.scanner-narrative{color:var(--dim);font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.scanner-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.scanner-score{font-weight:700;font-size:1rem;background:var(--header-bg);padding:3px 10px;border-radius:8px}
+.scanner-arrow{color:var(--dim);font-size:.8rem;transition:transform .2s}
+.scanner-card.open .scanner-arrow{transform:rotate(180deg)}
+.scanner-details{display:none;padding:0 16px 14px;border-top:1px solid var(--border)}
+.scanner-card.open .scanner-details{display:block}
+.scanner-row{display:flex;justify-content:space-between;padding:6px 0;font-size:.85rem}
+.scanner-row .label{color:var(--dim)}
+.scanner-row .val{font-weight:600}
+.scanner-reason{margin-top:8px;padding:10px;background:rgba(255,255,255,.03);border-radius:8px;font-size:.83rem;line-height:1.5;color:var(--dim)}
 @media(max-width:600px){h1{font-size:1.4rem}table{font-size:.75rem}td,th{padding:5px 3px}.stat .value{font-size:1.2rem}}
 </style>
 </head>
@@ -60,9 +77,7 @@ tr:hover{background:rgba(255,255,255,.03)}
 <div class="card overflow-x" id="watchlistSection"></div>
 
 <h2>🔍 Scanner Ergebnisse</h2>
-<div class="card overflow-x"><table id="scannerTable"><thead><tr>
-<th>Coin</th><th>Chain</th><th>Narrativ</th><th>MC</th><th>Score</th><th>Result</th><th>Reason</th>
-</tr></thead><tbody></tbody></table></div>
+<div id="scannerCards"></div>
 
 <h2>📈 Portfolio Entwicklung</h2>
 <div class="card chart-wrap"><canvas id="priceChart"></canvas></div>
@@ -181,22 +196,41 @@ async function init() {
     wlDiv.innerHTML = '<div class="dim">Keine Coins auf der Watchlist</div>';
   }
 
-  // Scanner
-  const stbody = $('#scannerTable tbody');
-  (data.scanner_coins||[]).forEach(c => {
-    const badgeCls = 'badge-' + (c.result||'').replace('-','');
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><strong>${c.symbol}</strong><br><span class="dim">${c.name}</span></td>
-      <td>${c.chain||'–'}</td>
-      <td>${c.narrative||'–'}</td>
-      <td>${fmtCompact(c.market_cap)}</td>
-      <td><strong>${c.score||0}</strong></td>
-      <td><span class="badge ${badgeCls}">${c.result||'–'}</span></td>
-      <td class="dim" style="max-width:250px">${c.reason||'–'}</td>
-    `;
-    stbody.appendChild(tr);
-  });
+  // Scanner (Accordion Cards)
+  const scanDiv = $('#scannerCards');
+  const scanCoins = data.scanner_coins||[];
+  if(scanCoins.length){
+    scanDiv.innerHTML = scanCoins.map(c => {
+      const badgeCls = 'badge-' + (c.result||'').replace('-','');
+      const scoreColor = c.score >= 50 ? 'var(--green)' : c.score >= 30 ? 'var(--orange)' : 'var(--red)';
+      return `
+      <div class="scanner-card" onclick="this.classList.toggle('open')">
+        <div class="scanner-header">
+          <div class="scanner-left">
+            <span class="scanner-symbol">${c.symbol}</span>
+            <span class="scanner-narrative">${c.narrative||c.name||''}</span>
+          </div>
+          <div class="scanner-right">
+            <span class="badge ${badgeCls}">${c.result||'–'}</span>
+            <span class="scanner-score" style="color:${scoreColor}">${c.score||0}</span>
+            <span class="scanner-arrow">▼</span>
+          </div>
+        </div>
+        <div class="scanner-details">
+          <div class="scanner-row"><span class="label">Name</span><span class="val">${c.name||'–'}</span></div>
+          <div class="scanner-row"><span class="label">Chain</span><span class="val">${c.chain||'–'}</span></div>
+          <div class="scanner-row"><span class="label">Market Cap</span><span class="val">${fmtCompact(c.market_cap)}</span></div>
+          <div class="scanner-row"><span class="label">Liquidity</span><span class="val">${fmtCompact(c.liquidity)}</span></div>
+          <div class="scanner-row"><span class="label">Volume 24h</span><span class="val">${fmtCompact(c.volume_24h)}</span></div>
+          <div class="scanner-row"><span class="label">Score</span><span class="val" style="color:${scoreColor}">${c.score||0}/100</span></div>
+          <div class="scanner-row"><span class="label">Gescannt</span><span class="val dim">${c.scanned_at||'–'}</span></div>
+          <div class="scanner-reason">${c.reason||'Keine Details'}</div>
+        </div>
+      </div>`;
+    }).join('');
+  } else {
+    scanDiv.innerHTML = '<div class="card"><div class="dim">Keine Scanner-Ergebnisse</div></div>';
+  }
 
   // Chart - aggregate portfolio value over time
   const ph = data.price_history || [];
