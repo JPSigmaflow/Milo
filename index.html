@@ -240,7 +240,9 @@ async function init() {
   
   ph.forEach(p => {
     if (!active.find(h => h.symbol === p.symbol)) return; // only active holdings
-    const ts = new Date(p.recorded_at + (p.recorded_at.includes('Z') ? '' : ' UTC')).getTime();
+    const raw = p.recorded_at.replace(' ','T');
+    const ts = new Date(raw.includes('Z') || raw.includes('+') ? raw : raw+'Z').getTime();
+    if(isNaN(ts)) return;
     const bucket = Math.round(ts / bucketMs) * bucketMs;
     if (!bucketMap[bucket]) bucketMap[bucket] = {};
     bucketMap[bucket][p.symbol] = p.price;
