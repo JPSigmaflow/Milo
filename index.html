@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Milo Crypto System</title>
+<title>JC INV PORTFOLIO</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0a0f;--card:#14141f;--border:#2a2a3a;--text:#e0e0e0;--dim:#888;--green:#00e676;--red:#ff5252;--orange:#f7931a;--blue:#64b5f6;--header-bg:#1a1a2e}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:12px;max-width:1200px;margin:0 auto;line-height:1.5}
-h1{color:var(--orange);font-size:1.8rem;margin-bottom:4px}
-h2{color:var(--blue);font-size:1.2rem;margin:24px 0 12px;border-bottom:1px solid var(--border);padding-bottom:6px}
+h1{color:#ffffff;font-size:1.8rem;margin-bottom:4px;font-weight:700;letter-spacing:2px}
+h2{color:#ffffff;font-size:1.2rem;margin:24px 0 12px;border-bottom:1px solid var(--border);padding-bottom:6px;font-weight:600}
 .sub{color:var(--dim);font-size:.85rem}
 .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px}
@@ -18,7 +18,7 @@ h2{color:var(--blue);font-size:1.2rem;margin:24px 0 12px;border-bottom:1px solid
 .stat .label{color:var(--dim);font-size:.75rem;text-transform:uppercase;letter-spacing:1px}
 .stat .value{font-size:1.5rem;font-weight:700;margin-top:4px}
 table{width:100%;border-collapse:collapse;font-size:.85rem}
-th{background:var(--header-bg);color:var(--blue);text-align:left;padding:8px 6px;position:sticky;top:0}
+th{background:var(--header-bg);color:#ffffff;text-align:left;padding:8px 6px;position:sticky;top:0}
 td{padding:7px 6px;border-bottom:1px solid var(--border)}
 tr:hover{background:rgba(255,255,255,.03)}
 .green{color:var(--green)}.red{color:var(--red)}.dim{color:var(--dim)}
@@ -62,27 +62,27 @@ tr:hover{background:rgba(255,255,255,.03)}
 <div id="app" style="display:none">
 
 <header style="margin-bottom:20px">
-<h1>🔶 Milo Crypto System</h1>
+<h1>JC INV PORTFOLIO</h1>
 <div class="sub" id="lastUpdate"></div>
 </header>
 
 <div class="stats" id="statsGrid"></div>
 
-<h2>📊 Portfolio Holdings</h2>
+<h2>◈ Portfolio Holdings</h2>
 <div class="card overflow-x"><table id="holdingsTable"><thead><tr>
 <th>Coin</th><th>Menge</th><th>Entry</th><th>Aktuell</th><th>Wert</th><th>P&L%</th><th>Status</th>
 </tr></thead><tbody></tbody></table></div>
 
-<h2>👁️ Watchlist</h2>
+<h2>◉ Watchlist</h2>
 <div class="card overflow-x" id="watchlistSection"></div>
 
-<h2>🔍 Scanner Ergebnisse</h2>
+<h2>⬡ Scanner Ergebnisse</h2>
 <div id="scannerCards"></div>
 
-<h2>📈 Portfolio Entwicklung</h2>
+<h2>△ Portfolio Entwicklung</h2>
 <div class="card chart-wrap"><canvas id="priceChart"></canvas></div>
 
-<h2>📚 Lessons Learned</h2>
+<h2>⊘ Lessons Learned</h2>
 <div class="card" id="lessonsSection"></div>
 
 </div>
