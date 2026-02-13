@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-13T15:07:10Z",
+  "exported_at": "2026-02-13T15:23:15Z",
   "usdt_free": 907.09,
   "last_update": "2026-02-12",
   "total_value": 5858.61,
@@ -197,6 +197,7 @@
 {"symbol":"ATH","name":"Aethir","chain":"ethereum","narrative":"Dezentrale GPU Cloud für AI","market_cap":103000000.0,"liquidity":null,"volume_24h":11406202.0,"score":45,"result":"watchlist","reason":null,"source":"coingecko-ai","source_channels":null,"scanned_at":"2026-02-13 13:01:41","updated_at":"2026-02-13 13:01:41"},
 {"symbol":"TAO","name":"Bittensor","chain":"solana","narrative":"AI Decentralized ML","market_cap":6742151068.0,"liquidity":6741150984.0,"volume_24h":3.990000000000000213,"score":40,"result":"watchlist","reason":"AI Narrativ top, aber MC $6.7B = Large Cap, nicht unser Segment","source":"dexscreener","source_channels":null,"scanned_at":"2026-02-12 19:41:19","updated_at":"2026-02-12 19:41:19"},
 {"symbol":"IP","name":"Story","chain":"ethereum","narrative":"Dezentrales IP-Protokoll mit AI-Integration","market_cap":390000000.0,"liquidity":null,"volume_24h":60469104.0,"score":40,"result":"watchlist","reason":null,"source":"coingecko-ai","source_channels":null,"scanned_at":"2026-02-13 13:01:41","updated_at":"2026-02-13 13:01:41"},
+{"symbol":"VVV","name":"Venice Token","chain":"unknown","narrative":"AI/Privacy","market_cap":null,"liquidity":null,"volume_24h":null,"score":40,"result":"watchlist","reason":"AI-Analyse: CoinGecko Trending, AI-Privacy Narrativ (stark), aber nur 1 Quelle. Kein Multi-Source-Signal. Watchlist bis weitere Bestätigung.","source":"analyst","source_channels":null,"scanned_at":"2026-02-13 15:08:23","updated_at":"2026-02-13 15:08:23"},
 {"symbol":"ASI","name":"Artificial Superintelligence Alliance","chain":"base","narrative":"AI Superintelligence","market_cap":292097.0,"liquidity":219073.0,"volume_24h":0.0,"score":35,"result":"rejected","reason":"AI Narrativ gut aber Volume=0, kein Trading-Aktivität","source":"dexscreener","source_channels":null,"scanned_at":"2026-02-12 19:41:19","updated_at":"2026-02-12 19:41:19"},
 {"symbol":"AI16Z","name":"ai16z","chain":"solana","narrative":"AI Agent DAO","market_cap":316010.0,"liquidity":34768.0,"volume_24h":60374.0,"score":30,"result":"no-go","reason":"AI Narrativ, aber MC $316K mit Liq nur $34K = NO-GO (L001 Filter)","source":"dexscreener","source_channels":null,"scanned_at":"2026-02-12 19:41:19","updated_at":"2026-02-12 19:41:19"},
 {"symbol":"AIDOG","name":"AIDOG","chain":"base","narrative":"AI Meme","market_cap":4568786.0,"liquidity":579016.0,"volume_24h":21586.0,"score":30,"result":"rejected","reason":"AI+Dog Meme, MC $4.6M, Vol nur $21K = zu wenig Aktivität.","source":"hawk-scan","source_channels":null,"scanned_at":"2026-02-12 20:45:34","updated_at":"2026-02-12 20:45:34"},
