@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-13T01:01:02Z",
+  "exported_at": "2026-02-13T01:06:05Z",
   "usdt_free": 836.40,
   "last_update": "2026-02-12",
   "total_value": 5424.29,
@@ -113,7 +113,10 @@
 {"recorded_at":"2026-02-12 21:06:59","portfolio_value":5347.960000000000036,"coin_count":10},
 {"recorded_at":"2026-02-12 21:10:08","portfolio_value":5347.960000000000036,"coin_count":10},
 {"recorded_at":"2026-02-12 23:18:38","portfolio_value":5424.289999999999964,"coin_count":10}],
-  "scanner_coins": [{"symbol":"Q","name":"Quack AI Token","chain":"bsc","narrative":"AI","market_cap":66949572.0,"liquidity":882375.0,"volume_24h":2654538.0,"score":55,"result":"watchlist","reason":"AI Narrativ, MC $67M, Liq $882K solid, Vol $2.6M aktiv. BSC.","source":"hawk-scan","source_channels":null,"scanned_at":"2026-02-12 20:45:34","updated_at":"2026-02-12 20:45:34"},
+  "scanner_coins": [{"symbol":"KITE","name":"Kite","chain":"multi","narrative":"AI Agent Infrastruktur","market_cap":340500000.0,"liquidity":500000.0,"volume_24h":99780000.0,"score":65,"result":"deep-dive","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 01:02:47","updated_at":"2026-02-13 01:02:47"},
+{"symbol":"LPT","name":"Livepeer","chain":"ethereum","narrative":"AI Video / Dezentrales Rendering","market_cap":140200000.0,"liquidity":400000.0,"volume_24h":70420000.0,"score":62,"result":"deep-dive","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 01:02:47","updated_at":"2026-02-13 01:02:47"},
+{"symbol":"Q","name":"Quack AI Token","chain":"bsc","narrative":"AI","market_cap":66949572.0,"liquidity":882375.0,"volume_24h":2654538.0,"score":55,"result":"watchlist","reason":"AI Narrativ, MC $67M, Liq $882K solid, Vol $2.6M aktiv. BSC.","source":"hawk-scan","source_channels":null,"scanned_at":"2026-02-12 20:45:34","updated_at":"2026-02-12 20:45:34"},
+{"symbol":"0G","name":"0G (Zero Gravity)","chain":"multi","narrative":"AI Data Availability Layer","market_cap":129500000.0,"liquidity":300000.0,"volume_24h":101720000.0,"score":55,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 01:02:47","updated_at":"2026-02-13 01:02:47"},
 {"symbol":"RENDER","name":"Render Token","chain":"solana","narrative":"AI GPU Rendering","market_cap":679868099.0,"liquidity":515090.0,"volume_24h":419123.0,"score":50,"result":"watchlist","reason":"AI-GPU Narrativ, MC $679M über Filter, gute Liq/Vol, eher Large-Cap","source":"dexscreener","source_channels":null,"scanned_at":"2026-02-12 19:41:19","updated_at":"2026-02-12 19:41:19"},
 {"symbol":"ON","name":"Orochi Network","chain":"bsc","narrative":"AI Oracle/ZK","market_cap":11930166.0,"liquidity":642785.0,"volume_24h":3079737.0,"score":50,"result":"watchlist","reason":"AI Oracle/ZK, +24.6% 24h, MC $12M, Vol $3M. Momentum hoch.","source":"hawk-scan","source_channels":null,"scanned_at":"2026-02-12 20:45:34","updated_at":"2026-02-12 20:45:34"},
 {"symbol":"FET","name":"Fetch.ai","chain":"osmosis","narrative":"AI/ML Agent","market_cap":380582878.0,"liquidity":37635.0,"volume_24h":585.0,"score":45,"result":"watchlist","reason":"AI Narrativ stark, MC $380M, aber DEX-Liq nur $37K schwach, besser auf CEX","source":"dexscreener","source_channels":null,"scanned_at":"2026-02-12 19:41:19","updated_at":"2026-02-12 19:41:19"},
