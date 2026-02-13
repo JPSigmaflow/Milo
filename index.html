@@ -90,6 +90,8 @@ tr:hover{background:rgba(255,255,255,.03)}
 <script>
 const $ = s => document.querySelector(s);
 const fmt = (n,d=2) => n!=null ? Number(n).toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d}) : '–';
+const fmtVal = n => n!=null ? '$' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:0,maximumFractionDigits:0}) : '–';
+const fmtPrice = n => n!=null ? '$' + (n < 0.01 ? Number(n).toFixed(5) : Number(n).toLocaleString('de-DE',{minimumFractionDigits:3,maximumFractionDigits:3})) : '–';
 const fmtUsd = n => '$' + fmt(n);
 const fmtCompact = n => {
   if(!n) return '–';
@@ -133,10 +135,10 @@ async function init() {
   const totalPnlAbs = totalValue - totalInvested;
 
   $('#statsGrid').innerHTML = `
-    <div class="stat"><div class="label">Portfolio Wert</div><div class="value">${fmtUsd(totalValue)}</div></div>
-    <div class="stat"><div class="label">Investiert</div><div class="value">${fmtUsd(totalInvested)}</div></div>
-    <div class="stat"><div class="label">P&L</div><div class="value ${pnlClass(totalPnlAbs)}">${pnlSign(totalPnlAbs)}${fmtUsd(totalPnlAbs)} (${pnlSign(totalPnl)}${fmt(totalPnl)}%)</div></div>
-    <div class="stat"><div class="label">USDT Frei</div><div class="value">${fmtUsd(data.usdt_free)}</div></div>
+    <div class="stat"><div class="label">Portfolio Wert</div><div class="value">${fmtVal(totalValue)}</div></div>
+    <div class="stat"><div class="label">Investiert</div><div class="value">${fmtVal(totalInvested)}</div></div>
+    <div class="stat"><div class="label">P&L</div><div class="value ${pnlClass(totalPnlAbs)}">${pnlSign(totalPnlAbs)}${fmtVal(totalPnlAbs)} (${pnlSign(totalPnl)}${fmt(totalPnl)}%)</div></div>
+    <div class="stat"><div class="label">USDT Frei</div><div class="value">${fmtVal(data.usdt_free)}</div></div>
     <div class="stat"><div class="label">Positionen</div><div class="value">${active.length}</div></div>
   `;
 
@@ -149,9 +151,9 @@ async function init() {
     tr.innerHTML = `
       <td><strong>${h.symbol}</strong><br><span class="dim">${h.name}</span></td>
       <td>${fmt(h.amount,0)}</td>
-      <td>${fmtUsd(h.entry_price < 0.01 ? Number(h.entry_price).toFixed(5) : h.entry_price)}</td>
-      <td>${fmtUsd(h.current_price < 0.01 ? Number(h.current_price).toFixed(5) : h.current_price)}</td>
-      <td>${fmtUsd(val)}</td>
+      <td>${fmtPrice(h.entry_price)}</td>
+      <td>${fmtPrice(h.current_price)}</td>
+      <td>${fmtVal(val)}</td>
       <td class="${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></td>
       <td><span class="badge badge-${h.status}">${h.status}</span></td>
     `;
@@ -168,8 +170,8 @@ async function init() {
       tr.innerHTML = `
         <td><strong>${h.symbol}</strong><br><span class="dim">${h.name}</span></td>
         <td>${fmt(h.amount,0)}</td>
-        <td>${fmtUsd(h.entry_price)}</td>
-        <td>${h.sold_price ? fmtUsd(h.sold_price) : '–'}</td>
+        <td>${fmtPrice(h.entry_price)}</td>
+        <td>${h.sold_price ? fmtPrice(h.sold_price) : '–'}</td>
         <td>–</td>
         <td class="${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></td>
         <td><span class="badge badge-sold">${h.sold_date ? 'sold '+h.sold_date : h.status}</span></td>
@@ -188,7 +190,7 @@ async function init() {
   if (wlUnique.length) {
     let html = '<table><thead><tr><th>Coin</th><th>Chain</th><th>Preis</th><th>Entry</th></tr></thead><tbody>';
     wlUnique.forEach(h => {
-      html += `<tr><td><strong>${h.symbol}</strong> ${h.name}</td><td>${h.chain||'–'}</td><td>${h.current_price ? fmtUsd(h.current_price < 0.01 ? Number(h.current_price).toFixed(5) : h.current_price) : '–'}</td><td>${h.entry_price > 0 ? fmtUsd(h.entry_price) : '–'}</td></tr>`;
+      html += `<tr><td><strong>${h.symbol}</strong> ${h.name}</td><td>${h.chain||'–'}</td><td>${h.current_price ? fmtPrice(h.current_price) : '–'}</td><td>${h.entry_price > 0 ? fmtPrice(h.entry_price) : '–'}</td></tr>`;
     });
     html += '</tbody></table>';
     wlDiv.innerHTML = html;
