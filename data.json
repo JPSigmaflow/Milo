@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-13T22:57:33Z",
+  "exported_at": "2026-02-13T23:12:25Z",
   "usdt_free": 907.09,
   "last_update": "2026-02-12",
   "total_value": 6258.35,
@@ -227,6 +227,7 @@
 {"symbol":"GRASS","name":"Grass","chain":"solana","narrative":"Decentralized AI Data Network","market_cap":94753755.0,"liquidity":9519310.0,"volume_24h":9519310.0,"score":50,"result":"watchlist","reason":null,"source":"coingecko-ai-category","source_channels":null,"scanned_at":"2026-02-13 19:00:58","updated_at":"2026-02-13 19:00:58"},
 {"symbol":"FET","name":"Fetch.ai","chain":"osmosis","narrative":"AI/ML Agent","market_cap":380582878.0,"liquidity":37635.0,"volume_24h":585.0,"score":45,"result":"watchlist","reason":"AI Narrativ stark, MC $380M, aber DEX-Liq nur $37K schwach, besser auf CEX","source":"dexscreener","source_channels":null,"scanned_at":"2026-02-12 19:41:19","updated_at":"2026-02-12 19:41:19"},
 {"symbol":"ATH","name":"Aethir","chain":"ethereum","narrative":"Dezentrale GPU Cloud für AI","market_cap":103000000.0,"liquidity":null,"volume_24h":11406202.0,"score":45,"result":"watchlist","reason":null,"source":"coingecko-ai","source_channels":null,"scanned_at":"2026-02-13 13:01:41","updated_at":"2026-02-13 13:01:41"},
+{"symbol":"COAI","name":"ChainOpera AI","chain":"unknown","narrative":"AI","market_cap":null,"liquidity":null,"volume_24h":null,"score":45,"result":"watchlist","reason":"AI-Analyse: CoinGecko Trending, starkes AI-Narrativ. Nur 1 Quelle, MEXC-Status unbekannt. Watchlist bis 2. Quelle bestätigt.","source":"analyst","source_channels":null,"scanned_at":"2026-02-13 23:08:19","updated_at":"2026-02-13 23:08:19"},
 {"symbol":"TAO","name":"Bittensor","chain":"solana","narrative":"AI Decentralized ML","market_cap":6742151068.0,"liquidity":6741150984.0,"volume_24h":3.990000000000000213,"score":40,"result":"watchlist","reason":"AI Narrativ top, aber MC $6.7B = Large Cap, nicht unser Segment","source":"dexscreener","source_channels":null,"scanned_at":"2026-02-12 19:41:19","updated_at":"2026-02-12 19:41:19"},
 {"symbol":"IP","name":"Story","chain":"ethereum","narrative":"Dezentrales IP-Protokoll mit AI-Integration","market_cap":390000000.0,"liquidity":null,"volume_24h":60469104.0,"score":40,"result":"watchlist","reason":null,"source":"coingecko-ai","source_channels":null,"scanned_at":"2026-02-13 13:01:41","updated_at":"2026-02-13 13:01:41"},
 {"symbol":"VVV","name":"Venice Token","chain":"unknown","narrative":"AI/Privacy","market_cap":null,"liquidity":null,"volume_24h":null,"score":40,"result":"watchlist","reason":"AI-Analyse: CoinGecko Trending, AI-Privacy Narrativ (stark), aber nur 1 Quelle. Kein Multi-Source-Signal. Watchlist bis weitere Bestätigung.","source":"analyst","source_channels":null,"scanned_at":"2026-02-13 15:08:23","updated_at":"2026-02-13 15:08:23"},
