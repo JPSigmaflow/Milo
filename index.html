@@ -232,39 +232,13 @@ async function init() {
     scanDiv.innerHTML = '<div class="card"><div class="dim">Keine Scanner-Ergebnisse</div></div>';
   }
 
-  // Chart - aggregate portfolio value over time
-  // Group prices into time buckets (round to nearest 5 min) so all coins in same snapshot count together
-  const ph = data.price_history || [];
-  const bucketMs = 5 * 60 * 1000; // 5 min buckets
-  const bucketMap = {}; // bucketKey -> { symbol -> price }
-  
-  ph.forEach(p => {
-    if (!active.find(h => h.symbol === p.symbol)) return; // only active holdings
+  // Chart - use pre-calculated portfolio_history from export
+  const portHist = data.portfolio_history || [];
+  const chartData = portHist.map(p => {
     const raw = p.recorded_at.replace(' ','T');
     const ts = new Date(raw.includes('Z') || raw.includes('+') ? raw : raw+'Z').getTime();
-    if(isNaN(ts)) return;
-    const bucket = Math.round(ts / bucketMs) * bucketMs;
-    if (!bucketMap[bucket]) bucketMap[bucket] = {};
-    bucketMap[bucket][p.symbol] = p.price;
-  });
-
-  // Only use buckets where we have prices for at least 80% of active coins
-  const minCoins = Math.ceil(active.length * 0.8);
-  const buckets = Object.keys(bucketMap).map(Number).sort().filter(b => Object.keys(bucketMap[b]).length >= minCoins);
-
-  // For missing coins in a bucket, carry forward from previous bucket
-  let lastPrices = {};
-  const chartData = buckets.map(b => {
-    const prices = { ...lastPrices, ...bucketMap[b] };
-    lastPrices = prices;
-    let total = 0;
-    active.forEach(h => {
-      if (prices[h.symbol] != null) {
-        total += h.amount * prices[h.symbol];
-      }
-    });
-    return { t: b, total };
-  }).filter(d => d.total > 0);
+    return { t: ts, total: p.portfolio_value };
+  }).filter(d => !isNaN(d.t) && d.total > 0);
 
   if (chartData.length > 1) {
     new Chart($('#priceChart'), {
