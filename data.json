@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-13T02:24:22Z",
+  "exported_at": "2026-02-13T02:26:34Z",
   "usdt_free": 336.15,
   "last_update": "2026-02-12",
   "total_value": 5905.79,
@@ -124,7 +124,8 @@
 {"recorded_at":"2026-02-12 20:00:00","portfolio_value":5362.489999999999782,"coin_count":10},
 {"recorded_at":"2026-02-12 21:00:00","portfolio_value":5347.960000000000036,"coin_count":10},
 {"recorded_at":"2026-02-12 23:00:00","portfolio_value":5424.289999999999964,"coin_count":10},
-{"recorded_at":"2026-02-13 01:00:00","portfolio_value":5414.539999999999964,"coin_count":10}],
+{"recorded_at":"2026-02-13 01:00:00","portfolio_value":5414.539999999999964,"coin_count":10},
+{"recorded_at":"2026-02-13 02:00:00","portfolio_value":5905.789999999999964,"coin_count":11}],
   "scanner_coins": [{"symbol":"KITE","name":"Kite","chain":"multi","narrative":"AI Agent Infrastruktur","market_cap":340500000.0,"liquidity":500000.0,"volume_24h":99780000.0,"score":65,"result":"deep-dive","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 01:02:47","updated_at":"2026-02-13 01:02:47"},
 {"symbol":"LPT","name":"Livepeer","chain":"ethereum","narrative":"AI Video / Dezentrales Rendering","market_cap":140200000.0,"liquidity":400000.0,"volume_24h":70420000.0,"score":62,"result":"deep-dive","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 01:02:47","updated_at":"2026-02-13 01:02:47"},
 {"symbol":"Q","name":"Quack AI Token","chain":"bsc","narrative":"AI","market_cap":66949572.0,"liquidity":882375.0,"volume_24h":2654538.0,"score":55,"result":"watchlist","reason":"AI Narrativ, MC $67M, Liq $882K solid, Vol $2.6M aktiv. BSC.","source":"hawk-scan","source_channels":null,"scanned_at":"2026-02-12 20:45:34","updated_at":"2026-02-12 20:45:34"},
