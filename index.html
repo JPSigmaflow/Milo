@@ -104,7 +104,7 @@ const pnlSign = v => v >= 0 ? '+' : '';
 async function init() {
   let data;
   try {
-    const r = await fetch('data.json');
+    const r = await fetch('data.json?t=' + Date.now());
     data = await r.json();
   } catch(e) {
     $('#loading').textContent = '❌ Could not load data.json';
