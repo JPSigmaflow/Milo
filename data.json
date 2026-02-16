@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-16T18:50:51Z",
+  "exported_at": "2026-02-16T19:06:33Z",
   "usdt_free": 406.84,
   "last_update": "2026-02-12",
   "total_value": 6663.59,
@@ -569,6 +569,7 @@
 {"recorded_at":"2026-02-16 17:00:00","portfolio_value":6663.590000000000145,"coin_count":12}],
   "scanner_coins": [{"symbol":"KITE","name":"Kite","chain":"multi","narrative":"AI Agent Infrastruktur","market_cap":340500000.0,"liquidity":500000.0,"volume_24h":99780000.0,"score":65,"result":"deep-dive","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 01:02:47","updated_at":"2026-02-13 01:02:47"},
 {"symbol":"LPT","name":"Livepeer","chain":"ethereum","narrative":"AI Video / Dezentrales Rendering","market_cap":140200000.0,"liquidity":400000.0,"volume_24h":70420000.0,"score":62,"result":"rejected","reason":"MC zu hoch (M) - Chris abgelehnt 2026-02-13","source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 01:02:47","updated_at":"2026-02-13 01:02:47"},
+{"symbol":"SHELL","name":"MyShell","chain":"ethereum","narrative":"AI Agent Launchpad & Framework — Consumer AI Layer, Binance Labs & DragonFly backed, AI agent creation platform","market_cap":33300000.0,"liquidity":16483133.0,"volume_24h":16483133.0,"score":62,"result":"watchlist","reason":null,"source":"coingecko-ai-category","source_channels":null,"scanned_at":"2026-02-16 19:00:53","updated_at":"2026-02-16 19:00:53"},
 {"symbol":"Q","name":"Quack AI Token","chain":"bsc","narrative":"AI","market_cap":66949572.0,"liquidity":882375.0,"volume_24h":2654538.0,"score":55,"result":"watchlist","reason":"AI Narrativ, MC $67M, Liq $882K solid, Vol $2.6M aktiv. BSC.","source":"hawk-scan","source_channels":null,"scanned_at":"2026-02-12 20:45:34","updated_at":"2026-02-12 20:45:34"},
 {"symbol":"0G","name":"0G (Zero Gravity)","chain":"multi","narrative":"AI Data Availability Layer","market_cap":129500000.0,"liquidity":300000.0,"volume_24h":101720000.0,"score":55,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 01:02:47","updated_at":"2026-02-13 01:02:47"},
 {"symbol":"IO","name":"io.net","chain":"ethereum","narrative":"Dezentrale GPU-Compute für AI-Training","market_cap":29000000.0,"liquidity":null,"volume_24h":13148633.0,"score":55,"result":"watchlist","reason":null,"source":"coingecko-ai","source_channels":null,"scanned_at":"2026-02-13 13:01:41","updated_at":"2026-02-13 13:01:41"},
