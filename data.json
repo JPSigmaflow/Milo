@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-16T01:00:14Z",
+  "exported_at": "2026-02-16T01:02:21Z",
   "usdt_free": 406.84,
   "last_update": "2026-02-12",
   "total_value": 6652.02,
@@ -496,6 +496,7 @@
 {"symbol":"SENT","name":"Sentient","chain":"unknown","narrative":"Open-Source AI Models — dezentrales AI-Modell-Ökosystem","market_cap":170177912.0,"liquidity":39369417.0,"volume_24h":39369417.0,"score":55,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-14 01:03:02","updated_at":"2026-02-14 01:03:02"},
 {"symbol":"LA","name":"Lagrange","chain":"ethereum","narrative":"ZK-Coprocessor für AI-Datenverifikation, Restaking-Narrative","market_cap":41200000.0,"liquidity":null,"volume_24h":20762213.0,"score":55,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-15 13:02:04","updated_at":"2026-02-15 13:02:04"},
 {"symbol":"NIL","name":"Nillion","chain":"ethereum","narrative":"Privacy-preserving computation für AI/ML — Blind Computation, MPC","market_cap":20000000.0,"liquidity":78900000.0,"volume_24h":17163770.0,"score":55,"result":"watchlist","reason":null,"source":"CoinGecko AI Category + DexScreener","source_channels":null,"scanned_at":"2026-02-15 19:01:04","updated_at":"2026-02-15 19:01:04"},
+{"symbol":"ALCH","name":"Alchemist AI","chain":"solana","narrative":"AI No-Code Platform, Binance Alpha Spotlight","market_cap":70569814.0,"liquidity":0.0,"volume_24h":17304829.0,"score":55,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-16 01:01:40","updated_at":"2026-02-16 01:01:40"},
 {"symbol":"WARD","name":"Warden","chain":"BSC","narrative":"AI Agent Launchpad, 8M User, Binance Alpha Spotlight","market_cap":12700000.0,"liquidity":null,"volume_24h":132700000.0,"score":52,"result":"watchlist","reason":"Bestes Fundament (2.2k GitHub Stars, Kraken), aber erst 10 Tage alt, -68% ATH","source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 07:01:41","updated_at":"2026-02-13 07:01:41"},
 {"symbol":"SAHARA","name":"Sahara AI","chain":"unknown","narrative":"AI Data Marketplace — Daten-Pipeline für AI-Training","market_cap":46136031.0,"liquidity":9308870.0,"volume_24h":9308870.0,"score":52,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-14 01:03:02","updated_at":"2026-02-14 01:03:02"},
 {"symbol":"ARKM","name":"Arkham","chain":"ethereum","narrative":"On-Chain Intelligence AI Platform","market_cap":70223945.0,"liquidity":39105914.0,"volume_24h":39105914.0,"score":52,"result":"watchlist","reason":null,"source":"coingecko-ai-category","source_channels":null,"scanned_at":"2026-02-14 13:02:07","updated_at":"2026-02-14 13:02:07"},
