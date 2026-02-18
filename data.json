@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-18T06:55:37Z",
+  "exported_at": "2026-02-18T07:06:42Z",
   "usdt_free": 662.28474314,
   "last_update": "2026-02-12",
   "total_value": 6317.16,
@@ -743,6 +743,7 @@
 {"symbol":"OPEN","name":"OpenLedger","chain":"unknown","narrative":"AI Data Infrastructure — dezentrale Datenplattform für AI-Training","market_cap":38164239.0,"liquidity":9936627.0,"volume_24h":9936627.0,"score":45,"result":"watchlist","reason":"Binance-Listing stark, aber -90% ATH, kein Whitepaper, kaum Transparenz","source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-14 01:03:02","updated_at":"2026-02-14 01:03:02"},
 {"symbol":"CLAWNCH","name":"CLAWNCH","chain":"solana","narrative":"AI Agent Launchpad","market_cap":11000000.0,"liquidity":null,"volume_24h":8908232.0,"score":45,"result":"watchlist","reason":null,"source":"coingecko-ai-category","source_channels":null,"scanned_at":"2026-02-15 01:02:29","updated_at":"2026-02-15 01:02:29"},
 {"symbol":"QAI","name":"QuantixAI","chain":"ethereum","narrative":"AI-gesteuertes Quant-Trading, vollautomatisch","market_cap":60500000.0,"liquidity":null,"volume_24h":8412861.0,"score":45,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-15 13:02:04","updated_at":"2026-02-15 13:02:04"},
+{"symbol":"PIPPIN","name":"pippin","chain":"solana","narrative":"AI Agent Framework","market_cap":438000000.0,"liquidity":72000000.0,"volume_24h":72480861.0,"score":45,"result":"watchlist","reason":"AI Agent by Yohei, trending, aber MC M nahe Grenze und -30% 24h Dump","source":"CoinGecko Trending + AI Category","source_channels":null,"scanned_at":"2026-02-18 07:01:28","updated_at":"2026-02-18 07:01:28"},
 {"symbol":"AWE","name":"AWE Network","chain":"ethereum","narrative":"AI Agent Network (ex-STP)","market_cap":180262009.0,"liquidity":10218304.0,"volume_24h":10218304.0,"score":42,"result":"watchlist","reason":null,"source":"coingecko-ai-category","source_channels":null,"scanned_at":"2026-02-14 13:02:07","updated_at":"2026-02-14 13:02:07"},
 {"symbol":"BNKR","name":"BankrCoin","chain":"solana","narrative":"AI Agent Infrastructure","market_cap":68700000.0,"liquidity":null,"volume_24h":25400000.0,"score":42,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-14 19:00:49","updated_at":"2026-02-14 19:00:49"},
 {"symbol":"AZTEC","name":"Aztec Network","chain":null,"narrative":null,"market_cap":null,"liquidity":null,"volume_24h":null,"score":42,"result":"watchlist","reason":"AI-Analyse 2026-02-16: ZK-Privacy L2 auf Ethereum. OKX + Bitget Pre-Market/Futures. Narrativ stark, aber zu frisch für Bewertung. MC unbekannt. Beobachten.","source":"analyst","source_channels":null,"scanned_at":"2026-02-16 11:09:02","updated_at":"2026-02-16 11:09:02"},
