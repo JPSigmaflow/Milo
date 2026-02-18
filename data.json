@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-18T02:38:38Z",
+  "exported_at": "2026-02-18T02:49:25Z",
   "usdt_free": 662.28474314,
   "last_update": "2026-02-12",
   "total_value": 6263.06,
@@ -20,8 +20,8 @@
 {"symbol":"AIXBT","name":"aixbt by Virtuals","amount":0.0,"entry_price":0.01990000000000000102,"exchange":"n/a","chain":"Base","status":"watchlist","entry_date":"2026-02-12","current_price":0.02102000000000000048,"updated_at":"2026-02-18 01:08:24","sold_price":null,"sold_date":null},
 {"symbol":"ALI","name":"Artificial Liquid Intelligence","amount":0.0,"entry_price":0.0,"exchange":"n/a","chain":"Ethereum","status":"watchlist","entry_date":"2026-02-12","current_price":null,"updated_at":"2026-02-12 20:11:25","sold_price":null,"sold_date":null},
 {"symbol":"ARC","name":"AI Rig Complex","amount":0.0,"entry_price":0.07480000000000000538,"exchange":"n/a","chain":"Solana","status":"watchlist","entry_date":"2026-02-12","current_price":0.07721000000000000085,"updated_at":"2026-02-18 01:08:24","sold_price":null,"sold_date":null},
-{"symbol":"FHE","name":"Mind Network","amount":7496.180000000000291,"entry_price":0.07099999999999999367,"exchange":"MEXC","chain":"BNB","status":"watchlist","entry_date":"2026-02-10","current_price":0.04250999999999999918,"updated_at":"2026-02-18 01:08:24","sold_price":0.05199999999999999762,"sold_date":"2026-02-12"},
-{"symbol":"DEAI","name":"Zero1 Labs","amount":33067.02999999999884,"entry_price":0.01280000000000000061,"exchange":"MEXC","chain":"Ethereum","status":"sold","entry_date":"2026-02-10","current_price":0.007725000000000000095,"updated_at":"2026-02-18 01:35:59","sold_price":null,"sold_date":null}],
+{"symbol":"DEAI","name":"Zero1 Labs","amount":33067.02999999999884,"entry_price":0.01280000000000000061,"exchange":"MEXC","chain":"Ethereum","status":"watchlist","entry_date":"2026-02-10","current_price":0.007725000000000000095,"updated_at":"2026-02-18 01:35:59","sold_price":null,"sold_date":null},
+{"symbol":"FHE","name":"Mind Network","amount":7496.180000000000291,"entry_price":0.07099999999999999367,"exchange":"MEXC","chain":"BNB","status":"watchlist","entry_date":"2026-02-10","current_price":0.04250999999999999918,"updated_at":"2026-02-18 01:08:24","sold_price":0.05199999999999999762,"sold_date":"2026-02-12"}],
   "price_history": [{"symbol":"RAIN","price":0.0097789999999999995,"change_24h":-3.589999999999999858,"market_cap":3322287022.0,"volume_24h":21348897.0,"recorded_at":"2026-02-12 12:06"},
 {"symbol":"LUNAI","price":0.007734999999999999689,"change_24h":-1.689999999999999947,"market_cap":7734531.0,"volume_24h":13161823.0,"recorded_at":"2026-02-12 12:06"},
 {"symbol":"VIRTUAL","price":0.5682000000000000383,"change_24h":5.799999999999999823,"market_cap":368561119.0,"volume_24h":57338098.0,"recorded_at":"2026-02-12 12:06"},
