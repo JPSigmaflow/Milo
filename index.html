@@ -21,11 +21,11 @@ h2{color:#fff;font-size:1.2rem;margin:24px 0 12px;border-bottom:1px solid var(--
 /* Portfolio Accordion */
 .portfolio-list{display:flex;flex-direction:column;gap:8px}
 .coin-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
-.coin-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;align-items:center;padding:14px 16px;cursor:pointer;user-select:none;gap:8px;transition:background .15s}
+.coin-row{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr 1fr 1fr;align-items:center;padding:10px 12px;cursor:pointer;user-select:none;gap:4px;transition:background .15s}
 .coin-row:hover{background:rgba(255,255,255,.03)}
-.coin-symbol{font-weight:700;font-size:1.05rem}
-.coin-name{color:var(--dim);font-size:.75rem}
-.coin-val{font-size:.9rem;text-align:right}
+.coin-symbol{font-weight:700;font-size:.85rem}
+.coin-name{color:var(--dim);font-size:.65rem}
+.coin-val{font-size:.75rem;text-align:right}
 .coin-arrow{color:var(--dim);font-size:.7rem;transition:transform .25s;margin-left:6px}
 .coin-card.open .coin-arrow{transform:rotate(180deg)}
 
@@ -80,7 +80,7 @@ tr:hover{background:rgba(255,255,255,.03)}
 #loading{text-align:center;padding:60px;color:var(--dim);font-size:1.2rem}
 
 @media(max-width:700px){
-  .coin-row{grid-template-columns:1.5fr 1fr 1fr 1fr;font-size:.8rem;padding:10px 12px}
+  .coin-row{grid-template-columns:1.5fr 1fr 1fr 1fr;font-size:.7rem;padding:8px 10px}
   .coin-row .hide-mobile{display:none}
   .coin-details-inner{grid-template-columns:1fr}
   h1{font-size:1.3rem}
@@ -96,28 +96,28 @@ tr:hover{background:rgba(255,255,255,.03)}
 <div id="app" style="display:none">
 
 <header style="margin-bottom:20px">
-<h1>🏦 JC INV PORTFOLIO</h1>
+<h1>JC INV PORTFOLIO</h1>
 <div class="sub" id="lastUpdate"></div>
 </header>
 
 <div class="stats" id="statsGrid"></div>
 
-<h2 style="color:var(--orange)">📊 Portfolio Holdings</h2>
+<h2 style="color:var(--orange)">Portfolio Holdings</h2>
 <div class="portfolio-list" id="portfolioList"></div>
 
-<h2 style="color:var(--red)">💀 Verkaufte Coins</h2>
+<h2 style="color:var(--red)">Verkaufte Coins</h2>
 <div class="card overflow-x" id="soldSection"></div>
 
-<h2>🎯 Watchlist</h2>
+<h2>Watchlist</h2>
 <div class="card overflow-x" id="watchlistSection"></div>
 
-<h2>🔍 Scanner Ergebnisse</h2>
+<h2>Scanner Ergebnisse</h2>
 <div id="scannerCards"></div>
 
-<h2>📈 Portfolio Entwicklung</h2>
+<h2>Portfolio Entwicklung</h2>
 <div class="card chart-wrap"><canvas id="priceChart"></canvas></div>
 
-<h2>📚 Lessons Learned</h2>
+<h2>Lessons Learned</h2>
 <div class="card" id="lessonsSection"></div>
 
 </div>
@@ -204,16 +204,16 @@ async function init() {
     
     // Links
     let linksHtml = '';
-    if(det.website) linksHtml += `<a href="${det.website}" target="_blank">🌐 Website</a>`;
-    if(det.github) linksHtml += `<a href="${det.github}" target="_blank">💻 GitHub</a>`;
-    if(det.twitter) linksHtml += `<a href="${det.twitter}" target="_blank">🐦 X/Twitter</a>`;
-    if(det.telegram) linksHtml += `<a href="${det.telegram}" target="_blank">💬 Telegram</a>`;
+    if(det.website) linksHtml += `<a href="${det.website}" target="_blank">Website</a>`;
+    if(det.github) linksHtml += `<a href="${det.github}" target="_blank">GitHub</a>`;
+    if(det.twitter) linksHtml += `<a href="${det.twitter}" target="_blank">X/Twitter</a>`;
+    if(det.telegram) linksHtml += `<a href="${det.telegram}" target="_blank">Telegram</a>`;
     
     // Community
     let communityHtml = '';
     if(det.community) {
-      if(det.community.tg_members) communityHtml += `<span>💬 TG: <strong>${fmtNum(det.community.tg_members)}</strong></span>`;
-      if(det.community.twitter_followers) communityHtml += `<span>🐦 Twitter: <strong>${fmtNum(det.community.twitter_followers)}</strong></span>`;
+      if(det.community.tg_members) communityHtml += `<span>TG: <strong>${fmtNum(det.community.tg_members)}</strong></span>`;
+      if(det.community.twitter_followers) communityHtml += `<span>Twitter: <strong>${fmtNum(det.community.twitter_followers)}</strong></span>`;
     }
     if(!communityHtml) communityHtml = '<span>Keine Daten</span>';
 
@@ -232,20 +232,20 @@ async function init() {
       <div class="coin-details">
         <div class="coin-details-inner">
           <div class="detail-section">
-            <h4 class="orange">📊 HAWK Analyse</h4>
+            <h4 class="orange">HAWK Analyse</h4>
             <p>${det.hawk_summary || 'Keine Analyse verfügbar'}</p>
             ${det.hawk_score != null ? `<p style="margin-top:6px;color:var(--orange)">Score: <strong>${det.hawk_score}/100</strong></p>` : ''}
           </div>
           <div class="detail-section">
-            <h4 class="blue">🎯 Nächste Meilensteine</h4>
+            <h4 class="blue">Nächste Meilensteine</h4>
             <p>${det.milestones || 'Keine bekannt'}</p>
           </div>
           <div class="detail-section">
-            <h4 class="blue">🔗 Links</h4>
+            <h4 class="blue">Links</h4>
             <div class="detail-links">${linksHtml || '<span class="dim">Keine Links</span>'}</div>
           </div>
           <div class="detail-section">
-            <h4 class="orange">📈 Community</h4>
+            <h4 class="orange">Community</h4>
             <div class="community-stat">${communityHtml}</div>
           </div>
         </div>
@@ -365,7 +365,7 @@ async function init() {
       }
     });
   } else {
-    $('#priceChart').parentElement.innerHTML = '<div class="dim" style="padding:40px;text-align:center">📊 Chart wird mit jedem Update genauer</div>';
+    $('#priceChart').parentElement.innerHTML = '<div class="dim" style="padding:40px;text-align:center">Chart wird mit jedem Update genauer</div>';
   }
 
   // Lessons
