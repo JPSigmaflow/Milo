@@ -484,11 +484,11 @@ async function init() {
     const cryptoEur = cryptoPosten.reduce((s,p)=>s+p.betrag,0);
     const hardwareEur = hardwarePosten.reduce((s,p)=>s+p.betrag,0);
     
-    const S = `style="padding:7px 10px;border-bottom:1px solid var(--border)"`;
-    const R = `style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap"`;
-    const H = `style="text-align:left;padding:8px 10px;font-size:.65rem;text-transform:uppercase;letter-spacing:.5px"`;
-    const HR = `style="text-align:right;padding:8px 10px;font-size:.65rem;text-transform:uppercase;letter-spacing:.5px"`;
-    const T = `style="width:100%;border-collapse:collapse;font-size:.75rem"`;
+    const S = `style="padding:6px 6px;border-bottom:1px solid var(--border)"`;
+    const R = `style="padding:6px 6px;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap"`;
+    const H = `style="text-align:left;padding:6px;font-size:.6rem;text-transform:uppercase;letter-spacing:.5px"`;
+    const HR = `style="text-align:right;padding:6px;font-size:.6rem;text-transform:uppercase;letter-spacing:.5px"`;
+    const T = `style="width:100%;border-collapse:collapse;font-size:.7rem"`;
     const SEC = c => `style="color:var(--${c});font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:24px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border)"`;
     const SUM = `style="font-weight:700;background:rgba(255,255,255,.04)"`;
     
@@ -496,13 +496,13 @@ async function init() {
     
     // ── 1. KAPITALEINLAGEN ──
     '<h4 '+SEC('orange')+'>I. Kapitaleinlagen</h4>' +
-    '<div style="overflow-x:auto"><table '+T+'>' +
-    '<tr style="background:var(--header-bg)"><th '+H+'>Datum</th><th '+H+'>Beschreibung</th><th '+H+'>Kat.</th><th '+HR+'>Betrag</th><th '+H+' style="text-align:center">Von</th></tr>' +
-    biz.posten.map(p=>'<tr><td '+S+' style="white-space:nowrap">'+(p.datum||'–')+'</td><td '+S+'>'+p.beschreibung+'</td><td '+S+'><span style="font-size:.55rem;padding:2px 4px;border-radius:4px;background:'+(p.typ==='Crypto'?'rgba(0,230,118,.1);color:var(--green)':p.typ==='Hardware'?'rgba(100,181,246,.1);color:var(--blue)':'rgba(255,255,255,.05);color:var(--dim)')+'">'+p.typ+'</span></td><td '+R+'>'+fE(p.betrag)+'</td><td '+S+' style="text-align:center">'+p.von+'</td></tr>').join('') +
-    '<tr '+SUM+'><td '+S+' colspan="3">Gesamt Business</td><td '+R+'>'+fE(biz.gesamt_eur)+'</td><td '+S+'></td></tr>' +
-    '<tr><td '+S+' colspan="3" style="padding-left:20px;color:var(--dim)">↳ davon Crypto-Kapital</td><td '+R+'>'+fE(cryptoEur)+'</td><td '+S+'></td></tr>' +
-    '<tr><td '+S+' colspan="3" style="padding-left:20px;color:var(--dim)">↳ davon Hardware/Ausstattung</td><td '+R+'>'+fE(hardwareEur)+'</td><td '+S+'></td></tr>' +
-    '</table></div>' +
+    '<table '+T+'>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Datum</th><th '+H+'>Beschreibung</th><th '+HR+'>Betrag</th></tr>' +
+    biz.posten.map(p=>'<tr><td '+S+' style="white-space:nowrap">'+(p.datum||'–')+'</td><td '+S+'>'+p.beschreibung+' <span style="font-size:.55rem;padding:1px 4px;border-radius:3px;background:'+(p.typ==='Crypto'?'rgba(0,230,118,.1);color:var(--green)':p.typ==='Hardware'?'rgba(100,181,246,.1);color:var(--blue)':'rgba(255,255,255,.05);color:var(--dim)')+'">'+p.typ+'</span> <span style="color:var(--dim);font-size:.6rem">'+p.von+'</span></td><td '+R+'>'+fE(p.betrag)+'</td></tr>').join('') +
+    '<tr '+SUM+'><td '+S+' colspan="2">Gesamt Business</td><td '+R+'>'+fE(biz.gesamt_eur)+'</td></tr>' +
+    '<tr><td '+S+' colspan="2" style="padding-left:16px;color:var(--dim)">↳ Crypto-Kapital</td><td '+R+'>'+fE(cryptoEur)+'</td></tr>' +
+    '<tr><td '+S+' colspan="2" style="padding-left:16px;color:var(--dim)">↳ Hardware</td><td '+R+'>'+fE(hardwareEur)+'</td></tr>' +
+    '</table>' +
     
     // ── 2. VERMÖGENSÜBERSICHT (Aktiva) ──
     '<h4 '+SEC('orange')+'>II. Vermögensübersicht — Aktiva (USD)</h4>' +
