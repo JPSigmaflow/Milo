@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-19T06:06:01Z",
+  "exported_at": "2026-02-19T06:07:10Z",
   "usdt_free": 1064.25558708,
   "last_update": "2026-02-12",
   "total_value": 5860.69,
@@ -12,8 +12,9 @@
     "juri_bezahlt_eur": 3141,
     "gesamt_eur": 8641,
     "soll_50_eur": 4320.50,
-    "chris_diff_eur": 1179.50,
-    "juri_schuldet_chris_eur": 1179.50,
+    "chris_diff_eur": 0,
+    "juri_schuldet_chris_eur": 0,
+    "status": "Ausgeglichen ✅",
     "realized_pnl_usd": -355.72,
     "total_fees_usd": 0.67,
     "pending_deposit": "€4.000 (je €2.000 Chris + Juri) — SEPA ausstehend",
