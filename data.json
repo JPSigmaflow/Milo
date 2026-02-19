@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-19T06:12:09Z",
+  "exported_at": "2026-02-19T06:17:01Z",
   "usdt_free": 1064.25558708,
   "last_update": "2026-02-12",
   "total_value": 5860.69,
@@ -8,23 +8,28 @@
   "pnl": 244.48,
   "pnl_pct": 4.35,
   "bilanz": {
-    "chris_bezahlt_eur": 5500,
-    "juri_bezahlt_eur": 3141,
-    "gesamt_eur": 8641,
-    "soll_50_eur": 4320.50,
-    "chris_diff_eur": 0,
-    "juri_schuldet_chris_eur": 0,
     "status": "Ausgeglichen ✅",
-    "realized_pnl_usd": -355.72,
     "total_fees_usd": 0.67,
     "pending_deposit": "€4.000 (je €2.000 Chris + Juri) — SEPA ausstehend",
-    "posten": [
-      {"datum": "Jan 2026", "beschreibung": "MEXC Überweisung #1", "betrag": 2500, "von": "Chris"},
-      {"datum": "Jan 2026", "beschreibung": "MEXC Überweisung #2", "betrag": 2500, "von": "Chris"},
-      {"datum": "13.02.2026", "beschreibung": "MEXC Einzahlung", "betrag": 500, "von": "Chris"},
-      {"datum": "Jan 2026", "beschreibung": "iMac + Ausstattung", "betrag": 791, "von": "Juri"},
-      {"datum": "Feb 2026", "beschreibung": "Kapitalausgleich", "betrag": 2350, "von": "Juri"}
-    ]
+    "business": {
+      "titel": "Business-Gesamtbilanz (EUR)",
+      "chris_eur": 5500,
+      "juri_eur": 3141,
+      "gesamt_eur": 8641,
+      "posten": [
+        {"datum": "Jan 2026", "beschreibung": "MEXC Überweisung #1", "betrag": 2500, "von": "Chris", "typ": "Crypto"},
+        {"datum": "Jan 2026", "beschreibung": "MEXC Überweisung #2", "betrag": 2500, "von": "Chris", "typ": "Crypto"},
+        {"datum": "13.02.2026", "beschreibung": "MEXC Einzahlung", "betrag": 500, "von": "Chris", "typ": "Crypto"},
+        {"datum": "Jan 2026", "beschreibung": "iMac + Ausstattung", "betrag": 791, "von": "Juri", "typ": "Hardware"},
+        {"datum": "Feb 2026", "beschreibung": "Kapitalausgleich", "betrag": 2350, "von": "Juri", "typ": "Ausgleich"}
+      ]
+    },
+    "crypto": {
+      "titel": "Crypto-Portfolio (USD)",
+      "kapital_in_coins_usd": 5616.21,
+      "usdt_frei_usd": 1064.25558708,
+      "realized_pnl_usd": -352.18
+    }
   },
   "transactions": [{"coin":"RAIN","type":"BUY","amount":87850.94999999999709,"price_usd":0.00974000000000000039,"total_usd":856.07000000000005,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-01-15","notes":"Initialkauf"},
 {"coin":"LUNAI","type":"BUY","amount":61986.86000000000058,"price_usd":0.008049999999999999864,"total_usd":499.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-01-15","notes":"Initialkauf"},
