@@ -146,6 +146,14 @@ tr:hover{background:rgba(255,255,255,.03)}
   <div class="lessons-content" id="lessonsSection"></div>
 </div>
 
+<div class="lessons-dropdown" id="bilanzDropdown" onclick="this.classList.toggle('open')">
+  <div class="lessons-header">
+    <h2 style="margin:0;border:none;padding:0"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Bilanz</h2>
+    <span class="lessons-arrow">▼</span>
+  </div>
+  <div class="lessons-content" id="bilanzSection"></div>
+</div>
+
 </div>
 
 <script>
@@ -443,6 +451,31 @@ async function init() {
     `).join('') + '</div>';
   } else {
     lDiv.innerHTML = '<div class="dim" style="padding:16px">Keine Lessons</div>';
+  }
+  // Bilanz (collapsed dropdown)
+  const bDiv = $('#bilanzSection');
+  const b = data.bilanz;
+  if(b) {
+    const fmtEur = n => '€' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+    bDiv.innerHTML = `<div style="padding:0 16px 14px">
+      <h4 style="color:var(--orange);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:12px 0 8px">Gesamtinvest ins Business</h4>
+      <table style="width:100%;border-collapse:collapse;font-size:.75rem">
+        <tr style="background:var(--header-bg)"><th style="text-align:left;padding:6px 8px">Posten</th><th style="text-align:right;padding:6px 8px">Betrag</th><th style="text-align:center;padding:6px 8px">Von</th></tr>
+        ${b.posten.map(p=>`<tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px">${p.beschreibung}</td><td style="text-align:right;padding:6px 8px">${fmtEur(p.betrag)}</td><td style="text-align:center;padding:6px 8px">${p.von}</td></tr>`).join('')}
+        <tr style="font-weight:700;border-top:2px solid var(--border)"><td style="padding:6px 8px">Gesamt</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.gesamt_eur)}</td><td></td></tr>
+      </table>
+      <h4 style="color:var(--blue);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:16px 0 8px">50/50 Aufteilung</h4>
+      <table style="width:100%;border-collapse:collapse;font-size:.75rem">
+        <tr style="background:var(--header-bg)"><th style="text-align:left;padding:6px 8px">Person</th><th style="text-align:right;padding:6px 8px">Soll (50%)</th><th style="text-align:right;padding:6px 8px">Bezahlt</th><th style="text-align:right;padding:6px 8px">Differenz</th></tr>
+        <tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px">Chris</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.soll_50_eur)}</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.chris_bezahlt_eur)}</td><td style="text-align:right;padding:6px 8px;color:var(--green)">+${fmtEur(b.chris_diff_eur)}</td></tr>
+        <tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px">Juri</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.soll_50_eur)}</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.juri_bezahlt_eur)}</td><td style="text-align:right;padding:6px 8px;color:var(--red)">-${fmtEur(b.juri_schuldet_chris_eur)}</td></tr>
+      </table>
+      <div style="margin-top:14px;padding:12px;background:rgba(255,255,255,.03);border-radius:8px;border-left:3px solid var(--orange)">
+        <div style="font-size:.8rem;font-weight:700">→ Juri schuldet Chris: ${fmtEur(b.juri_schuldet_chris_eur)}</div>
+        <div style="font-size:.7rem;color:var(--dim);margin-top:6px">Realisierte Verluste: $${Math.abs(b.realized_pnl_usd).toFixed(2)} | Fees: $${b.total_fees_usd.toFixed(2)}</div>
+        ${b.pending_deposit ? `<div style="font-size:.65rem;color:var(--orange);margin-top:4px">⏳ ${b.pending_deposit}</div>` : ''}
+      </div>
+    </div>`;
   }
 }
 init();
