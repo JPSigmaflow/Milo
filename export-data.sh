@@ -55,8 +55,9 @@ HAVING coin_count >= (SELECT COUNT(*) FROM holdings WHERE status='active') * 0.5
 ORDER BY hour ASC
 ")
 
-# Current total value
+# Current total value (coins only + coins+USDT)
 TOTAL_VALUE=$(sqlite3 "$PORTFOLIO_DB" "SELECT ROUND(SUM(h.amount * h.current_price), 2) FROM holdings h WHERE h.status='active'")
+TOTAL_WITH_USDT=$(python3 -c "print(round(${TOTAL_VALUE:-0} + ${USDT_FREE:-0}, 2))")
 TOTAL_INVESTED=$(sqlite3 "$PORTFOLIO_DB" "SELECT ROUND(SUM(h.amount * h.entry_price), 2) FROM holdings h WHERE h.status='active'")
 PNL=$(python3 -c "v=${TOTAL_VALUE:-0}; i=${TOTAL_INVESTED:-0}; print(round(v-i,2))")
 PNL_PCT=$(python3 -c "v=${TOTAL_VALUE:-0}; i=${TOTAL_INVESTED:-0}; print(round((v-i)/i*100,2) if i>0 else 0)")
@@ -74,6 +75,7 @@ cat > "$OUTPUT" << JSONEOF
   "usdt_free": ${USDT_FREE:-0},
   "last_update": "${LAST_UPDATE}",
   "total_value": ${TOTAL_VALUE:-0},
+  "total_with_usdt": ${TOTAL_WITH_USDT:-0},
   "total_invested": ${TOTAL_INVESTED:-0},
   "pnl": ${PNL:-0},
   "pnl_pct": ${PNL_PCT:-0},
