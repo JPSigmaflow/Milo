@@ -208,8 +208,7 @@ async function init() {
   const totalPnlAbs = totalValue - totalInvested;
 
   $('#statsGrid').innerHTML = `
-    <div class="stat"><div class="label">Gesamtwert (inkl. USDT)</div><div class="value">${fmtVal(data.total_with_usdt || (totalValue + (data.usdt_free||0)))}</div></div>
-    <div class="stat"><div class="label">Coin-Wert</div><div class="value">${fmtVal(totalValue)}</div></div>
+    <div class="stat"><div class="label">Gesamtwert</div><div class="value">${fmtVal(data.total_with_usdt || (totalValue + (data.usdt_free||0)))}</div><div class="dim" style="font-size:.55rem;margin-top:3px">Coins ${fmtVal(totalValue)} + USDT ${fmtVal(data.usdt_free)}</div></div>
     <div class="stat"><div class="label">Investiert</div><div class="value">${fmtVal(totalInvested)}</div></div>
     <div class="stat"><div class="label">P&L</div><div class="value ${pnlClass(totalPnlAbs)}">${pnlSign(totalPnlAbs)}${fmtVal(totalPnlAbs)} (${pnlSign(totalPnl)}${fmt(totalPnl)}%)</div></div>
     <div class="stat"><div class="label">USDT Frei</div><div class="value">${fmtVal(data.usdt_free)}</div></div>
