@@ -1,0 +1,102 @@
+{
+  "ALLO": {
+    "website": "https://allora.network",
+    "github": "https://github.com/allora-network",
+    "twitter": "https://x.com/AlloraNetwork",
+    "telegram": "https://t.me/AlloraNetwork",
+    "hawk_score": null,
+    "hawk_summary": "AI/ML Infrastruktur. 17 Repos, tägliche Commits. Backed by Polychain, Framework Ventures.",
+    "milestones": "Mainnet Expansion (2026)",
+    "community": {"tg_members": null, "twitter_followers": null}
+  },
+  "CFG": {
+    "website": "https://centrifuge.io",
+    "github": "https://github.com/centrifuge",
+    "twitter": "https://x.com/centrifuge",
+    "telegram": "https://t.me/centrifuge",
+    "hawk_score": null,
+    "hawk_summary": "Stärkstes Projekt. TVL $1.3B+, 158 Repos. RWA Leader. Pharos Partnership 17.02.",
+    "milestones": "Pharos Integration, RWA Expansion",
+    "community": {"tg_members": null, "twitter_followers": null}
+  },
+  "CLANKER": {
+    "website": "https://clanker.world",
+    "github": null,
+    "twitter": "https://x.com/caborovskis",
+    "telegram": null,
+    "hawk_score": null,
+    "hawk_summary": "Token-Deployment Tool auf Base. Hohe Trading Volume aber null Community-Infrastruktur.",
+    "milestones": "Keine bekannt",
+    "community": {}
+  },
+  "GRIFFAIN": {
+    "website": "https://griffain.com",
+    "github": null,
+    "twitter": "https://x.com/griffaindotcom",
+    "telegram": null,
+    "hawk_score": null,
+    "hawk_summary": "Frühe Phase. Website im Aufbau, kein GitHub.",
+    "milestones": "Website Launch",
+    "community": {}
+  },
+  "KITE": {
+    "website": "https://gokite.ai",
+    "github": null,
+    "twitter": "https://x.com/KiteAI_",
+    "telegram": null,
+    "hawk_score": null,
+    "hawk_summary": "First AI Payment Blockchain. PoAI Konsens. 17.8M Agent Passports, 1.7B Interactions.",
+    "milestones": "L1 Mainnet, Agent Ecosystem Growth",
+    "community": {}
+  },
+  "RAIN": {
+    "website": "https://rainprotocol.xyz",
+    "github": null,
+    "twitter": "https://x.com/RainProtocol",
+    "telegram": null,
+    "hawk_score": null,
+    "hawk_summary": "Erst seit Jan 2026. $3.3B MC. Wenig verifizierbare Infrastruktur.",
+    "milestones": "Keine bekannt",
+    "community": {}
+  },
+  "RAY": {
+    "website": "https://raydium.io",
+    "github": "https://github.com/raydium-io",
+    "twitter": "https://x.com/RaydiumProtocol",
+    "telegram": "https://t.me/raydiumprotocol",
+    "hawk_score": null,
+    "hawk_summary": "Etablierter Solana DEX. 34K TG, 28 Repos. V3 Konzentrierte Liquidität live.",
+    "milestones": "V3 Expansion, Solana Ecosystem Growth",
+    "community": {"tg_members": 34000}
+  },
+  "SAPIEN": {
+    "website": "https://sapien.io",
+    "github": null,
+    "twitter": "https://x.com/sapaborovskis",
+    "telegram": null,
+    "hawk_score": null,
+    "hawk_summary": "Riesige Community (128K TG!). 1M+ Contributors. Aber nur 3 GitHub Repos.",
+    "milestones": "Platform Growth",
+    "community": {"tg_members": 128000}
+  },
+  "VIRTUAL": {
+    "website": "https://virtuals.io",
+    "github": null,
+    "twitter": "https://x.com/virtuals_io",
+    "telegram": null,
+    "hawk_score": null,
+    "hawk_summary": "AI-Agent Plattform. $412M MC. Ökosystem wächst. Hype-getrieben.",
+    "milestones": "Agent Ecosystem Expansion",
+    "community": {}
+  },
+  "ZAMA": {
+    "website": "https://zama.ai",
+    "github": null,
+    "twitter": null,
+    "telegram": null,
+    "hawk_score": null,
+    "hawk_summary": "⚠️ Token hat wahrscheinlich NICHTS mit der echten Firma Zama zu tun. Möglicher Namens-Trittbrettfahrer.",
+    "milestones": "Keine bekannt",
+    "community": {}
+  }
+}

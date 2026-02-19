@@ -9,35 +9,54 @@
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0a0f;--card:#14141f;--border:#2a2a3a;--text:#e0e0e0;--dim:#888;--green:#00e676;--red:#ff5252;--orange:#f7931a;--blue:#64b5f6;--header-bg:#1a1a2e}
 body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:12px;max-width:1200px;margin:0 auto;line-height:1.5}
-h1{color:#ffffff;font-size:1.8rem;margin-bottom:4px;font-weight:700;letter-spacing:2px}
-h2{color:#ffffff;font-size:1.2rem;margin:24px 0 12px;border-bottom:1px solid var(--border);padding-bottom:6px;font-weight:600}
+h1{color:#fff;font-size:1.8rem;margin-bottom:4px;font-weight:700;letter-spacing:2px}
+h2{color:#fff;font-size:1.2rem;margin:24px 0 12px;border-bottom:1px solid var(--border);padding-bottom:6px;font-weight:600}
 .sub{color:var(--dim);font-size:.85rem}
-.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px}
 .stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
 .stat .label{color:var(--dim);font-size:.75rem;text-transform:uppercase;letter-spacing:1px}
 .stat .value{font-size:1.5rem;font-weight:700;margin-top:4px}
+.green{color:var(--green)}.red{color:var(--red)}.dim{color:var(--dim)}
+
+/* Portfolio Accordion */
+.portfolio-list{display:flex;flex-direction:column;gap:8px}
+.coin-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.coin-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;align-items:center;padding:14px 16px;cursor:pointer;user-select:none;gap:8px;transition:background .15s}
+.coin-row:hover{background:rgba(255,255,255,.03)}
+.coin-symbol{font-weight:700;font-size:1.05rem}
+.coin-name{color:var(--dim);font-size:.75rem}
+.coin-val{font-size:.9rem;text-align:right}
+.coin-arrow{color:var(--dim);font-size:.7rem;transition:transform .25s;margin-left:6px}
+.coin-card.open .coin-arrow{transform:rotate(180deg)}
+
+/* Accordion details */
+.coin-details{max-height:0;overflow:hidden;transition:max-height .35s ease;border-top:0 solid var(--border)}
+.coin-card.open .coin-details{max-height:600px;border-top-width:1px}
+.coin-details-inner{padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.detail-section{background:rgba(255,255,255,.02);border-radius:8px;padding:12px}
+.detail-section h4{font-size:.8rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.detail-section h4.orange{color:var(--orange)}
+.detail-section h4.blue{color:var(--blue)}
+.detail-section p{font-size:.85rem;color:var(--dim);line-height:1.6}
+.detail-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.detail-links a{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--blue);text-decoration:none;font-size:.8rem;transition:background .15s}
+.detail-links a:hover{background:rgba(100,181,246,.1)}
+.community-stat{display:flex;gap:16px;font-size:.85rem}
+.community-stat span{color:var(--dim)}
+.community-stat strong{color:var(--text)}
+
+/* Sold coins table */
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px}
+.overflow-x{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:.85rem}
-th{background:var(--header-bg);color:#ffffff;text-align:left;padding:8px 6px;position:sticky;top:0}
+th{background:var(--header-bg);color:#fff;text-align:left;padding:8px 6px;position:sticky;top:0}
 td{padding:7px 6px;border-bottom:1px solid var(--border)}
 tr:hover{background:rgba(255,255,255,.03)}
-.green{color:var(--green)}.red{color:var(--red)}.dim{color:var(--dim)}
 .badge{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.7rem;font-weight:600;text-transform:uppercase}
-.badge-active{background:rgba(0,230,118,.15);color:var(--green)}
-.badge-watchlist{background:rgba(100,181,246,.15);color:var(--blue)}
 .badge-sold{background:rgba(255,82,82,.15);color:var(--red)}
-.badge-nogo{background:rgba(255,82,82,.15);color:var(--red)}
-.badge-deepdive{background:rgba(247,147,26,.15);color:var(--orange)}
-.badge-setup{background:rgba(0,230,118,.15);color:var(--green)}
-.badge-bought{background:rgba(0,230,118,.15);color:var(--green)}
-.badge-rejected{background:rgba(255,82,82,.12);color:var(--red)}
-.overflow-x{overflow-x:auto}
-.chart-wrap{height:300px;position:relative}
-.lesson{margin-bottom:12px;padding:12px;background:rgba(247,147,26,.05);border-left:3px solid var(--orange);border-radius:0 8px 8px 0}
-.lesson .code{color:var(--orange);font-weight:700;margin-right:8px}
-.lesson .rule{color:var(--green);font-size:.82rem;margin-top:4px}
-#loading{text-align:center;padding:60px;color:var(--dim);font-size:1.2rem}
-/* Accordion Scanner Cards */
+.badge-watchlist{background:rgba(100,181,246,.15);color:var(--blue)}
+
+/* Scanner */
 .scanner-card{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:10px;overflow:hidden}
 .scanner-header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;cursor:pointer;user-select:none;gap:10px}
 .scanner-header:hover{background:rgba(255,255,255,.03)}
@@ -54,7 +73,22 @@ tr:hover{background:rgba(255,255,255,.03)}
 .scanner-row .label{color:var(--dim)}
 .scanner-row .val{font-weight:600}
 .scanner-reason{margin-top:8px;padding:10px;background:rgba(255,255,255,.03);border-radius:8px;font-size:.83rem;line-height:1.5;color:var(--dim)}
-@media(max-width:600px){h1{font-size:1.3rem}h2{font-size:1rem}table{font-size:.68rem}td,th{padding:4px 3px}.stat .value{font-size:1rem}.stat .label{font-size:.65rem}.stats{gap:8px}.stat{padding:10px}.scanner-symbol{font-size:.95rem}.scanner-narrative{font-size:.7rem}.scanner-score{font-size:.85rem;padding:2px 8px}.scanner-row{font-size:.78rem}.scanner-reason{font-size:.75rem}.lesson{padding:10px;font-size:.82rem}.lesson .rule{font-size:.75rem}}
+.chart-wrap{height:300px;position:relative}
+.lesson{margin-bottom:12px;padding:12px;background:rgba(247,147,26,.05);border-left:3px solid var(--orange);border-radius:0 8px 8px 0}
+.lesson .code{color:var(--orange);font-weight:700;margin-right:8px}
+.lesson .rule{color:var(--green);font-size:.82rem;margin-top:4px}
+#loading{text-align:center;padding:60px;color:var(--dim);font-size:1.2rem}
+
+@media(max-width:700px){
+  .coin-row{grid-template-columns:1.5fr 1fr 1fr 1fr;font-size:.8rem;padding:10px 12px}
+  .coin-row .hide-mobile{display:none}
+  .coin-details-inner{grid-template-columns:1fr}
+  h1{font-size:1.3rem}
+  .stat .value{font-size:1rem}
+  .stat .label{font-size:.65rem}
+  table{font-size:.7rem}
+  td,th{padding:4px 3px}
+}
 </style>
 </head>
 <body>
@@ -62,27 +96,28 @@ tr:hover{background:rgba(255,255,255,.03)}
 <div id="app" style="display:none">
 
 <header style="margin-bottom:20px">
-<h1>JC INV PORTFOLIO</h1>
+<h1>🏦 JC INV PORTFOLIO</h1>
 <div class="sub" id="lastUpdate"></div>
 </header>
 
 <div class="stats" id="statsGrid"></div>
 
-<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 3v18"/></svg>Portfolio Holdings</h2>
-<div class="card overflow-x"><table id="holdingsTable"><thead><tr>
-<th>Coin</th><th>Menge</th><th>Entry</th><th>Aktuell</th><th>Wert</th><th>P&L%</th><th>Status</th>
-</tr></thead><tbody></tbody></table></div>
+<h2 style="color:var(--orange)">📊 Portfolio Holdings</h2>
+<div class="portfolio-list" id="portfolioList"></div>
 
-<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="#fff"/></svg>Watchlist</h2>
+<h2 style="color:var(--red)">💀 Verkaufte Coins</h2>
+<div class="card overflow-x" id="soldSection"></div>
+
+<h2>🎯 Watchlist</h2>
 <div class="card overflow-x" id="watchlistSection"></div>
 
-<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" style="vertical-align:-3px;margin-right:6px"><circle cx="10" cy="10" r="7"/><line x1="15" y1="15" x2="21" y2="21"/></svg>Scanner Ergebnisse</h2>
+<h2>🔍 Scanner Ergebnisse</h2>
 <div id="scannerCards"></div>
 
-<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><polyline points="3,17 9,11 13,15 21,7"/><polyline points="16,7 21,7 21,12"/></svg>Portfolio Entwicklung</h2>
+<h2>📈 Portfolio Entwicklung</h2>
 <div class="card chart-wrap"><canvas id="priceChart"></canvas></div>
 
-<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Lessons Learned</h2>
+<h2>📚 Lessons Learned</h2>
 <div class="card" id="lessonsSection"></div>
 
 </div>
@@ -91,8 +126,12 @@ tr:hover{background:rgba(255,255,255,.03)}
 const $ = s => document.querySelector(s);
 const fmt = (n,d=2) => n!=null ? Number(n).toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d}) : '–';
 const fmtVal = n => n!=null ? '$' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:0,maximumFractionDigits:0}) : '–';
-const fmtPrice = n => n!=null ? '$' + (n < 0.01 ? Number(n).toFixed(5) : Number(n).toLocaleString('de-DE',{minimumFractionDigits:3,maximumFractionDigits:3})) : '–';
-const fmtUsd = n => '$' + fmt(n);
+const fmtPrice = n => {
+  if(n==null) return '–';
+  if(n < 0.01) return '$' + Number(n).toFixed(5);
+  if(n < 1) return '$' + Number(n).toFixed(4);
+  return '$' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+};
 const fmtCompact = n => {
   if(!n) return '–';
   if(n>=1e9) return '$'+fmt(n/1e9,1)+'B';
@@ -102,34 +141,42 @@ const fmtCompact = n => {
 };
 const pnlClass = v => v >= 0 ? 'green' : 'red';
 const pnlSign = v => v >= 0 ? '+' : '';
+const fmtNum = n => n ? n.toLocaleString('de-DE') : '–';
 
 async function init() {
-  let data;
+  let data, details;
+  const base = 'https://raw.githubusercontent.com/JPSigmaflow/Milo/main/';
+  const t = Date.now();
   try {
-    const r = await fetch('https://raw.githubusercontent.com/JPSigmaflow/Milo/main/data.json?t=' + Date.now());
-    data = await r.json();
+    const [r1, r2] = await Promise.all([
+      fetch(base + 'data.json?t=' + t),
+      fetch(base + 'coin_details.json?t=' + t)
+    ]);
+    data = await r1.json();
+    details = await r2.json().catch(() => ({}));
   } catch(e) {
-    $('#loading').textContent = '❌ Could not load data.json';
+    $('#loading').textContent = '❌ Could not load data';
     return;
   }
   $('#loading').style.display = 'none';
   $('#app').style.display = 'block';
 
-  // Header
   const d = new Date(data.exported_at);
   $('#lastUpdate').textContent = `Letzte Aktualisierung: ${d.toLocaleDateString('de-DE')} ${d.toLocaleTimeString('de-DE')} UTC`;
 
-  // Active holdings
   const active = data.holdings.filter(h => h.status === 'active');
-  const watchlistHoldings = data.holdings.filter(h => h.status === 'watchlist');
+  const sold = data.holdings.filter(h => h.status === 'sold' || (h.sold_price && h.sold_price > 0));
+  const watchlist = data.holdings.filter(h => h.status === 'watchlist' && !(h.sold_price && h.sold_price > 0));
+
+  // Get latest 24h change per symbol from price_history
+  const changes = {};
+  (data.price_history||[]).forEach(p => { changes[p.symbol] = p.change_24h; });
 
   // Stats
   let totalValue = 0, totalInvested = 0;
   active.forEach(h => {
-    const val = h.amount * (h.current_price || 0);
-    const inv = h.amount * h.entry_price;
-    totalValue += val;
-    totalInvested += inv;
+    totalValue += h.amount * (h.current_price || 0);
+    totalInvested += h.amount * h.entry_price;
   });
   const totalPnl = totalInvested > 0 ? ((totalValue - totalInvested) / totalInvested * 100) : 0;
   const totalPnlAbs = totalValue - totalInvested;
@@ -142,52 +189,105 @@ async function init() {
     <div class="stat"><div class="label">Positionen</div><div class="value">${active.length}</div></div>
   `;
 
-  // Holdings table
-  const tbody = $('#holdingsTable tbody');
+  // Portfolio with accordion
+  const listDiv = $('#portfolioList');
+  active.sort((a,b) => (b.amount * (b.current_price||0)) - (a.amount * (a.current_price||0)));
+  
   active.forEach(h => {
     const val = h.amount * (h.current_price || 0);
     const pnl = h.entry_price > 0 ? ((h.current_price - h.entry_price) / h.entry_price * 100) : 0;
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><strong>${h.symbol}</strong><br><span class="dim">${h.name}</span></td>
-      <td>${fmt(h.amount,0)}</td>
-      <td>${fmtPrice(h.entry_price)}</td>
-      <td>${fmtPrice(h.current_price)}</td>
-      <td>${fmtVal(val)}</td>
-      <td class="${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></td>
-      <td><span class="badge badge-${h.status}">${h.status}</span></td>
+    const chg = changes[h.symbol];
+    const det = details[h.symbol] || {};
+    
+    const card = document.createElement('div');
+    card.className = 'coin-card';
+    
+    // Links
+    let linksHtml = '';
+    if(det.website) linksHtml += `<a href="${det.website}" target="_blank">🌐 Website</a>`;
+    if(det.github) linksHtml += `<a href="${det.github}" target="_blank">💻 GitHub</a>`;
+    if(det.twitter) linksHtml += `<a href="${det.twitter}" target="_blank">🐦 X/Twitter</a>`;
+    if(det.telegram) linksHtml += `<a href="${det.telegram}" target="_blank">💬 Telegram</a>`;
+    
+    // Community
+    let communityHtml = '';
+    if(det.community) {
+      if(det.community.tg_members) communityHtml += `<span>💬 TG: <strong>${fmtNum(det.community.tg_members)}</strong></span>`;
+      if(det.community.twitter_followers) communityHtml += `<span>🐦 Twitter: <strong>${fmtNum(det.community.twitter_followers)}</strong></span>`;
+    }
+    if(!communityHtml) communityHtml = '<span>Keine Daten</span>';
+
+    card.innerHTML = `
+      <div class="coin-row" onclick="this.parentElement.classList.toggle('open')">
+        <div>
+          <span class="coin-symbol">${h.symbol}</span> <span class="coin-arrow">▼</span>
+          <div class="coin-name">${h.name} · ${h.chain||''}</div>
+        </div>
+        <div class="coin-val">${fmtPrice(h.current_price)}</div>
+        <div class="coin-val hide-mobile">${fmtPrice(h.entry_price)}</div>
+        <div class="coin-val ${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></div>
+        <div class="coin-val hide-mobile">${fmtVal(val)}</div>
+        <div class="coin-val ${chg >= 0 ? 'green' : 'red'}">${chg != null ? pnlSign(chg)+fmt(chg)+'%' : '–'}</div>
+      </div>
+      <div class="coin-details">
+        <div class="coin-details-inner">
+          <div class="detail-section">
+            <h4 class="orange">📊 HAWK Analyse</h4>
+            <p>${det.hawk_summary || 'Keine Analyse verfügbar'}</p>
+            ${det.hawk_score != null ? `<p style="margin-top:6px;color:var(--orange)">Score: <strong>${det.hawk_score}/100</strong></p>` : ''}
+          </div>
+          <div class="detail-section">
+            <h4 class="blue">🎯 Nächste Meilensteine</h4>
+            <p>${det.milestones || 'Keine bekannt'}</p>
+          </div>
+          <div class="detail-section">
+            <h4 class="blue">🔗 Links</h4>
+            <div class="detail-links">${linksHtml || '<span class="dim">Keine Links</span>'}</div>
+          </div>
+          <div class="detail-section">
+            <h4 class="orange">📈 Community</h4>
+            <div class="community-stat">${communityHtml}</div>
+          </div>
+        </div>
+      </div>
     `;
-    tbody.appendChild(tr);
+    listDiv.appendChild(card);
   });
 
-  // Sold holdings (FHE)
-  const sold = data.holdings.filter(h => h.status === 'sold' || (h.sold_price && h.sold_price > 0));
-  if (sold.length) {
+  // Column headers for portfolio
+  const headerDiv = document.createElement('div');
+  headerDiv.style.cssText = 'display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;padding:6px 16px;font-size:.75rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px';
+  headerDiv.innerHTML = '<div>Coin</div><div style="text-align:right">Preis</div><div style="text-align:right" class="hide-mobile">Entry</div><div style="text-align:right">P&L%</div><div style="text-align:right" class="hide-mobile">Wert</div><div style="text-align:right">24h</div>';
+  listDiv.insertBefore(headerDiv, listDiv.firstChild);
+
+  // Sold coins table
+  const soldDiv = $('#soldSection');
+  if(sold.length) {
+    let html = '<table><thead><tr><th>Coin</th><th>Entry</th><th>Exit</th><th>P&L%</th><th>Kaufdatum</th><th>Verkaufsdatum</th><th>Status</th></tr></thead><tbody>';
     sold.forEach(h => {
-      const pnl = h.entry_price > 0 && h.sold_price ? ((h.sold_price - h.entry_price) / h.entry_price * 100) : 0;
-      const tr = document.createElement('tr');
-      tr.style.opacity = '0.6';
-      tr.innerHTML = `
+      const exitPrice = h.sold_price || h.current_price;
+      const pnl = h.entry_price > 0 && exitPrice ? ((exitPrice - h.entry_price) / h.entry_price * 100) : 0;
+      html += `<tr>
         <td><strong>${h.symbol}</strong><br><span class="dim">${h.name}</span></td>
-        <td>${fmt(h.amount,0)}</td>
         <td>${fmtPrice(h.entry_price)}</td>
-        <td>${h.sold_price ? fmtPrice(h.sold_price) : '–'}</td>
-        <td>–</td>
+        <td>${h.sold_price ? fmtPrice(h.sold_price) : fmtPrice(h.current_price)}</td>
         <td class="${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></td>
-        <td><span class="badge badge-sold">${h.sold_date ? 'sold '+h.sold_date : h.status}</span></td>
-      `;
-      tbody.appendChild(tr);
+        <td>${h.entry_date || '–'}</td>
+        <td>${h.sold_date || '–'}</td>
+        <td><span class="badge badge-sold">${h.status}</span></td>
+      </tr>`;
     });
+    html += '</tbody></table>';
+    soldDiv.innerHTML = html;
+  } else {
+    soldDiv.innerHTML = '<div class="dim" style="padding:12px">Keine verkauften Coins</div>';
   }
 
   // Watchlist
   const wlDiv = $('#watchlistSection');
-  const allWl = [...watchlistHoldings, ...data.holdings.filter(h => h.status === 'watchlist' && h.amount === 0)];
-  // Deduplicate
   const seen = new Set();
-  const wlUnique = allWl.filter(h => { if(seen.has(h.symbol)) return false; seen.add(h.symbol); return true; });
-  
-  if (wlUnique.length) {
+  const wlUnique = watchlist.filter(h => { if(seen.has(h.symbol)) return false; seen.add(h.symbol); return true; });
+  if(wlUnique.length) {
     let html = '<table><thead><tr><th>Coin</th><th>Chain</th><th>Preis</th><th>Entry</th></tr></thead><tbody>';
     wlUnique.forEach(h => {
       html += `<tr><td><strong>${h.symbol}</strong> ${h.name}</td><td>${h.chain||'–'}</td><td>${h.current_price ? fmtPrice(h.current_price) : '–'}</td><td>${h.entry_price > 0 ? fmtPrice(h.entry_price) : '–'}</td></tr>`;
@@ -198,7 +298,7 @@ async function init() {
     wlDiv.innerHTML = '<div class="dim">Keine Coins auf der Watchlist</div>';
   }
 
-  // Scanner (Accordion Cards)
+  // Scanner
   const scanDiv = $('#scannerCards');
   const scanCoins = data.scanner_coins||[];
   if(scanCoins.length){
@@ -234,7 +334,7 @@ async function init() {
     scanDiv.innerHTML = '<div class="card"><div class="dim">Keine Scanner-Ergebnisse</div></div>';
   }
 
-  // Chart - use pre-calculated portfolio_history from export
+  // Chart
   const portHist = data.portfolio_history || [];
   const chartData = portHist.map(p => {
     const raw = p.recorded_at.replace(' ','T');
@@ -242,27 +342,21 @@ async function init() {
     return { t: ts, total: p.portfolio_value };
   }).filter(d => !isNaN(d.t) && d.total > 0);
 
-  if (chartData.length > 1) {
+  if(chartData.length > 1) {
     new Chart($('#priceChart'), {
       type: 'line',
       data: {
-        labels: chartData.map(d => {
-          const dt = new Date(d.t);
-          return dt.toLocaleString('de-DE', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'});
-        }),
+        labels: chartData.map(d => new Date(d.t).toLocaleString('de-DE', {month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'})),
         datasets: [{
           label: 'Portfolio Wert ($)',
           data: chartData.map(d => d.total),
           borderColor: '#f7931a',
           backgroundColor: 'rgba(247,147,26,0.1)',
-          fill: true,
-          tension: 0.3,
-          pointRadius: 3
+          fill: true, tension: 0.3, pointRadius: 3
         }]
       },
       options: {
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: true, maintainAspectRatio: false,
         plugins: { legend: { labels: { color: '#e0e0e0' } } },
         scales: {
           x: { ticks: { color: '#888', maxTicksLimit: 8 }, grid: { color: '#2a2a3a' } },
@@ -271,12 +365,12 @@ async function init() {
       }
     });
   } else {
-    $('#priceChart').parentElement.innerHTML = '<div class="dim" style="padding:40px;text-align:center">📊 Chart wird mit jedem Update genauer (alle 2h)</div>';
+    $('#priceChart').parentElement.innerHTML = '<div class="dim" style="padding:40px;text-align:center">📊 Chart wird mit jedem Update genauer</div>';
   }
 
   // Lessons
   const lDiv = $('#lessonsSection');
-  if (data.lessons && data.lessons.length) {
+  if(data.lessons && data.lessons.length) {
     lDiv.innerHTML = data.lessons.map(l => `
       <div class="lesson">
         <span class="code">${l.code}</span><strong>${l.title}</strong>
@@ -288,7 +382,6 @@ async function init() {
     lDiv.innerHTML = '<div class="dim">Keine Lessons</div>';
   }
 }
-
 init();
 </script>
 </body>
