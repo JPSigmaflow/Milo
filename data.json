@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-19T05:46:00Z",
+  "exported_at": "2026-02-19T05:56:27Z",
   "usdt_free": 1064.25558708,
   "last_update": "2026-02-12",
   "total_value": 5860.69,
@@ -7,6 +7,24 @@
   "total_invested": 5616.21,
   "pnl": 244.48,
   "pnl_pct": 4.35,
+  "bilanz": {
+    "chris_bezahlt_eur": 5500,
+    "juri_bezahlt_eur": 3141,
+    "gesamt_eur": 8641,
+    "soll_50_eur": 4320.50,
+    "chris_diff_eur": 1179.50,
+    "juri_schuldet_chris_eur": 1179.50,
+    "realized_pnl_usd": -355.72,
+    "total_fees_usd": 0,
+    "pending_deposit": "€4.000 (je €2.000 Chris + Juri) — SEPA ausstehend",
+    "posten": [
+      {"beschreibung": "MEXC Überweisung #1", "betrag": 2500, "von": "Chris"},
+      {"beschreibung": "MEXC Überweisung #2", "betrag": 2500, "von": "Chris"},
+      {"beschreibung": "MEXC Einzahlung 13. Feb", "betrag": 500, "von": "Chris"},
+      {"beschreibung": "iMac + Kleinigkeiten", "betrag": 791, "von": "Juri"},
+      {"beschreibung": "Juri → Chris Ausgleich", "betrag": 2350, "von": "Juri"}
+    ]
+  },
   "holdings": [{"symbol":"ALLO","name":"Allora Network","amount":6042.380000000000109,"entry_price":0.08269999999999999574,"exchange":"MEXC","chain":"Cosmos","status":"active","entry_date":"2026-02-13","current_price":0.0987719999999999987,"updated_at":"2026-02-19 05:16:10","sold_price":null,"sold_date":null},
 {"symbol":"CFG","name":"Centrifuge","amount":6207.170000000000072,"entry_price":0.08100000000000000255,"exchange":"MEXC","chain":"Polkadot","status":"active","entry_date":"2026-02-12","current_price":0.08274299999999999711,"updated_at":"2026-02-19 05:16:10","sold_price":null,"sold_date":null},
 {"symbol":"CLANKER","name":"Clanker Tokenbot","amount":13.28999999999999915,"entry_price":37.72999999999999687,"exchange":"MEXC","chain":"Base","status":"active","entry_date":"2026-02-12","current_price":31.98789999999999978,"updated_at":"2026-02-19 05:16:10","sold_price":null,"sold_date":null},
