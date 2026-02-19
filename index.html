@@ -543,6 +543,9 @@ async function init() {
     
     '<tr style="background:rgba(247,147,26,.08);font-weight:700;font-size:.85rem"><td style="padding:10px;border-top:2px solid var(--orange)">GESAMT P&L (realisiert + unrealisiert)</td><td style="padding:10px;border-top:2px solid var(--orange);text-align:right;color:'+clr(totalPnl)+'">'+sgn(totalPnl)+fU(totalPnl)+'</td></tr>' +
     '</table>' +
+    '<div style="margin-top:8px;padding:10px 12px;background:rgba(255,255,255,.02);border-radius:8px;font-size:.65rem;color:var(--dim)">' +
+    '✓ Prüfsumme: Eingezahlt '+fU(cry.total_eingezahlt_usd)+' = Coins (Entry) '+fU(coinCost)+' + USDT '+fU(usdt)+' + Verluste '+fU(Math.abs(rPnl))+' + Fees '+fU(fees)+' = '+fU(coinCost+usdt+Math.abs(rPnl)+fees) +
+    '</div>' +
     
     // ── 4. TRANSAKTIONSHISTORIE ──
     '<h4 '+SEC('orange')+'>IV. Transaktionshistorie</h4>' +
