@@ -541,9 +541,9 @@ async function init() {
     // ── 5. GESELLSCHAFTER-AUSGLEICH ──
     '<h4 '+SEC('blue')+'>V. Gesellschafter-Ausgleich (EUR)</h4>' +
     '<table '+T+'>' +
-    '<tr style="background:var(--header-bg)"><th '+H+'>Gesellschafter</th><th '+HR+'>Soll (50%)</th><th '+HR+'>Eingezahlt</th><th '+HR+'>Differenz</th></tr>' +
-    '<tr><td '+S+'>Chris Schulz</td><td '+R+'>'+fE(b.soll_50_eur)+'</td><td '+R+'>'+fE(b.chris_bezahlt_eur)+'</td><td '+R+' style="color:var(--green)">+'+fE(b.chris_diff_eur)+'</td></tr>' +
-    '<tr><td '+S+'>Juri</td><td '+R+'>'+fE(b.soll_50_eur)+'</td><td '+R+'>'+fE(b.juri_bezahlt_eur)+'</td><td '+R+' style="color:var(--red)">-'+fE(b.juri_schuldet_chris_eur)+'</td></tr>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Gesellschafter</th><th '+HR+'>Eingezahlt</th><th '+HR+' colspan="2">Status</th></tr>' +
+    '<tr><td '+S+'>Chris Schulz</td><td '+R+'>'+fE(b.chris_bezahlt_eur)+'</td><td '+R+' colspan="2" style="color:var(--green)">'+( b.status||'–')+'</td></tr>' +
+    '<tr><td '+S+'>Juri</td><td '+R+'>'+fE(b.juri_bezahlt_eur)+'</td><td '+R+' colspan="2" style="color:var(--green)">'+(b.status||'–')+'</td></tr>' +
     '</table>' +
     
     // ── ERGEBNIS-BOX ──
@@ -551,7 +551,7 @@ async function init() {
       '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;text-align:center">' +
         '<div><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase">Gesamtvermögen</div><div style="font-size:1rem;font-weight:700;margin-top:4px">'+fU(totalAssets)+'</div></div>' +
         '<div><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase">Gesamt P&L</div><div style="font-size:1rem;font-weight:700;color:'+clr(totalPnl)+';margin-top:4px">'+sgn(totalPnl)+fU(totalPnl)+'</div></div>' +
-        '<div><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase">Ausgleich offen</div><div style="font-size:1rem;font-weight:700;color:var(--orange);margin-top:4px">'+fE(b.juri_schuldet_chris_eur)+'</div></div>' +
+        '<div><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase">Ausgleich</div><div style="font-size:1rem;font-weight:700;color:var(--green);margin-top:4px">'+(b.status||'–')+'</div></div>' +
       '</div>' +
       (b.pending_deposit?'<div style="font-size:.65rem;color:var(--orange);margin-top:12px;padding-top:10px;border-top:1px solid var(--border);text-align:center">⏳ '+b.pending_deposit+'</div>':'') +
     '</div>' +
