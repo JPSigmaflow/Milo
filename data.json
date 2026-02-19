@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-19T06:17:01Z",
+  "exported_at": "2026-02-19T06:18:38Z",
   "usdt_free": 1064.25558708,
   "last_update": "2026-02-12",
   "total_value": 5860.69,
@@ -26,8 +26,12 @@
     },
     "crypto": {
       "titel": "Crypto-Portfolio (USD)",
+      "total_eingezahlt_usd": 7033.59,
       "kapital_in_coins_usd": 5616.21,
       "usdt_frei_usd": 1064.25558708,
+      "realized_pnl_fhe": -87.33,
+      "realized_pnl_deai": -167.82,
+      "realized_pnl_lunai": -97.03,
       "realized_pnl_usd": -352.18
     }
   },
