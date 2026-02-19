@@ -507,17 +507,16 @@ async function init() {
     // ── 2. VERMÖGENSÜBERSICHT (Aktiva) ──
     '<h4 '+SEC('orange')+'>II. Vermögensübersicht — Aktiva (USD)</h4>' +
     '<table '+T+'>' +
-    '<tr style="background:var(--header-bg)"><th '+H+'>Position</th><th '+HR+'>Menge</th><th '+HR+'>Kurs</th><th '+HR+'>Marktwert</th><th '+HR+'>Einstieg</th><th '+HR+'>G/V</th></tr>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Position</th><th '+HR+'>Wert</th><th '+HR+'>G/V</th></tr>' +
     active.map(h=>{
       const val=h.amount*(h.current_price||0);
       const cost=h.amount*h.entry_price;
       const pnl=val-cost;
       const pct=cost>0?((val/cost-1)*100):0;
-      return '<tr><td '+S+'>'+h.symbol+' <span style="color:var(--dim);font-size:.55rem">('+h.exchange+')</span></td><td '+R+'>'+Number(h.amount).toLocaleString('de-DE',{maximumFractionDigits:2})+'</td><td '+R+'>'+fmtPrice(h.current_price)+'</td><td '+R+'>'+fU(val)+'</td><td '+R+' style="color:var(--dim)">'+fU(cost)+'</td><td '+R+' style="color:'+clr(pnl)+'">'+sgn(pnl)+pct.toFixed(1)+'%</td></tr>';
+      return '<tr><td '+S+'>'+h.symbol+'</td><td '+R+'>'+fU(val)+'</td><td '+R+' style="color:'+clr(pnl)+'">'+sgn(pnl)+pct.toFixed(1)+'%</td></tr>';
     }).join('') +
-    '<tr><td '+S+' colspan="3">USDT (liquide Mittel)</td><td '+R+' colspan="3">'+fU(usdt)+'</td></tr>' +
-    '<tr '+SUM+'><td '+S+' colspan="3">Gesamtvermögen (Crypto)</td><td '+R+'>'+fU(totalAssets)+'</td><td '+R+' style="color:var(--dim)">'+fU(coinCost)+'</td><td '+R+' style="color:'+clr(uPnl)+'">'+sgn(uPnl)+fU(uPnl)+'</td></tr>' +
-    (hardwareEur>0?'<tr><td '+S+' colspan="3">Hardware/Ausstattung (Sachanlage)</td><td '+R+' colspan="3">'+fE(hardwareEur)+'</td></tr>':'') +
+    '<tr><td '+S+'>USDT (liquide Mittel)</td><td '+R+'>'+fU(usdt)+'</td><td '+R+'></td></tr>' +
+    '<tr '+SUM+'><td '+S+'>Gesamtvermögen</td><td '+R+'>'+fU(totalAssets)+'</td><td '+R+' style="color:'+clr(uPnl)+'">'+sgn(uPnl)+fU(uPnl)+'</td></tr>' +
     '</table>' +
     
     // ── 3. GEWINN- & VERLUSTRECHNUNG ──
@@ -549,21 +548,21 @@ async function init() {
     
     // ── 4. TRANSAKTIONSHISTORIE ──
     '<h4 '+SEC('orange')+'>IV. Transaktionshistorie</h4>' +
-    '<div style="overflow-x:auto"><table '+T+'>' +
-    '<tr style="background:var(--header-bg)"><th '+H+'>Datum</th><th '+H+'>Typ</th><th '+H+'>Coin</th><th '+HR+'>Menge</th><th '+HR+'>Kurs (USD)</th><th '+HR+'>Summe (USD)</th><th '+H+'>Börse</th></tr>' +
+    '<table '+T+'>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Datum</th><th '+H+'>Transaktion</th><th '+HR+'>Summe</th></tr>' +
     txs.map(t=>{
       const tc = t.type==='BUY'?'var(--green)':t.type==='SELL'?'var(--red)':'var(--blue)';
       const label = t.type==='BUY'?'KAUF':t.type==='SELL'?'VERKAUF':t.type==='DEPOSIT'?'EINLAGE':t.type==='FEE'?'GEBÜHR':t.type;
-      return '<tr><td '+S+'>'+t.tx_date.slice(0,10)+'</td><td '+S+' style="color:'+tc+';font-weight:600;font-size:.65rem">'+label+'</td><td '+S+'>'+(t.coin||'–')+'</td><td '+R+'>'+(t.amount>0?Number(t.amount).toLocaleString('de-DE',{maximumFractionDigits:2}):'–')+'</td><td '+R+'>'+(t.price_usd>0?fU(t.price_usd):'–')+'</td><td '+R+'>'+fU(t.total_usd)+'</td><td '+S+'>'+(t.exchange||'–')+'</td></tr>';
+      return '<tr><td '+S+' style="white-space:nowrap">'+t.tx_date.slice(0,10)+'</td><td '+S+'><span style="color:'+tc+';font-weight:600;font-size:.6rem">'+label+'</span> '+(t.coin||'')+'</td><td '+R+'>'+fU(t.total_usd)+'</td></tr>';
     }).join('') +
-    '</table></div>' +
+    '</table>' +
     
     // ── 5. GESELLSCHAFTER ──
     '<h4 '+SEC('blue')+'>V. Gesellschafter</h4>' +
     '<table '+T+'>' +
-    '<tr style="background:var(--header-bg)"><th '+H+'>Name</th><th '+HR+'>Eingezahlt (EUR)</th><th '+HR+'>Anteil</th><th '+HR+'>Status</th></tr>' +
-    '<tr><td '+S+'>Chris Schulz</td><td '+R+'>'+fE(biz.chris_eur)+'</td><td '+R+'>50%</td><td '+R+' style="color:var(--green)">'+(b.status||'–')+'</td></tr>' +
-    '<tr><td '+S+'>Juri</td><td '+R+'>'+fE(biz.juri_eur)+'</td><td '+R+'>50%</td><td '+R+' style="color:var(--green)">'+(b.status||'–')+'</td></tr>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Name</th><th '+HR+'>Eingezahlt</th><th '+HR+'>Status</th></tr>' +
+    '<tr><td '+S+'>Chris Schulz (50%)</td><td '+R+'>'+fE(biz.chris_eur)+'</td><td '+R+' style="color:var(--green)">'+(b.status||'–')+'</td></tr>' +
+    '<tr><td '+S+'>Juri (50%)</td><td '+R+'>'+fE(biz.juri_eur)+'</td><td '+R+' style="color:var(--green)">'+(b.status||'–')+'</td></tr>' +
     '</table>' +
     
     // ── ZUSAMMENFASSUNG ──
