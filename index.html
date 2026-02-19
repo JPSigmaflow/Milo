@@ -496,13 +496,13 @@ async function init() {
     
     // ── 1. KAPITALEINLAGEN ──
     '<h4 '+SEC('orange')+'>I. Kapitaleinlagen</h4>' +
-    '<table '+T+'>' +
-    '<tr style="background:var(--header-bg)"><th '+H+'>Datum</th><th '+H+'>Beschreibung</th><th '+H+'>Kategorie</th><th '+HR+'>Betrag</th><th '+H+' style="text-align:center">Investor</th></tr>' +
-    biz.posten.map(p=>'<tr><td '+S+'>'+(p.datum||'–')+'</td><td '+S+'>'+p.beschreibung+'</td><td '+S+'><span style="font-size:.6rem;padding:2px 6px;border-radius:4px;background:'+(p.typ==='Crypto'?'rgba(0,230,118,.1);color:var(--green)':p.typ==='Hardware'?'rgba(100,181,246,.1);color:var(--blue)':'rgba(255,255,255,.05);color:var(--dim)')+'">'+p.typ+'</span></td><td '+R+'>'+fE(p.betrag)+'</td><td '+S+' style="text-align:center">'+p.von+'</td></tr>').join('') +
+    '<div style="overflow-x:auto"><table '+T+'>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Datum</th><th '+H+'>Beschreibung</th><th '+H+'>Kat.</th><th '+HR+'>Betrag</th><th '+H+' style="text-align:center">Von</th></tr>' +
+    biz.posten.map(p=>'<tr><td '+S+' style="white-space:nowrap">'+(p.datum||'–')+'</td><td '+S+'>'+p.beschreibung+'</td><td '+S+'><span style="font-size:.55rem;padding:2px 4px;border-radius:4px;background:'+(p.typ==='Crypto'?'rgba(0,230,118,.1);color:var(--green)':p.typ==='Hardware'?'rgba(100,181,246,.1);color:var(--blue)':'rgba(255,255,255,.05);color:var(--dim)')+'">'+p.typ+'</span></td><td '+R+'>'+fE(p.betrag)+'</td><td '+S+' style="text-align:center">'+p.von+'</td></tr>').join('') +
     '<tr '+SUM+'><td '+S+' colspan="3">Gesamt Business</td><td '+R+'>'+fE(biz.gesamt_eur)+'</td><td '+S+'></td></tr>' +
     '<tr><td '+S+' colspan="3" style="padding-left:20px;color:var(--dim)">↳ davon Crypto-Kapital</td><td '+R+'>'+fE(cryptoEur)+'</td><td '+S+'></td></tr>' +
     '<tr><td '+S+' colspan="3" style="padding-left:20px;color:var(--dim)">↳ davon Hardware/Ausstattung</td><td '+R+'>'+fE(hardwareEur)+'</td><td '+S+'></td></tr>' +
-    '</table>' +
+    '</table></div>' +
     
     // ── 2. VERMÖGENSÜBERSICHT (Aktiva) ──
     '<h4 '+SEC('orange')+'>II. Vermögensübersicht — Aktiva (USD)</h4>' +
