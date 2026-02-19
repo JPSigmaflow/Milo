@@ -452,89 +452,112 @@ async function init() {
   } else {
     lDiv.innerHTML = '<div class="dim" style="padding:16px">Keine Lessons</div>';
   }
-  // Bilanz (collapsed dropdown) — professional P&L
+  // Bilanz — Bank/Steuerberater-tauglicher Finanzbericht
   const bDiv = $('#bilanzSection');
   const b = data.bilanz;
   if(b) {
-    const fmtEur = n => '€' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
-    const fmtUsd = n => '$' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
-    const pnlColor = n => n >= 0 ? 'var(--green)' : 'var(--red)';
-    const pnlSign = n => n >= 0 ? '+' : '';
+    const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+    const fU = n => '$'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+    const clr = n => n>=0?'var(--green)':'var(--red)';
+    const sgn = n => n>=0?'+':'';
     
-    // Calculate unrealized P&L from holdings
-    const activeHoldings = (data.holdings||[]).filter(h=>h.status==='active');
-    const totalCurrentValue = activeHoldings.reduce((s,h)=>s+(h.amount*(h.current_price||0)),0);
-    const totalEntryValue = activeHoldings.reduce((s,h)=>s+(h.amount*h.entry_price),0);
-    const unrealizedPnl = totalCurrentValue - totalEntryValue;
-    const unrealizedPct = totalEntryValue > 0 ? (unrealizedPnl/totalEntryValue*100) : 0;
-    const totalPnl = unrealizedPnl + b.realized_pnl_usd;
+    const active = (data.holdings||[]).filter(h=>h.status==='active');
+    const coinValue = active.reduce((s,h)=>s+(h.amount*(h.current_price||0)),0);
+    const coinCost = active.reduce((s,h)=>s+(h.amount*h.entry_price),0);
+    const uPnl = coinValue - coinCost;
+    const rPnl = b.realized_pnl_usd;
+    const fees = b.total_fees_usd;
+    const totalPnl = uPnl + rPnl - fees;
+    const usdt = data.usdt_free||0;
+    const totalAssets = coinValue + usdt;
     
-    const tblStyle = 'width:100%;border-collapse:collapse;font-size:.75rem';
-    const thStyle = 'text-align:left;padding:8px 10px;font-size:.65rem;text-transform:uppercase;letter-spacing:.5px';
-    const tdStyle = 'padding:7px 10px;border-bottom:1px solid var(--border)';
-    const tdR = 'padding:7px 10px;border-bottom:1px solid var(--border);text-align:right';
+    const txs = data.transactions||[];
+    const buys = txs.filter(t=>t.type==='BUY');
+    const sells = txs.filter(t=>t.type==='SELL');
     
-    bDiv.innerHTML = `<div style="padding:12px 16px 16px">
-      
-      <!-- Kapitalübersicht -->
-      <h4 style="color:var(--orange);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:0 0 10px">💰 Kapitalübersicht</h4>
-      <table style="${tblStyle}">
-        <tr style="background:var(--header-bg)"><th style="${thStyle}">Posten</th><th style="${thStyle};text-align:right">Betrag</th><th style="${thStyle};text-align:center">Von</th></tr>
-        ${b.posten.map(p=>`<tr><td style="${tdStyle}">${p.beschreibung}</td><td style="${tdR}">${fmtEur(p.betrag)}</td><td style="${tdStyle};text-align:center">${p.von}</td></tr>`).join('')}
-        <tr style="font-weight:700;background:rgba(255,255,255,.03)"><td style="${tdStyle}">Gesamtkapital</td><td style="${tdR}">${fmtEur(b.gesamt_eur)}</td><td style="${tdStyle}"></td></tr>
-      </table>
-      
-      <!-- Gewinn/Verlust-Rechnung -->
-      <h4 style="color:var(--orange);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:20px 0 10px">📊 Gewinn- & Verlustrechnung (USD)</h4>
-      <table style="${tblStyle}">
-        <tr style="background:var(--header-bg)"><th style="${thStyle}">Position</th><th style="${thStyle};text-align:right">Betrag</th></tr>
-        <tr><td style="${tdStyle}">Investiert (aktive Coins)</td><td style="${tdR}">${fmtUsd(totalEntryValue)}</td></tr>
-        <tr><td style="${tdStyle}">Aktueller Wert (Coins)</td><td style="${tdR}">${fmtUsd(totalCurrentValue)}</td></tr>
-        <tr><td style="${tdStyle}">Unrealisierte P&L</td><td style="${tdR};color:${pnlColor(unrealizedPnl)}">${pnlSign(unrealizedPnl)}${fmtUsd(unrealizedPnl)} (${pnlSign(unrealizedPct)}${unrealizedPct.toFixed(1)}%)</td></tr>
-        <tr><td style="${tdStyle}">Realisierte Verluste (FHE, DEAI, LUNAI)</td><td style="${tdR};color:var(--red)">${fmtUsd(b.realized_pnl_usd)}</td></tr>
-        <tr><td style="${tdStyle}">Trading-Gebühren</td><td style="${tdR};color:var(--red)">-${fmtUsd(b.total_fees_usd)}</td></tr>
-        <tr style="font-weight:700;background:rgba(255,255,255,.03)"><td style="${tdStyle}">Gesamt P&L</td><td style="${tdR};color:${pnlColor(totalPnl)}">${pnlSign(totalPnl)}${fmtUsd(totalPnl)}</td></tr>
-      </table>
-      
-      <!-- Vermögensübersicht -->
-      <h4 style="color:var(--orange);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:20px 0 10px">🏦 Vermögensübersicht (USD)</h4>
-      <table style="${tblStyle}">
-        <tr style="background:var(--header-bg)"><th style="${thStyle}">Asset</th><th style="${thStyle};text-align:right">Wert</th></tr>
-        ${activeHoldings.map(h=>{
-          const val=h.amount*(h.current_price||0);
-          const pnl=val-(h.amount*h.entry_price);
-          const pct=h.entry_price>0?((h.current_price/h.entry_price-1)*100):0;
-          return '<tr><td style="${tdStyle}">'+h.symbol+' <span style="color:var(--dim);font-size:.65rem">('+h.exchange+')</span></td><td style="${tdR}">'+ fmtUsd(val)+' <span style="color:'+pnlColor(pnl)+';font-size:.65rem">'+pnlSign(pnl)+pct.toFixed(1)+'%</span></td></tr>';
-        }).join('')}
-        <tr><td style="${tdStyle}">USDT (frei)</td><td style="${tdR}">${fmtUsd(data.usdt_free||0)}</td></tr>
-        <tr style="font-weight:700;background:rgba(255,255,255,.03)"><td style="${tdStyle}">Gesamtvermögen</td><td style="${tdR}">${fmtUsd(totalCurrentValue + (data.usdt_free||0))}</td></tr>
-      </table>
-      
-      <!-- 50/50 Aufteilung -->
-      <h4 style="color:var(--blue);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:20px 0 10px">⚖️ 50/50 Aufteilung (EUR)</h4>
-      <table style="${tblStyle}">
-        <tr style="background:var(--header-bg)"><th style="${thStyle}">Person</th><th style="${thStyle};text-align:right">Soll (50%)</th><th style="${thStyle};text-align:right">Bezahlt</th><th style="${thStyle};text-align:right">Differenz</th></tr>
-        <tr><td style="${tdStyle}">Chris</td><td style="${tdR}">${fmtEur(b.soll_50_eur)}</td><td style="${tdR}">${fmtEur(b.chris_bezahlt_eur)}</td><td style="${tdR};color:var(--green)">+${fmtEur(b.chris_diff_eur)} überzahlt</td></tr>
-        <tr><td style="${tdStyle}">Juri</td><td style="${tdR}">${fmtEur(b.soll_50_eur)}</td><td style="${tdR}">${fmtEur(b.juri_bezahlt_eur)}</td><td style="${tdR};color:var(--red)">-${fmtEur(b.juri_schuldet_chris_eur)} offen</td></tr>
-      </table>
-      
-      <!-- Ergebnis-Box -->
-      <div style="margin-top:16px;padding:14px;background:linear-gradient(135deg,rgba(247,147,26,.08),rgba(100,181,246,.05));border-radius:10px;border:1px solid var(--border)">
-        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-          <div>
-            <div style="font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px">Offener Ausgleich</div>
-            <div style="font-size:1rem;font-weight:700;color:var(--orange);margin-top:2px">Juri → Chris: ${fmtEur(b.juri_schuldet_chris_eur)}</div>
-          </div>
-          <div style="text-align:right">
-            <div style="font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px">Portfolio-Performance</div>
-            <div style="font-size:1rem;font-weight:700;color:${pnlColor(totalPnl)};margin-top:2px">${pnlSign(totalPnl)}${fmtUsd(totalPnl)}</div>
-          </div>
-        </div>
-        ${b.pending_deposit ? `<div style="font-size:.65rem;color:var(--orange);margin-top:10px;padding-top:10px;border-top:1px solid var(--border)">⏳ Ausstehend: ${b.pending_deposit}</div>` : ''}
-      </div>
-      
-      <div style="font-size:.6rem;color:var(--dim);margin-top:12px;text-align:right">Stand: ${new Date(data.exported_at).toLocaleString('de-DE',{dateStyle:'medium',timeStyle:'short'})}</div>
-    </div>`;
+    const S = `style="padding:7px 10px;border-bottom:1px solid var(--border)"`;
+    const R = `style="padding:7px 10px;border-bottom:1px solid var(--border);text-align:right;white-space:nowrap"`;
+    const H = `style="text-align:left;padding:8px 10px;font-size:.65rem;text-transform:uppercase;letter-spacing:.5px"`;
+    const HR = `style="text-align:right;padding:8px 10px;font-size:.65rem;text-transform:uppercase;letter-spacing:.5px"`;
+    const T = `style="width:100%;border-collapse:collapse;font-size:.75rem"`;
+    const SEC = c => `style="color:var(--${c});font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:24px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--border)"`;
+    const SUM = `style="font-weight:700;background:rgba(255,255,255,.04)"`;
+    
+    bDiv.innerHTML = '<div style="padding:16px">' +
+    
+    // ── 1. BILANZ (Aktiva / Passiva) ──
+    '<h4 '+SEC('orange')+'>I. Bilanz</h4>' +
+    '<table '+T+'>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Aktiva</th><th '+HR+'>USD</th></tr>' +
+    active.map(h=>'<tr><td '+S+'>'+h.symbol+' <span style="color:var(--dim);font-size:.6rem">'+Number(h.amount).toLocaleString('de-DE')+' × '+fU(h.current_price||0)+'</span></td><td '+R+'>'+fU(h.amount*(h.current_price||0))+'</td></tr>').join('') +
+    '<tr><td '+S+'>USDT (liquide Mittel)</td><td '+R+'>'+fU(usdt)+'</td></tr>' +
+    '<tr '+SUM+'><td '+S+'>Gesamtvermögen</td><td '+R+'>'+fU(totalAssets)+'</td></tr>' +
+    '</table>' +
+    
+    // ── 2. KAPITALEINLAGEN ──
+    '<h4 '+SEC('orange')+'>II. Kapitaleinlagen (EUR)</h4>' +
+    '<table '+T+'>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Datum</th><th '+H+'>Beschreibung</th><th '+HR+'>Betrag</th><th '+H+' style="text-align:center">Investor</th></tr>' +
+    b.posten.map(p=>'<tr><td '+S+'>'+(p.datum||'–')+'</td><td '+S+'>'+p.beschreibung+'</td><td '+R+'>'+fE(p.betrag)+'</td><td '+S+' style="text-align:center">'+p.von+'</td></tr>').join('') +
+    '<tr '+SUM+'><td '+S+'></td><td '+S+'>Gesamt eingezahlt</td><td '+R+'>'+fE(b.gesamt_eur)+'</td><td '+S+'></td></tr>' +
+    '<tr><td '+S+'></td><td '+S+'>davon Chris</td><td '+R+'>'+fE(b.chris_bezahlt_eur)+'</td><td '+S+'></td></tr>' +
+    '<tr><td '+S+'></td><td '+S+'>davon Juri</td><td '+R+'>'+fE(b.juri_bezahlt_eur)+'</td><td '+S+'></td></tr>' +
+    '</table>' +
+    
+    // ── 3. GEWINN- & VERLUSTRECHNUNG ──
+    '<h4 '+SEC('orange')+'>III. Gewinn- & Verlustrechnung (USD)</h4>' +
+    '<table '+T+'>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Position</th><th '+HR+'>Betrag</th></tr>' +
+    
+    '<tr><td '+S+' style="color:var(--blue);font-weight:600" colspan="2">Unrealisierte Positionen (offene Trades)</td></tr>' +
+    '<tr><td '+S+'>Einstandswert (10 Coins)</td><td '+R+'>'+fU(coinCost)+'</td></tr>' +
+    '<tr><td '+S+'>Marktwert aktuell</td><td '+R+'>'+fU(coinValue)+'</td></tr>' +
+    '<tr '+SUM+'><td '+S+'>Unrealisierter Gewinn/Verlust</td><td '+R+' style="color:'+clr(uPnl)+'">'+sgn(uPnl)+fU(uPnl)+'</td></tr>' +
+    
+    '<tr><td '+S+' style="color:var(--blue);font-weight:600;padding-top:14px" colspan="2">Realisierte Positionen (geschlossene Trades)</td></tr>' +
+    (sells.length ? sells.map(s=>{
+      const buy = buys.find(b=>b.coin===s.coin);
+      const loss = s.total_usd - (buy?buy.total_usd:0);
+      return '<tr><td '+S+'>'+s.coin+' — Kauf '+fU(buy?buy.total_usd:0)+' → Verkauf '+fU(s.total_usd)+'</td><td '+R+' style="color:'+clr(loss)+'">'+sgn(loss)+fU(loss)+'</td></tr>';
+    }).join('') : '') +
+    '<tr '+SUM+'><td '+S+'>Realisierter Gewinn/Verlust</td><td '+R+' style="color:'+clr(rPnl)+'">'+fU(rPnl)+'</td></tr>' +
+    
+    '<tr><td '+S+' style="color:var(--blue);font-weight:600;padding-top:14px" colspan="2">Kosten</td></tr>' +
+    '<tr><td '+S+'>Trading-Gebühren</td><td '+R+'>'+fU(fees)+'</td></tr>' +
+    
+    '<tr style="background:rgba(247,147,26,.06);font-weight:700;font-size:.85rem"><td '+S+'>GESAMT P&L</td><td '+R+' style="color:'+clr(totalPnl)+'">'+sgn(totalPnl)+fU(totalPnl)+'</td></tr>' +
+    '</table>' +
+    
+    // ── 4. TRANSAKTIONSHISTORIE ──
+    '<h4 '+SEC('orange')+'>IV. Transaktionshistorie</h4>' +
+    '<div style="overflow-x:auto"><table '+T+'>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Datum</th><th '+H+'>Typ</th><th '+H+'>Coin</th><th '+HR+'>Menge</th><th '+HR+'>Kurs</th><th '+HR+'>Summe</th><th '+H+'>Börse</th></tr>' +
+    txs.map(t=>{
+      const tc = t.type==='BUY'?'var(--green)':t.type==='SELL'?'var(--red)':'var(--dim)';
+      return '<tr><td '+S+'>'+t.tx_date.slice(0,10)+'</td><td '+S+' style="color:'+tc+';font-weight:600">'+t.type+'</td><td '+S+'>'+(t.coin||'–')+'</td><td '+R+'>'+Number(t.amount).toLocaleString('de-DE',{maximumFractionDigits:2})+'</td><td '+R+'>'+(t.price_usd?fU(t.price_usd):'–')+'</td><td '+R+'>'+fU(t.total_usd)+'</td><td '+S+'>'+(t.exchange||'–')+'</td></tr>';
+    }).join('') +
+    '</table></div>' +
+    
+    // ── 5. GESELLSCHAFTER-AUSGLEICH ──
+    '<h4 '+SEC('blue')+'>V. Gesellschafter-Ausgleich (EUR)</h4>' +
+    '<table '+T+'>' +
+    '<tr style="background:var(--header-bg)"><th '+H+'>Gesellschafter</th><th '+HR+'>Soll (50%)</th><th '+HR+'>Eingezahlt</th><th '+HR+'>Differenz</th></tr>' +
+    '<tr><td '+S+'>Chris Schulz</td><td '+R+'>'+fE(b.soll_50_eur)+'</td><td '+R+'>'+fE(b.chris_bezahlt_eur)+'</td><td '+R+' style="color:var(--green)">+'+fE(b.chris_diff_eur)+'</td></tr>' +
+    '<tr><td '+S+'>Juri</td><td '+R+'>'+fE(b.soll_50_eur)+'</td><td '+R+'>'+fE(b.juri_bezahlt_eur)+'</td><td '+R+' style="color:var(--red)">-'+fE(b.juri_schuldet_chris_eur)+'</td></tr>' +
+    '</table>' +
+    
+    // ── ERGEBNIS-BOX ──
+    '<div style="margin-top:20px;padding:16px;background:linear-gradient(135deg,rgba(247,147,26,.06),rgba(100,181,246,.04));border-radius:10px;border:1px solid var(--border)">' +
+      '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;text-align:center">' +
+        '<div><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase">Gesamtvermögen</div><div style="font-size:1rem;font-weight:700;margin-top:4px">'+fU(totalAssets)+'</div></div>' +
+        '<div><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase">Gesamt P&L</div><div style="font-size:1rem;font-weight:700;color:'+clr(totalPnl)+';margin-top:4px">'+sgn(totalPnl)+fU(totalPnl)+'</div></div>' +
+        '<div><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase">Ausgleich offen</div><div style="font-size:1rem;font-weight:700;color:var(--orange);margin-top:4px">'+fE(b.juri_schuldet_chris_eur)+'</div></div>' +
+      '</div>' +
+      (b.pending_deposit?'<div style="font-size:.65rem;color:var(--orange);margin-top:12px;padding-top:10px;border-top:1px solid var(--border);text-align:center">⏳ '+b.pending_deposit+'</div>':'') +
+    '</div>' +
+    
+    '<div style="font-size:.6rem;color:var(--dim);margin-top:14px;text-align:right">Erstellt: '+new Date(data.exported_at).toLocaleString('de-DE',{dateStyle:'long',timeStyle:'short'})+' | Alle Angaben in USD soweit nicht anders angegeben</div>' +
+    '</div>';
   }
 }
 init();
