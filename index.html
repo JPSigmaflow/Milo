@@ -452,29 +452,88 @@ async function init() {
   } else {
     lDiv.innerHTML = '<div class="dim" style="padding:16px">Keine Lessons</div>';
   }
-  // Bilanz (collapsed dropdown)
+  // Bilanz (collapsed dropdown) — professional P&L
   const bDiv = $('#bilanzSection');
   const b = data.bilanz;
   if(b) {
     const fmtEur = n => '€' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
-    bDiv.innerHTML = `<div style="padding:0 16px 14px">
-      <h4 style="color:var(--orange);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:12px 0 8px">Gesamtinvest ins Business</h4>
-      <table style="width:100%;border-collapse:collapse;font-size:.75rem">
-        <tr style="background:var(--header-bg)"><th style="text-align:left;padding:6px 8px">Posten</th><th style="text-align:right;padding:6px 8px">Betrag</th><th style="text-align:center;padding:6px 8px">Von</th></tr>
-        ${b.posten.map(p=>`<tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px">${p.beschreibung}</td><td style="text-align:right;padding:6px 8px">${fmtEur(p.betrag)}</td><td style="text-align:center;padding:6px 8px">${p.von}</td></tr>`).join('')}
-        <tr style="font-weight:700;border-top:2px solid var(--border)"><td style="padding:6px 8px">Gesamt</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.gesamt_eur)}</td><td></td></tr>
+    const fmtUsd = n => '$' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+    const pnlColor = n => n >= 0 ? 'var(--green)' : 'var(--red)';
+    const pnlSign = n => n >= 0 ? '+' : '';
+    
+    // Calculate unrealized P&L from holdings
+    const activeHoldings = (data.holdings||[]).filter(h=>h.status==='active');
+    const totalCurrentValue = activeHoldings.reduce((s,h)=>s+(h.amount*(h.current_price||0)),0);
+    const totalEntryValue = activeHoldings.reduce((s,h)=>s+(h.amount*h.entry_price),0);
+    const unrealizedPnl = totalCurrentValue - totalEntryValue;
+    const unrealizedPct = totalEntryValue > 0 ? (unrealizedPnl/totalEntryValue*100) : 0;
+    const totalPnl = unrealizedPnl + b.realized_pnl_usd;
+    
+    const tblStyle = 'width:100%;border-collapse:collapse;font-size:.75rem';
+    const thStyle = 'text-align:left;padding:8px 10px;font-size:.65rem;text-transform:uppercase;letter-spacing:.5px';
+    const tdStyle = 'padding:7px 10px;border-bottom:1px solid var(--border)';
+    const tdR = 'padding:7px 10px;border-bottom:1px solid var(--border);text-align:right';
+    
+    bDiv.innerHTML = `<div style="padding:12px 16px 16px">
+      
+      <!-- Kapitalübersicht -->
+      <h4 style="color:var(--orange);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:0 0 10px">💰 Kapitalübersicht</h4>
+      <table style="${tblStyle}">
+        <tr style="background:var(--header-bg)"><th style="${thStyle}">Posten</th><th style="${thStyle};text-align:right">Betrag</th><th style="${thStyle};text-align:center">Von</th></tr>
+        ${b.posten.map(p=>`<tr><td style="${tdStyle}">${p.beschreibung}</td><td style="${tdR}">${fmtEur(p.betrag)}</td><td style="${tdStyle};text-align:center">${p.von}</td></tr>`).join('')}
+        <tr style="font-weight:700;background:rgba(255,255,255,.03)"><td style="${tdStyle}">Gesamtkapital</td><td style="${tdR}">${fmtEur(b.gesamt_eur)}</td><td style="${tdStyle}"></td></tr>
       </table>
-      <h4 style="color:var(--blue);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:16px 0 8px">50/50 Aufteilung</h4>
-      <table style="width:100%;border-collapse:collapse;font-size:.75rem">
-        <tr style="background:var(--header-bg)"><th style="text-align:left;padding:6px 8px">Person</th><th style="text-align:right;padding:6px 8px">Soll (50%)</th><th style="text-align:right;padding:6px 8px">Bezahlt</th><th style="text-align:right;padding:6px 8px">Differenz</th></tr>
-        <tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px">Chris</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.soll_50_eur)}</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.chris_bezahlt_eur)}</td><td style="text-align:right;padding:6px 8px;color:var(--green)">+${fmtEur(b.chris_diff_eur)}</td></tr>
-        <tr style="border-bottom:1px solid var(--border)"><td style="padding:6px 8px">Juri</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.soll_50_eur)}</td><td style="text-align:right;padding:6px 8px">${fmtEur(b.juri_bezahlt_eur)}</td><td style="text-align:right;padding:6px 8px;color:var(--red)">-${fmtEur(b.juri_schuldet_chris_eur)}</td></tr>
+      
+      <!-- Gewinn/Verlust-Rechnung -->
+      <h4 style="color:var(--orange);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:20px 0 10px">📊 Gewinn- & Verlustrechnung (USD)</h4>
+      <table style="${tblStyle}">
+        <tr style="background:var(--header-bg)"><th style="${thStyle}">Position</th><th style="${thStyle};text-align:right">Betrag</th></tr>
+        <tr><td style="${tdStyle}">Investiert (aktive Coins)</td><td style="${tdR}">${fmtUsd(totalEntryValue)}</td></tr>
+        <tr><td style="${tdStyle}">Aktueller Wert (Coins)</td><td style="${tdR}">${fmtUsd(totalCurrentValue)}</td></tr>
+        <tr><td style="${tdStyle}">Unrealisierte P&L</td><td style="${tdR};color:${pnlColor(unrealizedPnl)}">${pnlSign(unrealizedPnl)}${fmtUsd(unrealizedPnl)} (${pnlSign(unrealizedPct)}${unrealizedPct.toFixed(1)}%)</td></tr>
+        <tr><td style="${tdStyle}">Realisierte Verluste (FHE, DEAI, LUNAI)</td><td style="${tdR};color:var(--red)">${fmtUsd(b.realized_pnl_usd)}</td></tr>
+        <tr><td style="${tdStyle}">Trading-Gebühren</td><td style="${tdR};color:var(--red)">-${fmtUsd(b.total_fees_usd)}</td></tr>
+        <tr style="font-weight:700;background:rgba(255,255,255,.03)"><td style="${tdStyle}">Gesamt P&L</td><td style="${tdR};color:${pnlColor(totalPnl)}">${pnlSign(totalPnl)}${fmtUsd(totalPnl)}</td></tr>
       </table>
-      <div style="margin-top:14px;padding:12px;background:rgba(255,255,255,.03);border-radius:8px;border-left:3px solid var(--orange)">
-        <div style="font-size:.8rem;font-weight:700">→ Juri schuldet Chris: ${fmtEur(b.juri_schuldet_chris_eur)}</div>
-        <div style="font-size:.7rem;color:var(--dim);margin-top:6px">Realisierte Verluste: $${Math.abs(b.realized_pnl_usd).toFixed(2)} | Fees: $${b.total_fees_usd.toFixed(2)}</div>
-        ${b.pending_deposit ? `<div style="font-size:.65rem;color:var(--orange);margin-top:4px">⏳ ${b.pending_deposit}</div>` : ''}
+      
+      <!-- Vermögensübersicht -->
+      <h4 style="color:var(--orange);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:20px 0 10px">🏦 Vermögensübersicht (USD)</h4>
+      <table style="${tblStyle}">
+        <tr style="background:var(--header-bg)"><th style="${thStyle}">Asset</th><th style="${thStyle};text-align:right">Wert</th></tr>
+        ${activeHoldings.map(h=>{
+          const val=h.amount*(h.current_price||0);
+          const pnl=val-(h.amount*h.entry_price);
+          const pct=h.entry_price>0?((h.current_price/h.entry_price-1)*100):0;
+          return '<tr><td style="${tdStyle}">'+h.symbol+' <span style="color:var(--dim);font-size:.65rem">('+h.exchange+')</span></td><td style="${tdR}">'+ fmtUsd(val)+' <span style="color:'+pnlColor(pnl)+';font-size:.65rem">'+pnlSign(pnl)+pct.toFixed(1)+'%</span></td></tr>';
+        }).join('')}
+        <tr><td style="${tdStyle}">USDT (frei)</td><td style="${tdR}">${fmtUsd(data.usdt_free||0)}</td></tr>
+        <tr style="font-weight:700;background:rgba(255,255,255,.03)"><td style="${tdStyle}">Gesamtvermögen</td><td style="${tdR}">${fmtUsd(totalCurrentValue + (data.usdt_free||0))}</td></tr>
+      </table>
+      
+      <!-- 50/50 Aufteilung -->
+      <h4 style="color:var(--blue);font-size:.7rem;text-transform:uppercase;letter-spacing:1px;margin:20px 0 10px">⚖️ 50/50 Aufteilung (EUR)</h4>
+      <table style="${tblStyle}">
+        <tr style="background:var(--header-bg)"><th style="${thStyle}">Person</th><th style="${thStyle};text-align:right">Soll (50%)</th><th style="${thStyle};text-align:right">Bezahlt</th><th style="${thStyle};text-align:right">Differenz</th></tr>
+        <tr><td style="${tdStyle}">Chris</td><td style="${tdR}">${fmtEur(b.soll_50_eur)}</td><td style="${tdR}">${fmtEur(b.chris_bezahlt_eur)}</td><td style="${tdR};color:var(--green)">+${fmtEur(b.chris_diff_eur)} überzahlt</td></tr>
+        <tr><td style="${tdStyle}">Juri</td><td style="${tdR}">${fmtEur(b.soll_50_eur)}</td><td style="${tdR}">${fmtEur(b.juri_bezahlt_eur)}</td><td style="${tdR};color:var(--red)">-${fmtEur(b.juri_schuldet_chris_eur)} offen</td></tr>
+      </table>
+      
+      <!-- Ergebnis-Box -->
+      <div style="margin-top:16px;padding:14px;background:linear-gradient(135deg,rgba(247,147,26,.08),rgba(100,181,246,.05));border-radius:10px;border:1px solid var(--border)">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+          <div>
+            <div style="font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px">Offener Ausgleich</div>
+            <div style="font-size:1rem;font-weight:700;color:var(--orange);margin-top:2px">Juri → Chris: ${fmtEur(b.juri_schuldet_chris_eur)}</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px">Portfolio-Performance</div>
+            <div style="font-size:1rem;font-weight:700;color:${pnlColor(totalPnl)};margin-top:2px">${pnlSign(totalPnl)}${fmtUsd(totalPnl)}</div>
+          </div>
+        </div>
+        ${b.pending_deposit ? `<div style="font-size:.65rem;color:var(--orange);margin-top:10px;padding-top:10px;border-top:1px solid var(--border)">⏳ Ausstehend: ${b.pending_deposit}</div>` : ''}
       </div>
+      
+      <div style="font-size:.6rem;color:var(--dim);margin-top:12px;text-align:right">Stand: ${new Date(data.exported_at).toLocaleString('de-DE',{dateStyle:'medium',timeStyle:'short'})}</div>
     </div>`;
   }
 }
