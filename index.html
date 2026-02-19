@@ -74,6 +74,15 @@ tr:hover{background:rgba(255,255,255,.03)}
 .scanner-row .label{color:var(--dim)}
 .scanner-row .val{font-weight:600}
 .scanner-reason{margin-top:8px;padding:10px;background:rgba(255,255,255,.03);border-radius:8px;font-size:.83rem;line-height:1.5;color:var(--dim)}
+/* Scanner Pagination */
+.scanner-pagination{display:flex;align-items:center;justify-content:center;gap:12px;margin:12px 0 4px;user-select:none}
+.scanner-pagination button{background:var(--header-bg);border:1px solid var(--border);color:#fff;padding:8px 16px;border-radius:8px;cursor:pointer;font-size:.85rem;transition:background .15s}
+.scanner-pagination button:hover:not(:disabled){background:rgba(100,181,246,.15)}
+.scanner-pagination button:disabled{opacity:.3;cursor:default}
+.scanner-pagination .page-info{color:var(--dim);font-size:.8rem}
+.scanner-page{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:0}
+.scanner-page::-webkit-scrollbar{display:none}
+.scanner-page-group{min-width:100%;scroll-snap-align:start;flex-shrink:0}
 .chart-wrap{height:300px;position:relative}
 .lesson{margin-bottom:12px;padding:12px;background:rgba(247,147,26,.05);border-left:3px solid var(--orange);border-radius:0 8px 8px 0}
 .lesson .code{color:var(--orange);font-weight:700;margin-right:8px}
@@ -304,12 +313,15 @@ async function init() {
     wlDiv.innerHTML = '<div class="dim">Keine Coins auf der Watchlist</div>';
   }
 
-  // Scanner
+  // Scanner (paginated — Top 5 visible, swipe for more)
   const scanDiv = $('#scannerCards');
-  const scanCoins = data.scanner_coins||[];
+  const scanCoins = (data.scanner_coins||[]).sort((a,b) => (b.score||0)-(a.score||0));
+  const PAGE_SIZE = 5;
   if(scanCoins.length){
-    scanDiv.innerHTML = scanCoins.map(c => {
-      const badgeCls = 'badge-' + (c.result||'').replace('-','');
+    const totalPages = Math.ceil(scanCoins.length / PAGE_SIZE);
+    let curPage = 0;
+    function renderScannerCard(c){
+      const badgeCls = 'badge-' + (c.result||'').replace(/-/g,'');
       const scoreColor = c.score >= 50 ? 'var(--green)' : c.score >= 30 ? 'var(--orange)' : 'var(--red)';
       return `
       <div class="scanner-card" onclick="this.classList.toggle('open')">
@@ -335,7 +347,37 @@ async function init() {
           <div class="scanner-reason">${c.reason||'Keine Details'}</div>
         </div>
       </div>`;
-    }).join('');
+    }
+    function renderScannerPage(){
+      const start = curPage * PAGE_SIZE;
+      const pageCoins = scanCoins.slice(start, start + PAGE_SIZE);
+      const cardsHtml = pageCoins.map(renderScannerCard).join('');
+      scanDiv.innerHTML = `
+        <div id="scannerPageContent">${cardsHtml}</div>
+        ${totalPages > 1 ? `
+        <div class="scanner-pagination">
+          <button id="scanPrev" ${curPage===0?'disabled':''}>◀ Zurück</button>
+          <span class="page-info">${curPage+1} / ${totalPages} (${scanCoins.length} Coins)</span>
+          <button id="scanNext" ${curPage>=totalPages-1?'disabled':''}>Weiter ▶</button>
+        </div>` : ''}
+      `;
+      if(totalPages > 1){
+        $('#scanPrev').onclick = () => { if(curPage>0){curPage--;renderScannerPage()} };
+        $('#scanNext').onclick = () => { if(curPage<totalPages-1){curPage++;renderScannerPage()} };
+      }
+    }
+    renderScannerPage();
+
+    // Swipe support for mobile
+    let touchStartX = 0;
+    scanDiv.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, {passive:true});
+    scanDiv.addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if(Math.abs(diff) > 60){
+        if(diff > 0 && curPage < totalPages-1){ curPage++; renderScannerPage(); }
+        else if(diff < 0 && curPage > 0){ curPage--; renderScannerPage(); }
+      }
+    }, {passive:true});
   } else {
     scanDiv.innerHTML = '<div class="card"><div class="dim">Keine Scanner-Ergebnisse</div></div>';
   }
