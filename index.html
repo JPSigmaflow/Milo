@@ -20,7 +20,7 @@ h2{color:#fff;font-size:1rem;margin:20px 0 10px;border-bottom:1px solid var(--bo
 .green{color:var(--green)}.red{color:var(--red)}.dim{color:var(--dim)}
 
 /* Portfolio Accordion */
-.portfolio-list{display:flex;flex-direction:column;gap:8px}
+.portfolio-list{display:flex;flex-direction:column;gap:4px}
 .coin-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
 .coin-row{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr 1fr;align-items:center;padding:8px 10px;cursor:pointer;user-select:none;gap:2px;transition:background .15s}
 .coin-row:hover{background:rgba(255,255,255,.03)}
@@ -81,9 +81,10 @@ tr:hover{background:rgba(255,255,255,.03)}
 #loading{text-align:center;padding:60px;color:var(--dim);font-size:1.2rem}
 
 @media(max-width:700px){
-  .coin-row{grid-template-columns:1.4fr 1fr 1fr 1fr;font-size:.6rem;padding:6px 8px}
+  .coin-row{grid-template-columns:1.4fr 1fr 1fr 1fr;font-size:.6rem;padding:5px 6px;gap:2px}
   .coin-symbol{font-size:.65rem}
   .coin-val{font-size:.58rem}
+  .hide-mobile{display:none}
   .coin-row .hide-mobile{display:none}
   .coin-details-inner{grid-template-columns:1fr}
   h1{font-size:1.3rem}
@@ -105,10 +106,10 @@ tr:hover{background:rgba(255,255,255,.03)}
 
 <div class="stats" id="statsGrid"></div>
 
-<h2 style="color:var(--orange)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 5-7"/></svg>Portfolio Holdings</h2>
+<h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 5-7"/></svg>Portfolio Holdings</h2>
 <div class="portfolio-list" id="portfolioList"></div>
 
-<h2 style="color:var(--red)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M3 3l18 18M21 3L3 21"/></svg>Verkaufte Coins</h2>
+<h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M3 3l18 18M21 3L3 21"/></svg>Verkaufte Coins</h2>
 <div class="card overflow-x" id="soldSection"></div>
 
 <h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Watchlist</h2>
@@ -226,10 +227,10 @@ async function init() {
           <span class="coin-symbol">${h.symbol}</span> <span class="coin-arrow">▼</span>
           <div class="coin-name">${h.name} · ${h.chain||''}</div>
         </div>
-        <div class="coin-val">${fmtPrice(h.current_price)}</div>
+        <div class="coin-val hide-mobile">${fmtPrice(h.current_price)}</div>
         <div class="coin-val hide-mobile">${fmtPrice(h.entry_price)}</div>
         <div class="coin-val ${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></div>
-        <div class="coin-val hide-mobile">${fmtVal(val)}</div>
+        <div class="coin-val">${fmtVal(val)}</div>
         <div class="coin-val ${chg >= 0 ? 'green' : 'red'}">${chg != null ? pnlSign(chg)+fmt(chg)+'%' : '–'}</div>
       </div>
       <div class="coin-details">
@@ -260,7 +261,7 @@ async function init() {
   // Column headers for portfolio
   const headerDiv = document.createElement('div');
   headerDiv.style.cssText = 'display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;padding:6px 16px;font-size:.75rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px';
-  headerDiv.innerHTML = '<div>Coin</div><div style="text-align:right">Preis</div><div style="text-align:right" class="hide-mobile">Entry</div><div style="text-align:right">P&L%</div><div style="text-align:right" class="hide-mobile">Wert</div><div style="text-align:right">24h</div>';
+  headerDiv.innerHTML = '<div>Coin</div><div style="text-align:right" class="hide-mobile">Preis</div><div style="text-align:right" class="hide-mobile">Entry</div><div style="text-align:right">P&L%</div><div style="text-align:right">Wert</div><div style="text-align:right">24h</div>';
   listDiv.insertBefore(headerDiv, listDiv.firstChild);
 
   // Sold coins table
