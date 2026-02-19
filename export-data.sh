@@ -62,6 +62,12 @@ TOTAL_INVESTED=$(sqlite3 "$PORTFOLIO_DB" "SELECT ROUND(SUM(h.amount * h.entry_pr
 PNL=$(python3 -c "v=${TOTAL_VALUE:-0}; i=${TOTAL_INVESTED:-0}; print(round(v-i,2))")
 PNL_PCT=$(python3 -c "v=${TOTAL_VALUE:-0}; i=${TOTAL_INVESTED:-0}; print(round((v-i)/i*100,2) if i>0 else 0)")
 
+# Export transactions summary for bilanz
+TOTAL_FEES=$(sqlite3 "$PORTFOLIO_DB" "SELECT COALESCE(ROUND(SUM(fee_usd),2),0) FROM transactions" 2>/dev/null || echo "0")
+
+# Export transactions
+TRANSACTIONS=$(sqlite3 -json "$PORTFOLIO_DB" "SELECT coin, type, amount, price_usd, total_usd, fee_usd, exchange, tx_date, notes FROM transactions ORDER BY tx_date, id" 2>/dev/null || echo "[]")
+
 # Export scanner coins
 SCANNER_COINS=$(sqlite3 -json "$SCANNER_DB" "SELECT symbol, name, chain, narrative, market_cap, liquidity, volume_24h, score, result, reason, source, source_channels, scanned_at, updated_at FROM coins ORDER BY score DESC" 2>/dev/null || echo "[]")
 
@@ -79,6 +85,36 @@ cat > "$OUTPUT" << JSONEOF
   "total_invested": ${TOTAL_INVESTED:-0},
   "pnl": ${PNL:-0},
   "pnl_pct": ${PNL_PCT:-0},
+  "bilanz": {
+    "status": "Ausgeglichen ✅",
+    "total_fees_usd": ${TOTAL_FEES:-0},
+    "business": {
+      "titel": "Business-Gesamtbilanz (EUR)",
+      "chris_eur": 7500,
+      "juri_eur": 5141,
+      "gesamt_eur": 12641,
+      "posten": [
+        {"datum": "Jan 2026", "beschreibung": "MEXC Überweisung #1", "betrag": 2500, "von": "Chris", "typ": "Crypto"},
+        {"datum": "Jan 2026", "beschreibung": "MEXC Überweisung #2", "betrag": 2500, "von": "Chris", "typ": "Crypto"},
+        {"datum": "13.02.2026", "beschreibung": "MEXC Einzahlung", "betrag": 500, "von": "Chris", "typ": "Crypto"},
+        {"datum": "Jan 2026", "beschreibung": "iMac + Ausstattung", "betrag": 791, "von": "Juri", "typ": "Hardware"},
+        {"datum": "Feb 2026", "beschreibung": "Kapitalausgleich", "betrag": 2350, "von": "Juri", "typ": "Ausgleich"},
+        {"datum": "19.02.2026", "beschreibung": "MEXC Einzahlung (SEPA)", "betrag": 2000, "von": "Chris", "typ": "Crypto"},
+        {"datum": "19.02.2026", "beschreibung": "MEXC Einzahlung (SEPA)", "betrag": 2000, "von": "Juri", "typ": "Crypto"}
+      ]
+    },
+    "crypto": {
+      "titel": "Crypto-Portfolio (USD)",
+      "total_eingezahlt_usd": 11679.69,
+      "kapital_in_coins_usd": ${TOTAL_INVESTED:-0},
+      "usdt_frei_usd": ${USDT_FREE:-0},
+      "realized_pnl_fhe": -87.33,
+      "realized_pnl_deai": -167.82,
+      "realized_pnl_lunai": -97.03,
+      "realized_pnl_usd": -352.18
+    }
+  },
+  "transactions": ${TRANSACTIONS:-[]},
   "holdings": ${HOLDINGS:-[]},
   "price_history": ${PRICE_HISTORY:-[]},
   "portfolio_history": ${PORTFOLIO_HISTORY:-[]},
