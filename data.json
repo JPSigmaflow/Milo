@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-19T05:56:27Z",
+  "exported_at": "2026-02-19T05:56:40Z",
   "usdt_free": 1064.25558708,
   "last_update": "2026-02-12",
   "total_value": 5860.69,
@@ -15,7 +15,7 @@
     "chris_diff_eur": 1179.50,
     "juri_schuldet_chris_eur": 1179.50,
     "realized_pnl_usd": -355.72,
-    "total_fees_usd": 0,
+    "total_fees_usd": 0.67,
     "pending_deposit": "€4.000 (je €2.000 Chris + Juri) — SEPA ausstehend",
     "posten": [
       {"beschreibung": "MEXC Überweisung #1", "betrag": 2500, "von": "Chris"},
