@@ -129,6 +129,9 @@ tr:hover{background:rgba(255,255,255,.03)}
 <h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Portfolio Entwicklung</h2>
 <div class="card chart-wrap"><canvas id="priceChart"></canvas></div>
 
+<h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Letzte Transaktionen</h2>
+<div class="card" id="transactionSection"></div>
+
 <h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M3 3l18 18M21 3L3 21"/></svg>Verkaufte Coins</h2>
 <div class="card overflow-x" id="soldSection"></div>
 
@@ -296,45 +299,6 @@ async function init() {
   headerDiv.innerHTML = '<div>Coin</div><div class="coin-val">Preis</div><div class="coin-val hide-mobile">Entry</div><div class="coin-val">P&L%</div><div class="coin-val">Wert</div><div class="coin-val">24h</div>';
   listDiv.insertBefore(headerDiv, listDiv.firstChild);
 
-  // Sold coins table
-  const soldDiv = $('#soldSection');
-  if(sold.length) {
-    let html = '<table><thead><tr><th>Coin</th><th>Entry</th><th>Exit</th><th>P&L%</th><th>Kaufdatum</th><th>Verkaufsdatum</th><th>Status</th></tr></thead><tbody>';
-    sold.forEach(h => {
-      const exitPrice = h.sold_price || h.current_price;
-      const pnl = h.entry_price > 0 && exitPrice ? ((exitPrice - h.entry_price) / h.entry_price * 100) : 0;
-      html += `<tr>
-        <td><strong>${h.symbol}</strong><br><span class="dim">${h.name}</span></td>
-        <td>${fmtPrice(h.entry_price)}</td>
-        <td>${h.sold_price ? fmtPrice(h.sold_price) : fmtPrice(h.current_price)}</td>
-        <td class="${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></td>
-        <td>${h.entry_date || '–'}</td>
-        <td>${h.sold_date || '–'}</td>
-        <td><span class="badge badge-sold">${h.status}</span></td>
-      </tr>`;
-    });
-    html += '</tbody></table>';
-    soldDiv.innerHTML = html;
-  } else {
-    soldDiv.innerHTML = '<div class="dim" style="padding:12px">Keine verkauften Coins</div>';
-  }
-
-  // Watchlist
-  const wlDiv = $('#watchlistSection');
-  const seen = new Set();
-  const wlUnique = watchlist.filter(h => { if(seen.has(h.symbol)) return false; seen.add(h.symbol); return true; });
-  if(wlUnique.length) {
-    let html = '<table><thead><tr><th>Coin</th><th>Chain</th><th>Preis</th><th>Entry</th></tr></thead><tbody>';
-    wlUnique.forEach(h => {
-      html += `<tr><td><strong>${h.symbol}</strong> ${h.name}</td><td>${h.chain||'–'}</td><td>${h.current_price ? fmtPrice(h.current_price) : '–'}</td><td>${h.entry_price > 0 ? fmtPrice(h.entry_price) : '–'}</td></tr>`;
-    });
-    html += '</tbody></table>';
-    wlDiv.innerHTML = html;
-  } else {
-    wlDiv.innerHTML = '<div class="dim">Keine Coins auf der Watchlist</div>';
-  }
-
-  // Scanner (paginated — Top 5 visible, swipe for more)
   const scanDiv = $('#scannerCards');
   const scanCoins = (data.scanner_coins||[]).sort((a,b) => (b.score||0)-(a.score||0));
   const PAGE_SIZE = 5;
@@ -435,6 +399,131 @@ async function init() {
     });
   } else {
     $('#priceChart').parentElement.innerHTML = '<div class="dim" style="padding:40px;text-align:center">Chart wird mit jedem Update genauer</div>';
+  }
+
+  // Transactions (Last 5 always visible, rest as slideshow)
+  const transDiv = $('#transactionSection');
+  const transactions = (data.transactions || []).sort((a,b) => new Date(b.tx_date) - new Date(a.tx_date));
+  
+  if(transactions.length) {
+    const RECENT_COUNT = 5;
+    const recent = transactions.slice(0, RECENT_COUNT);
+    const older = transactions.slice(RECENT_COUNT);
+    
+    function formatTransactionRow(t, isRecent = false) {
+      const tc = t.type==='BUY'?'var(--green)':t.type==='SELL'?'var(--red)':'var(--blue)';
+      const label = t.type==='BUY'?'KAUF':t.type==='SELL'?'VERKAUF':t.type==='DEPOSIT'?'EINLAGE':t.type==='FEE'?'GEBÜHR':t.type;
+      const bgStyle = isRecent ? 'background:rgba(247,147,26,0.05)' : '';
+      return `<tr style="${bgStyle}"><td style="padding:8px 6px;border-bottom:1px solid var(--border);white-space:nowrap">${t.tx_date.slice(0,10)}</td><td style="padding:8px 6px;border-bottom:1px solid var(--border)"><span style="color:${tc};font-weight:600;font-size:0.8rem">${label}</span> ${t.coin||''}</td><td style="padding:8px 6px;border-bottom:1px solid var(--border);text-align:right">$${Number(t.total_usd).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2})}</td></tr>`;
+    }
+
+    let html = '<table style="width:100%;border-collapse:collapse;font-size:0.85rem">';
+    html += '<thead><tr style="background:var(--header-bg)"><th style="text-align:left;padding:8px 6px;font-size:0.6rem;text-transform:uppercase">Datum</th><th style="text-align:left;padding:8px 6px;font-size:0.6rem;text-transform:uppercase">Transaktion</th><th style="text-align:right;padding:8px 6px;font-size:0.6rem;text-transform:uppercase">Summe</th></tr></thead>';
+    html += '<tbody>';
+    
+    // Recent transactions (always visible)
+    recent.forEach(t => { html += formatTransactionRow(t, true); });
+    
+    if(older.length > 0) {
+      // Add a separator row
+      html += `<tr><td colspan="3" style="text-align:center;padding:10px;background:rgba(100,181,246,0.1);color:var(--blue);font-size:0.7rem;border-bottom:1px solid var(--border)">⏬ Ältere Transaktionen (${older.length}) - Klicken zum Durchblättern ⏬</td></tr>`;
+      
+      // Older transactions (slideshow)
+      const OLDER_PAGE_SIZE = 5;
+      const totalOlderPages = Math.ceil(older.length / OLDER_PAGE_SIZE);
+      
+      for(let page = 0; page < totalOlderPages; page++) {
+        const pageTransactions = older.slice(page * OLDER_PAGE_SIZE, (page + 1) * OLDER_PAGE_SIZE);
+        const displayStyle = page === 0 ? 'table-row-group' : 'none';
+        
+        html += `<tbody class="older-transactions-page" data-page="${page}" style="display:${displayStyle}">`;
+        pageTransactions.forEach(t => { html += formatTransactionRow(t); });
+        html += '</tbody>';
+      }
+      
+      if(totalOlderPages > 1) {
+        html += `<tfoot><tr><td colspan="3" style="text-align:center;padding:8px;background:var(--card)">`;
+        html += `<button id="olderPrev" style="background:var(--header-bg);border:1px solid var(--border);color:#fff;padding:4px 12px;border-radius:6px;cursor:pointer;margin:0 4px" disabled>◀ Zurück</button>`;
+        html += `<span id="olderPageInfo" style="color:var(--dim);margin:0 8px;font-size:0.8rem">1 / ${totalOlderPages}</span>`;
+        html += `<button id="olderNext" style="background:var(--header-bg);border:1px solid var(--border);color:#fff;padding:4px 12px;border-radius:6px;cursor:pointer;margin:0 4px">Weiter ▶</button>`;
+        html += '</td></tr></tfoot>';
+      }
+    }
+    
+    html += '</tbody></table>';
+    transDiv.innerHTML = html;
+    
+    // Add pagination functionality for older transactions
+    if(older.length > 0 && totalOlderPages > 1) {
+      let currentOlderPage = 0;
+      const pages = document.querySelectorAll('.older-transactions-page');
+      const prevBtn = $('#olderPrev');
+      const nextBtn = $('#olderNext');
+      const pageInfo = $('#olderPageInfo');
+      
+      function updateOlderPagination() {
+        pages.forEach((page, i) => {
+          page.style.display = i === currentOlderPage ? 'table-row-group' : 'none';
+        });
+        prevBtn.disabled = currentOlderPage === 0;
+        nextBtn.disabled = currentOlderPage === totalOlderPages - 1;
+        pageInfo.textContent = `${currentOlderPage + 1} / ${totalOlderPages}`;
+      }
+      
+      prevBtn.onclick = () => {
+        if(currentOlderPage > 0) {
+          currentOlderPage--;
+          updateOlderPagination();
+        }
+      };
+      
+      nextBtn.onclick = () => {
+        if(currentOlderPage < totalOlderPages - 1) {
+          currentOlderPage++;
+          updateOlderPagination();
+        }
+      };
+    }
+  } else {
+    transDiv.innerHTML = '<div class="dim" style="padding:16px">Keine Transaktionen</div>';
+  }
+
+  // Sold coins table
+  const soldDiv = $('#soldSection');
+  if(sold.length) {
+    let html = '<table><thead><tr><th>Coin</th><th>Entry</th><th>Exit</th><th>P&L%</th><th>Kaufdatum</th><th>Verkaufsdatum</th><th>Status</th></tr></thead><tbody>';
+    sold.forEach(h => {
+      const exitPrice = h.sold_price || h.current_price;
+      const pnl = h.entry_price > 0 && exitPrice ? ((exitPrice - h.entry_price) / h.entry_price * 100) : 0;
+      html += `<tr>
+        <td><strong>${h.symbol}</strong><br><span class="dim">${h.name}</span></td>
+        <td>${fmtPrice(h.entry_price)}</td>
+        <td>${h.sold_price ? fmtPrice(h.sold_price) : fmtPrice(h.current_price)}</td>
+        <td class="${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></td>
+        <td>${h.entry_date || '–'}</td>
+        <td>${h.sold_date || '–'}</td>
+        <td><span class="badge badge-sold">${h.status}</span></td>
+      </tr>`;
+    });
+    html += '</tbody></table>';
+    soldDiv.innerHTML = html;
+  } else {
+    soldDiv.innerHTML = '<div class="dim" style="padding:12px">Keine verkauften Coins</div>';
+  }
+
+  // Watchlist
+  const wlDiv = $('#watchlistSection');
+  const seen = new Set();
+  const wlUnique = watchlist.filter(h => { if(seen.has(h.symbol)) return false; seen.add(h.symbol); return true; });
+  if(wlUnique.length) {
+    let html = '<table><thead><tr><th>Coin</th><th>Chain</th><th>Preis</th><th>Entry</th></tr></thead><tbody>';
+    wlUnique.forEach(h => {
+      html += `<tr><td><strong>${h.symbol}</strong> ${h.name}</td><td>${h.chain||'–'}</td><td>${h.current_price ? fmtPrice(h.current_price) : '–'}</td><td>${h.entry_price > 0 ? fmtPrice(h.entry_price) : '–'}</td></tr>`;
+    });
+    html += '</tbody></table>';
+    wlDiv.innerHTML = html;
+  } else {
+    wlDiv.innerHTML = '<div class="dim">Keine Coins auf der Watchlist</div>';
   }
 
   // Lessons (collapsed dropdown)
