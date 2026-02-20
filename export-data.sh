@@ -66,7 +66,7 @@ PNL_PCT=$(python3 -c "v=${TOTAL_VALUE:-0}; i=${TOTAL_INVESTED:-0}; print(round((
 TOTAL_FEES=$(sqlite3 "$PORTFOLIO_DB" "SELECT COALESCE(ROUND(SUM(fee_usd),2),0) FROM transactions" 2>/dev/null || echo "0")
 
 # Export transactions
-TRANSACTIONS=$(sqlite3 -json "$PORTFOLIO_DB" "SELECT coin, type, amount, price_usd, total_usd, fee_usd, exchange, tx_date, notes FROM transactions ORDER BY tx_date, id" 2>/dev/null || echo "[]")
+TRANSACTIONS=$(sqlite3 -json "$PORTFOLIO_DB" "SELECT coin, type, amount, price_usd, total_usd, fee_usd, exchange, tx_date, notes FROM transactions ORDER BY tx_date DESC, id DESC" 2>/dev/null || echo "[]")
 
 # Export scanner coins
 SCANNER_COINS=$(sqlite3 -json "$SCANNER_DB" "SELECT symbol, name, chain, narrative, market_cap, liquidity, volume_24h, score, result, reason, source, source_channels, scanned_at, updated_at FROM coins ORDER BY score DESC" 2>/dev/null || echo "[]")
