@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+:root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #e6edf3; --muted: #8b949e; --green: #3fb950; --red: #f85149; --blue: #58a6ff; --purple: #a371f7; --gold: #f0c000; --orange: #d29922; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); padding: 28px; width: 1200px; }
+h1 { font-size: 26px; margin-bottom: 4px; }
+.sub { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+.grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
+.cat { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+.cat-head { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.cat-dot { width: 12px; height: 12px; border-radius: 50%; }
+.cat h3 { font-size: 15px; }
+.cat .time { color: var(--gold); font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.cat .impact { font-size: 13px; margin-bottom: 12px; }
+.cat .examples { font-size: 12px; color: var(--muted); line-height: 1.7; }
+.case { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; margin-bottom: 14px; }
+.case h3 { font-size: 15px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+.case-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; }
+.case-item { background: var(--bg); border-radius: 8px; padding: 10px; text-align: center; }
+.case-item .val { font-size: 18px; font-weight: 700; }
+.case-item .lbl { font-size: 11px; color: var(--muted); margin-top: 2px; }
+.rules { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
+.rule { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+.rule h4 { font-size: 14px; margin-bottom: 10px; }
+.rule ul { list-style: none; font-size: 12px; color: var(--muted); line-height: 1.9; }
+.rule ul li { padding-left: 18px; position: relative; }
+.rule ul li::before { position: absolute; left: 0; }
+.rule.buy ul li::before { content: "✅ "; }
+.rule.sell ul li::before { content: "💰 "; }
+.rule.no ul li::before { content: "❌ "; }
+.tier { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
+.tier-card { background: var(--card); border-radius: 12px; padding: 18px; }
+.tier-card.t1 { border: 2px solid var(--red); }
+.tier-card.t2 { border: 2px solid var(--orange); }
+.tier-card.t3 { border: 2px solid var(--green); }
+.tier-card h4 { font-size: 14px; margin-bottom: 6px; }
+.tier-card .timing { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+.tier-card .t1 .timing { color: var(--red); }
+.tier-card ul { list-style: none; font-size: 12px; color: var(--muted); line-height: 1.8; }
+.tier-card ul li::before { content: "→ "; color: var(--blue); }
+.warn { background: linear-gradient(135deg, #1a1117 0%, #161b22 100%); border: 1px solid var(--red); border-radius: 12px; padding: 18px; margin-bottom: 24px; display: flex; gap: 16px; align-items: center; }
+.warn .icon { font-size: 40px; }
+.warn .content { flex: 1; }
+.warn h4 { color: var(--red); font-size: 15px; margin-bottom: 6px; }
+.warn p { font-size: 12px; color: var(--muted); line-height: 1.6; }
+.footer { text-align: center; color: var(--muted); font-size: 11px; border-top: 1px solid var(--border); padding-top: 14px; }
+</style>
+</head>
+<body>
+
+<h1>📊 Historische Kaufsignal-Analyse — Wann explodieren Coins?</h1>
+<p class="sub">Dokumentierte Muster 2021-2026 | Reaktionszeiten & Kauf-Kriterien</p>
+
+<!-- 4 CATEGORIES -->
+<div class="grid4">
+  <div class="cat">
+    <div class="cat-head"><div class="cat-dot" style="background:var(--red)"></div><h3>Prominenten-Posts</h3></div>
+    <div class="time">⚡ 1-5 Min</div>
+    <div class="impact"><span style="color:var(--green)">+100-1000%</span> Pump</div>
+    <div class="examples">• Elon tweetet Tier-Bild → Token +500%<br>• Trump launched Memecoin → 0 auf $75<br>• Jedes Emoji/Wort wird sofort Token<br>• <span style="color:var(--red)">Dump folgt in 4-24h!</span></div>
+  </div>
+  <div class="cat">
+    <div class="cat-head"><div class="cat-dot" style="background:var(--orange)"></div><h3>Whale-Bewegungen</h3></div>
+    <div class="time">⏱️ 15-60 Min</div>
+    <div class="impact"><span style="color:var(--green)">+10-30%</span> Pump</div>
+    <div class="examples">• Whale kauft >$1M → Preis +20%<br>• Smart Money akkumuliert → +50-200%<br>• Transfer von CEX = Halten<br>• Transfer zu CEX = Verkauf kommt</div>
+  </div>
+  <div class="cat">
+    <div class="cat-head"><div class="cat-dot" style="background:var(--gold)"></div><h3>Alpha-Gruppen</h3></div>
+    <div class="time">🕐 1-6 Stunden</div>
+    <div class="impact"><span style="color:var(--green)">+50-500%</span> Pump</div>
+    <div class="examples">• 3+ Gruppen diskutieren Token<br>• Influencer teilt privat vor Post<br>• Reddit geht viral → +200%<br>• Früher Einstieg = höchster Gewinn</div>
+  </div>
+  <div class="cat">
+    <div class="cat-head"><div class="cat-dot" style="background:var(--green)"></div><h3>CEX Listings</h3></div>
+    <div class="time">📅 1-7 Tage</div>
+    <div class="impact"><span style="color:var(--green)">+30-100%</span> Pump</div>
+    <div class="examples">• Gerücht: +20-50%<br>• Ankündigung: +30-100%<br>• Listing-Tag: +10-30%<br>• <span style="color:var(--red)">"Sell the news" — Dump danach</span></div>
+  </div>
+</div>
+
+<!-- KEY CASES -->
+<div class="case">
+  <h3>🏆 Top dokumentierte Fälle</h3>
+  <div class="case-grid">
+    <div class="case-item"><div class="val" style="color:var(--green)">+60%</div><div class="lbl">Elon → DOGE Tweet<br>2h Reaktion</div></div>
+    <div class="case-item"><div class="val" style="color:var(--green)">∞%</div><div class="lbl">Trump → $TRUMP<br>0→$75 in 24h</div></div>
+    <div class="case-item"><div class="val" style="color:var(--green)">+400%</div><div class="lbl">Smart Money → VIRTUAL<br>2 Wochen</div></div>
+    <div class="case-item"><div class="val" style="color:var(--green)">150x</div><div class="lbl">Alpha → VIRTUAL<br>Okt→Jan narrative</div></div>
+  </div>
+</div>
+
+<!-- KAUF TIERS -->
+<h3 style="margin-bottom:12px; font-size: 16px;">🎯 Kauf-Tiers: Wann reagieren?</h3>
+<div class="tier">
+  <div class="tier-card t1">
+    <h4 style="color:var(--red)">🔴 TIER 1 — SOFORT</h4>
+    <div class="timing" style="color:var(--red)">< 5 Minuten</div>
+    <ul>
+      <li>Trump/Elon postet Meme-Bild</li>
+      <li>Neuer Token von bekannter Person</li>
+      <li>Whale kauft >$1M in Portfolio-Coin</li>
+      <li>Max Einsatz: $100-200</li>
+      <li>Konfidenz: 70-95%</li>
+    </ul>
+  </div>
+  <div class="tier-card t2">
+    <h4 style="color:var(--orange)">🟡 TIER 2 — SCHNELL</h4>
+    <div class="timing" style="color:var(--orange)">< 1 Stunde</div>
+    <ul>
+      <li>3+ Alpha-Gruppen gleicher Token</li>
+      <li>Smart Money kauft neuen Token</li>
+      <li>CEX-Listing Gerücht bestätigt</li>
+      <li>Max Einsatz: $300-500</li>
+      <li>Konfidenz: 65-75%</li>
+    </ul>
+  </div>
+  <div class="tier-card t3">
+    <h4 style="color:var(--green)">🟢 TIER 3 — RECHERCHE</h4>
+    <div class="timing" style="color:var(--green)">< 24 Stunden</div>
+    <ul>
+      <li>Neue Narrative auf Crypto Twitter</li>
+      <li>Reddit viral mit neuem Projekt</li>
+      <li>Influencer wechselt Narrativ</li>
+      <li>Max Einsatz: $500+</li>
+      <li>Konfidenz: 50-60%</li>
+    </ul>
+  </div>
+</div>
+
+<!-- RULES -->
+<div class="rules">
+  <div class="rule buy">
+    <h4 style="color:var(--green)">✅ Kaufen wenn</h4>
+    <ul>
+      <li>Honeypot-Check clean</li>
+      <li>Liquidity > $50k</li>
+      <li>Sell Tax < 5%</li>
+      <li>Mehrere Quellen bestätigen</li>
+      <li>Preis noch < +100% vom Tief</li>
+    </ul>
+  </div>
+  <div class="rule sell">
+    <h4 style="color:var(--gold)">💰 Verkaufen bei</h4>
+    <ul>
+      <li>Prominenten-Pump: 50% bei +100%</li>
+      <li>Rest bei +200% oder nach 4h</li>
+      <li>Whale-Plays: Stop-Loss -20%</li>
+      <li>Take-Profit 50% bei +50%</li>
+      <li>Narrative: wöchentlich evaluieren</li>
+    </ul>
+  </div>
+  <div class="rule no">
+    <h4 style="color:var(--red)">❌ NICHT kaufen wenn</h4>
+    <ul>
+      <li>Token < 1h alt (Ausnahme: VIP)</li>
+      <li>Liquidity < $10k</li>
+      <li>Sell Tax > 5%</li>
+      <li>LP nicht gelockt</li>
+      <li>Preis bereits > +200%</li>
+    </ul>
+  </div>
+</div>
+
+<!-- WARNING -->
+<div class="warn">
+  <div class="icon">⚠️</div>
+  <div class="content">
+    <h4>Wichtigste Erkenntnis: Geschwindigkeit ist alles</h4>
+    <p>Bei Prominenten-Pumps zählen MINUTEN. Bei Whale-Signalen STUNDEN. Bei Narratives TAGE. Unser Scanner muss die Reaktionszeit auf unter 5 Minuten drücken für Tier-1-Signale. Das bedeutet: Echtzeit-Monitoring für Trump/Elon Accounts (nicht 15-Min-Cron). Für alle anderen reicht der 15-Min-Scan.</p>
+  </div>
+</div>
+
+<div class="footer">🦁 Milo Kaufsignal-Analyse • Basierend auf dokumentierten Fällen 2021-2026 • Kein Financial Advice</div>
+
+</body>
+</html>

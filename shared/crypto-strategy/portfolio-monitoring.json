@@ -1,0 +1,96 @@
+{
+  "portfolio": {
+    "name": "Juri & Chris Portfolio #1",
+    "created_at": "2026-02-07",
+    "platform": "MEXC",
+    "initial_value_usd": 2884
+  },
+  "positions": [
+    {
+      "symbol": "RAIN",
+      "name": "Rain Protocol",
+      "amount": 87850.95,
+      "entry_price": 0.00935,
+      "entry_value_usd": 821.36,
+      "entry_date": "2026-02-07",
+      "coingecko_id": "rainmaker-games",
+      "alerts": {
+        "take_profit_1": { "percent": 50, "price": 0.014, "triggered": false },
+        "take_profit_2": { "percent": 100, "price": 0.0187, "triggered": false },
+        "stop_loss": { "percent": -25, "price": 0.007, "triggered": false }
+      }
+    },
+    {
+      "symbol": "VIRTUAL",
+      "name": "Virtuals Protocol",
+      "amount": 965.33,
+      "entry_price": 0.589,
+      "entry_value_usd": 568.47,
+      "entry_date": "2026-02-07",
+      "coingecko_id": "virtuals-protocol",
+      "category": "AI Agents",
+      "alerts": {
+        "take_profit_1": { "percent": 50, "price": 0.88, "triggered": false },
+        "take_profit_2": { "percent": 100, "price": 1.18, "triggered": false },
+        "stop_loss": { "percent": -25, "price": 0.44, "triggered": false }
+      }
+    },
+    {
+      "symbol": "LUNA",
+      "name": "LUNA by Virtuals",
+      "amount": 7820.35,
+      "entry_price": 0.0639,
+      "entry_value_usd": 499.52,
+      "entry_date": "2026-02-07",
+      "coingecko_id": "luna-by-virtuals",
+      "category": "AI Agents (Virtuals)",
+      "notes": "AI Agent Token im Virtuals Protocol Ökosystem",
+      "alerts": {
+        "take_profit_1": { "percent": 50, "price": 0.096, "triggered": false },
+        "take_profit_2": { "percent": 100, "price": 0.128, "triggered": false },
+        "stop_loss": { "percent": -30, "price": 0.045, "triggered": false }
+      }
+    },
+    {
+      "symbol": "GRIFFAIN",
+      "name": "Griffain",
+      "amount": 53551.53,
+      "entry_price": 0.00932,
+      "entry_value_usd": 499.28,
+      "entry_date": "2026-02-07",
+      "coingecko_id": "griffain",
+      "category": "AI Trading",
+      "market_cap_usd": 9304782,
+      "alerts": {
+        "take_profit_1": { "percent": 50, "price": 0.014, "triggered": false },
+        "take_profit_2": { "percent": 100, "price": 0.0186, "triggered": false },
+        "stop_loss": { "percent": -25, "price": 0.007, "triggered": false }
+      }
+    },
+    {
+      "symbol": "DEAI",
+      "name": "Zero1 Labs",
+      "amount": 33067.03,
+      "entry_price": 0.01497,
+      "entry_value_usd": 495.32,
+      "entry_date": "2026-02-07",
+      "coingecko_id": "zero1-labs",
+      "category": "AI Infrastructure",
+      "market_cap_usd": 1455773,
+      "alerts": {
+        "take_profit_1": { "percent": 50, "price": 0.0225, "triggered": false },
+        "take_profit_2": { "percent": 100, "price": 0.03, "triggered": false },
+        "stop_loss": { "percent": -25, "price": 0.0112, "triggered": false }
+      }
+    }
+  ],
+  "monitoring": {
+    "check_interval_minutes": 15,
+    "alert_channels": ["telegram"],
+    "alert_targets": ["-5299930122"],
+    "daily_report_time": "08:00",
+    "weekly_report_day": "sunday"
+  },
+  "last_check": null,
+  "price_history": []
+}

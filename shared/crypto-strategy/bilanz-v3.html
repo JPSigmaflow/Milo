@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0f;color:#e0e0e0;font-family:'Segoe UI',system-ui,sans-serif;padding:30px;width:1080px}
+h1{font-size:48px;color:#f7931a;margin-bottom:6px}
+.sub{color:#888;font-size:20px;margin-bottom:24px}
+h2{font-size:32px;color:#f7931a;margin:24px 0 12px;border-bottom:3px solid #f7931a44;padding-bottom:6px}
+.card{background:#14141f;border:1px solid #2a2a3a;border-radius:12px;padding:24px;margin:14px 0}
+.row{display:flex;gap:20px}
+.col{flex:1}
+.box{text-align:center;padding:24px;background:#1a1a2e;border-radius:12px}
+.name{font-size:28px;color:#64b5f6;margin-bottom:8px}
+.amount{font-size:52px;font-weight:800;color:#f7931a}
+.label{font-size:20px;color:#888;margin-top:6px}
+.vs{display:flex;align-items:center;justify-content:center;font-size:36px;color:#555;padding:0 10px}
+.total-box{text-align:center;padding:20px;background:#14141f;border:2px solid #f7931a44;border-radius:12px;margin:20px 0}
+.total-num{font-size:44px;font-weight:800;color:#f7931a}
+.balanced{text-align:center;padding:24px;background:#0a1a0a;border:2px solid #4caf50;border-radius:12px;margin:14px 0}
+.balanced-text{font-size:32px;font-weight:700;color:#4caf50}
+.r{color:#ff4444}.g{color:#4caf50}.o{color:#ff9800}.b{color:#64b5f6}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th{background:#1a1a2e;color:#f7931a;text-align:left;padding:14px;font-size:22px}
+td{padding:12px 14px;border-bottom:1px solid #1a1a2e;font-size:22px}
+.stat-row{display:flex;gap:14px;margin:14px 0}
+.stat-box{flex:1;text-align:center;padding:18px;background:#1a1a2e;border-radius:12px}
+.stat-val{font-size:36px;font-weight:800;margin-top:4px}
+.footer{text-align:center;color:#555;font-size:16px;margin-top:24px;padding-top:12px;border-top:1px solid #1a1a2e}
+.date{color:#64b5f6;font-size:18px}
+</style></head><body>
+
+<h1>💰 Bilanz — Chris vs. Juri</h1>
+<div class="sub">Stand: 19. Februar 2026</div>
+
+<!-- Einzahlungen -->
+<div class="row">
+<div class="col">
+<div class="box">
+<div class="name">Chris 🇨🇳</div>
+<div class="amount">€5.500</div>
+<div class="label">eingezahlt</div>
+</div>
+</div>
+<div class="vs">vs.</div>
+<div class="col">
+<div class="box">
+<div class="name">Juri 🇩🇪</div>
+<div class="amount">€3.141</div>
+<div class="label">eingezahlt</div>
+</div>
+</div>
+</div>
+
+<div class="total-box">
+<div class="label">GESAMTINVEST (ohne Doppelverrechnung)</div>
+<div class="total-num">€5.791</div>
+<div class="label">Chris €5.000 (MEXC) + Juri €791 (iMac) · Juris €2.350 = Ausgleich</div>
+</div>
+
+<div class="balanced">
+<div class="balanced-text">✅ Bilanz ausgeglichen — Niemand schuldet niemandem</div>
+<div class="label" style="margin-top:8px">Alte Schuld (€245,50) am 13.02. über €500 MEXC-Einzahlung beglichen</div>
+</div>
+
+<h2>📝 Chris — Einzahlungen</h2>
+<div class="card">
+<table>
+<tr><th>Datum</th><th>Was</th><th>Coins</th><th>Betrag</th></tr>
+<tr><td class="date">10.01.2026</td><td>MEXC Überweisung #1</td><td>RAIN, LUNAI, VIRTUAL, GRIFFAIN, DEAI</td><td>€2.500</td></tr>
+<tr><td class="date">12.02.2026</td><td>MEXC Überweisung #2</td><td>SAPIEN, FHE, CLANKER, CFG, ZAMA</td><td>€2.500</td></tr>
+<tr><td class="date">13.02.2026</td><td>MEXC Einzahlung</td><td>KITE, ALLO + Schuld beglichen</td><td>€500</td></tr>
+<tr><td></td><td><strong>Chris gesamt</strong></td><td></td><td><strong>€5.500</strong></td></tr>
+</table>
+</div>
+
+<h2>📝 Juri — Einzahlungen</h2>
+<div class="card">
+<table>
+<tr><th>Datum</th><th>Was</th><th>Details</th><th>Betrag</th></tr>
+<tr><td class="date">—</td><td>iMac + Kleinigkeiten</td><td>Hardware</td><td>€791</td></tr>
+<tr><td class="date">Jan 2026</td><td>Überweisung an Chris</td><td>Ausgleich (nicht doppelt rechnen!)</td><td>€2.350</td></tr>
+<tr><td></td><td><strong>Juri gesamt</strong></td><td></td><td><strong>€3.141</strong></td></tr>
+</table>
+</div>
+
+<h2>🛒 Käufe (13 Trades)</h2>
+<div class="card">
+<table>
+<tr><th>Datum</th><th>Coin</th><th>Menge</th><th>Preis</th><th>Summe</th><th>Exchange</th></tr>
+<tr><td class="date">15.01.</td><td>RAIN</td><td>87.850,95</td><td>$0,00974</td><td>$856</td><td>MEXC</td></tr>
+<tr><td class="date">15.01.</td><td>LUNAI ❌</td><td>61.986,86</td><td>$0,00805</td><td>$499</td><td>MEXC</td></tr>
+<tr><td class="date">15.01.</td><td>VIRTUAL</td><td>862,38</td><td>$0,562</td><td>$485</td><td>MEXC</td></tr>
+<tr><td class="date">15.01.</td><td>GRIFFAIN</td><td>53.551,53</td><td>$0,00957</td><td>$512</td><td>MEXC</td></tr>
+<tr><td class="date">15.01.</td><td>DEAI ❌</td><td>33.067,03</td><td>$0,0128</td><td>$423</td><td>MEXC</td></tr>
+<tr><td class="date">15.01.</td><td>RAY</td><td>1.297,00</td><td>$0,587</td><td>$761</td><td>Raydium</td></tr>
+<tr><td class="date">12.02.</td><td>SAPIEN</td><td>5.821,56</td><td>$0,0844</td><td>$491</td><td>MEXC</td></tr>
+<tr><td class="date">12.02.</td><td>CLANKER</td><td>13,29</td><td>$37,73</td><td>$501</td><td>MEXC</td></tr>
+<tr><td class="date">12.02.</td><td>CFG</td><td>6.207,17</td><td>$0,081</td><td>$503</td><td>MEXC</td></tr>
+<tr><td class="date">12.02.</td><td>ZAMA</td><td>26.689,61</td><td>$0,019</td><td>$507</td><td>MEXC</td></tr>
+<tr><td class="date">12.02.</td><td>FHE ❌</td><td>7.100,00</td><td>$0,0705</td><td>$501</td><td>MEXC</td></tr>
+<tr><td class="date">13.02.</td><td>KITE</td><td>2.558,59</td><td>$0,1953</td><td>$500</td><td>MEXC</td></tr>
+<tr><td class="date">13.02.</td><td>ALLO</td><td>6.042,38</td><td>$0,0827</td><td>$500</td><td>MEXC</td></tr>
+<tr><td></td><td><strong>Gesamt Käufe</strong></td><td></td><td></td><td><strong>$7.039</strong></td><td></td></tr>
+</table>
+</div>
+
+<h2>📤 Verkäufe (3 Trades)</h2>
+<div class="card">
+<table>
+<tr><th>Datum</th><th>Coin</th><th>Menge</th><th>Kaufpreis</th><th>Verkaufspreis</th><th>Erlös</th><th>Gewinn/Verlust</th></tr>
+<tr><td class="date">12.02.</td><td>FHE</td><td>7.100</td><td>$0,0705</td><td>$0,0582</td><td>$413</td><td class="r">-$87</td></tr>
+<tr><td class="date">18.02.</td><td>DEAI</td><td>33.067</td><td>$0,0128</td><td>$0,0077</td><td>$255</td><td class="r">-$168</td></tr>
+<tr><td class="date">18.02.</td><td>LUNAI</td><td>61.987</td><td>$0,0081</td><td>$0,0065</td><td>$402</td><td class="r">-$97</td></tr>
+<tr><td></td><td><strong>Gesamt</strong></td><td></td><td></td><td></td><td><strong>$1.071</strong></td><td class="r"><strong>-$352</strong></td></tr>
+</table>
+</div>
+
+<h2>📊 Portfolio aktuell (10 Coins)</h2>
+<div class="card">
+<table>
+<tr><th>Coin</th><th>Menge</th><th>Entry</th><th>Aktuell</th><th>Wert</th><th>P/L</th></tr>
+<tr><td>RAIN</td><td>87.851</td><td>$0,00974</td><td>$0,00962</td><td>$845</td><td class="r">-1,2%</td></tr>
+<tr><td>RAY 🟢</td><td>1.297</td><td>$0,587</td><td>$0,635</td><td>$824</td><td class="g">+8,2%</td></tr>
+<tr><td>ALLO 🟢</td><td>6.042</td><td>$0,0827</td><td>$0,0984</td><td>$594</td><td class="g">+18,9%</td></tr>
+<tr><td>KITE 🟢</td><td>2.559</td><td>$0,1953</td><td>$0,224</td><td>$573</td><td class="g">+14,7%</td></tr>
+<tr><td>ZAMA 🟢</td><td>26.690</td><td>$0,019</td><td>$0,021</td><td>$560</td><td class="g">+10,4%</td></tr>
+<tr><td>VIRTUAL 🟢</td><td>862</td><td>$0,562</td><td>$0,618</td><td>$533</td><td class="g">+10,0%</td></tr>
+<tr><td>CFG 🟢</td><td>6.207</td><td>$0,081</td><td>$0,083</td><td>$513</td><td class="g">+2,1%</td></tr>
+<tr><td>GRIFFAIN</td><td>53.552</td><td>$0,00957</td><td>$0,0093</td><td>$498</td><td class="r">-2,8%</td></tr>
+<tr><td>SAPIEN</td><td>5.822</td><td>$0,0844</td><td>$0,0845</td><td>$492</td><td class="g">+0,2%</td></tr>
+<tr><td>CLANKER</td><td>13,29</td><td>$37,73</td><td>$31,95</td><td>$425</td><td class="r">-15,3%</td></tr>
+</table>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="label">Coin-Wert</div>
+    <div class="stat-val o">$5.858</div>
+  </div>
+  <div class="stat-box">
+    <div class="label">USDT frei</div>
+    <div class="stat-val b">$1.064</div>
+  </div>
+  <div class="stat-box">
+    <div class="label">Gesamtwert</div>
+    <div class="stat-val g">$6.922</div>
+  </div>
+</div>
+
+<div class="stat-row">
+  <div class="stat-box">
+    <div class="label">Offene P/L</div>
+    <div class="stat-val g">+$241 (+4,3%)</div>
+  </div>
+  <div class="stat-box">
+    <div class="label">Realisierte Verluste</div>
+    <div class="stat-val r">-$352</div>
+  </div>
+  <div class="stat-box">
+    <div class="label">Fees</div>
+    <div class="stat-val" style="color:#888">$0,67</div>
+  </div>
+</div>
+</div>
+
+<h2>⏳ Ausstehend</h2>
+<div class="card">
+<div style="font-size:24px;padding:10px">
+  💸 Neue Einzahlung: <strong class="o">€4.000</strong> (je €2.000 Chris + Juri) via SEPA<br>
+  <span class="label">Bilanz bleibt ausgeglichen (50/50)</span>
+</div>
+</div>
+
+<div class="footer">Milo 🦁 • JC INV CORP • WEundMILO • 19.02.2026</div>
+</body></html>

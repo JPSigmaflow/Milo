@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0a0f; color: #e0e0e0; font-family: 'Segoe UI', system-ui, sans-serif; padding: 40px; width: 1080px; }
+h1 { color: #f7931a; font-size: 38px; margin-bottom: 8px; }
+.subtitle { color: #888; font-size: 20px; margin-bottom: 30px; }
+.summary { display: flex; gap: 16px; margin-bottom: 30px; }
+.stat-card { background: #14141f; border: 1px solid #2a2a3a; border-radius: 12px; padding: 20px 24px; flex: 1; }
+.stat-label { color: #888; font-size: 16px; margin-bottom: 4px; }
+.stat-value { font-size: 28px; font-weight: 700; }
+.stat-value.green { color: #4caf50; }
+.stat-value.red { color: #ef5350; }
+.stat-value.orange { color: #f7931a; }
+.stat-value.blue { color: #64b5f6; }
+table { width: 100%; border-collapse: collapse; background: #14141f; border-radius: 12px; overflow: hidden; }
+thead { background: #1a1a2e; }
+th { padding: 14px 16px; text-align: left; font-size: 18px; color: #64b5f6; font-weight: 600; }
+td { padding: 12px 16px; font-size: 18px; border-top: 1px solid #1a1a2e; }
+tr:hover { background: #1a1a2e; }
+.type-buy { color: #4caf50; font-weight: 600; }
+.type-sell { color: #ef5350; font-weight: 600; }
+.type-fee { color: #ff9800; font-weight: 600; }
+.type-deposit { color: #64b5f6; font-weight: 600; }
+.coin { font-weight: 600; color: #fff; }
+.amount { color: #bbb; }
+.notes { color: #777; font-size: 16px; }
+.footer { margin-top: 20px; color: #555; font-size: 16px; text-align: right; }
+.section-title { color: #64b5f6; font-size: 24px; margin: 30px 0 14px; }
+.pnl-row { background: #1a1a2e !important; }
+.pnl-row td { font-weight: 600; }
+</style>
+</head>
+<body>
+
+<h1>📒 Transaktions-Finanzbericht</h1>
+<div class="subtitle">Milo Crypto System — Stand 13. Feb 2026</div>
+
+<div class="summary">
+  <div class="stat-card">
+    <div class="stat-label">Total Investiert</div>
+    <div class="stat-value orange">$6,539</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Total Verkäufe</div>
+    <div class="stat-value blue">$413</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Realisierter Verlust</div>
+    <div class="stat-value red">-$87.33</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Gebühren</div>
+    <div class="stat-value red">$0.67</div>
+  </div>
+</div>
+
+<div class="section-title">📅 Alle Transaktionen</div>
+<table>
+<thead>
+  <tr><th>Datum</th><th>Coin</th><th>Typ</th><th>Menge</th><th>Betrag (USD)</th><th>Notiz</th></tr>
+</thead>
+<tbody>
+  <tr><td>15.01.26</td><td class="coin">RAIN</td><td class="type-buy">BUY</td><td class="amount">87,851</td><td>$856.07</td><td class="notes">Initialkauf</td></tr>
+  <tr><td>15.01.26</td><td class="coin">LUNAI</td><td class="type-buy">BUY</td><td class="amount">61,987</td><td>$499.00</td><td class="notes">Initialkauf</td></tr>
+  <tr><td>15.01.26</td><td class="coin">VIRTUAL</td><td class="type-buy">BUY</td><td class="amount">862</td><td>$484.66</td><td class="notes">Initialkauf</td></tr>
+  <tr><td>15.01.26</td><td class="coin">GRIFFAIN</td><td class="type-buy">BUY</td><td class="amount">53,552</td><td>$512.49</td><td class="notes">Initialkauf</td></tr>
+  <tr><td>15.01.26</td><td class="coin">DEAI</td><td class="type-buy">BUY</td><td class="amount">33,067</td><td>$423.26</td><td class="notes">Initialkauf</td></tr>
+  <tr><td>15.01.26</td><td class="coin">RAY</td><td class="type-buy">BUY</td><td class="amount">1,297</td><td>$761.34</td><td class="notes">Juri DEX Kauf</td></tr>
+  
+  <tr><td colspan="6" style="background:#0a0a0f;height:8px;border:none;"></td></tr>
+  
+  <tr><td>12.02.26</td><td class="coin">SAPIEN</td><td class="type-buy">BUY</td><td class="amount">5,822</td><td>$491.34</td><td class="notes">Neukauf</td></tr>
+  <tr><td>12.02.26</td><td class="coin">CLANKER</td><td class="type-buy">BUY</td><td class="amount">13.29</td><td>$501.43</td><td class="notes">Neukauf</td></tr>
+  <tr><td>12.02.26</td><td class="coin">CFG</td><td class="type-buy">BUY</td><td class="amount">6,207</td><td>$502.78</td><td class="notes">Neukauf</td></tr>
+  <tr><td>12.02.26</td><td class="coin">ZAMA</td><td class="type-buy">BUY</td><td class="amount">26,690</td><td>$507.10</td><td class="notes">Neukauf</td></tr>
+  <tr><td>12.02.26</td><td class="coin">FHE</td><td class="type-buy">BUY</td><td class="amount">7,100</td><td>$500.55</td><td class="notes">Neukauf</td></tr>
+  <tr><td>12.02.26</td><td class="coin">FHE</td><td class="type-sell">SELL</td><td class="amount">7,100</td><td>$413.22</td><td class="notes">Verkauf -17.5%</td></tr>
+  
+  <tr><td colspan="6" style="background:#0a0a0f;height:8px;border:none;"></td></tr>
+  
+  <tr><td>13.02.26</td><td class="coin">USDT</td><td class="type-deposit">DEPOSIT</td><td class="amount">570.94</td><td>$570.94</td><td class="notes">Chris+Juri je $285.47</td></tr>
+  <tr><td>13.02.26</td><td class="coin">KITE</td><td class="type-buy">BUY</td><td class="amount">2,559</td><td>$499.69</td><td class="notes">Neukauf Avalanche</td></tr>
+  <tr><td>13.02.26</td><td class="coin">ALLO</td><td class="type-buy">BUY</td><td class="amount">6,042</td><td>$499.58</td><td class="notes">Neukauf Cosmos</td></tr>
+  <tr><td>13.02.26</td><td class="coin">USDT</td><td class="type-fee">FEE</td><td class="amount">—</td><td>$0.67</td><td class="notes">Trading-Gebühren</td></tr>
+</tbody>
+</table>
+
+<div class="section-title">💰 Steuer-Relevante Übersicht</div>
+<table>
+<thead>
+  <tr><th>Coin</th><th>Kauf</th><th>Verkauf</th><th>Realisierter G/V</th><th>Status</th></tr>
+</thead>
+<tbody>
+  <tr class="pnl-row"><td class="coin">FHE</td><td>$500.55</td><td>$413.22</td><td class="type-sell">-$87.33</td><td>Geschlossen</td></tr>
+  <tr><td colspan="2"></td><td style="text-align:right;color:#888;">Gebühren:</td><td class="type-fee">$0.67</td><td></td></tr>
+  <tr class="pnl-row"><td></td><td></td><td style="text-align:right;font-weight:600;">Gesamt:</td><td class="type-sell" style="font-size:22px;">-$88.00</td><td></td></tr>
+</tbody>
+</table>
+
+<div class="footer">🦁 Milo Crypto System — Automatisch generiert</div>
+
+</body>
+</html>

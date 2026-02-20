@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Masterplan v3 — Teil 3: Umsetzung + Tracking</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0f;color:#e0e0e0;font-family:'Segoe UI',system-ui,sans-serif;padding:40px 60px;max-width:100%;margin:0 auto}
+h1{font-size:2.2em;background:linear-gradient(135deg,#f7931a,#ff6b35);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+h2{font-size:1.5em;color:#f7931a;margin:30px 0 15px;border-bottom:2px solid #f7931a33;padding-bottom:8px}
+h3{font-size:1.1em;color:#64b5f6;margin:20px 0 10px}
+.subtitle{color:#888;font-size:1em;margin-bottom:30px}
+.card{background:#14141f;border:1px solid #2a2a3a;border-radius:12px;padding:24px;margin:15px 0}
+.card-red{border-color:#ff444455;background:linear-gradient(135deg,#14141f,#1a0f0f)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th{background:#1a1a2e;color:#f7931a;text-align:left;padding:10px 12px;font-size:.85em}
+td{padding:8px 12px;border-bottom:1px solid #1a1a2e;font-size:.85em}
+.stat-box{text-align:center;padding:20px;background:#1a1a2e;border-radius:10px}
+.stat-num{font-size:2.2em;font-weight:800;color:#f7931a}
+.stat-label{font-size:.8em;color:#888;margin-top:5px}
+.timeline{position:relative;padding-left:30px;margin:15px 0}
+.timeline::before{content:'';position:absolute;left:10px;top:0;bottom:0;width:2px;background:#f7931a33}
+.tl-item{position:relative;margin-bottom:20px;padding:15px;background:#14141f;border:1px solid #2a2a3a;border-radius:10px}
+.tl-item::before{content:'';position:absolute;left:-25px;top:20px;width:12px;height:12px;border-radius:50%;background:#f7931a}
+.tl-label{font-size:.75em;color:#f7931a;font-weight:600;margin-bottom:5px}
+.badge{display:inline-block;background:#f7931a22;color:#f7931a;padding:4px 12px;border-radius:6px;font-size:.8em;margin:2px}
+.kill{background:#ff444422;border:2px solid #ff4444;border-radius:10px;padding:15px;margin:8px 0;display:flex;align-items:center;gap:12px}
+.kill-id{background:#ff4444;color:#fff;padding:4px 10px;border-radius:6px;font-weight:700;font-size:.85em;white-space:nowrap}
+.kill-text{font-size:.85em}
+.footer{text-align:center;color:#555;margin-top:40px;padding-top:20px;border-top:1px solid #1a1a2e;font-size:.85em}
+</style>
+</head>
+<body>
+
+<h1>🦁 MASTERPLAN v3.0 — Teil 3</h1>
+<div class="subtitle">Umsetzung • Tracking • Kill-Switch • Kosten • Rendite | 11.02.2026</div>
+
+<h2>🗓️ Umsetzungsplan</h2>
+
+<div class="grid3" style="margin-bottom:20px">
+<div class="stat-box" style="border:2px solid #ff6b3566"><div class="stat-num" style="color:#ff6b35">24h</div><div class="stat-label">5 Sofort-Schritte</div></div>
+<div class="stat-box" style="border:2px solid #f7931a66"><div class="stat-num" style="color:#f7931a">7d</div><div class="stat-label">10 Foundation-Schritte</div></div>
+<div class="stat-box" style="border:2px solid #4caf5066"><div class="stat-num" style="color:#4caf50">30d</div><div class="stat-label">10 System-Schritte</div></div>
+</div>
+
+<h3>⚡ Erste 24 Stunden</h3>
+<div class="timeline">
+<div class="tl-item"><div class="tl-label">12:00 — Milo</div><strong>Risk Engine aktivieren</strong> — SL für alle 6 bestehenden Positionen definieren</div>
+<div class="tl-item"><div class="tl-label">14:00 — Milo</div><strong>Portfolio-Snapshot</strong> — Alle 6 Coins: Entry, Preis, P&L, Sektor</div>
+<div class="tl-item"><div class="tl-label">18:00 — Milo</div><strong>Decision Gate Template</strong> — 12-Punkt Bot-Checkliste</div>
+<div class="tl-item"><div class="tl-label">20:00 — Milo</div><strong>Trade-Journal</strong> — Template mit allen Pflichtfeldern</div>
+<div class="tl-item"><div class="tl-label">22:00 — Juri & Chris</div><strong>Team-Briefing</strong> — Regeln durchgehen, Commitment einholen</div>
+</div>
+
+<h3>📅 Erste 7 Tage</h3>
+<div class="card">
+<table>
+<tr><th>Tag</th><th>Aufgabe</th><th>Owner</th></tr>
+<tr><td>2</td><td>Watchlist-System + Sektor-Mapping</td><td>Milo</td></tr>
+<tr><td>3</td><td>Honeypot-Automation + Liquidity-Monitor + Discovery-Routine starten</td><td>Milo / Alle</td></tr>
+<tr><td>4</td><td>Playbook-Drill (3 Paper-Trades) + Alert-System (SL/TP Alerts)</td><td>Milo</td></tr>
+<tr><td>5</td><td>Kill-Switch Simulation testen</td><td>Milo</td></tr>
+<tr><td>7</td><td>Scorecard v1 + Weekly Review #1</td><td>Alle</td></tr>
+</table>
+</div>
+
+<h3>📅 Erste 30 Tage</h3>
+<div class="card">
+<table>
+<tr><th>Tag</th><th>Aufgabe</th><th>Owner</th></tr>
+<tr><td>10</td><td>🎯 Erster System-Trade (Gate 12/12)</td><td>Alle</td></tr>
+<tr><td>14</td><td>Portfolio-Rebalancing + Korrelations-Analyse + 🔥 Viral-Detection LIVE</td><td>Alle</td></tr>
+<tr><td>21</td><td>Automation v2 (Auto-Reports) + Stress-Test</td><td>Milo</td></tr>
+<tr><td>30</td><td>Monthly Review + Playbook-Refinement + v3.1 Roadmap</td><td>Alle</td></tr>
+</table>
+</div>
+
+<h2>📊 Tracking-System</h2>
+
+<h3>Wöchentliche Scorecard</h3>
+<div class="card">
+<table>
+<tr><th>Metrik</th><th>Ziel</th><th>Status-Ampel</th></tr>
+<tr><td>Portfolio-Drawdown (vom ATH)</td><td>< -20%</td><td>🟢 OK · 🟡 Warnung · 🔴 Kill-Switch</td></tr>
+<tr><td>Winrate (geschlossene Trades)</td><td>> 50%</td><td>🟢🟡🔴</td></tr>
+<tr><td>Avg R (Gewinn/Verlust)</td><td>> 1.5</td><td>🟢🟡🔴</td></tr>
+<tr><td>Fehlerquote (Regelverstöße)</td><td>0</td><td>🟢🟡🔴</td></tr>
+<tr><td>Gesamt-Exposure</td><td>40-80%</td><td>🟢🟡🔴</td></tr>
+<tr><td>Trades diese Woche</td><td>≤ 3</td><td>🟢🟡🔴</td></tr>
+<tr><td>Decision Gates 12/12</td><td>100%</td><td>🟢🟡🔴</td></tr>
+<tr><td>Viral-Detection Matches</td><td>Tracking</td><td>📊</td></tr>
+<tr><td>Discovery-Sessions</td><td>≥ 5</td><td>🟢🟡🔴</td></tr>
+</table>
+</div>
+
+<h3>Trade-Journal Felder</h3>
+<div class="grid2">
+<div class="card">
+<p><span class="badge">Trade-ID</span> <span class="badge">Datum Open/Close</span> <span class="badge">Coin/Pair</span> <span class="badge">Exchange</span></p>
+<p style="margin-top:8px"><span class="badge">Playbook (1-4)</span> <span class="badge">Entry-Preis</span> <span class="badge">Exit-Preis</span> <span class="badge">Positionsgröße</span></p>
+</div>
+<div class="card">
+<p><span class="badge">SL/TP Levels</span> <span class="badge">R:R geplant</span> <span class="badge">R realisiert</span> <span class="badge">P&L ($/%)</span></p>
+<p style="margin-top:8px"><span class="badge">Decision Gate</span> <span class="badge">Thesis</span> <span class="badge">Fehler/Lessons</span></p>
+</div>
+</div>
+
+<h2>🔄 Review-Zyklen</h2>
+<div class="grid3">
+<div class="card">
+<h3 style="color:#ff6b35">☀️ Daily (10 Min)</h3>
+<p style="font-size:.85em;line-height:1.6">
+1. Portfolio-Wert + Drawdown<br>
+2. SL/TP-Levels prüfen<br>
+3. News + Viral-Trends<br>
+4. Watchlist updaten
+</p>
+</div>
+<div class="card">
+<h3 style="color:#f7931a">📅 Weekly (30 Min)</h3>
+<p style="font-size:.85em;line-height:1.6">
+1. Scorecard ausfüllen<br>
+2. Positionen bewerten<br>
+3. 3 Entscheidungen<br>
+4. Pipeline-Status<br>
+5. Fehler-Analyse
+</p>
+</div>
+<div class="card">
+<h3 style="color:#4caf50">📊 Monthly (60 Min)</h3>
+<p style="font-size:.85em;line-height:1.6">
+1. Performance-Report<br>
+2. Playbook-Analyse<br>
+3. Risk Engine Review<br>
+4. Viral-Detection Quote<br>
+5. Prozess-Optimierung<br>
+6. Team-Retro
+</p>
+</div>
+</div>
+
+<h2>🛑 Kill-Switch-Regeln</h2>
+<div class="card card-red">
+<p style="font-size:.9em;color:#ff4444;font-weight:700;margin-bottom:15px">⚠️ HART und NICHT VERHANDELBAR</p>
+
+<div class="kill"><div class="kill-id">K1</div><div class="kill-text"><strong>Portfolio -20%:</strong> ALLE Trades stoppen. Keine neuen Positionen bis Team-Review.</div></div>
+<div class="kill"><div class="kill-id">K2</div><div class="kill-text"><strong>3 Verluste in Folge:</strong> 7 Tage Pause. Review aller 3 Trades.</div></div>
+<div class="kill"><div class="kill-id">K3</div><div class="kill-text"><strong>Position -15%:</strong> Sofort schließen. SL hätte greifen müssen → Fehleranalyse.</div></div>
+<div class="kill"><div class="kill-id">K4</div><div class="kill-text"><strong>Liquidity <$25k:</strong> Position in 24h schließen.</div></div>
+<div class="kill"><div class="kill-id">K5</div><div class="kill-text"><strong>Ohne Decision Gate:</strong> Trade sofort schließen + Warnung.</div></div>
+<div class="kill"><div class="kill-id">K6</div><div class="kill-text"><strong>Honeypot-Verdacht:</strong> Sofort maximal verkaufen.</div></div>
+<div class="kill"><div class="kill-id">K7</div><div class="kill-text"><strong>>3 Trades/Woche:</strong> Woche gesperrt bis Montag.</div></div>
+<div class="kill"><div class="kill-id" style="background:#ff6b35">K8</div><div class="kill-text"><strong>🆕 Viral-Play >24h:</strong> Sofort schließen (PB4 Max-Haltedauer).</div></div>
+<div class="kill"><div class="kill-id" style="background:#ff6b35">K9</div><div class="kill-text"><strong>🆕 >2 Viral-Plays/Woche:</strong> Viral-Plays gesperrt bis Montag.</div></div>
+</div>
+
+<h2>💰 Kostenstruktur</h2>
+<div class="grid2">
+<div class="card">
+<h3>Monatliche Kosten</h3>
+<table>
+<tr><td>AI-Token (Analyse + Alerts)</td><td style="text-align:right;color:#f7931a">$15-45</td></tr>
+<tr><td>Trade Security Checks</td><td style="text-align:right;color:#f7931a">$5-10</td></tr>
+<tr><td>APIs (CoinGecko, DexScreener)</td><td style="text-align:right;color:#4caf50">$0</td></tr>
+<tr><td>Infrastruktur (Mac Mini)</td><td style="text-align:right;color:#f7931a">~$10</td></tr>
+<tr><td>Telegram Bot</td><td style="text-align:right;color:#4caf50">$0</td></tr>
+<tr style="border-top:2px solid #f7931a"><td style="font-weight:700">GESAMT</td><td style="text-align:right;color:#f7931a;font-weight:700;font-size:1.1em">$30-65/Monat</td></tr>
+</table>
+</div>
+<div class="card">
+<h3>Break-Even</h3>
+<div class="stat-box" style="margin-top:10px"><div class="stat-num" style="font-size:1.8em">+1.4%</div><div class="stat-label">Monatliche Rendite für Break-Even</div></div>
+<p style="margin-top:15px;font-size:.85em;color:#888;text-align:center">Bei ~$3.500 Portfolio und ~$50/Monat Kosten</p>
+</div>
+</div>
+
+<h2>📈 Renditeszenarien</h2>
+<div class="card">
+<p style="margin-bottom:10px;color:#888;font-size:.85em">Startportfolio: ~$3.500</p>
+<table>
+<tr><th>Szenario</th><th>Monatl.</th><th>6 Monate</th><th>12 Monate</th></tr>
+<tr><td>🐢 Konservativ</td><td>+5%</td><td style="color:#4caf50">$4.689</td><td style="color:#4caf50">$6.287</td></tr>
+<tr><td>📊 Realistisch</td><td>+10%</td><td style="color:#f7931a">$6.200</td><td style="color:#f7931a">$10.972</td></tr>
+<tr><td>🚀 Optimistisch</td><td>+20%</td><td style="color:#ff6b35">$10.450</td><td style="color:#ff6b35">$31.139</td></tr>
+</table>
+</div>
+
+<div class="card" style="border-color:#ff6b3555">
+<h3>🔥 Viral Meme Runner Zusatzrendite (PB4)</h3>
+<table>
+<tr><th>Szenario</th><th>Pro Woche</th><th>Monatlich</th></tr>
+<tr><td>Worst Case (0% Treffer)</td><td style="color:#ff4444">-$400</td><td style="color:#ff4444">-$1.600</td></tr>
+<tr><td>Expected (30% Treffer)</td><td style="color:#4caf50">+$50-200</td><td style="color:#4caf50">+$200-800</td></tr>
+<tr><td>Best Case (Hit)</td><td style="color:#ff6b35">+$1.000-2.000</td><td style="color:#ff6b35">🚀</td></tr>
+</table>
+<p style="margin-top:10px;font-size:.8em;color:#888">Max Einsatz: $100-200/Play · Max 2/Woche · Nur Burner-Wallet</p>
+</div>
+
+<h2>👥 Team & Verantwortlichkeiten</h2>
+<div class="grid3">
+<div class="card" style="text-align:center">
+<div style="font-size:2em;margin-bottom:8px">👨‍💼</div>
+<h3 style="color:#f7931a">Juri & Chris</h3>
+<p style="font-size:.85em">Strategie · Risikotoleranz · Trade-Bestätigung</p>
+</div>
+<div class="card" style="text-align:center">
+<div style="font-size:2em;margin-bottom:8px">🦁</div>
+<h3 style="color:#f7931a">Milo AI</h3>
+<p style="font-size:.85em">Scanner · Analyse · Viral-Detection · Alerts · Security · Tracking</p>
+</div>
+<div class="card" style="text-align:center">
+<div style="font-size:2em;margin-bottom:8px">🤝</div>
+<h3 style="color:#f7931a">Gemeinsam</h3>
+<p style="font-size:.85em">Research · Reviews · Strategie-Änderungen</p>
+</div>
+</div>
+
+<div class="card">
+<h3>Entscheidungsmatrix</h3>
+<table>
+<tr><th>Aktion</th><th>Wer?</th></tr>
+<tr><td>Neuer Coin ins Portfolio</td><td>Juri ODER Chris (Button)</td></tr>
+<tr><td>Trade > $500</td><td>Juri UND Chris</td></tr>
+<tr><td>🔥 Viral Meme Runner (PB4)</td><td>Juri ODER Chris (schnell!)</td></tr>
+<tr><td>Strategie-Änderung</td><td>Gemeinsam</td></tr>
+<tr><td>Notfall / Stop-Loss</td><td>Automatisch</td></tr>
+</table>
+</div>
+
+<div class="footer">
+MASTERPLAN v3.0 — Teil 3 von 3 | WEundMILO Crypto Trading | Erstellt von Milo 🦁 | 11.02.2026
+</div>
+
+</body>
+</html>
