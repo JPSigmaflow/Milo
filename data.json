@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-20T17:36:45Z",
+  "exported_at": "2026-02-20T17:48:03Z",
   "usdt_free": 2308.6753599708636,
   "last_update": "2026-02-19 07:28:56",
   "total_value": 9880.3,
@@ -1190,6 +1190,7 @@
 {"symbol":"QAI","name":"QuantixAI","chain":"ethereum","narrative":"AI-gesteuertes Quant-Trading, vollautomatisch","market_cap":60500000.0,"liquidity":null,"volume_24h":8412861.0,"score":45,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-15 13:02:04","updated_at":"2026-02-15 13:02:04"},
 {"symbol":"PIPPIN","name":"pippin","chain":"solana","narrative":"AI Agent Framework","market_cap":438000000.0,"liquidity":72000000.0,"volume_24h":72480861.0,"score":45,"result":"watchlist","reason":"AI Agent by Yohei, trending, aber MC M nahe Grenze und -30% 24h Dump","source":"CoinGecko Trending + AI Category","source_channels":null,"scanned_at":"2026-02-18 07:01:28","updated_at":"2026-02-18 07:01:28"},
 {"symbol":"TRIA","name":"Tria","chain":"multi-chain","narrative":"DeFi/Neobank","market_cap":null,"liquidity":null,"volume_24h":null,"score":45,"result":"watchlist","reason":"AI-Analyse: Self-custodial Neobank, cross-chain ohne Bridges. OKX X Launch + Perps. MC ~35M. Nur 1 Quelle. Interessantes Konzept aber zu frisch (15 Tage). Volume -64% 24h. Risiko 7/10.","source":"analyst","source_channels":null,"scanned_at":"2026-02-18 23:08:51","updated_at":"2026-02-18 23:08:51"},
+{"symbol":"ROBO","name":"Robo Token","chain":"ethereum","narrative":"AI/Robotics","market_cap":null,"liquidity":null,"volume_24h":null,"score":45,"result":"watchlist","reason":"AI-Analyse: Coinbase Listing-Roadmap (6+ Quellen). Aber extrem niedrige MC/Volume, nicht auf MEXC handelbar. Zu früh.","source":"analyst","source_channels":null,"scanned_at":"2026-02-20 17:39:17","updated_at":"2026-02-20 17:39:17"},
 {"symbol":"AWE","name":"AWE Network","chain":"ethereum","narrative":"AI Agent Network (ex-STP)","market_cap":180262009.0,"liquidity":10218304.0,"volume_24h":10218304.0,"score":42,"result":"watchlist","reason":null,"source":"coingecko-ai-category","source_channels":null,"scanned_at":"2026-02-14 13:02:07","updated_at":"2026-02-14 13:02:07"},
 {"symbol":"IP","name":"Story","chain":"ethereum","narrative":"Dezentrales IP-Protokoll mit AI-Integration","market_cap":390000000.0,"liquidity":null,"volume_24h":60469104.0,"score":40,"result":"watchlist","reason":null,"source":"coingecko-ai","source_channels":null,"scanned_at":"2026-02-13 13:01:41","updated_at":"2026-02-13 13:01:41"},
 {"symbol":"VVV","name":"Venice Token","chain":"unknown","narrative":"AI/Privacy","market_cap":null,"liquidity":null,"volume_24h":null,"score":40,"result":"watchlist","reason":"AI-Analyse: CoinGecko Trending, AI-Privacy Narrativ (stark), aber nur 1 Quelle. Kein Multi-Source-Signal. Watchlist bis weitere Bestätigung.","source":"analyst","source_channels":null,"scanned_at":"2026-02-13 15:08:23","updated_at":"2026-02-13 15:08:23"},
