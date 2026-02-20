@@ -179,7 +179,7 @@ const fmtNum = n => n ? n.toLocaleString('de-DE') : '–';
 
 async function init() {
   let data, details;
-  const base = 'https://raw.githubusercontent.com/JPSigmaflow/Milo/main/';
+  const base = './';  // Load from same domain (GitHub Pages)
   const t = Date.now();
   try {
     const [r1, r2] = await Promise.all([
