@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JC INV PORTFOLIO</title>
-<!-- CACHE BUSTER: 2026-02-20 21:25:34 -->
+<!-- CACHE BUSTER: 2026-02-20 21:28:20 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -544,7 +544,7 @@ async function init() {
       const exitPrice = h.sold_price || h.current_price;
       const pnl = h.entry_price > 0 && exitPrice ? ((exitPrice - h.entry_price) / h.entry_price * 100) : 0;
       html += `<tr>
-        <td><strong>${h.symbol}</strong><br><span class="dim">${h.name}</span></td>
+        <td><strong style="font-size:1rem;">${h.symbol}</strong><br><span style="font-size:0.875rem;font-weight:500;color:var(--dim);">${h.name}</span></td>
         <td>${fmtPrice(h.entry_price)}</td>
         <td>${h.sold_price ? fmtPrice(h.sold_price) : fmtPrice(h.current_price)}</td>
         <td class="${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></td>
@@ -567,7 +567,7 @@ async function init() {
   if(watchlistCoins.length > 0) {
     let html = '<table style="width:100%;border-collapse:collapse;"><thead><tr style="background:var(--header-bg);"><th style="padding:8px;text-align:left;">Coin</th><th style="padding:8px;text-align:left;">Chain</th><th style="padding:8px;text-align:left;">Preis</th></tr></thead><tbody>';
     watchlistCoins.forEach(h => {
-      html += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;"><strong>${h.symbol}</strong><br><span style="font-size:0.8rem;color:var(--dim);">${h.name}</span></td><td style="padding:8px;">${h.chain||'–'}</td><td style="padding:8px;">${h.current_price ? '$' + h.current_price.toFixed(4) : '–'}</td></tr>`;
+      html += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;"><strong style="font-size:1rem;">${h.symbol}</strong><br><span style="font-size:0.875rem;font-weight:500;color:var(--dim);">${h.name}</span></td><td style="padding:8px;">${h.chain||'–'}</td><td style="padding:8px;">${h.current_price ? '$' + h.current_price.toFixed(4) : '–'}</td></tr>`;
     });
     html += '</tbody></table>';
     wlDiv.innerHTML = html;
