@@ -142,7 +142,7 @@ tr:hover{background:rgba(255,255,255,.03)}
 <h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>Scanner Ergebnisse</h2>
 <div id="scannerCards"></div>
 
-<div class="lessons-dropdown" id="lessonsDropdown" onclick="this.classList.toggle('open')">
+<div class="lessons-dropdown" onclick="this.classList.toggle('open')">
   <div class="lessons-header">
     <h2 style="margin:0;border:none;padding:0"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Lessons Learned <span id="lessonsCount" class="dim" style="font-size:.75rem"></span></h2>
     <span class="lessons-arrow">▼</span>
@@ -150,7 +150,7 @@ tr:hover{background:rgba(255,255,255,.03)}
   <div class="lessons-content" id="lessonsSection"></div>
 </div>
 
-<div class="lessons-dropdown" id="bilanzDropdown" onclick="this.classList.toggle('open')">
+<div class="lessons-dropdown" onclick="this.classList.toggle('open')">
   <div class="lessons-header">
     <h2 style="margin:0;border:none;padding:0"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Bilanz</h2>
     <span class="lessons-arrow">▼</span>
@@ -513,19 +513,22 @@ async function init() {
     soldDiv.innerHTML = '<div class="dim" style="padding:12px">Keine verkauften Coins</div>';
   }
 
-  // Watchlist
+  // WATCHLIST - FIXED
   const wlDiv = $('#watchlistSection');
-  const seen = new Set();
-  const wlUnique = watchlist.filter(h => { if(seen.has(h.symbol)) return false; seen.add(h.symbol); return true; });
-  if(wlUnique.length) {
-    let html = '<table><thead><tr><th>Coin</th><th>Chain</th><th>Preis</th><th>Entry</th></tr></thead><tbody>';
-    wlUnique.forEach(h => {
-      html += `<tr><td><strong>${h.symbol}</strong> ${h.name}</td><td>${h.chain||'–'}</td><td>${h.current_price ? fmtPrice(h.current_price) : '–'}</td><td>${h.entry_price > 0 ? fmtPrice(h.entry_price) : '–'}</td></tr>`;
+  const watchlistCoins = data.holdings.filter(h => h.status === 'watchlist') || [];
+  console.log('Watchlist coins found:', watchlistCoins.length);
+  
+  if(watchlistCoins.length > 0) {
+    let html = '<table style="width:100%;border-collapse:collapse;"><thead><tr style="background:var(--header-bg);"><th style="padding:8px;text-align:left;">Coin</th><th style="padding:8px;text-align:left;">Chain</th><th style="padding:8px;text-align:left;">Preis</th></tr></thead><tbody>';
+    watchlistCoins.forEach(h => {
+      html += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;"><strong>${h.symbol}</strong><br><span style="font-size:0.8rem;color:var(--dim);">${h.name}</span></td><td style="padding:8px;">${h.chain||'–'}</td><td style="padding:8px;">${h.current_price ? '$' + h.current_price.toFixed(4) : '–'}</td></tr>`;
     });
     html += '</tbody></table>';
     wlDiv.innerHTML = html;
+    console.log('✅ Watchlist rendered with', watchlistCoins.length, 'coins');
   } else {
-    wlDiv.innerHTML = '<div class="dim">Keine Coins auf der Watchlist</div>';
+    wlDiv.innerHTML = '<div class="dim" style="padding:16px;text-align:center;">Keine Coins auf der Watchlist</div>';
+    console.log('⚠️ No watchlist coins found');
   }
 
   // Lessons (collapsed dropdown)
@@ -673,37 +676,30 @@ async function init() {
     if(bDiv) bDiv.innerHTML = '<div style="padding:16px;text-align:center;color:var(--red)">❌ Bilanz-Daten nicht verfügbar<br><span style="font-size:.7rem;color:var(--dim);margin-top:8px;display:block">data.bilanz fehlt in data.json</span></div>';
   }
   
-  // BILANZ CONTENT - SIMPLIFIED AND WORKING
-  if(data && data.bilanz && bDiv) {
-    const b = data.bilanz;
-    const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
-    
-    bDiv.innerHTML = '<div style="padding:16px">' +
-      '<h4 style="color:var(--orange);margin-bottom:12px;">📊 Business Bilanz</h4>' +
-      '<div style="background:rgba(0,230,118,0.1);padding:12px;border-radius:8px;margin-bottom:12px;">' +
-        '<p style="color:var(--green);margin-bottom:8px;">Status: ' + (b.status || 'Unknown') + '</p>' +
-      '</div>' +
-      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">' +
-        '<div>' +
-          '<p style="color:var(--dim);font-size:0.8rem;">Chris Schulz</p>' +
-          '<p style="font-size:1.1rem;font-weight:700;">' + fE(b.business?.chris_eur || 0) + '</p>' +
-        '</div>' +
-        '<div>' +
-          '<p style="color:var(--dim);font-size:0.8rem;">Juri</p>' +
-          '<p style="font-size:1.1rem;font-weight:700;">' + fE(b.business?.juri_eur || 0) + '</p>' +
-        '</div>' +
-      '</div>' +
-      '<div style="border-top:1px solid var(--border);margin-top:12px;padding-top:12px;">' +
-        '<p style="color:var(--dim);font-size:0.8rem;">Gesamtkapital</p>' +
-        '<p style="font-size:1.3rem;font-weight:700;color:var(--green);">' + fE(b.business?.gesamt_eur || 0) + '</p>' +
-      '</div>' +
+  // SIMPLIFIED BILANZ LOADER  
+  setTimeout(() => {
+    const bilanzDiv = document.getElementById('bilanzSection');
+    if(data && data.bilanz && bilanzDiv) {
+      const b = data.bilanz;
+      const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+      
+      bilanzDiv.innerHTML = '<div style="padding:16px">' +
+        '<h4 style="color:var(--orange);margin-bottom:12px;">📊 Business Bilanz</h4>' +
+        '<p style="color:var(--green);margin-bottom:12px;">Status: ' + (b.status || 'Unknown') + '</p>' +
+        '<table style="width:100%;border-collapse:collapse;">' +
+          '<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;color:var(--dim);">Chris:</td><td style="padding:8px;text-align:right;font-weight:700;">' + fE(b.business?.chris_eur || 0) + '</td></tr>' +
+          '<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;color:var(--dim);">Juri:</td><td style="padding:8px;text-align:right;font-weight:700;">' + fE(b.business?.juri_eur || 0) + '</td></tr>' +
+          '<tr style="border-top:2px solid var(--orange);"><td style="padding:8px;color:var(--orange);font-weight:700;">Gesamt:</td><td style="padding:8px;text-align:right;font-weight:700;color:var(--green);">' + fE(b.business?.gesamt_eur || 0) + '</td></tr>' +
+        '</table>' +
       '</div>';
       
-    console.log('✅ Bilanz content filled with real data');
-  }
+      console.log('✅ Bilanz loaded successfully');
+    }
+  }, 500);
 }
 
-// No complex JavaScript needed - HTML onclick works now
+// Simple onclick works - no complex JS needed
+console.log('✅ Dashboard loaded with working dropdowns');
 
 init();
 </script>
