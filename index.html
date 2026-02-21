@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JC INV PORTFOLIO</title>
-<!-- CACHE BUSTER: 2026-02-20 21:29:55 -->
+<!-- CACHE BUSTER: 2026-02-20 21:34:39 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -311,7 +311,6 @@ async function init() {
       <div class="coin-row" onclick="this.parentElement.classList.toggle('open')">
         <div>
           <span class="coin-symbol">${h.symbol}</span> <span class="coin-arrow">▼</span>
-          <div class="coin-name">${h.name} · ${h.chain||''}</div>
         </div>
         <div class="coin-val">${fmtPrice(h.current_price)}</div>
         <div class="coin-val hide-mobile">${fmtPrice(h.entry_price)}</div>
@@ -321,6 +320,11 @@ async function init() {
       </div>
       <div class="coin-details">
         <div class="coin-details-inner">
+          <div class="detail-section">
+            <h4 class="blue">Coin Info</h4>
+            <p><strong>Name:</strong> ${h.name}</p>
+            <p><strong>Chain:</strong> ${h.chain || 'Unbekannt'}</p>
+          </div>
           <div class="detail-section">
             <h4 class="orange">HAWK Analyse</h4>
             <p>${det.hawk_summary || 'Keine Analyse verfügbar'}</p>
