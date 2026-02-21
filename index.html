@@ -26,8 +26,8 @@ h2{color:#fff;font-size:1rem;margin:20px 0 10px;border-bottom:1px solid var(--bo
 .coin-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden}
 .coin-row{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr 1fr;align-items:center;padding:8px 10px;cursor:pointer;user-select:none;gap:2px;transition:background .15s}
 .coin-row:hover{background:rgba(255,255,255,.03)}
-.coin-symbol{font-weight:700;font-size:0.875rem}
-.coin-name{color:var(--dim);font-size:0.75rem;font-weight:500}
+.coin-symbol{font-weight:700;font-size:1rem}
+.coin-name{color:var(--dim);font-size:0.875rem;font-weight:500}
 .coin-val{font-size:0.75rem;font-weight:500;text-align:right;white-space:nowrap}
 .coin-arrow{color:var(--dim);font-size:.7rem;transition:transform .25s;margin-left:6px}
 .coin-card.open .coin-arrow{transform:rotate(180deg)}
@@ -366,7 +366,7 @@ async function init() {
         <div class="scanner-header">
           <div class="scanner-left">
             <span class="scanner-symbol">${c.symbol}</span>
-            <span class="scanner-narrative">${c.narrative||c.name||''}</span>
+            <span class="scanner-narrative">${(c.narrative||c.name||'').length > 25 ? (c.narrative||c.name||'').substring(0, 25) + '...' : (c.narrative||c.name||'')}</span>
           </div>
           <div class="scanner-right">
             <span class="badge ${badgeCls}">${c.result||'–'}</span>
