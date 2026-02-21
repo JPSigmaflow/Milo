@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-21T06:52:38Z",
+  "exported_at": "2026-02-21T07:04:04Z",
   "usdt_free": 1508.2764955383634,
   "last_update": "2026-02-19 07:28:56",
   "total_value": 10555.99,
@@ -1310,6 +1310,7 @@
 {"symbol":"ESP","name":"Espresso","chain":"espresso","narrative":"L1/Infrastructure","market_cap":null,"liquidity":null,"volume_24h":null,"score":52,"result":"watchlist","reason":"AI-Analyse: KuCoin Top Gainer +44%. Airdrop-Hype (OlimpioAlpha). Aber Single-Narrativ.","source":"analyst","source_channels":null,"scanned_at":"2026-02-18 23:08:51","updated_at":"2026-02-19 04:55:47"},
 {"symbol":"AIOZ","name":"AIOZ Network","chain":"ethereum","narrative":"Decentralized AI Infrastructure (CDN, Storage, Streaming)","market_cap":84900000.0,"liquidity":7400000.0,"volume_24h":7444851.0,"score":52,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-19 04:57:15","updated_at":"2026-02-19 04:57:15"},
 {"symbol":"DOLO","name":"Dolomite","chain":"ethereum","narrative":"DeFi/DEX","market_cap":null,"liquidity":null,"volume_24h":null,"score":52,"result":"watchlist","reason":"AI-Analyse: Weiterhin CoinGecko Trending. DeFi/Lending Narrativ auf Arbitrum.","source":"analyst + coingecko-trending","source_channels":null,"scanned_at":"2026-02-20 03:39:41","updated_at":"2026-02-20 06:09:02"},
+{"symbol":"LYN","name":"Everlyn","chain":"BSC","narrative":"AI Video Model + Agential Multimodal Ecosystem (open-source video AI, Cornell/Oxford/Stanford team)","market_cap":61587885.0,"liquidity":5990329.0,"volume_24h":5990329.0,"score":52,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-21 07:01:43","updated_at":"2026-02-21 07:01:43"},
 {"symbol":"RENDER","name":"Render Token","chain":"solana","narrative":"AI GPU Rendering","market_cap":679868099.0,"liquidity":515090.0,"volume_24h":419123.0,"score":50,"result":"watchlist","reason":"AI-GPU Narrativ, MC $679M über Filter, gute Liq/Vol, eher Large-Cap","source":"dexscreener","source_channels":null,"scanned_at":"2026-02-12 19:41:19","updated_at":"2026-02-12 19:41:19"},
 {"symbol":"ON","name":"Orochi Network","chain":"bsc","narrative":"AI Oracle/ZK","market_cap":11930166.0,"liquidity":642785.0,"volume_24h":3079737.0,"score":50,"result":"watchlist","reason":"AI Oracle/ZK, +24.6% 24h, MC $12M, Vol $3M. Momentum hoch.","source":"hawk-scan","source_channels":null,"scanned_at":"2026-02-12 20:45:34","updated_at":"2026-02-12 20:45:34"},
 {"symbol":"RECALL","name":"Recall","chain":"Multi","narrative":"AI Memory/Data Layer","market_cap":11100000.0,"liquidity":null,"volume_24h":18500000.0,"score":50,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-13 07:01:41","updated_at":"2026-02-13 07:01:41"},
