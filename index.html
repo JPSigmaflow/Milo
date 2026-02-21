@@ -685,7 +685,40 @@ function toggleDropdown(dropdownId) {
   }
 }
 
-init();
+// Fill bilanz section after data loads
+async function fillBilanz() {
+  try {
+    const response = await fetch('./data.json');
+    const data = await response.json();
+    const bDiv = document.getElementById('bilanzSection');
+    const b = data.bilanz;
+    console.log('Filling bilanz with data:', b);
+    
+    if(b && bDiv) {
+      const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+      bDiv.innerHTML = '<div style="padding:16px">' +
+        '<h4 style="color:var(--orange);margin-bottom:12px">📊 Business Bilanz</h4>' +
+        '<p style="color:var(--green);margin-bottom:8px">Status: ' + b.status + '</p>' +
+        '<p>Chris: ' + fE(b.business.chris_eur) + '</p>' +
+        '<p>Juri: ' + fE(b.business.juri_eur) + '</p>' +
+        '<p style="font-weight:bold;margin-top:8px">Gesamt: ' + fE(b.business.gesamt_eur) + '</p>' +
+        '</div>';
+      console.log('✅ Bilanz filled successfully');
+    } else {
+      bDiv.innerHTML = '<div style="padding:16px;color:var(--red)">❌ Bilanz-Daten fehlen</div>';
+    }
+  } catch(e) {
+    console.error('Bilanz fill error:', e);
+    document.getElementById('bilanzSection').innerHTML = '<div style="padding:16px;color:var(--red)">❌ Fehler beim Laden: ' + e.message + '</div>';
+  }
+}
+
+async function initApp() {
+  await init();
+  await fillBilanz();
+}
+
+initApp();
 </script>
 </body>
 </html>
