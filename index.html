@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JC INV PORTFOLIO</title>
-<!-- CACHE BUSTER: 2026-02-20 21:34:39 -->
+<!-- CACHE BUSTER: 2026-02-20 21:38:20 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -348,13 +348,161 @@ async function init() {
     listDiv.appendChild(card);
   });
 
-  // Column headers for portfolio
-  const headerDiv = document.createElement('div');
-  headerDiv.className = 'coin-row';
-  headerDiv.style.cssText = 'cursor:default;font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:transparent';
-  headerDiv.onclick = null;
-  headerDiv.innerHTML = '<div>Coin</div><div class="coin-val">Preis</div><div class="coin-val hide-mobile">Entry</div><div class="coin-val">P&L%</div><div class="coin-val">Wert</div><div class="coin-val">24h</div>';
-  listDiv.insertBefore(headerDiv, listDiv.firstChild);
+  // Column headers for portfolio - SORTABLE
+  let portfolioSort = { column: 'wert', asc: false }; // Default: Wert absteigend
+  
+  function renderPortfolioHeaders() {
+    const headerDiv = document.createElement('div');
+    headerDiv.className = 'coin-row';
+    headerDiv.style.cssText = 'font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:rgba(255,255,255,.05);border-bottom:1px solid var(--border)';
+    
+    const headers = [
+      {key: 'coin', label: 'Coin', class: ''},
+      {key: 'preis', label: 'Preis', class: 'coin-val'},
+      {key: 'entry', label: 'Entry', class: 'coin-val hide-mobile'},
+      {key: 'pnl', label: 'P&L%', class: 'coin-val'},
+      {key: 'wert', label: 'Wert', class: 'coin-val'},
+      {key: '24h', label: '24h', class: 'coin-val'}
+    ];
+    
+    headerDiv.innerHTML = headers.map(h => {
+      const arrow = portfolioSort.column === h.key ? (portfolioSort.asc ? ' ↑' : ' ↓') : '';
+      const style = portfolioSort.column === h.key ? 'color:#fff;font-weight:600' : '';
+      return `<div class="${h.class}" style="cursor:pointer;${style}" onclick="sortPortfolio('${h.key}')">${h.label}${arrow}</div>`;
+    }).join('');
+    
+    const existingHeader = listDiv.querySelector('.coin-row');
+    if (existingHeader && existingHeader.style.background.includes('rgba')) {
+      existingHeader.remove();
+    }
+    listDiv.insertBefore(headerDiv, listDiv.firstChild);
+  }
+  
+  function sortPortfolio(column) {
+    if (portfolioSort.column === column) {
+      portfolioSort.asc = !portfolioSort.asc;
+    } else {
+      portfolioSort.column = column;
+      portfolioSort.asc = column === 'coin'; // Coin alphabetisch aufsteigend, Rest absteigend
+    }
+    renderPortfolioList();
+  }
+  
+  function renderPortfolioList() {
+    // Remove existing cards (but keep header)
+    const cards = Array.from(listDiv.querySelectorAll('.coin-card'));
+    cards.forEach(card => card.remove());
+    
+    // Sort active holdings
+    const sortedActive = [...active].sort((a, b) => {
+      let valA, valB;
+      
+      switch(portfolioSort.column) {
+        case 'coin':
+          valA = a.symbol;
+          valB = b.symbol;
+          break;
+        case 'preis':
+          valA = a.current_price || 0;
+          valB = b.current_price || 0;
+          break;
+        case 'entry':
+          valA = a.entry_price || 0;
+          valB = b.entry_price || 0;
+          break;
+        case 'pnl':
+          valA = a.entry_price > 0 ? ((a.current_price - a.entry_price) / a.entry_price * 100) : 0;
+          valB = b.entry_price > 0 ? ((b.current_price - b.entry_price) / b.entry_price * 100) : 0;
+          break;
+        case 'wert':
+          valA = a.amount * (a.current_price || 0);
+          valB = b.amount * (b.current_price || 0);
+          break;
+        case '24h':
+          valA = changes[a.symbol] || -999;
+          valB = changes[b.symbol] || -999;
+          break;
+        default:
+          valA = valB = 0;
+      }
+      
+      if (portfolioSort.column === 'coin') {
+        return portfolioSort.asc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+      } else {
+        return portfolioSort.asc ? valA - valB : valB - valA;
+      }
+    });
+    
+    // Render sorted cards
+    sortedActive.forEach(h => {
+      const val = h.amount * (h.current_price || 0);
+      const pnl = h.entry_price > 0 ? ((h.current_price - h.entry_price) / h.entry_price * 100) : 0;
+      const chg = changes[h.symbol];
+      const det = details[h.symbol] || {};
+      
+      const card = document.createElement('div');
+      card.className = 'coin-card';
+      
+      // Links
+      let linksHtml = '';
+      if(det.website) linksHtml += `<a href="${det.website}" target="_blank">Website</a>`;
+      if(det.github) linksHtml += `<a href="${det.github}" target="_blank">GitHub</a>`;
+      if(det.twitter) linksHtml += `<a href="${det.twitter}" target="_blank">X/Twitter</a>`;
+      if(det.telegram) linksHtml += `<a href="${det.telegram}" target="_blank">Telegram</a>`;
+      
+      // Community
+      let communityHtml = '';
+      if(det.community) {
+        if(det.community.tg_members) communityHtml += `<span>TG: <strong>${fmtNum(det.community.tg_members)}</strong></span>`;
+        if(det.community.twitter_followers) communityHtml += `<span>Twitter: <strong>${fmtNum(det.community.twitter_followers)}</strong></span>`;
+      }
+      if(!communityHtml) communityHtml = '<span>Keine Daten</span>';
+
+      card.innerHTML = `
+        <div class="coin-row" onclick="this.parentElement.classList.toggle('open')">
+          <div>
+            <span class="coin-symbol">${h.symbol}</span> <span class="coin-arrow">▼</span>
+          </div>
+          <div class="coin-val">${fmtPrice(h.current_price)}</div>
+          <div class="coin-val hide-mobile">${fmtPrice(h.entry_price)}</div>
+          <div class="coin-val ${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></div>
+          <div class="coin-val">${fmtVal(val)}</div>
+          <div class="coin-val ${chg >= 0 ? 'green' : 'red'}">${chg != null ? pnlSign(chg)+fmt(chg)+'%' : '–'}</div>
+        </div>
+        <div class="coin-details">
+          <div class="coin-details-inner">
+            <div class="detail-section">
+              <h4 class="blue">Coin Info</h4>
+              <p><strong>Name:</strong> ${h.name}</p>
+              <p><strong>Chain:</strong> ${h.chain || 'Unbekannt'}</p>
+            </div>
+            <div class="detail-section">
+              <h4 class="orange">HAWK Analyse</h4>
+              <p>${det.hawk_summary || 'Keine Analyse verfügbar'}</p>
+              ${det.hawk_score != null ? `<p style="margin-top:6px;color:var(--orange)">Score: <strong>${det.hawk_score}/100</strong></p>` : ''}
+            </div>
+            <div class="detail-section">
+              <h4 class="blue">Nächste Meilensteine</h4>
+              <p>${det.milestones || 'Keine bekannt'}</p>
+            </div>
+            <div class="detail-section">
+              <h4 class="blue">Links</h4>
+              <div class="detail-links">${linksHtml || '<span class="dim">Keine Links</span>'}</div>
+            </div>
+            <div class="detail-section">
+              <h4 class="green">Community</h4>
+              <div class="community-stat">${communityHtml}</div>
+            </div>
+          </div>
+        </div>
+      `;
+      listDiv.appendChild(card);
+    });
+  }
+  
+  // Initial render
+  renderPortfolioHeaders();
+  renderPortfolioList();
 
   const scanDiv = $('#scannerCards');
   const scanCoins = (data.scanner_coins||[]).sort((a,b) => (b.score||0)-(a.score||0));
