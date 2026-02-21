@@ -91,6 +91,7 @@ tr:hover{background:rgba(255,255,255,.03)}
 .lessons-header:hover,.lessons-header:active{background:rgba(255,255,255,.1)}
 .lessons-arrow{color:var(--dim);font-size:1rem;transition:transform .25s;font-weight:bold}
 .lessons-dropdown.open .lessons-arrow{transform:rotate(180deg)}
+.lessons-content{pointer-events:auto}
 .lessons-content{max-height:0;overflow:hidden;transition:max-height .4s ease}
 .lessons-dropdown.open .lessons-content{max-height:2000px}
 .chart-wrap{height:300px;position:relative}
@@ -745,24 +746,30 @@ function mobileToggle(element, event) {
 document.addEventListener('DOMContentLoaded', function() {
   const dropdowns = document.querySelectorAll('.lessons-dropdown');
   dropdowns.forEach(dropdown => {
-    // Remove inline handlers
+    // Remove inline handlers from the dropdown container
     dropdown.removeAttribute('onclick');
     dropdown.removeAttribute('ontouchstart');
     
-    // Add proper mobile event listeners
-    dropdown.addEventListener('touchstart', function(e) {
-      e.preventDefault();
-      this.classList.toggle('open');
-      console.log('Touch: dropdown toggled');
-    }, {passive: false});
-    
-    dropdown.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.classList.toggle('open'); 
-      console.log('Click: dropdown toggled');
-    });
+    // Add event listeners ONLY to the header
+    const header = dropdown.querySelector('.lessons-header');
+    if (header) {
+      // Add proper mobile event listeners ONLY to header
+      header.addEventListener('touchstart', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        dropdown.classList.toggle('open');
+        console.log('Touch header: dropdown toggled');
+      }, {passive: false});
+      
+      header.addEventListener('click', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        dropdown.classList.toggle('open'); 
+        console.log('Click header: dropdown toggled');
+      });
+    }
   });
-  console.log('✅ Mobile dropdown handlers added');
+  console.log('✅ Mobile dropdown handlers added to HEADERS only');
 });
 
 init();
