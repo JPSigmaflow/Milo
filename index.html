@@ -144,7 +144,7 @@ tr:hover{background:rgba(255,255,255,.03)}
   <div id="scannerCards"></div>
 </div>
 
-<div class="lessons-dropdown" onclick="this.classList.toggle('open')">
+<div class="lessons-dropdown" id="lessonsDropdown">
   <div class="lessons-header">
     <h2 style="margin:0;border:none;padding:0"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Lessons Learned <span id="lessonsCount" class="dim" style="font-size:.75rem"></span></h2>
     <span class="lessons-arrow">▼</span>
@@ -152,7 +152,7 @@ tr:hover{background:rgba(255,255,255,.03)}
   <div class="lessons-content" id="lessonsSection"></div>
 </div>
 
-<div class="lessons-dropdown" onclick="this.classList.toggle('open')">
+<div class="lessons-dropdown" id="bilanzDropdown">
   <div class="lessons-header">
     <h2 style="margin:0;border:none;padding:0"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Bilanz</h2>
     <span class="lessons-arrow">▼</span>
@@ -164,6 +164,53 @@ tr:hover{background:rgba(255,255,255,.03)}
 
 <script>
 const $ = s => document.querySelector(s);
+
+// SAFE DROPDOWN TOGGLE - VERHINDERT ZUKLAPPEN BEIM SCROLLEN
+let touchStartTime = 0;
+let touchStartY = 0;
+
+function safeToggleDropdown(element, event) {
+  // Bei Touch-Events prüfen ob es ein echter Tap oder Scroll war
+  const now = Date.now();
+  
+  if (event.type === 'touchstart') {
+    touchStartTime = now;
+    touchStartY = event.touches[0].clientY;
+    return;
+  }
+  
+  if (event.type === 'touchend') {
+    const timeDiff = now - touchStartTime;
+    const yDiff = Math.abs(event.changedTouches[0].clientY - touchStartY);
+    
+    // Nur togglen wenn kurzer Tap (< 200ms) und wenig Bewegung (< 10px)
+    if (timeDiff < 200 && yDiff < 10) {
+      toggleDropdown(element);
+    }
+    return;
+  }
+  
+  // Desktop Click - immer togglen
+  if (event.type === 'click') {
+    toggleDropdown(element);
+  }
+}
+
+function toggleDropdown(element) {
+  element.classList.toggle('open');
+  
+  // Arrow rotation
+  const arrow = element.querySelector('.lessons-arrow');
+  if (arrow) {
+    if (element.classList.contains('open')) {
+      arrow.style.transform = 'rotate(180deg)';
+    } else {
+      arrow.style.transform = 'rotate(0deg)';
+    }
+  }
+  
+  console.log('Dropdown toggled, open:', element.classList.contains('open'));
+}
 const fmt = (n,d=2) => n!=null ? Number(n).toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d}) : '–';
 const fmtVal = n => n!=null ? '$' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:0,maximumFractionDigits:0}) : '–';
 const fmtPrice = n => {
