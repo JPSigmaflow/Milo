@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JC INV PORTFOLIO</title>
-<!-- CACHE BUSTER: 2026-02-20 21:40:10 -->
+<!-- CACHE BUSTER: 2026-02-20 21:45:20 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -282,70 +282,6 @@ async function init() {
   // Portfolio with accordion
   const listDiv = $('#portfolioList');
   // Sortierung wird jetzt von renderPortfolioList() übernommen
-    const val = h.amount * (h.current_price || 0);
-    const pnl = h.entry_price > 0 ? ((h.current_price - h.entry_price) / h.entry_price * 100) : 0;
-    const chg = changes[h.symbol];
-    const det = details[h.symbol] || {};
-    
-    const card = document.createElement('div');
-    card.className = 'coin-card';
-    
-    // Links
-    let linksHtml = '';
-    if(det.website) linksHtml += `<a href="${det.website}" target="_blank">Website</a>`;
-    if(det.github) linksHtml += `<a href="${det.github}" target="_blank">GitHub</a>`;
-    if(det.twitter) linksHtml += `<a href="${det.twitter}" target="_blank">X/Twitter</a>`;
-    if(det.telegram) linksHtml += `<a href="${det.telegram}" target="_blank">Telegram</a>`;
-    
-    // Community
-    let communityHtml = '';
-    if(det.community) {
-      if(det.community.tg_members) communityHtml += `<span>TG: <strong>${fmtNum(det.community.tg_members)}</strong></span>`;
-      if(det.community.twitter_followers) communityHtml += `<span>Twitter: <strong>${fmtNum(det.community.twitter_followers)}</strong></span>`;
-    }
-    if(!communityHtml) communityHtml = '<span>Keine Daten</span>';
-
-    card.innerHTML = `
-      <div class="coin-row" onclick="this.parentElement.classList.toggle('open')">
-        <div>
-          <span class="coin-symbol">${h.symbol}</span> <span class="coin-arrow">▼</span>
-        </div>
-        <div class="coin-val">${fmtPrice(h.current_price)}</div>
-        <div class="coin-val hide-mobile">${fmtPrice(h.entry_price)}</div>
-        <div class="coin-val ${pnlClass(pnl)}"><strong>${pnlSign(pnl)}${fmt(pnl)}%</strong></div>
-        <div class="coin-val">${fmtVal(val)}</div>
-        <div class="coin-val ${chg >= 0 ? 'green' : 'red'}">${chg != null ? pnlSign(chg)+fmt(chg)+'%' : '–'}</div>
-      </div>
-      <div class="coin-details">
-        <div class="coin-details-inner">
-          <div class="detail-section">
-            <h4 class="blue">Coin Info</h4>
-            <p><strong>Name:</strong> ${h.name}</p>
-            <p><strong>Chain:</strong> ${h.chain || 'Unbekannt'}</p>
-          </div>
-          <div class="detail-section">
-            <h4 class="orange">HAWK Analyse</h4>
-            <p>${det.hawk_summary || 'Keine Analyse verfügbar'}</p>
-            ${det.hawk_score != null ? `<p style="margin-top:6px;color:var(--orange)">Score: <strong>${det.hawk_score}/100</strong></p>` : ''}
-          </div>
-          <div class="detail-section">
-            <h4 class="blue">Nächste Meilensteine</h4>
-            <p>${det.milestones || 'Keine bekannt'}</p>
-          </div>
-          <div class="detail-section">
-            <h4 class="blue">Links</h4>
-            <div class="detail-links">${linksHtml || '<span class="dim">Keine Links</span>'}</div>
-          </div>
-          <div class="detail-section">
-            <h4 class="orange">Community</h4>
-            <div class="community-stat">${communityHtml}</div>
-          </div>
-        </div>
-      </div>
-    `;
-    listDiv.appendChild(card);
-  });
-
   // Column headers for portfolio - SORTABLE
   let portfolioSort = { column: 'wert', asc: false }; // Default: Wert absteigend
   
