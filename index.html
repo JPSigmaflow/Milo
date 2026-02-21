@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JC INV PORTFOLIO</title>
-<!-- CACHE BUSTER: 2026-02-20 22:46:43 -->
+<!-- CACHE BUSTER: 2026-02-21 01:12:52 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -831,16 +831,8 @@ async function init() {
     '✓ Prüfsumme: Eingezahlt '+fU(cry.total_eingezahlt_usd)+' = Coins (Entry) '+fU(coinCost)+' + USDT '+fU(usdt)+' + Verluste '+fU(Math.abs(rPnl))+' + Fees '+fU(fees)+' = '+fU(coinCost+usdt+Math.abs(rPnl)+fees) +
     '</div>' +
     
-    // ── 4. TRANSAKTIONSHISTORIE ──
-    '<h4 '+SEC('orange')+'>IV. Transaktionshistorie</h4>' +
-    '<table '+T+'>' +
-    '<tr style="background:var(--header-bg)"><th '+H+'>Datum</th><th '+H+'>Transaktion</th><th '+HR+'>Summe</th></tr>' +
-    txs.map(t=>{
-      const tc = t.type==='BUY'?'var(--green)':t.type==='SELL'?'var(--red)':'var(--blue)';
-      const label = t.type==='BUY'?'KAUF':t.type==='SELL'?'VERKAUF':t.type==='DEPOSIT'?'EINLAGE':t.type==='FEE'?'GEBÜHR':t.type;
-      return '<tr><td '+S+' style="white-space:nowrap">'+t.tx_date.slice(0,10)+'</td><td '+S+'><span style="color:'+tc+';font-weight:600;font-size:.6rem">'+label+'</span> '+(t.coin||'')+'</td><td '+R+'>'+fU(t.total_usd)+'</td></tr>';
-    }).join('') +
-    '</table>' +
+    // Transaktionshistorie entfernt - bereits in separater Sektion verfügbar
+    
     
     // ── 5. GESELLSCHAFTER ──
     '<h4 '+SEC('blue')+'>V. Gesellschafter</h4>' +
