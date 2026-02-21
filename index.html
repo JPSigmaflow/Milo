@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JC INV PORTFOLIO</title>
-<!-- CACHE BUSTER: 2026-02-20 22:03:04 -->
+<!-- CACHE BUSTER: 2026-02-20 22:46:43 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -654,19 +654,68 @@ async function init() {
     soldDiv.innerHTML = '<div class="dim" style="padding:12px">Keine verkauften Coins</div>';
   }
 
-  // WATCHLIST - FIXED
+  // WATCHLIST - ACCORDION STYLE (wie Scanner)
   const wlDiv = $('#watchlistSection');
   const watchlistCoins = data.holdings.filter(h => h.status === 'watchlist') || [];
   console.log('Watchlist coins found:', watchlistCoins.length);
   
   if(watchlistCoins.length > 0) {
-    let html = '<table style="width:100%;border-collapse:collapse;"><thead><tr style="background:var(--header-bg);"><th style="padding:8px;text-align:left;">Coin</th><th style="padding:8px;text-align:left;">Chain</th><th style="padding:8px;text-align:left;">Preis</th></tr></thead><tbody>';
-    watchlistCoins.forEach(h => {
-      html += `<tr style="border-bottom:1px solid var(--border);"><td style="padding:8px;"><strong style="font-size:1rem;">${h.symbol}</strong><br><span style="font-size:0.875rem;font-weight:500;color:var(--dim);">${h.name}</span></td><td style="padding:8px;">${h.chain||'–'}</td><td style="padding:8px;">${h.current_price ? '$' + h.current_price.toFixed(4) : '–'}</td></tr>`;
-    });
-    html += '</tbody></table>';
-    wlDiv.innerHTML = html;
-    console.log('✅ Watchlist rendered with', watchlistCoins.length, 'coins');
+    
+    function renderWatchlistCard(h) {
+      const priceChange = h.change_24h || 0;
+      const changeColor = priceChange >= 0 ? 'var(--green)' : 'var(--red)';
+      const changeSign = priceChange >= 0 ? '+' : '';
+      const marketCapFormatted = h.market_cap ? fmtCompact(h.market_cap) : '–';
+      const volumeFormatted = h.volume_24h ? fmtCompact(h.volume_24h) : '–';
+      const volumeMcRatio = (h.volume_24h && h.market_cap) ? ((h.volume_24h / h.market_cap) * 100).toFixed(1) + '%' : '–';
+      
+      // Calculate volume spike indicator
+      let volumeIndicator = '';
+      if (h.volume_24h && h.market_cap) {
+        const ratio = h.volume_24h / h.market_cap;
+        if (ratio > 0.30) volumeIndicator = '<span style="color:var(--red);font-weight:700">🚨 MASSIVE</span>';
+        else if (ratio > 0.15) volumeIndicator = '<span style="color:var(--orange);font-weight:700">🔥 HIGH</span>';
+        else if (ratio > 0.05) volumeIndicator = '<span style="color:var(--green)">✓ Normal</span>';
+        else volumeIndicator = '<span style="color:var(--dim)">⬇ Low</span>';
+      }
+      
+      return `
+      <div class="scanner-card" onclick="openWatchlistCard(this)">
+        <div class="scanner-header">
+          <div class="scanner-left">
+            <span class="scanner-symbol">${h.symbol}</span>
+            <span class="scanner-narrative">${(h.name||'').length > 25 ? (h.name||'').substring(0, 25) + '...' : (h.name||'')}</span>
+          </div>
+          <div class="scanner-right">
+            <span class="badge badge-watchlist">WATCH</span>
+            <span class="scanner-score" style="color:${changeColor}">${h.current_price ? '$' + h.current_price.toFixed(4) : '–'}</span>
+            <span class="scanner-arrow">▼</span>
+          </div>
+        </div>
+        <div class="scanner-details">
+          <div class="scanner-row"><span class="label">Name</span><span class="val">${h.name||'–'}</span></div>
+          <div class="scanner-row"><span class="label">Chain</span><span class="val">${h.chain||'–'}</span></div>
+          <div class="scanner-row"><span class="label">Aktueller Preis</span><span class="val">${h.current_price ? '$' + h.current_price.toFixed(6) : '–'}</span></div>
+          <div class="scanner-row"><span class="label">24h Change</span><span class="val" style="color:${changeColor}">${changeSign}${priceChange.toFixed(2)}%</span></div>
+          <div class="scanner-row"><span class="label">Market Cap</span><span class="val">${marketCapFormatted}</span></div>
+          <div class="scanner-row"><span class="label">Volume 24h</span><span class="val">${volumeFormatted}</span></div>
+          <div class="scanner-row"><span class="label">Vol/MC Ratio</span><span class="val">${volumeMcRatio}</span></div>
+          <div class="scanner-row"><span class="label">Volume Alert</span><span class="val">${volumeIndicator}</span></div>
+          <div class="scanner-row"><span class="label">Entry Target</span><span class="val">${h.entry_price ? '$' + h.entry_price.toFixed(6) : 'Not Set'}</span></div>
+          <div class="scanner-row"><span class="label">Hinzugefügt</span><span class="val dim">${h.created_at || '–'}</span></div>
+          <div class="scanner-reason">${h.narrative || 'Watchlist Coin - Tracking für Volume-Spikes und Einstiegschancen'}</div>
+        </div>
+      </div>`;
+    }
+    
+    // Watchlist Card Click Handler
+    window.openWatchlistCard = function(cardElement) {
+      cardElement.classList.toggle('open');
+    };
+    
+    const watchlistHtml = watchlistCoins.map(renderWatchlistCard).join('');
+    wlDiv.innerHTML = watchlistHtml;
+    console.log('✅ Watchlist rendered as accordion with', watchlistCoins.length, 'coins');
   } else {
     wlDiv.innerHTML = '<div class="dim" style="padding:16px;text-align:center;">Keine Coins auf der Watchlist</div>';
     console.log('⚠️ No watchlist coins found');
