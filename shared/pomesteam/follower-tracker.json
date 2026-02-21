@@ -1,0 +1,71 @@
+{
+  "account": "@pomesteam",
+  "history": [
+    {
+      "date": "2026-02-06",
+      "followers": 940,
+      "posts": 390,
+      "note": "Erster Tracking-Tag, China Telephone Booth Post"
+    },
+    {
+      "date": "2026-02-09",
+      "followers": 943,
+      "posts": 397,
+      "note": "From dashboard"
+    },
+    {
+      "date": "2026-02-11",
+      "followers": 942,
+      "posts": 405,
+      "note": "API pull. 3 neue Posts heute. -1 vs 09.02."
+    },
+    {
+      "date": "2026-02-12",
+      "followers": 942,
+      "posts": 406,
+      "note": "Daily report. +0 Follower, +1 Post vs 11.02."
+    },
+    {
+      "date": "2026-02-13",
+      "followers": 942,
+      "posts": 407,
+      "note": "Daily report. +0 Follower, +1 Post vs 12.02."
+    },
+    {
+      "date": "2026-02-14",
+      "followers": 943,
+      "posts": 409,
+      "note": "Daily report. +1 Follower, +2 Posts vs 13.02. Valentine's Day post live."
+    },
+    {
+      "date": "2026-02-15",
+      "followers": null,
+      "posts": null,
+      "note": "API token expired — no live data. Token refresh needed."
+    },
+    {
+      "date": "2026-02-16",
+      "followers": 943,
+      "posts": 410,
+      "note": "Daily report. +0 Follower vs 14.02, +1 Post. Token working again."
+    },
+    {
+      "date": "2026-02-17",
+      "followers": 943,
+      "posts": 410,
+      "note": "Daily report. +0 Follower, +0 Posts vs 16.02."
+    },
+    {
+      "date": "2026-02-18",
+      "followers": 944,
+      "posts": 412,
+      "note": "Daily report. +1 Follower, +2 Posts vs 17.02. Cuddle post + Pom eyes post."
+    },
+    {
+      "date": "2026-02-19",
+      "followers": 944,
+      "posts": 413,
+      "note": "Daily report. +0 Follower, +1 Post vs 18.02. Dog fashion/bootie post."
+    }
+  ]
+}

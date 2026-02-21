@@ -1,0 +1,756 @@
+{
+  "checked": 108,
+  "added": [
+    "Crypto_Chase",
+    "WhalePanda",
+    "coinbureau",
+    "CryptoBanter",
+    "coingecko",
+    "ZssBecker",
+    "FatManTerra",
+    "OlimpioCrypto",
+    "VentureCoinist",
+    "ToneVays",
+    "cryptojack",
+    "LayahHeilpern",
+    "CryptoYoda1338",
+    "MacroScope17",
+    "tradingroomapp",
+    "TaikiMaeda2",
+    "Delphi_Digital",
+    "JackNiewold",
+    "Fiskantes",
+    "CryptoGirlNova",
+    "MikeBurgersburg",
+    "CryptoKaduna",
+    "ShardiB2",
+    "CryptoNewton",
+    "BitcoinPierre",
+    "nvk",
+    "francispouliot_",
+    "naiivememe",
+    "cryptogems555",
+    "NateGeraci",
+    "PeterSchiff",
+    "RichardHeartWin",
+    "MacnBTC",
+    "MarioNawfal",
+    "BitcoinFear",
+    "unusual_whales",
+    "gmoneyNFT"
+  ],
+  "added_count": 37,
+  "below_threshold": [
+    {
+      "handle": "CryptoMessiah",
+      "name": "messi",
+      "followers": 374,
+      "added": false
+    },
+    {
+      "handle": "jimchanos",
+      "name": "IDT",
+      "followers": 108,
+      "added": false
+    },
+    {
+      "handle": "arkhamintel",
+      "name": "Arkham",
+      "followers": 0,
+      "added": false
+    },
+    {
+      "handle": "mooncarl",
+      "name": "carl mae",
+      "followers": 13,
+      "added": false
+    },
+    {
+      "handle": "NicholasCosby",
+      "name": "nicholas cosby",
+      "followers": 4,
+      "added": false
+    },
+    {
+      "handle": "whalechart",
+      "name": "?",
+      "followers": 88,
+      "added": false
+    },
+    {
+      "handle": "BitBoyBackup",
+      "name": "BitBoy",
+      "followers": 75,
+      "added": false
+    },
+    {
+      "handle": "datadash",
+      "name": "DataDash",
+      "followers": 258,
+      "added": false
+    },
+    {
+      "handle": "cryptolark",
+      "name": "Lark Davis",
+      "followers": 382,
+      "added": false
+    },
+    {
+      "handle": "SatoshiStacker",
+      "name": "SatoshiStacker",
+      "followers": 170,
+      "added": false
+    },
+    {
+      "handle": "smartcontracter",
+      "name": "Wax Smart Contractor",
+      "followers": 1417,
+      "added": false
+    },
+    {
+      "handle": "0xhamz",
+      "name": "prof3ssor",
+      "followers": 217,
+      "added": false
+    },
+    {
+      "handle": "LadyofCrypto1",
+      "name": "Parked account",
+      "followers": 1876,
+      "added": false
+    },
+    {
+      "handle": "spiritofcrypto",
+      "name": "Spirit of Crypto",
+      "followers": 103,
+      "added": false
+    },
+    {
+      "handle": "andrewmok",
+      "name": "andrew mok",
+      "followers": 132,
+      "added": false
+    },
+    {
+      "handle": "yano",
+      "name": ".",
+      "followers": 22,
+      "added": false
+    },
+    {
+      "handle": "bitboy_crypto",
+      "name": "GIGA CHAD",
+      "followers": 2158,
+      "added": false
+    },
+    {
+      "handle": "GuySwann",
+      "name": "Guy Swann",
+      "followers": 197,
+      "added": false
+    },
+    {
+      "handle": "BitcoinBroski",
+      "name": "Whitney Gibbs",
+      "followers": 754,
+      "added": false
+    },
+    {
+      "handle": "CryptoCapo",
+      "name": "Don Crypto",
+      "followers": 403,
+      "added": false
+    },
+    {
+      "handle": "Zeneca_33",
+      "name": "Not @Zeneca",
+      "followers": 880,
+      "added": false
+    },
+    {
+      "handle": "GMoney",
+      "name": "Gregg",
+      "followers": 430,
+      "added": false
+    },
+    {
+      "handle": "cryptotony",
+      "name": "CryptoTony",
+      "followers": 259,
+      "added": false
+    },
+    {
+      "handle": "CanteringClark",
+      "name": "Clark",
+      "followers": 796,
+      "added": false
+    },
+    {
+      "handle": "DegenNews",
+      "name": "Degen News Network",
+      "followers": 206,
+      "added": false
+    }
+  ],
+  "errors": [
+    {
+      "handle": "CryptoCobain",
+      "error": "not found"
+    },
+    {
+      "handle": "SquishChaos",
+      "error": "not found"
+    },
+    {
+      "handle": "woonomic",
+      "error": "not found"
+    },
+    {
+      "handle": "TechLead",
+      "error": "not found"
+    },
+    {
+      "handle": "CryptoDonAlt",
+      "error": "not found"
+    },
+    {
+      "handle": "crypto_rand",
+      "error": "not found"
+    },
+    {
+      "handle": "NovaBitcoin",
+      "error": "not found"
+    },
+    {
+      "handle": "Sheldon_Sniper",
+      "error": "not found"
+    },
+    {
+      "handle": "CryptoWZRD",
+      "error": "not found"
+    },
+    {
+      "handle": "TheCryptoLark",
+      "error": "not found"
+    },
+    {
+      "handle": "KillTheWolf0",
+      "error": "not found"
+    },
+    {
+      "handle": "PairedJudy",
+      "error": "not found"
+    },
+    {
+      "handle": "CryptoGainz1",
+      "error": "suspended/unavailable"
+    },
+    {
+      "handle": "DefiMinist",
+      "error": "not found"
+    },
+    {
+      "handle": "Hsaka_trades",
+      "error": "not found"
+    },
+    {
+      "handle": "CryptoDrake_",
+      "error": "not found"
+    },
+    {
+      "handle": "HalBorland",
+      "error": "not found"
+    },
+    {
+      "handle": "theaborovskis",
+      "error": "not found"
+    },
+    {
+      "handle": "cryptoFMaps",
+      "error": "not found"
+    },
+    {
+      "handle": "cryptodegen888",
+      "error": "not found"
+    },
+    {
+      "handle": "CryptoTeachers",
+      "error": "suspended/unavailable"
+    },
+    {
+      "handle": "Zoran_crypto",
+      "error": "suspended/unavailable"
+    },
+    {
+      "handle": "kraborovskis",
+      "error": "not found"
+    },
+    {
+      "handle": "DefiSurfer808",
+      "error": "not found"
+    },
+    {
+      "handle": "HankyTonkMan",
+      "error": "not found"
+    },
+    {
+      "handle": "AshCryptoReal",
+      "error": "not found"
+    },
+    {
+      "handle": "TheDefiantNews",
+      "error": "suspended/unavailable"
+    },
+    {
+      "handle": "Bitcoin_Magazine",
+      "error": "not found"
+    },
+    {
+      "handle": "pumpdotfun",
+      "error": "not found"
+    },
+    {
+      "handle": "ODELL",
+      "error": "not found"
+    },
+    {
+      "handle": "loaborovskis",
+      "error": "not found"
+    },
+    {
+      "handle": "faaborovskis",
+      "error": "not found"
+    },
+    {
+      "handle": "Andrew_Kang_",
+      "error": "not found"
+    },
+    {
+      "handle": "CryptoMessiah_",
+      "error": "not found"
+    },
+    {
+      "handle": "Dying_Trading",
+      "error": "not found"
+    },
+    {
+      "handle": "Flood_cap",
+      "error": "not found"
+    },
+    {
+      "handle": "zaborovskis",
+      "error": "suspended/unavailable"
+    },
+    {
+      "handle": "raborovskis",
+      "error": "not found"
+    },
+    {
+      "handle": "staborovskis",
+      "error": "not found"
+    },
+    {
+      "handle": "kaborovskis",
+      "error": "not found"
+    },
+    {
+      "handle": "CryptoFinally",
+      "error": "not found"
+    },
+    {
+      "handle": "BanklessHQ",
+      "error": "not found"
+    },
+    {
+      "handle": "CryptoBardastan",
+      "error": "not found"
+    },
+    {
+      "handle": "blaborovskis",
+      "error": "not found"
+    },
+    {
+      "handle": "claborovskis",
+      "error": "not found"
+    },
+    {
+      "handle": "dlaborovskis",
+      "error": "not found"
+    }
+  ],
+  "rate_limited": false,
+  "results": [
+    {
+      "handle": "CryptoMessiah",
+      "name": "messi",
+      "followers": 374,
+      "added": false
+    },
+    {
+      "handle": "Crypto_Chase",
+      "name": "Crypto Chase",
+      "followers": 200974,
+      "added": true
+    },
+    {
+      "handle": "jimchanos",
+      "name": "IDT",
+      "followers": 108,
+      "added": false
+    },
+    {
+      "handle": "WhalePanda",
+      "name": "WhalePanda",
+      "followers": 301351,
+      "added": true
+    },
+    {
+      "handle": "coinbureau",
+      "name": "Coin Bureau",
+      "followers": 1090376,
+      "added": true
+    },
+    {
+      "handle": "CryptoBanter",
+      "name": "CryptoBanter",
+      "followers": 16888,
+      "added": true
+    },
+    {
+      "handle": "arkhamintel",
+      "name": "Arkham",
+      "followers": 0,
+      "added": false
+    },
+    {
+      "handle": "coingecko",
+      "name": "CoinGecko",
+      "followers": 2395906,
+      "added": true
+    },
+    {
+      "handle": "ZssBecker",
+      "name": "Alex Becker \ud83c\udf4a\ud83c\udfc6\ud83e\udd47",
+      "followers": 1355040,
+      "added": true
+    },
+    {
+      "handle": "FatManTerra",
+      "name": "FatMan",
+      "followers": 130170,
+      "added": true
+    },
+    {
+      "handle": "OlimpioCrypto",
+      "name": "olimpio",
+      "followers": 204408,
+      "added": true
+    },
+    {
+      "handle": "mooncarl",
+      "name": "carl mae",
+      "followers": 13,
+      "added": false
+    },
+    {
+      "handle": "NicholasCosby",
+      "name": "nicholas cosby",
+      "followers": 4,
+      "added": false
+    },
+    {
+      "handle": "whalechart",
+      "name": "?",
+      "followers": 88,
+      "added": false
+    },
+    {
+      "handle": "VentureCoinist",
+      "name": "Luke Martin",
+      "followers": 329785,
+      "added": true
+    },
+    {
+      "handle": "BitBoyBackup",
+      "name": "BitBoy",
+      "followers": 75,
+      "added": false
+    },
+    {
+      "handle": "ToneVays",
+      "name": "Tone Vays",
+      "followers": 291244,
+      "added": true
+    },
+    {
+      "handle": "datadash",
+      "name": "DataDash",
+      "followers": 258,
+      "added": false
+    },
+    {
+      "handle": "cryptolark",
+      "name": "Lark Davis",
+      "followers": 382,
+      "added": false
+    },
+    {
+      "handle": "cryptojack",
+      "name": "CryptoJack",
+      "followers": 486563,
+      "added": true
+    },
+    {
+      "handle": "LayahHeilpern",
+      "name": "Layah Heilpern",
+      "followers": 701987,
+      "added": true
+    },
+    {
+      "handle": "SatoshiStacker",
+      "name": "SatoshiStacker",
+      "followers": 170,
+      "added": false
+    },
+    {
+      "handle": "CryptoYoda1338",
+      "name": "CryptoYoda",
+      "followers": 243388,
+      "added": true
+    },
+    {
+      "handle": "MacroScope17",
+      "name": "MacroScope",
+      "followers": 91137,
+      "added": true
+    },
+    {
+      "handle": "smartcontracter",
+      "name": "Wax Smart Contractor",
+      "followers": 1417,
+      "added": false
+    },
+    {
+      "handle": "0xhamz",
+      "name": "prof3ssor",
+      "followers": 217,
+      "added": false
+    },
+    {
+      "handle": "tradingroomapp",
+      "name": "Trading Room",
+      "followers": 113873,
+      "added": true
+    },
+    {
+      "handle": "TaikiMaeda2",
+      "name": "Taiki Maeda",
+      "followers": 114001,
+      "added": true
+    },
+    {
+      "handle": "LadyofCrypto1",
+      "name": "Parked account",
+      "followers": 1876,
+      "added": false
+    },
+    {
+      "handle": "Delphi_Digital",
+      "name": "Delphi Digital",
+      "followers": 219303,
+      "added": true
+    },
+    {
+      "handle": "spiritofcrypto",
+      "name": "Spirit of Crypto",
+      "followers": 103,
+      "added": false
+    },
+    {
+      "handle": "andrewmok",
+      "name": "andrew mok",
+      "followers": 132,
+      "added": false
+    },
+    {
+      "handle": "yano",
+      "name": ".",
+      "followers": 22,
+      "added": false
+    },
+    {
+      "handle": "JackNiewold",
+      "name": "Jack Niewold \ud83e\udee1",
+      "followers": 117039,
+      "added": true
+    },
+    {
+      "handle": "Fiskantes",
+      "name": "daddy fiskantes \u2b50\ufe0f\ud83e\ude78",
+      "followers": 110667,
+      "added": true
+    },
+    {
+      "handle": "CryptoGirlNova",
+      "name": "Crypto Nova",
+      "followers": 146813,
+      "added": true
+    },
+    {
+      "handle": "bitboy_crypto",
+      "name": "GIGA CHAD",
+      "followers": 2158,
+      "added": false
+    },
+    {
+      "handle": "MikeBurgersburg",
+      "name": "DIRTY BUBBLE MEDIA: GOOD LUCK, GOOD BYE.",
+      "followers": 57781,
+      "added": true
+    },
+    {
+      "handle": "CryptoKaduna",
+      "name": "Kaduna",
+      "followers": 195177,
+      "added": true
+    },
+    {
+      "handle": "ShardiB2",
+      "name": "Don\u2019t Follow Shardi B If You Hate Money",
+      "followers": 252108,
+      "added": true
+    },
+    {
+      "handle": "CryptoNewton",
+      "name": "Shelby",
+      "followers": 270768,
+      "added": true
+    },
+    {
+      "handle": "GuySwann",
+      "name": "Guy Swann",
+      "followers": 197,
+      "added": false
+    },
+    {
+      "handle": "BitcoinPierre",
+      "name": "Pierre Rochard",
+      "followers": 106419,
+      "added": true
+    },
+    {
+      "handle": "nvk",
+      "name": "DETERMINISTIC OPTIMISM \ud83c\udf1e",
+      "followers": 156034,
+      "added": true
+    },
+    {
+      "handle": "francispouliot_",
+      "name": "FRANCIS - BULLBITCOIN.COM",
+      "followers": 111380,
+      "added": true
+    },
+    {
+      "handle": "BitcoinBroski",
+      "name": "Whitney Gibbs",
+      "followers": 754,
+      "added": false
+    },
+    {
+      "handle": "CryptoCapo",
+      "name": "Don Crypto",
+      "followers": 403,
+      "added": false
+    },
+    {
+      "handle": "Zeneca_33",
+      "name": "Not @Zeneca",
+      "followers": 880,
+      "added": false
+    },
+    {
+      "handle": "GMoney",
+      "name": "Gregg",
+      "followers": 430,
+      "added": false
+    },
+    {
+      "handle": "naiivememe",
+      "name": "naiive",
+      "followers": 337156,
+      "added": true
+    },
+    {
+      "handle": "cryptotony",
+      "name": "CryptoTony",
+      "followers": 259,
+      "added": false
+    },
+    {
+      "handle": "cryptogems555",
+      "name": "Crypto GEMs \ud83d\udcc8\ud83d\ude80",
+      "followers": 440892,
+      "added": true
+    },
+    {
+      "handle": "NateGeraci",
+      "name": "Nate Geraci",
+      "followers": 74655,
+      "added": true
+    },
+    {
+      "handle": "CanteringClark",
+      "name": "Clark",
+      "followers": 796,
+      "added": false
+    },
+    {
+      "handle": "PeterSchiff",
+      "name": "Peter Schiff",
+      "followers": 1329461,
+      "added": true
+    },
+    {
+      "handle": "RichardHeartWin",
+      "name": "Richard Heart",
+      "followers": 353887,
+      "added": true
+    },
+    {
+      "handle": "MacnBTC",
+      "name": "Mac \ud83d\udc3a",
+      "followers": 531121,
+      "added": true
+    },
+    {
+      "handle": "MarioNawfal",
+      "name": "Mario Nawfal",
+      "followers": 3025688,
+      "added": true
+    },
+    {
+      "handle": "BitcoinFear",
+      "name": "Bitcoin Fear and Greed Index",
+      "followers": 776644,
+      "added": true
+    },
+    {
+      "handle": "unusual_whales",
+      "name": "unusual_whales",
+      "followers": 3250338,
+      "added": true
+    },
+    {
+      "handle": "gmoneyNFT",
+      "name": "gmoney.eth",
+      "followers": 320029,
+      "added": true
+    },
+    {
+      "handle": "DegenNews",
+      "name": "Degen News Network",
+      "followers": 206,
+      "added": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "current_phase": "state",
+  "cycle_day": 1,
+  "phases": ["state", "story", "strategy"],
+  "days_per_phase": 3,
+  "started": "2026-02-05",
+  "todos": [],
+  "insights": []
+}
