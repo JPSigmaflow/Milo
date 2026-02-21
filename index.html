@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JC INV PORTFOLIO</title>
-<!-- CACHE BUSTER: 2026-02-20 21:45:20 -->
+<!-- CACHE BUSTER: 2026-02-20 22:00:40 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -302,8 +302,16 @@ async function init() {
     headerDiv.innerHTML = headers.map(h => {
       const arrow = portfolioSort.column === h.key ? (portfolioSort.asc ? ' ↑' : ' ↓') : '';
       const style = portfolioSort.column === h.key ? 'color:#fff;font-weight:600' : '';
-      return `<div class="${h.class}" style="cursor:pointer;${style}" onclick="sortPortfolio('${h.key}')">${h.label}${arrow}</div>`;
+      return `<div class="${h.class}" style="cursor:pointer;${style}" data-sort="${h.key}">${h.label}${arrow}</div>`;
     }).join('');
+    
+    // Add event listeners to header cells
+    headerDiv.querySelectorAll('[data-sort]').forEach(cell => {
+      cell.addEventListener('click', (e) => {
+        const column = e.target.dataset.sort;
+        sortPortfolio(column);
+      });
+    });
     
     const existingHeader = listDiv.querySelector('.coin-row');
     if (existingHeader && existingHeader.style.background.includes('rgba')) {
