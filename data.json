@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-21T06:48:19Z",
+  "exported_at": "2026-02-21T06:52:38Z",
   "usdt_free": 1508.2764955383634,
   "last_update": "2026-02-19 07:28:56",
   "total_value": 10555.99,
@@ -36,7 +36,10 @@
       "realized_pnl_usd": -352.18
     }
   },
-  "transactions": [{"coin":"IMX","type":"BUY","amount":4611.119999999999891,"price_usd":0.1734999999999999876,"total_usd":800.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-02-20 17:57:35","notes":"Gaming Infrastructure Play - Schaufel-Verkaufer Strategie"},
+  "transactions": [{"coin":"XTZ","type":"BUY","amount":52.22999999999999688,"price_usd":0.0,"total_usd":0.0,"fee_usd":0.0,"exchange":"AUDIT_FIX","tx_date":"2026-02-21 06:50:00","notes":"FILL_ADJUSTMENT: Holdings-Diskrepanz +52.23 XTZ aufgelöst"},
+{"coin":"STX","type":"BUY","amount":111.0499999999999972,"price_usd":0.0,"total_usd":0.0,"fee_usd":0.0,"exchange":"AUDIT_FIX","tx_date":"2026-02-21 06:50:00","notes":"FILL_ADJUSTMENT: Holdings-Diskrepanz +111.05 STX aufgelöst"},
+{"coin":"HNT","type":"BUY","amount":27.08999999999999986,"price_usd":0.0,"total_usd":0.0,"fee_usd":0.0,"exchange":"AUDIT_FIX","tx_date":"2026-02-21 06:50:00","notes":"FILL_ADJUSTMENT: Holdings-Diskrepanz +27.09 HNT aufgelöst"},
+{"coin":"IMX","type":"BUY","amount":4611.119999999999891,"price_usd":0.1734999999999999876,"total_usd":800.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-02-20 17:57:35","notes":"Gaming Infrastructure Play - Schaufel-Verkaufer Strategie"},
 {"coin":"HNT","type":"BUY","amount":586.4720448325297184,"price_usd":1.534599999999999965,"total_usd":900.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-02-20 15:50:20","notes":"Main Dual-Approved Trade"},
 {"coin":"STX","type":"BUY","amount":2253.944402704733421,"price_usd":0.2661999999999999922,"total_usd":600.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-02-20 15:50:20","notes":"Main Dual-Approved Trade"},
 {"coin":"XTZ","type":"BUY","amount":1498.127340823969916,"price_usd":0.4005000000000000226,"total_usd":600.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-02-20 15:50:20","notes":"Main Dual-Approved Trade"},
@@ -84,7 +87,6 @@
 {"symbol":"AZTEC","name":"Aztec Network","amount":0.0,"entry_price":0.0,"exchange":"watchlist","chain":"ethereum","status":"watchlist","entry_date":null,"current_price":0.03386700000000000126,"updated_at":"2026-02-21 03:54:04","sold_price":null,"sold_date":null},
 {"symbol":"DEAI","name":"Zero1 Labs","amount":33067.02999999999884,"entry_price":0.01280000000000000061,"exchange":"MEXC","chain":"Ethereum","status":"watchlist","entry_date":"2026-02-10","current_price":0.006781999999999999835,"updated_at":"2026-02-21 05:08:36","sold_price":null,"sold_date":null},
 {"symbol":"ENSO","name":"Enso","amount":0.0,"entry_price":0.0,"exchange":"watchlist","chain":"ethereum","status":"watchlist","entry_date":null,"current_price":1.862055000000000015,"updated_at":"2026-02-21 03:56:19","sold_price":null,"sold_date":null},
-{"symbol":"FHE","name":"Mind Network","amount":7496.180000000000291,"entry_price":0.07099999999999999367,"exchange":"MEXC","chain":"BNB","status":"watchlist","entry_date":"2026-02-10","current_price":0.04023700000000000193,"updated_at":"2026-02-21 05:08:36","sold_price":0.05199999999999999762,"sold_date":"2026-02-12"},
 {"symbol":"HOLO","name":"Holoworld","amount":0.0,"entry_price":0.0,"exchange":"watchlist","chain":"solana","status":"watchlist","entry_date":null,"current_price":null,"updated_at":"2026-02-21 03:50:56","sold_price":null,"sold_date":null},
 {"symbol":"KAITO","name":"KAITO","amount":0.0,"entry_price":0.0,"exchange":"watchlist","chain":"ethereum","status":"watchlist","entry_date":null,"current_price":null,"updated_at":"2026-02-21 03:50:56","sold_price":null,"sold_date":null},
 {"symbol":"LPT","name":"Livepeer","amount":0.0,"entry_price":0.0,"exchange":"watchlist","chain":"Ethereum","status":"watchlist","entry_date":null,"current_price":2.359131999999999785,"updated_at":"2026-02-21 03:54:29","sold_price":null,"sold_date":null},
@@ -92,6 +94,7 @@
 {"symbol":"ROBO","name":"Robo Token","amount":0.0,"entry_price":0.0,"exchange":"watchlist","chain":"ethereum","status":"watchlist","entry_date":null,"current_price":0.02066199999999999982,"updated_at":"2026-02-21 03:55:34","sold_price":null,"sold_date":null},
 {"symbol":"SHELL","name":"MyShell","amount":0.0,"entry_price":0.0,"exchange":"watchlist","chain":"ethereum","status":"watchlist","entry_date":null,"current_price":null,"updated_at":"2026-02-21 03:50:56","sold_price":null,"sold_date":null},
 {"symbol":"VANA","name":"Vana","amount":0.0,"entry_price":0.0,"exchange":"watchlist","chain":"ethereum","status":"watchlist","entry_date":null,"current_price":1.647127999999999926,"updated_at":"2026-02-21 03:55:00","sold_price":null,"sold_date":null},
+{"symbol":"FHE","name":"Mind Network","amount":7496.180000000000291,"entry_price":0.07099999999999999367,"exchange":"MEXC","chain":"BNB","status":"sold","entry_date":"2026-02-10","current_price":0.04023700000000000193,"updated_at":"2026-02-21 05:08:36","sold_price":0.05199999999999999762,"sold_date":"2026-02-12"},
 {"symbol":"LUNAI","name":"Luna by Virtuals","amount":61986.86000000000058,"entry_price":0.008049999999999999864,"exchange":"MEXC","chain":"Base","status":"sold","entry_date":"2026-02-10","current_price":0.006370999999999999928,"updated_at":"2026-02-21 05:08:36","sold_price":null,"sold_date":null}],
   "price_history": [{"symbol":"RAIN","price":0.0097789999999999995,"change_24h":-3.589999999999999858,"market_cap":3322287022.0,"volume_24h":21348897.0,"recorded_at":"2026-02-12 12:06"},
 {"symbol":"LUNAI","price":0.007734999999999999689,"change_24h":-1.689999999999999947,"market_cap":7734531.0,"volume_24h":13161823.0,"recorded_at":"2026-02-12 12:06"},
