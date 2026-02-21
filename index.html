@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JC INV PORTFOLIO</title>
-<!-- CACHE BUSTER: 2026-02-20 21:38:20 -->
+<!-- CACHE BUSTER: 2026-02-20 21:40:10 -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -281,9 +281,7 @@ async function init() {
 
   // Portfolio with accordion
   const listDiv = $('#portfolioList');
-  active.sort((a,b) => (b.amount * (b.current_price||0)) - (a.amount * (a.current_price||0)));
-  
-  active.forEach(h => {
+  // Sortierung wird jetzt von renderPortfolioList() übernommen
     const val = h.amount * (h.current_price || 0);
     const pnl = h.entry_price > 0 ? ((h.current_price - h.entry_price) / h.entry_price * 100) : 0;
     const chg = changes[h.symbol];
