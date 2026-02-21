@@ -313,7 +313,7 @@ async function init() {
       const badgeCls = 'badge-' + (c.result||'').replace(/-/g,'');
       const scoreColor = c.score >= 50 ? 'var(--green)' : c.score >= 30 ? 'var(--orange)' : 'var(--red)';
       return `
-      <div class="scanner-card" onclick="openScannerCard(this)"
+      <div class="scanner-card" onclick="openScannerCard(this)">
         <div class="scanner-header">
           <div class="scanner-left">
             <span class="scanner-symbol">${c.symbol}</span>
@@ -337,16 +337,21 @@ async function init() {
         </div>
       </div>`;
     }
-    // Scanner Card Click Handler - Cards bleiben offen beim Scrollen
+    // Scanner Card Click Handler - Toggle aber bleiben oft offen
     window.openScannerCard = function(cardElement) {
-      // Nur öffnen wenn noch nicht offen - verhindert zuklappen beim Scrollen
-      if (!cardElement.classList.contains('open')) {
-        cardElement.classList.add('open');
-        
-        // Arrow rotation
-        const arrow = cardElement.querySelector('.scanner-arrow');
-        if (arrow) arrow.style.transform = 'rotate(180deg)';
+      cardElement.classList.toggle('open');
+      
+      // Arrow rotation
+      const arrow = cardElement.querySelector('.scanner-arrow');
+      if (arrow) {
+        if (cardElement.classList.contains('open')) {
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          arrow.style.transform = 'rotate(0deg)';
+        }
       }
+      
+      console.log('Scanner card clicked, open:', cardElement.classList.contains('open'));
     };
     
     function renderScannerPage(){
