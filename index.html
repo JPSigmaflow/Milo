@@ -140,7 +140,9 @@ tr:hover{background:rgba(255,255,255,.03)}
 <div class="card overflow-x" id="watchlistSection"></div>
 
 <h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>Scanner Ergebnisse</h2>
-<div id="scannerCards"></div>
+<div class="card">
+  <div id="scannerCards"></div>
+</div>
 
 <div class="lessons-dropdown" onclick="this.classList.toggle('open')">
   <div class="lessons-header">
@@ -311,7 +313,7 @@ async function init() {
       const badgeCls = 'badge-' + (c.result||'').replace(/-/g,'');
       const scoreColor = c.score >= 50 ? 'var(--green)' : c.score >= 30 ? 'var(--orange)' : 'var(--red)';
       return `
-      <div class="scanner-card" onclick="this.classList.toggle('open')">
+      <div class="scanner-card" onclick="openScannerCard(this)"
         <div class="scanner-header">
           <div class="scanner-left">
             <span class="scanner-symbol">${c.symbol}</span>
@@ -335,6 +337,18 @@ async function init() {
         </div>
       </div>`;
     }
+    // Scanner Card Click Handler - Cards bleiben offen beim Scrollen
+    window.openScannerCard = function(cardElement) {
+      // Nur öffnen wenn noch nicht offen - verhindert zuklappen beim Scrollen
+      if (!cardElement.classList.contains('open')) {
+        cardElement.classList.add('open');
+        
+        // Arrow rotation
+        const arrow = cardElement.querySelector('.scanner-arrow');
+        if (arrow) arrow.style.transform = 'rotate(180deg)';
+      }
+    };
+    
     function renderScannerPage(){
       const start = curPage * PAGE_SIZE;
       const pageCoins = scanCoins.slice(start, start + PAGE_SIZE);
