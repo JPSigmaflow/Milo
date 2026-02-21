@@ -16,16 +16,16 @@ body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,
 .stat-value{font-size:1.8rem;font-weight:700;margin-bottom:4px}
 .stat-label{font-size:0.8rem;color:var(--dim)}
 
-/* WORKING DROPDOWN */
-.section{background:var(--card);border:1px solid var(--border);border-radius:12px;margin:20px 0;overflow:hidden}
-.section-header{padding:20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background 0.2s}
-.section-header:hover{background:rgba(255,255,255,0.05)}
-.section-title{font-size:1.2rem;display:flex;align-items:center;gap:10px}
-.arrow{transition:transform 0.25s;color:var(--dim)}
-.section-content{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
-.section.open .section-content{max-height:1000px}
+/* MOBILE-OPTIMIZED DROPDOWN */
+.section{background:var(--card);border:1px solid var(--border);border-radius:12px;margin:20px 0;overflow:hidden;-webkit-tap-highlight-color:transparent}
+.section-header{padding:24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background 0.2s;min-height:60px;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+.section-header:hover,.section-header:active{background:rgba(255,255,255,0.1)}
+.section-title{font-size:1.3rem;display:flex;align-items:center;gap:12px;font-weight:600}
+.arrow{transition:transform 0.25s;color:var(--dim);font-size:1.2rem;font-weight:bold}
+.section-content{max-height:0;overflow:hidden;transition:max-height 0.4s ease;background:rgba(0,0,0,0.2)}
+.section.open .section-content{max-height:2000px}
 .section.open .arrow{transform:rotate(180deg)}
-.content-inner{padding:20px;border-top:1px solid var(--border)}
+.content-inner{padding:24px;border-top:1px solid var(--border)}
 
 .coin-table{width:100%;border-collapse:collapse;margin:16px 0}
 .coin-table th,.coin-table td{padding:8px;text-align:left;border-bottom:1px solid var(--border)}
@@ -33,6 +33,28 @@ body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,
 .green{color:var(--green)}
 .red{color:var(--red)}
 .orange{color:var(--orange)}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .container{padding:16px}
+  .stats{grid-template-columns:1fr 1fr;gap:12px}
+  .stat{padding:12px}
+  .stat-value{font-size:1.4rem}
+  .section{margin:16px 0}
+  .section-header{padding:20px 16px}
+  .section-title{font-size:1.1rem}
+  .content-inner{padding:16px}
+  .coin-table{font-size:0.9rem}
+  .coin-table th,.coin-table td{padding:6px 4px}
+}
+
+@media (max-width: 480px) {
+  .stats{grid-template-columns:1fr;gap:8px}
+  .stat-value{font-size:1.2rem}
+  .section-title{font-size:1rem}
+  .coin-table{font-size:0.8rem}
+  .coin-table th,.coin-table td{padding:4px 2px}
+}
 </style>
 </head>
 <body>
@@ -63,7 +85,7 @@ body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,
   </div>
 
   <!-- WATCHLIST SECTION -->
-  <div class="section" onclick="toggleSection(this)">
+  <div class="section" ontouchstart="toggleSection(this, event)" onclick="toggleSection(this, event)">
     <div class="section-header">
       <div class="section-title">👀 Watchlist</div>
       <div class="arrow">▼</div>
@@ -74,7 +96,7 @@ body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,
   </div>
 
   <!-- BILANZ SECTION -->
-  <div class="section" onclick="toggleSection(this)">
+  <div class="section" ontouchstart="toggleSection(this, event)" onclick="toggleSection(this, event)">
     <div class="section-header">
       <div class="section-title">💰 Bilanz</div>
       <div class="arrow">▼</div>
@@ -91,10 +113,26 @@ body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,
 </div>
 
 <script>
-// SIMPLE WORKING DROPDOWN FUNCTION
-function toggleSection(element) {
+// MOBILE-OPTIMIZED DROPDOWN FUNCTION
+function toggleSection(element, event) {
+  // Prevent both touch and click from firing
+  if(event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  
   element.classList.toggle('open');
-  console.log('Section toggled:', element.classList.contains('open'));
+  const isOpen = element.classList.contains('open');
+  console.log('Section toggled (mobile):', isOpen);
+  
+  // Add visual feedback
+  const header = element.querySelector('.section-header');
+  header.style.background = 'rgba(255,255,255,0.1)';
+  setTimeout(() => {
+    header.style.background = '';
+  }, 200);
+  
+  return false; // Prevent default
 }
 
 // LOAD AND DISPLAY DATA
