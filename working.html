@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JC INV PORTFOLIO - WORKING VERSION</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--card:#14141f;--border:#2a2a3a;--text:#e0e0e0;--dim:#888;--green:#00e676;--red:#ff5252;--orange:#f7931a;--blue:#64b5f6;--header-bg:#1a1a2e}
+body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;line-height:1.4;overflow-x:hidden}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+.header{text-align:center;margin-bottom:30px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:30px}
+.stat{background:var(--card);padding:16px;border-radius:8px;border:1px solid var(--border)}
+.stat-value{font-size:1.8rem;font-weight:700;margin-bottom:4px}
+.stat-label{font-size:0.8rem;color:var(--dim)}
+
+/* WORKING DROPDOWN */
+.section{background:var(--card);border:1px solid var(--border);border-radius:12px;margin:20px 0;overflow:hidden}
+.section-header{padding:20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background 0.2s}
+.section-header:hover{background:rgba(255,255,255,0.05)}
+.section-title{font-size:1.2rem;display:flex;align-items:center;gap:10px}
+.arrow{transition:transform 0.25s;color:var(--dim)}
+.section-content{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+.section.open .section-content{max-height:1000px}
+.section.open .arrow{transform:rotate(180deg)}
+.content-inner{padding:20px;border-top:1px solid var(--border)}
+
+.coin-table{width:100%;border-collapse:collapse;margin:16px 0}
+.coin-table th,.coin-table td{padding:8px;text-align:left;border-bottom:1px solid var(--border)}
+.coin-table th{background:var(--header-bg);font-size:0.8rem}
+.green{color:var(--green)}
+.red{color:var(--red)}
+.orange{color:var(--orange)}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>JC INV PORTFOLIO</h1>
+    <p class="dim" id="lastUpdate">Lädt...</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value" id="totalValue">-</div>
+      <div class="stat-label">TOTAL VALUE</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value" id="totalInvested">-</div>
+      <div class="stat-label">TOTAL INVESTED</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value green" id="totalPnl">-</div>
+      <div class="stat-label">TOTAL P&L</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value" id="usdtFree">-</div>
+      <div class="stat-label">USDT FREE</div>
+    </div>
+  </div>
+
+  <!-- WATCHLIST SECTION -->
+  <div class="section" onclick="toggleSection(this)">
+    <div class="section-header">
+      <div class="section-title">👀 Watchlist</div>
+      <div class="arrow">▼</div>
+    </div>
+    <div class="section-content">
+      <div class="content-inner" id="watchlistContent">Lädt...</div>
+    </div>
+  </div>
+
+  <!-- BILANZ SECTION -->
+  <div class="section" onclick="toggleSection(this)">
+    <div class="section-header">
+      <div class="section-title">💰 Bilanz</div>
+      <div class="arrow">▼</div>
+    </div>
+    <div class="section-content">
+      <div class="content-inner" id="bilanzContent">Lädt...</div>
+    </div>
+  </div>
+
+  <!-- HOLDINGS TABLE -->
+  <h2>📊 Portfolio Holdings</h2>
+  <div id="holdingsTable">Lädt...</div>
+
+</div>
+
+<script>
+// SIMPLE WORKING DROPDOWN FUNCTION
+function toggleSection(element) {
+  element.classList.toggle('open');
+  console.log('Section toggled:', element.classList.contains('open'));
+}
+
+// LOAD AND DISPLAY DATA
+async function loadData() {
+  try {
+    const response = await fetch('./data.json');
+    const data = await response.json();
+    
+    console.log('Data loaded:', data);
+    
+    // Update stats
+    document.getElementById('totalValue').textContent = '$' + (data.total_value || 0).toLocaleString();
+    document.getElementById('totalInvested').textContent = '$' + (data.total_invested || 0).toLocaleString();
+    document.getElementById('totalPnl').textContent = '+$' + ((data.total_value - data.total_invested) || 0).toFixed(0);
+    document.getElementById('usdtFree').textContent = '$' + (data.usdt_free || 0).toFixed(0);
+    
+    // Update timestamp
+    const d = new Date(data.exported_at);
+    document.getElementById('lastUpdate').textContent = `Letzte Aktualisierung: ${d.toLocaleString('de-DE')}`;
+    
+    // Fill watchlist
+    const watchlist = data.holdings.filter(h => h.status === 'watchlist');
+    const watchlistHtml = watchlist.length ? 
+      '<table class="coin-table"><tr><th>Symbol</th><th>Name</th><th>Preis</th></tr>' +
+      watchlist.map(coin => 
+        `<tr><td><strong>${coin.symbol}</strong></td><td>${coin.name}</td><td>${coin.current_price ? '$' + coin.current_price.toFixed(4) : '-'}</td></tr>`
+      ).join('') + '</table>' :
+      '<p class="dim">Keine Coins auf der Watchlist</p>';
+    document.getElementById('watchlistContent').innerHTML = watchlistHtml;
+    
+    // Fill bilanz
+    if(data.bilanz) {
+      const b = data.bilanz;
+      const bilanzHtml = `
+        <h4 class="orange">📊 Business Bilanz</h4>
+        <p class="green">Status: ${b.status || 'Unknown'}</p>
+        <table class="coin-table" style="margin-top:16px">
+          <tr><td>Chris</td><td>€${(b.business?.chris_eur || 0).toLocaleString('de-DE')}</td></tr>
+          <tr><td>Juri</td><td>€${(b.business?.juri_eur || 0).toLocaleString('de-DE')}</td></tr>
+          <tr style="font-weight:bold;border-top:2px solid var(--orange)"><td>Gesamt</td><td>€${(b.business?.gesamt_eur || 0).toLocaleString('de-DE')}</td></tr>
+        </table>
+      `;
+      document.getElementById('bilanzContent').innerHTML = bilanzHtml;
+    }
+    
+    // Fill holdings table
+    const active = data.holdings.filter(h => h.status === 'active');
+    const holdingsHtml = '<table class="coin-table">' +
+      '<tr><th>Symbol</th><th>Name</th><th>Amount</th><th>Price</th><th>Value</th><th>P&L</th></tr>' +
+      active.map(coin => {
+        const value = coin.amount * (coin.current_price || 0);
+        const invested = coin.amount * coin.entry_price;
+        const pnl = ((value - invested) / invested * 100) || 0;
+        const pnlClass = pnl >= 0 ? 'green' : 'red';
+        return `<tr>
+          <td><strong>${coin.symbol}</strong></td>
+          <td>${coin.name}</td>
+          <td>${coin.amount.toFixed(2)}</td>
+          <td>$${(coin.current_price || 0).toFixed(4)}</td>
+          <td>$${value.toFixed(0)}</td>
+          <td class="${pnlClass}">${pnl >= 0 ? '+' : ''}${pnl.toFixed(1)}%</td>
+        </tr>`;
+      }).join('') + '</table>';
+    document.getElementById('holdingsTable').innerHTML = holdingsHtml;
+    
+    console.log('✅ Dashboard loaded successfully');
+    
+  } catch(error) {
+    console.error('Error loading data:', error);
+    document.body.innerHTML = '<div style="padding:40px;text-align:center;color:red;">❌ Error loading data: ' + error.message + '</div>';
+  }
+}
+
+// Initialize
+loadData();
+</script>
+
+</body>
+</html>
