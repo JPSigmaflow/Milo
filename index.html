@@ -547,7 +547,7 @@ async function init() {
   const bDiv = $('#bilanzSection');
   const b = data.bilanz;
   console.log('Bilanz data:', b);  // Debug
-  if(b) {
+  if(b && bDiv) {
     const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
     const fU = n => '$'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
     const clr = n => n>=0?'var(--green)':'var(--red)';
@@ -670,7 +670,33 @@ async function init() {
     '<div style="font-size:.6rem;color:var(--dim);margin-top:14px;text-align:right">Stand: '+new Date(data.exported_at).toLocaleString('de-DE',{dateStyle:'long',timeStyle:'short'})+' · Alle Beträge in USD soweit nicht anders angegeben · Datenquelle: portfolio.db</div>' +
     '</div>';
   } else {
-    bDiv.innerHTML = '<div style="padding:16px;text-align:center;color:var(--red)">❌ Bilanz-Daten nicht verfügbar<br><span style="font-size:.7rem;color:var(--dim);margin-top:8px;display:block">data.bilanz fehlt in data.json</span></div>';
+    if(bDiv) bDiv.innerHTML = '<div style="padding:16px;text-align:center;color:var(--red)">❌ Bilanz-Daten nicht verfügbar<br><span style="font-size:.7rem;color:var(--dim);margin-top:8px;display:block">data.bilanz fehlt in data.json</span></div>';
+  }
+  
+  // FINAL WORKING BILANZ SECTION
+  const fillBilanzFinal = () => {
+    const bDiv2 = document.getElementById('bilanzSection');
+    if(data && data.bilanz && bDiv2) {
+      const b = data.bilanz;
+      const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+      bDiv2.innerHTML = '<div style="padding:16px">' +
+        '<h4 style="color:var(--orange);margin-bottom:12px;">📊 Business Bilanz</h4>' +
+        '<p style="color:var(--green);margin-bottom:8px;">Status: ' + (b.status || 'Unknown') + '</p>' +
+        '<p>Chris: ' + fE(b.business?.chris_eur || 0) + '</p>' +
+        '<p>Juri: ' + fE(b.business?.juri_eur || 0) + '</p>' +
+        '<p style="font-weight:bold;margin-top:8px;">Gesamt: ' + fE(b.business?.gesamt_eur || 0) + '</p>' +
+        '</div>';
+      console.log('✅ Final bilanz filled');
+      return true;
+    }
+    return false;
+  };
+  
+  // Try filling bilanz multiple ways
+  if(!fillBilanzFinal()) {
+    setTimeout(fillBilanzFinal, 50);
+    setTimeout(fillBilanzFinal, 200); 
+    setTimeout(fillBilanzFinal, 500);
   }
 }
 
@@ -685,40 +711,7 @@ function toggleDropdown(dropdownId) {
   }
 }
 
-// Fill bilanz section after data loads
-async function fillBilanz() {
-  try {
-    const response = await fetch('./data.json');
-    const data = await response.json();
-    const bDiv = document.getElementById('bilanzSection');
-    const b = data.bilanz;
-    console.log('Filling bilanz with data:', b);
-    
-    if(b && bDiv) {
-      const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
-      bDiv.innerHTML = '<div style="padding:16px">' +
-        '<h4 style="color:var(--orange);margin-bottom:12px">📊 Business Bilanz</h4>' +
-        '<p style="color:var(--green);margin-bottom:8px">Status: ' + b.status + '</p>' +
-        '<p>Chris: ' + fE(b.business.chris_eur) + '</p>' +
-        '<p>Juri: ' + fE(b.business.juri_eur) + '</p>' +
-        '<p style="font-weight:bold;margin-top:8px">Gesamt: ' + fE(b.business.gesamt_eur) + '</p>' +
-        '</div>';
-      console.log('✅ Bilanz filled successfully');
-    } else {
-      bDiv.innerHTML = '<div style="padding:16px;color:var(--red)">❌ Bilanz-Daten fehlen</div>';
-    }
-  } catch(e) {
-    console.error('Bilanz fill error:', e);
-    document.getElementById('bilanzSection').innerHTML = '<div style="padding:16px;color:var(--red)">❌ Fehler beim Laden: ' + e.message + '</div>';
-  }
-}
-
-async function initApp() {
-  await init();
-  await fillBilanz();
-}
-
-initApp();
+init();
 </script>
 </body>
 </html>
