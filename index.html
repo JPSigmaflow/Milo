@@ -192,7 +192,8 @@ async function init() {
     data = await r1.json();
     details = await r2.json().catch(() => ({}));
   } catch(e) {
-    $('#loading').textContent = '❌ Could not load data';
+    $('#loading').innerHTML = '❌ Could not load data<br><span style="font-size:.7rem;color:var(--dim)">' + e.message + '</span>';
+    console.error('Data loading error:', e);
     return;
   }
   $('#loading').style.display = 'none';
@@ -544,6 +545,7 @@ async function init() {
   // Bilanz — Bank/Steuerberater-tauglicher Finanzbericht
   const bDiv = $('#bilanzSection');
   const b = data.bilanz;
+  console.log('Bilanz data:', b);  // Debug
   if(b) {
     const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
     const fU = n => '$'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -666,8 +668,30 @@ async function init() {
     
     '<div style="font-size:.6rem;color:var(--dim);margin-top:14px;text-align:right">Stand: '+new Date(data.exported_at).toLocaleString('de-DE',{dateStyle:'long',timeStyle:'short'})+' · Alle Beträge in USD soweit nicht anders angegeben · Datenquelle: portfolio.db</div>' +
     '</div>';
+  } else {
+    bDiv.innerHTML = '<div style="padding:16px;text-align:center;color:var(--red)">❌ Bilanz-Daten nicht verfügbar<br><span style="font-size:.7rem;color:var(--dim);margin-top:8px;display:block">data.bilanz fehlt in data.json</span></div>';
   }
 }
+
+// Explicit event handlers for dropdowns
+document.addEventListener('DOMContentLoaded', () => {
+  const bilanzDropdown = document.getElementById('bilanzDropdown');
+  const lessonsDropdown = document.getElementById('lessonsDropdown');
+  
+  if(bilanzDropdown) {
+    bilanzDropdown.addEventListener('click', () => {
+      bilanzDropdown.classList.toggle('open');
+      console.log('Bilanz dropdown clicked, open:', bilanzDropdown.classList.contains('open'));
+    });
+  }
+  
+  if(lessonsDropdown) {
+    lessonsDropdown.addEventListener('click', () => {
+      lessonsDropdown.classList.toggle('open');
+    });
+  }
+});
+
 init();
 </script>
 </body>
