@@ -673,30 +673,33 @@ async function init() {
     if(bDiv) bDiv.innerHTML = '<div style="padding:16px;text-align:center;color:var(--red)">❌ Bilanz-Daten nicht verfügbar<br><span style="font-size:.7rem;color:var(--dim);margin-top:8px;display:block">data.bilanz fehlt in data.json</span></div>';
   }
   
-  // FINAL WORKING BILANZ SECTION
-  const fillBilanzFinal = () => {
-    const bDiv2 = document.getElementById('bilanzSection');
-    if(data && data.bilanz && bDiv2) {
-      const b = data.bilanz;
-      const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
-      bDiv2.innerHTML = '<div style="padding:16px">' +
-        '<h4 style="color:var(--orange);margin-bottom:12px;">📊 Business Bilanz</h4>' +
+  // BILANZ CONTENT - SIMPLIFIED AND WORKING
+  if(data && data.bilanz && bDiv) {
+    const b = data.bilanz;
+    const fE = n => '€'+Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
+    
+    bDiv.innerHTML = '<div style="padding:16px">' +
+      '<h4 style="color:var(--orange);margin-bottom:12px;">📊 Business Bilanz</h4>' +
+      '<div style="background:rgba(0,230,118,0.1);padding:12px;border-radius:8px;margin-bottom:12px;">' +
         '<p style="color:var(--green);margin-bottom:8px;">Status: ' + (b.status || 'Unknown') + '</p>' +
-        '<p>Chris: ' + fE(b.business?.chris_eur || 0) + '</p>' +
-        '<p>Juri: ' + fE(b.business?.juri_eur || 0) + '</p>' +
-        '<p style="font-weight:bold;margin-top:8px;">Gesamt: ' + fE(b.business?.gesamt_eur || 0) + '</p>' +
-        '</div>';
-      console.log('✅ Final bilanz filled');
-      return true;
-    }
-    return false;
-  };
-  
-  // Try filling bilanz multiple ways
-  if(!fillBilanzFinal()) {
-    setTimeout(fillBilanzFinal, 50);
-    setTimeout(fillBilanzFinal, 200); 
-    setTimeout(fillBilanzFinal, 500);
+      '</div>' +
+      '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">' +
+        '<div>' +
+          '<p style="color:var(--dim);font-size:0.8rem;">Chris Schulz</p>' +
+          '<p style="font-size:1.1rem;font-weight:700;">' + fE(b.business?.chris_eur || 0) + '</p>' +
+        '</div>' +
+        '<div>' +
+          '<p style="color:var(--dim);font-size:0.8rem;">Juri</p>' +
+          '<p style="font-size:1.1rem;font-weight:700;">' + fE(b.business?.juri_eur || 0) + '</p>' +
+        '</div>' +
+      '</div>' +
+      '<div style="border-top:1px solid var(--border);margin-top:12px;padding-top:12px;">' +
+        '<p style="color:var(--dim);font-size:0.8rem;">Gesamtkapital</p>' +
+        '<p style="font-size:1.3rem;font-weight:700;color:var(--green);">' + fE(b.business?.gesamt_eur || 0) + '</p>' +
+      '</div>' +
+      '</div>';
+      
+    console.log('✅ Bilanz content filled with real data');
   }
 }
 
@@ -707,9 +710,29 @@ function toggleDropdown(dropdownId) {
     dropdown.classList.toggle('open');
     console.log(dropdownId + ' clicked, open:', dropdown.classList.contains('open'));
   } else {
-    console.error('Dropdown not found:', dropdownId);
+    console.error('Dropdown not found:', dropdownId);  
   }
 }
+
+// Add proper event listeners on page load
+window.addEventListener('load', function() {
+  const bilanzDropdown = document.getElementById('bilanzDropdown');
+  const lessonsDropdown = document.getElementById('lessonsDropdown');
+  
+  if(bilanzDropdown) {
+    bilanzDropdown.addEventListener('click', function() {
+      toggleDropdown('bilanzDropdown');
+    });
+  }
+  
+  if(lessonsDropdown) {
+    lessonsDropdown.addEventListener('click', function() {
+      toggleDropdown('lessonsDropdown');  
+    });
+  }
+  
+  console.log('✅ Dropdown event listeners added');
+});
 
 init();
 </script>
