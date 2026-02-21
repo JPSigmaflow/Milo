@@ -33,6 +33,10 @@ body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,
 .green{color:var(--green)}
 .red{color:var(--red)}
 .orange{color:var(--orange)}
+.blue{color:var(--blue)}
+
+button:disabled{opacity:0.5;cursor:not-allowed}
+button:hover:not(:disabled){background:rgba(255,255,255,0.1)}
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
@@ -54,6 +58,7 @@ body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,
   .section-title{font-size:1rem}
   .coin-table{font-size:0.8rem}
   .coin-table th,.coin-table td{padding:4px 2px}
+  button{padding:6px 12px;font-size:0.8rem}
 }
 </style>
 </head>
@@ -103,6 +108,19 @@ body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,
     </div>
     <div class="section-content">
       <div class="content-inner" id="bilanzContent">Lädt...</div>
+    </div>
+  </div>
+
+  <!-- TRANSACTIONS SECTION -->
+  <h2>⏰ Transaktionen</h2>
+  <div class="section">
+    <div class="content-inner">
+      <div id="transactionsTable">Lädt...</div>
+      <div id="transactionsPagination" style="display:none;margin-top:16px;text-align:center;">
+        <button onclick="prevTransactions()" id="prevBtn" style="background:var(--card);border:1px solid var(--border);color:var(--text);padding:8px 16px;border-radius:4px;margin:0 8px;cursor:pointer;">◀ Zurück</button>
+        <span id="pageInfo" style="color:var(--dim);margin:0 16px;">1 / 1</span>
+        <button onclick="nextTransactions()" id="nextBtn" style="background:var(--card);border:1px solid var(--border);color:var(--text);padding:8px 16px;border-radius:4px;margin:0 8px;cursor:pointer;">Weiter ▶</button>
+      </div>
     </div>
   </div>
 
@@ -198,11 +216,78 @@ async function loadData() {
       }).join('') + '</table>';
     document.getElementById('holdingsTable').innerHTML = holdingsHtml;
     
+    // Fill transactions with pagination
+    fillTransactions(data);
+    
     console.log('✅ Dashboard loaded successfully');
     
   } catch(error) {
     console.error('Error loading data:', error);
     document.body.innerHTML = '<div style="padding:40px;text-align:center;color:red;">❌ Error loading data: ' + error.message + '</div>';
+  }
+}
+
+// TRANSACTIONS PAGINATION
+let currentTransactionPage = 1;
+let transactionsPerPage = 5;
+let allTransactions = [];
+
+function fillTransactions(data) {
+  allTransactions = data.transactions || [];
+  currentTransactionPage = 1;
+  
+  if(allTransactions.length === 0) {
+    document.getElementById('transactionsTable').innerHTML = '<p class="dim">Keine Transaktionen gefunden</p>';
+    return;
+  }
+  
+  updateTransactionsDisplay();
+}
+
+function updateTransactionsDisplay() {
+  const totalPages = Math.ceil(allTransactions.length / transactionsPerPage);
+  const startIndex = (currentTransactionPage - 1) * transactionsPerPage;
+  const endIndex = startIndex + transactionsPerPage;
+  const currentTransactions = allTransactions.slice(startIndex, endIndex);
+  
+  // Build transactions table
+  const transactionsHtml = '<table class="coin-table">' +
+    '<tr><th>Datum</th><th>Transaktion</th><th>Summe</th></tr>' +
+    currentTransactions.map(tx => {
+      const typeColor = tx.type === 'BUY' ? 'green' : tx.type === 'SELL' ? 'red' : 'blue';
+      const typeText = tx.type === 'BUY' ? 'KAUF' : tx.type === 'SELL' ? 'VERKAUF' : tx.type;
+      return `<tr>
+        <td>${tx.tx_date ? tx.tx_date.split(' ')[0] : '-'}</td>
+        <td><span class="${typeColor}">${typeText}</span> ${tx.coin}</td>
+        <td>$${(tx.total_usd || 0).toLocaleString()}</td>
+      </tr>`;
+    }).join('') + '</table>';
+  
+  document.getElementById('transactionsTable').innerHTML = transactionsHtml;
+  
+  // Update pagination
+  if(totalPages > 1) {
+    document.getElementById('transactionsPagination').style.display = 'block';
+    document.getElementById('pageInfo').textContent = `${currentTransactionPage} / ${totalPages}`;
+    document.getElementById('prevBtn').disabled = currentTransactionPage === 1;
+    document.getElementById('nextBtn').disabled = currentTransactionPage === totalPages;
+  } else {
+    document.getElementById('transactionsPagination').style.display = 'none';
+  }
+}
+
+function prevTransactions() {
+  if(currentTransactionPage > 1) {
+    currentTransactionPage--;
+    updateTransactionsDisplay();
+  }
+}
+
+function nextTransactions() {
+  const totalPages = Math.ceil(allTransactions.length / transactionsPerPage);
+  if(currentTransactionPage < totalPages) {
+    currentTransactionPage++;
+    updateTransactionsDisplay();
   }
 }
 
