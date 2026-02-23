@@ -1013,6 +1013,48 @@ async function loadStocks() {
     return `<span style="font-size:.7rem;color:${color};margin-left:4px">${arrow}${diff>0?'+':''}${diff.toFixed(1)}</span>`;
   }
 
+  // Build price history map per ticker (monthly, sorted by date)
+  const priceMap = {};
+  (sd.price_history||[]).forEach(p => {
+    if (!priceMap[p.ticker]) priceMap[p.ticker] = [];
+    priceMap[p.ticker].push({date: p.date, close: p.close});
+  });
+  Object.values(priceMap).forEach(arr => arr.sort((a,b) => a.date.localeCompare(b.date)));
+
+  // Price sparkline SVG helper
+  function priceSparkline(ticker) {
+    const hist = priceMap[ticker];
+    if (!hist || hist.length < 2) return '';
+    const w = 280, h = 60, pad = 4;
+    const prices = hist.map(p => p.close).filter(p => p != null);
+    if (prices.length < 2) return '';
+    const min = Math.min(...prices), max = Math.max(...prices);
+    const range = max - min || 1;
+    const pts = prices.map((p, i) => {
+      const x = pad + (i / (prices.length - 1)) * (w - 2*pad);
+      const y = h - pad - ((p - min) / range) * (h - 2*pad);
+      return `${x},${y}`;
+    }).join(' ');
+    const first = prices[0], last = prices[prices.length-1];
+    const chg = ((last - first) / first * 100).toFixed(1);
+    const col = last >= first ? '#00e676' : '#ff5252';
+    const dates = hist.filter(p => p.close != null);
+    const firstDate = dates[0].date.slice(0,7);
+    const lastDate = dates[dates.length-1].date.slice(0,7);
+    return `<div style="padding:8px 0">
+      <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:4px">
+        <span style="font-size:.65rem;color:var(--orange);font-weight:700;text-transform:uppercase;letter-spacing:1px">Kursverlauf 12M</span>
+        <span style="font-size:.75rem;color:${col};font-weight:700">\$${first.toFixed(2)} → \$${last.toFixed(2)} (${chg>0?'+':''}${chg}%)</span>
+      </div>
+      <svg width="${w}" height="${h}" style="display:block">
+        <polyline points="${pts}" fill="none" stroke="${col}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+        <circle cx="${pad}" cy="${h - pad - ((first - min) / range) * (h - 2*pad)}" r="3" fill="${col}"/>
+        <circle cx="${w-pad}" cy="${h - pad - ((last - min) / range) * (h - 2*pad)}" r="3" fill="${col}"/>
+      </svg>
+      <div style="display:flex;justify-content:space-between;font-size:.55rem;color:var(--dim)"><span>${firstDate}</span><span>${lastDate}</span></div>
+    </div>`;
+  }
+
   // Mini sparkline SVG helper
   function sparkline(ticker) {
     const hist = scoreMap[ticker];
@@ -1067,6 +1109,7 @@ async function loadStocks() {
         </div>
         <div class="stock-details">
           ${st.overall_reasoning ? `<div style="background:rgba(100,181,246,.08);border-left:3px solid var(--blue);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.8rem;line-height:1.5"><span style="color:var(--blue);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px">Score-Begründung</span><br>${st.overall_reasoning}</div>` : ''}
+          ${priceSparkline(st.ticker)}
           ${sparkline(st.ticker)}
           <div class="stock-detail-grid">
             <div class="stock-detail-box"><h4 style="color:var(--orange)">These</h4><p>${st.thesis||'–'}</p></div>
