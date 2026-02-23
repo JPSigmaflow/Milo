@@ -206,7 +206,7 @@ tr:hover{background:rgba(255,255,255,.03)}
   <div id="stocksWatchlist"><div class="dim" style="padding:20px;text-align:center">Lade Aktien-Daten...</div></div>
   <div id="stocksWatchlistPagination"></div>
   <div id="stocksHoldingsSection"></div>
-  <div id="stocksScoreChart" style="margin-top:16px"></div>
+  <!-- score chart removed -->
 </div><!-- /tab-stocks -->
 
 </div>
@@ -1148,25 +1148,7 @@ async function loadStocks() {
     $('#stocksHoldingsSection').innerHTML = hHtml;
   }
 
-  // Score History Chart
-  const scores = sd.score_history || [];
-  if (scores.length && typeof Chart !== 'undefined') {
-    const tickers = [...new Set(scores.map(s=>s.ticker))].slice(0,8);
-    const dates = [...new Set(scores.map(s=>s.date))].sort();
-    const colors = ['#f7931a','#64b5f6','#00e676','#ff5252','#ab47bc','#ffca28','#26c6da','#ef5350'];
-    const datasets = tickers.map((t,i) => ({
-      label: t,
-      data: dates.map(d => { const m = scores.find(s=>s.ticker===t&&s.date===d); return m ? m.overall_score : null; }),
-      borderColor: colors[i%colors.length],
-      tension: .3, pointRadius: 2, spanGaps: true
-    }));
-    $('#stocksScoreChart').innerHTML = '<h2>⊿ Bewertungsverlauf</h2><div class="card chart-wrap"><canvas id="stocksScoreCanvas"></canvas></div>';
-    new Chart($('#stocksScoreCanvas'), {
-      type:'line',
-      data:{labels:dates, datasets},
-      options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#e0e0e0',font:{size:10}}}},scales:{x:{ticks:{color:'#888',maxTicksLimit:8},grid:{color:'#2a2a3a'}},y:{min:0,max:10,ticks:{color:'#888'},grid:{color:'#2a2a3a'}}}}
-    });
-  }
+  // Score History Chart removed — shown per stock in dropdown instead
 }
 
 init();
