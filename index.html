@@ -202,7 +202,7 @@ tr:hover{background:rgba(255,255,255,.03)}
 
 <div id="tab-stocks" class="tab-content">
   <div class="stats" id="stocksStatsGrid"></div>
-  <h2>📋 Watchlist</h2>
+  <h2>📋 Beobachtungsliste</h2>
   <div id="stocksWatchlist"><div class="dim" style="padding:20px;text-align:center">Lade Aktien-Daten...</div></div>
   <div id="stocksWatchlistPagination"></div>
   <div id="stocksHoldingsSection"></div>
@@ -979,10 +979,10 @@ async function loadStocks() {
   const scoreColor = v => v >= 7 ? 'var(--green)' : v >= 5 ? 'var(--orange)' : 'var(--red)';
 
   $('#stocksStatsGrid').innerHTML = `
-    <div class="stat"><div class="label">Watchlist</div><div class="value">${s.watchlist_count}</div></div>
-    <div class="stat"><div class="label">Holdings</div><div class="value">${s.holdings_count}</div></div>
-    <div class="stat"><div class="label">Insights heute</div><div class="value">${s.insights_today}</div></div>
-    <div class="stat"><div class="label">Ø Score</div><div class="value" style="color:${scoreColor(s.avg_overall_score)}">${s.avg_overall_score}/10</div></div>
+    <div class="stat"><div class="label">Beobachtungsliste</div><div class="value">${s.watchlist_count}</div></div>
+    <div class="stat"><div class="label">Positionen</div><div class="value">${s.holdings_count}</div></div>
+    <div class="stat"><div class="label">Nachrichten heute</div><div class="value">${s.insights_today}</div></div>
+    <div class="stat"><div class="label">Ø Bewertung</div><div class="value" style="color:${scoreColor(s.avg_overall_score)}">${s.avg_overall_score}/10</div></div>
   `;
 
   // Build insight map
@@ -1000,7 +1000,7 @@ async function loadStocks() {
 
   function renderStocksPage() {
     const slice = wl.slice(page * PG, (page + 1) * PG);
-    let html = '<div style="font-size:.55rem;color:var(--dim);display:grid;grid-template-columns:1.2fr 1.2fr .8fr .7fr .7fr .8fr;padding:4px 12px;text-transform:uppercase;letter-spacing:1px;background:rgba(255,255,255,.05);border-radius:8px 8px 0 0;margin-bottom:2px"><div>Ticker</div><div>Company</div><div style="text-align:right">Preis</div><div style="text-align:right">Overall</div><div style="text-align:right;display:block" class="hide-mobile">Research</div><div style="text-align:right">Kategorie</div></div>';
+    let html = '<div style="font-size:.55rem;color:var(--dim);display:grid;grid-template-columns:1.2fr 1.2fr .8fr .7fr .7fr .8fr;padding:4px 12px;text-transform:uppercase;letter-spacing:1px;background:rgba(255,255,255,.05);border-radius:8px 8px 0 0;margin-bottom:2px"><div>Ticker</div><div>Firma</div><div style="text-align:right">Kurs</div><div style="text-align:right">Gesamt</div><div style="text-align:right;display:block" class="hide-mobile">Research</div><div style="text-align:right">Kategorie</div></div>';
 
     slice.forEach(st => {
       const ins = insightMap[st.ticker] || [];
@@ -1017,13 +1017,13 @@ async function loadStocks() {
         </div>
         <div class="stock-details">
           <div class="stock-detail-grid">
-            <div class="stock-detail-box"><h4 style="color:var(--orange)">Thesis</h4><p>${st.thesis||'–'}</p></div>
+            <div class="stock-detail-box"><h4 style="color:var(--orange)">These</h4><p>${st.thesis||'–'}</p></div>
             <div class="stock-detail-box"><h4 style="color:var(--green)">Katalysator</h4><p>${st.catalyst||'–'}</p></div>
             <div class="stock-detail-box"><h4 style="color:var(--red)">Risiken</h4><p>${st.risk_factors||'–'}</p></div>
-            <div class="stock-detail-box"><h4 style="color:var(--blue)">Score Reasoning</h4><p>${st.overall_reasoning||'–'}</p></div>
+            <div class="stock-detail-box"><h4 style="color:var(--blue)">Bewertung</h4><p>${st.overall_reasoning||'–'}</p></div>
           </div>
-          ${ins.length ? '<div style="margin-top:12px"><h4 style="font-size:.65rem;color:var(--blue);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Letzte Insights</h4>' + insHtml + '</div>' : ''}
-          <div style="margin-top:8px;font-size:.65rem;color:var(--dim)">Sektor: ${st.sector||'–'} · Land: ${st.country||'–'} · MCap: ${st.market_cap||'–'} · Quelle: ${st.research_source||'–'} · ${st.research_date||''}</div>
+          ${ins.length ? '<div style="margin-top:12px"><h4 style="font-size:.65rem;color:var(--blue);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Neueste Nachrichten</h4>' + insHtml + '</div>' : ''}
+          <div style="margin-top:8px;font-size:.65rem;color:var(--dim)">Branche: ${st.sector||'–'} · Land: ${st.country||'–'} · Marktkapitalisierung: ${st.market_cap||'–'} · Quelle: ${(st.research_source||'–').replace('deep_research_claude','Deep Research Claude')} · ${st.research_date||''}</div>
         </div>
       </div>`;
     });
@@ -1044,7 +1044,7 @@ async function loadStocks() {
 
   // Holdings
   if (sd.holdings && sd.holdings.length) {
-    let hHtml = '<h2>💼 Holdings</h2>';
+    let hHtml = '<h2>💼 Positionen</h2>';
     sd.holdings.forEach(h => {
       hHtml += `<div class="stock-card" onclick="this.classList.toggle('open')">
         <div class="stock-row"><div><span style="font-weight:700">${h.ticker||'–'}</span> <span class="stock-arrow">▼</span></div><div style="color:var(--dim)">${h.company||''}</div><div style="text-align:right">${h.shares||''} shares</div><div style="text-align:right"><span class="score-pill" style="background:${scoreColor(h.overall_score)}22;color:${scoreColor(h.overall_score)}">${h.overall_score||'–'}</span></div><div></div><div></div></div>
@@ -1066,7 +1066,7 @@ async function loadStocks() {
       borderColor: colors[i%colors.length],
       tension: .3, pointRadius: 2, spanGaps: true
     }));
-    $('#stocksScoreChart').innerHTML = '<h2>📈 Score History</h2><div class="card chart-wrap"><canvas id="stocksScoreCanvas"></canvas></div>';
+    $('#stocksScoreChart').innerHTML = '<h2>📈 Bewertungsverlauf</h2><div class="card chart-wrap"><canvas id="stocksScoreCanvas"></canvas></div>';
     new Chart($('#stocksScoreCanvas'), {
       type:'line',
       data:{labels:dates, datasets},
