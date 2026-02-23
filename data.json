@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-23T01:58:37Z",
+  "exported_at": "2026-02-23T02:00:43Z",
   "usdt_free": 1508.2764955383634,
   "last_update": "2026-02-19 07:28:56",
   "total_value": 9922.44,
@@ -36,7 +36,10 @@
       "realized_pnl_usd": -352.18
     }
   },
-  "transactions": [{"coin":"XTZ","type":"BUY","amount":52.22999999999999688,"price_usd":0.0,"total_usd":0.0,"fee_usd":0.0,"exchange":"AUDIT_FIX","tx_date":"2026-02-21 06:50:00","notes":"FILL_ADJUSTMENT: Holdings-Diskrepanz +52.23 XTZ aufgelöst"},
+  "transactions": [{"coin":"KITE","type":"BUY","amount":1087.269999999999982,"price_usd":0.2750000000000000222,"total_usd":299.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-02-22","notes":"Cash buy - AI portfolio rebalancing"},
+{"coin":"VIRTUAL","type":"BUY","amount":489.6399999999999864,"price_usd":0.6127000000000000223,"total_usd":300.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-02-22","notes":"Cash buy - AI portfolio rebalancing"},
+{"coin":"ALLO","type":"BUY","amount":3584.230000000000018,"price_usd":0.1116000000000000047,"total_usd":400.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-02-22","notes":"Cash buy - AI portfolio rebalancing"},
+{"coin":"XTZ","type":"BUY","amount":52.22999999999999688,"price_usd":0.0,"total_usd":0.0,"fee_usd":0.0,"exchange":"AUDIT_FIX","tx_date":"2026-02-21 06:50:00","notes":"FILL_ADJUSTMENT: Holdings-Diskrepanz +52.23 XTZ aufgelöst"},
 {"coin":"STX","type":"BUY","amount":111.0499999999999972,"price_usd":0.0,"total_usd":0.0,"fee_usd":0.0,"exchange":"AUDIT_FIX","tx_date":"2026-02-21 06:50:00","notes":"FILL_ADJUSTMENT: Holdings-Diskrepanz +111.05 STX aufgelöst"},
 {"coin":"HNT","type":"BUY","amount":27.08999999999999986,"price_usd":0.0,"total_usd":0.0,"fee_usd":0.0,"exchange":"AUDIT_FIX","tx_date":"2026-02-21 06:50:00","notes":"FILL_ADJUSTMENT: Holdings-Diskrepanz +27.09 HNT aufgelöst"},
 {"coin":"IMX","type":"BUY","amount":4611.119999999999891,"price_usd":0.1734999999999999876,"total_usd":800.0,"fee_usd":0.0,"exchange":"MEXC","tx_date":"2026-02-20 17:57:35","notes":"Gaming Infrastructure Play - Schaufel-Verkaufer Strategie"},
