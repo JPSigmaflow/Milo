@@ -992,6 +992,56 @@ async function loadStocks() {
     if (insightMap[i.ticker].length < 3) insightMap[i.ticker].push(i);
   });
 
+  // Build score history map per ticker (sorted by date)
+  const scoreMap = {};
+  (sd.score_history||[]).forEach(s => {
+    if (!scoreMap[s.ticker]) scoreMap[s.ticker] = [];
+    scoreMap[s.ticker].push({date: s.date, score: s.overall_score});
+  });
+  Object.values(scoreMap).forEach(arr => arr.sort((a,b) => a.date.localeCompare(b.date)));
+
+  // Score delta helper
+  function scoreDelta(ticker) {
+    const hist = scoreMap[ticker];
+    if (!hist || hist.length < 2) return '';
+    const curr = hist[hist.length - 1].score;
+    const prev = hist[hist.length - 2].score;
+    const diff = curr - prev;
+    if (diff === 0) return '';
+    const arrow = diff > 0 ? '▲' : '▼';
+    const color = diff > 0 ? 'var(--green)' : 'var(--red)';
+    return `<span style="font-size:.7rem;color:${color};margin-left:4px">${arrow}${diff>0?'+':''}${diff.toFixed(1)}</span>`;
+  }
+
+  // Mini sparkline SVG helper
+  function sparkline(ticker) {
+    const hist = scoreMap[ticker];
+    if (!hist || hist.length < 2) return '<div style="font-size:.7rem;color:var(--dim);padding:8px 0">Noch keine Score-Historie (ab morgen verfügbar)</div>';
+    const w = 200, h = 40, pad = 2;
+    const scores = hist.map(s => s.score);
+    const min = Math.min(...scores, 0), max = Math.max(...scores, 10);
+    const range = max - min || 1;
+    const pts = scores.map((s, i) => {
+      const x = pad + (i / (scores.length - 1)) * (w - 2*pad);
+      const y = h - pad - ((s - min) / range) * (h - 2*pad);
+      return `${x},${y}`;
+    }).join(' ');
+    const lastScore = scores[scores.length-1];
+    const col = lastScore >= 7 ? '#00e676' : lastScore >= 5 ? '#ffca28' : '#ff5252';
+    return `<div style="padding:8px 0">
+      <div style="font-size:.65rem;color:var(--blue);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Score-Verlauf</div>
+      <svg width="${w}" height="${h}" style="display:block">
+        <polyline points="${pts}" fill="none" stroke="${col}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        ${scores.map((s, i) => {
+          const x = pad + (i / (scores.length - 1)) * (w - 2*pad);
+          const y = h - pad - ((s - min) / range) * (h - 2*pad);
+          return `<circle cx="${x}" cy="${y}" r="3" fill="${col}"/>`;
+        }).join('')}
+      </svg>
+      <div style="display:flex;justify-content:space-between;font-size:.6rem;color:var(--dim)">${hist.map(s => `<span>${s.date.slice(5)}</span>`).join('')}</div>
+    </div>`;
+  }
+
   // Watchlist with pagination
   const wl = sd.watchlist || [];
   const PG = 10;
@@ -1011,12 +1061,13 @@ async function loadStocks() {
           <div><span style="font-weight:700;font-size:.95rem">${st.ticker}</span> <span class="stock-arrow">▼</span></div>
           <div style="font-size:.8rem;color:var(--dim)">${(st.company||'').substring(0,22)}</div>
           <div style="text-align:right;font-size:.85rem;font-weight:500">${st.last_price ? '$'+Number(st.last_price).toFixed(2) : '–'}</div>
-          <div style="text-align:right"><span class="score-pill" style="background:${scoreColor(st.overall_score)}22;color:${scoreColor(st.overall_score)}">${st.overall_score||'–'}</span></div>
+          <div style="text-align:right"><span class="score-pill" style="background:${scoreColor(st.overall_score)}22;color:${scoreColor(st.overall_score)}">${st.overall_score||'–'}</span>${scoreDelta(st.ticker)}</div>
           <div style="text-align:right;font-size:.85rem;color:var(--dim)" class="hide-mobile">${st.research_score||'–'}</div>
           <div style="text-align:right"><span class="badge" style="background:rgba(100,181,246,.12);color:var(--blue);font-size:.55rem">${({'indirect_ai':'Indirekter AI','undervalued_ai':'AI-Angst-Opfer','ai_fear_victim':'AI-Angst-Opfer','ai_picks_shovels':'AI Infrastruktur','picks_shovels':'Infrastruktur','picks_and_shovels':'Infrastruktur','robotics_direct':'Robotik Direkt','robotics_indirect':'Robotik Zulieferer','robotics_undervalued':'Robotik Unterbewertet'}[st.category]||st.category||'–')}</span></div>
         </div>
         <div class="stock-details">
           ${st.overall_reasoning ? `<div style="background:rgba(100,181,246,.08);border-left:3px solid var(--blue);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.8rem;line-height:1.5"><span style="color:var(--blue);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px">Score-Begründung</span><br>${st.overall_reasoning}</div>` : ''}
+          ${sparkline(st.ticker)}
           <div class="stock-detail-grid">
             <div class="stock-detail-box"><h4 style="color:var(--orange)">These</h4><p>${st.thesis||'–'}</p></div>
             <div class="stock-detail-box"><h4 style="color:var(--green)">Katalysator</h4><p>${st.catalyst||'–'}</p></div>
