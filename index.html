@@ -154,8 +154,8 @@ tr:hover{background:rgba(255,255,255,.03)}
 </header>
 
 <nav class="tab-nav">
-  <button class="tab-btn active" onclick="switchTab('crypto')">🪙 Crypto</button>
-  <button class="tab-btn" onclick="switchTab('stocks')">📊 Aktien</button>
+  <button class="tab-btn active" onclick="switchTab('crypto')">◆ Crypto</button>
+  <button class="tab-btn" onclick="switchTab('stocks')">◇ Aktien</button>
 </nav>
 
 <div id="tab-crypto" class="tab-content active">
@@ -202,7 +202,7 @@ tr:hover{background:rgba(255,255,255,.03)}
 
 <div id="tab-stocks" class="tab-content">
   <div class="stats" id="stocksStatsGrid"></div>
-  <h2>📋 Beobachtungsliste</h2>
+  <h2>⊞ Beobachtungsliste</h2>
   <div id="stocksWatchlist"><div class="dim" style="padding:20px;text-align:center">Lade Aktien-Daten...</div></div>
   <div id="stocksWatchlistPagination"></div>
   <div id="stocksHoldingsSection"></div>
@@ -291,7 +291,7 @@ async function init() {
     data = await r1.json();
     details = await r2.json().catch(() => ({}));
   } catch(e) {
-    $('#loading').innerHTML = '❌ Could not load data<br><span style="font-size:.7rem;color:var(--dim)">' + e.message + '</span>';
+    $('#loading').innerHTML = '✕ Could not load data<br><span style="font-size:.7rem;color:var(--dim)">' + e.message + '</span>';
     console.error('Data loading error:', e);
     return;
   }
@@ -720,9 +720,9 @@ async function init() {
       let volumeIndicator = '';
       if (h.volume_24h && h.market_cap) {
         const ratio = h.volume_24h / h.market_cap;
-        if (ratio > 0.30) volumeIndicator = '<span style="color:var(--red);font-weight:700">🚨 MASSIVE</span>';
-        else if (ratio > 0.15) volumeIndicator = '<span style="color:var(--orange);font-weight:700">🔥 HIGH</span>';
-        else if (ratio > 0.05) volumeIndicator = '<span style="color:var(--green)">✓ Normal</span>';
+        if (ratio > 0.30) volumeIndicator = '<span style="color:var(--red);font-weight:700">▓ MASSIVE</span>';
+        else if (ratio > 0.15) volumeIndicator = '<span style="color:var(--orange);font-weight:700">▒ HIGH</span>';
+        else if (ratio > 0.05) volumeIndicator = '<span style="color:var(--green)">░ Normal</span>';
         else volumeIndicator = '<span style="color:var(--dim)">⬇ Low</span>';
       }
       
@@ -902,7 +902,7 @@ async function init() {
     '<div style="font-size:.6rem;color:var(--dim);margin-top:14px;text-align:right">Stand: '+new Date(data.exported_at).toLocaleString('de-DE',{dateStyle:'long',timeStyle:'short'})+' · Alle Beträge in USD soweit nicht anders angegeben · Datenquelle: portfolio.db</div>' +
     '</div>';
   } else {
-    if(bDiv) bDiv.innerHTML = '<div style="padding:16px;text-align:center;color:var(--red)">❌ Bilanz-Daten nicht verfügbar<br><span style="font-size:.7rem;color:var(--dim);margin-top:8px;display:block">data.bilanz fehlt in data.json</span></div>';
+    if(bDiv) bDiv.innerHTML = '<div style="padding:16px;text-align:center;color:var(--red)">✕ Bilanz-Daten nicht verfügbar<br><span style="font-size:.7rem;color:var(--dim);margin-top:8px;display:block">data.bilanz fehlt in data.json</span></div>';
   }
   
 }
@@ -972,7 +972,7 @@ async function loadStocks() {
     const r = await fetch('./stocks-data.json?t=' + Date.now());
     sd = await r.json();
   } catch(e) {
-    $('#stocksWatchlist').innerHTML = '<div class="dim" style="padding:20px">❌ stocks-data.json nicht gefunden</div>';
+    $('#stocksWatchlist').innerHTML = '<div class="dim" style="padding:20px">✕ stocks-data.json nicht gefunden</div>';
     return;
   }
   const s = sd.stats;
@@ -1100,7 +1100,7 @@ async function loadStocks() {
 
       html += `<div class="stock-card" onclick="this.classList.toggle('open')">
         <div class="stock-row">
-          <div><span style="font-weight:700;font-size:.95rem">${st.ticker}</span> ${st.perplexity_url ? `<a href="${st.perplexity_url}" target="_blank" onclick="event.stopPropagation()" style="text-decoration:none;font-size:.7rem;opacity:.7" title="Perplexity Finance">🔗</a>` : ''} <span class="stock-arrow">▼</span></div>
+          <div><span style="font-weight:700;font-size:.95rem">${st.ticker}</span> ${st.perplexity_url ? `<a href="${st.perplexity_url}" target="_blank" onclick="event.stopPropagation()" style="text-decoration:none;font-size:.7rem;opacity:.7" title="Perplexity Finance"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;opacity:.6"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>` : ''} <span class="stock-arrow">▼</span></div>
           <div style="font-size:.8rem;color:var(--dim)">${(st.company||'').substring(0,22)}</div>
           <div style="text-align:right;font-size:.85rem;font-weight:500">${st.last_price ? '$'+Number(st.last_price).toFixed(2) : '–'}</div>
           <div style="text-align:right"><span class="score-pill" style="background:${scoreColor(st.overall_score)}22;color:${scoreColor(st.overall_score)}">${st.overall_score||'–'}</span>${scoreDelta(st.ticker)}</div>
@@ -1138,7 +1138,7 @@ async function loadStocks() {
 
   // Holdings
   if (sd.holdings && sd.holdings.length) {
-    let hHtml = '<h2>💼 Positionen</h2>';
+    let hHtml = '<h2>⊟ Positionen</h2>';
     sd.holdings.forEach(h => {
       hHtml += `<div class="stock-card" onclick="this.classList.toggle('open')">
         <div class="stock-row"><div><span style="font-weight:700">${h.ticker||'–'}</span> <span class="stock-arrow">▼</span></div><div style="color:var(--dim)">${h.company||''}</div><div style="text-align:right">${h.shares||''} shares</div><div style="text-align:right"><span class="score-pill" style="background:${scoreColor(h.overall_score)}22;color:${scoreColor(h.overall_score)}">${h.overall_score||'–'}</span></div><div></div><div></div></div>
@@ -1160,7 +1160,7 @@ async function loadStocks() {
       borderColor: colors[i%colors.length],
       tension: .3, pointRadius: 2, spanGaps: true
     }));
-    $('#stocksScoreChart').innerHTML = '<h2>📈 Bewertungsverlauf</h2><div class="card chart-wrap"><canvas id="stocksScoreCanvas"></canvas></div>';
+    $('#stocksScoreChart').innerHTML = '<h2>⊿ Bewertungsverlauf</h2><div class="card chart-wrap"><canvas id="stocksScoreCanvas"></canvas></div>';
     new Chart($('#stocksScoreCanvas'), {
       type:'line',
       data:{labels:dates, datasets},
