@@ -3,7 +3,7 @@ STOCKS_DB="/Users/milo/.openclaw/workspace/shared/stocks.db"
 OUTPUT="/Users/milo/.openclaw/workspace/shared/crypto-dashboard/stocks-data.json"
 
 # Watchlist mit allen Feldern
-WATCHLIST=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, company, sector, country, status, market_cap, last_price, last_price_date, score as research_score, overall_score, overall_reasoning, category, thesis, risk_factors, catalyst, research_source, research_date FROM watchlist WHERE ticker IS NOT NULL AND ticker != '' ORDER BY overall_score DESC")
+WATCHLIST=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, company, sector, country, status, market_cap, last_price, last_price_date, score as research_score, overall_score, overall_reasoning, category, thesis, risk_factors, catalyst, research_source, research_date, perplexity_url FROM watchlist WHERE ticker IS NOT NULL AND ticker != '' ORDER BY overall_score DESC")
 
 # Holdings
 HOLDINGS=$(sqlite3 -json "$STOCKS_DB" "SELECT * FROM holdings ORDER BY overall_score DESC")

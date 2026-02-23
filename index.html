@@ -1100,7 +1100,7 @@ async function loadStocks() {
 
       html += `<div class="stock-card" onclick="this.classList.toggle('open')">
         <div class="stock-row">
-          <div><span style="font-weight:700;font-size:.95rem">${st.ticker}</span> <span class="stock-arrow">▼</span></div>
+          <div><span style="font-weight:700;font-size:.95rem">${st.ticker}</span> ${st.perplexity_url ? `<a href="${st.perplexity_url}" target="_blank" onclick="event.stopPropagation()" style="text-decoration:none;font-size:.7rem;opacity:.7" title="Perplexity Finance">🔗</a>` : ''} <span class="stock-arrow">▼</span></div>
           <div style="font-size:.8rem;color:var(--dim)">${(st.company||'').substring(0,22)}</div>
           <div style="text-align:right;font-size:.85rem;font-weight:500">${st.last_price ? '$'+Number(st.last_price).toFixed(2) : '–'}</div>
           <div style="text-align:right"><span class="score-pill" style="background:${scoreColor(st.overall_score)}22;color:${scoreColor(st.overall_score)}">${st.overall_score||'–'}</span>${scoreDelta(st.ticker)}</div>
