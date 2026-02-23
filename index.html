@@ -1016,11 +1016,11 @@ async function loadStocks() {
           <div style="text-align:right"><span class="badge" style="background:rgba(100,181,246,.12);color:var(--blue);font-size:.55rem">${({'indirect_ai':'Indirekter AI','undervalued_ai':'AI-Angst-Opfer','ai_fear_victim':'AI-Angst-Opfer','ai_picks_shovels':'AI Infrastruktur','picks_shovels':'Infrastruktur','picks_and_shovels':'Infrastruktur','robotics_direct':'Robotik Direkt','robotics_indirect':'Robotik Zulieferer','robotics_undervalued':'Robotik Unterbewertet'}[st.category]||st.category||'–')}</span></div>
         </div>
         <div class="stock-details">
+          ${st.overall_reasoning ? `<div style="background:rgba(100,181,246,.08);border-left:3px solid var(--blue);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.8rem;line-height:1.5"><span style="color:var(--blue);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px">Score-Begründung</span><br>${st.overall_reasoning}</div>` : ''}
           <div class="stock-detail-grid">
             <div class="stock-detail-box"><h4 style="color:var(--orange)">These</h4><p>${st.thesis||'–'}</p></div>
             <div class="stock-detail-box"><h4 style="color:var(--green)">Katalysator</h4><p>${st.catalyst||'–'}</p></div>
             <div class="stock-detail-box"><h4 style="color:var(--red)">Risiken</h4><p>${st.risk_factors||'–'}</p></div>
-            <div class="stock-detail-box"><h4 style="color:var(--blue)">Bewertung</h4><p>${st.overall_reasoning||'–'}</p></div>
           </div>
           ${ins.length ? '<div style="margin-top:12px"><h4 style="font-size:.65rem;color:var(--blue);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px">Neueste Nachrichten</h4>' + insHtml + '</div>' : ''}
           <div style="margin-top:8px;font-size:.65rem;color:var(--dim)">Branche: ${st.sector||'–'} · Land: ${st.country||'–'} · Marktkapitalisierung: ${st.market_cap||'–'} · Quelle: ${(st.research_source||'–').replace('deep_research_claude','Deep Research Claude')} · ${st.research_date||''}</div>
