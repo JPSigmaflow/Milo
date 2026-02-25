@@ -1253,6 +1253,7 @@ async function loadPumpfun() {
             <p><strong>Liquidity:</strong> ${fmtCompact(c.liquidity)}</p>
             <p><strong>Chain:</strong> ${c.chain||'Solana'}</p>
             <p><strong>MEXC Listed:</strong> <span style="color:${c.mexc_listed?'var(--green)':'var(--red)'}">⬤</span> ${c.mexc_listed?'Ja':'Nein'}</p>
+            <p><strong>Kategorie:</strong> ${(c.category||'meme')==='tech'?'⚡ Tech Play':'🔥 Meme/Viral'}</p>
           </div>
           <div class="pf-detail-box">
             <h4 style="color:var(--orange)">Kriterien (${c.score||0}/12)</h4>
@@ -1279,15 +1280,7 @@ async function loadPumpfun() {
     return out;
   } // end renderCoinGroup
 
-  let html = '';
-  if (memeCoins.length) {
-    html += `<div style="margin-top:12px;margin-bottom:4px;padding:8px 14px;background:rgba(247,147,26,.08);border-radius:10px;border-left:3px solid var(--orange)"><span style="font-weight:700;font-size:1rem;color:var(--orange)">🔥 Meme / Viral</span> <span style="color:var(--dim);font-size:.75rem;margin-left:8px">${memeCoins.length} Coins</span></div>`;
-    html += renderCoinGroup(memeCoins);
-  }
-  if (techCoins.length) {
-    html += `<div style="margin-top:24px;margin-bottom:4px;padding:8px 14px;background:rgba(100,181,246,.08);border-radius:10px;border-left:3px solid var(--blue)"><span style="font-weight:700;font-size:1rem;color:var(--blue)">⚡ Tech Plays</span> <span style="color:var(--dim);font-size:.75rem;margin-left:8px">${techCoins.length} Coins</span></div>`;
-    html += renderCoinGroup(techCoins);
-  }
+  let html = renderCoinGroup(coins);
 
   $('#pumpfunList').innerHTML = html;
 
