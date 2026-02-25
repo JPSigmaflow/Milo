@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-25T10:05:41.075Z",
+  "exported_at": "2026-02-25T10:13:46.765Z",
   "total_tracked": 8,
   "min_score": 8,
   "coins": [
@@ -8,13 +8,13 @@
       "name": "The Revived Seagull",
       "chain": "solana",
       "contract": "BKwSZd5tUFC1SudnHbhjmqJ6Nk8n5vz1wVphb7Mupump",
-      "price": 0.000002939,
+      "price": 0.000002829,
       "entry_price": 0.000003457,
-      "change_since_entry": -14.98,
-      "mc": 2939,
-      "volume_1h": 1.21,
-      "volume_24h": 140811.69,
-      "liquidity": 4158.34,
+      "change_since_entry": -18.17,
+      "mc": 2829,
+      "volume_1h": 81.2,
+      "volume_24h": 140891.67,
+      "liquidity": 4084.21,
       "score": 9,
       "criteria": {
         "viral_story": true,
@@ -44,21 +44,21 @@
       "outcome_final": null,
       "snapshot_count": 3,
       "category": "meme",
-      "change_1h": 2.75,
-      "change_24h": -90.76
+      "change_1h": -1.08,
+      "change_24h": -91.1
     },
     {
       "symbol": "TUNG",
       "name": "Tung Tung Tung Sahur",
       "chain": "solana",
       "contract": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
-      "price": 0.0003509,
+      "price": 0.0003393,
       "entry_price": 0.0003848,
-      "change_since_entry": -8.81,
-      "mc": 350990,
-      "volume_1h": 17557.84,
-      "volume_24h": 1358404.77,
-      "liquidity": 50029.81,
+      "change_since_entry": -11.82,
+      "mc": 339302,
+      "volume_1h": 16343.05,
+      "volume_24h": 1345135.18,
+      "liquidity": 49230.7,
       "score": 8,
       "criteria": {
         "viral_story": true,
@@ -88,21 +88,21 @@
       "outcome_final": null,
       "snapshot_count": 3,
       "category": "meme",
-      "change_1h": 10.7,
-      "change_24h": 295
+      "change_1h": 15.74,
+      "change_24h": 405
     },
     {
       "symbol": "XINGXING",
       "name": "星星 (XingXing)",
       "chain": "solana",
       "contract": "7NoFtDpmQvE9JsRv7o6zgYZJBEcixWumJaZsDoyrpump",
-      "price": 0.0001494,
-      "entry_price": 0.000253,
-      "change_since_entry": -40.95,
-      "mc": 147146,
-      "volume_1h": 8252.61,
-      "volume_24h": 411224.02,
-      "liquidity": 36750.9,
+      "price": 0.0001771,
+      "entry_price": 0.00019085,
+      "change_since_entry": -7.2,
+      "mc": 174442,
+      "volume_1h": 12807.59,
+      "volume_24h": 414380.53,
+      "liquidity": 40055.42,
       "score": 10,
       "criteria": {
         "viral_story": true,
@@ -132,21 +132,21 @@
       "outcome_final": null,
       "snapshot_count": 3,
       "category": "meme",
-      "change_1h": -4.51,
-      "change_24h": -17.01
+      "change_1h": 11.24,
+      "change_24h": -7.92
     },
     {
       "symbol": "GAVIN NIGSOM",
       "name": "Gavin Nigsom",
       "chain": "solana",
       "contract": "41HpD32jdC3JRVWDoD3j8rjHdNM4mjqmoSaCSZwdpump",
-      "price": 0.0000127,
+      "price": 0.00001272,
       "entry_price": 0.00001672,
-      "change_since_entry": -24.04,
-      "mc": 12706,
-      "volume_1h": 739.46,
-      "volume_24h": 345017.15,
-      "liquidity": 9103.59,
+      "change_since_entry": -23.92,
+      "mc": 12721,
+      "volume_1h": 775.81,
+      "volume_24h": 344908.69,
+      "liquidity": 9110.75,
       "score": 9,
       "criteria": {
         "viral_story": true,
@@ -176,8 +176,8 @@
       "outcome_final": null,
       "snapshot_count": 3,
       "category": "meme",
-      "change_1h": 8.71,
-      "change_24h": -32.3
+      "change_1h": 8.84,
+      "change_24h": -33.1
     },
     {
       "symbol": "GROK DOG",
@@ -189,7 +189,7 @@
       "change_since_entry": -43.68,
       "mc": 2607,
       "volume_1h": 41.19,
-      "volume_24h": 9462.87,
+      "volume_24h": 9387.79,
       "liquidity": 4048.01,
       "score": 8,
       "criteria": {
@@ -221,7 +221,7 @@
       "snapshot_count": 3,
       "category": "meme",
       "change_1h": -2.66,
-      "change_24h": -59.58
+      "change_24h": -60.17
     },
     {
       "symbol": "SEAGULL",
@@ -272,13 +272,13 @@
       "name": "The Black Vault",
       "chain": "solana",
       "contract": "ABg98fd88219wvVfZm76FFNXRqhs5S47vtQWTodQwW8P",
-      "price": 0.00008453,
+      "price": 0.00008044,
       "entry_price": 0.00009228,
-      "change_since_entry": -8.4,
-      "mc": 84538,
-      "volume_1h": 14492.65,
-      "volume_24h": 2812844.95,
-      "liquidity": 26275.14,
+      "change_since_entry": -12.83,
+      "mc": 80444,
+      "volume_1h": 13834.87,
+      "volume_24h": 2814329.33,
+      "liquidity": 25637.63,
       "score": 10,
       "criteria": {
         "viral_story": true,
@@ -306,23 +306,23 @@
       "outcome_72h": null,
       "outcome_14d": null,
       "outcome_final": null,
-      "snapshot_count": 0,
+      "snapshot_count": 1,
       "category": "meme",
-      "change_1h": -6.17,
-      "change_24h": 163
+      "change_1h": -19.83,
+      "change_24h": 150
     },
     {
       "symbol": "GROK DOG",
       "name": "Dog saved by Grok",
       "chain": "solana",
       "contract": "79dGFnR8XUusyDiK3n8yZ6FXhJjWLFgzdsi2SkUpump",
-      "price": 0.00007821,
+      "price": 0.000078,
       "entry_price": 0.00006677,
-      "change_since_entry": 17.13,
-      "mc": 78215,
-      "volume_1h": 3278.7,
-      "volume_24h": 371920.1,
-      "liquidity": 28660.42,
+      "change_since_entry": 16.82,
+      "mc": 78005,
+      "volume_1h": 3204.24,
+      "volume_24h": 369783.67,
+      "liquidity": 28623.11,
       "score": 9,
       "criteria": {
         "viral_story": true,
@@ -350,10 +350,10 @@
       "outcome_72h": null,
       "outcome_14d": null,
       "outcome_final": null,
-      "snapshot_count": 0,
+      "snapshot_count": 1,
       "category": "meme",
-      "change_1h": 27.56,
-      "change_24h": -53.46
+      "change_1h": 23.77,
+      "change_24h": -49.61
     }
   ],
   "snapshot_history": [
@@ -554,6 +554,28 @@
       "liquidity": 3642.02,
       "buys": 65,
       "sells": 71
+    },
+    {
+      "coin_id": 26,
+      "symbol": "VAULT",
+      "ts": "2026-02-25T10:12:32.965Z",
+      "price": 0.00007883,
+      "mc": 78836,
+      "volume_24h": 2813951.09,
+      "liquidity": 25382.23,
+      "buys": 24872,
+      "sells": 21370
+    },
+    {
+      "coin_id": 27,
+      "symbol": "GROK DOG",
+      "ts": "2026-02-25T10:12:32.965Z",
+      "price": 0.00007613,
+      "mc": 76135,
+      "volume_24h": 369910.89,
+      "liquidity": 28291.52,
+      "buys": 4370,
+      "sells": 3623
     }
   ]
 }
