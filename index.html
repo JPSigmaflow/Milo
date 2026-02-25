@@ -1252,7 +1252,6 @@ async function loadPumpfun() {
             <p><strong>Liquidity:</strong> ${fmtCompact(c.liquidity)}</p>
             <p><strong>Chain:</strong> ${c.chain||'Solana'}</p>
             <p><strong>MEXC Listed:</strong> <span style="color:${c.mexc_listed?'var(--green)':'var(--red)'}">⬤</span> ${c.mexc_listed?'Ja':'Nein'}</p>
-            <p><strong>Kategorie:</strong> ${(c.category||'meme')==='tech'?'⚡ Tech Play':'🔥 Meme/Viral'}</p>
           </div>
           <div class="pf-detail-box">
             <h4 style="color:var(--orange)">Kriterien (${c.score||0}/12)</h4>
