@@ -1209,25 +1209,25 @@ async function loadPumpfun() {
     return;
   }
 
-  let html = '<div style="font-size:.55rem;color:var(--dim);display:grid;grid-template-columns:1.4fr .8fr .7fr .8fr .7fr .6fr;padding:4px 12px;text-transform:uppercase;letter-spacing:1px;background:rgba(255,255,255,.05);border-radius:8px 8px 0 0;margin-bottom:2px"><div>Coin</div><div style="text-align:right">Preis</div><div style="text-align:right">Entry</div><div style="text-align:right">Seit Entry</div><div style="text-align:right">MC</div><div style="text-align:right">Score</div></div>';
+  let html = '<div style="font-size:.55rem;color:var(--dim);display:grid;grid-template-columns:1.4fr .9fr .9fr 1fr .5fr;padding:4px 12px;text-transform:uppercase;letter-spacing:1px;background:rgba(255,255,255,.05);border-radius:8px 8px 0 0;margin-bottom:2px"><div>Coin</div><div style="text-align:right">Preis</div><div style="text-align:right">Entry</div><div style="text-align:right">Seit Entry</div><div style="text-align:right">Score</div></div>';
 
   coins.forEach(c => {
     const chgEntry = c.change_since_entry || (c.entry_price && c.price ? ((c.price - c.entry_price) / c.entry_price * 100) : 0);
     const scoreColor = c.score >= 10 ? 'var(--green)' : c.score >= 9 ? 'var(--orange)' : 'var(--blue)';
 
     html += `<div class="pf-card" onclick="this.classList.toggle('open')">
-      <div class="pf-row">
+      <div class="pf-row" style="grid-template-columns:1.4fr .9fr .9fr 1fr .5fr">
         <div><span style="font-weight:700;font-size:.95rem">${c.symbol}</span> <span class="pf-arrow">▼</span><br><span style="font-size:.7rem;color:var(--dim)">${c.name||''}</span></div>
         <div style="text-align:right;font-size:.85rem;font-weight:500">${fmtPrice(c.price)}</div>
         <div style="text-align:right;font-size:.85rem;color:var(--dim)">${fmtPrice(c.entry_price)}</div>
-        <div style="text-align:right;font-size:.95rem;font-weight:700" class="${chgEntry>=0?'green':'red'}"><strong>${chgEntry>=0?'+':''}${fmt(chgEntry)}%</strong></div>
-        <div style="text-align:right;font-size:.85rem">${fmtCompact(c.mc||c.market_cap)}</div>
+        <div style="text-align:right;font-size:1rem;font-weight:700" class="${chgEntry>=0?'green':'red'}"><strong>${chgEntry>=0?'+':''}${fmt(chgEntry)}%</strong></div>
         <div style="text-align:right"><span style="font-weight:700;font-size:.9rem;color:${scoreColor}">${c.score}/12</span></div>
       </div>
       <div class="pf-details">
         <div class="pf-detail-grid">
           <div class="pf-detail-box">
             <h4 style="color:var(--blue)">Marktdaten</h4>
+            <p><strong>Market Cap:</strong> ${fmtCompact(c.mc||c.market_cap)}</p>
             <p><strong>Volume 1h:</strong> ${fmtCompact(c.volume_1h)}</p>
             <p><strong>Volume 24h:</strong> ${fmtCompact(c.volume_24h)}</p>
             <p><strong>Liquidity:</strong> ${fmtCompact(c.liquidity)}</p>
