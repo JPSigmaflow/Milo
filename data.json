@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-25T18:49:47Z",
+  "exported_at": "2026-02-25T19:02:39Z",
   "usdt_free": 859.24,
   "last_update": "2026-02-19 07:28:56",
   "total_value": 10531.07,
@@ -2194,6 +2194,7 @@
 {"symbol":"AWE","name":"AWE Network","chain":"ethereum","narrative":"AI Agent Network (ex-STP)","market_cap":180262009.0,"liquidity":10218304.0,"volume_24h":10218304.0,"score":42,"result":"watchlist","reason":null,"source":"coingecko-ai-category","source_channels":null,"scanned_at":"2026-02-14 13:02:07","updated_at":"2026-02-14 13:02:07"},
 {"symbol":"IP","name":"Story","chain":"ethereum","narrative":"Dezentrales IP-Protokoll mit AI-Integration","market_cap":390000000.0,"liquidity":null,"volume_24h":60469104.0,"score":40,"result":"watchlist","reason":null,"source":"coingecko-ai","source_channels":null,"scanned_at":"2026-02-13 13:01:41","updated_at":"2026-02-13 13:01:41"},
 {"symbol":"VVV","name":"Venice Token","chain":"unknown","narrative":"AI/Privacy","market_cap":null,"liquidity":null,"volume_24h":null,"score":40,"result":"watchlist","reason":"AI-Analyse: CoinGecko Trending, AI-Privacy Narrativ (stark), aber nur 1 Quelle. Kein Multi-Source-Signal. Watchlist bis weitere Bestätigung.","source":"analyst","source_channels":null,"scanned_at":"2026-02-13 15:08:23","updated_at":"2026-02-13 15:08:23"},
+{"symbol":"NEWT","name":"Newton Protocol","chain":"multi","narrative":"AI protocol - decentralized AI deployment","market_cap":15000000.0,"liquidity":null,"volume_24h":9644370.0,"score":38,"result":"watchlist","reason":null,"source":"CoinGecko AI Category","source_channels":null,"scanned_at":"2026-02-25 19:01:08","updated_at":"2026-02-25 19:01:08"},
 {"symbol":"ASI","name":"Artificial Superintelligence Alliance","chain":"base","narrative":"AI Superintelligence","market_cap":292097.0,"liquidity":219073.0,"volume_24h":0.0,"score":35,"result":"rejected","reason":"AI Narrativ gut aber Volume=0, kein Trading-Aktivität","source":"dexscreener","source_channels":null,"scanned_at":"2026-02-12 19:41:19","updated_at":"2026-02-12 19:41:19"},
 {"symbol":"NIL","name":"Nillion","chain":"ethereum","narrative":"Privacy-preserving computation für AI/ML — Blind Computation, MPC","market_cap":20000000.0,"liquidity":78900000.0,"volume_24h":17163770.0,"score":35,"result":"rejected","reason":"AI-Analyse: Nillion verlässt Cosmos, wechselt zu Ethereum. Unsicherheit über Migration, Score gesenkt.","source":"CoinGecko AI Category + DexScreener","source_channels":null,"scanned_at":"2026-02-15 19:01:04","updated_at":"2026-02-19 22:08:53"},
 {"symbol":"MOLT","name":"Moltbook","chain":"solana","narrative":"AI Micro-Cap — extremes Vol/MC Ratio, -97% ATH, hohes Risiko","market_cap":2900000.0,"liquidity":183000000.0,"volume_24h":183070654.0,"score":35,"result":"no-go","reason":null,"source":"CoinGecko AI Trending Volume","source_channels":null,"scanned_at":"2026-02-19 04:57:15","updated_at":"2026-02-19 04:57:15"},
