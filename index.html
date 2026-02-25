@@ -1205,9 +1205,7 @@ async function loadPumpfun() {
 
   $('#pumpfunStatsGrid').innerHTML = `
     <div class="stat"><div class="label">Tracked Coins</div><div class="value">${totalCoins}</div></div>
-    <div class="stat"><div class="label">Ø Market Cap</div><div class="value">${fmtCompact(avgMC)}</div></div>
     <div class="stat"><div class="label">MEXC Potential</div><div class="value">${mexcPotential}</div></div>
-    <div class="stat"><div class="label">Aktualisiert</div><div class="value dim" style="font-size:.75rem">${pf.updated_at ? new Date(pf.updated_at).toLocaleString('de-DE',{dateStyle:'short',timeStyle:'short'}) : '–'}</div></div>
   `;
 
   if (!coins.length) {
