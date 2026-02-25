@@ -1,9 +1,9 @@
 {
-  "exported_at": "2026-02-24T21:01:03Z",
+  "exported_at": "2026-02-25T13:04:21Z",
   "stats": {
     "watchlist_count": 36,
     "holdings_count": 0,
-    "insights_today": 119,
+    "insights_today": 32,
     "avg_overall_score": 6.4
   },
   "watchlist": [{"ticker":"VRT","company":"Vertiv Holdings","sector":"Data Center Infrastructure","country":"US","status":"listed","market_cap":"$95B","last_price":252.9699999999999989,"last_price_date":"2026-02-24","research_score":7.5,"overall_score":8.0,"overall_reasoning":"Bestes Quartal ever: Orders +252%, Backlog $15B, Guidance zerschmettert Konsens. 100% Strong Buy. Der AI-Infrastruktur-König.","category":"picks_and_shovels","thesis":"Picks & Shovels King: Vertiv liefert Kühlung und Stromversorgung für AI-Data-Centers. $9.5B Auftragsbestand, organische Orders beschleunigen. Double-digit Top- und Bottom-Line-Wachstum. Barclays PT $200. EPS soll in 2 Jahren 50%+ wachsen. Forward-Bewertung unter Peers.","risk_factors":"Hohe trailing PE von 56, Data-Center-CapEx-Zyklus könnte sich verlangsamen, Konkurrenz durch Schneider Electric","catalyst":"$600B Hyperscaler AI-CapEx 2026, $9.5B Backlog gibt Revenue-Visibilität, EPS +50% in 2 Jahren erwartet","research_source":"deep_research_claude","research_date":"2026-02-23","perplexity_url":"https://www.perplexity.ai/finance/VRT"},
