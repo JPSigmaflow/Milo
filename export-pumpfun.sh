@@ -124,6 +124,9 @@ data['snapshot_history'] = json.loads('$HISTORY_JSON')
 with open('$OUTPUT', 'w') as f: json.dump(data, f, indent=2, ensure_ascii=False)
 " 2>/dev/null
 
+# Fetch LIVE prices from DexScreener (overrides DB snapshot prices)
+node "$SCRIPT_DIR/fetch-live-prices.mjs" 2>/dev/null
+
 echo "✅ Pump.Fun exported: $TOTAL coins to $OUTPUT at $(date)"
 
 # Git commit + push
