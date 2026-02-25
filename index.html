@@ -1247,11 +1247,16 @@ async function loadPumpfun() {
             <p><strong>MEXC Listed:</strong> <span style="color:${c.mexc_listed?'var(--green)':'var(--red)'}">⬤</span> ${c.mexc_listed?'Ja':'Nein'}</p>
           </div>
           <div class="pf-detail-box">
-            <h4 style="color:var(--orange)">Details</h4>
-            <p><strong>Score:</strong> ${c.score||'–'}/12</p>
-            <p><strong>Rugcheck:</strong> ${c.rugcheck||'–'}</p>
-            <p style="margin-top:8px"><strong>Notizen:</strong></p>
-            <p>${c.notes||'–'}</p>
+            <h4 style="color:var(--orange)">Kriterien (${c.score||0}/12)</h4>
+            ${c.criteria ? Object.entries(c.criteria).map(([k,v]) => {
+              const labels = {viral_story:'Virale Story',emotional_trigger:'Emotionaler Trigger',mainstream_media:'Mainstream-Medien',tiktok_virality:'TikTok/Social Viral',tiktok_viral:'TikTok/Social Viral',supply_structure:'Supply-Struktur',no_rug_signal:'Kein Rug-Signal',community_socials:'Community/Socials',narrative_strength:'Narrativ-Stärke',timing:'Timing',mc_at_entry:'MC bei Entry',mc_entry:'MC bei Entry',wallet_distribution:'Wallet-Verteilung',first_token:'Erster Token'};
+              return `<p style="margin:2px 0"><span style="color:${v?'var(--green)':'var(--red)'};font-weight:700">${v?'✅':'❌'}</span> ${labels[k]||k}</p>`;
+            }).join('') : '<p>Keine Daten</p>'}
+          </div>
+          <div class="pf-detail-box">
+            <h4 style="color:var(--blue)">Projekt</h4>
+            <p>${c.project_info||c.notes||'–'}</p>
+            ${c.rugcheck ? `<p style="margin-top:6px"><strong>Rugcheck:</strong> ${c.rugcheck}</p>` : ''}
           </div>
         </div>
         <div style="margin-top:10px">

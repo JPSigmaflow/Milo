@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-25T02:04:00Z",
+  "exported_at": "2026-02-25T02:51:00Z",
   "total_tracked": 6,
   "min_score": 8,
   "coins": [
@@ -14,8 +14,6 @@
       "mc": 3457,
       "volume_1h": null,
       "volume_24h": 139911.85,
-      "change_1h": null,
-      "change_24h": null,
       "liquidity": 4426.5,
       "score": 9,
       "criteria": {"viral_story":true,"emotional_trigger":true,"mainstream_media":true,"tiktok_virality":true,"supply_structure":false,"no_rug_signal":true,"community_socials":false,"narrative_strength":true,"timing":true,"mc_at_entry":true,"wallet_distribution":false,"first_token":true},
@@ -23,7 +21,8 @@
       "mexc_listed": false,
       "dexscreener": "https://dexscreener.com/solana/6ehaw6njxgnbafqkysjqgc1btcefztknk6sjhadpmeg8",
       "added_at": "2026-02-24T15:23:18Z",
-      "notes": "The Revived Seagull — virale Story, Score 9/12, First Token"
+      "notes": "The Revived Seagull — virale Story, Score 9/12, First Token",
+      "project_info": "Revival-Story einer geretteten Möwe die viral ging. Erster Token zur Story (kein Copycat). Starke emotionale Resonanz auf Social Media mit Millionen Views. Klassisches Tier-Meme Playbook ähnlich MOODENG."
     },
     {
       "symbol": "NIGSOM",
@@ -36,8 +35,6 @@
       "mc": 16720,
       "volume_1h": null,
       "volume_24h": 439352.82,
-      "change_1h": null,
-      "change_24h": null,
       "liquidity": 10310.12,
       "score": 9,
       "criteria": {"viral_story":true,"emotional_trigger":true,"mainstream_media":true,"tiktok_viral":true,"supply_structure":true,"no_rug_signal":true,"community_socials":false,"narrative_strength":true,"timing":true,"mc_at_entry":true,"wallet_distribution":false,"first_token":false},
@@ -45,7 +42,8 @@
       "mexc_listed": false,
       "dexscreener": "https://dexscreener.com/solana/cdky1jxjsgnvkjtld96zyi8bdgf2c2xke5a9uvgkqzra",
       "added_at": "2026-02-23T23:38:17Z",
-      "notes": "Gavin Nigsom Meme — Score 9/12, virale Story + Timing"
+      "notes": "Gavin Nigsom Meme — Score 9/12, virale Story + Timing",
+      "project_info": "Politisches Satire-Meme rund um Gavin Newsom. Viral auf TikTok und X, Mainstream-Medien Coverage. Saubere Tokenomics, kein Rug-Signal. Hohes 24h Volume ($439K) relativ zur MC — starkes Interesse."
     },
     {
       "symbol": "SEAGULL",
@@ -58,8 +56,6 @@
       "mc": 2663,
       "volume_1h": null,
       "volume_24h": 2879.7,
-      "change_1h": null,
-      "change_24h": null,
       "liquidity": 3866.88,
       "score": 9,
       "criteria": {"viral_story":true,"emotional_trigger":true,"mainstream_media":true,"tiktok_virality":true,"supply_structure":false,"no_rug_signal":true,"community_socials":false,"narrative_strength":true,"timing":true,"mc_at_entry":true,"wallet_distribution":false,"first_token":true},
@@ -67,7 +63,8 @@
       "mexc_listed": false,
       "dexscreener": "https://dexscreener.com/solana/6cjcusp3hdt1cbkevhpfekyx3yf32qe8jnpxfrzgmmg9",
       "added_at": "2026-02-23T20:08:18Z",
-      "notes": "Seagull Original — Score 9/12, First Token, virale Story"
+      "notes": "Seagull Original — Score 9/12, First Token, virale Story",
+      "project_info": "Original Seagull-Meme Token — First Mover zur viralen Möwen-Story. Erster Token (kein Copycat). MC noch extrem niedrig ($2.7K), sehr frühes Stadium. Niedrige Liquidity ($3.9K) = hohes Risiko aber auch hohes Upside-Potential."
     },
     {
       "symbol": "XINGXING",
@@ -80,8 +77,6 @@
       "mc": 250411,
       "volume_1h": null,
       "volume_24h": 394251.5,
-      "change_1h": null,
-      "change_24h": null,
       "liquidity": 46931.53,
       "score": 8,
       "criteria": {"viral_story":true,"emotional_trigger":true,"mainstream_media":true,"tiktok_viral":true,"supply_structure":true,"no_rug_signal":true,"community_socials":false,"narrative_strength":true,"timing":false,"mc_at_entry":true,"wallet_distribution":false,"first_token":false},
@@ -89,7 +84,8 @@
       "mexc_listed": false,
       "dexscreener": "https://dexscreener.com/solana/avsfihlzhjk6llvplrvdez9jvpv7bpgnpgh5qysbmtp1",
       "added_at": "2026-02-24T07:23:20Z",
-      "notes": "Einarmiger Makak, TikTok/Douyin viral, Wikipedia"
+      "notes": "Einarmiger Makak, TikTok/Douyin viral, Wikipedia",
+      "project_info": "星星 (XingXing) — einarmiger Makak aus China, viral auf TikTok/Douyin mit Millionen Views. Wikipedia-Eintrag vorhanden. Ähnliches Playbook wie PUNCH (Baby-Makak). Höchste Liquidity ($47K) und Volume ($394K) aller Pump.Fun Coins im Tracker. MEXC Listing Watch aktiv."
     },
     {
       "symbol": "TUNG",
@@ -102,8 +98,6 @@
       "mc": 384891,
       "volume_1h": null,
       "volume_24h": 1294604.96,
-      "change_1h": null,
-      "change_24h": null,
       "liquidity": 51092.52,
       "score": 8,
       "criteria": {"viral_story":true,"emotional_trigger":true,"mainstream_media":true,"tiktok_viral":true,"supply_structure":true,"no_rug_signal":true,"community_socials":true,"narrative_strength":false,"timing":false,"mc_entry":true,"wallet_distribution":false,"first_token":false},
@@ -111,7 +105,8 @@
       "mexc_listed": false,
       "dexscreener": "https://dexscreener.com/solana/3kfcgj5r3zshw8htdbzjsrrksrymkvsmfhc4vo4iddxd",
       "added_at": "2026-02-24T09:38:16Z",
-      "notes": "Tung Tung Tung Sahur Meme — viral auf TikTok, Mainstream-Medien"
+      "notes": "Tung Tung Tung Sahur Meme — viral auf TikTok, Mainstream-Medien",
+      "project_info": "Tung Tung Tung Sahur — virales Ramadan/Sahur-Meme auf TikTok. Höchstes 24h Volume im gesamten Tracker ($1.29M!) und stärkste Liquidity ($51K). Community & Socials vorhanden. Mainstream-Medien Coverage. Einziger Coin mit community_socials ✅."
     },
     {
       "symbol": "GROK DOG",
@@ -124,8 +119,6 @@
       "mc": 4629,
       "volume_1h": null,
       "volume_24h": 28079.01,
-      "change_1h": null,
-      "change_24h": null,
       "liquidity": 5310.09,
       "score": 8,
       "criteria": {"viral_story":true,"emotional_trigger":true,"mainstream_media":true,"tiktok_viral":false,"supply_structure":true,"no_rug_signal":true,"community_socials":false,"narrative_strength":true,"timing":true,"mc_at_entry":true,"wallet_distribution":false,"first_token":true},
@@ -133,7 +126,8 @@
       "mexc_listed": false,
       "dexscreener": "https://dexscreener.com/solana/2t79dda56e8mvejuz2fts7cqmwcsukbzqdgzx8yjbfmy",
       "added_at": "2026-02-23T21:23:20Z",
-      "notes": "Dog saved by Grok — virale Story, First Token, Score 8/12"
+      "notes": "Dog saved by Grok — virale Story, First Token, Score 8/12",
+      "project_info": "Hund der durch Grok (xAI) gerettet wurde — virale Tier-Rettungsgeschichte. First Token zur Story, kein Copycat. Mainstream-Medien Coverage. Sehr frühe MC ($4.6K). Kein TikTok-Viral — einziger fehlender Social-Trigger."
     }
   ]
 }
