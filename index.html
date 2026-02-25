@@ -1204,13 +1204,12 @@ async function loadPumpfun() {
   const totalCoins = coins.length;
   const avgMC = totalCoins ? coins.reduce((s,c) => s + (c.market_cap||0), 0) / totalCoins : 0;
   const mexcPotential = coins.filter(c => c.mexc_watch).length;
-  const memeCoins = coins.filter(c => (c.category||'meme') !== 'tech');
-  const techCoins = coins.filter(c => (c.category||'meme') === 'tech');
+  const aboveEntry = coins.filter(c => (c.change_since_entry||0) > 0).length;
 
   $('#pumpfunStatsGrid').innerHTML = `
     <div class="stat"><div class="label">Tracked Coins</div><div class="value">${totalCoins}</div></div>
     <div class="stat"><div class="label">MEXC Potential</div><div class="value">${mexcPotential}</div></div>
-    <div class="stat"><div class="label">Tech Plays</div><div class="value">${techCoins.length}</div></div>
+    <div class="stat"><div class="label">Im Plus</div><div class="value">${aboveEntry}</div></div>
   `;
 
   if (!coins.length) {
