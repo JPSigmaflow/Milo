@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-02-24T20:50:00Z",
+  "coins": [
+    {
+      "symbol": "XINGXING",
+      "name": "XingXing",
+      "price": 0.0001673,
+      "market_cap": 165000,
+      "volume_1h": 85800,
+      "volume_24h": 420000,
+      "change_1h": 31.71,
+      "change_24h": -11.14,
+      "liquidity": 52000,
+      "status": "Tracking",
+      "mexc_listed": false,
+      "mexc_watch": false,
+      "contract": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "chain": "Solana",
+      "rugcheck": "Pending",
+      "notes": "Doppel-Trigger: Massive 1h-Rally + Volume-Spike"
+    }
+  ]
+}
