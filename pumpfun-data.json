@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-02-25T04:18:51.000Z",
+  "exported_at": "2026-02-25T04:22:06.000Z",
   "total_tracked": 6,
   "min_score": 8,
   "coins": [
@@ -29,7 +29,9 @@
         "wallet_distribution": false,
         "first_token": true
       },
-      "change_since_entry": 0.67
+      "change_since_entry": 0.67,
+      "dexscreener": "https://dexscreener.com/solana/6ehaw6njxgnbafqkysjqgc1btcefztknk6sjhadpmeg8",
+      "project_info": "Viraler Seagull-Meme nach TikTok-Video eines geretteten M\u00f6wen. Revived-Version des Original-Tokens."
     },
     {
       "id": 2,
@@ -57,7 +59,9 @@
         "wallet_distribution": false,
         "first_token": false
       },
-      "change_since_entry": -47.53
+      "change_since_entry": -47.53,
+      "dexscreener": "https://dexscreener.com/solana/3kfcgj5r3zshw8htdbzjsrrksrymkvsmfhc4vo4iddxd",
+      "project_info": "Tung Tung Tung Sahur \u2014 virales TikTok-Meme aus dem Ramadan. Massives Social-Media-Momentum."
     },
     {
       "id": 3,
@@ -85,7 +89,9 @@
         "wallet_distribution": false,
         "first_token": false
       },
-      "change_since_entry": -26.6
+      "change_since_entry": -26.6,
+      "dexscreener": "https://dexscreener.com/solana/avsfihlzhjk6llvplrvdez9jvpv7bpgnpgh5qysbmtp1",
+      "project_info": "\u661f\u661f (Xingxing) \u2014 Chris' pers\u00f6nlicher Pick. Score 10/12, st\u00e4rkstes Narrativ im aktuellen Tracking."
     },
     {
       "id": 4,
@@ -113,7 +119,9 @@
         "wallet_distribution": false,
         "first_token": false
       },
-      "change_since_entry": -22.55
+      "change_since_entry": -22.55,
+      "dexscreener": "https://dexscreener.com/solana/cdky1jxjsgnvkjtld96zyi8bdgf2c2xke5a9uvgkqzra",
+      "project_info": "Gavin Nigsom \u2014 politisches Satire-Meme zu Gavin Newsom. Viral auf Twitter + TikTok."
     },
     {
       "id": 5,
@@ -141,7 +149,9 @@
         "wallet_distribution": false,
         "first_token": true
       },
-      "change_since_entry": -35.06
+      "change_since_entry": -35.06,
+      "dexscreener": "https://dexscreener.com/solana/2t79dda56e8mvejuz2fts7cqmwcsukbzqdgzx8yjbfmy",
+      "project_info": "Dog saved by Grok \u2014 virales Meme nach Elon Musks Grok AI. Emotionaler Trigger + Mainstream-Coverage."
     },
     {
       "id": 6,
@@ -169,7 +179,9 @@
         "wallet_distribution": false,
         "first_token": true
       },
-      "change_since_entry": -14.23
+      "change_since_entry": -14.23,
+      "dexscreener": "https://dexscreener.com/solana/6cjcusp3hdt1cbkevhpfekyx3yf32qe8jnpxfrzgmmg9",
+      "project_info": "Original Seagull-Token. Gleiche virale Story wie Revived-Version, aber \u00e4lterer Contract."
     }
   ]
 }
