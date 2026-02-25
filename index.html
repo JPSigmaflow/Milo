@@ -1204,10 +1204,13 @@ async function loadPumpfun() {
   const totalCoins = coins.length;
   const avgMC = totalCoins ? coins.reduce((s,c) => s + (c.market_cap||0), 0) / totalCoins : 0;
   const mexcPotential = coins.filter(c => c.mexc_watch).length;
+  const memeCoins = coins.filter(c => (c.category||'meme') !== 'tech');
+  const techCoins = coins.filter(c => (c.category||'meme') === 'tech');
 
   $('#pumpfunStatsGrid').innerHTML = `
     <div class="stat"><div class="label">Tracked Coins</div><div class="value">${totalCoins}</div></div>
     <div class="stat"><div class="label">MEXC Potential</div><div class="value">${mexcPotential}</div></div>
+    <div class="stat"><div class="label">Tech Plays</div><div class="value">${techCoins.length}</div></div>
   `;
 
   if (!coins.length) {
@@ -1215,20 +1218,19 @@ async function loadPumpfun() {
     return;
   }
 
-  // Group coins by score descending
-  const scoreGroups = {};
-  coins.forEach(c => {
-    const s = c.score || 0;
-    if (!scoreGroups[s]) scoreGroups[s] = [];
-    scoreGroups[s].push(c);
-  });
-  const sortedScores = Object.keys(scoreGroups).map(Number).sort((a,b) => b - a);
-
-  let html = '';
-  sortedScores.forEach(score => {
-    const scoreColor = score >= 10 ? 'var(--green)' : score >= 9 ? 'var(--orange)' : 'var(--blue)';
-    const starEmoji = score >= 10 ? '⭐ ' : '';
-    html += `<div style="margin-top:16px;margin-bottom:6px;padding:6px 12px;background:rgba(255,255,255,.04);border-radius:8px;border-left:3px solid ${scoreColor}"><span style="font-weight:700;font-size:.95rem;color:${scoreColor}">${starEmoji}Score ${score}/12</span> <span style="color:var(--dim);font-size:.75rem;margin-left:8px">${scoreGroups[score].length} Coin${scoreGroups[score].length>1?'s':''}</span></div>`;
+  function renderCoinGroup(coinList) {
+    const scoreGroups = {};
+    coinList.forEach(c => {
+      const s = c.score || 0;
+      if (!scoreGroups[s]) scoreGroups[s] = [];
+      scoreGroups[s].push(c);
+    });
+    const sortedScores = Object.keys(scoreGroups).map(Number).sort((a,b) => b - a);
+    let out = '';
+    sortedScores.forEach(score => {
+      const scoreColor = score >= 10 ? 'var(--green)' : score >= 9 ? 'var(--orange)' : 'var(--blue)';
+      const starEmoji = score >= 10 ? '⭐ ' : '';
+      out += `<div style="margin-top:16px;margin-bottom:6px;padding:6px 12px;background:rgba(255,255,255,.04);border-radius:8px;border-left:3px solid ${scoreColor}"><span style="font-weight:700;font-size:.95rem;color:${scoreColor}">${starEmoji}Score ${score}/12</span> <span style="color:var(--dim);font-size:.75rem;margin-left:8px">${scoreGroups[score].length} Coin${scoreGroups[score].length>1?'s':''}</span></div>`;
     html += '<div style="font-size:.55rem;color:var(--dim);display:grid;grid-template-columns:1.6fr 1fr 1fr;padding:4px 12px;text-transform:uppercase;letter-spacing:1px;background:rgba(255,255,255,.03);border-radius:8px 8px 0 0;margin-bottom:2px"><div>Coin</div><div style="text-align:right">Entry Preis</div><div style="text-align:right">Seit Entry</div></div>';
 
     scoreGroups[score].forEach(c => {
@@ -1274,6 +1276,18 @@ async function loadPumpfun() {
     </div>`;
     }); // end coins in score group
   }); // end score groups
+    return out;
+  } // end renderCoinGroup
+
+  let html = '';
+  if (memeCoins.length) {
+    html += `<div style="margin-top:12px;margin-bottom:4px;padding:8px 14px;background:rgba(247,147,26,.08);border-radius:10px;border-left:3px solid var(--orange)"><span style="font-weight:700;font-size:1rem;color:var(--orange)">🔥 Meme / Viral</span> <span style="color:var(--dim);font-size:.75rem;margin-left:8px">${memeCoins.length} Coins</span></div>`;
+    html += renderCoinGroup(memeCoins);
+  }
+  if (techCoins.length) {
+    html += `<div style="margin-top:24px;margin-bottom:4px;padding:8px 14px;background:rgba(100,181,246,.08);border-radius:10px;border-left:3px solid var(--blue)"><span style="font-weight:700;font-size:1rem;color:var(--blue)">⚡ Tech Plays</span> <span style="color:var(--dim);font-size:.75rem;margin-left:8px">${techCoins.length} Coins</span></div>`;
+    html += renderCoinGroup(techCoins);
+  }
 
   $('#pumpfunList').innerHTML = html;
 

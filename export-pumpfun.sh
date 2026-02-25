@@ -53,7 +53,8 @@ SELECT json_group_array(json_object(
   'outcome_72h', w.outcome_72h,
   'outcome_14d', w.outcome_14d,
   'outcome_final', w.outcome_final,
-  'snapshot_count', (SELECT COUNT(*) FROM snapshots WHERE coin_id = w.id)
+  'snapshot_count', (SELECT COUNT(*) FROM snapshots WHERE coin_id = w.id),
+  'category', COALESCE(w.category, 'meme')
 ))
 FROM watchlist_coins w
 LEFT JOIN (
@@ -61,11 +62,11 @@ LEFT JOIN (
          ROW_NUMBER() OVER (PARTITION BY coin_id ORDER BY ts DESC) as rn
   FROM snapshots
 ) s ON s.coin_id = w.id AND s.rn = 1
-WHERE w.status = 'active' AND w.score >= $MIN_SCORE
-ORDER BY w.score DESC, w.mc_at_add DESC
+WHERE w.status = 'active' AND (w.score >= $MIN_SCORE OR w.category = 'tech')
+ORDER BY w.category, w.score DESC, w.mc_at_add DESC
 ")
 
-TOTAL=$(sqlite3 "$PUMPFUN_DB" "SELECT COUNT(*) FROM watchlist_coins WHERE status='active' AND score >= $MIN_SCORE")
+TOTAL=$(sqlite3 "$PUMPFUN_DB" "SELECT COUNT(*) FROM watchlist_coins WHERE status='active' AND (score >= $MIN_SCORE OR category = 'tech')")
 
 cat > "$OUTPUT" << JSONEOF
 {
