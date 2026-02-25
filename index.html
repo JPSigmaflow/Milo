@@ -300,7 +300,9 @@ const fmt = (n,d=2) => n!=null ? Number(n).toLocaleString('de-DE',{minimumFracti
 const fmtVal = n => n!=null ? '$' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:0,maximumFractionDigits:0}) : '–';
 const fmtPrice = n => {
   if(n==null) return '–';
-  if(n < 0.01) return '$' + Number(n).toFixed(5);
+  if(n < 0.000001) return '$' + Number(n).toFixed(10);
+  if(n < 0.0001) return '$' + Number(n).toFixed(8);
+  if(n < 0.01) return '$' + Number(n).toFixed(6);
   if(n < 1) return '$' + Number(n).toFixed(4);
   return '$' + Number(n).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2});
 };
@@ -771,14 +773,14 @@ async function init() {
           </div>
           <div class="scanner-right">
             <span class="badge badge-watchlist">WATCH</span>
-            <span class="scanner-score" style="color:${changeColor}">${h.current_price ? '$' + h.current_price.toFixed(4) : '–'}</span>
+            <span class="scanner-score" style="color:${changeColor}">${h.current_price ? fmtPrice(h.current_price) : '–'}</span>
             <span class="scanner-arrow">▼</span>
           </div>
         </div>
         <div class="scanner-details">
           <div class="scanner-row"><span class="label">Name</span><span class="val">${h.name||'–'}</span></div>
           <div class="scanner-row"><span class="label">Chain</span><span class="val">${h.chain||'–'}</span></div>
-          <div class="scanner-row"><span class="label">Aktueller Preis</span><span class="val">${h.current_price ? '$' + h.current_price.toFixed(6) : '–'}</span></div>
+          <div class="scanner-row"><span class="label">Aktueller Preis</span><span class="val">${h.current_price ? fmtPrice(h.current_price) : '–'}</span></div>
           <div class="scanner-row"><span class="label">24h Change</span><span class="val" style="color:${changeColor}">${changeSign}${priceChange.toFixed(2)}%</span></div>
           <div class="scanner-row"><span class="label">Market Cap</span><span class="val">${marketCapFormatted}</span></div>
           <div class="scanner-row"><span class="label">Volume 24h</span><span class="val">${volumeFormatted}</span></div>
