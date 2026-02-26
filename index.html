@@ -234,6 +234,7 @@ tr:hover{background:rgba(255,255,255,.03)}
   <div id="stocksWatchlist"><div class="dim" style="padding:20px;text-align:center">Lade Aktien-Daten...</div></div>
   <div id="stocksWatchlistPagination"></div>
   <div id="stocksHoldingsSection"></div>
+  <div id="stocksRejectedSection"></div>
   <!-- score chart removed -->
 </div><!-- /tab-stocks -->
 
@@ -1020,7 +1021,7 @@ async function loadStocks() {
   $('#stocksStatsGrid').innerHTML = `
     <div class="stat"><div class="label">Beobachtungsliste</div><div class="value">${s.watchlist_count}</div></div>
     <div class="stat"><div class="label">Positionen</div><div class="value">${s.holdings_count}</div></div>
-    <div class="stat"><div class="label">Nachrichten heute</div><div class="value">${s.insights_today}</div></div>
+    <div class="stat"><div class="label">Abgelehnt</div><div class="value" style="color:var(--dim)">${s.rejected_count||0}</div></div>
     <div class="stat"><div class="label">Ø Bewertung</div><div class="value" style="color:${scoreColor(s.avg_overall_score)}">${s.avg_overall_score}/10</div></div>
   `;
 
@@ -1185,6 +1186,42 @@ async function loadStocks() {
       </div>`;
     });
     $('#stocksHoldingsSection').innerHTML = hHtml;
+  }
+
+  // Rejected stocks
+  const rej = sd.rejected || [];
+  if (rej.length) {
+    let rHtml = '<h2 style="margin-top:24px;color:var(--dim)">Abgelehnt (' + rej.length + ')</h2><div style="font-size:.7rem;color:var(--dim);margin-bottom:8px">Score &lt; 6 — nur Preisüberwachung. Alert bei +10% vom Ablehnungskurs.</div>';
+    rej.forEach(r => {
+      const priceNow = r.last_price ? Number(r.last_price) : null;
+      const priceBase = r.alert_base_price ? Number(r.alert_base_price) : null;
+      let chgHtml = '';
+      if (priceNow && priceBase && priceBase > 0) {
+        const chg = ((priceNow - priceBase) / priceBase * 100).toFixed(1);
+        const col = chg >= 0 ? 'var(--green)' : 'var(--red)';
+        chgHtml = `<span style="font-size:.75rem;color:${col};margin-left:6px">${chg>0?'+':''}${chg}%</span>`;
+      }
+      const sc = r.overall_score || '–';
+      const scCol = scoreColor(r.overall_score);
+      rHtml += `<div class="stock-card" onclick="this.classList.toggle('open')">
+        <div class="stock-row" style="opacity:.7">
+          <div><span style="font-weight:700;font-size:.95rem">${r.ticker}</span> ${r.perplexity_url ? '<a href="'+r.perplexity_url+'" target="_blank" onclick="event.stopPropagation()" style="text-decoration:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" style="vertical-align:middle"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>' : ''} <span class="stock-arrow">▼</span></div>
+          <div style="font-size:.8rem;color:var(--dim)">${(r.company||'').substring(0,22)}</div>
+          <div style="text-align:right;font-size:.85rem">${priceNow ? '$'+priceNow.toFixed(2) : '–'}${chgHtml}</div>
+          <div style="text-align:right"><span class="score-pill" style="background:${scCol}22;color:${scCol}">${sc}</span></div>
+          <div style="text-align:right;font-size:.7rem;color:var(--dim)">${r.rejected_date||''}</div>
+          <div></div>
+        </div>
+        <div class="stock-details">
+          <div style="font-size:.75rem;color:var(--dim);margin-bottom:8px">Abgelehnt: ${r.rejected_reason||'–'} | Basis: $${priceBase?priceBase.toFixed(2):'–'} | Alert: +${r.alert_threshold||10}%</div>
+          ${r.overall_reasoning ? '<div style="background:rgba(255,82,82,.08);border-left:3px solid var(--red);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.8rem;line-height:1.5"><span style="color:var(--red);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px">Letzte Bewertung</span><br>'+r.overall_reasoning+'</div>' : ''}
+          <div class="stock-detail-grid">
+            <div class="stock-detail-box"><h4 style="color:var(--orange)">These</h4><p>${r.thesis||'–'}</p></div>
+          </div>
+        </div>
+      </div>`;
+    });
+    $('#stocksRejectedSection').innerHTML = rHtml;
   }
 
   // Score History Chart removed — shown per stock in dropdown instead
