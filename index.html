@@ -242,11 +242,6 @@ tr:hover{background:rgba(255,255,255,.03)}
   <h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>Pump.Fun Tracker</h2>
   <div id="pumpfunList"><div class="dim" style="padding:20px;text-align:center">Lade Pump.Fun Daten...</div></div>
 
-  <h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 5-7"/></svg>Preisentwicklung seit Entdeckung</h2>
-  <div class="card chart-wrap"><canvas id="pumpfunChart"></canvas></div>
-
-  <h2><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" style="vertical-align:middle;margin-right:6px"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Snapshot History</h2>
-  <div class="card" id="pumpfunHistory"><div class="dim" style="padding:20px;text-align:center">Noch keine historischen Daten — Snapshots werden alle 6h gesammelt</div></div>
 </div><!-- /tab-pumpfun -->
 
 </div>
@@ -1286,61 +1281,6 @@ async function loadPumpfun() {
 
   $('#pumpfunList').innerHTML = html;
 
-  // Snapshot History Chart
-  const history = pf.snapshot_history || [];
-  if (history.length > 1) {
-    // Group by symbol
-    const bySymbol = {};
-    history.forEach(h => {
-      if (!bySymbol[h.symbol]) bySymbol[h.symbol] = [];
-      bySymbol[h.symbol].push(h);
-    });
-
-    const colors = ['#f7931a','#64b5f6','#00e676','#ff5252','#ab47bc','#ffd54f'];
-    const datasets = Object.entries(bySymbol).map(([sym, snaps], i) => {
-      // Normalize to % change from first snapshot
-      const firstPrice = snaps[0].price;
-      return {
-        label: sym,
-        data: snaps.map(s => ({
-          x: new Date(s.ts),
-          y: firstPrice > 0 ? ((s.price - firstPrice) / firstPrice * 100) : 0
-        })),
-        borderColor: colors[i % colors.length],
-        backgroundColor: 'transparent',
-        borderWidth: 2,
-        pointRadius: 3,
-        tension: 0.3
-      };
-    });
-
-    new Chart($('#pumpfunChart'), {
-      type: 'line',
-      data: { datasets },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        scales: {
-          x: { type: 'time', time: { unit: 'hour' }, ticks: { color: '#888', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,.05)' } },
-          y: { ticks: { color: '#888', callback: v => v + '%' }, grid: { color: 'rgba(255,255,255,.05)' } }
-        },
-        plugins: {
-          legend: { labels: { color: '#e0e0e0', font: { size: 11 } } },
-          tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(2) + '%' } }
-        }
-      }
-    });
-
-    // Snapshot Table
-    let histHtml = '<div class="overflow-x"><table><thead><tr><th>Coin</th><th>Zeitpunkt</th><th>Preis</th><th>MC</th><th>Vol 24h</th><th>Liq</th><th>Buys/Sells</th></tr></thead><tbody>';
-    [...history].reverse().slice(0, 50).forEach(h => {
-      const d = new Date(h.ts);
-      histHtml += `<tr><td><strong>${h.symbol}</strong></td><td class="dim">${d.toLocaleDateString('de-DE')} ${d.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'})}</td><td>${fmtPrice(h.price)}</td><td>${fmtCompact(h.mc)}</td><td>${fmtCompact(h.volume_24h)}</td><td>${fmtCompact(h.liquidity)}</td><td>${h.buys||0}/${h.sells||0}</td></tr>`;
-    });
-    histHtml += '</tbody></table></div>';
-    $('#pumpfunHistory').innerHTML = histHtml;
-  } else {
-    $('#pumpfunChart').parentElement.innerHTML = '<div class="dim" style="padding:30px;text-align:center">📊 Chart erscheint nach dem 2. Snapshot (in ~6h)</div>';
-  }
 }
 
 init();

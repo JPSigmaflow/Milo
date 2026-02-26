@@ -40,3 +40,14 @@ cat > "$OUTPUT" << JSONEOF
 }
 JSONEOF
 echo "✅ Stocks data exported"
+
+# Git commit + push
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+if [ -d "$SCRIPT_DIR/.git" ]; then
+  cd "$SCRIPT_DIR"
+  git add stocks-data.json index.html
+  git diff --cached --quiet || {
+    git commit -m "📊 Stocks update $(date +%Y-%m-%d_%H:%M)"
+    git push origin main 2>/dev/null || true
+  }
+fi

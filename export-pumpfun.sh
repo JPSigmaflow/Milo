@@ -92,38 +92,6 @@ with open('$OUTPUT', 'w') as f: json.dump(data, f, indent=2, ensure_ascii=False)
 " 2>/dev/null
 fi
 
-# Export snapshot history per coin
-HISTORY_JSON=$(sqlite3 "$PUMPFUN_DB" "
-SELECT json_group_array(json_object(
-  'coin_id', s.coin_id,
-  'symbol', CASE 
-    WHEN w.symbol = '星星' THEN 'XINGXING'
-    WHEN w.token_name = 'The Revived Seagull' THEN 'SEAGULL (R)'
-    WHEN w.token_name = 'Tung Tung Tung Sahur' THEN 'TUNG'
-    WHEN w.token_name = 'Dog saved by Grok' THEN 'GROK DOG'
-    ELSE UPPER(COALESCE(w.symbol, w.token_name))
-  END,
-  'ts', s.ts,
-  'price', s.price_usd,
-  'mc', s.market_cap,
-  'volume_24h', s.volume_24h,
-  'liquidity', s.liquidity_usd,
-  'buys', s.txns_24h_buys,
-  'sells', s.txns_24h_sells
-))
-FROM snapshots s
-JOIN watchlist_coins w ON w.id = s.coin_id
-WHERE w.status = 'active' AND w.score >= $MIN_SCORE
-ORDER BY s.coin_id, s.ts ASC
-")
-
-# Add history to output
-python3 -c "
-import json
-with open('$OUTPUT') as f: data = json.load(f)
-data['snapshot_history'] = json.loads('$HISTORY_JSON')
-with open('$OUTPUT', 'w') as f: json.dump(data, f, indent=2, ensure_ascii=False)
-" 2>/dev/null
 
 # Fetch LIVE prices from DexScreener (overrides DB snapshot prices)
 node "$SCRIPT_DIR/fetch-live-prices.mjs" 2>/dev/null
