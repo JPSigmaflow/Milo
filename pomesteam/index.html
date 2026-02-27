@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PomesTeam — Pet Community Content Platform</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; }
+        .hero { text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+        .hero h1 { font-size: 48px; margin-bottom: 16px; }
+        .hero h1 span { color: #f7931a; }
+        .hero p { font-size: 20px; color: #aaa; max-width: 600px; margin: 0 auto 32px; }
+        .badge { display: inline-block; background: #f7931a; color: #000; padding: 12px 32px; border-radius: 8px; font-weight: bold; font-size: 18px; text-decoration: none; }
+        .features { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+        .features h2 { font-size: 32px; text-align: center; margin-bottom: 40px; color: #f7931a; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .card { background: #14141f; border: 1px solid #2a2a3a; border-radius: 12px; padding: 32px; }
+        .card h3 { font-size: 20px; margin-bottom: 12px; color: #64b5f6; }
+        .card p { color: #999; line-height: 1.6; }
+        .section { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+        .section h2 { font-size: 28px; color: #f7931a; margin-bottom: 20px; }
+        .section p, .section li { color: #bbb; line-height: 1.8; margin-bottom: 12px; }
+        .section ul { padding-left: 20px; }
+        footer { text-align: center; padding: 40px 20px; color: #666; border-top: 1px solid #1a1a2e; }
+        footer a { color: #64b5f6; text-decoration: none; }
+        .emoji { font-size: 40px; margin-bottom: 16px; display: block; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🐾 <span>PomesTeam</span></h1>
+        <p>A content management platform for pet influencer communities. Create, schedule, and manage engaging pet content across social media platforms.</p>
+        <a href="https://www.instagram.com/pomesteam/" class="badge">@pomesteam on Instagram</a>
+    </div>
+
+    <div class="features">
+        <h2>What PomesTeam Does</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="emoji">📸</span>
+                <h3>Content Publishing</h3>
+                <p>Create and publish engaging pet content across multiple platforms including Instagram, Facebook, and TikTok. Manage captions, hashtags, and scheduling from one place.</p>
+            </div>
+            <div class="card">
+                <span class="emoji">📊</span>
+                <h3>Community Analytics</h3>
+                <p>Track engagement metrics, follower growth, and content performance. Understand what your community loves and optimize your content strategy.</p>
+            </div>
+            <div class="card">
+                <span class="emoji">💬</span>
+                <h3>Community Engagement</h3>
+                <p>Manage comments, respond to followers, and build meaningful connections with your pet-loving community. Foster engagement through interactive content.</p>
+            </div>
+            <div class="card">
+                <span class="emoji">🐾</span>
+                <h3>Animal Welfare</h3>
+                <p>Connect pet communities with local animal shelters. Organize donation campaigns and raise awareness for animal rescue through social media.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>How It Works</h2>
+        <p>PomesTeam integrates with social media platforms via their official APIs to provide content management capabilities:</p>
+        <ul>
+            <li><strong>Content Publishing (TikTok, Instagram, Facebook):</strong> Upload and publish photos, videos, and stories directly through the platform. The app uses TikTok's Content Posting API to publish video content on behalf of authorized users.</li>
+            <li><strong>Analytics & Insights:</strong> Retrieve engagement data, follower demographics, and content performance metrics to help creators understand their audience.</li>
+            <li><strong>Comment Management:</strong> Read and respond to comments across platforms to maintain active community engagement.</li>
+            <li><strong>Multi-Platform Scheduling:</strong> Plan content across TikTok, Instagram, and Facebook from a unified dashboard.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>TikTok Integration</h2>
+        <p>PomesTeam uses the following TikTok API products:</p>
+        <ul>
+            <li><strong>Content Posting API:</strong> Allows authorized users to publish video content directly to their TikTok accounts. Users authenticate via TikTok Login and grant permission to post on their behalf.</li>
+            <li><strong>Login Kit:</strong> Enables secure authentication so users can connect their TikTok accounts to PomesTeam for content management.</li>
+        </ul>
+        <p>Users can revoke access at any time through their TikTok account settings. PomesTeam only accesses data that users explicitly authorize.</p>
+    </div>
+
+    <footer>
+        <p>© 2026 PomesTeam. All rights reserved.</p>
+        <p style="margin-top: 12px;">
+            <a href="/Milo/pomesteam/privacy.html">Privacy Policy</a> · 
+            <a href="/Milo/pomesteam/terms.html">Terms of Service</a> · 
+            <a href="mailto:pomesteam@gmail.com">Contact</a>
+        </p>
+    </footer>
+</body>
+</html>
