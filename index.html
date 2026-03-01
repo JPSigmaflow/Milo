@@ -1337,15 +1337,16 @@ async function loadPumpfun() {
       const value = amount * price;
       const chg24 = c.change_24h || 0;
 
-      html += `<div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr 0.8fr;padding:10px 12px;background:var(--card-bg);border:1px solid var(--border);border-top:none;align-items:center;cursor:pointer" onclick="this.nextElementSibling&&this.nextElementSibling.classList.toggle('open')">
-        <div><span style="font-weight:700;font-size:.95rem">${c.symbol}</span><br><span style="font-size:.65rem;color:var(--dim)">${c.name||''}</span></div>
+      html += `<div class="pf-card" onclick="this.classList.toggle('open')" style="border-top:none">
+      <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr 0.8fr;padding:10px 12px;align-items:center;cursor:pointer">
+        <div><span style="font-weight:700;font-size:.95rem">${c.symbol}</span> <span class="pf-arrow">▼</span><br><span style="font-size:.65rem;color:var(--dim)">${c.name||''}</span></div>
         <div style="text-align:right;font-size:.9rem">${fmtPrice(price)}</div>
         <div style="text-align:right;font-size:.9rem;color:var(--dim)">${fmtPrice(entry)}</div>
         <div style="text-align:right;font-size:1rem;font-weight:700" class="${pnl>=0?'green':'red'}">${pnl>=0?'+':''}${fmt(pnl)}%</div>
         <div style="text-align:right;font-size:.9rem;font-weight:600">$${fmt(value)}</div>
         <div style="text-align:right;font-size:.8rem;font-weight:600" class="${chg24>=0?'green':'red'}">${chg24>=0?'+':''}${fmt(chg24)}%</div>
       </div>
-      <div class="pf-details" style="background:var(--card-bg);border:1px solid var(--border);border-top:none;padding:0 12px">
+      <div class="pf-details">
         <div class="pf-detail-grid" style="padding:10px 0">
           <div class="pf-detail-box">
             <h4 style="color:var(--blue)">Position</h4>
@@ -1380,7 +1381,8 @@ async function loadPumpfun() {
           ${c.dexscreener ? `<a href="${c.dexscreener}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--blue);text-decoration:none;font-size:.85rem;font-weight:600">📊 DexScreener</a>` : ''}
           <a href="https://jup.ag/swap/SOL-${c.contract}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--orange);text-decoration:none;font-size:.85rem;font-weight:600">🔄 Jupiter Swap</a>
         </div>
-      </div>`;
+      </div>
+    </div>`;
     });
     html += '</div>';
   }
