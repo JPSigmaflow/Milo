@@ -134,6 +134,7 @@ tr:hover{background:rgba(255,255,255,.03)}
 .pf-row:hover{background:rgba(255,255,255,.03)}
 .pf-details{display:none;padding:0 16px 14px;border-top:1px solid var(--border)}
 .pf-card.open .pf-details{display:block}
+.pf-details.open{display:block}
 .pf-card.open .pf-arrow{transform:rotate(180deg)}
 .pf-arrow{color:var(--dim);font-size:.7rem;transition:transform .2s;margin-left:4px}
 .pf-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
@@ -1361,13 +1362,24 @@ async function loadPumpfun() {
             <p><strong>Score:</strong> ${c.score||0}/12</p>
           </div>
           <div class="pf-detail-box">
-            <h4 style="color:var(--orange)">Info</h4>
+            <h4 style="color:var(--orange)">Kriterien (${c.score||0}/12)</h4>
+            ${c.criteria ? Object.entries(c.criteria).map(([k,v]) => {
+              const labels = {viral_story:'Virale Story',emotional_trigger:'Emotionaler Trigger',mainstream_media:'Mainstream-Medien',tiktok_virality:'TikTok/Social Viral',tiktok_viral:'TikTok/Social Viral',supply_structure:'Supply-Struktur',no_rug_signal:'Kein Rug-Signal',community_socials:'Community/Socials',narrative_strength:'Narrativ-Stärke',timing:'Timing',mc_at_entry:'MC bei Entry',mc_entry:'MC bei Entry',wallet_distribution:'Wallet-Verteilung',first_token:'Erster Token'};
+              return `<p style="margin:2px 0"><span style="color:${v?'var(--green)':'var(--red)'};font-weight:700">${v?'✅':'❌'}</span> ${labels[k]||k}</p>`;
+            }).join('') : '<p>Keine Daten</p>'}
+          </div>
+          <div class="pf-detail-box">
+            <h4 style="color:var(--blue)">Info</h4>
             <p><strong>Wallet:</strong> Phantom @xlgeneration</p>
             <p><strong>Chain:</strong> ${c.chain||'Solana'}</p>
-            ${c.dexscreener ? `<p><a href="${c.dexscreener}" target="_blank" style="color:var(--blue)">📊 DexScreener</a></p>` : ''}
+            <p><strong>Kategorie:</strong> ${c.category||'meme'}</p>
           </div>
         </div>
-        <div style="margin:4px 0 10px"><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px">Contract</div><div class="pf-contract">${c.contract||'–'}</div></div>
+        <div style="margin:4px 0 10px"><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px">Contract Address</div><div class="pf-contract">${c.contract||'–'}</div></div>
+        <div style="margin-bottom:10px;display:flex;gap:8px">
+          ${c.dexscreener ? `<a href="${c.dexscreener}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--blue);text-decoration:none;font-size:.85rem;font-weight:600">📊 DexScreener</a>` : ''}
+          <a href="https://jup.ag/swap/SOL-${c.contract}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--orange);text-decoration:none;font-size:.85rem;font-weight:600">🔄 Jupiter Swap</a>
+        </div>
       </div>`;
     });
     html += '</div>';
