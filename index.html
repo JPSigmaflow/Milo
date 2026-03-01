@@ -1373,8 +1373,9 @@ async function loadPumpfun() {
             }).join('') : '<p>Keine Daten</p>'}
           </div>
           <div class="pf-detail-box">
-            <h4 style="color:var(--blue)">Info</h4>
-            <p><strong>Wallet:</strong> Phantom @xlgeneration</p>
+            <h4 style="color:var(--green)">Projekt</h4>
+            <p>${c.project_info||c.notes||'–'}</p>
+            <p style="margin-top:8px"><strong>Wallet:</strong> Phantom @xlgeneration</p>
             <p><strong>Chain:</strong> ${c.chain||'Solana'}</p>
             <p><strong>Kategorie:</strong> ${c.category||'meme'}</p>
           </div>
