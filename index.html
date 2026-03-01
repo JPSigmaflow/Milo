@@ -1389,7 +1389,6 @@ async function loadPumpfun() {
         <div style="margin:4px 0 10px"><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px">Contract Address</div><div class="pf-contract">${c.contract||'–'}</div></div>
         <div style="margin-bottom:10px;display:flex;gap:8px">
           ${c.dexscreener ? `<a href="${c.dexscreener}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--blue);text-decoration:none;font-size:.85rem;font-weight:600">📊 DexScreener</a>` : ''}
-          <a href="https://jup.ag/swap/SOL-${c.contract}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--orange);text-decoration:none;font-size:.85rem;font-weight:600">🔄 Jupiter Swap</a>
         </div>
       </div>
     </div>`;
