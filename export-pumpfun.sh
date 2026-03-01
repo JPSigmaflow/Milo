@@ -62,17 +62,23 @@ LEFT JOIN (
          ROW_NUMBER() OVER (PARTITION BY coin_id ORDER BY ts DESC) as rn
   FROM snapshots
 ) s ON s.coin_id = w.id AND s.rn = 1
-WHERE w.status = 'active' AND (w.score >= $MIN_SCORE OR w.category = 'tech')
+WHERE (w.status = 'active' AND (w.score >= $MIN_SCORE OR w.category = 'tech')) OR w.notes LIKE '%BOUGHT%'
 ORDER BY w.category, w.score DESC, w.mc_at_add DESC
 ")
 
 TOTAL=$(sqlite3 "$PUMPFUN_DB" "SELECT COUNT(*) FROM watchlist_coins WHERE status='active' AND (score >= $MIN_SCORE OR category = 'tech')")
+
+PORTFOLIO_DB="/Users/milo/.openclaw/workspace/shared/portfolio.db"
+SOL_FREE=$(sqlite3 "$PORTFOLIO_DB" "SELECT value FROM meta WHERE key='sol_free'" 2>/dev/null || echo "0")
+SOL_WALLET=$(sqlite3 "$PORTFOLIO_DB" "SELECT value FROM meta WHERE key='sol_wallet'" 2>/dev/null || echo "phantom-xlgeneration")
 
 cat > "$OUTPUT" << JSONEOF
 {
   "exported_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
   "total_tracked": $TOTAL,
   "min_score": $MIN_SCORE,
+  "sol_free": $SOL_FREE,
+  "sol_wallet": "$SOL_WALLET",
   "coins": $COINS_JSON
 }
 JSONEOF

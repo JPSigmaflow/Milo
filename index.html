@@ -1246,9 +1246,15 @@ async function loadPumpfun() {
   const mexcPotential = coins.filter(c => c.mexc_watch).length;
   const aboveEntry = coins.filter(c => (c.change_since_entry||0) > 0).length;
 
+  const solFree = pf.sol_free || 0;
+  // Fetch live SOL price
+  let solPrice = 140;
+  try { const sr = await fetch('https://api.coinpaprika.com/v1/tickers/sol-solana'); const sd = await sr.json(); solPrice = sd?.quotes?.USD?.price || 140; } catch(e){}
+  const solUsd = solFree * solPrice;
+
   $('#pumpfunStatsGrid').innerHTML = `
     <div class="stat"><div class="label">Tracked Coins</div><div class="value">${totalCoins}</div></div>
-    <div class="stat"><div class="label">MEXC Potential</div><div class="value">${mexcPotential}</div></div>
+    <div class="stat"><div class="label">Phantom SOL</div><div class="value">${Number(solFree).toFixed(2)} SOL<div style="font-size:.7rem;color:var(--dim)">~$${fmt(solUsd)}</div></div></div>
     <div class="stat"><div class="label">Im Plus</div><div class="value">${aboveEntry}</div></div>
   `;
 
