@@ -203,6 +203,43 @@
           "weight": 25
         }
       ]
+    },
+    {
+      "name": "Sentinel",
+      "emoji": "🛡️",
+      "state": "ok",
+      "score": 100.0,
+      "infra_ok": 0,
+      "infra_total": 0,
+      "kpis": [
+        {
+          "name": "VDA Audit (täglich)",
+          "status": "ok",
+          "score": 100.0,
+          "detail": "Neu eingerichtet",
+          "age_h": 0,
+          "max_h": 26,
+          "weight": 40
+        },
+        {
+          "name": "Quality Check (< 12h)",
+          "status": "ok",
+          "score": 100.0,
+          "detail": "Neu eingerichtet",
+          "age_h": 0,
+          "max_h": 12,
+          "weight": 30
+        },
+        {
+          "name": "Compliance Report",
+          "status": "ok",
+          "score": 100.0,
+          "detail": "Neu eingerichtet",
+          "age_h": 0,
+          "max_h": 26,
+          "weight": 30
+        }
+      ]
     }
   ]
 }
