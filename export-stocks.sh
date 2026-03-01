@@ -17,11 +17,15 @@ SCORES=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, date, overall_score, reasoni
 # Price history (letzte 5 Tage)
 PRICES=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, date, open, high, low, close, volume FROM price_history ORDER BY date DESC")
 
+# Rejected
+REJECTED=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, company, sector, country, market_cap, last_price, last_price_date, overall_score, overall_reasoning, category, thesis, perplexity_url, rejected_date, rejected_reason, alert_base_price, alert_threshold, alert_triggered FROM rejected ORDER BY rejected_date DESC")
+
 # Stats
 WATCHLIST_COUNT=$(sqlite3 "$STOCKS_DB" "SELECT COUNT(*) FROM watchlist WHERE ticker IS NOT NULL")
 HOLDINGS_COUNT=$(sqlite3 "$STOCKS_DB" "SELECT COUNT(*) FROM holdings")
 INSIGHTS_COUNT=$(sqlite3 "$STOCKS_DB" "SELECT COUNT(*) FROM insights WHERE date >= datetime('now', '-24 hours')")
 AVG_SCORE=$(sqlite3 "$STOCKS_DB" "SELECT ROUND(AVG(overall_score),1) FROM watchlist WHERE overall_score IS NOT NULL")
+REJECTED_COUNT=$(sqlite3 "$STOCKS_DB" "SELECT COUNT(*) FROM rejected")
 
 cat > "$OUTPUT" << JSONEOF
 {
@@ -30,10 +34,12 @@ cat > "$OUTPUT" << JSONEOF
     "watchlist_count": ${WATCHLIST_COUNT:-0},
     "holdings_count": ${HOLDINGS_COUNT:-0},
     "insights_today": ${INSIGHTS_COUNT:-0},
-    "avg_overall_score": ${AVG_SCORE:-0}
+    "avg_overall_score": ${AVG_SCORE:-0},
+    "rejected_count": ${REJECTED_COUNT:-0}
   },
   "watchlist": ${WATCHLIST:-[]},
   "holdings": ${HOLDINGS:-[]},
+  "rejected": ${REJECTED:-[]},
   "insights": ${INSIGHTS:-[]},
   "score_history": ${SCORES:-[]},
   "price_history": ${PRICES:-[]}

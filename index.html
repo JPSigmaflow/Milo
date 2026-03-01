@@ -1409,5 +1409,86 @@ async function loadPumpfun() {
 
 init();
 </script>
+
+<!-- ═══ SUPERVISOR BOT HEALTH SECTION ═══ -->
+<div id="supervisorSection" style="margin-top:24px"></div>
+<script>
+(async function loadSupervisor(){
+  try {
+    const res = await fetch('supervisor-kpis.json?t='+Date.now());
+    if (!res.ok) return;
+    const data = await res.json();
+    const bots = data.bots || [];
+    if (!bots.length) return;
+
+    const avgScore = Math.round(bots.reduce((s,b)=>s+b.score,0)/bots.length);
+    const stateColor = s => s==='ok'?'var(--green)':s==='degraded'?'var(--orange)':'var(--red)';
+    const stateLabel = s => s==='ok'?'OK':s==='degraded'?'DEGRADED':'DOWN';
+    const scoreColor = s => s>=80?'var(--green)':s>=50?'var(--orange)':'var(--red)';
+    const exported = new Date(data.exported_at);
+    const timeStr = exported.toLocaleString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'});
+
+    let html = `
+      <h2 style="color:var(--orange);border-bottom:1px solid var(--border);padding-bottom:6px;margin-bottom:12px">
+        🦁 SUPERVISOR — Bot Health
+        <span style="float:right;font-size:.7rem;color:var(--dim);font-weight:400">Updated: ${timeStr}</span>
+      </h2>
+      <div class="stats" style="margin-bottom:12px">
+        <div class="stat">
+          <div class="label">Overall Score</div>
+          <div class="value" style="color:${scoreColor(avgScore)}">${avgScore}%</div>
+        </div>
+        <div class="stat">
+          <div class="label">Bots Active</div>
+          <div class="value">${bots.length}</div>
+        </div>
+        <div class="stat">
+          <div class="label">Healthy</div>
+          <div class="value green">${bots.filter(b=>b.state==='ok').length}</div>
+        </div>
+        <div class="stat">
+          <div class="label">Degraded</div>
+          <div class="value" style="color:var(--orange)">${bots.filter(b=>b.state==='degraded').length}</div>
+        </div>
+        <div class="stat">
+          <div class="label">Down</div>
+          <div class="value red">${bots.filter(b=>b.state==='down').length}</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">`;
+
+    for (const bot of bots) {
+      const pct = Math.round(bot.score);
+      html += `
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:1.3rem">${bot.emoji}</span>
+              <span style="font-weight:700;font-size:1rem">${bot.name}</span>
+              <span style="font-size:.7rem;font-weight:600;color:${stateColor(bot.state)};background:${stateColor(bot.state)}22;padding:2px 8px;border-radius:4px">${stateLabel(bot.state)}</span>
+              <span style="font-size:.7rem;color:var(--dim)">Infra ${bot.infra_ok}/${bot.infra_total}</span>
+            </div>
+            <span style="font-weight:700;color:${scoreColor(pct)}">${pct}%</span>
+          </div>
+          <div style="background:var(--header-bg);border-radius:4px;height:6px;overflow:hidden;margin-bottom:10px">
+            <div style="height:100%;width:${pct}%;background:${scoreColor(pct)};border-radius:4px;transition:width .3s"></div>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">`;
+
+      for (const k of bot.kpis) {
+        const icon = k.status==='ok'?'✅':'❌';
+        const ageStr = k.age_h!==null ? `${k.age_h}h` : '';
+        const maxStr = k.max_h!==null ? `/ ${k.max_h}h` : '';
+        html += `<div style="font-size:.75rem;color:${k.status==='ok'?'var(--dim)':'var(--red)'};background:var(--header-bg);padding:4px 8px;border-radius:6px">${icon} ${k.name} <span style="color:var(--dim)">${ageStr} ${maxStr}</span></div>`;
+      }
+
+      html += `</div></div>`;
+    }
+
+    html += `</div>`;
+    document.getElementById('supervisorSection').innerHTML = html;
+  } catch(e) { console.log('Supervisor KPIs not available:', e); }
+})();
+</script>
 </body>
 </html>
