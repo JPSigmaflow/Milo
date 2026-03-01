@@ -1,7 +1,9 @@
 {
-  "exported_at": "2026-03-01T01:53:03.872Z",
+  "exported_at": "2026-03-01T01:55:22.261Z",
   "total_tracked": 13,
   "min_score": 8,
+  "sol_free": 1.28316,
+  "sol_wallet": "phantom-xlgeneration",
   "coins": [
     {
       "symbol": "SEAGULL (R)",
@@ -52,13 +54,13 @@
       "name": "Tung Tung Tung Sahur",
       "chain": "solana",
       "contract": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
-      "price": 0.0005732,
+      "price": 0.0005793,
       "entry_price": 0.000551,
-      "change_since_entry": 4.03,
-      "mc": 573297,
-      "volume_1h": 4678.16,
-      "volume_24h": 372251.66,
-      "liquidity": 69232.16,
+      "change_since_entry": 5.14,
+      "mc": 579318,
+      "volume_1h": 4732,
+      "volume_24h": 372278.87,
+      "liquidity": 69735.74,
       "score": 8,
       "criteria": {
         "viral_story": true,
@@ -88,8 +90,8 @@
       "outcome_final": null,
       "snapshot_count": 46,
       "category": "meme",
-      "change_1h": -2.29,
-      "change_24h": 28.22
+      "change_1h": -2.62,
+      "change_24h": 31.33
     },
     {
       "symbol": "XINGXING",
@@ -270,13 +272,13 @@
       "name": "The Black Vault",
       "chain": "solana",
       "contract": "ABg98fd88219wvVfZm76FFNXRqhs5S47vtQWTodQwW8P",
-      "price": 0.00005468,
+      "price": 0.00005506,
       "entry_price": 0.00009228,
-      "change_since_entry": -40.75,
-      "mc": 54680,
-      "volume_1h": 4202.11,
-      "volume_24h": 34533.75,
-      "liquidity": 22176.29,
+      "change_since_entry": -40.33,
+      "mc": 55058,
+      "volume_1h": 3980.97,
+      "volume_24h": 34535.6,
+      "liquidity": 22352.09,
       "score": 10,
       "criteria": {
         "viral_story": true,
@@ -306,8 +308,8 @@
       "outcome_final": null,
       "snapshot_count": 40,
       "category": "meme",
-      "change_1h": -13.38,
-      "change_24h": 33.28
+      "change_1h": -13.94,
+      "change_24h": 34.2
     },
     {
       "symbol": "GROK DOG",
@@ -319,7 +321,7 @@
       "change_since_entry": -67.84,
       "mc": 21477,
       "volume_1h": 191.33,
-      "volume_24h": 9460.17,
+      "volume_24h": 9452.08,
       "liquidity": 15466.23,
       "score": 9,
       "criteria": {
@@ -351,7 +353,7 @@
       "snapshot_count": 16,
       "category": "meme",
       "change_1h": 8.45,
-      "change_24h": -10.88
+      "change_24h": -9.46
     },
     {
       "symbol": "CAPYBARA",
@@ -362,8 +364,8 @@
       "entry_price": 0.0002268,
       "change_since_entry": -91.08,
       "mc": 20204,
-      "volume_1h": 375.71,
-      "volume_24h": 10186.25,
+      "volume_1h": 370.43,
+      "volume_24h": 10080.44,
       "liquidity": 12463.27,
       "score": 9,
       "criteria": {
@@ -394,8 +396,8 @@
       "outcome_final": null,
       "snapshot_count": 14,
       "category": "meme",
-      "change_1h": 11.29,
-      "change_24h": -32.97
+      "change_1h": 12.5,
+      "change_24h": -33.25
     },
     {
       "symbol": "PERCHITA",
@@ -490,13 +492,13 @@
       "name": "We Will Not Be Divided",
       "chain": "solana",
       "contract": "BxPkRK7ZZZsm4r6TCdBf2W4j85BktAzL8GD4oKfypump",
-      "price": 0.00007811,
+      "price": 0.00007867,
       "entry_price": 0.0004863,
-      "change_since_entry": -83.94,
-      "mc": 78109,
-      "volume_1h": 5097.02,
-      "volume_24h": 498022.11,
-      "liquidity": 27155.49,
+      "change_since_entry": -83.82,
+      "mc": 78668,
+      "volume_1h": 5111.77,
+      "volume_24h": 483609.53,
+      "liquidity": 27367.6,
       "score": 8,
       "criteria": {
         "virale_story": 1,
@@ -526,21 +528,21 @@
       "outcome_final": null,
       "snapshot_count": 17,
       "category": "meme",
-      "change_1h": 2.36,
-      "change_24h": -78.43
+      "change_1h": 3.09,
+      "change_24h": -76.03
     },
     {
       "symbol": "KHAMENEI",
       "name": "RIP khamenei",
       "chain": "solana",
       "contract": "9B8AyQ1pHM5AKSjFiWtLsWV5L5SSJ5mhZSpfLdnmpump",
-      "price": 0.0001974,
+      "price": 0.0001927,
       "entry_price": 0.0002954,
-      "change_since_entry": -33.18,
-      "mc": 197259,
-      "volume_1h": 113039.34,
-      "volume_24h": 2209878.2,
-      "liquidity": 39544.31,
+      "change_since_entry": -34.77,
+      "mc": 192502,
+      "volume_1h": 114301.78,
+      "volume_24h": 2212655.96,
+      "liquidity": 39153.52,
       "score": 9,
       "criteria": {
         "virale_story": 1,
@@ -570,8 +572,8 @@
       "outcome_final": null,
       "snapshot_count": 2,
       "category": "meme",
-      "change_1h": 8.01,
-      "change_24h": 513
+      "change_1h": 7.03,
+      "change_24h": 498
     }
   ]
 }
