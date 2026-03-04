@@ -3,7 +3,7 @@ STOCKS_DB="/Users/milo/.openclaw/workspace/shared/stocks.db"
 OUTPUT="/Users/milo/.openclaw/workspace/shared/crypto-dashboard/stocks-data.json"
 
 # Watchlist mit allen Feldern
-WATCHLIST=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, company, sector, country, status, market_cap, last_price, last_price_date, score as research_score, overall_score, overall_reasoning, category, thesis, risk_factors, catalyst, research_source, research_date, perplexity_url FROM watchlist WHERE ticker IS NOT NULL AND ticker != '' ORDER BY overall_score DESC")
+WATCHLIST=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, company, sector, country, status, market_cap, last_price, last_price_date, score as research_score, overall_score, overall_reasoning, score_explanation, score_breakdown, star_violations, category, thesis, risk_factors, catalyst, research_source, research_date, perplexity_url FROM watchlist WHERE ticker IS NOT NULL AND ticker != '' ORDER BY overall_score DESC")
 
 # Holdings
 HOLDINGS=$(sqlite3 -json "$STOCKS_DB" "SELECT * FROM holdings ORDER BY overall_score DESC")
@@ -12,13 +12,13 @@ HOLDINGS=$(sqlite3 -json "$STOCKS_DB" "SELECT * FROM holdings ORDER BY overall_s
 INSIGHTS=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, date, source, category, headline, summary FROM insights WHERE date >= datetime('now', '-7 days') ORDER BY date DESC")
 
 # Score history
-SCORES=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, date, overall_score, reasoning, components FROM score_history ORDER BY date DESC")
+SCORES=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, date, overall_score, reasoning, score_explanation, components, star_violations FROM score_history ORDER BY date DESC")
 
 # Price history (letzte 5 Tage)
 PRICES=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, date, open, high, low, close, volume FROM price_history ORDER BY date DESC")
 
 # Rejected
-REJECTED=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, company, sector, country, market_cap, last_price, last_price_date, overall_score, overall_reasoning, category, thesis, perplexity_url, rejected_date, rejected_reason, alert_base_price, alert_threshold, alert_triggered FROM rejected ORDER BY rejected_date DESC")
+REJECTED=$(sqlite3 -json "$STOCKS_DB" "SELECT ticker, company, sector, country, market_cap, last_price, last_price_date, overall_score, overall_reasoning, score_explanation, category, thesis, perplexity_url, rejected_date, rejected_reason, alert_base_price, alert_threshold, alert_triggered FROM rejected ORDER BY rejected_date DESC")
 
 # Stats
 WATCHLIST_COUNT=$(sqlite3 "$STOCKS_DB" "SELECT COUNT(*) FROM watchlist WHERE ticker IS NOT NULL")
