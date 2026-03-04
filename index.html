@@ -1154,6 +1154,7 @@ async function loadStocks() {
         </div>
         <div class="stock-details">
           ${st.overall_reasoning ? `<div style="background:rgba(100,181,246,.08);border-left:3px solid var(--blue);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.8rem;line-height:1.5"><span style="color:var(--blue);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px">Score-Begründung</span><br>${st.overall_reasoning}</div>` : ''}
+          ${st.score_explanation ? `<div style="background:rgba(247,147,26,.08);border-left:3px solid var(--orange);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.75rem;line-height:1.6;font-family:monospace"><span style="color:var(--orange);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px;font-family:Inter,sans-serif">Detaillierte Kategorie-Breakdown</span><br>${st.score_explanation}</div>` : ''}
           ${priceSparkline(st.ticker)}
           ${sparkline(st.ticker)}
           <div class="stock-detail-grid">
@@ -1187,7 +1188,10 @@ async function loadStocks() {
     sd.holdings.forEach(h => {
       hHtml += `<div class="stock-card" onclick="this.classList.toggle('open')">
         <div class="stock-row"><div><span style="font-weight:700">${h.ticker||'–'}</span> <span class="stock-arrow">▼</span></div><div style="color:var(--dim)">${h.company||''}</div><div style="text-align:right">${h.shares||''} shares</div><div style="text-align:right"><span class="score-pill" style="background:${scoreColor(h.overall_score)}22;color:${scoreColor(h.overall_score)}">${h.overall_score||'–'}</span></div><div></div><div></div></div>
-        <div class="stock-details"><div style="padding:12px;font-size:.8rem;color:var(--dim)">${h.overall_reasoning||'–'}</div></div>
+        <div class="stock-details">
+          ${h.overall_reasoning ? `<div style="background:rgba(100,181,246,.08);border-left:3px solid var(--blue);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.8rem;line-height:1.5"><span style="color:var(--blue);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px">Score-Begründung</span><br>${h.overall_reasoning}</div>` : ''}
+          ${h.score_explanation ? `<div style="background:rgba(247,147,26,.08);border-left:3px solid var(--orange);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.75rem;line-height:1.6;font-family:monospace"><span style="color:var(--orange);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px;font-family:Inter,sans-serif">Detaillierte Kategorie-Breakdown</span><br>${h.score_explanation}</div>` : ''}
+        </div>
       </div>`;
     });
     $('#stocksHoldingsSection').innerHTML = hHtml;
@@ -1220,6 +1224,7 @@ async function loadStocks() {
         <div class="stock-details">
           <div style="font-size:.75rem;color:var(--dim);margin-bottom:8px">Abgelehnt: ${r.rejected_reason||'–'} | Basis: $${priceBase?priceBase.toFixed(2):'–'} | Alert: +${r.alert_threshold||10}%</div>
           ${r.overall_reasoning ? '<div style="background:rgba(255,82,82,.08);border-left:3px solid var(--red);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.8rem;line-height:1.5"><span style="color:var(--red);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px">Letzte Bewertung</span><br>'+r.overall_reasoning+'</div>' : ''}
+          ${r.score_explanation ? '<div style="background:rgba(247,147,26,.08);border-left:3px solid var(--orange);padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:12px;font-size:.75rem;line-height:1.6;font-family:monospace"><span style="color:var(--orange);font-weight:700;font-size:.65rem;text-transform:uppercase;letter-spacing:1px;font-family:Inter,sans-serif">Detaillierte Kategorie-Breakdown</span><br>'+r.score_explanation+'</div>' : ''}
           <div class="stock-detail-grid">
             <div class="stock-detail-box"><h4 style="color:var(--orange)">These</h4><p>${r.thesis||'–'}</p></div>
           </div>
