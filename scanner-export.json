@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T17:13:14.541472Z",
-  "total_coins": 169,
+  "updated_at": "2026-03-05T18:15:19.334425Z",
+  "total_coins": 170,
   "coins": [
     {
       "id": 151,
@@ -323,6 +323,25 @@
       "source": "analyst-mar5-whale-alerts",
       "scanned_at": "2026-03-05 15:13:33",
       "updated_at": "2026-03-05 15:13:33",
+      "source_channels": null
+    },
+    {
+      "id": 204,
+      "symbol": "WBT",
+      "name": "WhiteBIT Coin",
+      "address": "0x925206b8a707096ed26ae47c84747fe0bb734f59",
+      "chain": "ethereum",
+      "narrative": "Exchange Token / CEX Utility",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 85,
+      "result": "deep-dive",
+      "reason": "Multi-Source: MEXC, Kraken (HEUTE gelistet mit USD/EUR pairs). Top 15 MC ($11.2B). Deflationary (weekly burns, 400M cap). US+Saudi expansion. Bullish engulfing (Weekly). Volume $96.9M/24h. Risiko 3/10.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-kraken-listing-high-score",
+      "scanned_at": "2026-03-05 18:14:10",
+      "updated_at": "2026-03-05 18:14:10",
       "source_channels": null
     },
     {
@@ -839,6 +858,25 @@
       "source_channels": null
     },
     {
+      "id": 202,
+      "symbol": "ZIG",
+      "name": "ZIGChain (Zignaly)",
+      "address": "-",
+      "chain": "Ethereum",
+      "narrative": "DeFi Trading Tools, Social Investment Platform",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 72,
+      "result": "watchlist",
+      "reason": "Multi-Source Erw\u00e4hnung: ByBit + Bitget + MEXC + Gate. Technical: Double bottom, consolidation above $0.035. Catalyst: \"Big announcement coming\" (Telegram Binance Killers). Risiko 4/10.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-multi-source-binance-killers",
+      "scanned_at": "2026-03-05 16:42:10",
+      "updated_at": "2026-03-05 18:12:10",
+      "source_channels": null
+    },
+    {
       "id": 60,
       "symbol": "SAHARA",
       "name": "Sahara AI",
@@ -1216,6 +1254,25 @@
       "source": "analyst + telegram + cryptopanic + cmc-mar5",
       "scanned_at": "2026-03-05 02:42:22",
       "updated_at": "2026-03-05 02:42:22",
+      "source_channels": null
+    },
+    {
+      "id": 9,
+      "symbol": "TAO",
+      "name": "Bittensor",
+      "address": "88FLVSAyuEXXbUVy2mpChs9an8G2FZBE3kiuVQY21LPG",
+      "chain": "solana",
+      "narrative": "AI Decentralized ML",
+      "market_cap": 6742151068.0,
+      "liquidity": 6741150984.0,
+      "volume_24h": 3.99,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "X-Twitter: \"TAO will melt faces in the next months\" + trade setup shared. AI/Decentralized ML Narrativ. Auf MEXC \u2705. Risiko 3/10 (top AI project).",
+      "lesson_ref": null,
+      "source": "analyst-mar5-x-twitter-bullish",
+      "scanned_at": "2026-02-12 19:41:19",
+      "updated_at": "2026-03-05 18:12:14",
       "source_channels": null
     },
     {
@@ -1786,25 +1843,6 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 13:11:05",
       "updated_at": "2026-03-05 13:11:05",
-      "source_channels": null
-    },
-    {
-      "id": 202,
-      "symbol": "ZIG",
-      "name": "ZIGChain (Zignaly)",
-      "address": "-",
-      "chain": "Ethereum",
-      "narrative": "DeFi Trading Tools, Social Investment Platform",
-      "market_cap": null,
-      "liquidity": null,
-      "volume_24h": null,
-      "score": 62,
-      "result": "watchlist",
-      "reason": "AI-Analyse Mar5: Binancekillers Signal + institutional validator adoption (BTCS 30M ZIG). MEXC verf\u00fcgbar. Founders lock-up bis 2026 = bullish tokenomics. Major announcement teased. Aber: Nur 2 Quellen, kleiner MC (M). Watchlist f\u00fcr jetzt.",
-      "lesson_ref": null,
-      "source": "analyst-mar5",
-      "scanned_at": "2026-03-05 16:42:10",
-      "updated_at": "2026-03-05 16:42:10",
       "source_channels": null
     },
     {
@@ -2641,25 +2679,6 @@
       "source": "analyst + pumpfun",
       "scanned_at": "2026-02-22 22:39:16",
       "updated_at": "2026-02-22 22:39:16",
-      "source_channels": null
-    },
-    {
-      "id": 9,
-      "symbol": "TAO",
-      "name": "Bittensor",
-      "address": "88FLVSAyuEXXbUVy2mpChs9an8G2FZBE3kiuVQY21LPG",
-      "chain": "solana",
-      "narrative": "AI Decentralized ML",
-      "market_cap": 6742151068.0,
-      "liquidity": 6741150984.0,
-      "volume_24h": 3.99,
-      "score": 48,
-      "result": "watchlist",
-      "reason": "AI-Analyse 2026-02-16: Multi-Source X-Twitter Buzz (DCG-Gr\u00fcnder, 5+ Mentions), DeAI Narrativ stark, aber MC .8B weit \u00fcber M Grenze. Nicht kaufbar.",
-      "lesson_ref": null,
-      "source": "dexscreener",
-      "scanned_at": "2026-02-12 19:41:19",
-      "updated_at": "2026-02-16 11:09:02",
       "source_channels": null
     },
     {
