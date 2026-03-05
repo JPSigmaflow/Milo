@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T13:43:39.386814Z",
-  "total_coins": 156,
+  "updated_at": "2026-03-05T14:13:08.848551Z",
+  "total_coins": 160,
   "coins": [
     {
       "id": 151,
@@ -250,6 +250,25 @@
       "source_channels": null
     },
     {
+      "id": 191,
+      "symbol": "OPN",
+      "name": "Opinion Labs",
+      "address": "TBA",
+      "chain": "BNB Chain (opBNB)",
+      "narrative": "Prediction Markets (AI Oracle + DeFi)",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 85,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: Multi-Source (8+ Quellen), Binance Launchpool, MEXC gelistet HEUTE 13:00 UTC, TGE heute 22:00 UTC, Jump Crypto + Manifold Trading als Market Maker, B volume in 55 Tagen",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-05 14:12:59",
+      "updated_at": "2026-03-05 14:12:59",
+      "source_channels": "telegram (TheBlockBeats, ForesightNews, WuBlock, cointime_cn, bitpush, ChainCatcher, ODaily_News, PANewsOfficial) + cryptopanic + binance-launchpool"
+    },
+    {
       "id": 91,
       "symbol": "ROBO",
       "name": "Robo Token",
@@ -400,6 +419,25 @@
       "scanned_at": "2026-03-04 20:13:21",
       "updated_at": "2026-03-04 20:13:21",
       "source_channels": null
+    },
+    {
+      "id": 192,
+      "symbol": "OKB",
+      "name": "OKX Token",
+      "address": "0x75231f58b43240c9718dd58b4967c5114342a86c",
+      "chain": "Ethereum (ERC-20)",
+      "narrative": "Exchange Token (OKX)",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 80,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: NYSE-Parent ICE investiert @ $25B OKX valuation, +32% heute, Blockchain-Stock-Trading Partnership, auf MEXC verf\u00fcgbar, Multi-Source (CryptoPanic + Telegram)",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-05 14:12:59",
+      "updated_at": "2026-03-05 14:12:59",
+      "source_channels": "cryptopanic + telegram (CoindeskGlobal, Cointelegraph, coingape)"
     },
     {
       "id": 72,
@@ -1350,6 +1388,44 @@
       "scanned_at": "2026-03-05 13:43:21",
       "updated_at": "2026-03-05 13:43:21",
       "source_channels": null
+    },
+    {
+      "id": 193,
+      "symbol": "AVNT",
+      "name": "Avantis",
+      "address": "0x696F9436B67233384889472Cd7cD58A6fB5DF4f1",
+      "chain": "Base",
+      "narrative": "DeFi / Perp DEX",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "AI-Analyse: CoinGecko Trending, Season 2 Airdrop ge\u00f6ffnet, auf MEXC verf\u00fcgbar, Multi-Source (CoinGecko + Telegram)",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-05 14:12:59",
+      "updated_at": "2026-03-05 14:12:59",
+      "source_channels": "coingecko-trending + telegram (ForesightNews)"
+    },
+    {
+      "id": 194,
+      "symbol": "DIME",
+      "name": "Paradex",
+      "address": "native_gas_token",
+      "chain": "Paradex Chain",
+      "narrative": "Privacy DeFi / Zero-Fee Perp DEX",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Claim heute ge\u00f6ffnet (TGE bereits gelaufen), MEXC Pre-Market verf\u00fcgbar, Multi-Source (Telegram)",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-05 14:12:59",
+      "updated_at": "2026-03-05 14:12:59",
+      "source_channels": "telegram (ForesightNews, TheDailyHodl)"
     },
     {
       "id": 126,
