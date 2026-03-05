@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+:root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #e6edf3; --muted: #8b949e; --green: #3fb950; --red: #f85149; --blue: #58a6ff; --purple: #a371f7; --gold: #f0c000; --orange: #d29922; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); padding: 28px; width: 1200px; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+.header h1 { font-size: 26px; }
+.header .date { color: var(--muted); font-size: 13px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
+.stat { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+.stat.main { border-color: var(--gold); background: linear-gradient(135deg, var(--card) 0%, #1a1f15 100%); }
+.stat .label { color: var(--muted); font-size: 12px; text-transform: uppercase; margin-bottom: 6px; }
+.stat .value { font-size: 26px; font-weight: 700; }
+.stat .sub { font-size: 13px; margin-top: 4px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 20px; }
+.coin { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+.coin.up { border-left: 4px solid var(--green); }
+.coin.down { border-left: 4px solid var(--red); }
+.coin-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.coin-name { display: flex; align-items: center; gap: 8px; }
+.symbol { background: var(--bg); padding: 4px 10px; border-radius: 6px; font-size: 13px; font-weight: 700; color: var(--gold); }
+.fullname { font-size: 13px; color: var(--muted); }
+.price { font-size: 22px; font-weight: 700; }
+.coin-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; padding-top: 12px; border-top: 1px solid var(--border); margin-bottom: 12px; }
+.cs .cl { color: var(--muted); font-size: 11px; }
+.cs .cv { font-size: 14px; font-weight: 600; margin-top: 2px; }
+.holdings { background: var(--bg); border-radius: 8px; padding: 10px; }
+.hr { display: flex; justify-content: space-between; font-size: 12px; padding: 3px 0; }
+.hr .hl { color: var(--muted); }
+.pos { color: var(--green); }
+.neg { color: var(--red); }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; margin-left: 6px; }
+.badge.mexc { background: var(--purple); color: #fff; }
+.badge.dex { background: var(--blue); color: #000; }
+.footer { text-align: center; color: var(--muted); font-size: 11px; margin-top: 16px; border-top: 1px solid var(--border); padding-top: 14px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>💰 Portfolio Dashboard</h1>
+  <div class="date">11. Februar 2026 • 22:38 UTC<br>Live-Preise via Coinpaprika</div>
+</div>
+
+<div class="stats">
+  <div class="stat main">
+    <div class="label">Portfolio Gesamt</div>
+    <div class="value">$3,509.27</div>
+    <div class="sub">6 Positionen</div>
+  </div>
+  <div class="stat">
+    <div class="label">Chris (MEXC)</div>
+    <div class="value">$2,758.94</div>
+    <div class="sub">5 Coins</div>
+  </div>
+  <div class="stat">
+    <div class="label">Juri (Raydium)</div>
+    <div class="value">$750.33</div>
+    <div class="sub">1 Coin</div>
+  </div>
+  <div class="stat">
+    <div class="label">Top Performer</div>
+    <div class="value pos">RAIN</div>
+    <div class="sub pos">+9.9%</div>
+  </div>
+</div>
+
+<div class="grid">
+
+  <div class="coin up">
+    <div class="coin-top">
+      <div class="coin-name"><span class="symbol">RAIN</span><span class="badge mexc">MEXC</span></div>
+      <div class="price">$0.01020</div>
+    </div>
+    <div class="coin-stats">
+      <div class="cs"><div class="cl">P&L</div><div class="cv pos">+9.9%</div></div>
+      <div class="cs"><div class="cl">Wert</div><div class="cv">$895.63</div></div>
+      <div class="cs"><div class="cl">Rang</div><div class="cv" style="color:var(--blue)">#35</div></div>
+    </div>
+    <div class="holdings">
+      <div class="hr"><span class="hl">Rain Protocol</span><span>87.850,95</span></div>
+      <div class="hr"><span class="hl">Einstieg</span><span>$0.00928</span></div>
+      <div class="hr"><span class="hl">P&L</span><span class="pos">+$80.78</span></div>
+    </div>
+  </div>
+
+  <div class="coin down">
+    <div class="coin-top">
+      <div class="coin-name"><span class="symbol">LUNAI</span><span class="badge mexc">MEXC</span></div>
+      <div class="price">$0.00801</div>
+    </div>
+    <div class="coin-stats">
+      <div class="cs"><div class="cl">P&L</div><div class="cv neg">-10.6%</div></div>
+      <div class="cs"><div class="cl">Wert</div><div class="cv">$496.47</div></div>
+      <div class="cs"><div class="cl">Rang</div><div class="cv" style="color:var(--blue)">#1015</div></div>
+    </div>
+    <div class="holdings">
+      <div class="hr"><span class="hl">Luna by Virtuals</span><span>61.986,86</span></div>
+      <div class="hr"><span class="hl">Einstieg</span><span>$0.00896</span></div>
+      <div class="hr"><span class="hl">P&L</span><span class="neg">-$58.79</span></div>
+    </div>
+  </div>
+
+  <div class="coin down">
+    <div class="coin-top">
+      <div class="coin-name"><span class="symbol">VIRTUAL</span><span class="badge mexc">MEXC</span></div>
+      <div class="price">$0.5452</div>
+    </div>
+    <div class="coin-stats">
+      <div class="cs"><div class="cl">P&L</div><div class="cv neg">-6.3%</div></div>
+      <div class="cs"><div class="cl">Wert</div><div class="cv">$470.09</div></div>
+      <div class="cs"><div class="cl">Rang</div><div class="cv" style="color:var(--blue)">#126</div></div>
+    </div>
+    <div class="holdings">
+      <div class="hr"><span class="hl">Virtuals Protocol</span><span>862,38</span></div>
+      <div class="hr"><span class="hl">Einstieg</span><span>$0.5820</span></div>
+      <div class="hr"><span class="hl">P&L</span><span class="neg">-$31.73</span></div>
+    </div>
+  </div>
+
+  <div class="coin down">
+    <div class="coin-top">
+      <div class="coin-name"><span class="symbol">GRIFFAIN</span><span class="badge mexc">MEXC</span></div>
+      <div class="price">$0.00899</div>
+    </div>
+    <div class="coin-stats">
+      <div class="cs"><div class="cl">P&L</div><div class="cv neg">-3.4%</div></div>
+      <div class="cs"><div class="cl">Wert</div><div class="cv">$481.43</div></div>
+      <div class="cs"><div class="cl">Rang</div><div class="cv" style="color:var(--blue)">#967</div></div>
+    </div>
+    <div class="holdings">
+      <div class="hr"><span class="hl">Griffain</span><span>53.551,53</span></div>
+      <div class="hr"><span class="hl">Einstieg</span><span>$0.00931</span></div>
+      <div class="hr"><span class="hl">P&L</span><span class="neg">-$17.14</span></div>
+    </div>
+  </div>
+
+  <div class="coin down">
+    <div class="coin-top">
+      <div class="coin-name"><span class="symbol">DEAI</span><span class="badge mexc">MEXC</span></div>
+      <div class="price">$0.01256</div>
+    </div>
+    <div class="coin-stats">
+      <div class="cs"><div class="cl">P&L</div><div class="cv neg">-14.6%</div></div>
+      <div class="cs"><div class="cl">Wert</div><div class="cv">$415.32</div></div>
+      <div class="cs"><div class="cl">Rang</div><div class="cv" style="color:var(--blue)">#1751</div></div>
+    </div>
+    <div class="holdings">
+      <div class="hr"><span class="hl">Zero1 Labs</span><span>33.067,03</span></div>
+      <div class="hr"><span class="hl">Einstieg</span><span>$0.01471</span></div>
+      <div class="hr"><span class="hl">P&L</span><span class="neg">-$71.03</span></div>
+    </div>
+  </div>
+
+  <div class="coin down">
+    <div class="coin-top">
+      <div class="coin-name"><span class="symbol">RAY</span><span class="badge dex">Raydium</span></div>
+      <div class="price">$0.5785</div>
+    </div>
+    <div class="coin-stats">
+      <div class="cs"><div class="cl">P&L</div><div class="cv neg">-1.0%</div></div>
+      <div class="cs"><div class="cl">Wert</div><div class="cv">$750.33</div></div>
+      <div class="cs"><div class="cl">Rang</div><div class="cv" style="color:var(--blue)">#212</div></div>
+    </div>
+    <div class="holdings">
+      <div class="hr"><span class="hl">Raydium</span><span>1.297,00</span></div>
+      <div class="hr"><span class="hl">Einstieg</span><span>$0.5846</span></div>
+      <div class="hr"><span class="hl">P&L</span><span class="neg">-$7.91</span></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">🦁 Milo Portfolio Dashboard | Chris (MEXC) + Juri (Raydium) | Live-Preise 11.02.2026</div>
+
+</body>
+</html>

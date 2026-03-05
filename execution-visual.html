@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>MILO Crypto System v2.0 — Execution Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0e17; color: #e0e6ed; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; padding: 32px; line-height: 1.5; }
+  
+  .header { text-align: center; margin-bottom: 40px; padding: 32px; background: linear-gradient(135deg, #0f1923 0%, #1a1f3a 100%); border-radius: 16px; border: 1px solid #1e3a5f; }
+  .header h1 { font-size: 32px; background: linear-gradient(90deg, #00d4ff, #7b2ff7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px; }
+  .header .subtitle { color: #8892a4; font-size: 15px; }
+  .header .stats { display: flex; justify-content: center; gap: 40px; margin-top: 20px; }
+  .header .stat { text-align: center; }
+  .header .stat .val { font-size: 28px; font-weight: 700; color: #00d4ff; }
+  .header .stat .lbl { font-size: 12px; color: #6b7a90; text-transform: uppercase; letter-spacing: 1px; }
+
+  .section { margin-bottom: 32px; }
+  .section-title { font-size: 20px; font-weight: 700; margin-bottom: 16px; padding-left: 12px; border-left: 4px solid #7b2ff7; color: #fff; }
+  
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  
+  .card { background: #111827; border-radius: 12px; padding: 20px; border: 1px solid #1e293b; }
+  .card h3 { font-size: 15px; color: #7b2ff7; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .card ul { list-style: none; padding: 0; }
+  .card ul li { padding: 6px 0; border-bottom: 1px solid #1e293b; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+  .card ul li:last-child { border-bottom: none; }
+  .card ul li .icon { width: 20px; text-align: center; flex-shrink: 0; }
+  
+  .pipeline { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+  .pipeline .step { flex: 1; min-width: 130px; background: #111827; border-radius: 10px; padding: 14px; text-align: center; border: 1px solid #1e293b; position: relative; }
+  .pipeline .step .num { font-size: 24px; font-weight: 800; color: #7b2ff7; }
+  .pipeline .step .name { font-size: 13px; font-weight: 600; color: #fff; margin-top: 4px; }
+  .pipeline .step .desc { font-size: 11px; color: #6b7a90; margin-top: 4px; }
+  .pipeline .step::after { content: '→'; position: absolute; right: -14px; top: 50%; transform: translateY(-50%); color: #374151; font-size: 18px; font-weight: bold; }
+  .pipeline .step:last-child::after { display: none; }
+
+  .risk-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .risk-card { background: #111827; border-radius: 10px; padding: 16px; text-align: center; border: 1px solid #1e293b; }
+  .risk-card .val { font-size: 24px; font-weight: 800; }
+  .risk-card .lbl { font-size: 11px; color: #6b7a90; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+  .risk-card.red .val { color: #ef4444; }
+  .risk-card.amber .val { color: #f59e0b; }
+  .risk-card.green .val { color: #10b981; }
+  .risk-card.blue .val { color: #00d4ff; }
+
+  .playbook { background: #111827; border-radius: 12px; padding: 20px; border: 1px solid #1e293b; }
+  .playbook h3 { font-size: 16px; margin-bottom: 12px; }
+  .playbook .tag { display: inline-block; background: #1e293b; color: #00d4ff; font-size: 11px; padding: 3px 10px; border-radius: 20px; margin-right: 6px; margin-bottom: 6px; }
+  .playbook table { width: 100%; font-size: 13px; margin-top: 10px; }
+  .playbook table td { padding: 6px 8px; border-bottom: 1px solid #1e293b; }
+  .playbook table td:first-child { color: #8892a4; width: 100px; font-weight: 600; }
+
+  .kill-switch { background: linear-gradient(135deg, #1a0a0a, #2d1111); border: 1px solid #7f1d1d; border-radius: 12px; padding: 20px; }
+  .kill-switch h3 { color: #ef4444; margin-bottom: 16px; font-size: 18px; }
+  .kill-rule { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #3b1111; align-items: flex-start; }
+  .kill-rule:last-child { border-bottom: none; }
+  .kill-rule .id { background: #ef4444; color: #fff; font-weight: 800; font-size: 12px; padding: 3px 8px; border-radius: 6px; flex-shrink: 0; }
+  .kill-rule .trigger { font-size: 14px; font-weight: 600; color: #fca5a5; }
+  .kill-rule .action { font-size: 13px; color: #9ca3af; margin-top: 2px; }
+
+  .timeline { position: relative; padding-left: 30px; }
+  .timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: #1e293b; }
+  .timeline .item { position: relative; margin-bottom: 16px; }
+  .timeline .item::before { content: ''; position: absolute; left: -24px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: #7b2ff7; border: 2px solid #0a0e17; }
+  .timeline .item .time { font-size: 12px; color: #7b2ff7; font-weight: 700; }
+  .timeline .item .title { font-size: 14px; font-weight: 600; color: #fff; }
+  .timeline .item .detail { font-size: 12px; color: #6b7a90; }
+
+  .gate-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .gate-item { background: #111827; border: 1px solid #1e293b; border-radius: 8px; padding: 12px; text-align: center; font-size: 12px; }
+  .gate-item .check { font-size: 20px; margin-bottom: 4px; }
+  .gate-item .txt { color: #8892a4; }
+
+  .review-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .review-card { background: #111827; border-radius: 12px; padding: 20px; border: 1px solid #1e293b; }
+  .review-card h4 { color: #00d4ff; font-size: 14px; margin-bottom: 8px; }
+  .review-card .freq { font-size: 11px; color: #7b2ff7; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .review-card ul { list-style: none; padding: 0; }
+  .review-card ul li { font-size: 13px; padding: 4px 0; color: #9ca3af; }
+
+  .portfolio-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .portfolio-table th { text-align: left; padding: 10px 12px; background: #1e293b; color: #8892a4; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .portfolio-table th:first-child { border-radius: 8px 0 0 8px; }
+  .portfolio-table th:last-child { border-radius: 0 8px 8px 0; }
+  .portfolio-table td { padding: 10px 12px; border-bottom: 1px solid #1e293b; }
+  .portfolio-table tr:hover td { background: #111827; }
+
+  .scorecard { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .scorecard th { text-align: left; padding: 8px 12px; background: #1e293b; color: #8892a4; font-size: 11px; text-transform: uppercase; }
+  .scorecard td { padding: 8px 12px; border-bottom: 1px solid #1e293b; }
+
+  .footer { text-align: center; margin-top: 40px; padding: 20px; color: #374151; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>🏗️ MILO CRYPTO SYSTEM v2.0</h1>
+  <div class="subtitle">Execution Dashboard — Stand: 11. Februar 2026</div>
+  <div class="stats">
+    <div class="stat"><div class="val">$3.509</div><div class="lbl">Portfolio</div></div>
+    <div class="stat"><div class="val">6</div><div class="lbl">Positionen</div></div>
+    <div class="stat"><div class="val">-20%</div><div class="lbl">Max Drawdown</div></div>
+    <div class="stat"><div class="val">3/Woche</div><div class="lbl">Max Trades</div></div>
+    <div class="stat"><div class="val">5%</div><div class="lbl">Max/Position</div></div>
+  </div>
+</div>
+
+<!-- SOCRATIC START -->
+<div class="section">
+  <div class="section-title">1 — Socratic Start: Grundregeln</div>
+  <div class="grid2">
+    <div class="card">
+      <h3>✅ Erlaubt</h3>
+      <ul>
+        <li><span class="icon">📈</span> Spot-Trading (MEXC + Raydium)</li>
+        <li><span class="icon">⏱️</span> Swing (2-14 Tage) + Position (2-12 Wo.)</li>
+        <li><span class="icon">🎯</span> Kapitalerhalt + moderate Rendite</li>
+        <li><span class="icon">🔍</span> Multi-Source-Bestätigung</li>
+        <li><span class="icon">🔒</span> Button-Confirm vor jedem Trade</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>❌ Verboten</h3>
+      <ul>
+        <li><span class="icon">🚫</span> Perpetuals, Options, Leverage</li>
+        <li><span class="icon">🚫</span> Intraday-Trading</li>
+        <li><span class="icon">🚫</span> Meme-Zock ohne Utility</li>
+        <li><span class="icon">🚫</span> Honeypot-Tokens / Sell Tax >5%</li>
+        <li><span class="icon">🚫</span> Unlocked LP / Anonyme Teams</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- RISK ENGINE -->
+<div class="section">
+  <div class="section-title">2C — Risk Engine (nicht verhandelbar)</div>
+  <div class="risk-grid">
+    <div class="risk-card blue"><div class="val">5%</div><div class="lbl">Max pro Position</div></div>
+    <div class="risk-card amber"><div class="val">20%</div><div class="lbl">Max pro Sektor</div></div>
+    <div class="risk-card red"><div class="val">-20%</div><div class="lbl">Kill: Drawdown</div></div>
+    <div class="risk-card green"><div class="val">≥2:1</div><div class="lbl">Min Risk:Reward</div></div>
+    <div class="risk-card blue"><div class="val">6</div><div class="lbl">Max Positionen</div></div>
+    <div class="risk-card amber"><div class="val">3/Wo</div><div class="lbl">Max Trades</div></div>
+    <div class="risk-card red"><div class="val">-10%</div><div class="lbl">Max SL/Position</div></div>
+    <div class="risk-card green"><div class="val">$50k</div><div class="lbl">Min Liquidity</div></div>
+  </div>
+</div>
+
+<!-- PIPELINE -->
+<div class="section">
+  <div class="section-title">2B — Pipeline: Idee → Trade</div>
+  <div class="pipeline">
+    <div class="step"><div class="num">1</div><div class="name">Discovery</div><div class="desc">Scannen & Filtern</div></div>
+    <div class="step"><div class="num">2</div><div class="name">Triage</div><div class="desc">Schnell-Check</div></div>
+    <div class="step"><div class="num">3</div><div class="name">Deep-Dive</div><div class="desc">Analyse</div></div>
+    <div class="step"><div class="num">4</div><div class="name">Setup</div><div class="desc">Playbook & R:R</div></div>
+    <div class="step"><div class="num">5</div><div class="name">Execution</div><div class="desc">Trade ausführen</div></div>
+    <div class="step"><div class="num">6</div><div class="name">Monitoring</div><div class="desc">Täglich prüfen</div></div>
+    <div class="step"><div class="num">7</div><div class="name">Review</div><div class="desc">Journal & Lernen</div></div>
+  </div>
+</div>
+
+<!-- PLAYBOOKS -->
+<div class="section">
+  <div class="section-title">2D — Playbooks</div>
+  <div class="grid3">
+    <div class="playbook">
+      <h3>📊 Breakout</h3>
+      <span class="tag">Volumen >2x</span><span class="tag">R:R ≥ 2:1</span>
+      <table>
+        <tr><td>Entry</td><td>4h Close über Resistance</td></tr>
+        <tr><td>SL</td><td>-5% bis -8%</td></tr>
+        <tr><td>TP1</td><td>+10% (50%)</td></tr>
+        <tr><td>TP2</td><td>+20% (30%)</td></tr>
+        <tr><td>Trail</td><td>10% (20%)</td></tr>
+      </table>
+    </div>
+    <div class="playbook">
+      <h3>📉 Pullback-to-Support</h3>
+      <span class="tag">Trend-Following</span><span class="tag">R:R ≥ 2.5:1</span>
+      <table>
+        <tr><td>Entry</td><td>Bounce auf EMA21/Support</td></tr>
+        <tr><td>SL</td><td>Unter letztem HL (-5-10%)</td></tr>
+        <tr><td>TP1</td><td>Letztes High (+8-15%)</td></tr>
+        <tr><td>TP2</td><td>Fib Extension 1.618</td></tr>
+        <tr><td>Bedingung</td><td>Min. 2 Higher Lows</td></tr>
+      </table>
+    </div>
+    <div class="playbook">
+      <h3>🚀 Catalyst Play</h3>
+      <span class="tag">Listing/Release</span><span class="tag">R:R ≥ 2:1</span>
+      <table>
+        <tr><td>Entry</td><td>24-72h vor Event</td></tr>
+        <tr><td>SL</td><td>-8% (eng)</td></tr>
+        <tr><td>TP1</td><td>+15% VOR Event (70%)</td></tr>
+        <tr><td>TP2</td><td>+30% Post-Event</td></tr>
+        <tr><td>Regel</td><td>70% raus VOR Event</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- DECISION GATE -->
+<div class="section">
+  <div class="section-title">2E — Decision Gate (12/12 = GO)</div>
+  <div class="gate-grid">
+    <div class="gate-item"><div class="check">🛡️</div><div class="txt">Honeypot-Check OK</div></div>
+    <div class="gate-item"><div class="check">💧</div><div class="txt">Liquidity >$50k</div></div>
+    <div class="gate-item"><div class="check">📊</div><div class="txt">Sell Tax <5%</div></div>
+    <div class="gate-item"><div class="check">🔒</div><div class="txt">LP locked >6 Mo.</div></div>
+    <div class="gate-item"><div class="check">⭐</div><div class="txt">Score ≥7/10</div></div>
+    <div class="gate-item"><div class="check">📐</div><div class="txt">R:R ≥ 2:1</div></div>
+    <div class="gate-item"><div class="check">📏</div><div class="txt">Position ≤5%</div></div>
+    <div class="gate-item"><div class="check">🏗️</div><div class="txt">Sektor ≤20%</div></div>
+    <div class="gate-item"><div class="check">6️⃣</div><div class="txt">Max 6 Positionen</div></div>
+    <div class="gate-item"><div class="check">🎯</div><div class="txt">SL definiert</div></div>
+    <div class="gate-item"><div class="check">📋</div><div class="txt">Playbook gewählt</div></div>
+    <div class="gate-item"><div class="check">✅</div><div class="txt">Juri/Chris Confirm</div></div>
+  </div>
+</div>
+
+<!-- KILL SWITCH -->
+<div class="section">
+  <div class="section-title">6 — Kill-Switch-Regeln</div>
+  <div class="kill-switch">
+    <h3>⚠️ NICHT VERHANDELBAR</h3>
+    <div class="kill-rule"><span class="id">K1</span><div><div class="trigger">Portfolio-Drawdown ≥ -20%</div><div class="action">→ ALLE Trades stoppen. Kein neuer Trade bis Team-Review + Restart.</div></div></div>
+    <div class="kill-rule"><span class="id">K2</span><div><div class="trigger">3 Verlust-Trades in Folge</div><div class="action">→ 7 Tage Pause. Review aller 3 Trades.</div></div></div>
+    <div class="kill-rule"><span class="id">K3</span><div><div class="trigger">Einzelposition -15% unter Entry</div><div class="action">→ Sofort schließen. SL-Fehleranalyse.</div></div></div>
+    <div class="kill-rule"><span class="id">K4</span><div><div class="trigger">Liquidity fällt unter $25k</div><div class="action">→ Position innerhalb 24h schließen.</div></div></div>
+    <div class="kill-rule"><span class="id">K5</span><div><div class="trigger">Regel-Verstoß (kein Decision Gate)</div><div class="action">→ Trade sofort schließen, unabhängig von P&L.</div></div></div>
+    <div class="kill-rule"><span class="id">K6</span><div><div class="trigger">Honeypot-Verdacht</div><div class="action">→ Sofort maximal möglichen Betrag verkaufen.</div></div></div>
+    <div class="kill-rule"><span class="id">K7</span><div><div class="trigger">>3 Trades in einer Woche</div><div class="action">→ Woche gesperrt. Nächster Trade ab Montag.</div></div></div>
+  </div>
+</div>
+
+<!-- UMSETZUNG TIMELINE -->
+<div class="section">
+  <div class="section-title">3 — Umsetzungsplan: Erste 24h</div>
+  <div class="card">
+    <div class="timeline">
+      <div class="item"><div class="time">Stunde 1-2</div><div class="title">🎯 Risk Engine: SL für alle 6 Positionen</div><div class="detail">Owner: Milo · Aufwand: S · Ohne SL = offenes Risiko</div></div>
+      <div class="item"><div class="time">Stunde 2-4</div><div class="title">📸 Portfolio-Snapshot erstellen</div><div class="detail">Owner: Milo · Aufwand: S · Baseline für alles Weitere</div></div>
+      <div class="item"><div class="time">Stunde 4-8</div><div class="title">🤖 Decision Gate im Bot implementieren</div><div class="detail">Owner: Milo · Aufwand: M · Kein Trade ohne Checkliste</div></div>
+      <div class="item"><div class="time">Stunde 8-10</div><div class="title">📓 Trade-Journal Template erstellen</div><div class="detail">Owner: Milo · Aufwand: S · Ohne Journal kein Review</div></div>
+      <div class="item"><div class="time">Stunde 10-12</div><div class="title">👥 Team-Briefing: Regeln + Commitment</div><div class="detail">Owner: Juri/Chris · Aufwand: S · Buy-In sicherstellen</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEW ZYKLEN -->
+<div class="section">
+  <div class="section-title">5 — Review-Zyklen</div>
+  <div class="review-cards">
+    <div class="review-card">
+      <div class="freq">Täglich · 10 Min</div>
+      <h4>☀️ Morning Check</h4>
+      <ul>
+        <li>📊 Portfolio-Wert & Drawdown</li>
+        <li>🎯 SL/TP-Alerts prüfen</li>
+        <li>📰 News-Scan</li>
+        <li>🔍 Watchlist +1-2 Kandidaten</li>
+      </ul>
+    </div>
+    <div class="review-card">
+      <div class="freq">Wöchentlich · 30 Min</div>
+      <h4>📊 Scorecard Sunday</h4>
+      <ul>
+        <li>📋 Scorecard ausfüllen</li>
+        <li>🔄 Positionen bewerten</li>
+        <li>🎯 3 Entscheidungen für KW</li>
+        <li>🔍 Pipeline-Status</li>
+        <li>⚠️ Fehler-Analyse</li>
+      </ul>
+    </div>
+    <div class="review-card">
+      <div class="freq">Monatlich · 60 Min</div>
+      <h4>🏆 Monthly Deep Review</h4>
+      <ul>
+        <li>📈 Performance-Report</li>
+        <li>📋 Playbook-Analyse</li>
+        <li>⚙️ Risk Engine Review</li>
+        <li>🔧 Prozess-Optimierung</li>
+        <li>👥 Team-Retro</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- TRACKING -->
+<div class="section">
+  <div class="section-title">4 — Wöchentliche Scorecard</div>
+  <div class="card">
+    <table class="scorecard">
+      <tr><th>Metrik</th><th>Ziel</th><th>KW__ Ist</th><th>Status</th></tr>
+      <tr><td>Portfolio-Drawdown</td><td>&lt; -20%</td><td>—</td><td>⬜</td></tr>
+      <tr><td>Winrate</td><td>&gt; 50%</td><td>—</td><td>⬜</td></tr>
+      <tr><td>Avg R-Multiple</td><td>&gt; 1.5</td><td>—</td><td>⬜</td></tr>
+      <tr><td>Fehlerquote</td><td>0</td><td>—</td><td>⬜</td></tr>
+      <tr><td>Exposure</td><td>40-80%</td><td>—</td><td>⬜</td></tr>
+      <tr><td>Trades/Woche</td><td>≤ 3</td><td>—</td><td>⬜</td></tr>
+      <tr><td>Decision Gates</td><td>12/12</td><td>—</td><td>⬜</td></tr>
+      <tr><td>Discovery-Sessions</td><td>≥ 5</td><td>—</td><td>⬜</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<div class="section">
+  <div class="section-title">Aktuelles Portfolio</div>
+  <div class="card">
+    <table class="portfolio-table">
+      <tr><th>Coin</th><th>Exchange</th><th>Sektor</th><th>SL-Level</th><th>Status</th></tr>
+      <tr><td>RAIN</td><td>MEXC</td><td>AI / Data</td><td style="color:#f59e0b">⏳ TBD</td><td>🔍 Review</td></tr>
+      <tr><td>LUNAI</td><td>MEXC</td><td>AI</td><td style="color:#f59e0b">⏳ TBD</td><td>🔍 Review</td></tr>
+      <tr><td>VIRTUAL</td><td>MEXC</td><td>AI / Metaverse</td><td style="color:#f59e0b">⏳ TBD</td><td>🔍 Review</td></tr>
+      <tr><td>GRIFFAIN</td><td>MEXC</td><td>AI / DeFi</td><td style="color:#f59e0b">⏳ TBD</td><td>🔍 Review</td></tr>
+      <tr><td>DEAI</td><td>MEXC</td><td>AI</td><td style="color:#f59e0b">⏳ TBD</td><td>🔍 Review</td></tr>
+      <tr><td>RAY</td><td>Raydium</td><td>DeFi / DEX</td><td style="color:#f59e0b">⏳ TBD</td><td>🔍 Review</td></tr>
+    </table>
+    <p style="margin-top:12px;font-size:13px;color:#f59e0b;">⚠️ Aktion: Alle SL-Levels müssen innerhalb von 24h definiert werden.</p>
+  </div>
+</div>
+
+<div class="footer">
+  MILO CRYPTO SYSTEM v2.0 — Master-Operator Dashboard<br>
+  Team: Juri · Chris · Milo | Nächster Review: KW 07/2026
+</div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+:root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #e6edf3; --muted: #8b949e; --green: #3fb950; --red: #f85149; --blue: #58a6ff; --purple: #a371f7; --gold: #f0c000; --orange: #d29922; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); padding: 32px; width: 1200px; }
+h1 { font-size: 28px; margin-bottom: 6px; }
+.subtitle { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+.flow { display: flex; gap: 16px; margin-bottom: 28px; }
+.stage { flex: 1; background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 22px; position: relative; }
+.stage-num { position: absolute; top: -14px; left: 20px; background: var(--purple); color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 13px; font-weight: 700; }
+.stage h2 { font-size: 20px; margin: 8px 0 14px; display: flex; align-items: center; gap: 8px; }
+.stage p { color: var(--muted); font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
+.stat-row { display: flex; gap: 8px; }
+.mini-stat { background: var(--bg); border-radius: 8px; padding: 10px; flex: 1; text-align: center; }
+.mini-stat .val { font-size: 18px; font-weight: 700; }
+.mini-stat .lbl { color: var(--muted); font-size: 11px; margin-top: 2px; }
+.arrow { display: flex; align-items: center; font-size: 28px; color: var(--gold); }
+.sources { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 28px; }
+.source { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+.source h3 { font-size: 14px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.source ul { list-style: none; font-size: 12px; color: var(--muted); line-height: 1.8; }
+.source ul li::before { content: "• "; color: var(--blue); }
+.highlight-box { background: linear-gradient(135deg, #161b22 0%, #1a1f15 100%); border: 1px solid var(--gold); border-radius: 14px; padding: 22px; margin-bottom: 28px; display: flex; gap: 24px; align-items: center; }
+.highlight-box .icon { font-size: 48px; }
+.highlight-box .content h3 { font-size: 18px; color: var(--gold); margin-bottom: 6px; }
+.highlight-box .content p { color: var(--muted); font-size: 13px; line-height: 1.5; }
+.cost-row { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 28px; }
+.cost-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
+.cost-card .amount { font-size: 22px; font-weight: 700; margin: 8px 0 4px; }
+.cost-card .label { color: var(--muted); font-size: 12px; }
+.cost-card.total { border-color: var(--green); }
+.cost-card.total .amount { color: var(--green); }
+.timeline { display: flex; gap: 12px; }
+.phase { flex: 1; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+.phase .week { color: var(--blue); font-size: 12px; font-weight: 600; margin-bottom: 6px; }
+.phase h4 { font-size: 14px; margin-bottom: 8px; }
+.phase ul { list-style: none; font-size: 12px; color: var(--muted); line-height: 1.8; }
+.phase ul li::before { content: "☐ "; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.badge.free { background: var(--green); color: #000; }
+.badge.low { background: var(--orange); color: #000; }
+.footer { margin-top: 24px; text-align: center; color: var(--muted); font-size: 12px; border-top: 1px solid var(--border); padding-top: 16px; }
+</style>
+</head>
+<body>
+
+<h1>🦁 Milo Crypto System — Gesamtkonzept v2.0</h1>
+<p class="subtitle">Automatisches Scanning → AI-Analyse → On-Chain Handel | Erstellt 09.02.2026</p>
+
+<!-- 3 STAGES -->
+<div class="flow">
+  <div class="stage">
+    <div class="stage-num">STUFE 1</div>
+    <h2>🔍 Scannen</h2>
+    <p>2000+ Profile auf X, Telegram, Reddit & On-Chain Daten werden alle 15 Min automatisch gescannt. Keyword-Filter findet relevante Posts.</p>
+    <div class="stat-row">
+      <div class="mini-stat"><div class="val" style="color:var(--green)">$0</div><div class="lbl">Kosten/Tag</div></div>
+      <div class="mini-stat"><div class="val">10k+</div><div class="lbl">Posts/Tag</div></div>
+      <div class="mini-stat"><div class="val">15m</div><div class="lbl">Intervall</div></div>
+    </div>
+  </div>
+  <div class="arrow">→</div>
+  <div class="stage">
+    <div class="stage-num">STUFE 2</div>
+    <h2>🧠 Analysieren</h2>
+    <p>Nur gefilterte Treffer (~100/Tag) werden per AI bewertet: Relevanz-Score, Urgency, Handlungsempfehlung. Push bei Score ≥ 8.</p>
+    <div class="stat-row">
+      <div class="mini-stat"><div class="val" style="color:var(--orange)">~$1</div><div class="lbl">Kosten/Tag</div></div>
+      <div class="mini-stat"><div class="val">50-150</div><div class="lbl">Treffer/Tag</div></div>
+      <div class="mini-stat"><div class="val">1-10</div><div class="lbl">Score</div></div>
+    </div>
+  </div>
+  <div class="arrow">→</div>
+  <div class="stage">
+    <div class="stage-num">STUFE 3</div>
+    <h2>⚡ Handeln</h2>
+    <p>Sicherheitschecks (Honeypot, Tax, Liquidity), beste Route via Jupiter, Trade per Button-Click mit eurer Bestätigung.</p>
+    <div class="stat-row">
+      <div class="mini-stat"><div class="val" style="color:var(--green)">1-Click</div><div class="lbl">Ausführung</div></div>
+      <div class="mini-stat"><div class="val">6</div><div class="lbl">Security Checks</div></div>
+      <div class="mini-stat"><div class="val">$0.02</div><div class="lbl">Fees (SOL)</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- SOURCES -->
+<div class="sources">
+  <div class="source">
+    <h3>📡 X/Twitter <span class="badge free">GRATIS</span></h3>
+    <ul>
+      <li>@whale_alert, @lookonchain</li>
+      <li>@GCRClassic, @HsakaTrades</li>
+      <li>@MustStopMurad</li>
+      <li>@tier10k, @WatcherGuru</li>
+      <li>+ 17 weitere Accounts</li>
+    </ul>
+  </div>
+  <div class="source">
+    <h3>📱 Telegram <span class="badge free">GRATIS</span></h3>
+    <ul>
+      <li>MEXC/Binance/KuCoin Listings</li>
+      <li>Kaspa, Virtuals Community</li>
+      <li>Rain, Raydium Channels</li>
+      <li>DeFi Alpha Gruppen</li>
+    </ul>
+  </div>
+  <div class="source">
+    <h3>🌐 Reddit <span class="badge free">GRATIS</span></h3>
+    <ul>
+      <li>r/CryptoMoonShots</li>
+      <li>r/CryptoCurrency</li>
+      <li>r/SatoshiStreetBets</li>
+      <li>r/solana, r/defi</li>
+    </ul>
+  </div>
+  <div class="source">
+    <h3>⛓️ On-Chain <span class="badge free">GRATIS</span></h3>
+    <ul>
+      <li>CoinGecko neue Listings</li>
+      <li>DexScreener Volume Spikes</li>
+      <li>Solscan Wallet Tracking</li>
+      <li>Jupiter neue Pools</li>
+    </ul>
+  </div>
+</div>
+
+<!-- SECURITY HIGHLIGHT -->
+<div class="highlight-box">
+  <div class="icon">🛡️</div>
+  <div class="content">
+    <h3>Sicherheit: Kein Trade ohne grünes Licht</h3>
+    <p>Jeder Trade durchläuft 6 automatische Checks: Honeypot-Test → Liquidity Check → Sell Tax → Contract Verification → LP Lock → Slippage-Prüfung. Bei einem einzigen Fail wird der Trade blockiert. Ihr bestätigt jeden Trade per Button — Milo handelt NIE eigenständig.</p>
+  </div>
+</div>
+
+<!-- COSTS -->
+<div class="cost-row">
+  <div class="cost-card"><div class="label">Scanning</div><div class="amount" style="color:var(--green)">$0</div><div class="label">/Monat</div></div>
+  <div class="cost-card"><div class="label">AI-Analyse</div><div class="amount" style="color:var(--orange)">$15-45</div><div class="label">/Monat</div></div>
+  <div class="cost-card"><div class="label">Trade-Checks</div><div class="amount" style="color:var(--orange)">$5-10</div><div class="label">/Monat</div></div>
+  <div class="cost-card"><div class="label">APIs</div><div class="amount" style="color:var(--green)">$0</div><div class="label">/Monat</div></div>
+  <div class="cost-card total"><div class="label">GESAMT</div><div class="amount">$20-55</div><div class="label">/Monat</div></div>
+</div>
+
+<!-- TIMELINE -->
+<div class="timeline">
+  <div class="phase"><div class="week">WOCHE 1-2</div><h4>🔍 Scanner bauen</h4><ul><li>Feed-Collector Script</li><li>Keyword-Filter</li><li>Cron alle 15 Min</li><li>Test-Alerts</li></ul></div>
+  <div class="phase"><div class="week">WOCHE 2-3</div><h4>🧠 AI-Analyse</h4><ul><li>Scoring-System</li><li>Alert-Templates</li><li>Telegram Buttons</li><li>Tages-Reports</li></ul></div>
+  <div class="phase"><div class="week">WOCHE 3-4</div><h4>⚡ On-Chain Setup</h4><ul><li>Wallet + Ledger</li><li>Jupiter API</li><li>Security Checks</li><li>Button-Trading</li></ul></div>
+  <div class="phase"><div class="week">MONAT 2+</div><h4>🚀 Vollbetrieb</h4><ul><li>24/7 Scanning</li><li>Auto-Alerts</li><li>1-Click Trades</li><li>Performance Reports</li></ul></div>
+</div>
+
+<div class="footer">🦁 Milo Crypto System v2.0 • Für Juri & Chris • 09.02.2026</div>
+
+</body>
+</html>

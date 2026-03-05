@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 Portfolio Dashboard</title>
+    <style>
+        :root {
+            --bg-dark: #0d1117;
+            --bg-card: #161b22;
+            --bg-card-hover: #1c2128;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --green: #3fb950;
+            --red: #f85149;
+            --blue: #58a6ff;
+            --purple: #a371f7;
+            --orange: #d29922;
+            --gold: #f0c000;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            padding: 24px;
+            width: 1200px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        .header h1 { font-size: 26px; display: flex; align-items: center; gap: 10px; }
+        .platform-badge { background: var(--purple); color: #fff; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+        .last-update { color: var(--text-muted); font-size: 13px; }
+        .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
+        .stat-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+        .stat-card.highlight { border-color: var(--gold); background: linear-gradient(135deg, var(--bg-card) 0%, #1a1f15 100%); }
+        .stat-card .label { color: var(--text-muted); font-size: 12px; margin-bottom: 6px; text-transform: uppercase; }
+        .stat-card .value { font-size: 24px; font-weight: 600; }
+        .stat-card .change { font-size: 13px; margin-top: 4px; color: var(--text-muted); }
+        .positive { color: var(--green); }
+        .negative { color: var(--red); }
+        .section h2 { font-size: 17px; margin-bottom: 14px; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+        .coin-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+        .coin-card.profit { border-left: 4px solid var(--green); }
+        .coin-card.loss { border-left: 4px solid var(--red); }
+        .coin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .coin-name { display: flex; align-items: center; gap: 8px; }
+        .coin-symbol { background: var(--bg-card-hover); padding: 4px 10px; border-radius: 5px; font-size: 13px; font-weight: 600; color: var(--gold); }
+        .coin-fullname { font-size: 14px; font-weight: 500; }
+        .coin-price { font-size: 20px; font-weight: 600; }
+        .coin-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); }
+        .coin-stat .stat-label { color: var(--text-muted); font-size: 11px; }
+        .coin-stat .stat-value { font-size: 14px; font-weight: 500; margin-top: 3px; }
+        .holdings { background: var(--bg-card-hover); border-radius: 6px; padding: 10px; margin-top: 10px; }
+        .holdings-row { display: flex; justify-content: space-between; font-size: 13px; }
+        .holdings-row + .holdings-row { margin-top: 6px; }
+        .holdings-label { color: var(--text-muted); }
+        .new-badge { background: var(--green); color: #000; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; margin-left: 6px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>💰 Portfolio Dashboard <span class="platform-badge">MEXC</span></h1>
+        <span class="last-update">09.02.2026 • 14:57 UTC</span>
+    </div>
+
+    <div class="stats-row">
+        <div class="stat-card highlight">
+            <div class="label">Portfolio Wert</div>
+            <div class="value">$3,877.68</div>
+            <div class="change">6 Positionen</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Investiert</div>
+            <div class="value">$3,615.72</div>
+            <div class="change">Einstiegswert</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Gesamt P&L</div>
+            <div class="value positive">+$261.96</div>
+            <div class="change"><span class="positive">+7.2%</span> seit Einstieg</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">Top Performer</div>
+            <div class="value" style="color: var(--gold);">KAS</div>
+            <div class="change"><span class="positive">+14.1%</span></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📊 Eure Positionen</h2>
+        <div class="portfolio-grid">
+
+            <div class="coin-card profit">
+                <div class="coin-header">
+                    <div class="coin-name"><span class="coin-symbol">RAIN</span><span class="coin-fullname">Rain Protocol</span></div>
+                    <div class="coin-price">$0.009133</div>
+                </div>
+                <div class="coin-stats">
+                    <div class="coin-stat"><div class="stat-label">24h</div><div class="stat-value negative">-4.5%</div></div>
+                    <div class="coin-stat"><div class="stat-label">P&L</div><div class="stat-value negative">-1.6%</div></div>
+                    <div class="coin-stat"><div class="stat-label">MCap</div><div class="stat-value" style="color: var(--blue);">$3.0B</div></div>
+                </div>
+                <div class="holdings">
+                    <div class="holdings-row"><span class="holdings-label">Menge</span><span>87.850,95</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Einstieg</span><span>$0.009280</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Wert</span><span>$802.44</span></div>
+                    <div class="holdings-row"><span class="holdings-label">P&L</span><span class="negative">-$13.13</span></div>
+                </div>
+            </div>
+
+            <div class="coin-card loss">
+                <div class="coin-header">
+                    <div class="coin-name"><span class="coin-symbol">VIRTUAL</span><span class="coin-fullname">Virtuals Protocol</span></div>
+                    <div class="coin-price">$0.5530</div>
+                </div>
+                <div class="coin-stats">
+                    <div class="coin-stat"><div class="stat-label">24h</div><div class="stat-value negative">-6.1%</div></div>
+                    <div class="coin-stat"><div class="stat-label">P&L</div><div class="stat-value negative">-5.0%</div></div>
+                    <div class="coin-stat"><div class="stat-label">MCap</div><div class="stat-value" style="color: var(--blue);">$553M</div></div>
+                </div>
+                <div class="holdings">
+                    <div class="holdings-row"><span class="holdings-label">Menge</span><span>862,38</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Einstieg</span><span>$0.5820</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Wert</span><span>$476.90</span></div>
+                    <div class="holdings-row"><span class="holdings-label">P&L</span><span class="negative">-$25.03</span></div>
+                </div>
+            </div>
+
+            <div class="coin-card loss">
+                <div class="coin-header">
+                    <div class="coin-name"><span class="coin-symbol">LUNAI</span><span class="coin-fullname">Luna by Virtuals</span></div>
+                    <div class="coin-price">$0.008427</div>
+                </div>
+                <div class="coin-stats">
+                    <div class="coin-stat"><div class="stat-label">24h</div><div class="stat-value negative">-5.9%</div></div>
+                    <div class="coin-stat"><div class="stat-label">P&L</div><div class="stat-value negative">-5.9%</div></div>
+                    <div class="coin-stat"><div class="stat-label">MCap</div><div class="stat-value" style="color: var(--blue);">$8.4M</div></div>
+                </div>
+                <div class="holdings">
+                    <div class="holdings-row"><span class="holdings-label">Menge</span><span>61.986,86</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Einstieg</span><span>$0.008960</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Wert</span><span>$522.39</span></div>
+                    <div class="holdings-row"><span class="holdings-label">P&L</span><span class="negative">-$32.87</span></div>
+                </div>
+            </div>
+
+            <div class="coin-card loss">
+                <div class="coin-header">
+                    <div class="coin-name"><span class="coin-symbol">GRIFFAIN</span><span class="coin-fullname">Griffain</span></div>
+                    <div class="coin-price">$0.009107</div>
+                </div>
+                <div class="coin-stats">
+                    <div class="coin-stat"><div class="stat-label">24h</div><div class="stat-value negative">-2.3%</div></div>
+                    <div class="coin-stat"><div class="stat-label">P&L</div><div class="stat-value negative">-2.2%</div></div>
+                    <div class="coin-stat"><div class="stat-label">MCap</div><div class="stat-value" style="color: var(--blue);">$9.1M</div></div>
+                </div>
+                <div class="holdings">
+                    <div class="holdings-row"><span class="holdings-label">Menge</span><span>53.551,53</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Einstieg</span><span>$0.009310</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Wert</span><span>$487.79</span></div>
+                    <div class="holdings-row"><span class="holdings-label">P&L</span><span class="negative">-$10.91</span></div>
+                </div>
+            </div>
+
+            <div class="coin-card loss">
+                <div class="coin-header">
+                    <div class="coin-name"><span class="coin-symbol">DEAI</span><span class="coin-fullname">Zero1 Labs</span></div>
+                    <div class="coin-price">$0.01284</div>
+                </div>
+                <div class="coin-stats">
+                    <div class="coin-stat"><div class="stat-label">24h</div><div class="stat-value negative">-14.2%</div></div>
+                    <div class="coin-stat"><div class="stat-label">P&L</div><div class="stat-value negative">-12.7%</div></div>
+                    <div class="coin-stat"><div class="stat-label">MCap</div><div class="stat-value" style="color: var(--blue);">$1.3M</div></div>
+                </div>
+                <div class="holdings">
+                    <div class="holdings-row"><span class="holdings-label">Menge</span><span>33.067,03</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Einstieg</span><span>$0.014710</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Wert</span><span>$424.58</span></div>
+                    <div class="holdings-row"><span class="holdings-label">P&L</span><span class="negative">-$61.77</span></div>
+                </div>
+            </div>
+
+            <div class="coin-card profit">
+                <div class="coin-header">
+                    <div class="coin-name"><span class="coin-symbol">RAY</span><span class="coin-fullname">Raydium</span><span class="new-badge">NEU</span></div>
+                    <div class="coin-price">$0.5846</div>
+                </div>
+                <div class="coin-stats">
+                    <div class="coin-stat"><div class="stat-label">24h</div><div class="stat-value negative">-5.1%</div></div>
+                    <div class="coin-stat"><div class="stat-label">P&L</div><div class="stat-value" style="color: var(--text-muted);">0.0%</div></div>
+                    <div class="coin-stat"><div class="stat-label">MCap</div><div class="stat-value" style="color: var(--blue);">$157M</div></div>
+                </div>
+                <div class="holdings">
+                    <div class="holdings-row"><span class="holdings-label">Menge</span><span>1.297,00</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Einstieg</span><span>$0.5846</span></div>
+                    <div class="holdings-row"><span class="holdings-label">Wert</span><span>$758.23</span></div>
+                    <div class="holdings-row"><span class="holdings-label">P&L</span><span style="color: var(--text-muted);">$0.00</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
