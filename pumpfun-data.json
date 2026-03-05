@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-05T03:12:59.507Z",
+  "exported_at": "2026-03-05T03:15:30.903Z",
   "total_tracked": 15,
   "min_score": 8,
   "sol_free": 1.28316,
@@ -52,13 +52,13 @@
       "name": "Tung Tung Tung Sahur",
       "chain": "solana",
       "contract": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
-      "price": 0.00162,
+      "price": 0.001596,
       "entry_price": 0.000551,
-      "change_since_entry": 194.01,
-      "mc": 1620091,
-      "volume_1h": 8931.07,
-      "volume_24h": 952545.26,
-      "liquidity": 128281.08,
+      "change_since_entry": 189.66,
+      "mc": 1596752,
+      "volume_1h": 8438,
+      "volume_24h": 950913.38,
+      "liquidity": 127369.43,
       "score": 6,
       "criteria": {
         "viral_story": true,
@@ -88,8 +88,8 @@
       "outcome_final": null,
       "snapshot_count": 83,
       "category": "meme",
-      "change_1h": 6,
-      "change_24h": 0.91
+      "change_1h": 1.17,
+      "change_24h": 0.36
     },
     {
       "symbol": "GAVIN NIGSOM",
@@ -140,13 +140,13 @@
       "name": "AgenC",
       "chain": "solana",
       "contract": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
-      "price": 0.002173,
+      "price": 0.002143,
       "entry_price": 0.00383,
-      "change_since_entry": -43.26,
-      "mc": 2173721,
-      "volume_1h": 51971.87,
-      "volume_24h": 362871.7,
-      "liquidity": 150707.25,
+      "change_since_entry": -44.05,
+      "mc": 2143550,
+      "volume_1h": 39852.77,
+      "volume_24h": 363634.42,
+      "liquidity": 149700.67,
       "score": 2,
       "criteria": {
         "viral_story": 0,
@@ -176,8 +176,8 @@
       "outcome_final": null,
       "snapshot_count": 4,
       "category": "tech",
-      "change_1h": 8.88,
-      "change_24h": 7.79
+      "change_1h": 3.77,
+      "change_24h": 6.3
     },
     {
       "symbol": "VAULT",
@@ -364,7 +364,7 @@
       "entry_price": 0.0004104,
       "change_since_entry": -76.12,
       "mc": 98017,
-      "volume_1h": 940.32,
+      "volume_1h": 808.11,
       "volume_24h": 11207.45,
       "liquidity": 26345.19,
       "score": 0,
@@ -394,7 +394,7 @@
       "outcome_final": null,
       "snapshot_count": 4,
       "category": "tech",
-      "change_1h": 8.57,
+      "change_1h": 13.5,
       "change_24h": 13.57
     },
     {
@@ -407,7 +407,7 @@
       "change_since_entry": -96.86,
       "mc": 15273,
       "volume_1h": 21.01,
-      "volume_24h": 5016.05,
+      "volume_24h": 5005.04,
       "liquidity": 12330.38,
       "score": 9,
       "criteria": {
@@ -439,7 +439,7 @@
       "snapshot_count": 64,
       "category": "meme",
       "change_1h": 0.33,
-      "change_24h": -7.7
+      "change_24h": -7.62
     },
     {
       "symbol": "KHAMENEI",
@@ -490,13 +490,13 @@
       "name": "#SendBarron",
       "chain": "solana",
       "contract": "ctQPRPpLY52CeEfmJqUEhYQ6SmMVHitkU3KKEDUpump",
-      "price": 0.00002331,
+      "price": 0.00002337,
       "entry_price": 0.0004291,
-      "change_since_entry": -94.57,
-      "mc": 23316,
-      "volume_1h": 458.49,
-      "volume_24h": 66254.16,
-      "liquidity": 14572.43,
+      "change_since_entry": -94.55,
+      "mc": 23368,
+      "volume_1h": 442.85,
+      "volume_24h": 65808.19,
+      "liquidity": 14585.42,
       "score": 8,
       "criteria": {
         "virale_story": 1,
@@ -526,8 +526,8 @@
       "outcome_final": null,
       "snapshot_count": 24,
       "category": "meme",
-      "change_1h": 0.81,
-      "change_24h": -51.89
+      "change_1h": -0.82,
+      "change_24h": -52.83
     },
     {
       "symbol": "CHANCE",
@@ -582,8 +582,8 @@
       "entry_price": 0.0002071,
       "change_since_entry": -96.6,
       "mc": 7041,
-      "volume_1h": 53.99,
-      "volume_24h": 34341.12,
+      "volume_1h": 53.28,
+      "volume_24h": 34338.36,
       "liquidity": 7288.25,
       "score": 10,
       "criteria": {
@@ -615,21 +615,21 @@
       "outcome_final": null,
       "snapshot_count": 4,
       "category": "meme",
-      "change_1h": -0.32,
-      "change_24h": -81.84
+      "change_1h": -0.4,
+      "change_24h": -81.82
     },
     {
       "symbol": "SAFEMOON",
       "name": "Safemoon",
       "chain": "solana",
       "contract": "2KQNqbSgNDEYs9Hk2RWqdJNQ7yKJfPXWShiMK3uoSpLt",
-      "price": 0.00001437,
+      "price": 0.00001408,
       "entry_price": 0.00003546,
-      "change_since_entry": -59.48,
-      "mc": 14372,
-      "volume_1h": 2389.31,
-      "volume_24h": 55692.49,
-      "liquidity": 9656.31,
+      "change_since_entry": -60.29,
+      "mc": 14079,
+      "volume_1h": 2439,
+      "volume_24h": 55575.82,
+      "liquidity": 9555.12,
       "score": 9,
       "criteria": null,
       "status": "tracking",
@@ -646,8 +646,8 @@
       "outcome_final": null,
       "snapshot_count": 1,
       "category": "meme",
-      "change_1h": -6.37,
-      "change_24h": -70.05
+      "change_1h": -8.1,
+      "change_24h": -69.64
     },
     {
       "symbol": "THE MINI HORSE",
