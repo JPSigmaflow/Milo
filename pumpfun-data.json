@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-05T22:45:04.588Z",
+  "exported_at": "2026-03-05T22:47:22.658Z",
   "total_tracked": 16,
   "min_score": 8,
   "sol_free": 1.28316,
@@ -54,13 +54,13 @@
       "name": "Tung Tung Tung Sahur",
       "chain": "solana",
       "contract": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
-      "price": 0.002044,
+      "price": 0.002057,
       "entry_price": 0.000551,
-      "change_since_entry": 270.96,
-      "mc": 2044927,
-      "volume_1h": 31579.5,
-      "volume_24h": 868187.87,
-      "liquidity": 144828.7,
+      "change_since_entry": 273.32,
+      "mc": 2057493,
+      "volume_1h": 30744.29,
+      "volume_24h": 868547.26,
+      "liquidity": 145300.11,
       "score": 8,
       "criteria": {
         "viral_story": true,
@@ -90,8 +90,8 @@
       "outcome_final": null,
       "snapshot_count": 92,
       "category": "meme",
-      "change_1h": -7.71,
-      "change_24h": 20.91
+      "change_1h": -5.18,
+      "change_24h": 22.43
     },
     {
       "symbol": "XINGXING",
@@ -191,7 +191,7 @@
       "change_since_entry": -90.36,
       "mc": 8900,
       "volume_1h": 0,
-      "volume_24h": 1537.31,
+      "volume_24h": 1536.5,
       "liquidity": 9189.29,
       "score": 10,
       "criteria": {
@@ -223,7 +223,7 @@
       "snapshot_count": 96,
       "category": "meme",
       "change_1h": 0,
-      "change_24h": -11.18
+      "change_24h": -12.18
     },
     {
       "symbol": "GROK DOG",
@@ -362,13 +362,13 @@
       "name": "We Will Not Be Divided",
       "chain": "solana",
       "contract": "BxPkRK7ZZZsm4r6TCdBf2W4j85BktAzL8GD4oKfypump",
-      "price": 0.00001264,
+      "price": 0.00001265,
       "entry_price": 0.0004863,
       "change_since_entry": -97.4,
-      "mc": 12647,
-      "volume_1h": 20.02,
-      "volume_24h": 2682.23,
-      "liquidity": 11158.41,
+      "mc": 12655,
+      "volume_1h": 20.18,
+      "volume_24h": 2682.38,
+      "liquidity": 11166.51,
       "score": 9,
       "criteria": {
         "virale_story": 1,
@@ -398,8 +398,8 @@
       "outcome_final": null,
       "snapshot_count": 73,
       "category": "meme",
-      "change_1h": -1.5,
-      "change_24h": -18.45
+      "change_1h": -1.44,
+      "change_24h": -18.39
     },
     {
       "symbol": "KHAMENEI",
@@ -450,13 +450,13 @@
       "name": "#SendBarron",
       "chain": "solana",
       "contract": "ctQPRPpLY52CeEfmJqUEhYQ6SmMVHitkU3KKEDUpump",
-      "price": 0.0000376,
+      "price": 0.0000378,
       "entry_price": 0.0004291,
-      "change_since_entry": -91.24,
-      "mc": 37603,
-      "volume_1h": 4381.56,
-      "volume_24h": 57868.81,
-      "liquidity": 18424.11,
+      "change_since_entry": -91.19,
+      "mc": 37804,
+      "volume_1h": 4383.7,
+      "volume_24h": 57918.74,
+      "liquidity": 18475.29,
       "score": 9,
       "criteria": {
         "virale_story": 1,
@@ -486,8 +486,8 @@
       "outcome_final": null,
       "snapshot_count": 33,
       "category": "meme",
-      "change_1h": 48.49,
-      "change_24h": 33.87
+      "change_1h": 47.35,
+      "change_24h": 34.52
     },
     {
       "symbol": "CHANCE",
@@ -538,13 +538,13 @@
       "name": "Tralalero Tralala",
       "chain": "solana",
       "contract": "8XG6dw8CnVqKBmYwX4W3wfNaRfQK8GcEKbZD5zXHpump",
-      "price": 0.00004333,
+      "price": 0.00004236,
       "entry_price": 0.00003144,
-      "change_since_entry": 37.82,
-      "mc": 43332,
-      "volume_1h": 4936.45,
-      "volume_24h": 85247.65,
-      "liquidity": 17145.72,
+      "change_since_entry": 34.73,
+      "mc": 42368,
+      "volume_1h": 4771.31,
+      "volume_24h": 85376.29,
+      "liquidity": 16956.7,
       "score": 8,
       "criteria": {
         "viral_story": 1,
@@ -574,8 +574,8 @@
       "outcome_final": null,
       "snapshot_count": 33,
       "category": "meme",
-      "change_1h": -7.36,
-      "change_24h": 86.71
+      "change_1h": -2.61,
+      "change_24h": 82.55
     },
     {
       "symbol": "PIP",
@@ -587,7 +587,7 @@
       "change_since_entry": -96.94,
       "mc": 6340,
       "volume_1h": 3.71,
-      "volume_24h": 3660.01,
+      "volume_24h": 3657.06,
       "liquidity": 6862.58,
       "score": 10,
       "criteria": {
@@ -620,7 +620,7 @@
       "snapshot_count": 7,
       "category": "meme",
       "change_1h": -1.76,
-      "change_24h": -36.62
+      "change_24h": -36.29
     },
     {
       "symbol": "我的刀盾",
