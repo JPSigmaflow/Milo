@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T06:13:45.479219Z",
-  "total_coins": 143,
+  "updated_at": "2026-03-05T06:42:56.785865Z",
+  "total_coins": 144,
   "coins": [
     {
       "id": 151,
@@ -130,7 +130,7 @@
       "result": "deep-dive",
       "reason": "ANALYST HIGH-SCORE (85): Binance Launchpool #72 TGE morgen (5.3.), 4-Exchange Launch (Binance+OKX+Bitget+MEXC), YZi Labs backed, Prediction Market wie Polymarket, Pre-TGE Momentum maximal. DUAL-APPROVAL BUTTONS GESENDET!",
       "lesson_ref": null,
-      "source": "analyst",
+      "source": "analyst + mexc-listing-mar4",
       "scanned_at": "2026-03-04 20:13:21",
       "updated_at": "2026-03-04 20:13:21",
       "source_channels": null
@@ -608,6 +608,25 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 03:42:33",
       "updated_at": "2026-03-05 03:42:33",
+      "source_channels": null
+    },
+    {
+      "id": 178,
+      "symbol": "SAHARA",
+      "name": "SaharaAI",
+      "address": "n/a",
+      "chain": "multi-chain",
+      "narrative": "AI Agents",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 72,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Decentralized AI platform. 2026 Roadmap released (Sorin Agent, ClawApp/OpenClaw integration). Multi-Source: ForesightNews + Telegram. MEXC verf\u00fcgbar. Starkes AI-Narrativ, aber nicht mega-viral. Risiko 5/10.",
+      "lesson_ref": null,
+      "source": "analyst + telegram + foresightnews + mexc + 2026-roadmap-mar5",
+      "scanned_at": "2026-03-05 06:42:24",
+      "updated_at": "2026-03-05 06:42:24",
       "source_channels": null
     },
     {
