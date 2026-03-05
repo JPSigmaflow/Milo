@@ -900,6 +900,24 @@
     "updated_at": "2026-03-03 10:09:11"
   },
   {
+    "symbol": "POL",
+    "name": "Polygon Ecosystem Token",
+    "address": "N/A",
+    "chain": "Polygon",
+    "narrative": "AI Agent Infrastructure",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 70,
+    "result": "deep-dive",
+    "reason": "AI-Analyse Mar5: Multi-Source (ChainCatcher + PANews + WuBlock) - Launch von Agent CLI für AI Agents. Starkes AI-Narrativ + etablierter Top-20 Coin + neuer Katalysator. MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 20:12:25",
+    "updated_at": "2026-03-05 20:12:25"
+  },
+  {
     "symbol": "AVNT",
     "name": "Avantis",
     "address": "TBD",
@@ -1006,6 +1024,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-14 01:03:02",
     "updated_at": "2026-02-27 16:39:42"
+  },
+  {
+    "symbol": "TAO",
+    "name": "Bittensor",
+    "address": "N/A",
+    "chain": "Substrate",
+    "narrative": "AI Infrastructure",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 68,
+    "result": "watchlist",
+    "reason": "AI-Analyse Mar5: X-Twitter \"will melt faces\" - Starkes AI-Narrativ (dezentrales AI-Netzwerk), etabliert, MEXC verfügbar. Nur Single-Source reduziert Score.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 20:12:25",
+    "updated_at": "2026-03-05 20:12:25"
   },
   {
     "symbol": "XRP",
@@ -1654,6 +1690,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-04 06:09:13",
     "updated_at": "2026-03-04 14:11:03"
+  },
+  {
+    "symbol": "OFN",
+    "name": "Openfabric AI",
+    "address": "N/A",
+    "chain": "Ethereum",
+    "narrative": "AI Infrastructure",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 62,
+    "result": "watchlist",
+    "reason": "AI-Analyse Mar5: Netmarble (Gaming-Giant) Backing, institutional confidence in AI infrastructure. MEXC verfügbar (/bin/zsh.005). Risiko: Single-Source, niedriger Preis.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 20:12:25",
+    "updated_at": "2026-03-05 20:12:25"
   },
   {
     "symbol": "TAO",
