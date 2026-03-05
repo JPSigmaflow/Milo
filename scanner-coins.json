@@ -468,6 +468,24 @@
     "updated_at": "2026-03-04 20:13:21"
   },
   {
+    "symbol": "VVV",
+    "name": "Venice Token",
+    "address": null,
+    "chain": "ethereum",
+    "narrative": "Privacy-first AI: uncensored AI inference, stake for API access, decentralized compute",
+    "market_cap": 291167502,
+    "liquidity": null,
+    "volume_24h": 40531535,
+    "score": 78,
+    "result": "deep-dive",
+    "reason": null,
+    "lesson_ref": null,
+    "source": "CoinGecko AI Category",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 19:02:23",
+    "updated_at": "2026-03-05 19:02:23"
+  },
+  {
     "symbol": "Q",
     "name": "Quack AI",
     "address": "multi-chain",
@@ -646,6 +664,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-04 20:13:21",
     "updated_at": "2026-03-04 20:13:21"
+  },
+  {
+    "symbol": "PIPPIN",
+    "name": "Pippin",
+    "address": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+    "chain": "solana",
+    "narrative": "AI Agent autonomer Twitter Bot (BabyAGI), Solana Meme + AI Narrative",
+    "market_cap": 348106897,
+    "liquidity": 12715100,
+    "volume_24h": 20749288,
+    "score": 72,
+    "result": "deep-dive",
+    "reason": null,
+    "lesson_ref": null,
+    "source": "DexScreener + CoinGecko",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 19:02:23",
+    "updated_at": "2026-03-05 19:02:23"
   },
   {
     "symbol": "ZIG",
