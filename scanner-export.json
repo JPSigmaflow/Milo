@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T16:43:29.106570Z",
-  "total_coins": 168,
+  "updated_at": "2026-03-05T17:13:14.541472Z",
+  "total_coins": 169,
   "coins": [
     {
       "id": 151,
@@ -1862,6 +1862,25 @@
       "source": "analyst + telegram-bitpush + cryptopanic + mexc",
       "scanned_at": "2026-03-05 06:12:08",
       "updated_at": "2026-03-05 06:12:08",
+      "source_channels": null
+    },
+    {
+      "id": 203,
+      "symbol": "IOTX",
+      "name": "IoTeX",
+      "address": "io1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqd39ym7",
+      "chain": "IoTeX",
+      "narrative": "AI Agents + IoT + DePIN",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 60,
+      "result": "watchlist",
+      "reason": "Multi-Source (4+ Telegram mentions): x402 AI Agent Standard trending, Coinbase integration (PR merged), BeInCrypto Award gewonnen, IIP-55 governance voting live. AI Realms in Development. Institutional Adoption 2026 geplant. Aber: nur moderate Hype, keine Major Listing News.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-05 17:12:48",
+      "updated_at": "2026-03-05 17:12:48",
       "source_channels": null
     },
     {
