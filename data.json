@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-05T01:09:40Z",
+  "exported_at": "2026-03-05T01:28:38Z",
   "usdt_free": 859.24,
   "last_update": "2026-02-19 07:28:56",
   "total_value": 10956.99,
@@ -3609,7 +3609,7 @@
 {"recorded_at":"2026-03-04 21:00:00","portfolio_value":11084.63999999999942,"coin_count":14},
 {"recorded_at":"2026-03-04 23:00:00","portfolio_value":10997.93000000000029,"coin_count":14},
 {"recorded_at":"2026-03-05 01:00:00","portfolio_value":10956.98999999999979,"coin_count":14}],
-  "scanner_coins": [{"symbol":"PHA","name":"Phala Network","chain":"polkadot","narrative":"AI + DePIN + Privacy (TEE)","market_cap":null,"liquidity":null,"volume_24h":null,"score":93,"result":"deep-dive","reason":"AI-Analyse Update: +68% Rally (CryptoPanic Lead), Web3 AI Execution Layer, M 24h Volume, Multi-Source Validation","source":"analyst + cryptopanic-lead-mar5","source_channels":null,"scanned_at":"2026-03-04 23:41:51","updated_at":"2026-03-05 00:42:47"},
+  "scanner_coins": [{"symbol":"PHA","name":"Phala Network","chain":"polkadot","narrative":"AI + DePIN + Privacy (TEE)","market_cap":null,"liquidity":null,"volume_24h":null,"score":93,"result":"deep-dive","reason":"AI-Analyse Update: +68% Rally (CryptoPanic Lead), Web3 AI Execution Layer, M 24h Volume, Multi-Source Validation","source":"analyst + cryptopanic-lead-mar5","source_channels":null,"scanned_at":"2026-03-04 23:41:51","updated_at":"2026-03-05 01:11:15"},
 {"symbol":"EDGE","name":"Definitive","chain":"ethereum","narrative":"Cross-Chain DeFi + Liquidity Aggregation","market_cap":null,"liquidity":null,"volume_24h":null,"score":92,"result":"deep-dive","reason":"EDGE heute 4x pump (M→M) nach Upbit listing. X-Twitter Feature + CoinGecko Trending. Multi-Source Validation. MEXC verfügbar.","source":"analyst + upbit-listing-mar4 + x-twitter-feature-4x-pump + coingecko-trending","source_channels":null,"scanned_at":"2026-03-04 21:43:35","updated_at":"2026-03-04 22:11:21"},
 {"symbol":"SUI","name":"Sui Network","chain":"sui","narrative":"L1 Blockchain + Stablecoin Infrastructure","market_cap":null,"liquidity":null,"volume_24h":null,"score":87,"result":"deep-dive","reason":"SUI USDsui Stablecoin Mainnet Launch heute. Telegram (The Block) + CryptoPanic. Multi-Source. MEXC verfügbar. Stablecoin Narrativ = langfristig bullish.","source":"analyst + telegram-the-block + cryptopanic + usdui-launch-mar4 + mexc","source_channels":null,"scanned_at":"2026-03-04 21:43:35","updated_at":"2026-03-04 22:11:21"},
 {"symbol":"MORPHO","name":"Morpho","chain":"ethereum","narrative":"DeFi/Lending","market_cap":null,"liquidity":null,"volume_24h":null,"score":85,"result":"watchlist","reason":"Große Whale-Bewegung: 120.4M MORPHO von Ethena zu Anchorage Digital (231M USD). Multi-Source: ChainCatcher, ForesightNews, bitpush. DeFi Lending Protocol.","source":"analyst + coingecko-trending + cryptopanic + wall-street-defi-surge + whale-activity-120m-mar4","source_channels":null,"scanned_at":"2026-02-22 13:38:59","updated_at":"2026-03-04 16:11:29"},
