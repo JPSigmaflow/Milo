@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T23:12:43.896698Z",
-  "total_coins": 197,
+  "updated_at": "2026-03-05T23:43:24.847622Z",
+  "total_coins": 202,
   "coins": [
     {
       "id": 187,
@@ -630,6 +630,25 @@
       "source_channels": null
     },
     {
+      "id": 232,
+      "symbol": "DOT",
+      "name": "Polkadot",
+      "address": "native",
+      "chain": "polkadot",
+      "narrative": "Parachain + Interoperability + DeFi",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 85,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: 1st Token Halving 14. M\u00e4rz 2026 (9 Tage!) + 21Shares ETF Filing + 27% pump. Multi-Source (CryptoPanic + MEXC). MEXC verf\u00fcgbar. Scarcity Narrative sehr bullish. Risiko 4/10.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-halving-etf",
+      "scanned_at": "2026-03-05 23:42:36",
+      "updated_at": "2026-03-05 23:42:36",
+      "source_channels": null
+    },
+    {
       "id": 91,
       "symbol": "ROBO",
       "name": "Robo Token",
@@ -703,6 +722,25 @@
       "source": "analyst-mar5-multi",
       "scanned_at": "2026-03-05 23:12:34",
       "updated_at": "2026-03-05 23:12:34",
+      "source_channels": null
+    },
+    {
+      "id": 233,
+      "symbol": "STRK",
+      "name": "Starknet",
+      "address": "native",
+      "chain": "starknet",
+      "narrative": "ZK-Rollup L2 + Bitcoin DeFi + Developer Tools",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 80,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: #1 L2 Developer Activity + 200% Growth 2024-25 + BTC Staking Integration. Multi-Source (Santiment + MEXC). MEXC verf\u00fcgbar. Developer Community w\u00e4chst schnell. Risiko 5/10.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-developer-lead",
+      "scanned_at": "2026-03-05 23:42:36",
+      "updated_at": "2026-03-05 23:42:36",
       "source_channels": null
     },
     {
@@ -798,6 +836,25 @@
       "source": "analyst-mar5-multi",
       "scanned_at": "2026-03-05 23:12:34",
       "updated_at": "2026-03-05 23:12:34",
+      "source_channels": null
+    },
+    {
+      "id": 234,
+      "symbol": "MON",
+      "name": "Monad",
+      "address": "native",
+      "chain": "monad",
+      "narrative": "High-Performance L1 + EVM-compatible",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 78,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: Coinbase Token Offering Platform START (historic M raise). 10,000 TPS. Multi-Source (Telegram + CryptoPanic). MEXC verf\u00fcgbar (Spot + Futures). FDV Gap: Market .5B vs Sale .5B = Risiko 6/10.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-coinbase-platform",
+      "scanned_at": "2026-03-05 23:42:36",
+      "updated_at": "2026-03-05 23:42:36",
       "source_channels": null
     },
     {
@@ -1102,6 +1159,25 @@
       "source": "analyst-mar5-cron",
       "scanned_at": "2026-03-05 20:42:14",
       "updated_at": "2026-03-05 20:42:14",
+      "source_channels": null
+    },
+    {
+      "id": 235,
+      "symbol": "TNSR",
+      "name": "Tensor",
+      "address": "native",
+      "chain": "solana",
+      "narrative": "NFT Marketplace + Trading Tools",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 72,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Coinbase kauft Vector.Fun, 1000% pump. MEXC verf\u00fcgbar. ABER: Single-Source + NFT-Sektor schwach. Pump k\u00f6nnte vorbei sein. Risiko 7/10.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-coinbase-acquisition",
+      "scanned_at": "2026-03-05 23:42:36",
+      "updated_at": "2026-03-05 23:42:36",
       "source_channels": null
     },
     {
@@ -1558,6 +1634,25 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 21:11:53",
       "updated_at": "2026-03-05 21:11:53",
+      "source_channels": null
+    },
+    {
+      "id": 236,
+      "symbol": "ARB",
+      "name": "Arbitrum",
+      "address": "native",
+      "chain": "arbitrum",
+      "narrative": "L2 Scaling + DeFi",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 68,
+      "result": "watchlist",
+      "reason": "AI-Analyse: #3 L2 Developer Activity. Offchain Labs kauft mehr ARB (Insider-Confidence). BTCC Top 5 Altcoin 2026 Forecast. MEXC verf\u00fcgbar. Kein akuter Katalysator. Risiko 5/10.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-l2-forecast",
+      "scanned_at": "2026-03-05 23:42:36",
+      "updated_at": "2026-03-05 23:42:36",
       "source_channels": null
     },
     {
