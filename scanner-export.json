@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05T07:42:33.602382Z",
+  "updated_at": "2026-03-05T08:42:29.818949Z",
   "total_coins": 149,
   "coins": [
     {
@@ -839,6 +839,25 @@
       "source_channels": null
     },
     {
+      "id": 88,
+      "symbol": "ASTER",
+      "name": "Aster",
+      "address": "",
+      "chain": "bnb",
+      "narrative": "binance-ecosystem",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 68,
+      "result": "deep-dive",
+      "reason": "AI-Analyse Update: Neue Whale-Aktivit\u00e4t (650 ETH \u2192 188M ASTER). Multi-Source Telegram mentions (3+). CZ-backed Privacy DEX. Risiko: Gemischte Whale-Signale (einige dumps). Score: +8 wegen Aktivit\u00e4t.",
+      "lesson_ref": null,
+      "source": "analyst + telegram-whale-mar5",
+      "scanned_at": "2026-02-20 09:39:21",
+      "updated_at": "2026-03-05 08:42:04",
+      "source_channels": null
+    },
+    {
       "id": 94,
       "symbol": "VANA",
       "name": "Vana",
@@ -1482,25 +1501,6 @@
       "source": "analyst + coingecko-trending + binance-alpha-competition + binance-mira-voucher-2026-03-03",
       "scanned_at": "2026-02-17 01:03:42",
       "updated_at": "2026-03-03 14:09:06",
-      "source_channels": null
-    },
-    {
-      "id": 88,
-      "symbol": "ASTER",
-      "name": "Aster",
-      "address": "",
-      "chain": "bnb",
-      "narrative": "binance-ecosystem",
-      "market_cap": null,
-      "liquidity": null,
-      "volume_24h": null,
-      "score": 60,
-      "result": "deep-dive",
-      "reason": "AI-Analyse: 3x X-Twitter Mentions (bullish), CZ ber\u00e4t ASTER direkt, BNB-\u00d6kosystem Play. Multi-Source (analyst+x-twitter). Starkes Narrativ: CZ-backed BNB Token. Risiko 6/10.",
-      "lesson_ref": null,
-      "source": "analyst + x-twitter",
-      "scanned_at": "2026-02-20 09:39:21",
-      "updated_at": "2026-02-20 10:09:17",
       "source_channels": null
     },
     {
