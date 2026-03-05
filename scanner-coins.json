@@ -486,6 +486,24 @@
     "updated_at": "2026-03-05 07:01:57"
   },
   {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "cardano-layer1",
+    "chain": "Cardano",
+    "narrative": "Payments/RWA",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 85,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: 137 Spar-Supermärkte in Schweiz akzeptieren ADA. Real Use Case! Multi-Source (CryptoPanic 2x). MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-multi",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 23:12:34",
+    "updated_at": "2026-03-05 23:12:34"
+  },
+  {
     "symbol": "WBT",
     "name": "WhiteBIT Coin",
     "address": "0x925206b8a707096ed26ae47c84747fe0bb734f59",
@@ -576,6 +594,24 @@
     "updated_at": "2026-03-04 16:11:29"
   },
   {
+    "symbol": "SOL",
+    "name": "Solana",
+    "address": "solana-layer1",
+    "chain": "Solana",
+    "narrative": "Payments/DeFi",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 82,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Payment Volume +755%, Western Union USDPT Stablecoin Launch, Coinbase kauft Vector.Fun. Multi-Source (3x). MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-multi",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 23:12:34",
+    "updated_at": "2026-03-05 23:12:34"
+  },
+  {
     "symbol": "OPN",
     "name": "Opinion Labs",
     "address": "TBD",
@@ -628,6 +664,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-20 17:39:17",
     "updated_at": "2026-02-20 19:39:05"
+  },
+  {
+    "symbol": "XRP",
+    "name": "Ripple",
+    "address": "xrp-ledger",
+    "chain": "XRP Ledger",
+    "narrative": "Institutional/DeFi",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 78,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Coinbase Futures Integration, Institutional 24/7 Access, Ripple Prime Expansion. Multi-Source (3x). MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-multi",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 23:12:34",
+    "updated_at": "2026-03-05 23:12:34"
   },
   {
     "symbol": "VVV",
@@ -988,6 +1042,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-02 19:01:12",
     "updated_at": "2026-03-03 10:09:11"
+  },
+  {
+    "symbol": "ETH",
+    "name": "Ethereum",
+    "address": "ethereum-layer1",
+    "chain": "Ethereum",
+    "narrative": "L1/ETF",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 70,
+    "result": "watchlist",
+    "reason": "AI-Analyse: US ETH ETFs +M (höchster Inflow seit Jan 14), Binance Turnover 6-Monats-Hoch, Whale Activity. Multi-Source. MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-multi",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 23:12:34",
+    "updated_at": "2026-03-05 23:12:34"
   },
   {
     "symbol": "MON",
@@ -1834,6 +1906,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-04 06:09:13",
     "updated_at": "2026-03-04 14:11:03"
+  },
+  {
+    "symbol": "DOT",
+    "name": "Polkadot",
+    "address": "polkadot-layer1",
+    "chain": "Polkadot",
+    "narrative": "L1/ETF",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 62,
+    "result": "watchlist",
+    "reason": "AI-Analyse: 21Shares launcht ersten Polkadot ETF. Institutional Adoption. Single-Source. MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-single",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 23:12:34",
+    "updated_at": "2026-03-05 23:12:34"
   },
   {
     "symbol": "OFN",
