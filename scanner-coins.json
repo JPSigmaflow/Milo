@@ -684,6 +684,24 @@
     "updated_at": "2026-03-04 20:13:21"
   },
   {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "cardano-native",
+    "chain": "Cardano",
+    "narrative": "L1 + Payments + RWAs",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 72,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Multi-Source (5+ Erwähnungen), SPAR Switzerland (137 stores accept ADA), CIP-113 RWA capabilities, real payment adoption. MEXC verfügbar. Risiko 3/10.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-cron",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 20:42:14",
+    "updated_at": "2026-03-05 20:42:14"
+  },
+  {
     "symbol": "SOL",
     "name": "Solana",
     "address": "solana",
@@ -1026,6 +1044,24 @@
     "updated_at": "2026-02-27 16:39:42"
   },
   {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "cardano-native",
+    "chain": "Cardano",
+    "narrative": "L1, RWA, Real-World Payments",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 68,
+    "result": "watchlist",
+    "reason": "AI-Analyse: 137 SPAR stores in Switzerland akzeptieren ADA. CIP-113 für RWA-Capabilities. Multi-Source (3 mentions). Foundation CEO bullish. Auf MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 21:11:53",
+    "updated_at": "2026-03-05 21:11:53"
+  },
+  {
     "symbol": "TAO",
     "name": "Bittensor",
     "address": "N/A",
@@ -1312,6 +1348,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 02:42:22",
     "updated_at": "2026-03-05 02:42:22"
+  },
+  {
+    "symbol": "XRP",
+    "name": "Ripple",
+    "address": "ripple-native",
+    "chain": "XRP Ledger",
+    "narrative": "Payments, Regulated Derivatives",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Coinbase futures integration. Ripple Prime institutional access. Multi-Source (2). Auf MEXC. Regulatorisch komplex aber starke Institution Backing.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 21:11:53",
+    "updated_at": "2026-03-05 21:11:53"
   },
   {
     "symbol": "TAO",
