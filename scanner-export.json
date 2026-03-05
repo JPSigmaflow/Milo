@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T13:12:05.204752Z",
-  "total_coins": 152,
+  "updated_at": "2026-03-05T13:43:39.386814Z",
+  "total_coins": 156,
   "coins": [
     {
       "id": 151,
@@ -513,6 +513,25 @@
       "source": "analyst",
       "scanned_at": "2026-03-04 23:41:51",
       "updated_at": "2026-03-04 23:41:51",
+      "source_channels": null
+    },
+    {
+      "id": 187,
+      "symbol": "OKB",
+      "name": "OKX Token",
+      "address": "0x75231f58b43240c9718dd58b4967c5114342a86c",
+      "chain": "ethereum",
+      "narrative": "Exchange Token + Institutional Investment (NYSE/ICE)",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 77,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: NYSE parent ICE investiert 25B in OKX, Multi-Source, Major CEX token, MEXC verf\u00fcgbar",
+      "lesson_ref": null,
+      "source": "analyst-mar5-nyse",
+      "scanned_at": "2026-03-05 13:43:21",
+      "updated_at": "2026-03-05 13:43:21",
       "source_channels": null
     },
     {
@@ -1314,6 +1333,25 @@
       "source_channels": null
     },
     {
+      "id": 188,
+      "symbol": "AVNT",
+      "name": "Avantis",
+      "address": "Base-L2",
+      "chain": "base",
+      "narrative": "DeFi Perpetuals DEX (500x leverage)",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: CoinGecko Trending TODAY, Multi-CEX (Binance, Bybit, KuCoin, MEXC), Perps DEX auf Base L2",
+      "lesson_ref": null,
+      "source": "analyst-mar5-coingecko",
+      "scanned_at": "2026-03-05 13:43:21",
+      "updated_at": "2026-03-05 13:43:21",
+      "source_channels": null
+    },
+    {
       "id": 126,
       "symbol": "BTW",
       "name": "Bitway",
@@ -1957,6 +1995,25 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 02:11:42",
       "updated_at": "2026-03-05 02:11:42",
+      "source_channels": null
+    },
+    {
+      "id": 189,
+      "symbol": "DIME",
+      "name": "Paradex",
+      "address": "Paradex-Chain",
+      "chain": "paradex",
+      "narrative": "Privacy-First Perpetuals DEX",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 55,
+      "result": "watchlist",
+      "reason": "AI-Analyse: TGE heute, Privacy Perps DEX, 25% Airdrop, MEXC Pre-Market, Multi-Source",
+      "lesson_ref": null,
+      "source": "analyst-mar5-tge",
+      "scanned_at": "2026-03-05 13:43:21",
+      "updated_at": "2026-03-05 13:43:21",
       "source_channels": null
     },
     {
@@ -2660,6 +2717,25 @@
       "source": "analyst + binance-alpha-mar4",
       "scanned_at": "2026-03-04 16:11:29",
       "updated_at": "2026-03-04 16:11:29",
+      "source_channels": null
+    },
+    {
+      "id": 190,
+      "symbol": "IDOS",
+      "name": "idOS Network",
+      "address": "TBD",
+      "chain": "multi-chain",
+      "narrative": "Web3 Identity Layer + KYC",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 45,
+      "result": "watchlist",
+      "reason": "AI-Analyse: TGE heute, KuCoin Listing, Web3 Identity f\u00fcr Stablecoin Economy, Multi-Source",
+      "lesson_ref": null,
+      "source": "analyst-mar5-tge",
+      "scanned_at": "2026-03-05 13:43:22",
+      "updated_at": "2026-03-05 13:43:22",
       "source_channels": null
     },
     {
