@@ -630,6 +630,24 @@
     "updated_at": "2026-03-04 14:11:03"
   },
   {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "cardano",
+    "chain": "L1",
+    "narrative": "Smart Contract Platform - SPAR Switzerland Integration (137 stores)",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 75,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Multi-Source (CryptoPanic 3x + Telegram + Reddit), REAL ADOPTION via SPAR payment integration in Switzerland, 137 stores accepting ADA. Top 10 MC, MEXC verfügbar, niedriges Risiko (3/10)",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 19:41:58",
+    "updated_at": "2026-03-05 19:41:58"
+  },
+  {
     "symbol": "UNIT734",
     "name": "AI AGENT",
     "address": "0xA280eE284a8eE05e8D6d715c6aeF25D7943C6E17",
@@ -664,6 +682,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-04 20:13:21",
     "updated_at": "2026-03-04 20:13:21"
+  },
+  {
+    "symbol": "SOL",
+    "name": "Solana",
+    "address": "solana",
+    "chain": "L1",
+    "narrative": "L1 - Western Union USDPT + Doppler Expansion",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 72,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Multi-Source (The Block + Doppler + CryptoPanic), Western Union USDPT stablecoin launch, Doppler expansion, SOL Strategies validator revenue +120%. Top 5 MC, MEXC verfügbar, Risiko 3/10",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 19:41:58",
+    "updated_at": "2026-03-05 19:41:58"
   },
   {
     "symbol": "PIPPIN",
@@ -972,6 +1008,24 @@
     "updated_at": "2026-02-27 16:39:42"
   },
   {
+    "symbol": "XRP",
+    "name": "Ripple",
+    "address": "ripple",
+    "chain": "L1",
+    "narrative": "Payment - Ripple Prime Derivatives Expansion",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 68,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Multi-Source (CryptoPanic 2x + Telegram), Ripple Prime adds BTC/ETH/SOL derivatives, bounced from support. Top 5 MC, MEXC verfügbar, Risiko 3/10",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 19:41:58",
+    "updated_at": "2026-03-05 19:41:58"
+  },
+  {
     "symbol": "H",
     "name": "Humanity Protocol",
     "address": "0xcf5104d094e3864cfcbda43b82e1cefd26a016eb",
@@ -1222,6 +1276,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 02:42:22",
     "updated_at": "2026-03-05 02:42:22"
+  },
+  {
+    "symbol": "TAO",
+    "name": "Bittensor",
+    "address": "bittensor",
+    "chain": "L1",
+    "narrative": "AI Infrastructure - Decentralized AI Network",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "AI-Analyse: AI L1 für decentralized AI network, bullish X mention \"melt faces\", MEXC verfügbar, starkes AI Narrativ, aber nur 1 Quelle. Risiko 4/10",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-05 19:41:58",
+    "updated_at": "2026-03-05 19:41:58"
   },
   {
     "symbol": "TAO",
