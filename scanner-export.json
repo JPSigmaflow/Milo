@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T08:42:29.818949Z",
-  "total_coins": 149,
+  "updated_at": "2026-03-05T13:11:17.984738Z",
+  "total_coins": 152,
   "coins": [
     {
       "id": 151,
@@ -706,6 +706,25 @@
       "source_channels": null
     },
     {
+      "id": 186,
+      "symbol": "AVNT",
+      "name": "Avantis",
+      "address": "",
+      "chain": "base",
+      "narrative": "DeFi perpetuals DEX f\u00fcr Crypto + RWAs (FX, Commodities)",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 72,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: CoinGecko trending, backed by Pantera + Coinbase Ventures, MEXC gelistet. Innovative perpetuals f\u00fcr RWAs. 2 Quellen aber starkes VC backing.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-05 13:11:05",
+      "updated_at": "2026-03-05 13:11:05",
+      "source_channels": null
+    },
+    {
       "id": 60,
       "symbol": "SAHARA",
       "name": "Sahara AI",
@@ -849,8 +868,8 @@
       "liquidity": null,
       "volume_24h": null,
       "score": 68,
-      "result": "deep-dive",
-      "reason": "AI-Analyse Update: Neue Whale-Aktivit\u00e4t (650 ETH \u2192 188M ASTER). Multi-Source Telegram mentions (3+). CZ-backed Privacy DEX. Risiko: Gemischte Whale-Signale (einige dumps). Score: +8 wegen Aktivit\u00e4t.",
+      "result": "rejected",
+      "reason": "MC zu hoch (.78B) - Chris Feedback. Fokus auf <M Small-Caps.",
       "lesson_ref": null,
       "source": "analyst + telegram-whale-mar5",
       "scanned_at": "2026-02-20 09:39:21",
@@ -1026,6 +1045,25 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 03:42:33",
       "updated_at": "2026-03-05 03:42:33",
+      "source_channels": null
+    },
+    {
+      "id": 185,
+      "symbol": "H",
+      "name": "Humanity Protocol",
+      "address": "",
+      "chain": "ethereum",
+      "narrative": "ZK-basierte Sybil-resistant Identity",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 68,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Binance k Trading Competition, MEXC gelistet seit Juni 2025, 3 Quellen. Price /bin/zsh.14. Identity-Nische aber starkes Marketing.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-05 13:11:05",
+      "updated_at": "2026-03-05 13:11:05",
       "source_channels": null
     },
     {
@@ -1482,6 +1520,25 @@
       "source": "analyst + cryptopanic + ambcrypto-mar5",
       "scanned_at": "2026-03-05 02:42:22",
       "updated_at": "2026-03-05 02:42:22",
+      "source_channels": null
+    },
+    {
+      "id": 184,
+      "symbol": "DIME",
+      "name": "Paradex",
+      "address": "",
+      "chain": "ethereum",
+      "narrative": "DeFi derivatives DEX mit ZK-Proofs f\u00fcr Privacy-Trades",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 62,
+      "result": "watchlist",
+      "reason": "AI-Analyse: TGE heute, Pre-Market auf MEXC aktiv, 2 Telegram-Quellen. Solides derivatives DEX Konzept aber wenig Social Velocity.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-05 13:11:05",
+      "updated_at": "2026-03-05 13:11:05",
       "source_channels": null
     },
     {
