@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T16:12:21.958245Z",
-  "total_coins": 167,
+  "updated_at": "2026-03-05T16:43:29.106570Z",
+  "total_coins": 168,
   "coins": [
     {
       "id": 151,
@@ -1786,6 +1786,25 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 13:11:05",
       "updated_at": "2026-03-05 13:11:05",
+      "source_channels": null
+    },
+    {
+      "id": 202,
+      "symbol": "ZIG",
+      "name": "ZIGChain (Zignaly)",
+      "address": "-",
+      "chain": "Ethereum",
+      "narrative": "DeFi Trading Tools, Social Investment Platform",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 62,
+      "result": "watchlist",
+      "reason": "AI-Analyse Mar5: Binancekillers Signal + institutional validator adoption (BTCS 30M ZIG). MEXC verf\u00fcgbar. Founders lock-up bis 2026 = bullish tokenomics. Major announcement teased. Aber: Nur 2 Quellen, kleiner MC (M). Watchlist f\u00fcr jetzt.",
+      "lesson_ref": null,
+      "source": "analyst-mar5",
+      "scanned_at": "2026-03-05 16:42:10",
+      "updated_at": "2026-03-05 16:42:10",
       "source_channels": null
     },
     {
