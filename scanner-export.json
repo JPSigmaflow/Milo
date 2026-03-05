@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05T07:12:44.732438Z",
+  "updated_at": "2026-03-05T07:42:33.602382Z",
   "total_coins": 149,
   "coins": [
     {
@@ -41,6 +41,25 @@
       "source_channels": null
     },
     {
+      "id": 143,
+      "symbol": "OPN",
+      "name": "Opinion Labs",
+      "address": "TBA",
+      "chain": "multi",
+      "narrative": "Prediction Markets",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 92,
+      "result": "deep-dive",
+      "reason": "AI-Analyse Mar5: Coinbase spot live + MEXC listing heute 13:00 UTC. MC .7M. Multi-Source (CB+MEXC+Binance+TG). Social Sentiment narrativ. Risk 4/10.",
+      "lesson_ref": null,
+      "source": "analyst-update-mar5-coinbase",
+      "scanned_at": "2026-03-04 20:13:21",
+      "updated_at": "2026-03-05 07:42:06",
+      "source_channels": null
+    },
+    {
       "id": 154,
       "symbol": "EDGE",
       "name": "Definitive",
@@ -60,25 +79,6 @@
       "source_channels": null
     },
     {
-      "id": 143,
-      "symbol": "OPN",
-      "name": "Opinion Labs",
-      "address": "TBA",
-      "chain": "multi",
-      "narrative": "Prediction Markets",
-      "market_cap": null,
-      "liquidity": null,
-      "volume_24h": null,
-      "score": 90,
-      "result": "deep-dive",
-      "reason": "AI-Analyse: Coinbase Listing best\u00e4tigt (Mar 5), Multi-Source (ChainCatcher + Coinbase), Social/Opinion Platform, MEXC verf\u00fcgbar. Score erh\u00f6ht von 85\u219290 wegen Major CEX Listing.",
-      "lesson_ref": null,
-      "source": "analyst-update-mar5-coinbase",
-      "scanned_at": "2026-03-04 20:13:21",
-      "updated_at": "2026-03-05 07:12:15",
-      "source_channels": null
-    },
-    {
       "id": 174,
       "symbol": "VVV",
       "name": "Venice AI",
@@ -88,13 +88,13 @@
       "market_cap": null,
       "liquidity": null,
       "volume_24h": null,
-      "score": 88,
+      "score": 91,
       "result": "deep-dive",
-      "reason": "AI-Analyse: Privacy-Features best\u00e4tigt (keine Server-Speicherung von Prompts/Replies), Multi-Source (ForesightNews + cointime_cn + bitpush), Base Chain AI + Privacy-USP, MEXC verf\u00fcgbar. Score erh\u00f6ht von 83\u219288.",
+      "reason": "AI-Analyse Mar5: Privacy-Push heute. MEXC confirmed, Base L2. Stake-to-access model. Multi-Source (MEXC+CB+BingX+3xTG). AI Privacy narrativ (stark 2026). Risk 3/10.",
       "lesson_ref": null,
       "source": "analyst-update-mar5-privacy",
       "scanned_at": "2026-03-05 05:43:03",
-      "updated_at": "2026-03-05 07:12:15",
+      "updated_at": "2026-03-05 07:42:06",
       "source_channels": null
     },
     {
