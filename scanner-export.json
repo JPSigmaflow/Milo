@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T23:43:24.847622Z",
-  "total_coins": 202,
+  "updated_at": "2026-03-06T00:43:03.498019Z",
+  "total_coins": 207,
   "coins": [
     {
       "id": 187,
@@ -1181,6 +1181,25 @@
       "source_channels": null
     },
     {
+      "id": 241,
+      "symbol": "POL",
+      "name": "Polygon",
+      "address": "0x0000000000000000000000000000000000001010",
+      "chain": "Polygon",
+      "narrative": "L2 + AI Agents",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 72,
+      "result": "watchlist",
+      "reason": "AI-Analyse: AI Agent CLI Launch (Wu Blockchain + official). Unterst\u00fctzt AI agents mit on-chain wallets, transfers, x402 micropayments, ERC-8004 NFT identities. MEXC verf\u00fcgbar (ex-MATIC swap completed). Starkes AI narrativ + etabliertes L2 ecosystem. Competition im L2 space aber positive development momentum.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-ai-agent-cli",
+      "scanned_at": "2026-03-06 00:42:16",
+      "updated_at": "2026-03-06 00:42:16",
+      "source_channels": null
+    },
+    {
       "id": 60,
       "symbol": "SAHARA",
       "name": "Sahara AI",
@@ -1330,6 +1349,25 @@
       "source": "analyst-mar5-multi",
       "scanned_at": "2026-03-05 23:12:34",
       "updated_at": "2026-03-05 23:12:34",
+      "source_channels": null
+    },
+    {
+      "id": 240,
+      "symbol": "ADA",
+      "name": "Cardano",
+      "address": "native-ada",
+      "chain": "Cardano",
+      "narrative": "L1 Smart Contracts",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 70,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Multi-source mentions (CryptoPanic + alerts). High trade volume (M/24h), Cardano Foundation plant 8-figure ADA liquidity f\u00fcr stablecoins (M\u00e4rz). MEXC als Base Pair verf\u00fcgbar. Top 10 coin, institutional focus. Kein akuter Catalyst, aber solides Momentum.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-multi-source",
+      "scanned_at": "2026-03-06 00:42:16",
+      "updated_at": "2026-03-06 00:42:16",
       "source_channels": null
     },
     {
@@ -2093,6 +2131,44 @@
       "source_channels": null
     },
     {
+      "id": 237,
+      "symbol": "STRK",
+      "name": "Starknet",
+      "address": "ethereum-based-l2",
+      "chain": "Ethereum",
+      "narrative": "L2 Scaling + Dev Momentum",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "AI-Analyse Mar5: #1 L2 by Developer Activity (Santiment), Multi-Source (CryptoPanic+Santiment), MEXC verf\u00fcgbar, aber aktuell -11% in 7d. Fundamentals stark, Preis schwach.",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar5",
+      "scanned_at": "2026-03-06 00:11:58",
+      "updated_at": "2026-03-06 00:11:58",
+      "source_channels": null
+    },
+    {
+      "id": 239,
+      "symbol": "PI",
+      "name": "Pi Network",
+      "address": "native-pi-chain",
+      "chain": "PI",
+      "narrative": "L1 Mobile Mining",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "AI-Analyse: 14.1% pump (+M MC) nach v19.9 network update. Multi-source signal (X-Twitter). MEXC verf\u00fcgbar. Etabliertes Projekt (.7B MC), aber umstritten wegen mobile mining Ansatz. Solid technical development.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-network-update",
+      "scanned_at": "2026-03-06 00:42:16",
+      "updated_at": "2026-03-06 00:42:16",
+      "source_channels": null
+    },
+    {
       "id": 126,
       "symbol": "BTW",
       "name": "Bitway",
@@ -2850,6 +2926,25 @@
       "source": "analyst-mar5-airdrop",
       "scanned_at": "2026-03-05 22:43:30",
       "updated_at": "2026-03-05 22:43:30",
+      "source_channels": null
+    },
+    {
+      "id": 238,
+      "symbol": "SWARMS",
+      "name": "Swarms",
+      "address": "solana-based",
+      "chain": "Solana",
+      "narrative": "AI Agents + Multi-Agent LLM Framework",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 55,
+      "result": "watchlist",
+      "reason": "AI-Analyse Mar5: Multi-agent LLM framework, MEXC verf\u00fcgbar, AI Agents Narrativ stark, aber nur 1 Quelle heute (PumpFun). Braucht mehr Multi-Source Best\u00e4tigung.",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar5",
+      "scanned_at": "2026-03-06 00:12:32",
+      "updated_at": "2026-03-06 00:12:32",
       "source_channels": null
     },
     {
