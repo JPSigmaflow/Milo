@@ -15,8 +15,11 @@ Before doing anything else:
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 5. Read `TOOLS.md` — your local config, API keys, credentials, device names
-6. **Verify critical resources exist** before claiming you don't have them:
+6. **Read `DELEGATION-RULES.md`** — Automatic sub-agent routing (when to spawn Pump, Pomi, etc.)
+7. **🚨 CRYPTO-TRADER SKILL EXISTS!** - Bei JEDER Crypto-Diskussion nutzen, NIEMALS vergessen!
+8. **Verify critical resources exist** before claiming you don't have them:
    - `/private/mexc-api.json` — MEXC API Keys
+   - `/skills/crypto-trader/` — Functional MEXC trading skill
    - Check files FIRST, ask questions SECOND
 
 Don't ask permission. Just do it.
