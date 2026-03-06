@@ -1530,6 +1530,24 @@
     "updated_at": "2026-03-06 03:42:17"
   },
   {
+    "symbol": "FAI",
+    "name": "Freysa AI",
+    "address": "0xb33ff54b9f7242ef1593d2c9bcd8f9df46c77935",
+    "chain": "Base",
+    "narrative": "AI Agents, Adversarial Game",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 70,
+    "result": "deep-dive",
+    "reason": "Multi-Source Alert (TheBlockBeats, MEXC, CoinGecko, The Block) | +112% in 24h | Backed by Coinbase Ventures ($30M) | Listed on MEXC, Coinbase, Gate | MC $42-60M | Base ecosystem | Peak $660M MC after Elon tweet | AI agent game with FAI token utility",
+    "lesson_ref": null,
+    "source": "analyst-mar6",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 18:42:20",
+    "updated_at": "2026-03-06 18:42:20"
+  },
+  {
     "symbol": "UTEXO",
     "name": "Utexo",
     "address": "tbd",
