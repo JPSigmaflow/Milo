@@ -1,5 +1,23 @@
 [
   {
+    "symbol": "DOT",
+    "name": "Polkadot",
+    "address": "native",
+    "chain": "polkadot",
+    "narrative": "L1 Blockchain, Parachain Ecosystem",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 100,
+    "result": "deep-dive",
+    "reason": "AI-Analyse Mar 6: Erster US Spot ETF gestartet (21Shares TDOT auf Nasdaq) - Major Institutional Catalyst. Multi-Source Erwähnung, etabliertes Projekt .47B MC, JAM Upgrade in Pipeline. MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst-mar6-etf-launch",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 19:42:25",
+    "updated_at": "2026-03-06 19:42:25"
+  },
+  {
     "symbol": "OKB",
     "name": "OKX Token",
     "address": "0x75231f58b43240c9718dd58b4967c5114342a86c",
