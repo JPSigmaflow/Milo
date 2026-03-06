@@ -1,6 +1,6 @@
 {
-  "exported_at": "2026-03-06T03:43:51.493533",
-  "total_coins": 245,
+  "exported_at": "2026-03-06T04:12:16.072128",
+  "total_coins": 246,
   "coins": [
     {
       "symbol": "OKB",
@@ -913,6 +913,22 @@
       "source": "hawk_scanner",
       "scanned_at": "2026-03-05 07:01:57",
       "updated_at": "2026-03-05 07:01:57"
+    },
+    {
+      "symbol": "PUMP",
+      "name": "pump.fun",
+      "address": "CebN5WGQ4jvEPvsVU4EoHEpgzq1VV7AbicfhtW4xC9iM",
+      "chain": "solana",
+      "narrative": "DeFi Infrastructure / Meme Launchpad",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 72,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Multi-Source Whale-Akkumulation (11 Wallets, .56M von CEX). Platform Token mit .19B MC. MEXC verf\u00fcgbar. Risiko: abh\u00e4ngig von PumpFun Erfolg, -77% unter ATH.",
+      "source": "analyst-mar6-whale-signal",
+      "scanned_at": "2026-03-06 09:12:01",
+      "updated_at": "2026-03-06 09:12:01"
     },
     {
       "symbol": "BRAINLET",
