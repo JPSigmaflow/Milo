@@ -756,6 +756,24 @@
     "updated_at": "2026-03-05 23:42:36"
   },
   {
+    "symbol": "MOLT",
+    "name": "Moltbook",
+    "address": "0xb695559b26bb2c9703ef1935c37aeae9526bab07",
+    "chain": "Base",
+    "narrative": "AI Agent Social Network / Reddit for AI",
+    "market_cap": 1900000,
+    "liquidity": 1520000,
+    "volume_24h": 1180000,
+    "score": 78,
+    "result": "deep-dive",
+    "reason": "1.5M+ registered AI agents, strong liquidity relative to MC, clear narrative",
+    "lesson_ref": null,
+    "source": "CoinGecko/GeckoTerminal",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 07:02:56",
+    "updated_at": "2026-03-06 07:02:56"
+  },
+  {
     "symbol": "SKY",
     "name": "Sky Protocol (ex-MakerDAO)",
     "address": "0x56072C95FAA701256059aa122697B133aDEd9279",
@@ -970,6 +988,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 07:01:57",
     "updated_at": "2026-03-05 07:01:57"
+  },
+  {
+    "symbol": "BRAINLET",
+    "name": "Brainlet",
+    "address": "8NNXWrWVctNw1UFeaBypffimTdcLCcD8XJzHvYsmgwpF",
+    "chain": "Solana",
+    "narrative": "AI Agent / Autonomous System",
+    "market_cap": 5500000,
+    "liquidity": 636000,
+    "volume_24h": 3200000,
+    "score": 72,
+    "result": "deep-dive",
+    "reason": "Trending AI agent on Solana, strong liquidity, viral potential",
+    "lesson_ref": null,
+    "source": "DexScreener/CoinGecko",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 07:02:56",
+    "updated_at": "2026-03-06 07:02:56"
   },
   {
     "symbol": "POL",
@@ -1798,6 +1834,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 02:42:22",
     "updated_at": "2026-03-05 02:42:22"
+  },
+  {
+    "symbol": "GOAT",
+    "name": "Goatseus Maximus",
+    "address": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+    "chain": "Solana",
+    "narrative": "AI Agent Meme / Truth Terminal",
+    "market_cap": 21000000,
+    "liquidity": 2500000,
+    "volume_24h": 8000000,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "Autonomous AI meme, MC dropped from $1.3B, monitoring for reversal",
+    "lesson_ref": null,
+    "source": "CoinGecko/Kraken",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 07:02:56",
+    "updated_at": "2026-03-06 07:02:56"
   },
   {
     "symbol": "FAI",
