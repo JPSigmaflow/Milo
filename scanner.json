@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-06T11:12:39.711Z",
+  "generated_at": "2026-03-06T11:13:22.227Z",
   "total_coins": 260,
   "coins": [
     {
@@ -1145,7 +1145,7 @@
     {
       "symbol": "ROBO",
       "name": "Fabric Protocol",
-      "address": "BNB Smart Chain",
+      "address": "0x32b4d049fe4c888d2b92eecaf729f44df6b1f36e",
       "chain": "BSC",
       "narrative": "AI Agents + DePIN + Robotics",
       "market_cap": null,
@@ -2195,8 +2195,8 @@
     {
       "symbol": "IDOS",
       "name": "idOS Network",
-      "address": "",
-      "chain": "",
+      "address": "0x8a6940912ab777eefd07499e0c39be62fb51d73d",
+      "chain": "ETH",
       "narrative": "Decentralized Identity + Privacy",
       "market_cap": null,
       "liquidity": null,
@@ -2479,9 +2479,9 @@
     },
     {
       "symbol": "FLOW",
-      "name": "Flow Blockchain",
-      "address": "",
-      "chain": "",
+      "name": "Flow (Wrapped)",
+      "address": "0xc6e64729931f60d2c8bc70a27d66d9e0c28d1bf9",
+      "chain": "ETH",
       "narrative": "L1 Blockchain + NFT",
       "market_cap": null,
       "liquidity": null,
@@ -2675,8 +2675,8 @@
     {
       "symbol": "IDOS",
       "name": "idOS Network",
-      "address": "",
-      "chain": "Multi",
+      "address": "0x8a6940912ab777eefd07499e0c39be62fb51d73d",
+      "chain": "ETH",
       "narrative": "Identity + Privacy + RWA",
       "market_cap": null,
       "liquidity": null,
