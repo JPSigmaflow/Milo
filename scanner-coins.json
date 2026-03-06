@@ -684,6 +684,24 @@
     "updated_at": "2026-02-20 19:39:05"
   },
   {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "native-cardano-l1",
+    "chain": "Cardano",
+    "narrative": "L1, DeFi, Stablecoins",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 80,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Multi-source alert (CryptoPanic x2), M 24h volume (7 Tage >TRON), Cardano Foundation 8-stellige Liquidity für Stablecoins Ende März. Etabliertes L1, starkes institutionelles Signal. MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-stablecoin-expansion",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 01:12:35",
+    "updated_at": "2026-03-06 01:12:35"
+  },
+  {
     "symbol": "STRK",
     "name": "Starknet",
     "address": "native",
@@ -700,6 +718,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 23:42:36",
     "updated_at": "2026-03-05 23:42:36"
+  },
+  {
+    "symbol": "SKY",
+    "name": "Sky Protocol (ex-MakerDAO)",
+    "address": "0x56072C95FAA701256059aa122697B133aDEd9279",
+    "chain": "ethereum",
+    "narrative": "DeFi / Stablecoin Infrastructure",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 78,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: ParaFi Capital .26M AAVE→SKY swap, Top Fee Producer 2025 (M), Multi-Source (Telegram), Blue-chip DeFi, Risiko 3/10",
+    "lesson_ref": null,
+    "source": "analyst-mar5-night",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 01:42:46",
+    "updated_at": "2026-03-06 01:42:46"
   },
   {
     "symbol": "MON",
@@ -880,6 +916,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 07:01:57",
     "updated_at": "2026-03-05 07:01:57"
+  },
+  {
+    "symbol": "POL",
+    "name": "Polygon",
+    "address": "0x0000000000000000000000000000000000001010",
+    "chain": "Polygon",
+    "narrative": "L2 + AI Agents",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 72,
+    "result": "watchlist",
+    "reason": "AI-Analyse: AI Agent CLI Launch (Wu Blockchain + official). Unterstützt AI agents mit on-chain wallets, transfers, x402 micropayments, ERC-8004 NFT identities. MEXC verfügbar (ex-MATIC swap completed). Starkes AI narrativ + etabliertes L2 ecosystem. Competition im L2 space aber positive development momentum.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-ai-agent-cli",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 00:42:16",
+    "updated_at": "2026-03-06 00:42:16"
   },
   {
     "symbol": "TNSR",
@@ -1114,6 +1168,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-02 19:01:12",
     "updated_at": "2026-03-03 10:09:11"
+  },
+  {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "native-ada",
+    "chain": "Cardano",
+    "narrative": "L1 Smart Contracts",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 70,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Multi-source mentions (CryptoPanic + alerts). High trade volume (M/24h), Cardano Foundation plant 8-figure ADA liquidity für stablecoins (März). MEXC als Base Pair verfügbar. Top 10 coin, institutional focus. Kein akuter Catalyst, aber solides Momentum.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-multi-source",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 00:42:16",
+    "updated_at": "2026-03-06 00:42:16"
   },
   {
     "symbol": "ETH",
@@ -1584,6 +1656,24 @@
     "updated_at": "2026-03-05 02:42:22"
   },
   {
+    "symbol": "PI",
+    "name": "Pi Network",
+    "address": "native-pi-chain",
+    "chain": "PI",
+    "narrative": "L1 Mobile Mining",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "AI-Analyse: 14.1% pump (+M MC) nach v19.9 network update. Multi-source signal (X-Twitter). MEXC verfügbar. Etabliertes Projekt (.7B MC), aber umstritten wegen mobile mining Ansatz. Solid technical development.",
+    "lesson_ref": null,
+    "source": "analyst-mar5-network-update",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 00:42:16",
+    "updated_at": "2026-03-06 00:42:16"
+  },
+  {
     "symbol": "STRK",
     "name": "Starknet",
     "address": "ethereum-based-l2",
@@ -2014,6 +2104,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-04 06:09:13",
     "updated_at": "2026-03-04 14:11:03"
+  },
+  {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "cardano-native",
+    "chain": "cardano",
+    "narrative": "L1 Smart Contract Platform",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 62,
+    "result": "watchlist",
+    "reason": "AI-Analyse: M 24h Volume, Foundation liquidity boost (8-figure ADA), Multi-Source (CryptoPanic), Blue-chip L1, Risiko 4/10, warten auf besseres Entry",
+    "lesson_ref": null,
+    "source": "analyst-mar5-night",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 01:42:46",
+    "updated_at": "2026-03-06 01:42:46"
   },
   {
     "symbol": "DOT",
@@ -3204,6 +3312,24 @@
     "updated_at": "2026-02-22 01:04:40"
   },
   {
+    "symbol": "BMIC",
+    "name": "Blockchain Micro-Ion Compute",
+    "address": "presale",
+    "chain": "Ethereum",
+    "narrative": "AI + Quantum Security",
+    "market_cap": 6000000,
+    "liquidity": 0,
+    "volume_24h": 0,
+    "score": 45,
+    "result": "watchlist",
+    "reason": "Presale - Liquidität TBD",
+    "lesson_ref": null,
+    "source": "Coinspeaker Micro-Cap",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 01:05:26",
+    "updated_at": "2026-03-06 01:05:26"
+  },
+  {
     "symbol": "TNSR",
     "name": "Tensor",
     "address": "TBD",
@@ -3456,6 +3582,24 @@
     "updated_at": "2026-02-12 19:41:19"
   },
   {
+    "symbol": "HAPI",
+    "name": "HAPI Protocol",
+    "address": "0xd9c2d319cd7e6177336b0a9c93c21cb48d84fb54",
+    "chain": "Ethereum",
+    "narrative": "DeFi Security + AI",
+    "market_cap": 1680000,
+    "liquidity": 852,
+    "volume_24h": 852,
+    "score": 42,
+    "result": "watchlist",
+    "reason": "Sehr niedrige Liquidität",
+    "lesson_ref": null,
+    "source": "CoinGecko/CMC",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 01:05:26",
+    "updated_at": "2026-03-06 01:05:26"
+  },
+  {
     "symbol": "AWE",
     "name": "AWE Network",
     "address": "0xDe7D85157d9714EADf595045CC12Ca4A5f3E2aDb",
@@ -3526,6 +3670,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-25 19:01:08",
     "updated_at": "2026-02-25 19:01:08"
+  },
+  {
+    "symbol": "SUBBD",
+    "name": "SUBBD AI Creator",
+    "address": "0xE9210fa0CdFEddCb9B1C2AD3dAB1c0cE429EDf5f",
+    "chain": "Ethereum",
+    "narrative": "AI Creator Platform",
+    "market_cap": 45600000,
+    "liquidity": 5228,
+    "volume_24h": 0,
+    "score": 35,
+    "result": "rejected",
+    "reason": "Liquidität <$50K",
+    "lesson_ref": null,
+    "source": "Solflare/CoinBrain",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 01:05:26",
+    "updated_at": "2026-03-06 01:05:26"
   },
   {
     "symbol": "PUNCH",
