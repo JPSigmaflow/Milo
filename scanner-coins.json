@@ -1044,6 +1044,24 @@
     "updated_at": "2026-03-04 14:11:03"
   },
   {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "cardano-mainnet",
+    "chain": "cardano",
+    "narrative": "L1, Smart Contracts, DeFi, LayerZero+Circle Integration",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 75,
+    "result": "deep-dive",
+    "reason": "Multi-Source (4x): Coinbase Wrapped ADA, LayerZero, Circle USDC, Hoskinson Updates. Bullish: Interoperability + Stablecoin Integration. MEXC: ✅",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 21:42:13",
+    "updated_at": "2026-03-06 21:42:13"
+  },
+  {
     "symbol": "DOT",
     "name": "Polkadot",
     "address": "polkadot-native",
@@ -1584,6 +1602,24 @@
     "updated_at": "2026-03-06 03:42:17"
   },
   {
+    "symbol": "XRP",
+    "name": "Ripple",
+    "address": "ripple-mainnet",
+    "chain": "xrp-ledger",
+    "narrative": "Payments, Regulatory Clarity, RLUSD Stablecoin",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 70,
+    "result": "watchlist",
+    "reason": "Multi-Source (2x): Clarity Act (CFTC not SEC), RLUSD Top Donations. Bullish: Legal Clarity könnte massiv sein. MEXC: ✅",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 21:42:06",
+    "updated_at": "2026-03-06 21:42:06"
+  },
+  {
     "symbol": "FAI",
     "name": "Freysa AI",
     "address": "0xb33ff54b9f7242ef1593d2c9bcd8f9df46c77935",
@@ -1888,6 +1924,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-14 01:03:02",
     "updated_at": "2026-02-27 16:39:42"
+  },
+  {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "cardano-native",
+    "chain": "cardano",
+    "narrative": "L1, DeFi expansion, cross-chain (LayerZero)",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 68,
+    "result": "watchlist",
+    "reason": "Multi-Source: Coinbase DEX 84 countries, LayerZero integration, Hoskinson announcements. Etabliert aber neue Katalysatoren.",
+    "lesson_ref": null,
+    "source": "analyst-mar6-cron",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 22:12:05",
+    "updated_at": "2026-03-06 22:12:05"
   },
   {
     "symbol": "RIVER",
@@ -2428,6 +2482,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-06 20:13:00",
     "updated_at": "2026-03-06 20:13:00"
+  },
+  {
+    "symbol": "TAO",
+    "name": "Bittensor",
+    "address": "bittensor-mainnet",
+    "chain": "bittensor",
+    "narrative": "AI/ML Decentralized Network",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "Single-Source: Grayscale Trust NAV Benchmark. Bullish: Institutionell, AI-Narrativ stark. MEXC: ✅. Risiko: Volatil.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 21:42:06",
+    "updated_at": "2026-03-06 21:42:06"
   },
   {
     "symbol": "RIVER",
@@ -3204,6 +3276,24 @@
     "updated_at": "2026-03-06 03:42:17"
   },
   {
+    "symbol": "HYPE",
+    "name": "Hyperliquid",
+    "address": "tbd",
+    "chain": "ethereum",
+    "narrative": "DeFi, Perpetual DEX",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 62,
+    "result": "watchlist",
+    "reason": "CryptoPanic predictions, Apollo Crypto top altcoin holding. Starkes DeFi narrativ.",
+    "lesson_ref": null,
+    "source": "analyst-mar6-cron",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 22:12:05",
+    "updated_at": "2026-03-06 22:12:05"
+  },
+  {
     "symbol": "H",
     "name": "Humanity Protocol",
     "address": "TBD",
@@ -3852,6 +3942,24 @@
     "updated_at": "2026-02-17 01:03:42"
   },
   {
+    "symbol": "UAI",
+    "name": "UnifAI Network",
+    "address": "tbd",
+    "chain": "ethereum",
+    "narrative": "AI",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 55,
+    "result": "no-go",
+    "reason": "CoinGecko trending, AI narrativ stark. Aber single source, MEXC unbekannt.",
+    "lesson_ref": null,
+    "source": "analyst-mar6-cron",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 22:12:05",
+    "updated_at": "2026-03-06 22:12:05"
+  },
+  {
     "symbol": "FAI",
     "name": "Freysa AI",
     "address": "0x...",
@@ -4210,6 +4318,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-12 20:45:34",
     "updated_at": "2026-02-12 20:45:34"
+  },
+  {
+    "symbol": "NIGHT",
+    "name": "Midnight",
+    "address": "cardano-native",
+    "chain": "cardano",
+    "narrative": "Privacy layer, Cardano ecosystem",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 52,
+    "result": "no-go",
+    "reason": "54,600 holders, solid community. Aber nicht auf MEXC, zu klein für Trade.",
+    "lesson_ref": null,
+    "source": "analyst-mar6-cron",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 22:12:05",
+    "updated_at": "2026-03-06 22:12:05"
   },
   {
     "symbol": "WAR",
@@ -4804,6 +4930,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-06 08:13:21",
     "updated_at": "2026-03-06 08:13:21"
+  },
+  {
+    "symbol": "NIGHT",
+    "name": "Midnight",
+    "address": "unknown",
+    "chain": "cardano",
+    "narrative": "Privacy Layer on Cardano",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 45,
+    "result": "watchlist",
+    "reason": "Single-Source: 54,600+ Holder. Privacy Narrativ + Cardano Ecosystem. MEXC: Unbekannt. Risiko: Mittel.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 21:42:06",
+    "updated_at": "2026-03-06 21:42:06"
   },
   {
     "symbol": "ADA",
