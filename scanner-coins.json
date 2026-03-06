@@ -1584,6 +1584,24 @@
     "updated_at": "2026-03-05 02:42:22"
   },
   {
+    "symbol": "STRK",
+    "name": "Starknet",
+    "address": "ethereum-based-l2",
+    "chain": "Ethereum",
+    "narrative": "L2 Scaling + Dev Momentum",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "AI-Analyse Mar5: #1 L2 by Developer Activity (Santiment), Multi-Source (CryptoPanic+Santiment), MEXC verfügbar, aber aktuell -11% in 7d. Fundamentals stark, Preis schwach.",
+    "lesson_ref": null,
+    "source": "analyst-cron-mar5",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 00:11:58",
+    "updated_at": "2026-03-06 00:11:58"
+  },
+  {
     "symbol": "ADA",
     "name": "Cardano",
     "address": "native",
@@ -2410,6 +2428,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-17 01:03:42",
     "updated_at": "2026-02-17 01:03:42"
+  },
+  {
+    "symbol": "SWARMS",
+    "name": "Swarms",
+    "address": "solana-based",
+    "chain": "Solana",
+    "narrative": "AI Agents + Multi-Agent LLM Framework",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 55,
+    "result": "watchlist",
+    "reason": "AI-Analyse Mar5: Multi-agent LLM framework, MEXC verfügbar, AI Agents Narrativ stark, aber nur 1 Quelle heute (PumpFun). Braucht mehr Multi-Source Bestätigung.",
+    "lesson_ref": null,
+    "source": "analyst-cron-mar5",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 00:12:32",
+    "updated_at": "2026-03-06 00:12:32"
   },
   {
     "symbol": "ESP",
