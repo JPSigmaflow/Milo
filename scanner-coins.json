@@ -828,6 +828,24 @@
     "updated_at": "2026-03-05 23:42:36"
   },
   {
+    "symbol": "MON",
+    "name": "Monad",
+    "address": "native",
+    "chain": "monad",
+    "narrative": "L1 Blockchain",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 78,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Ethereum-compatible L1, FDV .9B, multi-source (PumpFun+CMC), high-performance blockchain",
+    "lesson_ref": null,
+    "source": "analyst-mar6-pumpfun",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 20:13:00",
+    "updated_at": "2026-03-06 20:13:00"
+  },
+  {
     "symbol": "KAT",
     "name": "Katana Network",
     "address": "n/a",
@@ -1186,6 +1204,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-06 12:42:46",
     "updated_at": "2026-03-06 12:42:46"
+  },
+  {
+    "symbol": "M",
+    "name": "MemeCore",
+    "address": "TBD",
+    "chain": "ethereum",
+    "narrative": "Meme 2.0",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 72,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Meme 2.0 blockchain, MC .7B, +21% today, Proof of Meme consensus",
+    "lesson_ref": null,
+    "source": "analyst-mar6-cryptopanic",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 20:13:00",
+    "updated_at": "2026-03-06 20:13:00"
   },
   {
     "symbol": "ADA",
@@ -1854,6 +1890,24 @@
     "updated_at": "2026-02-27 16:39:42"
   },
   {
+    "symbol": "RIVER",
+    "name": "River",
+    "address": "TBD",
+    "chain": "ethereum",
+    "narrative": "DeFi Infrastructure",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 68,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Chain-abstraction stablecoin system (satUSD), cross-chain collateral, +11.99% today",
+    "lesson_ref": null,
+    "source": "analyst-mar6-cryptopanic",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 20:13:00",
+    "updated_at": "2026-03-06 20:13:00"
+  },
+  {
     "symbol": "LTC",
     "name": "Litecoin",
     "address": "litecoin",
@@ -2356,6 +2410,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 02:42:22",
     "updated_at": "2026-03-05 02:42:22"
+  },
+  {
+    "symbol": "NIGHT",
+    "name": "Midnight",
+    "address": "TBD",
+    "chain": "cardano",
+    "narrative": "Privacy",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 66,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Cardano privacy sidechain, 54k+ holders, governance token, shielded transactions",
+    "lesson_ref": null,
+    "source": "analyst-mar6-cryptopanic",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 20:13:00",
+    "updated_at": "2026-03-06 20:13:00"
   },
   {
     "symbol": "RIVER",
@@ -3130,6 +3202,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-06 03:42:17",
     "updated_at": "2026-03-06 03:42:17"
+  },
+  {
+    "symbol": "H",
+    "name": "Humanity Protocol",
+    "address": "TBD",
+    "chain": "ethereum",
+    "narrative": "Identity",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 62,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Zero-knowledge identity system, +17.6% today, Sybil-resistant verification",
+    "lesson_ref": null,
+    "source": "analyst-mar6-cryptopanic",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 20:13:00",
+    "updated_at": "2026-03-06 20:13:00"
   },
   {
     "symbol": "FAI",
