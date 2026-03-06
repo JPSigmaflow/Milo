@@ -630,6 +630,24 @@
     "updated_at": "2026-03-05 07:01:57"
   },
   {
+    "symbol": "DOT",
+    "name": "Polkadot",
+    "address": "native-dot",
+    "chain": "polkadot",
+    "narrative": "L1/Parachain + US ETF Catalyst",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 82,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Erstes US Spot DOT ETF (21Shares TDOT) auf Nasdaq gestartet. Multi-Source Erwähnung, MEXC verfügbar, institutioneller Zufluss-Katalysator.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 18:12:31",
+    "updated_at": "2026-03-06 18:12:31"
+  },
+  {
     "symbol": "SOL",
     "name": "Solana",
     "address": "solana-layer1",
