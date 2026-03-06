@@ -1206,6 +1206,24 @@
     "updated_at": "2026-03-06 03:42:17"
   },
   {
+    "symbol": "FAI",
+    "name": "Freysa AI",
+    "address": "base-contract-tbd",
+    "chain": "BASE",
+    "narrative": "AI Agents",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 70,
+    "result": "watchlist",
+    "reason": "Multi-Source Scanner Hit: +54% in 24h, Brian Armstrong Base AI Hub push, MEXC listed mit M Volume. 3 Telegram Quellen. Risiko 5/10.",
+    "lesson_ref": null,
+    "source": "analyst-mar6-scanner",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 06:12:30",
+    "updated_at": "2026-03-06 06:12:30"
+  },
+  {
     "symbol": "ADA",
     "name": "Cardano",
     "address": "native-ada",
