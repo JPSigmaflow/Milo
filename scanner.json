@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-06T10:42:22.826Z",
-  "total_coins": 257,
+  "generated_at": "2026-03-06T11:12:39.711Z",
+  "total_coins": 260,
   "coins": [
     {
       "symbol": "OKB",
@@ -1143,6 +1143,21 @@
       "updated_at": "2026-03-06 03:42:17"
     },
     {
+      "symbol": "ROBO",
+      "name": "Fabric Protocol",
+      "address": "BNB Smart Chain",
+      "chain": "BSC",
+      "narrative": "AI Agents + DePIN + Robotics",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 70,
+      "result": "watchlist",
+      "source": "analyst",
+      "scanned_at": "2026-03-06 11:12:28",
+      "updated_at": "2026-03-06 11:12:28"
+    },
+    {
       "symbol": "ADA",
       "name": "Cardano",
       "address": "cardano-mainnet",
@@ -2178,6 +2193,21 @@
       "updated_at": "2026-02-20 06:09:02"
     },
     {
+      "symbol": "IDOS",
+      "name": "idOS Network",
+      "address": "",
+      "chain": "",
+      "narrative": "Decentralized Identity + Privacy",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 64,
+      "result": "watchlist",
+      "source": "analyst",
+      "scanned_at": "2026-03-06 11:12:28",
+      "updated_at": "2026-03-06 11:12:28"
+    },
+    {
       "symbol": "BTW",
       "name": "Bitway",
       "address": "",
@@ -2446,6 +2476,21 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-13 01:02:47",
       "updated_at": "2026-02-13 01:02:47"
+    },
+    {
+      "symbol": "FLOW",
+      "name": "Flow Blockchain",
+      "address": "",
+      "chain": "",
+      "narrative": "L1 Blockchain + NFT",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 60,
+      "result": "watchlist",
+      "source": "analyst",
+      "scanned_at": "2026-03-06 11:12:28",
+      "updated_at": "2026-03-06 11:12:28"
     },
     {
       "symbol": "KAT",
