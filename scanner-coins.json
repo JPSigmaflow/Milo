@@ -990,6 +990,24 @@
     "updated_at": "2026-03-04 14:11:03"
   },
   {
+    "symbol": "DOT",
+    "name": "Polkadot",
+    "address": "polkadot-native",
+    "chain": "polkadot",
+    "narrative": "L1 / Interoperability / ETF Launch",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 75,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Erstes US Spot Polkadot ETF (21Shares TDOT) auf Nasdaq gelistet. Multi-Source Erwähnung (4+), etabliertes Projekt, institutioneller Katalysator. MEXC verfügbar. Risiko 3/10.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 17:12:23",
+    "updated_at": "2026-03-06 17:12:23"
+  },
+  {
     "symbol": "XRP",
     "name": "Ripple",
     "address": "native",
@@ -1492,6 +1510,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-06 03:42:17",
     "updated_at": "2026-03-06 03:42:17"
+  },
+  {
+    "symbol": "UTEXO",
+    "name": "Utexo",
+    "address": "tbd",
+    "chain": "bitcoin",
+    "narrative": "Bitcoin Payment / USDT Settlement",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 70,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Bitcoin-native USDT settlement layer. .5M Funding von Tether, Big Brain Holdings, Portal Ventures, Franklin Templeton. Multi-Source (4+). Noch kein MEXC. Risiko 4/10.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 17:12:23",
+    "updated_at": "2026-03-06 17:12:23"
   },
   {
     "symbol": "UTXO",
@@ -3672,6 +3708,24 @@
     "updated_at": "2026-02-17 01:03:42"
   },
   {
+    "symbol": "FAI",
+    "name": "Freysa AI",
+    "address": "0x...",
+    "chain": "Base",
+    "narrative": "AI Agent",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 55,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Multi-Source (TheBlockBeats +112% pump, MEXC listed, CMC). AI Agent Narrativ (hot). MC ~55M. Volume 13M. Risiko: Bereits stark gepumpt (66-112% 24h), Korrektur-Risiko hoch. Peak war 660M (Elon retweet), jetzt deutlich niedriger.",
+    "lesson_ref": null,
+    "source": "analyst-cron-mar6",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 17:42:52",
+    "updated_at": "2026-03-06 17:42:52"
+  },
+  {
     "symbol": "IDOS",
     "name": "idOS Network",
     "address": "0x8a6940912ab777eefd07499e0c39be62fb51d73d",
@@ -4246,6 +4300,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-13 07:01:41",
     "updated_at": "2026-02-13 07:01:41"
+  },
+  {
+    "symbol": "SENT",
+    "name": "Sentient",
+    "address": "0x...",
+    "chain": "Ethereum",
+    "narrative": "Decentralized AGI",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 50,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Fresh Binance listing (Jan 22, 2026). Decentralized AGI Protocol. Funding: 85M$ (Hashkey Capital). Preis ~0.017$. Single-Source (CoinGecko trending), daher nur knapp über Threshold. Watchlist für weitere Signale.",
+    "lesson_ref": null,
+    "source": "analyst-cron-mar6",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 17:42:57",
+    "updated_at": "2026-03-06 17:42:57"
   },
   {
     "symbol": "SENT",
