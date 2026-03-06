@@ -828,6 +828,24 @@
     "updated_at": "2026-03-05 23:42:36"
   },
   {
+    "symbol": "ZRO",
+    "name": "LayerZero",
+    "address": "0x6985884C4392D348587B19cb9eAAf157F13271cd",
+    "chain": "Ethereum",
+    "narrative": "Interoperability/L0",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 78,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: 57% Crosschain Messaging Market Share, neue L1 Zero Launch, Cardano Partnership. Multi-Source Erwähnung (X-Twitter Enterprise Report + CryptoPanic). Volume .41M, MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 22:43:13",
+    "updated_at": "2026-03-06 22:43:13"
+  },
+  {
     "symbol": "MON",
     "name": "Monad",
     "address": "native",
@@ -1204,6 +1222,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 07:01:57",
     "updated_at": "2026-03-05 07:01:57"
+  },
+  {
+    "symbol": "HYPE",
+    "name": "Hyperliquid",
+    "address": "native",
+    "chain": "Hyperliquid",
+    "narrative": "DeFi/Perpetuals",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 73,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Apollo Crypto Top Altcoin Holding (starkes Signal), Multi-Source (CryptoPanic + Price Predictions). Decentralized Perpetuals, Volume .76M (höchste aller Kandidaten), MEXC verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 22:43:13",
+    "updated_at": "2026-03-06 22:43:13"
   },
   {
     "symbol": "HUMA",
@@ -4930,6 +4966,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-06 08:13:21",
     "updated_at": "2026-03-06 08:13:21"
+  },
+  {
+    "symbol": "UAI",
+    "name": "UnifAI Network",
+    "address": "TBD",
+    "chain": "Ethereum",
+    "narrative": "AI",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 45,
+    "result": "watchlist",
+    "reason": "AI-Analyse: CoinGecko Trending, AI Narrativ. Nur 1 Quelle (zu wenig), niedrige Liquidity (K Volume), MEXC verfügbar. +11% in 24H aber zu wenig Confirmation.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 22:43:13",
+    "updated_at": "2026-03-06 22:43:13"
   },
   {
     "symbol": "NIGHT",
