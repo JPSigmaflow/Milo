@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-06T00:43:03.498019Z",
-  "total_coins": 207,
+  "updated_at": "2026-03-06T01:13:08.199897Z",
+  "total_coins": 211,
   "coins": [
     {
       "id": 187,
@@ -741,6 +741,25 @@
       "source": "analyst-mar5-developer-lead",
       "scanned_at": "2026-03-05 23:42:36",
       "updated_at": "2026-03-05 23:42:36",
+      "source_channels": null
+    },
+    {
+      "id": 245,
+      "symbol": "ADA",
+      "name": "Cardano",
+      "address": "native-cardano-l1",
+      "chain": "Cardano",
+      "narrative": "L1, DeFi, Stablecoins",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 80,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: Multi-source alert (CryptoPanic x2), M 24h volume (7 Tage >TRON), Cardano Foundation 8-stellige Liquidity f\u00fcr Stablecoins Ende M\u00e4rz. Etabliertes L1, starkes institutionelles Signal. MEXC verf\u00fcgbar.",
+      "lesson_ref": null,
+      "source": "analyst-mar5-stablecoin-expansion",
+      "scanned_at": "2026-03-06 01:12:35",
+      "updated_at": "2026-03-06 01:12:35",
       "source_channels": null
     },
     {
@@ -3708,6 +3727,25 @@
       "source_channels": null
     },
     {
+      "id": 242,
+      "symbol": "BMIC",
+      "name": "Blockchain Micro-Ion Compute",
+      "address": "presale",
+      "chain": "Ethereum",
+      "narrative": "AI + Quantum Security",
+      "market_cap": 6000000.0,
+      "liquidity": 0.0,
+      "volume_24h": 0.0,
+      "score": 45,
+      "result": "watchlist",
+      "reason": "Presale - Liquidit\u00e4t TBD",
+      "lesson_ref": null,
+      "source": "Coinspeaker Micro-Cap",
+      "scanned_at": "2026-03-06 01:05:26",
+      "updated_at": "2026-03-06 01:05:26",
+      "source_channels": null
+    },
+    {
       "id": 63,
       "symbol": "AWE",
       "name": "AWE Network",
@@ -3724,6 +3762,25 @@
       "source": "coingecko-ai-category",
       "scanned_at": "2026-02-14 13:02:07",
       "updated_at": "2026-02-14 13:02:07",
+      "source_channels": null
+    },
+    {
+      "id": 244,
+      "symbol": "HAPI",
+      "name": "HAPI Protocol",
+      "address": "0xd9c2d319cd7e6177336b0a9c93c21cb48d84fb54",
+      "chain": "Ethereum",
+      "narrative": "DeFi Security + AI",
+      "market_cap": 1680000.0,
+      "liquidity": 852.0,
+      "volume_24h": 852.0,
+      "score": 42,
+      "result": "watchlist",
+      "reason": "Sehr niedrige Liquidit\u00e4t",
+      "lesson_ref": null,
+      "source": "CoinGecko/CMC",
+      "scanned_at": "2026-03-06 01:05:26",
+      "updated_at": "2026-03-06 01:05:26",
       "source_channels": null
     },
     {
@@ -3857,6 +3914,25 @@
       "source": "analyst + telegram + bybit + bitpush + BeInCrypto + ForesightNews",
       "scanned_at": "2026-02-20 09:39:21",
       "updated_at": "2026-02-20 11:38:58",
+      "source_channels": null
+    },
+    {
+      "id": 243,
+      "symbol": "SUBBD",
+      "name": "SUBBD AI Creator",
+      "address": "0xE9210fa0CdFEddCb9B1C2AD3dAB1c0cE429EDf5f",
+      "chain": "Ethereum",
+      "narrative": "AI Creator Platform",
+      "market_cap": 45600000.0,
+      "liquidity": 5228.0,
+      "volume_24h": 0.0,
+      "score": 35,
+      "result": "rejected",
+      "reason": "Liquidit\u00e4t <$50K",
+      "lesson_ref": null,
+      "source": "Solflare/CoinBrain",
+      "scanned_at": "2026-03-06 01:05:26",
+      "updated_at": "2026-03-06 01:05:26",
       "source_channels": null
     },
     {
