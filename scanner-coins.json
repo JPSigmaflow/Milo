@@ -1836,6 +1836,24 @@
     "updated_at": "2026-03-05 02:42:22"
   },
   {
+    "symbol": "PUMP",
+    "name": "pump.fun",
+    "address": "TBD",
+    "chain": "solana",
+    "narrative": "Platform/Meme Launchpad",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Whale accumulation (72.1B PUMP = $14.56M in 10d from OKX/Bybit/Kraken), Multi-Source (5+ Telegram), MEXC verfügbar. PumpFun = größtes Solana Meme Launchpad.",
+    "lesson_ref": null,
+    "source": "analyst-mar6-whale",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 07:42:26",
+    "updated_at": "2026-03-06 07:42:26"
+  },
+  {
     "symbol": "JYAI",
     "name": "Jerry The Turtle",
     "address": "",
