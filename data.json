@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-06T06:33:33Z",
+  "exported_at": "2026-03-06T06:49:36Z",
   "usdt_free": 859.24,
   "last_update": "2026-02-19 07:28:56",
   "total_value": 11098.36,
@@ -3971,6 +3971,7 @@
 {"symbol":"BMIC","name":"Blockchain Micro-Ion Compute","chain":"Ethereum","narrative":"AI + Quantum Security","market_cap":6000000.0,"liquidity":0.0,"volume_24h":0.0,"score":45,"result":"watchlist","reason":"Presale - Liquidität TBD","source":"Coinspeaker Micro-Cap","source_channels":null,"scanned_at":"2026-03-06 01:05:26","updated_at":"2026-03-06 01:05:26"},
 {"symbol":"PI","name":"Pi Network","chain":"pi","narrative":"Layer-1 Mobile Mining","market_cap":null,"liquidity":null,"volume_24h":null,"score":45,"result":"watchlist","reason":"AI-Analyse: Network upgrade v19.9, +14.1% pump. Controversial mobile mining model.","source":"analyst-mar5-network-upgrade","source_channels":null,"scanned_at":"2026-03-06 02:12:47","updated_at":"2026-03-06 02:12:47"},
 {"symbol":"ANKR","name":"Ankr Network","chain":"ethereum","narrative":"Infrastructure","market_cap":null,"liquidity":null,"volume_24h":null,"score":45,"result":"watchlist","reason":"CoinGecko Trending, Infrastructure Narrativ, MEXC verfügbar, MC $46M. Low visibility sonst, Risiko 6/10.","source":"analyst-mar5-scanner","source_channels":null,"scanned_at":"2026-03-06 04:12:45","updated_at":"2026-03-06 04:12:45"},
+{"symbol":"PUMP","name":"Pump.fun Token","chain":"solana","narrative":"DeFi Platform Token","market_cap":null,"liquidity":null,"volume_24h":null,"score":45,"result":"watchlist","reason":"AI-Analyse: Multi-Source Whale Accumulation (72.1B/.56M from CEX). Mixed signals - historisch auch Verluste. Auf MEXC. Risiko 7/10.","source":"analyst-mar6-whale","source_channels":null,"scanned_at":"2026-03-06 06:42:18","updated_at":"2026-03-06 06:42:18"},
 {"symbol":"AWE","name":"AWE Network","chain":"ethereum","narrative":"AI Agent Network (ex-STP)","market_cap":180262009.0,"liquidity":10218304.0,"volume_24h":10218304.0,"score":42,"result":"watchlist","reason":null,"source":"coingecko-ai-category","source_channels":null,"scanned_at":"2026-02-14 13:02:07","updated_at":"2026-02-14 13:02:07"},
 {"symbol":"HAPI","name":"HAPI Protocol","chain":"Ethereum","narrative":"DeFi Security + AI","market_cap":1680000.0,"liquidity":852.0,"volume_24h":852.0,"score":42,"result":"watchlist","reason":"Sehr niedrige Liquidität","source":"CoinGecko/CMC","source_channels":null,"scanned_at":"2026-03-06 01:05:26","updated_at":"2026-03-06 01:05:26"},
 {"symbol":"IP","name":"Story","chain":"ethereum","narrative":"Dezentrales IP-Protokoll mit AI-Integration","market_cap":390000000.0,"liquidity":null,"volume_24h":60469104.0,"score":40,"result":"watchlist","reason":null,"source":"coingecko-ai","source_channels":null,"scanned_at":"2026-02-13 13:01:41","updated_at":"2026-02-13 13:01:41"},
