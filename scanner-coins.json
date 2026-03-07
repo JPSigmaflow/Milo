@@ -648,6 +648,24 @@
     "updated_at": "2026-03-05 07:01:57"
   },
   {
+    "symbol": "ZRO",
+    "name": "LayerZero",
+    "address": "TBA",
+    "chain": "layerzero",
+    "narrative": "Infrastructure, L1 Launch (Zero)",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 82,
+    "result": "deep-dive",
+    "reason": "Zero L1 Ankündigung, 57% crosschain messaging market share, Multi-Source (Telegram 2x + Twitter + Enterprise Analysis)",
+    "lesson_ref": null,
+    "source": "analyst-mar7-l1-launch",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 10:42:19",
+    "updated_at": "2026-03-07 10:42:19"
+  },
+  {
     "symbol": "IOTX",
     "name": "IoTeX",
     "address": "native",
@@ -736,6 +754,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-20 17:39:17",
     "updated_at": "2026-02-20 19:39:05"
+  },
+  {
+    "symbol": "SPELL",
+    "name": "Abracadabra Money",
+    "address": "0x090185f2135308bad17527004364ebcc2d37e5f6",
+    "chain": "ethereum",
+    "narrative": "DeFi Revival",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 80,
+    "result": "deep-dive",
+    "reason": "Multi-source X-Twitter: Daniele Sesta 18B SPELL Rückzahlung + MIM im US Senate diskutiert. Volume +216%, Preis +26%. MEXC verfügbar. Dual-Approval-Buttons gesendet Mar7 06:10.",
+    "lesson_ref": null,
+    "source": "analyst-mar7",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 11:12:44",
+    "updated_at": "2026-03-07 11:12:44"
   },
   {
     "symbol": "SPELL",
@@ -844,6 +880,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 23:42:36",
     "updated_at": "2026-03-05 23:42:36"
+  },
+  {
+    "symbol": "SPELL",
+    "name": "Spell Token (Abracadabra)",
+    "address": "0x090185f2135308BaD17527004364eBcC2D37e5F6",
+    "chain": "ethereum",
+    "narrative": "DeFi, Stablecoin Infrastructure",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 78,
+    "result": "deep-dive",
+    "reason": "US Senat MIM Diskussion, Volume +216%, Preis +26.2%, Wonderland Merger, Multi-Source (Twitter 4x + Telegram)",
+    "lesson_ref": null,
+    "source": "analyst-mar7-senate",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 10:42:19",
+    "updated_at": "2026-03-07 10:42:19"
   },
   {
     "symbol": "KAT",
@@ -2536,6 +2590,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 02:42:22",
     "updated_at": "2026-03-05 02:42:22"
+  },
+  {
+    "symbol": "ROBO",
+    "name": "LayerZero Ecosystem Token",
+    "address": "TBA",
+    "chain": "unknown",
+    "narrative": "Infrastructure, Airdrop",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "Airdrop Portal live, LayerZero ecosystem connection",
+    "lesson_ref": null,
+    "source": "analyst-mar7-airdrop",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 10:42:19",
+    "updated_at": "2026-03-07 10:42:19"
   },
   {
     "symbol": "IDOS",
