@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PomesTeam Business Plan</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0a0e14; color: #c8d0da; padding: 40px 48px; line-height: 1.5;
+  }
+  .header { margin-bottom: 36px; }
+  .header h1 { font-size: 32px; color: #e8ecf0; font-weight: 700; }
+  .header h1 span { color: #ff6b35; }
+  .header .sub { font-size: 14px; color: #5a6577; margin-top: 4px; }
+  .section-title { font-size: 18px; font-weight: 600; color: #e0e4ea; margin: 32px 0 16px; }
+  .section-title span { margin-right: 8px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .metric-card { border: 1px solid #1e2736; border-radius: 10px; padding: 20px; background: #0d1219; }
+  .metric-card .label { font-size: 13px; color: #5a6577; font-weight: 500; margin-bottom: 4px; }
+  .metric-card .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .metric-card .value { font-size: 36px; font-weight: 700; color: #e8ecf0; line-height: 1.1; }
+  .metric-card .sub-value { font-size: 13px; margin-top: 6px; }
+  .metric-card .detail { font-size: 12px; color: #5a6577; margin-top: 10px; line-height: 1.6; }
+  .metric-card .detail li { list-style: none; }
+  .metric-card .detail li::before { content: "· "; }
+  .c-orange { color: #ff6b35; }
+  .c-green { color: #22c55e; }
+  .c-yellow { color: #eab308; }
+  .c-red { color: #ef4444; }
+  .c-blue { color: #3b82f6; }
+  .c-purple { color: #a855f7; }
+  .c-cyan { color: #06b6d4; }
+  .bg-orange { background: #ff6b35; }
+  .bg-green { background: #22c55e; }
+  .bg-yellow { background: #eab308; }
+  .bg-red { background: #ef4444; }
+  .bg-blue { background: #3b82f6; }
+  .bg-purple { background: #a855f7; }
+  .tier-card { border-radius: 10px; padding: 20px; background: #0d1219; }
+  .tier-card.border-red { border: 1px solid #ef444466; }
+  .tier-card.border-orange { border: 1px solid #ff6b3566; }
+  .tier-card.border-yellow { border: 1px solid #eab30866; }
+  .tier-card.border-green { border: 1px solid #22c55e66; }
+  .tier-card.border-blue { border: 1px solid #3b82f666; }
+  .tier-card.border-purple { border: 1px solid #a855f766; }
+  .tier-card .tier-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .tier-card .tier-value { font-size: 28px; font-weight: 700; color: #e8ecf0; }
+  .tier-card .tier-detail { font-size: 12px; color: #5a6577; margin-top: 10px; line-height: 1.8; }
+  .tier-card .tier-detail div::before { content: "→ "; }
+  .cases-bar { border: 1px solid #1e2736; border-radius: 10px; padding: 20px; background: #0d1219; display: flex; }
+  .case-item { flex: 1; text-align: center; padding: 0 12px; border-right: 1px solid #1e2736; }
+  .case-item:last-child { border-right: none; }
+  .case-item .case-val { font-size: 24px; font-weight: 700; }
+  .case-item .case-label { font-size: 11px; color: #5a6577; margin-top: 4px; }
+  .check-card { border: 1px solid #1e2736; border-radius: 10px; padding: 20px; background: #0d1219; }
+  .check-card .check-title { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+  .roadmap { position: relative; padding-left: 30px; margin-top: 8px; }
+  .roadmap::before { content: ""; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: #1e2736; }
+  .rm-item { position: relative; padding-bottom: 16px; }
+  .rm-item:last-child { padding-bottom: 0; }
+  .rm-dot { position: absolute; left: -26px; top: 2px; width: 14px; height: 14px; border-radius: 50%; border: 2px solid; background: #0a0e14; }
+  .rm-dot.done { border-color: #22c55e; background: #22c55e; }
+  .rm-dot.active { border-color: #ff6b35; background: #ff6b35; }
+  .rm-dot.future { border-color: #5a6577; }
+  .rm-title { font-size: 13px; font-weight: 600; color: #e0e4ea; }
+  .rm-desc { font-size: 11px; color: #5a6577; margin-top: 1px; }
+  .success-box { border: 1px solid #22c55e44; border-radius: 10px; padding: 20px 24px; background: #22c55e0a; margin-top: 28px; }
+  .success-box .succ-title { font-size: 15px; font-weight: 700; color: #22c55e; margin-bottom: 8px; }
+  .success-box .succ-text { font-size: 13px; color: #8a9ab5; line-height: 1.6; }
+  .warning-box { border: 1px solid #eab30844; border-radius: 10px; padding: 20px 24px; background: #eab3080a; margin-top: 16px; }
+  .warning-box .warn-title { font-size: 15px; font-weight: 700; color: #eab308; margin-bottom: 8px; }
+  .warning-box .warn-text { font-size: 13px; color: #8a9ab5; line-height: 1.6; }
+  .prog-bar { height: 6px; background: #1e2736; border-radius: 3px; margin-top: 8px; overflow: hidden; }
+  .prog-fill { height: 100%; border-radius: 3px; }
+  .prog-fill-orange { background: linear-gradient(90deg, #ff6b35, #ff9a5c); }
+  .prog-fill-green { background: linear-gradient(90deg, #22c55e, #4ade80); }
+  .prog-fill-blue { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+  .prog-fill-purple { background: linear-gradient(90deg, #a855f7, #c084fc); }
+  .footer { text-align: center; margin-top: 32px; padding-top: 16px; font-size: 12px; color: #3a4555; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>🍟 <span>PomesTeam Business Plan</span> — Von 942 auf 100K+ Follower</h1>
+  <div class="sub">Strategischer Wachstumsplan @pomesteam | Pomeranian Lifestyle Brand | Live-Daten Stand: 10.02.2026 07:20 EST</div>
+</div>
+
+<!-- IST-ZUSTAND -->
+<div class="section-title"><span>📍</span>Ist-Zustand (Live API-Daten)</div>
+<div class="cases-bar">
+  <div class="case-item">
+    <div class="case-val c-orange">942</div>
+    <div class="case-label">IG Follower</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val" style="color:#5a6577">0</div>
+    <div class="case-label">TikTok</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">398</div>
+    <div class="case-label">Posts</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-yellow">Ø 31</div>
+    <div class="case-label">Reach/Post</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">38.8%</div>
+    <div class="case-label">Ø Engagement</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-blue">7/7+PT</div>
+    <div class="case-label">API + Page Token</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">100%</div>
+    <div class="case-label">Kommentar-Rate</div>
+  </div>
+</div>
+
+<!-- VISION / PHASEN -->
+<div class="section-title"><span>🎯</span>Wachstumsziele — 4 Phasen</div>
+<div class="grid-4">
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-orange"></span>Phase 1 — Feb 2026</div>
+    <div class="value" style="font-size:30px">2.000</div>
+    <div class="sub-value c-orange">IG Follower</div>
+    <div class="prog-bar"><div class="prog-fill prog-fill-orange" style="width:47%"></div></div>
+    <div class="detail"><li>942 / 2.000 (47%)</li><li>Fokus: Engagement + Reels</li><li>Auto-Kommentare aktiv</li><li>TikTok-Account erstellen</li></div>
+  </div>
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-yellow"></span>Phase 2 — Q2 2026</div>
+    <div class="value" style="font-size:30px">15.000</div>
+    <div class="sub-value c-yellow">Combined (IG+TT)</div>
+    <div class="prog-bar"><div class="prog-fill" style="width:6%; background:linear-gradient(90deg,#eab308,#facc15)"></div></div>
+    <div class="detail"><li>8.000 IG + 7.000 TikTok</li><li>Erste bezahlte Collabs</li><li>Collab-Netzwerk aufbauen</li><li>Affiliate-Links starten</li></div>
+  </div>
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-green"></span>Phase 3 — Q3/Q4 2026</div>
+    <div class="value" style="font-size:30px">50.000</div>
+    <div class="sub-value c-green">Combined (IG+TT)</div>
+    <div class="prog-bar"><div class="prog-fill prog-fill-green" style="width:2%"></div></div>
+    <div class="detail"><li>25.000 IG + 25.000 TikTok</li><li>Regelmäßige Brand Deals</li><li>YouTube starten</li><li>$2.000-5.000/Monat</li></div>
+  </div>
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-purple"></span>Phase 4 — 2027</div>
+    <div class="value" style="font-size:30px">100K+</div>
+    <div class="sub-value c-purple">Lifestyle Brand</div>
+    <div class="prog-bar"><div class="prog-fill prog-fill-purple" style="width:1%"></div></div>
+    <div class="detail"><li>Eigene Merch-Linie</li><li>Hundezubehör-Brand</li><li>Multi-Platform Präsenz</li><li>$5.000-15.000/Monat</li></div>
+  </div>
+</div>
+
+<!-- USP -->
+<div class="section-title"><span>💎</span>Unique Selling Points — Warum @pomesteam gewinnt</div>
+<div class="grid-4">
+  <div class="tier-card border-orange">
+    <div class="tier-label c-orange">🐾 ZWEI CHARAKTERE</div>
+    <div class="tier-value" style="font-size:20px">Milo & Lanna</div>
+    <div class="tier-detail">
+      <div>Milo: verschlafen, chaotisch, relatable</div>
+      <div>Lanna: elegant, Perlen, Queen-Energy</div>
+      <div>Gegensätze = doppelte Stories</div>
+      <div>Fans wählen Favoriten → Engagement</div>
+    </div>
+  </div>
+  <div class="tier-card border-blue">
+    <div class="tier-label c-blue">🌍 BILINGUAL</div>
+    <div class="tier-value" style="font-size:20px">EN + ES</div>
+    <div class="tier-detail">
+      <div>Englisch: globale Reichweite</div>
+      <div>Spanisch: 500M+ native Speaker</div>
+      <div>Latam = größte Pet-Community</div>
+      <div>Doppelter Markt, selber Content</div>
+    </div>
+  </div>
+  <div class="tier-card border-green">
+    <div class="tier-label c-green">🤖 AI-POWERED</div>
+    <div class="tier-value" style="font-size:20px">Voll automatisiert</div>
+    <div class="tier-detail">
+      <div>Auto-Posting 3x täglich</div>
+      <div>Auto-Kommentar-Antworten</div>
+      <div>Live Analytics via API</div>
+      <div>Profile Scanner (Competitor Intel) 🆕</div>
+    </div>
+  </div>
+  <div class="tier-card border-purple">
+    <div class="tier-label c-purple">📊 DATEN-GETRIEBEN</div>
+    <div class="tier-value" style="font-size:20px">Performance-First</div>
+    <div class="tier-detail">
+      <div>Echtzeit Post-Insights</div>
+      <div>Engagement-Rate Tracking</div>
+      <div>Saves & Shares optimiert</div>
+      <div>Strategie basiert auf Daten, nicht Bauchgefühl</div>
+    </div>
+  </div>
+</div>
+
+<!-- GROWTH STRATEGY -->
+<div class="section-title"><span>🚀</span>Growth-Strategie — Wie wir wachsen</div>
+<div class="grid-3">
+  <div class="tier-card border-red">
+    <div class="tier-label c-red">🔴 SOFORT — Reach erhöhen</div>
+    <div class="tier-value" style="font-size:18px">Ø 31 → Ø 500+</div>
+    <div class="tier-detail">
+      <div>Reels statt nur Fotos (5-10x Reach)</div>
+      <div>Trending Sounds nutzen</div>
+      <div>Hook in ersten 2 Sekunden</div>
+      <div>Hashtag-Rotation intensivieren</div>
+      <div>Posting-Zeiten A/B testen</div>
+    </div>
+  </div>
+  <div class="tier-card border-orange">
+    <div class="tier-label c-orange">🟠 KURZFRISTIG — Engagement</div>
+    <div class="tier-value" style="font-size:18px">Community aufbauen</div>
+    <div class="tier-detail">
+      <div>15 Kommentare/Tag auf Dog-Pages</div>
+      <div>Auto-Reply auf alle Kommentare ✅</div>
+      <div>DM-Begrüßung neue Follower</div>
+      <div>"Tag us to be featured" in Bio</div>
+      <div>Collabs mit Pet-Creators</div>
+    </div>
+  </div>
+  <div class="tier-card border-green">
+    <div class="tier-label c-green">🟢 MITTELFRISTIG — Multi-Platform</div>
+    <div class="tier-value" style="font-size:18px">TikTok + YouTube</div>
+    <div class="tier-detail">
+      <div>TikTok: gleicher Content, neues Publikum</div>
+      <div>YouTube Shorts: Compilations</div>
+      <div>Cross-Promotion zwischen Plattformen</div>
+      <div>Email-Liste aufbauen (für Merch)</div>
+    </div>
+  </div>
+</div>
+
+<!-- CAPTION FORMULA -->
+<div class="section-title"><span>📝</span>Caption-Formel — Jeder Post folgt diesem Schema</div>
+<div class="grid-3">
+  <div class="tier-card border-red">
+    <div class="tier-label c-red">SCHRITT 1 — HOOK</div>
+    <div class="tier-value" style="font-size:20px">Scroll stoppen</div>
+    <div class="tier-detail">
+      <div>"POV:", "when your...", Frage</div>
+      <div>Neugier oder Emotion wecken</div>
+      <div>Erste 1-2 Zeilen = alles</div>
+      <div>Kein generischer Start</div>
+    </div>
+  </div>
+  <div class="tier-card border-orange">
+    <div class="tier-label c-orange">SCHRITT 2 — VALUE</div>
+    <div class="tier-value" style="font-size:20px">Mehrwert liefern</div>
+    <div class="tier-detail">
+      <div>Story, Emotion, relatable Moment</div>
+      <div>Max 2-3 Zeilen, punchy</div>
+      <div>Save-worthy Content</div>
+      <div>Teen-friendly Sprache</div>
+    </div>
+  </div>
+  <div class="tier-card border-green">
+    <div class="tier-label c-green">SCHRITT 3 — CTA</div>
+    <div class="tier-value" style="font-size:20px">Aktion auslösen</div>
+    <div class="tier-detail">
+      <div>"tag someone who..."</div>
+      <div>"save for later" → Saves pushen</div>
+      <div>"share with your bestie" → Shares</div>
+      <div>Ziel: Saves & Shares > Likes</div>
+    </div>
+  </div>
+</div>
+
+<!-- MONETARISIERUNG -->
+<div class="section-title"><span>💰</span>Monetarisierung — Wann kommt Geld rein?</div>
+<div class="grid-4">
+  <div class="tier-card border-yellow">
+    <div class="tier-label c-yellow">AB 5.000 FOLLOWER</div>
+    <div class="tier-value" style="font-size:18px">$50-200/Mo</div>
+    <div class="tier-detail">
+      <div>Gratis-Produkte von Pet-Brands</div>
+      <div>Affiliate-Links (5-15%)</div>
+      <div>Micro-Influencer Status</div>
+      <div>Erste Kontakte knüpfen</div>
+    </div>
+  </div>
+  <div class="tier-card border-orange">
+    <div class="tier-label c-orange">AB 15.000 FOLLOWER</div>
+    <div class="tier-value" style="font-size:18px">$500-1.500/Mo</div>
+    <div class="tier-detail">
+      <div>$100-300 pro gesponsertem Post</div>
+      <div>Pet-Brand Ambassadorships</div>
+      <div>Regelmäßige Kooperationen</div>
+      <div>UGC für Brands erstellen</div>
+    </div>
+  </div>
+  <div class="tier-card border-green">
+    <div class="tier-label c-green">AB 50.000 FOLLOWER</div>
+    <div class="tier-value" style="font-size:18px">$2K-5K/Mo</div>
+    <div class="tier-detail">
+      <div>$500-2.000 pro Post/Reel</div>
+      <div>Langfristige Verträge</div>
+      <div>Event-Einladungen</div>
+      <div>Merch-Shop starten</div>
+    </div>
+  </div>
+  <div class="tier-card border-purple">
+    <div class="tier-label c-purple">AB 100.000 FOLLOWER</div>
+    <div class="tier-value" style="font-size:18px">$5K-15K/Mo</div>
+    <div class="tier-detail">
+      <div>Eigene Hundezubehör-Linie</div>
+      <div>Merch (Hoodies, Sticker, Tassen)</div>
+      <div>YouTube-Monetarisierung</div>
+      <div>Vollständige Lifestyle Brand</div>
+    </div>
+  </div>
+</div>
+
+<!-- ROADMAP -->
+<div class="section-title"><span>🗺️</span>Roadmap — Die nächsten 12 Monate</div>
+<div class="grid-2">
+  <div class="check-card">
+    <div class="check-title c-orange">🍟 Februar 2026 — Foundation</div>
+    <div class="roadmap">
+      <div class="rm-item"><div class="rm-dot done"></div><div class="rm-title">Account-Strategie v2.0</div><div class="rm-desc">Nische, Zielgruppe, Caption-Formel</div></div>
+      <div class="rm-item"><div class="rm-dot done"></div><div class="rm-title">Auto-Posting aktiviert</div><div class="rm-desc">3x täglich, EN+ES, 15 Hashtags</div></div>
+      <div class="rm-item"><div class="rm-dot done"></div><div class="rm-title">Token-Upgrade (7 Permissions)</div><div class="rm-desc">Comments, Insights, Messages, Pages</div></div>
+      <div class="rm-item"><div class="rm-dot done"></div><div class="rm-title">Kommentar-Automation</div><div class="rm-desc">100% Antwortrate, 9 Replies heute</div></div>
+      <div class="rm-item"><div class="rm-dot done"></div><div class="rm-title">Live Analytics Dashboard</div><div class="rm-desc">Reach, Saves, Shares, Engagement</div></div>
+      <div class="rm-item"><div class="rm-dot done"></div><div class="rm-title">Facebook Page erstellt + verknüpft</div><div class="rm-desc">Page Token für Business Discovery</div></div>
+      <div class="rm-item"><div class="rm-dot done"></div><div class="rm-title">Profile Scanner aktiviert 🆕</div><div class="rm-desc">@mr.dogoftheday: 1M Follower, Feature-Modell analysiert</div></div>
+      <div class="rm-item"><div class="rm-dot active"></div><div class="rm-title">Reach steigern (Ø31 → Ø500+)</div><div class="rm-desc">Reels produzieren, Hashtags rotieren</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Bio: "DM us to be featured" + #pomesteam</div><div class="rm-desc">Scanner-Insight von @mr.dogoftheday</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Ziel: 2.000 IG Follower</div></div>
+    </div>
+  </div>
+  <div class="check-card">
+    <div class="check-title c-yellow">📈 März 2026 — Scale</div>
+    <div class="roadmap">
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">TikTok-Account starten</div><div class="rm-desc">Content von IG repurposen</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Reel-Produktion (2-3x/Woche)</div><div class="rm-desc">Trending Sounds, 7-15 Sek</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Collab-Netzwerk aufbauen</div><div class="rm-desc">10+ Pet-Creator kontaktieren</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Feature-Page-Strategie</div><div class="rm-desc">Von @mr.dogoftheday gefeatured werden</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">DM-Automation starten</div><div class="rm-desc">Neue Follower begrüßen</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Ziel: 5.000 IG + TikTok-Start</div></div>
+    </div>
+  </div>
+  <div class="check-card">
+    <div class="check-title c-green">💰 Q2 2026 — Monetize</div>
+    <div class="roadmap">
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Erste Brand-Kooperationen</div><div class="rm-desc">Pet-Food, Spielzeug, Zubehör</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Affiliate-Setup</div><div class="rm-desc">Amazon Associates, Pet-Shops</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Media Kit erstellen</div><div class="rm-desc">Professionelle Pitch-Unterlagen</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Saisonale Kampagnen</div><div class="rm-desc">Sommer, Holidays, Events</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Ziel: 15.000 Combined, $500+/Mo</div></div>
+    </div>
+  </div>
+  <div class="check-card">
+    <div class="check-title c-purple">🏆 Q3/Q4 2026+ — Brand</div>
+    <div class="roadmap">
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">PomesTeam Brand Identity</div><div class="rm-desc">Logo, Farben, Merch-Design</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">YouTube-Kanal starten</div><div class="rm-desc">Vlogs, Compilations, Day in the life</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Merch-Shop launchen</div><div class="rm-desc">Sticker, Hoodies, Hundezubehör</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Eigene Produktlinie</div><div class="rm-desc">PomesTeam Hundezubehör</div></div>
+      <div class="rm-item"><div class="rm-dot future"></div><div class="rm-title">Ziel: 50K-100K+, $2K-5K+/Mo</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- KOSTEN -->
+<div class="section-title"><span>📊</span>Kosten vs. Einnahmen</div>
+<div class="grid-3">
+  <div class="tier-card border-red">
+    <div class="tier-label c-red">KOSTEN (MONATLICH)</div>
+    <div class="tier-value" style="font-size:22px">~$5-15</div>
+    <div class="tier-detail">
+      <div>Instagram API: $0 (kostenlos)</div>
+      <div>Milo AI-Betrieb: ~$5-15 anteilig</div>
+      <div>Content: $0 (eigene Fotos/Videos)</div>
+      <div>Tools: $0 (alles selbst gebaut)</div>
+      <div>Hosting: $0 (lokal)</div>
+    </div>
+  </div>
+  <div class="tier-card border-green">
+    <div class="tier-label c-green">EINNAHMEN (PROGNOSE)</div>
+    <div class="tier-value" style="font-size:22px">$0 → $15K+</div>
+    <div class="tier-detail">
+      <div>Feb-März: $0 (Aufbauphase)</div>
+      <div>Ab 5K: $50-200/Mo (Affiliate)</div>
+      <div>Ab 15K: $500-1.500/Mo (Collabs)</div>
+      <div>Ab 50K: $2K-5K/Mo (Brand Deals)</div>
+      <div>Ab 100K: $5K-15K/Mo (eigene Produkte)</div>
+    </div>
+  </div>
+  <div class="tier-card border-orange">
+    <div class="tier-label c-orange">BREAK-EVEN & ROI</div>
+    <div class="tier-value" style="font-size:22px">Monat 3-4</div>
+    <div class="tier-detail">
+      <div>Minimale Fixkosten (~$10/Mo)</div>
+      <div>Erste Einnahmen ab ~5.000 Follower</div>
+      <div>ROI steigt exponentiell</div>
+      <div>Nahezu risikofreies Investment</div>
+      <div>Passives Einkommen durch Automation</div>
+    </div>
+  </div>
+</div>
+
+<!-- WETTBEWERB -->
+<div class="section-title"><span>⚡</span>Wettbewerbsvorteil gegenüber anderen Pet-Accounts</div>
+<div class="cases-bar">
+  <div class="case-item">
+    <div class="case-val c-orange">🤖</div>
+    <div class="case-label">AI-Automation<br>24/7 ohne Pause</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">🌍</div>
+    <div class="case-label">Bilingual<br>2x Markt</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-yellow">🐾</div>
+    <div class="case-label">2 Charaktere<br>doppelte Stories</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-blue">📊</div>
+    <div class="case-label">Daten-getrieben<br>API Analytics</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-purple">💰</div>
+    <div class="case-label">Near-Zero Cost<br>max ROI</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-red">⚡</div>
+    <div class="case-label">100% Reply-Rate<br>sofort</div>
+  </div>
+</div>
+
+<!-- SUCCESS BOX -->
+<div class="success-box">
+  <div class="succ-title">🚀 PomesTeam = Near-Zero-Cost Business mit exponentiellem Upside</div>
+  <div class="succ-text">
+    ~$10/Monat Kosten · Vollautomatisiert durch Milo AI · 7/7 Permissions + Page Token aktiv · 
+    Profile Scanner LIVE (Competitor Intelligence) · 100% Kommentar-Antwortrate · 
+    Zwei einzigartige Hunde-Charaktere · Bilingualer Content für globale Reichweite · 
+    Klarer 4-Phasen-Plan: 942 → 2K → 15K → 50K → 100K+ · 
+    Break-Even in Monat 3-4 · Langfristig: eigene Brand mit $5K-15K/Monat.
+  </div>
+</div>
+
+<div class="warning-box">
+  <div class="warn-title">⚠️ Kritischer nächster Schritt: Reach erhöhen</div>
+  <div class="warn-text">
+    Aktuell erreichen Posts nur Ø 31 von 942 Followern (3.3%). Der <strong style="color:#e8ecf0">wichtigste Hebel ist Reel-Content</strong> — 
+    Reels bekommen 5-10x mehr Reach als Fotos. Sobald wir regelmäßig Reels posten, wird das Wachstum exponentiell beschleunigen.
+    Zweiter Hebel: aktives Engagement auf großen Dog-Feature-Pages (15 Kommentare/Tag).
+  </div>
+</div>
+
+<div class="footer">
+  🍟 PomesTeam Business Plan v3.0 · Live API Data · Managed by Milo 🦁 · Updated: 10.02.2026 07:20 EST
+</div>
+
+</body>
+</html>

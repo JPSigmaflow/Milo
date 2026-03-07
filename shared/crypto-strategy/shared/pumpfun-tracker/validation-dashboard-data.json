@@ -1,0 +1,32 @@
+{
+  "updated": "2026-03-04T21:02:46.894Z",
+  "period": "2026-02-24 to 2026-03-04",
+  "metrics": {
+    "precision": 13.33,
+    "recall": 100.0,
+    "hits": 2,
+    "misses": 0,
+    "falsePositives": 13,
+    "totalAlerts": 15,
+    "totalMEXC": 2
+  },
+  "recentHits": [
+    {
+      "symbol": "TRIPLET",
+      "name": "Tung Tung Tung Sahur",
+      "alertDate": "2026-02-24",
+      "listingDate": "2026-03-03",
+      "leadTime": "7 days",
+      "score": 8
+    },
+    {
+      "symbol": "我的刀盾",
+      "name": "what the dog doing?",
+      "alertDate": "2026-03-03",
+      "listingDate": "2026-03-04",
+      "leadTime": "10 hours",
+      "score": null
+    }
+  ],
+  "recentMisses": []
+}

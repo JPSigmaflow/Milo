@@ -1,0 +1,14 @@
+{
+  "zusagen": [],
+  "stats": {
+    "total": 0,
+    "erfuellt": 0,
+    "offen": 0,
+    "ueberfaellig": 0,
+    "erfuellungsrate": 0
+  },
+  "config": {
+    "reminder_hours_before": 24,
+    "auto_track": true
+  }
+}

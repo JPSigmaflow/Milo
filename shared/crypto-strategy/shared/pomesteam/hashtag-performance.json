@@ -1,0 +1,76 @@
+{
+  "analysis_date": "2026-02-15",
+  "data_source": "local_metrics (API token expired — no insights available)",
+  "token_status": "EXPIRED — needs refresh before next analysis",
+  "period": "2026-02-11 to 2026-02-13",
+  "posts_analyzed": 5,
+  "post_performance": [
+    {
+      "caption_start": "Protective Mode",
+      "date": "2026-02-11",
+      "type": "IMAGE",
+      "likes": 12,
+      "comments": 4,
+      "engagement_score": 16,
+      "rank": 1,
+      "likely_hashtags": ["#pomeranian", "#protectivedog", "#doglife", "#pomlife", "#dogsofinstagram"],
+      "content_category": "cute/portrait"
+    },
+    {
+      "caption_start": "Zhouzhuang Squad",
+      "date": "2026-02-12",
+      "type": "IMAGE",
+      "likes": 8,
+      "comments": 6,
+      "engagement_score": 14,
+      "rank": 2,
+      "likely_hashtags": ["#traveldog", "#shanghaidog", "#chinadog", "#zhouzhuang"],
+      "content_category": "travel/china"
+    },
+    {
+      "caption_start": "First Snow 2026",
+      "date": "2026-02-11",
+      "type": "VIDEO",
+      "likes": 8,
+      "comments": 0,
+      "engagement_score": 8,
+      "rank": 3,
+      "likely_hashtags": ["#dogreels", "#snowdog", "#pomeranian", "#winterdog"],
+      "content_category": "funny/seasonal"
+    },
+    {
+      "caption_start": "Short King",
+      "date": "2026-02-11",
+      "type": "IMAGE",
+      "likes": 6,
+      "comments": 3,
+      "engagement_score": 9,
+      "rank": 4,
+      "likely_hashtags": ["#pomeranian", "#smalldog", "#shortking", "#pomlife"],
+      "content_category": "funny/pov"
+    },
+    {
+      "caption_start": "Robot Dog vs Pom",
+      "date": "2026-02-13",
+      "type": "VIDEO",
+      "likes": 1,
+      "comments": 0,
+      "engagement_score": 1,
+      "rank": 5,
+      "likely_hashtags": ["#dogreels", "#robotdog", "#funnypom", "#pomeranian"],
+      "content_category": "funny/tech"
+    }
+  ],
+  "insights": {
+    "top_content_types": ["IMAGE with emotional/protective theme", "IMAGE with travel/location"],
+    "comment_drivers": "Travel posts + cute/emotional posts drive comments",
+    "video_note": "Reels getting low engagement — may need better hooks or hashtag optimization",
+    "best_engagement_rate": "Protective Mode — emotional content resonates"
+  },
+  "hashtag_recommendations": {
+    "keep_strong": ["#pomlife", "#pomeranian", "#dogsofinstagram", "#traveldog", "#shanghaidog"],
+    "drop_weak": ["#teacuppom", "#spitzdog", "#zwergspitz", "#minidog", "#fyp"],
+    "add_trending": ["#pomtok", "#dogmom", "#smalldoglife", "#dogsoftiktok", "#petstagram", "#pomeranianlife", "#dogcontent", "#cuteoverload"]
+  },
+  "next_sets": "see hashtag-strategy.md"
+}

@@ -1,0 +1,265 @@
+{
+  "supervisor": {
+    "check_interval_seconds": 300,
+    "telegram_chat_id": "-5299930122",
+    "db_path": "supervisor.db",
+    "dashboard_url": "http://localhost:8081",
+    "max_retries": 3,
+    "circuit_breaker_threshold": 5,
+    "circuit_breaker_reset_seconds": 3600,
+    "daily_summary_hour": 22
+  },
+  "bots": [
+    {
+      "id": "milocoach",
+      "name": "🧘 MiloCoach",
+      "agent": "milocoach",
+      "enabled": true,
+      "crons": [
+        {"name": "Daily Reflection", "schedule": "0 9 * * *", "max_age_minutes": 1500}
+      ],
+      "databases": [],
+      "sla": {"max_latency_seconds": 60, "max_error_rate": 0.1},
+      "kpis": [
+        {
+          "id": "yoga_reminder",
+          "name": "Yoga Reminder (7:00)",
+          "type": "cron_recency",
+          "cron_name": "Juri Yoga Reminder 7AM",
+          "max_age_hours": 26,
+          "weight": 33
+        },
+        {
+          "id": "daily_reflection",
+          "name": "Daily Reflection (9:00)",
+          "type": "cron_recency",
+          "cron_name": "LinkedIn Reminder Juri",
+          "max_age_hours": 26,
+          "weight": 34,
+          "_note": "Using LinkedIn Reminder as proxy for daily engagement (9:00+20:00)"
+        },
+        {
+          "id": "abend_affirmation",
+          "name": "Abend-Affirmation (21:30)",
+          "type": "cron_recency",
+          "cron_name": "Juri Abend-Affirmatio",
+          "max_age_hours": 26,
+          "weight": 33
+        }
+      ]
+    },
+    {
+      "id": "pomi",
+      "name": "🍟 Pomi",
+      "agent": "pomesteam",
+      "enabled": true,
+      "crons": [
+        {"name": "Daily Post", "schedule": "daily", "max_age_minutes": 1500},
+        {"name": "Comment Monitor", "schedule": "periodic", "max_age_minutes": 120},
+        {"name": "Engagement", "schedule": "periodic", "max_age_minutes": 360},
+        {"name": "Daily Report", "schedule": "daily", "max_age_minutes": 1500}
+      ],
+      "databases": [],
+      "sla": {"max_latency_seconds": 120, "max_error_rate": 0.15},
+      "kpis": [
+        {
+          "id": "last_post",
+          "name": "Instagram Post < 48h",
+          "type": "postplan_recency",
+          "postplan_path": "/Users/milo/.openclaw/workspace/shared/pomesteam/postplan.json",
+          "max_age_hours": 48,
+          "weight": 30
+        },
+        {
+          "id": "engagement",
+          "name": "Engagement-Paket heute",
+          "type": "cron_recency",
+          "cron_name": "PomesTeam Engagement",
+          "max_age_hours": 26,
+          "weight": 25
+        },
+        {
+          "id": "comment_monitor",
+          "name": "Kommentare beantwortet",
+          "type": "cron_recency",
+          "cron_name": "PomesTeam Comment Mon",
+          "max_age_hours": 26,
+          "weight": 20
+        },
+        {
+          "id": "daily_report",
+          "name": "Daily Report gesendet",
+          "type": "cron_recency",
+          "cron_name": "PomesTeam Daily Exec",
+          "max_age_hours": 26,
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "id": "pump",
+      "name": "🎰 Pump",
+      "agent": "pump",
+      "enabled": true,
+      "crons": [
+        {"name": "Scanner", "schedule": "periodic", "max_age_minutes": 60},
+        {"name": "Price Tracker 6h", "schedule": "0 */6 * * *", "max_age_minutes": 400},
+        {"name": "Dashboard Export", "schedule": "daily", "max_age_minutes": 1500},
+        {"name": "MEXC Listing Check", "schedule": "periodic", "max_age_minutes": 360}
+      ],
+      "databases": [
+        {"path": "/Users/milo/.openclaw/workspace/shared/pumpfun-tracker/pumpfun.db", "name": "pumpfun.db"}
+      ],
+      "sla": {"max_latency_seconds": 90, "max_error_rate": 0.1},
+      "kpis": [
+        {
+          "id": "scanner_running",
+          "name": "AI Evaluation läuft (< 1h)",
+          "type": "cron_recency",
+          "cron_name": "PumpWatch — AI Evalua",
+          "max_age_hours": 1,
+          "weight": 35
+        },
+        {
+          "id": "price_snapshots",
+          "name": "Price Tracker aktuell",
+          "type": "cron_recency",
+          "cron_name": "PumpWatch — Price Tra",
+          "max_age_hours": 4,
+          "weight": 30
+        },
+        {
+          "id": "dashboard_export",
+          "name": "Dashboard Export aktuell",
+          "type": "git_recency",
+          "git_path": "/Users/milo/.openclaw/workspace/shared/crypto-dashboard/",
+          "max_age_hours": 8,
+          "weight": 35
+        }
+      ]
+    },
+    {
+      "id": "guardian",
+      "name": "📊 Guardian",
+      "agent": "guardian",
+      "enabled": true,
+      "crons": [
+        {"name": "portfolio-monitor", "schedule": "periodic", "max_age_minutes": 120},
+        {"name": "Consistency Check", "schedule": "daily", "max_age_minutes": 1500},
+        {"name": "Dashboard Export", "schedule": "daily", "max_age_minutes": 1500}
+      ],
+      "databases": [
+        {"path": "/Users/milo/.openclaw/workspace/shared/crypto.db", "name": "crypto.db"}
+      ],
+      "sla": {"max_latency_seconds": 60, "max_error_rate": 0.1},
+      "kpis": [
+        {
+          "id": "portfolio_prices",
+          "name": "Portfolio-Preise aktuell (< 4h)",
+          "type": "cron_recency",
+          "cron_name": "portfolio-monitor",
+          "max_age_hours": 4,
+          "weight": 40
+        },
+        {
+          "id": "consistency_check",
+          "name": "DB↔MEXC Konsistenz (< 24h)",
+          "type": "cron_recency",
+          "cron_name": "Consistency Check DB",
+          "max_age_hours": 24,
+          "weight": 30
+        },
+        {
+          "id": "dashboard_export",
+          "name": "Dashboard nach Update exportiert",
+          "type": "git_recency",
+          "git_path": "/Users/milo/.openclaw/workspace/shared/crypto-dashboard/",
+          "max_age_hours": 8,
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "id": "analyst",
+      "name": "📡 Analyst",
+      "agent": "analyst",
+      "enabled": true,
+      "crons": [
+        {"name": "ANALYST AI Scanner", "schedule": "periodic", "max_age_minutes": 120},
+        {"name": "Daily Perplexity Insights", "schedule": "daily", "max_age_minutes": 1500},
+        {"name": "Overall Score", "schedule": "daily", "max_age_minutes": 1500},
+        {"name": "KOL Scanner", "schedule": "periodic", "max_age_minutes": 360}
+      ],
+      "databases": [
+        {"path": "/Users/milo/.openclaw/workspace/shared/scanner.db", "name": "scanner.db"}
+      ],
+      "sla": {"max_latency_seconds": 90, "max_error_rate": 0.1},
+      "kpis": [
+        {
+          "id": "scanner_analysis",
+          "name": "Scanner-Analyse (< 6h)",
+          "type": "cron_recency",
+          "cron_name": "ANALYST - AI Scanner",
+          "max_age_hours": 6,
+          "weight": 30
+        },
+        {
+          "id": "perplexity_insights",
+          "name": "Perplexity Insights heute",
+          "type": "cron_recency",
+          "cron_name": "Viral Scanner",
+          "max_age_hours": 12,
+          "weight": 25
+        },
+        {
+          "id": "kol_scanner",
+          "name": "KOL Scanner Audit heute",
+          "type": "cron_recency",
+          "cron_name": "Alpha Watch Monitor",
+          "max_age_hours": 6,
+          "weight": 20
+        },
+        {
+          "id": "overall_score",
+          "name": "Overall Score Bewertung",
+          "type": "cron_recency",
+          "cron_name": "Overall Score Bewertu",
+          "max_age_hours": 26,
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "id": "sentinel",
+      "name": "🛡️ Sentinel",
+      "agent": "sentinel",
+      "enabled": true,
+      "crons": [
+        {"name": "VDA Audit", "schedule": "daily", "max_age_minutes": 1500},
+        {"name": "Quality Check", "schedule": "periodic", "max_age_minutes": 720}
+      ],
+      "databases": [],
+      "sla": {"max_latency_seconds": 120, "max_error_rate": 0.1},
+      "kpis": [
+        {
+          "id": "vda_audit",
+          "name": "VDA Audit (wöchentlich)",
+          "type": "cron_recency",
+          "cron_name": "SENTINEL VDA 6.3 Audi",
+          "max_age_hours": 168,
+          "weight": 50,
+          "_note": "Runs Fridays only, so 7 days tolerance"
+        },
+        {
+          "id": "team_audit",
+          "name": "Team Gesamt-Audit (14d)",
+          "type": "cron_recency",
+          "cron_name": "Sentinel — Team-Gesam",
+          "max_age_hours": 360,
+          "weight": 50,
+          "_note": "Runs every 14 days"
+        }
+      ]
+    }
+  ]
+}

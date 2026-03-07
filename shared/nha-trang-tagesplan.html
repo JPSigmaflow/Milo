@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px;
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  padding: 48px;
+}
+.header { text-align: center; margin-bottom: 40px; }
+.header h1 { font-size: 42px; font-weight: 700; color: #f7931a; margin-bottom: 8px; }
+.header .subtitle { font-size: 24px; color: #64b5f6; font-weight: 500; }
+.header .date { font-size: 18px; color: #888; margin-top: 6px; }
+.card { background: #14141f; border: 1px solid #2a2a3a; border-radius: 16px; padding: 28px 32px; margin-bottom: 24px; }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; border-bottom: 1px solid #2a2a3a; padding-bottom: 14px; }
+.card-title { font-size: 26px; font-weight: 700; color: #f7931a; }
+.card-badge { font-size: 18px; font-weight: 600; padding: 6px 16px; border-radius: 20px; }
+.green { color: #4caf50; background: rgba(76,175,80,0.12); }
+.blue { color: #64b5f6; background: rgba(100,181,246,0.12); }
+.orange { color: #f7931a; background: rgba(247,147,26,0.12); }
+.section-title { font-size: 20px; font-weight: 600; color: #64b5f6; margin-bottom: 10px; margin-top: 16px; }
+.row { display: flex; align-items: flex-start; margin-bottom: 14px; padding-left: 4px; }
+.row-icon { font-size: 24px; margin-right: 12px; min-width: 30px; text-align: center; }
+.row-info { flex: 1; }
+.row-name { font-size: 18px; font-weight: 600; color: #fff; }
+.row-desc { font-size: 15px; color: #aaa; margin-top: 2px; }
+.row-es { font-size: 14px; color: #f7931a99; margin-top: 2px; font-style: italic; }
+.row-value { font-size: 17px; font-weight: 500; color: #f7931a; min-width: 120px; text-align: right; }
+.highlight { background: linear-gradient(135deg, #1a1a2e, #14141f); border: 1px solid #f7931a33; border-radius: 16px; padding: 28px 32px; margin-bottom: 24px; }
+.timeline { position: relative; padding-left: 24px; border-left: 2px solid #2a2a3a; margin-left: 16px; }
+.timeline-item { margin-bottom: 20px; position: relative; }
+.timeline-item::before { content: ''; position: absolute; left: -29px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #f7931a; }
+.timeline-time { font-size: 16px; font-weight: 700; color: #f7931a; }
+.timeline-name { font-size: 18px; font-weight: 600; color: #fff; margin-top: 2px; }
+.timeline-desc { font-size: 14px; color: #aaa; margin-top: 2px; }
+.timeline-es { font-size: 13px; color: #f7931a99; font-style: italic; margin-top: 1px; }
+.total-bar { background: linear-gradient(135deg, #1b2a1b, #14141f); border: 1px solid #4caf5044; border-radius: 16px; padding: 20px 32px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+.total-label { font-size: 20px; font-weight: 600; color: #e0e0e0; }
+.total-val { font-size: 22px; font-weight: 700; color: #4caf50; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🌴 Tagesausflug Nha Trang</h1>
+  <div class="subtitle">Stone Pagoda + Ponagar Towers + Dinner</div>
+  <div class="date">Ab The Anam Cam Ranh · 🇩🇪 Deutsch / 🇪🇸 Español</div>
+</div>
+
+<!-- TIMELINE -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-title">📋 Tagesplan / Plan del día</div>
+    <div class="card-badge green">~6–7 Stunden</div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-time">09:00 – 09:15</div>
+      <div class="timeline-name">🚕 Taxi ab The Anam → Stone Pagoda</div>
+      <div class="timeline-desc">~5–10 km · ca. 10–15 Min.</div>
+      <div class="timeline-es">🇪🇸 Taxi desde The Anam → Pagoda de Piedra · ~10–15 min</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-time">09:15 – 10:00</div>
+      <div class="timeline-name">🛕 Stone Pagoda (Tu Van / Chùa Ốc)</div>
+      <div class="timeline-desc">Ca. 45 Min. Besichtigung</div>
+      <div class="timeline-es">🇪🇸 Aprox. 45 min de visita</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-time">10:00 – 10:30</div>
+      <div class="timeline-name">🚕 Taxi → Ponagar Cham Towers</div>
+      <div class="timeline-desc">~20 km · ca. 25–30 Min.</div>
+      <div class="timeline-es">🇪🇸 ~20 km · aprox. 25–30 min</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-time">10:30 – 11:30</div>
+      <div class="timeline-name">🏛️ Ponagar Cham Towers</div>
+      <div class="timeline-desc">Ca. 45–60 Min. Besichtigung</div>
+      <div class="timeline-es">🇪🇸 Aprox. 45–60 min de visita</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-time">12:00 – 13:30</div>
+      <div class="timeline-name">🍽️ Mittagessen / Almuerzo in Nha Trang</div>
+      <div class="timeline-desc">Oder als Abendessen kombinieren (siehe Restaurants unten)</div>
+      <div class="timeline-es">🇪🇸 O combinar con cena (ver restaurantes abajo)</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-time">14:00 – 14:30</div>
+      <div class="timeline-name">🚕 Rückfahrt / Regreso → The Anam</div>
+      <div class="timeline-desc">~25 km · ca. 30–35 Min.</div>
+      <div class="timeline-es">🇪🇸 ~25 km · aprox. 30–35 min</div>
+    </div>
+  </div>
+</div>
+
+<!-- STOP 1 -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-title">🛕 Stop 1: Stone Pagoda</div>
+    <div class="card-badge orange">Gratis</div>
+  </div>
+  
+  <div class="row">
+    <div class="row-icon">📍</div>
+    <div class="row-info">
+      <div class="row-name">Tu Van Pagoda (Chùa Ốc)</div>
+      <div class="row-desc">388 Ba Thang Tu, Cam Linh, Cam Ranh</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">📏</div>
+    <div class="row-info">
+      <div class="row-name">Entfernung ab The Anam / Distancia</div>
+      <div class="row-desc">~5–10 km · ca. 10–15 Min. Taxi</div>
+      <div class="row-es">🇪🇸 ~5–10 km · aprox. 10–15 min taxi</div>
+    </div>
+    <div class="row-value">~10 km</div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🕐</div>
+    <div class="row-info">
+      <div class="row-name">Öffnungszeiten / Horario</div>
+      <div class="row-desc">Täglich 6:00 – 18:00 Uhr</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🐚</div>
+    <div class="row-info">
+      <div class="row-name">Was ist es? / ¿Qué es?</div>
+      <div class="row-desc">Einzigartiger Tempel komplett aus Steinen, Muscheln und Korallen — seit 1968 handgefertigt von Mönchen. Millionen von Muscheln!</div>
+      <div class="row-es">🇪🇸 Templo único hecho completamente de piedras, conchas y corales — hecho a mano por monjes desde 1968. ¡Millones de conchas!</div>
+    </div>
+  </div>
+</div>
+
+<!-- STOP 2 -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-title">🏛️ Stop 2: Ponagar Cham Towers</div>
+    <div class="card-badge orange">25.000 VND (~€1)</div>
+  </div>
+  
+  <div class="row">
+    <div class="row-icon">📍</div>
+    <div class="row-info">
+      <div class="row-name">Po Nagar Cham Towers</div>
+      <div class="row-desc">61 Hai Thang Tu Street, Bac Nha Trang Ward</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">📏</div>
+    <div class="row-info">
+      <div class="row-name">Entfernung ab Stone Pagoda / Distancia</div>
+      <div class="row-desc">~20 km · ca. 25–30 Min. Taxi</div>
+      <div class="row-es">🇪🇸 ~20 km · aprox. 25–30 min taxi</div>
+    </div>
+    <div class="row-value">~20 km</div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">📏</div>
+    <div class="row-info">
+      <div class="row-name">Entfernung ab The Anam / Distancia</div>
+      <div class="row-desc">~27 km · ca. 35–40 Min. Taxi</div>
+      <div class="row-es">🇪🇸 ~27 km · aprox. 35–40 min taxi</div>
+    </div>
+    <div class="row-value">~27 km</div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🕐</div>
+    <div class="row-info">
+      <div class="row-name">Öffnungszeiten / Horario</div>
+      <div class="row-desc">Täglich 6:00 – 18:00 Uhr</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🏛️</div>
+    <div class="row-info">
+      <div class="row-name">Was ist es? / ¿Qué es?</div>
+      <div class="row-desc">Über 1.200 Jahre alte Cham-Tempelanlage (vor 781 n. Chr.) — 4 Türme, 23m Hauptturm, atemberaubender Blick über Nha Trang</div>
+      <div class="row-es">🇪🇸 Complejo de templos Cham de más de 1.200 años (antes de 781 d.C.) — 4 torres, torre principal de 23m, vista impresionante</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">👗</div>
+    <div class="row-info">
+      <div class="row-name">Dresscode</div>
+      <div class="row-desc">Schultern & Knie bedecken — Tücher am Eingang verfügbar</div>
+      <div class="row-es">🇪🇸 Cubrir hombros y rodillas — telas disponibles en la entrada</div>
+    </div>
+  </div>
+</div>
+
+<!-- RESTAURANT -->
+<div class="card" style="border-color: #f7931a44;">
+  <div class="card-header" style="border-bottom-color: #f7931a33;">
+    <div class="card-title">🍽️ Restaurant-Empfehlungen / Restaurantes</div>
+  </div>
+
+  <div class="section-title">⭐ Top-Empfehlung: Dinner at CIM'S</div>
+  <div class="row">
+    <div class="row-icon">🥇</div>
+    <div class="row-info">
+      <div class="row-name">Dinner at CIM'S</div>
+      <div class="row-desc">Gehobene Küche, persönlich vom Besitzer geführt. Europäisch-vietnamesische Fusionsküche. Fantastische Reviews!</div>
+      <div class="row-es">🇪🇸 Cocina de alta gama, dirigido personalmente por el dueño. Fusión europeo-vietnamita. ¡Reseñas fantásticas!</div>
+      <div class="row-desc" style="margin-top: 4px;">📍 Nha Trang Zentrum · 💰 $$ · ⭐ Top-rated auf TripAdvisor</div>
+    </div>
+  </div>
+
+  <div style="margin-top: 12px; border-top: 1px solid #2a2a3a; padding-top: 12px;">
+    <div class="section-title">🇪🇸 Hispania Nha Trang (Spanisch / Español)</div>
+    <div class="row">
+      <div class="row-icon">🥘</div>
+      <div class="row-info">
+        <div class="row-name">Hispania Nha Trang</div>
+        <div class="row-desc">Spanisches Fine Dining mit Meerblick — perfekt für Gaby! Degustationsmenü & Weinpaarung.</div>
+        <div class="row-es">🇪🇸 Restaurante español de alta cocina con vista al mar — ¡perfecto para Gaby! Menú degustación y maridaje.</div>
+        <div class="row-desc" style="margin-top: 4px;">📍 Nha Trang Beachfront · 💰 $$$ · ⭐ Hervorragende Bewertungen</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 12px; border-top: 1px solid #2a2a3a; padding-top: 12px;">
+    <div class="section-title">🍜 MẮM Restaurant (Vietnamesisch / Vietnamita)</div>
+    <div class="row">
+      <div class="row-icon">🥢</div>
+      <div class="row-info">
+        <div class="row-name">MẮM — Inspired by Central Vietnam</div>
+        <div class="row-desc">Authentische zentralvietnamesische Küche, wunderschönes Ambiente. Perfekt für lokale Spezialitäten!</div>
+        <div class="row-es">🇪🇸 Cocina auténtica del centro de Vietnam, ambiente hermoso. ¡Perfecto para especialidades locales!</div>
+        <div class="row-desc" style="margin-top: 4px;">📍 Nha Trang Zentrum · 💰 $$ · ⭐ Top-rated</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DISTANCES SUMMARY -->
+<div class="total-bar">
+  <div class="total-label">📏 Gesamtstrecke / Distancia total</div>
+  <div class="total-val">~60–65 km</div>
+</div>
+
+<div class="total-bar">
+  <div class="total-label">⏱️ Gesamtzeit / Tiempo total</div>
+  <div class="total-val">~6–7 Stunden</div>
+</div>
+
+<div class="total-bar">
+  <div class="total-label">💰 Kosten / Costos (ohne Essen)</div>
+  <div class="total-val">~€15–25 (Taxi + Eintritt)</div>
+</div>
+
+<!-- TIP -->
+<div class="highlight">
+  <div class="card-title" style="margin-bottom: 12px;">💡 Tipp / Consejo</div>
+  <div class="row">
+    <div class="row-icon">📱</div>
+    <div class="row-info">
+      <div class="row-name">Grab App nutzen / Usar Grab App</div>
+      <div class="row-desc">Günstiger und sicherer als Straßen-Taxis. Festpreis, keine Verhandlung nötig.</div>
+      <div class="row-es">🇪🇸 Más barato y seguro que taxis de calle. Precio fijo, sin necesidad de negociar.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

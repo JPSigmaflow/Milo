@@ -1,0 +1,13 @@
+{
+  "coins": [
+    {
+      "symbol": "ALPH",
+      "name": "Alephium",
+      "added_at": "2026-02-06T23:46:00Z",
+      "added_by": "Chris",
+      "price_at_add": 0.096,
+      "notes": ""
+    }
+  ],
+  "updated_at": "2026-02-06T23:46:00Z"
+}

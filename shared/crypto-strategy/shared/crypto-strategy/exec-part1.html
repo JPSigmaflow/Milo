@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--green:#3fb950;--red:#f85149;--blue:#58a6ff;--purple:#a371f7;--gold:#f0c000;--orange:#d29922}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);padding:28px;width:1200px}
+h1{font-size:24px;margin-bottom:3px}
+h2{font-size:16px;color:var(--blue);margin:20px 0 12px}
+.sub{color:var(--muted);font-size:12px;margin-bottom:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px}
+.grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-bottom:16px}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px}
+.card h3{font-size:13px;margin-bottom:8px}
+.card .big{font-size:22px;font-weight:700;margin-bottom:2px}
+.card .label{font-size:11px;color:var(--muted)}
+.card ul{list-style:none;font-size:11px;color:var(--muted);line-height:1.8}
+.card ul li{padding-left:14px;position:relative}
+.card ul li::before{content:"→ ";position:absolute;left:0;color:var(--blue)}
+.no li::before{content:"❌ "!important;color:var(--red)!important}
+.yes li::before{content:"✅ "!important;color:var(--green)!important}
+.pipe{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+.pipe-step{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:10px 14px;flex:1;min-width:140px;text-align:center}
+.pipe-step .num{font-size:18px;font-weight:700;color:var(--gold)}
+.pipe-step .name{font-size:12px;font-weight:600;margin-top:2px}
+.pipe-step .desc{font-size:10px;color:var(--muted);margin-top:4px}
+.pipe-arrow{display:flex;align-items:center;color:var(--gold);font-size:16px}
+.risk-card{text-align:center}
+.risk-card .val{font-size:20px;font-weight:700}
+.risk-card .lbl{font-size:10px;color:var(--muted);margin-top:2px}
+.playbook{border-left:3px solid var(--purple);padding-left:14px;margin-bottom:14px}
+.playbook h4{font-size:13px;color:var(--purple);margin-bottom:6px}
+.playbook table{width:100%;font-size:11px;border-collapse:collapse}
+.playbook td{padding:4px 6px;border-bottom:1px solid var(--border)}
+.playbook td:first-child{color:var(--muted);width:100px}
+.gate{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:16px}
+.gate-item{background:var(--bg);border-radius:6px;padding:8px;font-size:11px;display:flex;align-items:center;gap:6px}
+.gate-item .check{width:16px;height:16px;border:2px solid var(--green);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--green)}
+.section-divider{border-top:1px solid var(--border);margin:20px 0}
+.footer{text-align:center;color:var(--muted);font-size:10px;margin-top:16px;border-top:1px solid var(--border);padding-top:12px}
+</style>
+</head>
+<body>
+
+<h1>🏗️ Milo Crypto System v2.0 — Execution Plan</h1>
+<p class="sub">Teil 1: System-Architektur | Stand: 11.02.2026 | Portfolio: $3.509 | Team: Juri, Chris, Milo</p>
+
+<!-- SOCRATIC START -->
+<h2>1️⃣ Socratic Start — Grundregeln</h2>
+<div class="grid2">
+  <div class="card">
+    <h3 style="color:var(--green)">✅ Erlaubt</h3>
+    <ul class="yes">
+      <li>NUR Spot-Trading (kein Leverage)</li>
+      <li>Swing (2-14 Tage) + Position (2-12 Wochen)</li>
+      <li>MEXC + Raydium DEX</li>
+      <li>Ziel: 15-30% p.a. (konservativ)</li>
+      <li>Max Drawdown: -20% ($701)</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="color:var(--red)">❌ Verboten</h3>
+    <ul class="no">
+      <li>Perpetuals, Options, Margin</li>
+      <li>Intraday-Trading</li>
+      <li>Meme-Coins ohne Utility</li>
+      <li>Hype/Bauch-Entscheidungen</li>
+      <li>Trades ohne Decision Gate</li>
+    </ul>
+  </div>
+</div>
+
+<!-- MODUL A: UNIVERSE -->
+<h2>2A️⃣ Modul A — Universum & Filter</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>Universe-Regeln (Minimum)</h3>
+    <ul>
+      <li>Marktkapitalisierung > $1M</li>
+      <li>24h Volumen > $50k</li>
+      <li>Listing-Alter > 30 Tage</li>
+      <li>Liquidity (DEX) > $50k TVL</li>
+      <li>Community > 1.000 Holder</li>
+      <li>Schlüssiges Konzept, kein reiner Meme</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Datenquellen</h3>
+    <ul>
+      <li><strong>Preis:</strong> Coinpaprika, CoinGecko</li>
+      <li><strong>DEX:</strong> DexScreener, Raydium, Birdeye</li>
+      <li><strong>On-Chain:</strong> Solscan, Etherscan</li>
+      <li><strong>Social:</strong> Twitter/X, Discord, Telegram</li>
+      <li><strong>Safety:</strong> RugCheck, TokenSniffer, GoPlus</li>
+    </ul>
+  </div>
+</div>
+
+<div class="grid3">
+  <div class="card" style="border-color:var(--green)">
+    <h3 style="color:var(--green)">📱 DexScreener App</h3>
+    <ul>
+      <li><strong>Discovery:</strong> Neue Pools, Trending Tokens</li>
+      <li><strong>Triage:</strong> Liquidity, Holder, LP-Status</li>
+      <li><strong>Monitoring:</strong> Preis-Alerts auf SL/TP</li>
+      <li><strong>Watchlist:</strong> Alle Kandidaten tracken</li>
+      <li>Live-Charts, Volume-Spikes</li>
+    </ul>
+  </div>
+  <div class="card" style="border-color:var(--purple)">
+    <h3 style="color:var(--purple)">👻 Phantom Wallet</h3>
+    <ul>
+      <li><strong>Execution:</strong> Jupiter-Swaps (beste Route)</li>
+      <li><strong>Sicherheit:</strong> Ledger-Anbindung</li>
+      <li><strong>Portfolio:</strong> Alle Solana-Tokens</li>
+      <li><strong>Tier 1:</strong> Ledger Cold (80%)</li>
+      <li><strong>Tier 2:</strong> Phantom+Ledger (15%)</li>
+      <li><strong>Tier 3:</strong> Burner-Wallet (5%)</li>
+    </ul>
+  </div>
+  <div class="card" style="border-color:var(--orange)">
+    <h3 style="color:var(--orange)">📊 MEXC Exchange</h3>
+    <ul>
+      <li><strong>Trading:</strong> Spot-Orders gelistete Coins</li>
+      <li><strong>Portfolio:</strong> Chris' 5 Positionen</li>
+      <li><strong>Orders:</strong> Limit + Stop-Loss</li>
+      <li>RAIN, LUNAI, VIRTUAL</li>
+      <li>GRIFFAIN, DEAI</li>
+    </ul>
+  </div>
+</div>
+
+<!-- MODUL B: PIPELINE -->
+<h2>2B️⃣ Modul B — Pipeline (Idee → Trade)</h2>
+<div class="pipe">
+  <div class="pipe-step"><div class="num">1</div><div class="name">Discovery</div><div class="desc">Quellen scannen<br>10 min/Tag</div></div>
+  <div class="pipe-arrow">→</div>
+  <div class="pipe-step"><div class="num">2</div><div class="name">Triage</div><div class="desc">Schnell-Check<br>5 min/Coin</div></div>
+  <div class="pipe-arrow">→</div>
+  <div class="pipe-step"><div class="num">3</div><div class="name">Deep-Dive</div><div class="desc">Qualitäts-Analyse<br>30-60 min</div></div>
+  <div class="pipe-arrow">→</div>
+  <div class="pipe-step"><div class="num">4</div><div class="name">Setup</div><div class="desc">Entry/SL/TP<br>R:R ≥ 2:1</div></div>
+  <div class="pipe-arrow">→</div>
+  <div class="pipe-step"><div class="num">5</div><div class="name">Execution</div><div class="desc">Button-Confirm<br>Order setzen</div></div>
+  <div class="pipe-arrow">→</div>
+  <div class="pipe-step"><div class="num">6</div><div class="name">Monitoring</div><div class="desc">Daily Check<br>SL/TP prüfen</div></div>
+  <div class="pipe-arrow">→</div>
+  <div class="pipe-step"><div class="num">7</div><div class="name">Review</div><div class="desc">Journal-Eintrag<br>Lessons</div></div>
+</div>
+
+<!-- MODUL C: RISK ENGINE -->
+<h2>2C️⃣ Modul C — Risk Engine (NICHT VERHANDELBAR)</h2>
+<div class="grid4">
+  <div class="card risk-card"><div class="val" style="color:var(--red)">5%</div><div class="lbl">Max pro Position<br>(~$175)</div></div>
+  <div class="card risk-card"><div class="val" style="color:var(--orange)">20%</div><div class="lbl">Max pro Sektor<br>(~$700)</div></div>
+  <div class="card risk-card"><div class="val" style="color:var(--red)">-20%</div><div class="lbl">Max Drawdown<br>→ Kill-Switch</div></div>
+  <div class="card risk-card"><div class="val" style="color:var(--gold)">3</div><div class="lbl">Max Trades<br>pro Woche</div></div>
+</div>
+<div class="grid4">
+  <div class="card risk-card"><div class="val">6</div><div class="lbl">Max offene<br>Positionen</div></div>
+  <div class="card risk-card"><div class="val" style="color:var(--red)">-10%</div><div class="lbl">Max Verlust<br>pro Position</div></div>
+  <div class="card risk-card"><div class="val" style="color:var(--blue)">2:1</div><div class="lbl">Min Risk:Reward<br>Ratio</div></div>
+  <div class="card risk-card"><div class="val">3</div><div class="lbl">Max Coins<br>pro Ökosystem</div></div>
+</div>
+
+<!-- MODUL D: PLAYBOOKS -->
+<h2>2D️⃣ Modul D — Playbooks</h2>
+<div class="grid3">
+  <div class="card">
+    <h3 style="color:var(--green)">📈 Playbook 1: Breakout</h3>
+    <ul>
+      <li><strong>Entry:</strong> Close über Resistance + 2x Vol</li>
+      <li><strong>SL:</strong> Unterkante Breakout (-5-8%)</li>
+      <li><strong>TP1:</strong> +10% (50%), TP2: +20% (30%)</li>
+      <li><strong>R:R:</strong> Min 2:1</li>
+      <li><strong>Kill:</strong> Rückfall unter Resistance in 24h</li>
+      <li>RSI <80, kein News-Event in 24h</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="color:var(--blue)">📉 Playbook 2: Pullback</h3>
+    <ul>
+      <li><strong>Entry:</strong> Bounce auf Support/EMA21</li>
+      <li><strong>SL:</strong> Unter letztem Higher Low (-5-10%)</li>
+      <li><strong>TP1:</strong> Letztes High (+8-15%)</li>
+      <li><strong>R:R:</strong> Min 2.5:1</li>
+      <li><strong>Kill:</strong> Break unter Higher Low</li>
+      <li>Trend min 2 Wochen, 2+ Higher Lows</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="color:var(--orange)">⚡ Playbook 3: Catalyst</h3>
+    <ul>
+      <li><strong>Entry:</strong> 24-72h vor Event + Vol +50%</li>
+      <li><strong>SL:</strong> -8% (enger wegen Event-Risk)</li>
+      <li><strong>TP1:</strong> +15% (70% VOR Event!)</li>
+      <li><strong>R:R:</strong> Min 2:1</li>
+      <li><strong>Kill:</strong> Event verschoben/gecancelt</li>
+      <li>2+ offizielle Quellen bestätigen</li>
+    </ul>
+  </div>
+</div>
+
+<!-- MODUL E: DECISION GATE -->
+<h2>2E️⃣ Modul E — Decision Gate (12/12 = GO)</h2>
+<div class="gate">
+  <div class="gate-item"><div class="check">✓</div>Honeypot-Check clean</div>
+  <div class="gate-item"><div class="check">✓</div>Liquidity > $50k</div>
+  <div class="gate-item"><div class="check">✓</div>Sell Tax < 5%</div>
+  <div class="gate-item"><div class="check">✓</div>LP locked > 6 Monate</div>
+  <div class="gate-item"><div class="check">✓</div>Deep-Dive Score ≥ 7/10</div>
+  <div class="gate-item"><div class="check">✓</div>R:R ≥ 2:1</div>
+  <div class="gate-item"><div class="check">✓</div>Position ≤ 5% Portfolio</div>
+  <div class="gate-item"><div class="check">✓</div>Sektor ≤ 20% nach Trade</div>
+  <div class="gate-item"><div class="check">✓</div>Max 6 Positionen nicht überschritten</div>
+  <div class="gate-item"><div class="check">✓</div>Stop-Loss definiert</div>
+  <div class="gate-item"><div class="check">✓</div>Playbook ausgewählt</div>
+  <div class="gate-item"><div class="check">✓</div>Button-Confirm Juri/Chris</div>
+</div>
+<p style="text-align:center;font-size:12px;color:var(--gold);font-weight:700">12/12 = GO → Trade erlaubt | < 12 = NO-GO → Keine Ausnahmen</p>
+
+<div class="footer">🦁 Milo Crypto System v2.0 — Teil 1: System-Architektur | Module A-E | 11.02.2026</div>
+</body>
+</html>

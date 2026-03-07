@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Masterplan v3 — Teil 2: Playbooks + Risk Engine</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0f;color:#e0e0e0;font-family:'Segoe UI',system-ui,sans-serif;padding:40px 60px;max-width:100%;margin:0 auto}
+h1{font-size:2.2em;background:linear-gradient(135deg,#f7931a,#ff6b35);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+h2{font-size:1.5em;color:#f7931a;margin:30px 0 15px;border-bottom:2px solid #f7931a33;padding-bottom:8px}
+h3{font-size:1.1em;color:#64b5f6;margin:20px 0 10px}
+.subtitle{color:#888;font-size:1em;margin-bottom:30px}
+.card{background:#14141f;border:1px solid #2a2a3a;border-radius:12px;padding:24px;margin:15px 0}
+.card-green{border-color:#4caf5055;background:linear-gradient(135deg,#14141f,#0f1a15)}
+.card-red{border-color:#ff444455;background:linear-gradient(135deg,#14141f,#1a0f0f)}
+.card-purple{border-color:#9c27b055;background:linear-gradient(135deg,#14141f,#1a0f1f)}
+.card-fire{border-color:#ff6b3555;background:linear-gradient(135deg,#14141f,#1f150f)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th{background:#1a1a2e;color:#f7931a;text-align:left;padding:10px 12px;font-size:.85em}
+td{padding:8px 12px;border-bottom:1px solid #1a1a2e;font-size:.85em}
+.flow{background:#0d0d18;border:2px solid #2a2a3a;border-radius:12px;padding:20px;font-family:'Courier New',monospace;font-size:.82em;line-height:1.7;white-space:pre;overflow-x:auto}
+.badge{display:inline-block;background:#f7931a22;color:#f7931a;padding:4px 12px;border-radius:6px;font-size:.8em;margin:2px}
+.badge-green{background:#4caf5022;color:#4caf50}
+.badge-red{background:#ff444422;color:#ff4444}
+.new{background:#4caf5033;color:#4caf50;padding:2px 8px;border-radius:4px;font-size:.7em;font-weight:700}
+.stat-box{text-align:center;padding:20px;background:#1a1a2e;border-radius:10px}
+.stat-num{font-size:2.2em;font-weight:800;color:#f7931a}
+.stat-label{font-size:.8em;color:#888;margin-top:5px}
+.alert-box{background:#1a0f0f;border:2px solid #ff6b35;border-radius:12px;padding:20px;margin:15px 0;font-family:'Courier New',monospace;font-size:.85em;line-height:1.6}
+.footer{text-align:center;color:#555;margin-top:40px;padding-top:20px;border-top:1px solid #1a1a2e;font-size:.85em}
+</style>
+</head>
+<body>
+
+<h1>🦁 MASTERPLAN v3.0 — Teil 2</h1>
+<div class="subtitle">4 Playbooks • Risk Engine • Decision Gate • Viral-Trend-Detection | 11.02.2026</div>
+
+<h2>📖 4 Playbooks</h2>
+
+<div class="grid2">
+<div class="card card-green">
+<h3>📈 Playbook 1: Breakout</h3>
+<table>
+<tr><td style="width:120px;color:#4caf50;font-weight:600">Setup</td><td>Preis bricht über Resistance mit >2x Volumen</td></tr>
+<tr><td style="color:#4caf50;font-weight:600">Entry</td><td>4h-Kerze Close über Resistance</td></tr>
+<tr><td style="color:#ff4444;font-weight:600">Stop-Loss</td><td>-5% bis -8% (Unterkante Breakout)</td></tr>
+<tr><td style="color:#f7931a;font-weight:600">Take-Profit</td><td>TP1: +10% (50%) · TP2: +20% (30%) · Trail (20%)</td></tr>
+<tr><td style="color:#64b5f6;font-weight:600">R:R Min</td><td>2:1</td></tr>
+<tr><td style="color:#888;font-weight:600">Invalidation</td><td>Rückfall unter Resistance in 24h</td></tr>
+</table>
+<p style="margin-top:10px"><span class="badge">Volumen >2x</span><span class="badge">RSI <80</span><span class="badge">Resistance klar</span></p>
+</div>
+
+<div class="card card-green">
+<h3>📉 Playbook 2: Pullback-to-Support</h3>
+<table>
+<tr><td style="width:120px;color:#4caf50;font-weight:600">Setup</td><td>Aufwärtstrend, Pullback auf Support/EMA</td></tr>
+<tr><td style="color:#4caf50;font-weight:600">Entry</td><td>Bounce auf EMA21 (4h Higher Low)</td></tr>
+<tr><td style="color:#ff4444;font-weight:600">Stop-Loss</td><td>-5% bis -10% (unter letztem HL)</td></tr>
+<tr><td style="color:#f7931a;font-weight:600">Take-Profit</td><td>TP1: Letztes High · TP2: Fib 1.618</td></tr>
+<tr><td style="color:#64b5f6;font-weight:600">R:R Min</td><td>2.5:1</td></tr>
+<tr><td style="color:#888;font-weight:600">Invalidation</td><td>Break unter letztes Higher Low</td></tr>
+</table>
+<p style="margin-top:10px"><span class="badge">Trend >2 Wochen</span><span class="badge">RSI 40-60</span><span class="badge">Vol bestätigt</span></p>
+</div>
+
+<div class="card card-purple">
+<h3>🎯 Playbook 3: Catalyst Play</h3>
+<table>
+<tr><td style="width:120px;color:#9c27b0;font-weight:600">Setup</td><td>CEX-Listing, Mainnet, Major Partnership</td></tr>
+<tr><td style="color:#4caf50;font-weight:600">Entry</td><td>24-72h VOR Event bei Momentum</td></tr>
+<tr><td style="color:#ff4444;font-weight:600">Stop-Loss</td><td>-8% vom Entry</td></tr>
+<tr><td style="color:#f7931a;font-weight:600">Take-Profit</td><td>TP1: +15% (70% VOR Event) · TP2: +30%</td></tr>
+<tr><td style="color:#64b5f6;font-weight:600">R:R Min</td><td>2:1</td></tr>
+<tr><td style="color:#888;font-weight:600">Invalidation</td><td>Event verschoben oder Sell-the-News</td></tr>
+</table>
+<p style="margin-top:10px"><span class="badge">Offiziell bestätigt</span><span class="badge">2+ Quellen</span><span class="badge">70% raus VOR Event</span></p>
+</div>
+
+<div class="card card-fire">
+<h3>🔥 Playbook 4: Viral Meme Runner <span class="new">NEU in v3</span></h3>
+<table>
+<tr><td style="width:120px;color:#ff6b35;font-weight:600">Setup</td><td>Viraler Content (Meme/Tier/Event) → Token auf Pump.fun</td></tr>
+<tr><td style="color:#ff6b35;font-weight:600">Trigger</td><td>Post >5k Engagement in <12h + Token-Match</td></tr>
+<tr><td style="color:#4caf50;font-weight:600">Entry</td><td>Sofort nach Match, vor Mainstream</td></tr>
+<tr><td style="color:#ff6b35;font-weight:600">Größe</td><td><strong>Fix $100-200</strong> (NIEMALS mehr!)</td></tr>
+<tr><td style="color:#ff4444;font-weight:600">Stop-Loss</td><td>Mental: -50% oder Liquidity-Drain</td></tr>
+<tr><td style="color:#f7931a;font-weight:600">Take-Profit</td><td>TP1: +100% (50% raus) · TP2: +300% (Rest)</td></tr>
+<tr><td style="color:#ff4444;font-weight:600">Max Dauer</td><td><strong>4-24 Stunden</strong> — danach IMMER raus</td></tr>
+<tr><td style="color:#888;font-weight:600">Limits</td><td>Max 1 gleichzeitig · Max 2 pro Woche · Nur Burner-Wallet</td></tr>
+</table>
+<p style="margin-top:10px"><span class="badge" style="background:#ff6b3533;color:#ff6b35">Asymmetrisch</span><span class="badge" style="background:#ff6b3533;color:#ff6b35">High Risk</span><span class="badge" style="background:#ff6b3533;color:#ff6b35">Pump.fun</span></p>
+</div>
+</div>
+
+<h2>🔥 Viral-Trend-Detection Modul <span class="new">NEU</span></h2>
+
+<div class="flow">┌──────────────────────────────────────────────────────────────────┐
+│              🔥 VIRAL-TREND-DETECTION MODULE                     │
+│                                                                   │
+│  📡 SCAN (alle 15 min)         🎯 DETECT                        │
+│  ├─ Reddit r/all Trending      ├─ Post >5k Engagement           │
+│  ├─ Reddit r/funny, r/memes   ├─ in <12 Stunden                │
+│  ├─ Reddit r/cats, r/dogs     ├─ Viralitäts-Score >8            │
+│  ├─ TikTok Trending                                              │
+│  ├─ X/Twitter Trending         🔗 MATCH                         │
+│  │                             ├─ Pump.fun neue Tokens           │
+│  │                             ├─ DexScreener neue Pairs         │
+│  │                             ├─ Token-Name ≈ Virales Thema?   │
+│  │                                                               │
+│  │                             🚨 ALERT                         │
+│  │                             ├─ Sofort an WEundMILO           │
+│  │                             ├─ "🔥 VIRAL MATCH DETECTED"     │
+│  │                             └─ → Playbook 4 aktivieren       │
+└──────────────────────────────────────────────────────────────────┘</div>
+
+<h3>Beispiel-Alert: Lil Bit ($BIT) Pattern</h3>
+<div class="alert-box">
+🔥 <span style="color:#ff6b35;font-weight:700">VIRAL MEME MATCH</span> — Playbook 4
+
+📸 Viraler Post: Reddit r/cats — "My cat Lil Bit" (47k upvotes, 6h alt)
+🪙 Token gefunden: <span style="color:#f7931a">$BIT</span> auf Pump.fun (2h alt, $85k MC, 340 Holder)
+📊 Bonding Curve: 67% gefüllt → kurz vor Raydium-Graduation
+💧 Liquidity: $12k (steigend)
+
+🧠 <span style="color:#64b5f6">Milo-Analyse:</span> Starkes Viral→Token Muster.
+   Engagement wächst exponentiell. Token noch in Pump.fun-Phase.
+
+⚡ Empfehlung: Playbook 4 — Max $150 Einsatz
+
+  [🎯 KAUFEN $150]   [📊 Details]   [⏭️ Skip]
+</div>
+
+<h2>⚙️ Risk Engine — NICHT VERHANDELBAR</h2>
+
+<div class="card card-red">
+<table>
+<tr><th>Regel</th><th>Wert</th><th>Konsequenz</th></tr>
+<tr><td>Max pro Position</td><td><strong>5% Portfolio</strong> (~$175)</td><td>Trade blockiert</td></tr>
+<tr><td>Max pro Sektor</td><td><strong>20% Portfolio</strong> (~$700)</td><td>Sektor gesperrt</td></tr>
+<tr><td>Stop-Loss Pflicht</td><td><strong>Jeder Trade</strong></td><td>Kein SL = Kein Trade</td></tr>
+<tr><td>Max offene Positionen</td><td><strong>6 gleichzeitig</strong></td><td>Warten auf Close</td></tr>
+<tr><td>Max Trades/Woche</td><td><strong>3 neue Trades</strong></td><td>Nächste Woche</td></tr>
+<tr><td>Max Portfolio-Drawdown</td><td><strong>-20%</strong></td><td>🛑 Kill-Switch</td></tr>
+<tr><td>Max Einzelverlust</td><td><strong>-10% vom Entry</strong></td><td>Auto SL-Trigger</td></tr>
+<tr><td>Korrelations-Limit</td><td><strong>Max 3 gleicher Sektor</strong></td><td>Diversifikation</td></tr>
+</table>
+<div style="margin-top:15px;padding:12px;background:#ff444422;border-radius:8px;font-family:monospace;text-align:center;font-size:.9em">
+Positionsgröße = (Portfolio × 0.02) / (Entry - StopLoss) · Max: 5% Portfolio · PB4: Fix $100-200
+</div>
+</div>
+
+<h2>✅ Decision Gate — 12-Punkt Go/No-Go</h2>
+
+<div class="card">
+<table>
+<tr><th>#</th><th>Check</th><th>PB1-3</th><th>PB4 (Viral)</th></tr>
+<tr><td>1</td><td>Honeypot-Check negativ</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge-green">✅ Pflicht</span></td></tr>
+<tr><td>2</td><td>Liquidity >$50k</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge" style="background:#ff980022;color:#ff9800">⚡ Ausnahme</span></td></tr>
+<tr><td>3</td><td>Sell Tax <5%</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge-green">✅ Pflicht</span></td></tr>
+<tr><td>4</td><td>LP locked >6 Monate</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge" style="background:#ff980022;color:#ff9800">⚡ Ausnahme</span></td></tr>
+<tr><td>5</td><td>Score ≥7/10 oder Viral-Match</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge" style="background:#ff6b3533;color:#ff6b35">🔥 Viral-Match</span></td></tr>
+<tr><td>6</td><td>R:R ≥ 2:1 oder asymmetrisch</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge" style="background:#ff6b3533;color:#ff6b35">🔥 Asymmetrisch</span></td></tr>
+<tr><td>7</td><td>Positionsgröße ≤5%</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge-green">✅ Fix $100-200</span></td></tr>
+<tr><td>8</td><td>Sektor-Exposure ≤20%</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge-green">✅ Pflicht</span></td></tr>
+<tr><td>9</td><td>Max 6 offene Positionen</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge-green">✅ Pflicht</span></td></tr>
+<tr><td>10</td><td>Stop-Loss definiert</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge-green">✅ Mental SL</span></td></tr>
+<tr><td>11</td><td>Playbook dokumentiert</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge-green">✅ Pflicht</span></td></tr>
+<tr><td>12</td><td>Button-Confirm</td><td><span class="badge-green">✅ Pflicht</span></td><td><span class="badge-green">✅ Pflicht</span></td></tr>
+</table>
+<div style="margin-top:12px;text-align:center;font-size:1.1em;font-weight:700;color:#4caf50">
+12/12 = ✅ GO &nbsp;&nbsp;|&nbsp;&nbsp; <span style="color:#ff4444"><12 = ❌ NO-GO — Keine Ausnahmen</span>
+</div>
+</div>
+
+<div class="footer">
+MASTERPLAN v3.0 — Teil 2 von 3 | WEundMILO Crypto Trading | Erstellt von Milo 🦁 | 11.02.2026
+</div>
+
+</body>
+</html>

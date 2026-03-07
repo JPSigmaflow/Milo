@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Rollout Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0f;
+            color: #fff;
+            padding: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #f7931a;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 50px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+        
+        .system-item {
+            position: relative;
+            margin-bottom: 80px;
+        }
+        
+        .system-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .system-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .status-badge {
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .status-progress {
+            background: rgba(100, 181, 246, 0.2);
+            color: #64b5f6;
+            border: 1px solid #64b5f6;
+        }
+        
+        .status-planned {
+            background: rgba(247, 147, 26, 0.2);
+            color: #f7931a;
+            border: 1px solid #f7931a;
+        }
+        
+        .timeline-bar-container {
+            position: relative;
+            height: 80px;
+            background: #14141f;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #2a2a3a;
+        }
+        
+        .timeline-bar {
+            position: absolute;
+            height: 100%;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        
+        .bar-progress {
+            background: linear-gradient(90deg, rgba(100, 181, 246, 0.3) 0%, rgba(100, 181, 246, 0.1) 100%);
+            border: 2px solid #64b5f6;
+        }
+        
+        .bar-planned {
+            background: linear-gradient(90deg, rgba(247, 147, 26, 0.3) 0%, rgba(247, 147, 26, 0.1) 100%);
+            border: 2px solid #f7931a;
+        }
+        
+        .date-label {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .timeline-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+        
+        .label-item {
+            font-size: 14px;
+            color: #888;
+            font-weight: 500;
+        }
+        
+        .label-item span {
+            color: #ddd;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 AI Rollout Timeline</h1>
+        <p class="subtitle">IT Systems Implementation Schedule 2026</p>
+        
+        <div id="timeline" class="timeline"></div>
+    </div>
+
+    <script>
+        const systems = [
+            {
+                name: 'AI Chatbot',
+                rollout: '2026-03-20',
+                startup: '2026-04-01',
+                status: 'In Progress'
+            },
+            {
+                name: 'ERP System',
+                rollout: '2026-04-15',
+                startup: '2026-05-01',
+                status: 'In Progress'
+            },
+            {
+                name: 'HR Portal',
+                rollout: '2026-05-05',
+                startup: '2026-05-20',
+                status: 'Planned'
+            },
+            {
+                name: 'CRM Platform',
+                rollout: '2026-06-01',
+                startup: '2026-06-15',
+                status: 'Planned'
+            },
+            {
+                name: 'Data Warehouse',
+                rollout: '2026-07-10',
+                startup: '2026-08-01',
+                status: 'Planned'
+            }
+        ];
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('de-DE', { day: '2-digit', month: 'short' });
+        }
+
+        function calculatePosition(dateStr, minDate, maxDate) {
+            const date = new Date(dateStr);
+            const totalRange = maxDate.getTime() - minDate.getTime();
+            const dateOffset = date.getTime() - minDate.getTime();
+            return (dateOffset / totalRange) * 100;
+        }
+
+        function renderTimeline() {
+            const container = document.getElementById('timeline');
+            
+            // Calculate date range
+            const allDates = systems.flatMap(s => [new Date(s.rollout), new Date(s.startup)]);
+            const minDate = new Date(Math.min(...allDates.map(d => d.getTime())));
+            const maxDate = new Date(Math.max(...allDates.map(d => d.getTime())));
+            
+            systems.forEach(system => {
+                const startPos = calculatePosition(system.rollout, minDate, maxDate);
+                const endPos = calculatePosition(system.startup, minDate, maxDate);
+                const width = endPos - startPos;
+                
+                const statusClass = system.status === 'In Progress' ? 'progress' : 'planned';
+                
+                const html = `
+                    <div class="system-item">
+                        <div class="system-header">
+                            <div class="system-name">${system.name}</div>
+                            <div class="status-badge status-${statusClass}">${system.status}</div>
+                        </div>
+                        <div class="timeline-bar-container">
+                            <div class="timeline-bar bar-${statusClass}" style="left: ${startPos}%; width: ${width}%;">
+                                <span class="date-label">📅 ${formatDate(system.rollout)}</span>
+                                <span class="date-label">🚀 ${formatDate(system.startup)}</span>
+                            </div>
+                        </div>
+                        <div class="timeline-labels">
+                            <div class="label-item">Rollout: <span>${formatDate(system.rollout)}</span></div>
+                            <div class="label-item">Go-Live: <span>${formatDate(system.startup)}</span></div>
+                        </div>
+                    </div>
+                `;
+                
+                container.innerHTML += html;
+            });
+        }
+
+        // Run on load
+        renderTimeline();
+    </script>
+</body>
+</html>

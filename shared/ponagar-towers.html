@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px;
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  padding: 48px;
+}
+.header { text-align: center; margin-bottom: 40px; }
+.header h1 { font-size: 42px; font-weight: 700; color: #f7931a; margin-bottom: 8px; }
+.header .subtitle { font-size: 24px; color: #64b5f6; font-weight: 500; }
+.header .date { font-size: 18px; color: #888; margin-top: 6px; }
+.card { background: #14141f; border: 1px solid #2a2a3a; border-radius: 16px; padding: 28px 32px; margin-bottom: 24px; }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; border-bottom: 1px solid #2a2a3a; padding-bottom: 14px; }
+.card-title { font-size: 26px; font-weight: 700; color: #f7931a; }
+.card-badge { font-size: 18px; font-weight: 600; color: #4caf50; background: rgba(76,175,80,0.12); padding: 6px 16px; border-radius: 20px; }
+.section-title { font-size: 20px; font-weight: 600; color: #64b5f6; margin-bottom: 10px; margin-top: 16px; }
+.row { display: flex; align-items: flex-start; margin-bottom: 14px; padding-left: 4px; }
+.row-icon { font-size: 24px; margin-right: 12px; min-width: 30px; text-align: center; }
+.row-info { flex: 1; }
+.row-name { font-size: 18px; font-weight: 600; color: #fff; }
+.row-desc { font-size: 15px; color: #aaa; margin-top: 2px; }
+.row-es { font-size: 14px; color: #f7931a99; margin-top: 2px; font-style: italic; }
+.row-value { font-size: 17px; font-weight: 500; color: #f7931a; min-width: 120px; text-align: right; }
+.highlight { background: linear-gradient(135deg, #1a1a2e, #14141f); border: 1px solid #f7931a33; border-radius: 16px; padding: 28px 32px; margin-bottom: 24px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🛕 Ponagar Cham Towers</h1>
+  <div class="subtitle">Nha Trang, Vietnam</div>
+  <div class="date">🇩🇪 Deutsch / 🇪🇸 Español</div>
+</div>
+
+<!-- OVERVIEW -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-title">📋 Auf einen Blick / De un vistazo</div>
+    <div class="card-badge">~$1.20 Eintritt</div>
+  </div>
+  
+  <div class="row">
+    <div class="row-icon">📍</div>
+    <div class="row-info">
+      <div class="row-name">Adresse / Dirección</div>
+      <div class="row-desc">61 Hai Thang Tu Street, Bac Nha Trang Ward, Khanh Hoa</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🕐</div>
+    <div class="row-info">
+      <div class="row-name">Öffnungszeiten / Horario</div>
+      <div class="row-desc">Täglich 6:00 – 18:00 Uhr</div>
+      <div class="row-es">🇪🇸 Diario de 6:00 a 18:00</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🎫</div>
+    <div class="row-info">
+      <div class="row-name">Eintritt / Entrada</div>
+      <div class="row-desc">25.000 VND (~$1,20 / ~€1,10) pro Person</div>
+      <div class="row-es">🇪🇸 25.000 VND (~$1,20 / ~€1,10) por persona</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">⏱️</div>
+    <div class="row-info">
+      <div class="row-name">Besuchsdauer / Duración de visita</div>
+      <div class="row-desc">Ca. 45–60 Minuten</div>
+      <div class="row-es">🇪🇸 Aprox. 45–60 minutos</div>
+    </div>
+  </div>
+</div>
+
+<!-- DISTANCE -->
+<div class="card" style="border-color: #64b5f644;">
+  <div class="card-header" style="border-bottom-color: #64b5f633;">
+    <div class="card-title">📏 Entfernungen / Distancias</div>
+  </div>
+  
+  <div class="row">
+    <div class="row-icon">🏨</div>
+    <div class="row-info">
+      <div class="row-name">Ab The Anam Cam Ranh</div>
+      <div class="row-desc">~27 km · ca. 35–40 Min. mit dem Auto / Taxi</div>
+      <div class="row-es">🇪🇸 ~27 km · aprox. 35–40 min en coche / taxi</div>
+    </div>
+    <div class="row-value">~27 km</div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🏙️</div>
+    <div class="row-info">
+      <div class="row-name">Ab Nha Trang Zentrum / Centro</div>
+      <div class="row-desc">~2 km nördlich · ca. 5–10 Min. mit dem Auto</div>
+      <div class="row-es">🇪🇸 ~2 km al norte · aprox. 5–10 min en coche</div>
+    </div>
+    <div class="row-value">~2 km</div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">✈️</div>
+    <div class="row-info">
+      <div class="row-name">Ab Cam Ranh Flughafen / Aeropuerto</div>
+      <div class="row-desc">~35 km · ca. 40–50 Min.</div>
+      <div class="row-es">🇪🇸 ~35 km · aprox. 40–50 min</div>
+    </div>
+    <div class="row-value">~35 km</div>
+  </div>
+</div>
+
+<!-- HISTORY -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-title">📜 Geschichte / Historia</div>
+  </div>
+  
+  <div class="row">
+    <div class="row-icon">🏛️</div>
+    <div class="row-info">
+      <div class="row-name">Alter / Antigüedad</div>
+      <div class="row-desc">Erbaut vor 781 n. Chr. — über 1.200 Jahre alt! Eine der ältesten religiösen Stätten Vietnams.</div>
+      <div class="row-es">🇪🇸 Construido antes de 781 d.C. — ¡más de 1.200 años! Uno de los sitios religiosos más antiguos de Vietnam.</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🕉️</div>
+    <div class="row-info">
+      <div class="row-name">Erbauer / Constructores</div>
+      <div class="row-desc">Das Cham-Volk — eine antike Zivilisation Südostasiens, bekannt für einzigartige Architektur und Kunst (Vietnam & Kambodscha).</div>
+      <div class="row-es">🇪🇸 El pueblo Cham — civilización antigua del sudeste asiático, famosa por su arquitectura y arte únicos.</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">👑</div>
+    <div class="row-info">
+      <div class="row-name">Bedeutung / Significado</div>
+      <div class="row-desc">"Po Nagar" = "Mutter des Landes". Gewidmet der Göttin der Schöpfung, die dem Cham-Volk Leben und Ernte schenkt.</div>
+      <div class="row-es">🇪🇸 "Po Nagar" = "Madre del país". Dedicado a la diosa de la creación que otorga vida y cosechas al pueblo Cham.</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🗼</div>
+    <div class="row-info">
+      <div class="row-name">Hauptturm / Torre principal</div>
+      <div class="row-desc">23 Meter hoch, erbaut 817 n. Chr. — der prächtigste der ursprünglich 7 Türme (4 stehen noch).</div>
+      <div class="row-es">🇪🇸 23 metros de alto, construida en 817 d.C. — la más magnífica de las 7 torres originales (quedan 4).</div>
+    </div>
+  </div>
+</div>
+
+<!-- HIGHLIGHTS -->
+<div class="card">
+  <div class="card-header">
+    <div class="card-title">✨ Highlights</div>
+  </div>
+  
+  <div class="row">
+    <div class="row-icon">🗿</div>
+    <div class="row-info">
+      <div class="row-name">4 historische Türme / 4 torres históricas</div>
+      <div class="row-desc">Jeder mit einzigartiger Architektur und religiöser Bedeutung</div>
+      <div class="row-es">🇪🇸 Cada una con arquitectura única y significado religioso</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🌊</div>
+    <div class="row-info">
+      <div class="row-name">Lage auf Granitkuppe / Ubicación en colina</div>
+      <div class="row-desc">Atemberaubender Blick über den Cai-Fluss und die Küste von Nha Trang</div>
+      <div class="row-es">🇪🇸 Vista impresionante sobre el río Cai y la costa de Nha Trang</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🎨</div>
+    <div class="row-info">
+      <div class="row-name">Cham-Architektur / Arquitectura Cham</div>
+      <div class="row-desc">Einzigartige Ziegelstein-Technik ohne Mörtel — das Geheimnis ist bis heute nicht gelüftet!</div>
+      <div class="row-es">🇪🇸 Técnica única de ladrillos sin mortero — ¡el secreto no se ha descubierto hasta hoy!</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🙏</div>
+    <div class="row-info">
+      <div class="row-name">Aktiver Tempel / Templo activo</div>
+      <div class="row-desc">Noch heute kommen Vietnamesen und Cham zum Beten — lebendige Kultur, nicht nur Museum</div>
+      <div class="row-es">🇪🇸 Hoy en día, vietnamitas y Cham siguen viniendo a rezar — cultura viva, no solo museo</div>
+    </div>
+  </div>
+</div>
+
+<!-- TIPS -->
+<div class="highlight">
+  <div class="card-title" style="margin-bottom: 16px;">💡 Tipps / Consejos</div>
+  
+  <div class="row">
+    <div class="row-icon">👗</div>
+    <div class="row-info">
+      <div class="row-name">Kleidung / Vestimenta</div>
+      <div class="row-desc">Schultern und Knie bedecken (religiöser Ort). Tücher werden am Eingang verliehen.</div>
+      <div class="row-es">🇪🇸 Cubrir hombros y rodillas (lugar religioso). Prestan telas en la entrada.</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">📸</div>
+    <div class="row-info">
+      <div class="row-name">Beste Fotozeit / Mejor hora para fotos</div>
+      <div class="row-desc">Morgens (6–9 Uhr) für weiches Licht und weniger Touristen</div>
+      <div class="row-es">🇪🇸 Por la mañana (6–9) para luz suave y menos turistas</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row-icon">🚕</div>
+    <div class="row-info">
+      <div class="row-name">Anfahrt ab The Anam / Cómo llegar desde The Anam</div>
+      <div class="row-desc">Grab/Taxi ~35–40 Min., ca. 200.000–300.000 VND (~€8–12). Gut kombinierbar mit Nha Trang Stadtbesuch.</div>
+      <div class="row-es">🇪🇸 Grab/Taxi ~35–40 min, aprox. 200–300k VND (~€8–12). Se combina bien con visita a Nha Trang.</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

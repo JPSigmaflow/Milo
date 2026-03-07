@@ -1,0 +1,33 @@
+{
+  "app_id": "917735114044832",
+  "app_secret": "fcdb0c1d6772c388fefcedf4bb70c3f3",
+  "instagram_business_account_id": "17841400095422058",
+  "username": "pomesteam",
+  "access_token": "EAANCrNt4daABQvAzRuiORiXgC2CidiFIfzExZBQ07gyHSDHWdz7gjq6PTd5ZBmDJDQdZAXCx7D6rnXoZC1qpO4oJeUjiTgoYiYlK3UrZBmaBe65tk82LJDO9ZBF1Et2zbyV6pXTz5IdkqfKfidIZCvFk7AQ0QDRInnlWbvogsZCQZBjV2Ij4Y05qx5TFg5KmSbcCUZCsO5xlk52cqYalY5SYlAZCLRHJupEJRxLZABxxXZA8aoLcpMMWKKAZDZD",
+  "token_type": "bearer",
+  "created": "2026-02-15",
+  "refreshed": "2026-02-15T20:06:38-0500",
+  "expires_approx": "2026-04-16",
+  "note": "Long-lived token (60 days), auto-exchanged from short-lived",
+  "scopes": [
+    "pages_show_list",
+    "pages_messaging_subscriptions",
+    "instagram_basic",
+    "instagram_manage_comments",
+    "instagram_manage_insights",
+    "instagram_content_publish",
+    "instagram_manage_messages",
+    "pages_read_engagement",
+    "pages_manage_metadata",
+    "pages_read_user_content",
+    "pages_manage_posts",
+    "instagram_branded_content_creator",
+    "pages_utility_messaging",
+    "instagram_manage_contents",
+    "public_profile"
+  ],
+  "page_token": "EAANCrNt4daABQrkrd5hAxZCsIbqQARlX2XNqGtaqDtiOc5X077ZARSHpHu2Oj8CyMvmcArCsvhkd6ash5kZCifc3gHAGU7AGjxzbHRKAx5gv5mPfvtdXOqtsZA5qoGZAZCD9z4g2lUqNOy5DZCZC7H0EleYF4NAt1Ns4WZAscvabk20zT9Iuco4Nm3dY9q5r4ZAjDjvoG0FyxpQM7RdtM8tAZDZD",
+  "page_id": "1028997483620718",
+  "primary_token": "page_token",
+  "page_token_note": "NEVER EXPIRES - use this for ALL API calls"
+}

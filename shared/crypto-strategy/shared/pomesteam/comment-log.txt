@@ -1,0 +1,26 @@
+
+[2026-02-12 20:00 EST] Comment Monitor Run
+- Posts scanned: 15
+- Total comments found: 10
+- Already replied: 8
+- NEW unanswered: 2
+- Replies sent: 2
+  1. @tenorio_ari → "wow que bonita foto!" → replied (id: 17927734164203221)
+  2. @oft_.heart → "Share it on @mr.dogoftheday 🐕" → replied (id: 18083963408582666)
+- Skipped: 1 own comment (pomesteam)
+- Errors: 0
+
+[2026-02-14 08:00 EST] Comment Monitor Run
+- Posts scanned: 15
+- Total comments found: 10
+- Unanswered comments: 1
+- Replies sent: 1
+  → fernando.navna (❤️ on Valentine's post) → replied with Valentine's greeting + question
+
+[2026-02-18 08:00 EST] Comment Monitor Run
+- Posts scanned: 15
+- Total comments found: 11
+- Unanswered comments: 1
+- Replies sent: 1
+  → pet.__kingdom on post 18127966726540833: "Send me this post" → replied (id: 18036397094760019)
+[2026-02-20T07:00:26Z] PomesTeam Comment Monitor: 15 posts scanned, 0 unanswered comments, 0 replies sent.

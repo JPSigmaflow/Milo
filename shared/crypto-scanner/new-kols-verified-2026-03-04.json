@@ -1,0 +1,128 @@
+{
+  "qualified": [
+    {
+      "status": "alive",
+      "username": "MMCrypto",
+      "followers": 1782103,
+      "following": 2804,
+      "tweets": 15096,
+      "verified": true,
+      "bio": "for #Bitcoin, #BTC, $BTC; for Health: @ChrisMMHealth"
+    },
+    {
+      "status": "alive",
+      "username": "intocryptoverse",
+      "followers": 1168171,
+      "following": 1128,
+      "tweets": 28152,
+      "verified": true,
+      "bio": "CEO/Founder @ITC_Crypto @ITC_Macro @ITC_Stocks\nPhD Nuclear Engineering https://t.co/VwxEaJxIl8\nhttps://t.co/Llgs17EVN0"
+    },
+    {
+      "status": "alive",
+      "username": "blockchaincap",
+      "followers": 73814,
+      "following": 333,
+      "tweets": 2186,
+      "verified": true,
+      "bio": "Partners to crypto builders since 2013"
+    },
+    {
+      "status": "alive",
+      "username": "adam3us",
+      "followers": 793557,
+      "following": 1599,
+      "tweets": 67230,
+      "verified": true,
+      "bio": "cypherpunk, cryptographer, privacy/ecash, inventor hashcash (Bitcoin mining) PhD Comp Sci. Co-Founder/CEO https://t.co/CysB3cs7Pp & Co-Founder/CEO @bstrco"
+    },
+    {
+      "status": "alive",
+      "username": "CryptoCred",
+      "followers": 744884,
+      "following": 1160,
+      "tweets": 27862,
+      "verified": true,
+      "bio": "Always trader, often shitposter, sometimes educator. @breakoutprop"
+    },
+    {
+      "status": "alive",
+      "username": "AltcoinSherpa",
+      "followers": 261106,
+      "following": 1313,
+      "tweets": 64096,
+      "verified": true,
+      "bio": "Not Financial Advice / Crypto since 2016/ DYOR\n\nhttps://t.co/2tk69SLmJY\nhttps://t.co/R4qO2qt1o9"
+    },
+    {
+      "status": "alive",
+      "username": "CryptoKaleo",
+      "followers": 731105,
+      "following": 1655,
+      "tweets": 73805,
+      "verified": true,
+      "bio": "καλέω: to call  This is my journal Co-Founder - @LedgArt_io"
+    },
+    {
+      "status": "alive",
+      "username": "TheCryptoDog",
+      "followers": 859285,
+      "following": 3898,
+      "tweets": 39586,
+      "verified": true,
+      "bio": "STEM PhD dropout / $crypto-trading dog🐕 Started mining #bitcoin in 2011. Investor / market commentator. Health & wellness e-com https://t.co/3Sc2dmFhLt"
+    }
+  ],
+  "tooSmall": [
+    {
+      "status": "alive",
+      "username": "smartcontracter",
+      "followers": 1439,
+      "following": 38,
+      "tweets": 4,
+      "verified": false,
+      "bio": "Wax Smart Contractor"
+    },
+    {
+      "status": "alive",
+      "username": "MeltemDemirors",
+      "followers": 91,
+      "following": 21,
+      "tweets": 0,
+      "verified": false,
+      "bio": ""
+    },
+    {
+      "status": "alive",
+      "username": "elizabethstark",
+      "followers": 411,
+      "following": 227,
+      "tweets": 982,
+      "verified": false,
+      "bio": ""
+    },
+    {
+      "status": "alive",
+      "username": "KathrynHaun",
+      "followers": 2,
+      "following": 0,
+      "tweets": 1,
+      "verified": false,
+      "bio": ""
+    },
+    {
+      "status": "alive",
+      "username": "TradersZ",
+      "followers": 222,
+      "following": 0,
+      "tweets": 8,
+      "verified": false,
+      "bio": ""
+    }
+  ],
+  "dead": [
+    "TheTradingParrot",
+    "MrDavidMorton"
+  ],
+  "errors": []
+}

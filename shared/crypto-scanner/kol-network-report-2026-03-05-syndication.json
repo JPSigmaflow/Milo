@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-03-06T03:15:44.867Z",
+  "method": "syndication-api",
+  "kolsScanned": 0,
+  "results": [],
+  "highSignalAccounts": [],
+  "stats": {
+    "totalKOLs": 0,
+    "totalMentionedAccounts": 0,
+    "highSignalAccounts": 0
+  }
+}

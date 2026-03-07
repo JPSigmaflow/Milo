@@ -1,0 +1,80 @@
+{
+  "2026-02-08": {
+    "date": "2026-02-08",
+    "totalTokens": 486181,
+    "sessions": {
+      "main": 157885,
+      "weundmilo": 155426,
+      "blueprint-group": 63759,
+      "cron-jobs": 109111
+    }
+  },
+  "2026-02-09": {
+    "date": "2026-02-09",
+    "totalTokens": 454244,
+    "sessions": {
+      "main": 55230,
+      "weundmilo": 98708,
+      "blueprint-group": 72777,
+      "cron-jobs": 227529
+    },
+    "breakdown": {
+      "krypto-report": 23596,
+      "yoga-reminder": 15881,
+      "water-reminders": 47561,
+      "lu-chinese": 20797,
+      "pomesteam-posts": 19553,
+      "lera-jobs": 50618,
+      "juri-affirmation": 19913,
+      "chat-main": 55230,
+      "chat-weundmilo": 98708,
+      "chat-blueprint": 72777,
+      "usage-report": 16558
+    }
+  },
+  "2026-02-10": {
+    "date": "2026-02-10",
+    "totalTokens": 530738,
+    "sessions": {
+      "main": 56071,
+      "weundmilo": 117201,
+      "blueprint-group": 94768,
+      "cron-jobs": 262698
+    },
+    "breakdown": {
+      "krypto-report": 28777,
+      "yoga-reminder": 15993,
+      "water-reminders": 49567,
+      "lu-chinese": 21420,
+      "pomesteam-posts": 39546,
+      "lera-jobs": 72109,
+      "juri-lera-idee": 16377,
+      "juri-affirmation": 18909,
+      "chat-main": 56071,
+      "chat-weundmilo": 117201,
+      "chat-blueprint": 94768
+    }
+  },
+  "2026-02-11": {
+    "date": "2026-02-11",
+    "totalTokens": 573509,
+    "sessions": {
+      "main": 46273,
+      "weundmilo": 127830,
+      "blueprint-group": 105420,
+      "cron-jobs": 293986
+    },
+    "breakdown": {
+      "krypto-report": 24532,
+      "yoga-reminder": 16303,
+      "water-reminders": 48749,
+      "lu-chinese": 22188,
+      "pomesteam-posts": 87051,
+      "lera-jobs": 77648,
+      "juri-affirmation": 17515,
+      "chat-main": 46273,
+      "chat-weundmilo": 127830,
+      "chat-blueprint": 105420
+    }
+  }
+}

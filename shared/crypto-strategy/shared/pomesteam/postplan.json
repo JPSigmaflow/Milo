@@ -1,0 +1,19 @@
+{
+  "plan": [
+    {"date": "2026-02-17", "file": "batch-3-closeup-eyes.jpg", "theme": "Emotion/Eyes", "posted": true},
+    {"date": "2026-02-18", "file": "batch-3-cuddle-nap.jpg", "theme": "Cuddle/Duo", "posted": true, "ig_id": "18127966726540833", "fb_id": "122105803617245939"},
+    {"date": "2026-02-19", "file": "batch-3-pom-booties.jpg", "theme": "Fashion/Fun", "posted": true, "ig_id": "18047542766505761", "fb_id": "122105994993245939"},
+    {"date": "2026-02-20", "type": "carousel", "files": ["zhouzhuang-gby-hanfu-poms.jpg", "zhouzhuang-lantern-alley.jpg", "zhouzhuang-stroller.jpg"], "theme": "Zhouzhuang 1 - Water Town Squad", "posted": true, "ig_id": "18401932522176131", "fb_id": "122106197733245939"},
+    {"date": "2026-02-21", "file": "batch-3-action-run.jpg", "theme": "Energy/Action"},
+    {"date": "2026-02-22", "file": "paw-bed-duo.jpg", "theme": "Weekend Vibes"},
+    {"date": "2026-02-23", "file": "shanghai-night-lights.jpg", "theme": "Lifestyle"},
+    {"date": "2026-02-24", "file": "batch-2/03-portrait-bokeh.jpg", "theme": "Portrait"},
+    {"date": "2026-02-25", "type": "carousel", "files": ["zhouzhuang-calligraphy-shop.jpg", "zhouzhuang-dried-meat-poms.jpg", "zhouzhuang-panda-deco.jpg"], "theme": "Zhouzhuang 2 - Culture & Chaos"},
+    {"date": "2026-02-26", "file": "china-mascots-park.jpg", "theme": "Fun"},
+    {"date": "2026-02-27", "file": "china-telephone-booth.jpg", "theme": "Urban"},
+    {"date": "2026-02-28", "file": "batch-2/06-cutout-pom.jpg", "theme": "Cute"},
+    {"date": "2026-03-01", "type": "carousel", "files": ["zhouzhuang-moon.jpg", "zhouzhuang-horse-2026.jpg"], "theme": "Zhouzhuang 3 - Magical Nights"},
+    {"date": "2026-03-02", "file": "halloween-justice-league.jpg", "theme": "Throwback"},
+    {"date": "2026-03-03", "file": "batch-3-video-thumb.jpg", "theme": "Reel"}
+  ]
+}

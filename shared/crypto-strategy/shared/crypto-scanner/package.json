@@ -1,0 +1,16 @@
+{
+  "name": "crypto-scanner",
+  "version": "1.0.0",
+  "description": "Viral trend + new token matcher",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test:reddit": "node scanners/reddit.js",
+    "test:dex": "node scanners/dexscreener.js",
+    "test:match": "node scanners/matcher.js"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2"
+  }
+}

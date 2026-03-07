@@ -1,0 +1,393 @@
+#!/usr/bin/env node
+/**
+ * Pump.fun WebSocket Scanner — Real-Time Token Launches
+ * 
+ * Multi-Path MEXC Detection System
+ * Checks EVERY new token across ALL platforms to find MEXC listing potential.
+ * 
+ * Platforms:
+ * - BiliBili (China)
+ * - TikTok (Global)
+ * - Reddit (USA/EU)
+ * - Naver (Korea)
+ * - GitHub (Tech)
+ * - DEX Volume (Trading)
+ * - Twitter (Trends)
+ * 
+ * Output: pumpfun-candidates.json (same format as existing scanner)
+ */
+
+import WebSocket from 'ws';
+import https from 'https';
+import { writeFileSync, readFileSync, existsSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+// Import all checker modules
+import { checkTikTok } from './lib/tiktok-checker.mjs';
+import { checkReddit, checkCryptoSubreddits } from './lib/reddit-checker.mjs';
+import { checkNaver, hasKoreanCharacters } from './lib/naver-checker.mjs';
+import { checkGitHub } from './lib/github-checker.mjs';
+import { getDEXMetrics } from './lib/dex-volume-checker.mjs';
+import { checkTwitter, checkTwitterAccount } from './lib/twitter-checker.mjs';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ROOT = join(__dirname, '..');
+const CANDIDATES_FILE = join(ROOT, 'data', 'pumpfun-candidates.json');
+
+// Load existing candidates (max 500 to prevent memory issues)
+function loadCandidates() {
+  if (!existsSync(CANDIDATES_FILE)) return [];
+  try { 
+    const all = JSON.parse(readFileSync(CANDIDATES_FILE, 'utf8')); 
+    // Keep only last 500 candidates
+    return all.slice(-500);
+  } catch { return []; }
+}
+
+function saveCandidates(candidates) {
+  // Keep only last 500 candidates to prevent file bloat
+  const limited = candidates.slice(-500);
+  writeFileSync(CANDIDATES_FILE, JSON.stringify(limited, null, 2));
+}
+
+// Quick score new token (0-12)
+async function quickScore(token) {
+  let score = 0;
+  const desc = (token.description || '').toLowerCase();
+  
+  // Detect if Tech or Meme
+  const techKeywords = [
+    // AI
+    'ai', 'agent', 'autonomous', 'inference', 'machine learning', 'llm',
+    // ZK
+    'zk', 'zero-knowledge', 'privacy', 'zk-proof', 'zkSync',
+    // DePIN
+    'depin', 'infrastructure', 'iot', 'sensor', 'compute', 'storage',
+    // RWA
+    'rwa', 'real world', 'tokenization', 'bonds', 'commodities',
+    // General Tech
+    'protocol', 'sdk', 'framework', 'oracle', 'bridge', 'cross-chain',
+    'layer', 'rollup', 'scaling', 'interoperability'
+  ];
+  
+  const isTech = techKeywords.some(k => desc.includes(k)) || 
+                 token.website?.includes('docs.') ||
+                 token.website?.includes('github.');
+  
+  if (isTech) {
+    // Tech Play scoring
+    if (token.website) score += 3;  // Website critical for tech
+    if (token.twitter) score += 2;
+    if (token.telegram) score += 2;
+    if (token.website?.includes('docs.') || token.website?.includes('github.')) score += 2;
+    if (desc.includes('github') || desc.includes('open source')) score += 1;
+    return { score, mexcScore: 0, mexcFactors: [] };
+  }
+  
+  // Meme scoring
+  if (token.twitter) score += 2;
+  if (token.telegram) score += 2;
+  if (token.website) score += 1;
+  
+  // Description mentions viral keywords? +2
+  const viralKeywords = ['viral', 'trending', 'meme', '救', '救助', 'rescue', 'saved', 'tiktok', 'bilibili', 'douyin'];
+  if (viralKeywords.some(k => desc.includes(k))) score += 2;
+  
+  // China/Asia keywords? +2 (MEXC relevant)
+  const asiaKeywords = ['china', 'chinese', '中国', '刀盾', 'bilibili', 'douyin', '抖音', 'weibo'];
+  if (asiaKeywords.some(k => desc.includes(k))) score += 2;
+  
+  // Has image? +1
+  if (token.image_uri) score += 1;
+  
+  // 🚨 MEXC FRONTSCHEINWERFER - Check Pre-Token Virality!
+  const mexcPotential = await checkMEXCPotential(token);
+  
+  // High MEXC potential? Add bonus to score!
+  if (mexcPotential.score >= 10) {
+    score += 8; // EXTREME MEXC signal (>1M BiliBili views!)
+  } else if (mexcPotential.score >= 8) {
+    score += 6; // Very strong MEXC signal
+  } else if (mexcPotential.score >= 5) {
+    score += 4; // Strong MEXC signal
+  } else if (mexcPotential.score >= 3) {
+    score += 2; // Medium MEXC signal
+  }
+  
+  return { 
+    score, 
+    mexcScore: mexcPotential.score,
+    mexcFactors: mexcPotential.factors 
+  };
+}
+
+// MEXC Potential Checker - Multi-Path Detection!
+async function checkMEXCPotential(token) {
+  let score = 0;
+  const factors = [];
+  
+  try {
+    // Only check BiliBili for now (most important + fastest)
+    // Full multi-path only for high-score candidates
+    const bili = await checkBiliBili(token.name);
+    
+    // Placeholder results for other platforms (to avoid memory issues)
+    const tiktok = { totalViews: 0, videoCount: 0 };
+    const reddit = { totalUpvotes: 0, postCount: 0 };
+    const naver = { totalMentions: 0 };
+    const github = { totalStars: 0, hasActiveRepo: false };
+    const dex = { totalVolume24h: 0 };
+    const twitter = { isTrending: false, tweetCount: 0 };
+    
+    // 1. BiliBili (China) - STRONGEST for MEXC!
+    if (bili.totalViews > 5000000) {
+      score += 6;
+      factors.push(`BiliBili: ${(bili.totalViews/1e6).toFixed(1)}M views`);
+    } else if (bili.totalViews > 1000000) {
+      score += 5;
+      factors.push(`BiliBili: ${(bili.totalViews/1e6).toFixed(1)}M views`);
+    } else if (bili.totalViews > 500000) {
+      score += 3;
+      factors.push(`BiliBili: ${(bili.totalViews/1e3).toFixed(0)}K views`);
+    } else if (bili.totalViews > 100000) {
+      score += 2;
+      factors.push(`BiliBili: ${(bili.totalViews/1e3).toFixed(0)}K views`);
+    }
+    
+    // 2. TikTok (Global Viral)
+    if (tiktok.totalViews > 10000000) {
+      score += 5;
+      factors.push(`TikTok: ${(tiktok.totalViews/1e6).toFixed(1)}M views`);
+    } else if (tiktok.totalViews > 1000000) {
+      score += 3;
+      factors.push(`TikTok: ${(tiktok.totalViews/1e6).toFixed(1)}M views`);
+    } else if (tiktok.totalViews > 100000) {
+      score += 2;
+      factors.push(`TikTok: ${(tiktok.totalViews/1e3).toFixed(0)}K views`);
+    }
+    
+    // 3. Reddit (USA/EU Community)
+    if (reddit.totalUpvotes > 10000) {
+      score += 4;
+      factors.push(`Reddit: ${(reddit.totalUpvotes/1e3).toFixed(1)}K upvotes`);
+    } else if (reddit.totalUpvotes > 1000) {
+      score += 2;
+      factors.push(`Reddit: ${reddit.totalUpvotes} upvotes`);
+    }
+    
+    // 4. Naver (Korea)
+    if (naver.totalMentions > 50) {
+      score += 4;
+      factors.push(`Naver: ${naver.totalMentions} mentions (Korea)`);
+    } else if (naver.totalMentions > 20) {
+      score += 2;
+      factors.push(`Naver: ${naver.totalMentions} mentions`);
+    }
+    
+    // 5. GitHub (Tech Plays)
+    if (github.totalStars > 1000) {
+      score += 4;
+      factors.push(`GitHub: ${github.totalStars} stars`);
+    } else if (github.totalStars > 100) {
+      score += 2;
+      factors.push(`GitHub: ${github.totalStars} stars`);
+    }
+    if (github.hasActiveRepo) {
+      score += 1;
+      factors.push('Active development');
+    }
+    
+    // 6. DEX Volume (Trading Activity)
+    if (dex.totalVolume24h > 100000) {
+      score += 3;
+      factors.push(`DEX Volume: $${(dex.totalVolume24h/1e3).toFixed(0)}K`);
+    } else if (dex.totalVolume24h > 10000) {
+      score += 2;
+      factors.push(`DEX Volume: $${(dex.totalVolume24h/1e3).toFixed(1)}K`);
+    }
+    
+    // 7. Twitter Trending
+    if (twitter.isTrending) {
+      score += 3;
+      factors.push(`Twitter trending (${twitter.tweetCount} tweets)`);
+    } else if (twitter.tweetCount > 50) {
+      score += 1;
+      factors.push(`Twitter: ${twitter.tweetCount} tweets`);
+    }
+    
+    // Regional Signals
+    const hasChinese = /[\u4e00-\u9fa5]/.test(token.name + token.symbol);
+    if (hasChinese) {
+      score += 2;
+      factors.push('Chinese characters');
+    }
+    
+    if (hasKoreanCharacters(token.name + token.symbol)) {
+      score += 2;
+      factors.push('Korean characters');
+    }
+    
+    // Pump.fun = Direct MEXC path
+    score += 2;
+    factors.push('Pump.fun ecosystem');
+    
+  } catch (err) {
+    console.error('MEXC check error:', err.message);
+  }
+  
+  return { score, factors };
+}
+
+// BiliBili API Check (with timeout)
+function checkBiliBili(query) {
+  return new Promise((resolve) => {
+    const url = `https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword=${encodeURIComponent(query)}`;
+    
+    const timeout = setTimeout(() => {
+      resolve({ totalViews: 0, videoCount: 0 });
+    }, 5000); // 5 second timeout
+    
+    https.get(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0',
+        'Referer': 'https://www.bilibili.com'
+      }
+    }, (res) => {
+      let data = '';
+      res.on('data', c => data += c);
+      res.on('end', () => {
+        clearTimeout(timeout);
+        try {
+          const json = JSON.parse(data);
+          if (json.data?.result) {
+            const videos = json.data.result;
+            const totalViews = videos.reduce((sum, v) => sum + (v.play || 0), 0);
+            resolve({ totalViews, videoCount: videos.length });
+          } else {
+            resolve({ totalViews: 0, videoCount: 0 });
+          }
+        } catch {
+          resolve({ totalViews: 0, videoCount: 0 });
+        }
+      });
+    }).on('error', () => {
+      clearTimeout(timeout);
+      resolve({ totalViews: 0, videoCount: 0 });
+    });
+  });
+}
+
+// Main WebSocket handler
+async function connectWebSocket() {
+  const ws = new WebSocket('wss://pumpportal.fun/api/data');
+  
+  ws.on('open', () => {
+    console.log('✅ Connected to Pump.fun WebSocket');
+    
+    // Subscribe to new token events
+    ws.send(JSON.stringify({
+      method: 'subscribeNewToken'
+    }));
+    
+    console.log('📡 Subscribed to new token launches...');
+  });
+  
+  ws.on('message', async (data) => {
+    try {
+      const event = JSON.parse(data.toString());
+      
+      // Filter: Only new token events
+      if (event.txType === 'create') {
+        const token = event;
+        const scoreResult = await quickScore(token);
+        const score = scoreResult.score;
+        const mexcScore = scoreResult.mexcScore;
+        const mexcFactors = scoreResult.mexcFactors;
+        
+        // Detect category
+        const desc = (token.description || '').toLowerCase();
+        const techKeywords = ['ai', 'agent', 'zk', 'depin', 'protocol', 'sdk', 'infrastructure', 'oracle', 'bridge', 'rwa'];
+        const isTech = techKeywords.some(k => desc.includes(k)) || 
+                       token.website?.includes('docs.') ||
+                       token.website?.includes('github.');
+        const category = isTech ? 'tech' : 'meme';
+        
+        console.log(`\n🆕 NEW TOKEN: ${token.name} (${token.symbol})`);
+        console.log(`   Category: ${category}`);
+        console.log(`   Score: ${score}/12`);
+        
+        // MEXC Frontscheinwerfer output
+        if (mexcScore >= 5) {
+          console.log(`   🚨 MEXC Score: ${mexcScore}/12`);
+          mexcFactors.forEach(f => console.log(`      - ${f}`));
+          if (mexcScore >= 8) {
+            console.log(`   🔥 HIGH MEXC PROBABILITY - Listing likely in 3-7 days!`);
+          }
+        }
+        
+        console.log(`   Mint: ${token.mint}`);
+        console.log(`   Creator: ${token.traderPublicKey}`);
+        
+        // Save if: score >= 4 OR high MEXC potential (>=7, raised from 5)
+        // Also require at least ONE social link OR very high virality
+        const hasSocial = token.twitter || token.telegram || token.website;
+        const veryHighVirality = mexcScore >= 10;
+        
+        if ((score >= 4 || mexcScore >= 7) && (hasSocial || veryHighVirality)) {
+          const candidates = loadCandidates();
+          
+          // Check if already exists
+          const exists = candidates.some(c => c.mint === token.mint);
+          if (!exists) {
+            candidates.push({
+              source: 'pumpfun_websocket',
+              mint: token.mint,
+              name: token.name,
+              symbol: token.symbol,
+              description: token.description,
+              twitter: token.twitter,
+              telegram: token.telegram,
+              website: token.website,
+              image: token.image_uri,
+              creator: token.traderPublicKey,
+              category: category,
+              score: score,
+              mexcScore: mexcScore,  // NEW: MEXC Frontscheinwerfer score
+              mexcFactors: mexcFactors,  // NEW: Why high MEXC probability
+              scannedAt: new Date().toISOString(),
+              initialMarketCapSol: token.initialBuy || 0,
+              bondingCurveKey: token.bondingCurveKey,
+              associatedBondingCurve: token.associatedBondingCurve,
+            });
+            
+            saveCandidates(candidates);
+            console.log(`   ✅ Added to candidates (${category}, Score: ${score})`);
+            
+            // High-score alert
+            if (score >= 8 || mexcScore >= 8) {
+              console.log(`   🚨 HIGH SCORE ALERT! Needs immediate AI review!`);
+            }
+          }
+        } else {
+          console.log(`   ⏭️ Skipped (Score too low: ${score})`);
+        }
+      }
+    } catch (err) {
+      console.error('Parse error:', err.message);
+    }
+  });
+  
+  ws.on('error', (err) => {
+    console.error('❌ WebSocket error:', err.message);
+  });
+  
+  ws.on('close', () => {
+    console.log('⚠️ WebSocket closed. Reconnecting in 5s...');
+    setTimeout(connectWebSocket, 5000);
+  });
+}
+
+// Start
+console.log('🚀 Starting Pump.fun Real-Time Scanner...');
+connectWebSocket();

@@ -1,0 +1,1348 @@
+{
+  "accounts": {
+    "APompliano": {
+      "followers": 1892089,
+      "following_10k": [
+        {
+          "handle": "saylor",
+          "name": "Michael Saylor",
+          "followers": 4902849
+        },
+        {
+          "handle": "BitcoinMagazine",
+          "name": "Bitcoin Magazine",
+          "followers": 3932162
+        },
+        {
+          "handle": "100trillionUSD",
+          "name": "PlanB",
+          "followers": 2163072
+        },
+        {
+          "handle": "BitcoinArchive",
+          "name": "Bitcoin Archive",
+          "followers": 1815778
+        },
+        {
+          "handle": "nickshirleyy",
+          "name": "Nick shirley",
+          "followers": 1365296
+        },
+        {
+          "handle": "RaoulGMI",
+          "name": "Raoul Pal",
+          "followers": 1326181
+        },
+        {
+          "handle": "willywoo",
+          "name": "Willy Woo",
+          "followers": 1236146
+        },
+        {
+          "handle": "intocryptoverse",
+          "name": "Benjamin Cowen",
+          "followers": 1164202
+        },
+        {
+          "handle": "DocumentingBTC",
+          "name": "Documenting \u20bfitcoin \ud83d\udcc4",
+          "followers": 1114398
+        },
+        {
+          "handle": "scottmelker",
+          "name": "The Wolf Of All Streets",
+          "followers": 1081701
+        },
+        {
+          "handle": "cryptomanran",
+          "name": "Ran Neuner",
+          "followers": 971952
+        },
+        {
+          "handle": "TheOfficerTatum",
+          "name": "Brandon Tatum",
+          "followers": 932796
+        },
+        {
+          "handle": "danheld",
+          "name": "Dan Held",
+          "followers": 870818
+        },
+        {
+          "handle": "mirandadevine",
+          "name": "Miranda Devine",
+          "followers": 862511
+        },
+        {
+          "handle": "WClemente",
+          "name": "Will",
+          "followers": 797020
+        },
+        {
+          "handle": "maxkeiser",
+          "name": "Max Keiser",
+          "followers": 666813
+        },
+        {
+          "handle": "PeterMcCormack",
+          "name": "Peter McCormack \ud83c\udff4\u200d\u2620\ufe0f\ud83c\uddec\ud83c\udde7\ud83c\uddee\ud83c\uddea",
+          "followers": 603329
+        },
+        {
+          "handle": "ainsleyearhardt",
+          "name": "Ainsley Earhardt",
+          "followers": 582298
+        },
+        {
+          "handle": "mattvanswol",
+          "name": "Matt Van Swol",
+          "followers": 464433
+        },
+        {
+          "handle": "Breedlove22",
+          "name": "Robert \u20bfreedlove",
+          "followers": 443175
+        },
+        {
+          "handle": "nic_carter",
+          "name": "nic carter",
+          "followers": 438919
+        },
+        {
+          "handle": "DylanLeClair",
+          "name": "Dylan LeClair",
+          "followers": 431922
+        },
+        {
+          "handle": "saifedean",
+          "name": "Saifedean Ammous",
+          "followers": 416680
+        },
+        {
+          "handle": "CorySwan",
+          "name": "Cory \ud83e\udda2 Real Bitcoin @ Swan.com",
+          "followers": 293245
+        },
+        {
+          "handle": "GoingParabolic",
+          "name": "Jason Ai. Williams",
+          "followers": 281419
+        },
+        {
+          "handle": "HumbleFlow",
+          "name": "Humble Flow",
+          "followers": 256633
+        },
+        {
+          "handle": "bcherny",
+          "name": "Boris Cherny",
+          "followers": 254942
+        },
+        {
+          "handle": "MattPRD",
+          "name": "Matt Schlicht",
+          "followers": 252416
+        },
+        {
+          "handle": "MilitaryCooI",
+          "name": "Military Support",
+          "followers": 211254
+        },
+        {
+          "handle": "KatieMiller",
+          "name": "Katie Miller",
+          "followers": 204893
+        },
+        {
+          "handle": "BlastingThrough",
+          "name": "SGM Mike Vining @ Blasting Through Official",
+          "followers": 203376
+        },
+        {
+          "handle": "jackclarkSF",
+          "name": "Jack Clark",
+          "followers": 110652
+        },
+        {
+          "handle": "thewinningdiff1",
+          "name": "The Winning Difference",
+          "followers": 98498
+        },
+        {
+          "handle": "PromptLLM",
+          "name": "Prompter",
+          "followers": 80834
+        },
+        {
+          "handle": "AnnaEconomist",
+          "name": "Anna Wong",
+          "followers": 77201
+        },
+        {
+          "handle": "unseen1_unseen",
+          "name": "unseen1",
+          "followers": 76880
+        },
+        {
+          "handle": "DanielDiMartino",
+          "name": "Daniel Di Martino \ud83c\uddfa\ud83c\uddf8\ud83c\uddfb\ud83c\uddea",
+          "followers": 73204
+        },
+        {
+          "handle": "Filmwatchers1",
+          "name": "Film Watchers",
+          "followers": 70013
+        },
+        {
+          "handle": "boazweinstein",
+          "name": "boaz weinstein",
+          "followers": 52290
+        },
+        {
+          "handle": "alexwg",
+          "name": "Dr. Alex Wissner-Gross",
+          "followers": 44664
+        },
+        {
+          "handle": "KingVelesI",
+          "name": "King of the Marsh",
+          "followers": 36750
+        },
+        {
+          "handle": "MericaCulture",
+          "name": "\ud83c\uddfa\ud83c\uddf8 The American Culturist \ud83c\uddfa\ud83c\uddf8",
+          "followers": 36494
+        },
+        {
+          "handle": "ChadRobo",
+          "name": "Chad Robichaux",
+          "followers": 34934
+        },
+        {
+          "handle": "Gentleman_Ways",
+          "name": "The Ways of A Gentleman",
+          "followers": 34227
+        },
+        {
+          "handle": "marcvanderchijs",
+          "name": "Marc van der Chijs",
+          "followers": 33575
+        },
+        {
+          "handle": "IndependentInst",
+          "name": "Independent Institute",
+          "followers": 33447
+        },
+        {
+          "handle": "Dynastus",
+          "name": "Ben Black | Dynasty Foundry",
+          "followers": 33175
+        },
+        {
+          "handle": "patrickjwitt",
+          "name": "Patrick Witt",
+          "followers": 23337
+        },
+        {
+          "handle": "aliansarinik",
+          "name": "Ali Ansari",
+          "followers": 21400
+        },
+        {
+          "handle": "basedamericana",
+          "name": "\ud83c\uddfa\ud83c\uddf8 Based Americana \ud83c\uddfa\ud83c\uddf8",
+          "followers": 19440
+        },
+        {
+          "handle": "richardzphotoz",
+          "name": "richard",
+          "followers": 18709
+        },
+        {
+          "handle": "Olivia_Gazis",
+          "name": "Olivia Gazis",
+          "followers": 18243
+        },
+        {
+          "handle": "mjboswell",
+          "name": "Michael Boswell",
+          "followers": 17686
+        },
+        {
+          "handle": "sulaimanghori",
+          "name": "Sulaiman Khan Ghori",
+          "followers": 14967
+        },
+        {
+          "handle": "FinanceFreeman",
+          "name": "Finance Freeman \ud83c\uddfa\ud83c\uddf8",
+          "followers": 13310
+        },
+        {
+          "handle": "nicbstme",
+          "name": "Nicolas Bustamante",
+          "followers": 11603
+        }
+      ]
+    },
+    "Crypto_Birb": {
+      "followers": 720708,
+      "following_10k": [
+        {
+          "handle": "XCreators",
+          "name": "Creators",
+          "followers": 10919408
+        },
+        {
+          "handle": "bitget",
+          "name": "Bitget",
+          "followers": 4462286
+        },
+        {
+          "handle": "intocryptoverse",
+          "name": "Benjamin Cowen",
+          "followers": 1164202
+        },
+        {
+          "handle": "scottmelker",
+          "name": "The Wolf Of All Streets",
+          "followers": 1081701
+        },
+        {
+          "handle": "SBF_FTX",
+          "name": "SBF",
+          "followers": 999077
+        },
+        {
+          "handle": "cryptomanran",
+          "name": "Ran Neuner",
+          "followers": 971952
+        },
+        {
+          "handle": "CryptoGodJohn",
+          "name": "John",
+          "followers": 874099
+        },
+        {
+          "handle": "CryptoMichNL",
+          "name": "Micha\u00ebl van de Poppe",
+          "followers": 819600
+        },
+        {
+          "handle": "CryptoWizardd",
+          "name": "WIZZ\ud83e\udd77 ( beware scammers )",
+          "followers": 814950
+        },
+        {
+          "handle": "IncomeSharks",
+          "name": "IncomeSharks",
+          "followers": 729855
+        },
+        {
+          "handle": "eliz883",
+          "name": "EliZ",
+          "followers": 604674
+        },
+        {
+          "handle": "CryptoTony__",
+          "name": "Crypto Tony",
+          "followers": 563625
+        },
+        {
+          "handle": "TechDev_52",
+          "name": "TechDev",
+          "followers": 560626
+        },
+        {
+          "handle": "Sheldon_Sniper",
+          "name": "Sheldon The Sniper",
+          "followers": 552974
+        },
+        {
+          "handle": "JamesWynnReal",
+          "name": "James Wynn",
+          "followers": 488941
+        },
+        {
+          "handle": "Dashpay",
+          "name": "Dash",
+          "followers": 443647
+        },
+        {
+          "handle": "EmperorBTC",
+          "name": "Emperor\ud83d\udc51",
+          "followers": 442231
+        },
+        {
+          "handle": "DegenerateNews",
+          "name": "DEGEN NEWS",
+          "followers": 422440
+        },
+        {
+          "handle": "DaanCrypto",
+          "name": "Daan Crypto Trades",
+          "followers": 417577
+        },
+        {
+          "handle": "yhbryankimiq",
+          "name": "YoungHoon Kim",
+          "followers": 409431
+        },
+        {
+          "handle": "Nebraskangooner",
+          "name": "Nebraskangooner",
+          "followers": 406914
+        },
+        {
+          "handle": "MuroCrypto",
+          "name": "Muro",
+          "followers": 405011
+        },
+        {
+          "handle": "KoroushAK",
+          "name": "Koroush AK",
+          "followers": 377347
+        },
+        {
+          "handle": "BigCheds",
+          "name": "Cheds Trading",
+          "followers": 373443
+        },
+        {
+          "handle": "TheBitcoinConf",
+          "name": "The Bitcoin Conference",
+          "followers": 317208
+        },
+        {
+          "handle": "synthetix",
+          "name": "Synthetix \u2694\ufe0f",
+          "followers": 262561
+        },
+        {
+          "handle": "TrueCrypto28",
+          "name": "Mr. Anderson",
+          "followers": 246886
+        },
+        {
+          "handle": "SatoshiFlipper",
+          "name": "Satoshi Flipper",
+          "followers": 240382
+        },
+        {
+          "handle": "JanaCryptoQueen",
+          "name": "Jana \ud83d\udc51",
+          "followers": 214242
+        },
+        {
+          "handle": "easyeight08",
+          "name": "BUTCHER",
+          "followers": 198925
+        },
+        {
+          "handle": "WEEX_Official",
+          "name": "WEEX",
+          "followers": 196779
+        },
+        {
+          "handle": "Trader_Jibon",
+          "name": "Trader_J",
+          "followers": 188100
+        },
+        {
+          "handle": "amtvmedia",
+          "name": "Christopher Greene \ud83d\ude0e\ud83c\udfdd\ud83d\ude80\u26f5\ufe0f",
+          "followers": 150796
+        },
+        {
+          "handle": "HelloTelos",
+          "name": "Telos",
+          "followers": 126487
+        },
+        {
+          "handle": "GETTRofficial",
+          "name": "GETTR",
+          "followers": 117272
+        },
+        {
+          "handle": "0xLuxi",
+          "name": "Luxi \u2b50",
+          "followers": 90004
+        },
+        {
+          "handle": "R89Capital",
+          "name": "Rex",
+          "followers": 78883
+        },
+        {
+          "handle": "Degen_Hardy",
+          "name": "Hardy",
+          "followers": 75124
+        },
+        {
+          "handle": "plancknetwork",
+          "name": "Planck",
+          "followers": 47308
+        },
+        {
+          "handle": "Katherine_XBT",
+          "name": "Katherine\ud83d\udd36",
+          "followers": 44235
+        },
+        {
+          "handle": "Cryptocom_Exch",
+          "name": "Crypto.com Exchange",
+          "followers": 43105
+        },
+        {
+          "handle": "CryptoLifer33",
+          "name": "Sam Price",
+          "followers": 41507
+        },
+        {
+          "handle": "YazanXBT",
+          "name": "Yazan \ud83c\uddf5\ud83c\uddf8",
+          "followers": 41120
+        },
+        {
+          "handle": "Deviled_meggs_",
+          "name": "Deviled Meggs",
+          "followers": 39781
+        },
+        {
+          "handle": "Leonard_Aster",
+          "name": "Leonard \ud83d\udc9b Aster",
+          "followers": 33443
+        },
+        {
+          "handle": "Xking332",
+          "name": "X",
+          "followers": 33345
+        },
+        {
+          "handle": "vsntoken",
+          "name": "Vision",
+          "followers": 31582
+        },
+        {
+          "handle": "hannahhughes",
+          "name": "Hannah Hughes",
+          "followers": 29034
+        },
+        {
+          "handle": "ape6743",
+          "name": "BBA",
+          "followers": 28572
+        },
+        {
+          "handle": "blond_ish",
+          "name": "BLONDISH",
+          "followers": 21166
+        },
+        {
+          "handle": "Andre_Dragosch",
+          "name": "Andr\u00e9 Dragosch, PhD\u26a1",
+          "followers": 19538
+        },
+        {
+          "handle": "CryptoPodroze",
+          "name": "Crypto Podr\u00f3\u017ce",
+          "followers": 19251
+        },
+        {
+          "handle": "tajemnicekrypto",
+          "name": "Tajemnice Kryptowalut",
+          "followers": 15909
+        },
+        {
+          "handle": "crypto_auris",
+          "name": "Crypto Auris",
+          "followers": 10729
+        },
+        {
+          "handle": "thebitwhale",
+          "name": "The BitWhale",
+          "followers": 10097
+        }
+      ]
+    },
+    "ErikVoorhees": {
+      "followers": 807668,
+      "following_10k": [
+        {
+          "handle": "sundarpichai",
+          "name": "Sundar Pichai",
+          "followers": 5759842
+        },
+        {
+          "handle": "willywoo",
+          "name": "Willy Woo",
+          "followers": 1236146
+        },
+        {
+          "handle": "CryptoHayes",
+          "name": "Arthur Hayes",
+          "followers": 788078
+        },
+        {
+          "handle": "demishassabis",
+          "name": "Demis Hassabis",
+          "followers": 642673
+        },
+        {
+          "handle": "PeterMcCormack",
+          "name": "Peter McCormack \ud83c\udff4\u200d\u2620\ufe0f\ud83c\uddec\ud83c\udde7\ud83c\uddee\ud83c\uddea",
+          "followers": 603329
+        },
+        {
+          "handle": "PrestonPysh",
+          "name": "Preston Pysh",
+          "followers": 590343
+        },
+        {
+          "handle": "jackmallers",
+          "name": "Jack Mallers",
+          "followers": 551025
+        },
+        {
+          "handle": "lopp",
+          "name": "Jameson Lopp",
+          "followers": 526254
+        },
+        {
+          "handle": "Breedlove22",
+          "name": "Robert \u20bfreedlove",
+          "followers": 443176
+        },
+        {
+          "handle": "JeffBooth",
+          "name": "Jeff Booth \u26a1\ufe0f",
+          "followers": 377772
+        },
+        {
+          "handle": "cburniske",
+          "name": "Chris Burniske",
+          "followers": 337653
+        },
+        {
+          "handle": "mert",
+          "name": "mert",
+          "followers": 321956
+        },
+        {
+          "handle": "openclaw",
+          "name": "OpenClaw\ud83e\udd9e",
+          "followers": 310080
+        },
+        {
+          "handle": "TuurDemeester",
+          "name": "Tuur Demeester",
+          "followers": 307988
+        },
+        {
+          "handle": "thedefiedge",
+          "name": "Edgy - The DeFi Edge \ud83d\udde1\ufe0f",
+          "followers": 304256
+        },
+        {
+          "handle": "steipete",
+          "name": "Peter Steinberger \ud83e\udd9e",
+          "followers": 284880
+        },
+        {
+          "handle": "RyanSAdams",
+          "name": "RYAN S\u039eAN ADAMS - rsa.eth \ud83e\udd84",
+          "followers": 274158
+        },
+        {
+          "handle": "MartyBent",
+          "name": "Marty Bent",
+          "followers": 270427
+        },
+        {
+          "handle": "gladstein",
+          "name": "Alex Gladstein \ud83c\udf0b \u26a1",
+          "followers": 260890
+        },
+        {
+          "handle": "bcherny",
+          "name": "Boris Cherny",
+          "followers": 254943
+        },
+        {
+          "handle": "MattPRD",
+          "name": "Matt Schlicht",
+          "followers": 252416
+        },
+        {
+          "handle": "CaitlinLong_",
+          "name": "Caitlin Long \ud83d\udd11\u26a1\ufe0f\ud83d\udfe0",
+          "followers": 250233
+        },
+        {
+          "handle": "SimonDixonTwitt",
+          "name": "Simon Dixon",
+          "followers": 246918
+        },
+        {
+          "handle": "jespow",
+          "name": "Jesse Powell",
+          "followers": 231982
+        },
+        {
+          "handle": "udiWertheimer",
+          "name": "Udi Wertheimer",
+          "followers": 230814
+        },
+        {
+          "handle": "BlastingThrough",
+          "name": "SGM Mike Vining @ Blasting Through Official",
+          "followers": 203376
+        },
+        {
+          "handle": "a16zcrypto",
+          "name": "a16z crypto",
+          "followers": 187743
+        },
+        {
+          "handle": "ercwl",
+          "name": "Eric Wall",
+          "followers": 168708
+        },
+        {
+          "handle": "FossGregfoss",
+          "name": "FOSS - #forthekids",
+          "followers": 167050
+        },
+        {
+          "handle": "venturetwins",
+          "name": "Justine Moore",
+          "followers": 155521
+        },
+        {
+          "handle": "brucefenton",
+          "name": "Bruce Fenton",
+          "followers": 146552
+        },
+        {
+          "handle": "1x_tech",
+          "name": "1X",
+          "followers": 130519
+        },
+        {
+          "handle": "OGDfarmer",
+          "name": "DFarmer",
+          "followers": 125967
+        },
+        {
+          "handle": "EvgenyGaevoy",
+          "name": "wishful_cynic",
+          "followers": 95977
+        },
+        {
+          "handle": "bankrbot",
+          "name": "Bankr",
+          "followers": 93115
+        },
+        {
+          "handle": "amywumartin",
+          "name": "Amy Wu Martin",
+          "followers": 82892
+        },
+        {
+          "handle": "reya_xyz",
+          "name": "Reya",
+          "followers": 79214
+        },
+        {
+          "handle": "luanalopeslara",
+          "name": "Luana Lopes Lara",
+          "followers": 60317
+        },
+        {
+          "handle": "magattew",
+          "name": "Magatte Wade",
+          "followers": 59686
+        },
+        {
+          "handle": "arjunblj",
+          "name": "Arjun Balaji",
+          "followers": 57766
+        },
+        {
+          "handle": "jbrukh",
+          "name": "Jake Brukhman",
+          "followers": 50983
+        },
+        {
+          "handle": "mashadrokova",
+          "name": "Masha Bucher",
+          "followers": 34207
+        },
+        {
+          "handle": "_kinjalbshah",
+          "name": "Kinjal Shah",
+          "followers": 30340
+        },
+        {
+          "handle": "newlimit",
+          "name": "NewLimit",
+          "followers": 29958
+        },
+        {
+          "handle": "kevinafischer",
+          "name": "Kevin Fischer",
+          "followers": 28650
+        },
+        {
+          "handle": "JohnathanBi",
+          "name": "Johnathan Bi",
+          "followers": 28014
+        },
+        {
+          "handle": "mspringut",
+          "name": "Micah Springut",
+          "followers": 27016
+        },
+        {
+          "handle": "JHCA1",
+          "name": "J Henry Ault",
+          "followers": 24573
+        },
+        {
+          "handle": "AustinBarack",
+          "name": "Austin Barack",
+          "followers": 20326
+        },
+        {
+          "handle": "Monumental_Labs",
+          "name": "Monumental Labs",
+          "followers": 17307
+        },
+        {
+          "handle": "isabelfoxenduke",
+          "name": "Isabel Foxen Duke\u26a1\ufe0f",
+          "followers": 16232
+        },
+        {
+          "handle": "zashi_app",
+          "name": "Zashi",
+          "followers": 13627
+        },
+        {
+          "handle": "SatsTerminal",
+          "name": "Sats Terminal",
+          "followers": 12928
+        },
+        {
+          "handle": "surfcoderepeat",
+          "name": "Adam",
+          "followers": 11894
+        },
+        {
+          "handle": "halstonvalencia",
+          "name": "Halston",
+          "followers": 11207
+        }
+      ]
+    },
+    "PeterLBrandt": {
+      "followers": 883588,
+      "following_10k": [
+        {
+          "handle": "JohnCena",
+          "name": "John Cena",
+          "followers": 12697508
+        },
+        {
+          "handle": "JamesOKeefeIII",
+          "name": "James O'Keefe",
+          "followers": 3435848
+        },
+        {
+          "handle": "DHSgov",
+          "name": "Homeland Security",
+          "followers": 2935687
+        },
+        {
+          "handle": "kylegriffin1",
+          "name": "Kyle Griffin",
+          "followers": 1297779
+        },
+        {
+          "handle": "markminervini",
+          "name": "Mark Minervini",
+          "followers": 669353
+        },
+        {
+          "handle": "the_jefferymead",
+          "name": "Jeffery Mead",
+          "followers": 589947
+        },
+        {
+          "handle": "TechDev_52",
+          "name": "TechDev",
+          "followers": 560626
+        },
+        {
+          "handle": "Trader_XO",
+          "name": "XO",
+          "followers": 545600
+        },
+        {
+          "handle": "Nebraskangooner",
+          "name": "Nebraskangooner",
+          "followers": 406914
+        },
+        {
+          "handle": "alphatrends",
+          "name": "Brian Shannon, CMT",
+          "followers": 390196
+        },
+        {
+          "handle": "Bubblebathgirl",
+          "name": "Paul A. Szypula \ud83c\uddfa\ud83c\uddf8",
+          "followers": 382879
+        },
+        {
+          "handle": "Rightanglenews",
+          "name": "Right Angle News Network",
+          "followers": 381133
+        },
+        {
+          "handle": "BigCheds",
+          "name": "Cheds Trading",
+          "followers": 373443
+        },
+        {
+          "handle": "BobLoukas",
+          "name": "Bob Loukas \ud83d\uddfd",
+          "followers": 371245
+        },
+        {
+          "handle": "Trader_Dante",
+          "name": "Tom Dante",
+          "followers": 335935
+        },
+        {
+          "handle": "cryptorand",
+          "name": "Rand",
+          "followers": 334543
+        },
+        {
+          "handle": "GavrielEToviel",
+          "name": "Gavriel E. Toviel",
+          "followers": 307844
+        },
+        {
+          "handle": "bbands",
+          "name": "John Bollinger",
+          "followers": 276896
+        },
+        {
+          "handle": "TrueCrypto28",
+          "name": "Mr. Anderson",
+          "followers": 246886
+        },
+        {
+          "handle": "TraderLion",
+          "name": "TraderLion",
+          "followers": 217926
+        },
+        {
+          "handle": "JC_ParetsX",
+          "name": "J.C. Parets",
+          "followers": 189799
+        },
+        {
+          "handle": "RichardMoglen",
+          "name": "Richard Moglen",
+          "followers": 181120
+        },
+        {
+          "handle": "TechCharts",
+          "name": "Aksel Kibar, CMT",
+          "followers": 167436
+        },
+        {
+          "handle": "ZeroHedge_",
+          "name": "Wick",
+          "followers": 155098
+        },
+        {
+          "handle": "caprioleio",
+          "name": "Charles Edwards",
+          "followers": 134280
+        },
+        {
+          "handle": "AsennaWealth",
+          "name": "Assad Tannous",
+          "followers": 130440
+        },
+        {
+          "handle": "WalterDeemer",
+          "name": "Walter Deemer",
+          "followers": 118195
+        },
+        {
+          "handle": "DragonSword778",
+          "name": "DragonSword778",
+          "followers": 111062
+        },
+        {
+          "handle": "PARABOLIT",
+          "name": "C\u00e6sar \ud83c\udfe6",
+          "followers": 108379
+        },
+        {
+          "handle": "bellausa17",
+          "name": "Bella",
+          "followers": 106002
+        },
+        {
+          "handle": "Ucan_Coin",
+          "name": "\ud835\udd80\ud835\udd88\ud835\udd86\ud835\udd93",
+          "followers": 97237
+        },
+        {
+          "handle": "GodandCountryy",
+          "name": "God & Country",
+          "followers": 89457
+        },
+        {
+          "handle": "Ellaweb_3",
+          "name": "EllaWeb3",
+          "followers": 82243
+        },
+        {
+          "handle": "haileyywest",
+          "name": "Hailey",
+          "followers": 36160
+        },
+        {
+          "handle": "jammles9",
+          "name": "Jammles",
+          "followers": 33852
+        },
+        {
+          "handle": "facetioussoup",
+          "name": "Liz Wriston",
+          "followers": 23924
+        },
+        {
+          "handle": "downlowfarming",
+          "name": "TBD",
+          "followers": 20817
+        },
+        {
+          "handle": "BrittConchLass",
+          "name": "Deborah ULTRA MAGA - RTR - Trump Won!",
+          "followers": 18866
+        },
+        {
+          "handle": "StacyAnnFlorida",
+          "name": "Stacy Ann",
+          "followers": 15511
+        },
+        {
+          "handle": "anika_climate",
+          "name": "Anika",
+          "followers": 13984
+        },
+        {
+          "handle": "AnandBhaav",
+          "name": "Anand Bhaav",
+          "followers": 10834
+        },
+        {
+          "handle": "JBMAGA03",
+          "name": "\ud83c\uddfa\ud83c\uddf8JB MAGA \ud83c\uddfa\ud83c\uddf8",
+          "followers": 10792
+        },
+        {
+          "handle": "GeriatrickGames",
+          "name": "Geriatrick",
+          "followers": 10665
+        }
+      ]
+    },
+    "blknoiz06": {
+      "followers": 792407,
+      "following_10k": [
+        {
+          "handle": "RepThomasMassie",
+          "name": "Thomas Massie",
+          "followers": 1663315
+        },
+        {
+          "handle": "claudeai",
+          "name": "Claude",
+          "followers": 436715
+        },
+        {
+          "handle": "realpeteyb123",
+          "name": "Peter B",
+          "followers": 307269
+        },
+        {
+          "handle": "steipete",
+          "name": "Peter Steinberger \ud83e\udd9e",
+          "followers": 284882
+        },
+        {
+          "handle": "mckaywrigley",
+          "name": "Mckay Wrigley",
+          "followers": 225688
+        },
+        {
+          "handle": "wesyang",
+          "name": "Wesley Yang",
+          "followers": 176038
+        },
+        {
+          "handle": "ThaBoyYom",
+          "name": "YOM\ud83d\udde3\ufe0f",
+          "followers": 104562
+        },
+        {
+          "handle": "BagCalls",
+          "name": "BagCalls \ud83c\udf92",
+          "followers": 103246
+        },
+        {
+          "handle": "ChristianHeiens",
+          "name": "Christian Heiens \ud83c\udfdb",
+          "followers": 89888
+        },
+        {
+          "handle": "megha_lilly",
+          "name": "Megha",
+          "followers": 82644
+        },
+        {
+          "handle": "amandaperera",
+          "name": "Cleopatra \ud83e\udeb7 \u271e",
+          "followers": 76378
+        },
+        {
+          "handle": "kenwheeler",
+          "name": "patagucci perf papi",
+          "followers": 65165
+        },
+        {
+          "handle": "arjunsethi",
+          "name": "Arjun Sethi",
+          "followers": 56232
+        },
+        {
+          "handle": "GarrettBullish",
+          "name": "Garrett",
+          "followers": 46743
+        },
+        {
+          "handle": "DionysianAgent",
+          "name": "thermo",
+          "followers": 43148
+        },
+        {
+          "handle": "HermanNarula",
+          "name": "Herman Narula",
+          "followers": 40634
+        },
+        {
+          "handle": "damianplayer",
+          "name": "Damian Player",
+          "followers": 40502
+        },
+        {
+          "handle": "SeismicSys",
+          "name": "Seismic",
+          "followers": 39823
+        },
+        {
+          "handle": "0xDeployer",
+          "name": "deployer",
+          "followers": 38368
+        },
+        {
+          "handle": "craigzLiszt",
+          "name": "Craig Weiss",
+          "followers": 36253
+        },
+        {
+          "handle": "mttgrmm",
+          "name": "Matt Grimm",
+          "followers": 32768
+        },
+        {
+          "handle": "ElonBachman",
+          "name": "Bachman",
+          "followers": 30451
+        },
+        {
+          "handle": "justalexoki",
+          "name": "taoki",
+          "followers": 27509
+        },
+        {
+          "handle": "neospirituality",
+          "name": "NeoSpirituality",
+          "followers": 26575
+        },
+        {
+          "handle": "dillon_mulroy",
+          "name": "Dillon Mulroy",
+          "followers": 24422
+        },
+        {
+          "handle": "bridgemindai",
+          "name": "BridgeMind",
+          "followers": 21450
+        },
+        {
+          "handle": "___frye",
+          "name": "frye",
+          "followers": 20443
+        },
+        {
+          "handle": "ImpulseLabs",
+          "name": "Impulse",
+          "followers": 20381
+        },
+        {
+          "handle": "MrE_mssg",
+          "name": "MrE",
+          "followers": 13324
+        },
+        {
+          "handle": "Read_Acted",
+          "name": "\ud83d\udc0d \u01a4\u015f\u05e5\ud835\udd54\ud835\udd25\ud835\udd60pomp_\u0110\ud835\udd26o\u0337\u035d\u03b7\u0443\u0e23\u01d7\u4e02 \u0d8f",
+          "followers": 13107
+        },
+        {
+          "handle": "CryptoMikli",
+          "name": "Mikli",
+          "followers": 11740
+        },
+        {
+          "handle": "rohunvora",
+          "name": "rohun",
+          "followers": 11386
+        }
+      ]
+    }
+  },
+  "network": {
+    "willywoo": {
+      "handle": "willywoo",
+      "followers": 1236146,
+      "followed_by": [
+        "APompliano",
+        "ErikVoorhees"
+      ]
+    },
+    "intocryptoverse": {
+      "handle": "intocryptoverse",
+      "followers": 1164202,
+      "followed_by": [
+        "APompliano",
+        "Crypto_Birb"
+      ]
+    },
+    "scottmelker": {
+      "handle": "scottmelker",
+      "followers": 1081701,
+      "followed_by": [
+        "APompliano",
+        "Crypto_Birb"
+      ]
+    },
+    "cryptomanran": {
+      "handle": "cryptomanran",
+      "followers": 971952,
+      "followed_by": [
+        "APompliano",
+        "Crypto_Birb"
+      ]
+    },
+    "petermccormack": {
+      "handle": "PeterMcCormack",
+      "followers": 603329,
+      "followed_by": [
+        "APompliano",
+        "ErikVoorhees"
+      ]
+    },
+    "breedlove22": {
+      "handle": "Breedlove22",
+      "followers": 443175,
+      "followed_by": [
+        "APompliano",
+        "ErikVoorhees"
+      ]
+    },
+    "bcherny": {
+      "handle": "bcherny",
+      "followers": 254942,
+      "followed_by": [
+        "APompliano",
+        "ErikVoorhees"
+      ]
+    },
+    "mattprd": {
+      "handle": "MattPRD",
+      "followers": 252416,
+      "followed_by": [
+        "APompliano",
+        "ErikVoorhees"
+      ]
+    },
+    "blastingthrough": {
+      "handle": "BlastingThrough",
+      "followers": 203376,
+      "followed_by": [
+        "APompliano",
+        "ErikVoorhees"
+      ]
+    },
+    "techdev_52": {
+      "handle": "TechDev_52",
+      "followers": 560626,
+      "followed_by": [
+        "Crypto_Birb",
+        "PeterLBrandt"
+      ]
+    },
+    "nebraskangooner": {
+      "handle": "Nebraskangooner",
+      "followers": 406914,
+      "followed_by": [
+        "Crypto_Birb",
+        "PeterLBrandt"
+      ]
+    },
+    "bigcheds": {
+      "handle": "BigCheds",
+      "followers": 373443,
+      "followed_by": [
+        "Crypto_Birb",
+        "PeterLBrandt"
+      ]
+    },
+    "truecrypto28": {
+      "handle": "TrueCrypto28",
+      "followers": 246886,
+      "followed_by": [
+        "Crypto_Birb",
+        "PeterLBrandt"
+      ]
+    },
+    "steipete": {
+      "handle": "steipete",
+      "followers": 284880,
+      "followed_by": [
+        "ErikVoorhees",
+        "blknoiz06"
+      ]
+    }
+  }
+}

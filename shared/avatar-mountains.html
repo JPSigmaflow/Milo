@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px;
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  padding: 48px;
+}
+.header { text-align: center; margin-bottom: 40px; }
+.header h1 { font-size: 42px; font-weight: 700; color: #f7931a; margin-bottom: 8px; }
+.header .subtitle { font-size: 24px; color: #64b5f6; font-weight: 500; }
+.header .date { font-size: 18px; color: #888; margin-top: 6px; }
+.day-card { background: #14141f; border: 1px solid #2a2a3a; border-radius: 16px; padding: 28px 32px; margin-bottom: 24px; }
+.day-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; border-bottom: 1px solid #2a2a3a; padding-bottom: 14px; }
+.day-title { font-size: 26px; font-weight: 700; color: #f7931a; }
+.day-cost { font-size: 18px; font-weight: 600; color: #4caf50; background: rgba(76,175,80,0.12); padding: 6px 16px; border-radius: 20px; }
+.section-title { font-size: 20px; font-weight: 600; color: #64b5f6; margin-bottom: 10px; }
+.spot { display: flex; align-items: flex-start; margin-bottom: 14px; padding-left: 4px; }
+.spot-icon { font-size: 24px; margin-right: 12px; min-width: 30px; text-align: center; }
+.spot-info { flex: 1; }
+.spot-name { font-size: 18px; font-weight: 600; color: #fff; }
+.spot-desc { font-size: 15px; color: #aaa; margin-top: 2px; }
+.spot-es { font-size: 14px; color: #f7931a99; margin-top: 2px; font-style: italic; }
+.spot-price { font-size: 17px; font-weight: 500; color: #f7931a; min-width: 120px; text-align: right; }
+.tips-card { background: linear-gradient(135deg, #1a1a2e, #14141f); border: 1px solid #f7931a33; border-radius: 16px; padding: 28px 32px; margin-bottom: 24px; }
+.tips-title { font-size: 22px; font-weight: 700; color: #f7931a; margin-bottom: 16px; }
+.tip-row { display: flex; align-items: flex-start; margin-bottom: 12px; }
+.tip-icon { font-size: 20px; margin-right: 12px; min-width: 28px; text-align: center; }
+.tip-text { font-size: 16px; color: #ccc; }
+.tip-es { font-size: 14px; color: #f7931a99; font-style: italic; }
+.total-card { background: linear-gradient(135deg, #1b2a1b, #14141f); border: 1px solid #4caf5044; border-radius: 16px; padding: 24px 32px; display: flex; justify-content: space-between; align-items: center; }
+.total-label { font-size: 22px; font-weight: 600; color: #e0e0e0; }
+.total-amount { font-size: 28px; font-weight: 700; color: #4caf50; }
+.total-sub { font-size: 15px; color: #888; text-align: right; }
+.lang-tag { font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 6px; margin-left: 6px; vertical-align: middle; }
+.de { background: rgba(255,255,255,0.08); color: #aaa; }
+.es { background: rgba(247,147,26,0.12); color: #f7931a88; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🏔️ Reiseplan China Crew</h1>
+  <div class="subtitle">Avatar Mountains — Zhangjiajie</div>
+  <div class="date">03. – 06. April 2026 · Hunan, China</div>
+  <div class="date" style="margin-top: 6px; color: #64b5f6;">Reiseplanung durch Sabrina</div>
+  <div class="date" style="margin-top: 4px;">🇩🇪 Deutsch / 🇪🇸 Español</div>
+</div>
+
+<!-- OVERVIEW -->
+<div class="day-card" style="border-color: #f7931a44;">
+  <div class="day-header" style="border-bottom-color: #f7931a33;">
+    <div class="day-title">📋 Übersicht / Resumen</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">🚄</div>
+    <div class="spot-info">
+      <div class="spot-name">Donnerstag, 02. April — Vorabend</div>
+      <div class="spot-desc">Chris & Gaby: Zug Shanghai Hongqiao → Hefei</div>
+      <div class="spot-es">🇪🇸 Jueves: Tren Shanghai Hongqiao → Hefei</div>
+    </div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🚅</div>
+    <div class="spot-info">
+      <div class="spot-name">Freitag, 03. April — Anreise + Ancient Town</div>
+      <div class="spot-desc">G637: 08:22 Hefei → 11:50 Changsha · G2438: 13:50 Changsha → 15:45 Zhangjiajie · Abends: Ancient Town</div>
+      <div class="spot-es">🇪🇸 Viernes: Llegada + Ciudad Antigua por la noche</div>
+    </div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🏔️</div>
+    <div class="spot-info">
+      <div class="spot-name">Samstag, 04. April — Tour Tag 1</div>
+      <div class="spot-desc">National Forest Park (Avatar Mountain) + Glass Bridge & Grand Canyon</div>
+      <div class="spot-es">🇪🇸 Sábado: Parque Nacional (Montaña Avatar) + Puente de Cristal & Gran Cañón</div>
+    </div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">⛩️</div>
+    <div class="spot-info">
+      <div class="spot-name">Sonntag, 05. April — Tour Tag 2</div>
+      <div class="spot-desc">Tianmen Mountain + Himmelstor + Glass Skywalk</div>
+      <div class="spot-es">🇪🇸 Domingo: Montaña Tianmen + Puerta del Cielo + Pasarela de Cristal</div>
+    </div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🚄</div>
+    <div class="spot-info">
+      <div class="spot-name">Montag, 06. April — Frühstück & Abreise</div>
+      <div class="spot-desc">Frühstücken, ~11:00 Rückreise per Zug</div>
+      <div class="spot-es">🇪🇸 Lunes: Desayuno y regreso en tren ~11:00</div>
+    </div>
+  </div>
+</div>
+
+<!-- HOTEL -->
+<div class="day-card" style="border-color: #64b5f644;">
+  <div class="day-header" style="border-bottom-color: #64b5f633;">
+    <div class="day-title">🏨 Hotel Pullman Zhangjiajie</div>
+    <div class="day-cost" style="background:rgba(100,181,246,0.12); color:#64b5f6;">3 Nächte / Noches</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">📅</div>
+    <div class="spot-info">
+      <div class="spot-name">Check-in: 03. April 14:00</div>
+      <div class="spot-desc">Check-out: 06. April 12:00</div>
+    </div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🛏️</div>
+    <div class="spot-info">
+      <div class="spot-name">3× Deluxe Room — King Bed</div>
+      <div class="spot-desc">Buchung 1: 1 Zimmer (2 Erw. + 1 Kind) · Buchung 2: 2 Zimmer (4 Erw.)</div>
+      <div class="spot-es">🇪🇸 Reserva 1: 1 hab. (2 adultos + 1 niño) · Reserva 2: 2 hab. (4 adultos)</div>
+    </div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">👤</div>
+    <div class="spot-info">
+      <div class="spot-name">Organisiert über Sabrina / Organizado por Sabrina</div>
+      <div class="spot-desc">Booking IDs: 593099791 · 1939200350</div>
+    </div>
+  </div>
+</div>
+
+<!-- FRIDAY -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-title">📅 Freitag / Viernes — Anreise</div>
+    <div class="day-cost">58,82 € / Pers.</div>
+  </div>
+  
+  <div class="section-title">🚄 Zugverbindung / Conexión de tren (Umstieg Changsha)</div>
+  
+  <div class="spot">
+    <div class="spot-icon">1️⃣</div>
+    <div class="spot-info">
+      <div class="spot-name">G637 · Hefeinan → Changshanan</div>
+      <div class="spot-desc">08:22 → 11:50 · 3 Std. 28 Min. · direkt</div>
+      <div class="spot-es">🇪🇸 3 horas 28 min · directo</div>
+    </div>
+    <div class="spot-price">38,65 €</div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">⏳</div>
+    <div class="spot-info">
+      <div class="spot-name">Umstieg in Changsha / Transbordo en Changsha</div>
+      <div class="spot-desc">2 Stunden Aufenthalt / 2 horas de espera</div>
+    </div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">2️⃣</div>
+    <div class="spot-info">
+      <div class="spot-name">G2438 · Changsha → Zhangjiajiexi</div>
+      <div class="spot-desc">13:50 → 15:45 · 1 Std. 55 Min. · direkt</div>
+      <div class="spot-es">🇪🇸 1 hora 55 min · directo</div>
+    </div>
+    <div class="spot-price">20,17 €</div>
+  </div>
+
+  <div style="margin-top: 18px; border-top: 1px solid #2a2a3a; padding-top: 16px;">
+    <div class="section-title">🏮 Freitagabend / Viernes noche: Ancient Town</div>
+    
+    <div class="spot">
+      <div class="spot-icon">🏮</div>
+      <div class="spot-info">
+        <div class="spot-name">Zhangjiajie Ancient Town (Dayong Old City)</div>
+        <div class="spot-desc">Historische Altstadt, Straßenmärkte, Street Food & abendliche Beleuchtung</div>
+        <div class="spot-es">🇪🇸 Ciudad antigua, mercados callejeros, comida y luces nocturnas</div>
+      </div>
+      <div class="spot-price" style="color:#4caf50;">Gratis</div>
+    </div>
+  </div>
+</div>
+
+<!-- SATURDAY MORNING -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-title">📅 Samstag / Sábado — Vormittag</div>
+    <div class="day-cost">364 RMB / Pers.</div>
+  </div>
+  <div class="section-title">National Forest Park (Avatar Mountain)</div>
+  
+  <div class="spot">
+    <div class="spot-icon">🪨</div>
+    <div class="spot-info">
+      <div class="spot-name">Hallelujah Mountain</div>
+      <div class="spot-desc">DAS Avatar-Foto! Viewing Deck direkt gegenüber nutzen</div>
+      <div class="spot-es">🇪🇸 ¡LA foto de Avatar! Usa la plataforma de observación enfrente</div>
+    </div>
+    <div class="spot-price">227 RMB</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">🚡</div>
+    <div class="spot-info">
+      <div class="spot-name">Bailong Skylift</div>
+      <div class="spot-desc">326m hoher Outdoor-Aufzug an der Felswand</div>
+      <div class="spot-es">🇪🇸 Ascensor exterior de 326m en la pared rocosa</div>
+    </div>
+    <div class="spot-price">65 RMB</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">🚠</div>
+    <div class="spot-info">
+      <div class="spot-name">Tianzi Mountain Cablecar</div>
+      <div class="spot-desc">Panorama-Seilbahn über die Sandsteinsäulen</div>
+      <div class="spot-es">🇪🇸 Teleférico panorámico sobre los pilares de piedra</div>
+    </div>
+    <div class="spot-price">72 RMB</div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🌿</div>
+    <div class="spot-info">
+      <div class="spot-name">Golden Whip Stream</div>
+      <div class="spot-desc">Ruhiger Waldweg zwischen den Klippen — perfekter Kontrast</div>
+      <div class="spot-es">🇪🇸 Sendero tranquilo entre los acantilados — contraste perfecto</div>
+    </div>
+    <div class="spot-price" style="color:#4caf50;">✓ inkl.</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">🌉</div>
+    <div class="spot-info">
+      <div class="spot-name">First Natural Bridge</div>
+      <div class="spot-desc">Natürliche Steinbrücke zwischen zwei Säulen</div>
+      <div class="spot-es">🇪🇸 Puente natural de piedra entre dos pilares</div>
+    </div>
+    <div class="spot-price" style="color:#4caf50;">✓ inkl.</div>
+  </div>
+</div>
+
+<!-- SATURDAY AFTERNOON -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-title">📅 Samstag / Sábado — Nachmittag</div>
+    <div class="day-cost">219 RMB / Pers.</div>
+  </div>
+  <div class="section-title">Glass Bridge & Grand Canyon / Puente de Cristal & Gran Cañón</div>
+  
+  <div class="spot">
+    <div class="spot-icon">🫣</div>
+    <div class="spot-info">
+      <div class="spot-name">Zhangjiajie Glass Bridge</div>
+      <div class="spot-desc">Längste Glasbrücke der Welt — 430m lang, 300m über dem Tal</div>
+      <div class="spot-es">🇪🇸 Puente de cristal más largo del mundo — 430m, 300m sobre el valle</div>
+    </div>
+    <div class="spot-price">219 RMB</div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🏞️</div>
+    <div class="spot-info">
+      <div class="spot-name">Grand Canyon Trail</div>
+      <div class="spot-desc">Wasserfälle + See unten im Canyon</div>
+      <div class="spot-es">🇪🇸 Cascadas + lago en el fondo del cañón</div>
+    </div>
+    <div class="spot-price" style="color:#4caf50;">✓ inkl.</div>
+  </div>
+</div>
+
+<!-- SUNDAY -->
+<div class="day-card">
+  <div class="day-header">
+    <div class="day-title">📅 Sonntag / Domingo — Tianmen Mountain</div>
+    <div class="day-cost">310 RMB / Pers.</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">⛩️</div>
+    <div class="spot-info">
+      <div class="spot-name">Tianmen Cave (Himmelstor / Puerta del Cielo)</div>
+      <div class="spot-desc">999 Stufen zum riesigen Felsloch — absolut ikonisch</div>
+      <div class="spot-es">🇪🇸 999 escalones hacia la cueva gigante — absolutamente icónico</div>
+    </div>
+    <div class="spot-price">278 RMB</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">🏗️</div>
+    <div class="spot-info">
+      <div class="spot-name">Glass Skywalk / Pasarela de Cristal</div>
+      <div class="spot-desc">Glasweg an der Felswand, 1.400m über dem Tal</div>
+      <div class="spot-es">🇪🇸 Pasarela de cristal en la pared rocosa, 1.400m sobre el valle</div>
+    </div>
+    <div class="spot-price" style="color:#4caf50;">✓ inkl.</div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🛤️</div>
+    <div class="spot-info">
+      <div class="spot-name">Cliff-Hanging Walkway / Paseo del Acantilado</div>
+      <div class="spot-desc">Schmaler Pfad direkt an der Felswand</div>
+      <div class="spot-es">🇪🇸 Sendero estrecho directamente en la pared del acantilado</div>
+    </div>
+    <div class="spot-price" style="color:#4caf50;">✓ inkl.</div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🚡</div>
+    <div class="spot-info">
+      <div class="spot-name">Seilbahn / Teleférico (7.455m!)</div>
+      <div class="spot-desc">30 Min Fahrt — eine der längsten der Welt</div>
+      <div class="spot-es">🇪🇸 30 min de viaje — uno de los más largos del mundo</div>
+    </div>
+    <div class="spot-price" style="color:#4caf50;">✓ inkl.</div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">↗️</div>
+    <div class="spot-info">
+      <div class="spot-name">Escalator / Escalera mecánica</div>
+      <div class="spot-desc">Rolltreppe als bequeme Alternative</div>
+      <div class="spot-es">🇪🇸 Escalera mecánica como alternativa cómoda</div>
+    </div>
+    <div class="spot-price">32 RMB</div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🛣️</div>
+    <div class="spot-info">
+      <div class="spot-name">99 Kurven-Straße / Carretera de 99 Curvas</div>
+      <div class="spot-desc">Tongtian Avenue — spektakuläre Serpentinen hoch zum Berg</div>
+      <div class="spot-es">🇪🇸 Tongtian Avenue — serpentinas espectaculares hasta la montaña</div>
+    </div>
+    <div class="spot-price" style="color:#4caf50;">✓ inkl.</div>
+  </div>
+</div>
+
+<!-- BONUS -->
+<div class="day-card" style="border-color: #f7931a33;">
+  <div class="day-header" style="border-bottom-color: #f7931a33;">
+    <div class="day-title">✨ Bonus — Falls Zeit übrig / Si hay tiempo</div>
+    <div class="day-cost" style="background:rgba(247,147,26,0.12); color:#f7931a;">Optional</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">🐉</div>
+    <div class="spot-info">
+      <div class="spot-name">Yellow Dragon Cave / Cueva del Dragón Amarillo</div>
+      <div class="spot-desc">Riesige Tropfsteinhöhle, beeindruckend beleuchtet</div>
+      <div class="spot-es">🇪🇸 Enorme cueva de estalactitas, iluminación impresionante</div>
+    </div>
+    <div class="spot-price">~100 RMB</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">🚣</div>
+    <div class="spot-info">
+      <div class="spot-name">Baofeng Lake / Lago Baofeng</div>
+      <div class="spot-desc">Bootsfahrt zwischen den Felsen — sehr fotogen</div>
+      <div class="spot-es">🇪🇸 Paseo en bote entre las rocas — muy fotogénico</div>
+    </div>
+    <div class="spot-price">~96 RMB</div>
+  </div>
+</div>
+
+<!-- COSTS OVERVIEW -->
+<div class="day-card" style="border-color: #4caf5044;">
+  <div class="day-header" style="border-bottom-color: #4caf5033;">
+    <div class="day-title">💰 Kostenübersicht / Resumen de Costos</div>
+  </div>
+  
+  <div class="section-title">🚐 Pauschal / Costos fijos</div>
+  
+  <div class="spot">
+    <div class="spot-icon">🚐</div>
+    <div class="spot-info">
+      <div class="spot-name">Großer Van (9 Sitze) / Van grande (9 asientos)</div>
+      <div class="spot-desc">Gesamte Reise / Todo el viaje</div>
+    </div>
+    <div class="spot-price">1.300 RMB</div>
+  </div>
+  
+  <div class="spot">
+    <div class="spot-icon">🧑‍🏫</div>
+    <div class="spot-info">
+      <div class="spot-name">Reiseführer / Guía turístico</div>
+      <div class="spot-desc">2 Tage Service / 2 días de servicio</div>
+    </div>
+    <div class="spot-price">1.000 RMB</div>
+  </div>
+
+  <div class="spot">
+    <div class="spot-icon">🏠</div>
+    <div class="spot-info">
+      <div class="spot-name">Unterkunft Fahrer + Guide / Alojamiento chófer + guía</div>
+    </div>
+    <div class="spot-price">200 RMB</div>
+  </div>
+
+  <div style="margin-top: 18px; border-top: 1px solid #2a2a3a; padding-top: 16px;">
+    <div class="section-title">🎫 Pro Person / Por persona</div>
+    
+    <div class="spot">
+      <div class="spot-icon">🏔️</div>
+      <div class="spot-info">
+        <div class="spot-name">National Forest Park</div>
+      </div>
+      <div class="spot-price">227 RMB</div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-icon">🫣</div>
+      <div class="spot-info">
+        <div class="spot-name">Glass Bridge & Grand Canyon / Puente de Cristal</div>
+      </div>
+      <div class="spot-price">219 RMB</div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-icon">🚡</div>
+      <div class="spot-info">
+        <div class="spot-name">Bailong Skylift</div>
+      </div>
+      <div class="spot-price">65 RMB</div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-icon">🚠</div>
+      <div class="spot-info">
+        <div class="spot-name">Tianzi Mountain Cablecar / Teleférico</div>
+      </div>
+      <div class="spot-price">72 RMB</div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-icon">⛩️</div>
+      <div class="spot-info">
+        <div class="spot-name">Tianmen Mountain</div>
+      </div>
+      <div class="spot-price">278 RMB</div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-icon">↗️</div>
+      <div class="spot-info">
+        <div class="spot-name">Escalator / Escalera mecánica</div>
+      </div>
+      <div class="spot-price">32 RMB</div>
+    </div>
+  </div>
+
+  <div style="margin-top: 18px; border-top: 1px solid #2a2a3a; padding-top: 16px;">
+    <div class="section-title">📊 Zusammenfassung / Resumen (6 Personen / Personas)</div>
+    
+    <div class="spot">
+      <div class="spot-icon">👤</div>
+      <div class="spot-info">
+        <div class="spot-name">Pro Person / Por persona (Eintritt)</div>
+      </div>
+      <div class="spot-price" style="color: #4caf50; font-size: 20px;">893 RMB</div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-icon">👥</div>
+      <div class="spot-info">
+        <div class="spot-name">6 × Eintritt / 6 × Entrada</div>
+      </div>
+      <div class="spot-price" style="color: #4caf50; font-size: 20px;">5.358 RMB</div>
+    </div>
+
+    <div class="spot">
+      <div class="spot-icon">🚐</div>
+      <div class="spot-info">
+        <div class="spot-name">Pauschal (Van + Guide + Unterkunft) / Fijo</div>
+      </div>
+      <div class="spot-price" style="color: #4caf50; font-size: 20px;">2.500 RMB</div>
+    </div>
+
+    <div class="spot" style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #4caf5044;">
+      <div class="spot-icon">💰</div>
+      <div class="spot-info">
+        <div class="spot-name" style="font-size: 24px; color: #4caf50;">GESAMT / TOTAL</div>
+        <div class="spot-desc" style="color: #aaa;">~€990 · Pro Person / Por persona: ~1.310 RMB (~€165)</div>
+      </div>
+      <div class="spot-price" style="color: #4caf50; font-size: 24px; font-weight: 700;">7.858 RMB</div>
+    </div>
+  </div>
+</div>
+
+<!-- TIPS -->
+<div class="tips-card">
+  <div class="tips-title">💡 Praktische Tipps / Consejos Prácticos</div>
+  
+  <div class="tip-row">
+    <div class="tip-icon">🌤️</div>
+    <div class="tip-text"><strong>April = perfekte Reisezeit</strong> — 15–22°C, mild & angenehm<br><span class="tip-es">🇪🇸 Abril = época perfecta — 15–22°C, templado y agradable</span></div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-icon">🌧️</div>
+    <div class="tip-text"><strong>Regenjacke einpacken</strong> — Nebel macht die Avatar-Vibes noch besser!<br><span class="tip-es">🇪🇸 Llevar impermeable — ¡la niebla hace las vibes de Avatar aún mejor!</span></div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-icon">⏰</div>
+    <div class="tip-text"><strong>Früh starten</strong> (vor 8 Uhr) → deutlich weniger Touristen<br><span class="tip-es">🇪🇸 Salir temprano (antes de las 8) → menos turistas</span></div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-icon">👟</div>
+    <div class="tip-text"><strong>Bequeme Schuhe</strong> — Pflicht bei den Treppen & Wanderwegen<br><span class="tip-es">🇪🇸 Zapatos cómodos — obligatorio para escaleras y senderos</span></div>
+  </div>
+  <div class="tip-row">
+    <div class="tip-icon">💵</div>
+    <div class="tip-text"><strong>Bargeld mitnehmen</strong> — nicht überall Kartenzahlung möglich<br><span class="tip-es">🇪🇸 Llevar efectivo — no en todos lados aceptan tarjeta</span></div>
+  </div>
+</div>
+
+</body>
+</html>

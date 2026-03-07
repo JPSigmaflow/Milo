@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bohol Hotel Vergleich</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0a0f; color: #e0e0e0; font-family: 'Inter', sans-serif; width: 1080px; padding: 40px; }
+
+.header { text-align: center; margin-bottom: 32px; }
+.header h1 { font-size: 36px; font-weight: 800; color: #f7931a; margin-bottom: 4px; }
+.header .flag { font-size: 42px; }
+.header .subtitle { font-size: 18px; color: #64b5f6; font-weight: 500; }
+.header .date { font-size: 14px; color: #666; margin-top: 4px; }
+
+.winner-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f7931a, #e8650a);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.table-container { margin-bottom: 28px; }
+.table-container h2 { font-size: 24px; font-weight: 700; color: #64b5f6; margin-bottom: 14px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+thead th {
+  background: #1a1a2e;
+  color: #f7931a;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 2px solid #f7931a33;
+}
+thead th:first-child { text-align: left; border-radius: 8px 0 0 0; }
+thead th:last-child { border-radius: 0 8px 0 0; }
+
+tbody td {
+  padding: 10px 10px;
+  text-align: center;
+  border-bottom: 1px solid #1a1a2e;
+  font-size: 14px;
+}
+tbody td:first-child { text-align: left; font-weight: 600; color: #fff; }
+tbody tr:hover { background: #14141f; }
+
+.winner-col { background: #f7931a11; }
+.winner-header { background: #f7931a22 !important; color: #f7931a !important; }
+
+.score-bar {
+  display: inline-block;
+  height: 8px;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.score-10 { width: 80px; background: #4caf50; }
+.score-8 { width: 64px; background: #8bc34a; }
+.score-7 { width: 56px; background: #cddc39; }
+.score-6 { width: 48px; background: #ffc107; }
+.score-5 { width: 40px; background: #ff9800; }
+.score-4 { width: 32px; background: #ff5722; }
+.score-2 { width: 16px; background: #f44336; }
+
+.price-tag { font-weight: 700; font-size: 16px; }
+.price-low { color: #4caf50; }
+.price-mid { color: #ffc107; }
+.price-high { color: #ff5722; }
+
+.total-row td { 
+  font-weight: 800 !important; 
+  font-size: 16px !important; 
+  border-top: 2px solid #f7931a33;
+  padding: 14px 10px;
+}
+.total-score { font-size: 20px !important; }
+.gold { color: #f7931a; }
+.silver { color: #aaa; }
+.bronze { color: #cd7f32; }
+
+.fazit {
+  background: #14141f;
+  border: 1px solid #2a2a3a;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+}
+.fazit h2 { font-size: 24px; color: #f7931a; margin-bottom: 16px; }
+.fazit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.fazit-card {
+  background: #0a0a0f;
+  border: 1px solid #2a2a3a;
+  border-radius: 10px;
+  padding: 16px;
+}
+.fazit-card.winner { border-color: #f7931a; }
+.fazit-card h3 { font-size: 16px; margin-bottom: 8px; }
+.fazit-card .hotel-name { color: #f7931a; }
+.fazit-card p { font-size: 13px; color: #999; line-height: 1.5; }
+.fazit-card .price-highlight { font-size: 22px; font-weight: 800; }
+
+.warning { color: #ff5722; font-weight: 600; }
+.check { color: #4caf50; }
+.cross { color: #ff5722; }
+
+.footer { text-align: center; margin-top: 28px; font-size: 12px; color: #444; }
+.footer .milo { color: #f7931a; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="flag">🇵🇭</div>
+  <h1>Bohol / Panglao — Hotel Vergleich</h1>
+  <div class="subtitle">Top 5 Hotels im professionellen Detailvergleich</div>
+  <div class="date">Stand: Februar 2026 | Preise pro Nacht für 2 Personen</div>
+</div>
+
+<div class="table-container">
+  <h2>📊 Bewertungsmatrix (1-10)</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:140px">Kategorie</th>
+        <th class="winner-header">🏆 Oceanica<br><span style="font-weight:400;font-size:11px">$50-80/N</span></th>
+        <th>Amorita<br><span style="font-weight:400;font-size:11px">$146-250/N</span></th>
+        <th>Henann Alona<br><span style="font-weight:400;font-size:11px">$70-180/N</span></th>
+        <th>Be Grand<br><span style="font-weight:400;font-size:11px">$120-400/N</span></th>
+        <th>Eskaya<br><span style="font-weight:400;font-size:11px">$300+/N</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🏖️ Strand</td>
+        <td class="winner-col"><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-6"></span>6</td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+      </tr>
+      <tr>
+        <td>🍽️ Essen</td>
+        <td class="winner-col"><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-6"></span>6</td>
+        <td><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-6"></span>6</td>
+      </tr>
+      <tr>
+        <td>😊 Service</td>
+        <td class="winner-col"><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-5"></span>5</td>
+      </tr>
+      <tr>
+        <td>🏊 Pool</td>
+        <td class="winner-col"><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-8"></span>8</td>
+      </tr>
+      <tr>
+        <td>🛏️ Zimmer</td>
+        <td class="winner-col"><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-7"></span>7</td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-7"></span>7</td>
+      </tr>
+      <tr>
+        <td>📍 Lage</td>
+        <td class="winner-col"><span class="score-bar score-7"></span>7</td>
+        <td><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-4"></span>4</td>
+      </tr>
+      <tr>
+        <td>💰 Preis-Leistung</td>
+        <td class="winner-col"><span class="score-bar score-10"></span><strong>10</strong></td>
+        <td><span class="score-bar score-7"></span>7</td>
+        <td><span class="score-bar score-8"></span>8</td>
+        <td><span class="score-bar score-5"></span>5</td>
+        <td><span class="score-bar score-2"></span>2</td>
+      </tr>
+      <tr class="total-row">
+        <td style="color:#f7931a">GESAMT</td>
+        <td class="winner-col total-score gold">🥇 61</td>
+        <td class="total-score silver">🥈 63</td>
+        <td class="total-score bronze">🥉 59</td>
+        <td class="total-score">55</td>
+        <td class="total-score warning">42</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="table-container">
+  <h2>📋 Features im Überblick</h2>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:160px">Feature</th>
+        <th class="winner-header">🏆 Oceanica</th>
+        <th>Amorita</th>
+        <th>Henann Alona</th>
+        <th>Be Grand</th>
+        <th>Eskaya</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🍳 Frühstück inkl.</td>
+        <td class="winner-col check">✅ Buffet</td>
+        <td class="check">✅</td>
+        <td class="check">✅ Buffet</td>
+        <td class="check">✅ Full</td>
+        <td class="check">✅</td>
+      </tr>
+      <tr>
+        <td>✈️ Airport Shuttle</td>
+        <td class="winner-col check">✅ Gratis</td>
+        <td class="check">✅</td>
+        <td>💲 Gebühr</td>
+        <td class="check">✅</td>
+        <td class="check">✅</td>
+      </tr>
+      <tr>
+        <td>🅿️ Parking</td>
+        <td class="winner-col check">✅ Gratis</td>
+        <td class="check">✅ Gratis</td>
+        <td class="check">✅ Gratis</td>
+        <td class="check">✅ Gratis</td>
+        <td class="check">✅ Gratis</td>
+      </tr>
+      <tr>
+        <td>📶 WiFi</td>
+        <td class="winner-col check">✅ Gratis</td>
+        <td class="check">✅ Gratis</td>
+        <td class="check">✅ Gratis</td>
+        <td class="check">✅ Gratis</td>
+        <td class="check">✅ Gratis</td>
+      </tr>
+      <tr>
+        <td>💆 Spa/Massage</td>
+        <td class="winner-col check">✅</td>
+        <td class="check">✅</td>
+        <td class="check">✅</td>
+        <td class="check">✅ Swedish</td>
+        <td class="check">✅ Full Spa</td>
+      </tr>
+      <tr>
+        <td>🏖️ Privater Strand</td>
+        <td class="winner-col check"><strong>✅ JA</strong></td>
+        <td>⚠️ Klippe</td>
+        <td class="cross">❌ Öffentlich</td>
+        <td class="cross">❌ Walk</td>
+        <td class="check">✅ JA</td>
+      </tr>
+      <tr>
+        <td>🌿 Bio-Farm</td>
+        <td class="winner-col check"><strong>✅ South Farm</strong></td>
+        <td class="cross">❌</td>
+        <td class="cross">❌</td>
+        <td class="cross">❌</td>
+        <td class="cross">❌</td>
+      </tr>
+      <tr>
+        <td>🏗️ Zimmeranzahl</td>
+        <td class="winner-col">78</td>
+        <td>~60</td>
+        <td>400</td>
+        <td>~80</td>
+        <td>~15 Villen</td>
+      </tr>
+      <tr>
+        <td>⏱️ Zu Alona Beach</td>
+        <td class="winner-col">10 Min</td>
+        <td>Direkt (Klippe)</td>
+        <td><strong>0 Min</strong></td>
+        <td>5 Min Walk</td>
+        <td>15-20 Min</td>
+      </tr>
+      <tr>
+        <td>👫 Pärchen-Rating</td>
+        <td class="winner-col"><strong>9.2/10</strong></td>
+        <td>9.0/10</td>
+        <td>8.5/10</td>
+        <td>8.8/10</td>
+        <td>7.5/10</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="fazit">
+  <h2>🎯 Fazit</h2>
+  <div class="fazit-grid">
+    <div class="fazit-card winner">
+      <h3>🏆 <span class="hotel-name">Oceanica Resort</span> — PREIS-LEISTUNG #1</h3>
+      <div class="price-highlight price-low">$350-560 / 7 Nächte</div>
+      <p style="margin-top:8px">Privater Strand ("schönster in Panglao"), eigene Bio-Farm, outstanding Service, Pärchen-Rating 9.2. Für den Preis unschlagbar. Einzig 10 Min von Alona — was eher Vorteil ist (Ruhe!).</p>
+    </div>
+    <div class="fazit-card">
+      <h3>🥈 <span style="color:#64b5f6">Amorita Resort</span> — LUXURY #1</h3>
+      <div class="price-highlight price-mid">$1.022-1.750 / 7 Nächte</div>
+      <p style="margin-top:8px">#1 TripAdvisor, bestes Essen, Infinity Pool, top Service. Wenn Budget keine Rolle spielt — die sicherste Luxury-Wahl. Perfekt für romantische Trips.</p>
+    </div>
+    <div class="fazit-card">
+      <h3>🥉 <span style="color:#64b5f6">Henann Alona</span> — LAGE #1</h3>
+      <div class="price-highlight price-mid">$490-1.260 / 7 Nächte</div>
+      <p style="margin-top:8px">120m Beachfront direkt Alona, riesige Pools, Massenhotel-Feeling (400 Zimmer). Super wenn du mitten im Geschehen sein willst.</p>
+    </div>
+    <div class="fazit-card">
+      <h3>⚠️ <span class="warning">Eskaya</span> — NICHT EMPFOHLEN</h3>
+      <div class="price-highlight price-high">$2.100+ / 7 Nächte</div>
+      <p style="margin-top:8px">"Passed its prime" — negative Service-Reviews, überteuertes Essen, abgelegen. Für $300+/Nacht erwartet man deutlich mehr. Amorita bietet besseres für weniger.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <span class="milo">🦁 Milo</span> | Hotel-Analyse basierend auf TripAdvisor, Booking.com, Expedia, Kayak & Yelp Reviews | Februar 2026
+</div>
+
+</body>
+</html>

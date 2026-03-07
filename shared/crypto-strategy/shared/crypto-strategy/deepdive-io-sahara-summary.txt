@@ -1,0 +1,23 @@
+DEEP-DIVE SUMMARY: IO (io.net) & SAHARA (Sahara AI) — 15.02.2026
+
+IO (io.net) — Score: 69/110 → BEOBACHTEN
+- Preis: $0.111 | MC: $31.7M | FDV: $88.8M | -98.3% vom ATH
+- DePIN + AI Compute auf Solana, VC-backed (Hack VC, Multicoin)
+- Auf Binance + alle Major-CEX, gute Liquidität ($11M/24h)
+- RISIKO: 64% Tokens noch locked, massiver Downtrend
+- Echtes Produkt (IO Intelligence), aber Adoption unklar
+
+SAHARA (Sahara AI) — Score: 64/110 → BEOBACHTEN
+- Preis: $0.0166 | MC: $33.9M | FDV: $166M | -89.8% vom ATH
+- Full-Stack AI-Blockchain, backed by Microsoft, Amazon, MIT
+- Auf Binance, OKX, Kraken + alle Major-CEX
+- RISIKO: 80% Tokens noch locked (FDV = 5x MC!), kein öffentlicher GitHub-Code
+- SOC2-zertifiziert, aber Nutzung nicht verifizierbar
+
+FAZIT: Beide BEOBACHTEN, kein Kauf jetzt.
+Hauptgrund: Extremer Token-Unlock-Druck bei beiden.
+IO hat bessere Transparenz, SAHARA hat bessere Backers.
+Einstieg erst nach Klärung der Unlock-Schedules sinnvoll.
+DCA nach großen Unlocks wäre die sicherste Strategie.
+
+Vollständiger Report: deepdive-io-sahara.md

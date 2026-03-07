@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>🔭 Crypto Scanning Universe</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0f;color:#e0e0e0;font-family:'Segoe UI',system-ui,sans-serif;padding:24px;line-height:1.4}
+h1{text-align:center;font-size:28px;margin-bottom:4px;background:linear-gradient(90deg,#00d4ff,#7b2dff,#ff6b35);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.subtitle{text-align:center;color:#888;margin-bottom:24px;font-size:13px}
+.stats{display:flex;gap:12px;justify-content:center;margin-bottom:24px;flex-wrap:wrap}
+.stat{background:#14141f;border:1px solid #222;border-radius:10px;padding:12px 20px;text-align:center;min-width:120px}
+.stat .num{font-size:24px;font-weight:700;color:#00d4ff}
+.stat .lbl{font-size:11px;color:#888;margin-top:2px}
+.platform{margin-bottom:20px}
+.platform-header{display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:8px 8px 0 0;font-weight:700;font-size:16px}
+.platform-header .emoji{font-size:22px}
+.platform-header .count{margin-left:auto;background:rgba(255,255,255,.1);padding:2px 10px;border-radius:12px;font-size:12px}
+table{width:100%;border-collapse:collapse;margin-bottom:2px}
+th{background:#0d0d18;padding:8px 10px;text-align:left;font-size:11px;color:#888;text-transform:uppercase;letter-spacing:.5px;position:sticky;top:0}
+td{padding:7px 10px;border-bottom:1px solid #1a1a2a;font-size:13px;vertical-align:top}
+tr:hover{background:#12122a}
+.handle{color:#00d4ff;font-weight:600;white-space:nowrap}
+.cat{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;white-space:nowrap}
+.cat-whale{background:#1a3a5c;color:#4db8ff}
+.cat-alpha{background:#2d1a5c;color:#a78bfa}
+.cat-meme{background:#5c3a1a;color:#ffb347}
+.cat-ai{background:#1a5c3a;color:#4bffb3}
+.cat-news{background:#5c1a1a;color:#ff6b6b}
+.cat-scam{background:#5c0a0a;color:#ff4444}
+.cat-politics{background:#4a1a5c;color:#d4a5ff}
+.cat-defi{background:#0a3a5c;color:#47c9ff}
+.cat-edu{background:#2a2a3a;color:#aaa}
+.cat-general{background:#1a1a2a;color:#888}
+.cat-moonshot{background:#5c5c0a;color:#ffff47}
+.cat-trading{background:#3a1a3a;color:#ff7bff}
+.pri{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:700;white-space:nowrap}
+.pri-rt{background:#ff2d2d22;color:#ff4444;border:1px solid #ff2d2d44}
+.pri-5{background:#ff8c0022;color:#ffaa33;border:1px solid #ff8c0044}
+.pri-15{background:#ffdd0022;color:#ddd033;border:1px solid #ffdd0044}
+.pri-1h{background:#33ff0022;color:#66cc44;border:1px solid #33ff0044}
+.followers{color:#aaa;white-space:nowrap}
+.why{color:#bbb;font-size:12px}
+.p-twitter .platform-header{background:linear-gradient(90deg,#1a1a2e,#0d1b3e)}
+.p-tiktok .platform-header{background:linear-gradient(90deg,#1a1a2e,#2d0a3a)}
+.p-ig .platform-header{background:linear-gradient(90deg,#1a1a2e,#3a1a2a)}
+.p-yt .platform-header{background:linear-gradient(90deg,#1a1a2e,#3a1a1a)}
+.p-discord .platform-header{background:linear-gradient(90deg,#1a1a2e,#1a1a4a)}
+.p-tg .platform-header{background:linear-gradient(90deg,#1a1a2e,#0a2a3a)}
+.p-reddit .platform-header{background:linear-gradient(90deg,#1a1a2e,#3a2a1a)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin:16px 0;font-size:11px}
+.legend span{display:flex;align-items:center;gap:4px}
+</style>
+</head>
+<body>
+
+<h1>🔭 Crypto Scanning Universe</h1>
+<p class="subtitle">Vollständige Influencer & Alpha Database — Stand: 2026-02-11 — ~120 Quellen über 7 Plattformen</p>
+
+<div class="stats">
+<div class="stat"><div class="num">60</div><div class="lbl">X/Twitter</div></div>
+<div class="stat"><div class="num">18</div><div class="lbl">TikTok</div></div>
+<div class="stat"><div class="num">12</div><div class="lbl">Instagram</div></div>
+<div class="stat"><div class="num">15</div><div class="lbl">YouTube</div></div>
+<div class="stat"><div class="num">10</div><div class="lbl">Discord</div></div>
+<div class="stat"><div class="num">15</div><div class="lbl">Telegram</div></div>
+<div class="stat"><div class="num">10</div><div class="lbl">Reddit</div></div>
+</div>
+
+<div class="legend">
+<span><span class="pri pri-rt">⚡ Echtzeit</span> ~25 Quellen</span>
+<span><span class="pri pri-5">🔥 5min</span> ~40 Quellen</span>
+<span><span class="pri pri-15">⏱️ 15min</span> ~35 Quellen</span>
+<span><span class="pri pri-1h">📊 1h</span> ~20 Quellen</span>
+</div>
+
+<!-- TWITTER -->
+<div class="platform p-twitter">
+<div class="platform-header"><span class="emoji">𝕏</span> X / Twitter <span class="count">60 Accounts</span></div>
+<table>
+<tr><th>Handle</th><th>Follower</th><th>Kategorie</th><th>Warum relevant</th><th>Priorität</th></tr>
+<tr><td class="handle">@whale_alert</td><td class="followers">2.5M</td><td><span class="cat cat-whale">🐋 Whale</span></td><td class="why">Große Wallet-Bewegungen in Echtzeit</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@lookonchain</td><td class="followers">800K</td><td><span class="cat cat-whale">🐋 On-Chain</span></td><td class="why">Smart Money Tracking, Wallet-Bewegungen</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@EmberCN</td><td class="followers">500K</td><td><span class="cat cat-whale">🐋 On-Chain</span></td><td class="why">Chinesischer Markt-Intel, frühe Token-Flows</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@spotonchain</td><td class="followers">400K</td><td><span class="cat cat-whale">🐋 On-Chain</span></td><td class="why">Wallet-Tracking, identifiziert VCs/Whales</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@ai_9684xtpa</td><td class="followers">300K</td><td><span class="cat cat-whale">🐋 On-Chain</span></td><td class="why">Smart Money Tracker, DEX Token-Flows</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@OnchainDataNerd</td><td class="followers">200K</td><td><span class="cat cat-whale">🐋 On-Chain</span></td><td class="why">Deep on-chain Analysen, Whale Accumulation</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@buaborern</td><td class="followers">150K</td><td><span class="cat cat-whale">🐋 On-Chain</span></td><td class="why">Früher Wallet-Tracker, Solana/Base</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@naborern</td><td class="followers">100K</td><td><span class="cat cat-whale">🐋 On-Chain</span></td><td class="why">DEX-Flow Analyse, neue Token-Listings</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@GCRClassic</td><td class="followers">400K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Legendärer Macro-Caller, bewegt Märkte</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@HsakaTrades</td><td class="followers">600K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Präzise Trade-Calls, Derivate-Experte</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@CryptoKaleo</td><td class="followers">600K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Alt-Season Calls, Trend-Erkennung</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@AltcoinSherpa</td><td class="followers">400K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Altcoin-Zyklen, S/R Levels</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@CryptoDonAlt</td><td class="followers">500K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Macro + Alt Calls, konträre Meinungen</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@CryptoYooshi</td><td class="followers">300K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Micro-Cap Gems, frühe Calls</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@inversebrah</td><td class="followers">250K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Contrarian Calls, Sentiment-Indikator</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@ColdBloodShill</td><td class="followers">350K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Altcoin Calls, Community-Sentiment</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@DefiIgnas</td><td class="followers">500K</td><td><span class="cat cat-defi">💎 DeFi</span></td><td class="why">DeFi Alpha, Airdrop Farming Strategien</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@Pentosh1</td><td class="followers">700K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Chart-Analyse, BTC Macro Calls</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@TheCryptoDog</td><td class="followers">800K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Altcoin Calls, Retail-Sentiment Barometer</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@CryptoGodJohn</td><td class="followers">500K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Momentum Trader, Trend-Calls</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@blknoiz06</td><td class="followers">400K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Hochaktiver Trader, Echtzeit-Calls</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@Trader_XO</td><td class="followers">300K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Swing Trader, Altcoin Rotation</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@crash_blossom_</td><td class="followers">150K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Unter dem Radar, treffsicher, frühe Narrative</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@MustStopMurad</td><td class="followers">400K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">"Memecoin Supercycle" Thesis, bewegt Sektor</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@blaboratory</td><td class="followers">200K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Solana Meme Scanner, Launch-Detection</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@0xSun_Crypto</td><td class="followers">250K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Pump.fun Scanner, neue Launches</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@daboratory</td><td class="followers">150K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Base/ETH Memecoin Frühscanner</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@euloraofficial</td><td class="followers">100K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Solana Memecoin Alpha, Insider-Intel</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@pumaboratory</td><td class="followers">100K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Pump.fun Launches, frühe Calls</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@CryptoNewton</td><td class="followers">300K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Meme-Narratives, Community-Coins</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@SolJakey</td><td class="followers">200K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Solana Ecosystem, Memecoin Launches</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@ansaboratory</td><td class="followers">80K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Nischen-Memecoins, Mikro-Cap Scanner</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@BitcoinMemeHub</td><td class="followers">150K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Meme-Kultur & Token-Trends Aggregator</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@ai16zdao</td><td class="followers">200K</td><td><span class="cat cat-ai">🤖 AI</span></td><td class="why">AI-Agent Ökosystem, Token-Launches</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@virtikitten</td><td class="followers">100K</td><td><span class="cat cat-ai">🤖 AI</span></td><td class="why">Virtuals Protocol, AI-Agent Tokens</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@shawmakesmagic</td><td class="followers">150K</td><td><span class="cat cat-ai">🤖 AI</span></td><td class="why">ai16z Founder, AI-Agent Framework</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@truth_terminal</td><td class="followers">200K</td><td><span class="cat cat-ai">🤖 AI</span></td><td class="why">AI-Bot der $GOAT gepusht hat</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@AIWayfinder</td><td class="followers">80K</td><td><span class="cat cat-ai">🤖 AI</span></td><td class="why">AI x Crypto Crossover Projekte</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@ionaboratory</td><td class="followers">60K</td><td><span class="cat cat-ai">🤖 AI</span></td><td class="why">AI Token Scanner, neue AI-Projekte</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@tier10k</td><td class="followers">500K</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Schnellste Breaking News auf CT</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@WatcherGuru</td><td class="followers">1M</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Crypto News Aggregator, schnelle Alerts</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@CoinDesk</td><td class="followers">3M</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Institutionelle News, Regulierung</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@Cointelegraph</td><td class="followers">2.5M</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Breite Crypto-News Abdeckung</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@TheBlock__</td><td class="followers">800K</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Institutionelle/DeFi News, Scoops</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@BitcoinMagazine</td><td class="followers">4M</td><td><span class="cat cat-news">📰 News</span></td><td class="why">BTC-fokussiert, Policy & Adoption</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@db_crypto</td><td class="followers">500K</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Schnelle News + Kontext</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@unusual_whales</td><td class="followers">1M</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Optionen-Flow, politische Trades</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@DeItaone</td><td class="followers">800K</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Macro Breaking News die Crypto bewegen</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@ZachXBT</td><td class="followers">1M</td><td><span class="cat cat-scam">🔍 Scam</span></td><td class="why">#1 On-Chain Detektiv, Rugpull-Aufdeckung</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@coffeezilla</td><td class="followers">500K</td><td><span class="cat cat-scam">🔍 Scam</span></td><td class="why">Investigativ-Journalist, Scam-Exposés</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@PeckShieldAlert</td><td class="followers">200K</td><td><span class="cat cat-scam">🛡️ Security</span></td><td class="why">Smart Contract Exploits in Echtzeit</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@CertiKAlert</td><td class="followers">300K</td><td><span class="cat cat-scam">🛡️ Security</span></td><td class="why">Audit-Alerts, Exploit-Warnungen</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@SlowMist_Team</td><td class="followers">200K</td><td><span class="cat cat-scam">🛡️ Security</span></td><td class="why">Hack/Exploit Alerts, APAC Fokus</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">@realDonaldTrump</td><td class="followers">90M</td><td><span class="cat cat-politics">🏛️ Politik</span></td><td class="why">Crypto-Policy, Strategic Reserve</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@elikitten</td><td class="followers">180M</td><td><span class="cat cat-politics">🏛️ Politik</span></td><td class="why">Doge, Meme-Influence, Tesla BTC</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">@FedGuy12</td><td class="followers">300K</td><td><span class="cat cat-politics">📈 Macro</span></td><td class="why">Fed-Policy, Liquiditäts-Cycles</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@MacroFlan</td><td class="followers">200K</td><td><span class="cat cat-politics">📈 Macro</span></td><td class="why">Macro-to-Crypto Korrelationen</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+</table>
+</div>
+
+<!-- TIKTOK -->
+<div class="platform p-tiktok">
+<div class="platform-header"><span class="emoji">📱</span> TikTok <span class="count">18 Accounts</span></div>
+<table>
+<tr><th>Handle</th><th>Follower</th><th>Kategorie</th><th>Warum relevant</th><th>Priorität</th></tr>
+<tr><td class="handle">@cryptotea_</td><td class="followers">2M</td><td><span class="cat cat-meme">🐸 Meme/Hype</span></td><td class="why">Virale Coin-Videos, treibt Retail-FOMO</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@cryptomanran</td><td class="followers">1.5M</td><td><span class="cat cat-edu">📚 Edu/Alpha</span></td><td class="why">Coin-Reviews die Retail bewegen</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@cryptowizardd</td><td class="followers">1M</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Neue Token-Launches, Pump-Detection</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@investanswers</td><td class="followers">800K</td><td><span class="cat cat-edu">📚 Education</span></td><td class="why">Deep-Dives die Narrative setzen</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@cryptomastery</td><td class="followers">700K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Altcoin Picks, Retail-Favoriten</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@thecryptolark</td><td class="followers">600K</td><td><span class="cat cat-edu">📚 Education</span></td><td class="why">Narrative-Setter, neue Projekte</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@crypto_jebb</td><td class="followers">500K</td><td><span class="cat cat-trading">📊 TA</span></td><td class="why">Chart-Analyse, Trend-Erkennung</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@austincrypto</td><td class="followers">400K</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Schnelle News-Zusammenfassungen</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@cryptobanter</td><td class="followers">300K</td><td><span class="cat cat-alpha">🎯 Live/Alpha</span></td><td class="why">Live Calls, Community-Sentiment</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@cryptowendyo</td><td class="followers">400K</td><td><span class="cat cat-edu">📚 Education</span></td><td class="why">Treibt Retail in neue Coins</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@altcoinbuzz_io</td><td class="followers">300K</td><td><span class="cat cat-alpha">🎯 Altcoin</span></td><td class="why">Altcoin-Reviews, ICO/IDO Coverage</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@mooncarl</td><td class="followers">200K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Solana Meme-Fokus</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@crypto_zeus</td><td class="followers">350K</td><td><span class="cat cat-trading">📊 TA</span></td><td class="why">Charting + neue Projekte</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@novagarantie</td><td class="followers">350K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Deutsche Crypto-TikTok Community</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@blockchainsavvy</td><td class="followers">300K</td><td><span class="cat cat-defi">💎 DeFi</span></td><td class="why">DeFi Tutorials, neue Protokolle</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@kryptokralle</td><td class="followers">250K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Gen-Z Memecoin Content</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@defidad</td><td class="followers">250K</td><td><span class="cat cat-defi">💎 DeFi</span></td><td class="why">Yield-Farming, neue DeFi-Launches</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@tokentalk_daily</td><td class="followers">200K</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Tägliche Token-News</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+</table>
+</div>
+
+<!-- INSTAGRAM -->
+<div class="platform p-ig">
+<div class="platform-header"><span class="emoji">📸</span> Instagram <span class="count">12 Accounts</span></div>
+<table>
+<tr><th>Handle</th><th>Follower</th><th>Kategorie</th><th>Warum relevant</th><th>Priorität</th></tr>
+<tr><td class="handle">@bitcoin</td><td class="followers">5M</td><td><span class="cat cat-news">📰 BTC/News</span></td><td class="why">Größter Crypto-IG Account</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@crypto</td><td class="followers">2M</td><td><span class="cat cat-general">General</span></td><td class="why">Breite Audience, Narrative-Indikator</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@cryptobanter</td><td class="followers">500K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Live-Show Clips, Calls</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@coinbureau</td><td class="followers">800K</td><td><span class="cat cat-edu">📚 Education</span></td><td class="why">Deep-Dives, Projekt-Reviews</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@themooncrypto</td><td class="followers">400K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Altcoin Calls, Narrative</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@cryptoworld.info</td><td class="followers">600K</td><td><span class="cat cat-news">📰 News</span></td><td class="why">News-Aggregation für Retail</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@bitboy_crypto</td><td class="followers">500K</td><td><span class="cat cat-alpha">🎯 Kontrovers</span></td><td class="why">Massive Retail-Reichweite</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">@nftgod</td><td class="followers">200K</td><td><span class="cat cat-meme">NFT/Token</span></td><td class="why">NFT + Token Launch Coverage</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@dailycryptoupdates</td><td class="followers">400K</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Tägliche Zusammenfassungen</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@cryptohumor</td><td class="followers">300K</td><td><span class="cat cat-general">Sentiment</span></td><td class="why">Sentiment-Indikator durch Humor</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@defi_daily</td><td class="followers">150K</td><td><span class="cat cat-defi">💎 DeFi</span></td><td class="why">DeFi Protokoll Updates</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">@elikitten_crypto</td><td class="followers">300K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Elon-Adjacent Meme-Content</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+</table>
+</div>
+
+<!-- YOUTUBE -->
+<div class="platform p-yt">
+<div class="platform-header"><span class="emoji">▶️</span> YouTube <span class="count">15 Channels</span></div>
+<table>
+<tr><th>Channel</th><th>Subscriber</th><th>Kategorie</th><th>Warum relevant</th><th>Priorität</th></tr>
+<tr><td class="handle">Coin Bureau</td><td class="followers">2.5M</td><td><span class="cat cat-edu">📚 Edu/Alpha</span></td><td class="why">Tiefgehende Analysen, bewegt Retail</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">BitBoy Crypto</td><td class="followers">1.5M</td><td><span class="cat cat-alpha">🎯 Kontrovers</span></td><td class="why">Massive Reichweite</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">Altcoin Daily</td><td class="followers">1.5M</td><td><span class="cat cat-news">📰 Altcoin</span></td><td class="why">Tägliche Altcoin-Updates</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">Crypto Banter</td><td class="followers">800K</td><td><span class="cat cat-alpha">🎯 Live</span></td><td class="why">Live-Trading, Echtzeit-Calls</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">Benjamin Cowen</td><td class="followers">800K</td><td><span class="cat cat-trading">📊 Macro</span></td><td class="why">BTC Macro-Zyklen, Risk Metrics</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">DataDash</td><td class="followers">500K</td><td><span class="cat cat-trading">📊 TA</span></td><td class="why">Technische Analyse, Zyklen</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">The Moon Carl</td><td class="followers">500K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Altcoin Calls, Memecoin Coverage</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">Crypto Rover</td><td class="followers">400K</td><td><span class="cat cat-meme">🐸 Hype</span></td><td class="why">Hype-getrieben, treibt FOMO</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">Paul Barron</td><td class="followers">400K</td><td><span class="cat cat-politics">🏛️ Institutional</span></td><td class="why">Institutionelle Narrative, Policy</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">Lark Davis</td><td class="followers">500K</td><td><span class="cat cat-edu">📚 Education</span></td><td class="why">Neue Projekte, Airdrop-Guides</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">Alex Becker</td><td class="followers">1M</td><td><span class="cat cat-ai">🤖 AI/Alpha</span></td><td class="why">AI + Crypto Narrative</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">CryptosRUs</td><td class="followers">700K</td><td><span class="cat cat-edu">📚 Education</span></td><td class="why">Retail-Sentiment Indikator</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">Bankless</td><td class="followers">600K</td><td><span class="cat cat-defi">💎 DeFi</span></td><td class="why">DeFi Deep-Dives, ETH Ökosystem</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">Raoul Pal</td><td class="followers">500K</td><td><span class="cat cat-politics">📈 Macro</span></td><td class="why">Institutionelle Macro-Thesis</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">Ansem (clips)</td><td class="followers">200K</td><td><span class="cat cat-meme">🐸 SOL/Meme</span></td><td class="why">Solana Memecoin Alpha</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+</table>
+</div>
+
+<!-- DISCORD -->
+<div class="platform p-discord">
+<div class="platform-header"><span class="emoji">💬</span> Discord <span class="count">10 Server</span></div>
+<table>
+<tr><th>Server</th><th>Members</th><th>Kategorie</th><th>Warum relevant</th><th>Priorität</th></tr>
+<tr><td class="handle">Crypto Twitter Hub</td><td class="followers">150K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Aggregation der besten CT-Calls</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">Degen Den</td><td class="followers">80K</td><td><span class="cat cat-meme">🐸 Degen</span></td><td class="why">Früheste Memecoin-Calls, Pump.fun</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">Alpha Seekers</td><td class="followers">60K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Kuratierte Calls, verifizierte Trader</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">ai16z</td><td class="followers">50K</td><td><span class="cat cat-ai">🤖 AI</span></td><td class="why">AI-Agent Launches, Framework-Updates</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">DeFi Omega</td><td class="followers">40K</td><td><span class="cat cat-defi">💎 DeFi</span></td><td class="why">Yield-Strategien, neue Protokolle</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">The Trading Pit</td><td class="followers">70K</td><td><span class="cat cat-trading">📊 Trading</span></td><td class="why">Live Trading, Futures Calls</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">Solana Hub</td><td class="followers">120K</td><td><span class="cat cat-meme">☀️ Solana</span></td><td class="why">Solana Ökosystem, neue Launches</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">Base Gang</td><td class="followers">35K</td><td><span class="cat cat-defi">🔵 Base/L2</span></td><td class="why">Base Chain Alpha, neue Launches</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">NFT Alpha Group</td><td class="followers">45K</td><td><span class="cat cat-meme">🖼️ NFT</span></td><td class="why">NFT + Token Launch Intel</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">Kaspa Official</td><td class="followers">100K</td><td><span class="cat cat-general">L1</span></td><td class="why">Starke Community, Narrative-Beispiel</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+</table>
+</div>
+
+<!-- TELEGRAM -->
+<div class="platform p-tg">
+<div class="platform-header"><span class="emoji">✈️</span> Telegram <span class="count">15 Channels</span></div>
+<table>
+<tr><th>Channel/Gruppe</th><th>Members</th><th>Kategorie</th><th>Warum relevant</th><th>Priorität</th></tr>
+<tr><td class="handle">Crypto Whale Alerts</td><td class="followers">200K</td><td><span class="cat cat-whale">🐋 Whale</span></td><td class="why">Automatisierte Whale-Bewegungen</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">Degen Alerts</td><td class="followers">100K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Neue Token-Launches, DEX-Listings</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">Gem Hunters</td><td class="followers">80K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Micro-Cap Gems, frühe Calls</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">DeFi Million</td><td class="followers">60K</td><td><span class="cat cat-defi">💎 DeFi</span></td><td class="why">DeFi Alpha, Yield-Opportunities</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">Crypto Inner Circle</td><td class="followers">50K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Kuratierter Alpha-Feed</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">100x Gems</td><td class="followers">150K</td><td><span class="cat cat-moonshot">🚀 Moonshot</span></td><td class="why">Micro-Cap Calls, hohes Risiko</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">Pump.fun Scanner</td><td class="followers">40K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Automatisierte Pump.fun Launches</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">Solana Alpha</td><td class="followers">70K</td><td><span class="cat cat-meme">☀️ Solana</span></td><td class="why">Solana Ökosystem Alpha</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">Base Alpha Chat</td><td class="followers">35K</td><td><span class="cat cat-defi">🔵 Base</span></td><td class="why">Base Chain neue Projekte</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">Crypto News Alerts</td><td class="followers">300K</td><td><span class="cat cat-news">📰 News</span></td><td class="why">Breaking News Aggregation</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">Jacob Bury Calls</td><td class="followers">50K</td><td><span class="cat cat-alpha">🎯 Alpha</span></td><td class="why">Presale + ICO Calls</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">AI Crypto Alpha</td><td class="followers">30K</td><td><span class="cat cat-ai">🤖 AI</span></td><td class="why">AI-Token Launches, Narrative</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">Birdeye Trending</td><td class="followers">60K</td><td><span class="cat cat-whale">📊 DEX Data</span></td><td class="why">Trending Tokens auf Solana DEXes</td><td><span class="pri pri-rt">⚡ Echtzeit</span></td></tr>
+<tr><td class="handle">Airdrop Official</td><td class="followers">200K</td><td><span class="cat cat-defi">🪂 Airdrop</span></td><td class="why">Airdrop-Opportunities, Claims</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">WSB Crypto</td><td class="followers">100K</td><td><span class="cat cat-general">Retail</span></td><td class="why">Retail-Sentiment, Meme-to-Crypto</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+</table>
+</div>
+
+<!-- REDDIT -->
+<div class="platform p-reddit">
+<div class="platform-header"><span class="emoji">🔴</span> Reddit <span class="count">10 Subreddits</span></div>
+<table>
+<tr><th>Subreddit</th><th>Members</th><th>Kategorie</th><th>Warum relevant</th><th>Priorität</th></tr>
+<tr><td class="handle">r/CryptoCurrency</td><td class="followers">7M</td><td><span class="cat cat-general">General</span></td><td class="why">Größtes Crypto-Sub, Sentiment + News</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">r/Bitcoin</td><td class="followers">6M</td><td><span class="cat cat-news">BTC</span></td><td class="why">BTC Sentiment, Policy-Diskussionen</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">r/ethereum</td><td class="followers">3M</td><td><span class="cat cat-defi">ETH</span></td><td class="why">Ethereum Ökosystem, DeFi</td><td><span class="pri pri-1h">📊 1h</span></td></tr>
+<tr><td class="handle">r/CryptoMoonShots</td><td class="followers">2M</td><td><span class="cat cat-moonshot">🚀 Moonshot</span></td><td class="why">Neue Token-Launches (viel Scam!)</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">r/SatoshiStreetBets</td><td class="followers">800K</td><td><span class="cat cat-meme">🐸 Degen</span></td><td class="why">Memecoin Pumps, Retail-FOMO</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">r/solana</td><td class="followers">500K</td><td><span class="cat cat-meme">☀️ Solana</span></td><td class="why">Solana Ökosystem, neue Projekte</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">r/defi</td><td class="followers">300K</td><td><span class="cat cat-defi">💎 DeFi</span></td><td class="why">DeFi Protokolle, Yield</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">r/Altcoin</td><td class="followers">200K</td><td><span class="cat cat-alpha">Altcoin</span></td><td class="why">Altcoin-Diskussionen</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+<tr><td class="handle">r/memecoins</td><td class="followers">150K</td><td><span class="cat cat-meme">🐸 Meme</span></td><td class="why">Memecoin Launch-Detection</td><td><span class="pri pri-5">🔥 5min</span></td></tr>
+<tr><td class="handle">r/CryptoMarkets</td><td class="followers">400K</td><td><span class="cat cat-trading">📊 Trading</span></td><td class="why">Markt-Analyse, Trading-Setups</td><td><span class="pri pri-15">⏱️ 15min</span></td></tr>
+</table>
+</div>
+
+<div style="text-align:center;padding:20px;color:#555;font-size:12px;border-top:1px solid #1a1a2a;margin-top:20px">
+🔭 Crypto Scanning Universe — ~120 Quellen über 7 Plattformen — Erstellt 2026-02-11
+</div>
+
+</body>
+</html>

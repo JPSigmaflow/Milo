@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PomesTeam Command Center</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0a0e14; color: #c8d0da; padding: 40px 48px; line-height: 1.5;
+  }
+  .header { margin-bottom: 36px; }
+  .header h1 { font-size: 32px; color: #e8ecf0; font-weight: 700; }
+  .header h1 span { color: #ff6b35; }
+  .header .sub { font-size: 14px; color: #5a6577; margin-top: 4px; }
+  .section-title { font-size: 18px; font-weight: 600; color: #e0e4ea; margin: 32px 0 16px; }
+  .section-title span { margin-right: 8px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .metric-card { border: 1px solid #1e2736; border-radius: 10px; padding: 20px; background: #0d1219; }
+  .metric-card .label { font-size: 13px; color: #5a6577; font-weight: 500; margin-bottom: 4px; }
+  .metric-card .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .metric-card .value { font-size: 36px; font-weight: 700; color: #e8ecf0; line-height: 1.1; }
+  .metric-card .sub-value { font-size: 13px; margin-top: 6px; }
+  .metric-card .detail { font-size: 12px; color: #5a6577; margin-top: 10px; line-height: 1.6; }
+  .metric-card .detail li { list-style: none; }
+  .metric-card .detail li::before { content: "· "; }
+  .c-orange { color: #ff6b35; }
+  .c-green { color: #22c55e; }
+  .c-yellow { color: #eab308; }
+  .c-red { color: #ef4444; }
+  .c-blue { color: #3b82f6; }
+  .bg-orange { background: #ff6b35; }
+  .bg-green { background: #22c55e; }
+  .bg-yellow { background: #eab308; }
+  .bg-red { background: #ef4444; }
+  .bg-blue { background: #3b82f6; }
+  .tier-card { border-radius: 10px; padding: 20px; background: #0d1219; }
+  .tier-card.border-red { border: 1px solid #ef444466; }
+  .tier-card.border-orange { border: 1px solid #ff6b3566; }
+  .tier-card.border-yellow { border: 1px solid #eab30866; }
+  .tier-card.border-green { border: 1px solid #22c55e66; }
+  .tier-card.border-blue { border: 1px solid #3b82f666; }
+  .tier-card .tier-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .tier-card .tier-value { font-size: 28px; font-weight: 700; color: #e8ecf0; }
+  .tier-card .tier-detail { font-size: 12px; color: #5a6577; margin-top: 10px; line-height: 1.8; }
+  .tier-card .tier-detail div::before { content: "→ "; }
+  .cases-bar { border: 1px solid #1e2736; border-radius: 10px; padding: 20px; background: #0d1219; display: flex; }
+  .case-item { flex: 1; text-align: center; padding: 0 12px; border-right: 1px solid #1e2736; }
+  .case-item:last-child { border-right: none; }
+  .case-item .case-val { font-size: 24px; font-weight: 700; }
+  .case-item .case-label { font-size: 11px; color: #5a6577; margin-top: 4px; }
+  .check-card { border: 1px solid #1e2736; border-radius: 10px; padding: 20px; background: #0d1219; }
+  .check-card .check-title { font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+  .check-card .check-list { list-style: none; font-size: 13px; line-height: 2; }
+  .check-item-ok::before { content: "✅ "; }
+  .check-item-miss::before { content: "❌ "; }
+  .check-item-wait::before { content: "⏳ "; }
+  .check-item-new::before { content: "🆕 "; }
+  .warning-box { border: 1px solid #eab30844; border-radius: 10px; padding: 20px 24px; background: #eab3080a; margin-top: 28px; }
+  .warning-box .warn-title { font-size: 15px; font-weight: 700; color: #eab308; margin-bottom: 8px; }
+  .warning-box .warn-text { font-size: 13px; color: #8a9ab5; line-height: 1.6; }
+  .success-box { border: 1px solid #22c55e44; border-radius: 10px; padding: 20px 24px; background: #22c55e0a; margin-top: 16px; }
+  .success-box .succ-title { font-size: 15px; font-weight: 700; color: #22c55e; margin-bottom: 8px; }
+  .success-box .succ-text { font-size: 13px; color: #8a9ab5; line-height: 1.6; }
+  .prog-bar { height: 6px; background: #1e2736; border-radius: 3px; margin-top: 8px; overflow: hidden; }
+  .prog-fill { height: 100%; border-radius: 3px; }
+  .prog-fill-orange { background: linear-gradient(90deg, #ff6b35, #ff9a5c); }
+  /* Post Performance Table */
+  .perf-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+  .perf-table th { text-align: left; color: #5a6577; font-weight: 500; padding: 8px 6px; border-bottom: 1px solid #1e2736; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .perf-table td { padding: 8px 6px; border-bottom: 1px solid #141a24; }
+  .perf-table tr:last-child td { border-bottom: none; }
+  .perf-val { font-weight: 600; }
+  .footer { text-align: center; margin-top: 32px; padding-top: 16px; font-size: 12px; color: #3a4555; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🍟 <span>PomesTeam Command Center</span></h1>
+  <div class="sub">Instagram Growth Dashboard — @pomesteam | Live-Daten via Graph API | Stand: 10.02.2026 07:20 EST</div>
+</div>
+
+<!-- ROW 1: Key Metrics from API -->
+<div class="grid-4">
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-orange"></span>IG Follower</div>
+    <div class="value">942</div>
+    <div class="sub-value c-orange">Ziel: 2.000</div>
+    <div class="prog-bar"><div class="prog-fill prog-fill-orange" style="width:47%"></div></div>
+    <div class="detail"><li>47% erreicht</li><li>+55/Tag benötigt</li><li>19 Tage verbleibend</li></div>
+  </div>
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-blue"></span>Following</div>
+    <div class="value">1.576</div>
+    <div class="sub-value c-blue">Ratio: 0.60</div>
+    <div class="detail"><li>Follow/Follower Ratio</li><li>Ziel: >1.0 (mehr Follower)</li><li>Unfollowing-Strategie planen</li></div>
+  </div>
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-green"></span>Posts Total</div>
+    <div class="value">398</div>
+    <div class="sub-value c-green">+6 seit 08.02</div>
+    <div class="detail"><li>~20 Posts noch in Queue</li><li>3x täglich automatisch</li><li>07:00 / 13:00 / 19:00 EST</li></div>
+  </div>
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-green"></span>Token Status</div>
+    <div class="value" style="font-size:30px; color:#22c55e">7 / 7</div>
+    <div class="sub-value c-green">+ Page Token aktiv!</div>
+    <div class="detail"><li>basic + publish ✅</li><li>comments + insights ✅</li><li>messages + pages ✅</li><li>Page Token → Business Discovery ✅</li></div>
+  </div>
+</div>
+
+<!-- ROW 2: Live Post Performance -->
+<div class="section-title"><span>📊</span>Post-Performance (Live-Daten via API)</div>
+<div class="metric-card" style="grid-column: 1/-1">
+  <table class="perf-table">
+    <tr>
+      <th>Post</th>
+      <th>Datum</th>
+      <th>👁️ Reach</th>
+      <th>❤️ Likes</th>
+      <th>💬 Comments</th>
+      <th>💾 Saves</th>
+      <th>🔄 Shares</th>
+      <th>📈 Engagement</th>
+    </tr>
+    <tr>
+      <td>Paw Bed Duo 🐾</td>
+      <td>08.02 13:00</td>
+      <td class="perf-val">36</td>
+      <td class="perf-val">9</td>
+      <td>0</td>
+      <td class="perf-val c-green">1</td>
+      <td>0</td>
+      <td class="c-orange">27.8%</td>
+    </tr>
+    <tr>
+      <td>Matching Fits 👯‍♀️</td>
+      <td>08.02 21:00</td>
+      <td class="perf-val">33</td>
+      <td class="perf-val">11</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td class="c-orange">33.3%</td>
+    </tr>
+    <tr>
+      <td>Lanna Pearls 💎</td>
+      <td>09.02 09:00</td>
+      <td class="perf-val">30</td>
+      <td class="perf-val">10</td>
+      <td class="perf-val">2</td>
+      <td>0</td>
+      <td>0</td>
+      <td class="c-orange">40.0%</td>
+    </tr>
+    <tr>
+      <td>Cuddle Nap 💕</td>
+      <td>09.02 21:00</td>
+      <td class="perf-val">24</td>
+      <td class="perf-val">11</td>
+      <td class="perf-val">2</td>
+      <td>0</td>
+      <td>0</td>
+      <td class="c-green">54.2%</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ROW 3: System Status -->
+<div class="section-title"><span>🚦</span>System Status</div>
+<div class="grid-3">
+  <div class="check-card">
+    <div class="check-title c-green">✅ Aktiv & Läuft</div>
+    <ul class="check-list">
+      <li class="check-item-ok">Auto-Posting (3x täglich)</li>
+      <li class="check-item-ok">Hook→Value→CTA v3.0</li>
+      <li class="check-item-ok">EN+ES bilingual</li>
+      <li class="check-item-ok">15 Hashtags pro Post</li>
+      <li class="check-item-ok">Auto-Cleanup nach Post</li>
+      <li class="check-item-ok">Kommentar-Automation (100% Rate)</li>
+      <li class="check-item-ok">Post-Analytics (Live API)</li>
+      <li class="check-item-new">Profile Scanner LIVE! 🆕</li>
+    </ul>
+  </div>
+  <div class="check-card">
+    <div class="check-title c-yellow">⏳ In Arbeit</div>
+    <ul class="check-list">
+      <li class="check-item-wait">DM-Begrüßung (Logik bauen)</li>
+      <li class="check-item-wait">Kommentar-Check Cron (auto)</li>
+      <li class="check-item-wait">Wöchentliche Analyse-Reports</li>
+      <li class="check-item-wait">Bio: "DM us to be featured"</li>
+      <li class="check-item-wait">Brand Hashtag #pomesteam</li>
+      <li class="check-item-wait">Posting-Frequenz erhöhen</li>
+    </ul>
+  </div>
+  <div class="check-card">
+    <div class="check-title c-red">❌ Nicht verfügbar</div>
+    <ul class="check-list">
+      <li class="check-item-miss">Story-Posting (API-Limit)</li>
+      <li class="check-item-miss">Reel-Upload (Video nötig)</li>
+      <li class="check-item-miss">TikTok (noch nicht gestartet)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ROW 4: Token Permissions -->
+<div class="section-title"><span>🔑</span>API Permissions</div>
+<div class="cases-bar">
+  <div class="case-item">
+    <div class="case-val c-green">✅</div>
+    <div class="case-label">instagram<br>_basic</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">✅</div>
+    <div class="case-label">content<br>_publish</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">🆕</div>
+    <div class="case-label">manage<br>_comments</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">🆕</div>
+    <div class="case-label">manage<br>_insights</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">🆕</div>
+    <div class="case-label">manage<br>_messages</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">🆕</div>
+    <div class="case-label">pages_read<br>_engagement</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">🆕</div>
+    <div class="case-label">pages<br>_show_list</div>
+  </div>
+</div>
+
+<!-- ROW 5: Kommentar-Status -->
+<div class="section-title"><span>💬</span>Kommentar-Engagement (Heute)</div>
+<div class="cases-bar">
+  <div class="case-item">
+    <div class="case-val c-green">9</div>
+    <div class="case-label">Kommentare<br>beantwortet</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-green">0</div>
+    <div class="case-label">Offene<br>Kommentare</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-orange">100%</div>
+    <div class="case-label">Antwort<br>-Rate</div>
+  </div>
+  <div class="case-item">
+    <div class="case-val c-blue">6</div>
+    <div class="case-label">Unique<br>User erreicht</div>
+  </div>
+</div>
+
+<!-- ROW 6: Scanner Results -->
+<div class="section-title"><span>🔍</span>Profile Scanner — @mr.dogoftheday (Live-Scan)</div>
+<div class="grid-4">
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-purple"></span>Follower</div>
+    <div class="value" style="font-size:30px">1M</div>
+    <div class="sub-value c-purple">Feature-Page Modell</div>
+  </div>
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-blue"></span>Posts</div>
+    <div class="value" style="font-size:30px">2.020</div>
+    <div class="sub-value c-blue">3-5 Posts/Tag</div>
+  </div>
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-green"></span>Strategie</div>
+    <div class="value" style="font-size:22px">Repost UGC</div>
+    <div class="sub-value c-green">"DM to be featured"</div>
+  </div>
+  <div class="metric-card">
+    <div class="label"><span class="dot bg-orange"></span>Takeaway</div>
+    <div class="value" style="font-size:22px">Modell kopieren</div>
+    <div class="sub-value c-orange">Bio + Hashtag + Freq</div>
+  </div>
+</div>
+
+<!-- ROW 7: Actions -->
+<div class="section-title"><span>⚡</span>Nächste Aktionen</div>
+<div class="grid-3">
+  <div class="tier-card border-red">
+    <div class="tier-label c-red">🔴 PRIORITÄT HOCH</div>
+    <div class="tier-value" style="font-size:18px">Scanner-Insights umsetzen</div>
+    <div class="tier-detail">
+      <div>Bio: "DM us to be featured" hinzufügen</div>
+      <div>Brand-Hashtag #pomesteam erstellen</div>
+      <div>Posting-Frequenz erhöhen (→ 4-5x/Tag)</div>
+      <div>Reels produzieren (5-10x mehr Reach)</div>
+    </div>
+  </div>
+  <div class="tier-card border-orange">
+    <div class="tier-label c-orange">🟠 PRIORITÄT MITTEL</div>
+    <div class="tier-value" style="font-size:18px">Engagement ausbauen</div>
+    <div class="tier-detail">
+      <div>Kommentar-Check alle 2h automatisieren</div>
+      <div>15 Kommentare/Tag auf Feature-Pages</div>
+      <div>Bio updaten: "Tag us to be featured"</div>
+      <div>DM-Begrüßung für neue Follower</div>
+    </div>
+  </div>
+  <div class="tier-card border-yellow">
+    <div class="tier-label c-yellow">🟡 NÄCHSTE PHASE</div>
+    <div class="tier-value" style="font-size:18px">Skalierung</div>
+    <div class="tier-detail">
+      <div>TikTok starten (Content repurposen)</div>
+      <div>Collab-Netzwerk aufbauen</div>
+      <div>Wöchentliche Performance-Reports</div>
+      <div>Weitere Feature-Pages scannen</div>
+    </div>
+  </div>
+</div>
+
+<!-- Success Box -->
+<div class="success-box">
+  <div class="succ-title">🎉 ALLE SYSTEME ONLINE: Auto-Posting ✅ Comments ✅ Insights ✅ Scanner ✅</div>
+  <div class="succ-text">
+    7/7 Permissions + Page Token aktiv · Profile Scanner LIVE via Business Discovery API · 
+    @mr.dogoftheday gescannt: 1M Follower, Feature-Page Modell analysiert · 
+    100% Kommentar-Antwortrate · Nächster Fokus: <strong style="color:#e8ecf0">Scanner-Insights umsetzen: Bio + Hashtag + Frequenz</strong>
+  </div>
+</div>
+
+<!-- Warning -->
+<div class="warning-box">
+  <div class="warn-title">⚠️ Kernproblem: Reach zu niedrig (Ø 31 pro Post)</div>
+  <div class="warn-text">
+    Bei 942 Followern erreichen unsere Posts nur 24-36 Leute (~3% der Follower). 
+    Das liegt an: nur Foto-Posts (keine Reels), niedrige Posting-Interaktion in der ersten Stunde, 
+    und fehlende externe Engagement-Strategie. <strong style="color:#eab308">Lösung: Reels + Feature-Page Kommentare + Story-Polls (manuell)</strong>
+  </div>
+</div>
+
+<div class="footer">
+  🍟 PomesTeam Command Center v3.0 · Live API Data · Managed by Milo 🦁 · Updated: 10.02.2026 07:20 EST
+</div>
+
+</body>
+</html>

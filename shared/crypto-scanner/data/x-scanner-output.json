@@ -1,0 +1,44 @@
+{
+  "scan_time": "2026-03-06T03:41:34.620Z",
+  "total_kols_in_db": 1137,
+  "kols_scanned": 24,
+  "new_mentions": 6,
+  "results": [
+    {
+      "source": "x:whale_alert",
+      "handle": "whale_alert",
+      "text": "           226,000,000 #USDC (225,977,400 USD) transferred from unknown wallet to unknown wallet\n\n\nhttps://\nwhale-alert.io/tx/solana/4gKx\nr1gpn6apWabnW8mzxikJRuWgvZryUr4x74qKCCxvGq6JiDVe4pC8iTXXcSWegeGRFmiF7qr7x665v4Km14VA\n…",
+      "time": "2026-03-06T03:39:36.750Z"
+    },
+    {
+      "source": "x:rajgokal",
+      "handle": "rajgokal",
+      "text": "all roads lead to solana",
+      "time": "2026-03-06T03:40:23.185Z"
+    },
+    {
+      "source": "x:AndreCronjeTech",
+      "handle": "AndreCronjeTech",
+      "text": "Flying Tulip's stablecoin $ftUSD currently yields 6.33% to holders. Rewards in $FT bought back from the market.\n\nTrack the supply and APY here: \nhttps://\nflyingtulip.com/ftusd/dashboard\n\nAfter our Margin Lending platform launches and matures, users will be able to deposit $ftUSD, and activate",
+      "time": "2026-03-06T03:41:10.914Z"
+    },
+    {
+      "source": "x:AndreCronjeTech",
+      "handle": "AndreCronjeTech",
+      "text": "Made a dashboard to keep track of onchain $FT supply!",
+      "time": "2026-03-06T03:41:10.915Z"
+    },
+    {
+      "source": "x:CryptoSlate",
+      "handle": "CryptoSlate",
+      "text": "NEW SLATECAST  Tokenizing sports sounds like a meme, until you realize it can fund careers.\n\nIn this podcast, \n@FANtiumOfficial\n CEO Jonathan Ludwig (\n@theluddi\n) breaks down:\n\n What should be tokenized (and what shouldn’t)\n\n Why most “fan tokens” were structurally broken\n\n",
+      "time": "2026-03-06T03:41:21.480Z"
+    },
+    {
+      "source": "x:AstarNetwork",
+      "handle": "AstarNetwork",
+      "text": "Astar governance is structured, specialized, and conducted fully onchain.\n\nThe Astar Collective separates strategic direction, technical oversight, community governance, and treasury management across defined bodies with clear mandates and accountability.",
+      "time": "2026-03-06T03:41:32.366Z"
+    }
+  ]
+}

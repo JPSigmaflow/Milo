@@ -1,0 +1,31 @@
+{
+  "period_start": "2026-02-24",
+  "last_updated": "2026-03-04",
+  "total_mexc_listings_solana": 2,
+  "total_our_alerts": 15,
+  "hits": 2,
+  "misses": 0,
+  "false_positives": 13,
+  "precision_pct": 13.33,
+  "recall_pct": 100.0,
+  "hit_details": [
+    {
+      "symbol": "TRIPLET",
+      "token_name": "Tung Tung Tung Sahur",
+      "our_alert_date": "2026-02-24",
+      "mexc_listing_date": "2026-03-03",
+      "lead_time_days": 7,
+      "score": 8
+    },
+    {
+      "symbol": "我的刀盾",
+      "token_name": "what the dog doing?",
+      "our_alert_date": "2026-03-03",
+      "mexc_listing_date": "2026-03-04",
+      "lead_time_hours": 10,
+      "score": null
+    }
+  ],
+  "miss_details": [],
+  "notes": "First validation run. 2 hits out of 2 MEXC Solana listings = 100% recall!"
+}

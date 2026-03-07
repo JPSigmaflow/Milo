@@ -1,0 +1,10 @@
+{
+  "aktivitaeten": [],
+  "stats": {
+    "total_aktivitaeten": 0,
+    "kommentare_beantwortet": 0,
+    "posts_geteilt": 0,
+    "fotos_gesendet": 0,
+    "letzte_aktivitaet": null
+  }
+}

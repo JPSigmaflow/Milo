@@ -1,0 +1,205 @@
+#!/usr/bin/env node
+/**
+ * Asia Social Scanner — BiliBili, Weibo, Douyin Detection
+ * 
+ * Checks for viral content on Chinese platforms.
+ * Updates candidates.json with social metrics.
+ */
+
+import https from 'https';
+import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ROOT = join(__dirname, '..');
+const CANDIDATES_FILE = join(ROOT, 'data', 'pumpfun-candidates.json');
+
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+function loadCandidates() {
+  if (!existsSync(CANDIDATES_FILE)) return [];
+  try { return JSON.parse(readFileSync(CANDIDATES_FILE, 'utf8')); } catch { return []; }
+}
+
+function saveCandidates(candidates) {
+  writeFileSync(CANDIDATES_FILE, JSON.stringify(candidates, null, 2));
+}
+
+// BiliBili Search API
+async function searchBiliBili(query) {
+  return new Promise((resolve, reject) => {
+    const encodedQuery = encodeURIComponent(query);
+    const url = `https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword=${encodedQuery}`;
+    
+    https.get(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Referer': 'https://www.bilibili.com'
+      }
+    }, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        try {
+          const json = JSON.parse(data);
+          if (json.code === 0 && json.data && json.data.result) {
+            const videos = json.data.result;
+            const totalViews = videos.reduce((sum, v) => sum + (v.play || 0), 0);
+            const topVideo = videos[0];
+            
+            resolve({
+              found: videos.length > 0,
+              totalResults: videos.length,
+              totalViews: totalViews,
+              topViews: topVideo ? topVideo.play : 0,
+              topLikes: topVideo ? (topVideo.like || 0) : 0,
+              topTitle: topVideo ? topVideo.title : ''
+            });
+          } else {
+            resolve({ found: false, totalViews: 0 });
+          }
+        } catch (e) {
+          resolve({ found: false, totalViews: 0 });
+        }
+      });
+    }).on('error', () => resolve({ found: false, totalViews: 0 }));
+  });
+}
+
+// Weibo Search (simplified - no official API without auth)
+async function searchWeibo(query) {
+  // Weibo requires auth for API access
+  // For now, we'll use a placeholder that checks if the token name contains Chinese characters
+  // In production, use Weibo API with proper credentials
+  
+  const hasChinese = /[\u4e00-\u9fa5]/.test(query);
+  return {
+    found: hasChinese,
+    estimatedReach: hasChinese ? 100000 : 0,
+    note: 'Weibo requires API credentials - using placeholder'
+  };
+}
+
+// Analyze social signals
+function analyzeAsiaSignals(biliData, weiboData, token) {
+  let score = 0;
+  let signals = [];
+  
+  // BiliBili signals
+  if (biliData.found) {
+    if (biliData.totalViews > 500000) {
+      score += 3;
+      signals.push(`BiliBili: ${(biliData.totalViews / 1e6).toFixed(1)}M views (HIGH)`);
+    } else if (biliData.totalViews > 100000) {
+      score += 2;
+      signals.push(`BiliBili: ${(biliData.totalViews / 1e3).toFixed(0)}K views (MEDIUM)`);
+    } else if (biliData.totalViews > 10000) {
+      score += 1;
+      signals.push(`BiliBili: ${(biliData.totalViews / 1e3).toFixed(0)}K views (LOW)`);
+    }
+  }
+  
+  // Chinese characters in name/symbol = Asia relevance
+  const hasChinese = /[\u4e00-\u9fa5]/.test(token.name + token.symbol);
+  if (hasChinese) {
+    score += 2;
+    signals.push('Chinese characters (Asia relevant)');
+  }
+  
+  // Keywords
+  const asiaKeywords = ['china', 'chinese', 'bilibili', 'douyin', 'weibo', '抖音'];
+  const desc = (token.description || '').toLowerCase();
+  if (asiaKeywords.some(k => desc.includes(k))) {
+    score += 1;
+    signals.push('Asia keywords in description');
+  }
+  
+  return { score, signals };
+}
+
+// Main
+async function main() {
+  console.log('[Asia Social Scanner] Starting...\n');
+  
+  const candidates = loadCandidates();
+  console.log(`Found ${candidates.length} candidates to check\n`);
+  
+  if (candidates.length === 0) {
+    console.log('No candidates to process.');
+    return;
+  }
+  
+  let updated = 0;
+  let asiaRelevant = 0;
+  
+  for (const candidate of candidates) {
+    // Skip if already checked recently (< 6h ago)
+    if (candidate.asiaCheckedAt) {
+      const lastCheck = new Date(candidate.asiaCheckedAt).getTime();
+      const now = Date.now();
+      if (now - lastCheck < 6 * 3600 * 1000) {
+        continue;
+      }
+    }
+    
+    console.log(`Checking: ${candidate.name} (${candidate.symbol})`);
+    
+    // Search BiliBili
+    const biliData = await searchBiliBili(candidate.name);
+    await sleep(2000); // Rate limit
+    
+    // Search Weibo (placeholder)
+    const weiboData = await searchWeibo(candidate.name);
+    
+    // Analyze
+    const analysis = analyzeAsiaSignals(biliData, weiboData, candidate);
+    
+    // Update candidate
+    candidate.asiaSocialScore = analysis.score;
+    candidate.asiaSocialSignals = analysis.signals;
+    candidate.bilibiliViews = biliData.totalViews;
+    candidate.bilibiliTopVideo = biliData.topTitle;
+    candidate.asiaCheckedAt = new Date().toISOString();
+    
+    // Recalculate total score
+    const oldScore = candidate.score || 0;
+    candidate.score = oldScore + analysis.score;
+    
+    if (analysis.score > 0) {
+      console.log(`  ✅ Asia Score: +${analysis.score} (Total: ${candidate.score})`);
+      analysis.signals.forEach(s => console.log(`     - ${s}`));
+      asiaRelevant++;
+    } else {
+      console.log(`  ⏭️ No Asia signals`);
+    }
+    
+    updated++;
+    console.log('');
+  }
+  
+  // Save updated candidates
+  saveCandidates(candidates);
+  
+  console.log('\n=== SUMMARY ===');
+  console.log(`Checked: ${updated} candidates`);
+  console.log(`Asia-relevant: ${asiaRelevant}`);
+  console.log(`High-score (>10): ${candidates.filter(c => c.score >= 10).length}`);
+  
+  // List high-score candidates
+  const highScore = candidates.filter(c => c.score >= 10).sort((a, b) => b.score - a.score);
+  if (highScore.length > 0) {
+    console.log('\n🚨 HIGH SCORE CANDIDATES:');
+    highScore.slice(0, 5).forEach(c => {
+      console.log(`  ${c.name} (${c.symbol}) - Score: ${c.score}/12`);
+      if (c.asiaSocialSignals) {
+        c.asiaSocialSignals.forEach(s => console.log(`    - ${s}`));
+      }
+    });
+  }
+}
+
+main().catch(err => {
+  console.error('Error:', err);
+  process.exit(1);
+});
