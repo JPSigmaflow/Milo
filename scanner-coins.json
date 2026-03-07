@@ -2142,6 +2142,24 @@
     "updated_at": "2026-02-27 16:39:42"
   },
   {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "-",
+    "chain": "Cardano",
+    "narrative": "L1 Smart Contracts, High Dev Activity",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 68,
+    "result": "watchlist",
+    "reason": "AI-Analyse Mar7: Multi-Source (3x CryptoPanic), #3 bullish sentiment, #8 development activity, Crypto.com integration 90M users. Etabliertes L1 Projekt.",
+    "lesson_ref": null,
+    "source": "analyst-mar7",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 21:42:10",
+    "updated_at": "2026-03-07 21:42:10"
+  },
+  {
     "symbol": "ALCX",
     "name": "Alchemix",
     "address": "0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF",
@@ -4786,6 +4804,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-12 20:45:34",
     "updated_at": "2026-02-12 20:45:34"
+  },
+  {
+    "symbol": "HBAR",
+    "name": "Hedera",
+    "address": "-",
+    "chain": "Hedera",
+    "narrative": "Enterprise DLT, RWA",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 52,
+    "result": "watchlist",
+    "reason": "AI-Analyse Mar7: RWA Narrative mit ONDO, generational bet laut Analyst. Single source aber starkes Enterprise backing.",
+    "lesson_ref": null,
+    "source": "analyst-mar7",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 21:42:10",
+    "updated_at": "2026-03-07 21:42:10"
   },
   {
     "symbol": "WAR",
