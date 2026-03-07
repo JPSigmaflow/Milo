@@ -1062,6 +1062,24 @@
     "updated_at": "2026-03-04 14:11:03"
   },
   {
+    "symbol": "BAIAGENT",
+    "name": "Binance AI Agent",
+    "address": "0xF43d7c81A3dDAcA4Ae1e81Bd2d1aFB65B0a8554",
+    "chain": "BSC",
+    "narrative": "AI Agent",
+    "market_cap": 2800000,
+    "liquidity": 152000,
+    "volume_24h": 8400000,
+    "score": 75,
+    "result": "deep-dive",
+    "reason": null,
+    "lesson_ref": null,
+    "source": "DexScreener",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 01:06:52",
+    "updated_at": "2026-03-07 01:06:52"
+  },
+  {
     "symbol": "ADA",
     "name": "Cardano",
     "address": "cardano-mainnet",
@@ -3438,6 +3456,24 @@
     "updated_at": "2026-03-06 03:42:17"
   },
   {
+    "symbol": "UAI",
+    "name": "UnifAI Network",
+    "address": "0x...",
+    "chain": "ETH",
+    "narrative": "AI",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 62,
+    "result": "watchlist",
+    "reason": "CoinGecko Trending. Starker Pump +10.35%. Auf MEXC verfügbar. Nur 1 Quelle - zu wenig für höheren Score (L010).",
+    "lesson_ref": null,
+    "source": "analyst-mar6-trending + coingecko-trending-mar6",
+    "source_channels": null,
+    "scanned_at": "2026-03-06 23:42:51",
+    "updated_at": "2026-03-07 00:41:57"
+  },
+  {
     "symbol": "HYPE",
     "name": "Hyperliquid",
     "address": "tbd",
@@ -3834,6 +3870,24 @@
     "updated_at": "2026-02-13 01:02:47"
   },
   {
+    "symbol": "AGENTFUN",
+    "name": "AgentFun.AI",
+    "address": "0x9670f0874c61e6cf2ec65c59e06de0c3434c3061",
+    "chain": "Cronos",
+    "narrative": "AI Agent",
+    "market_cap": 3500000,
+    "liquidity": 1100000,
+    "volume_24h": 442,
+    "score": 60,
+    "result": "watchlist",
+    "reason": null,
+    "lesson_ref": null,
+    "source": "DexScreener",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 01:06:47",
+    "updated_at": "2026-03-07 01:06:47"
+  },
+  {
     "symbol": "SPK",
     "name": "Spark Protocol",
     "address": "multi-chain",
@@ -3978,24 +4032,6 @@
     "updated_at": "2026-03-03 14:09:06"
   },
   {
-    "symbol": "UAI",
-    "name": "UnifAI Network",
-    "address": "0x...",
-    "chain": "ETH",
-    "narrative": "AI",
-    "market_cap": null,
-    "liquidity": null,
-    "volume_24h": null,
-    "score": 58,
-    "result": "watchlist",
-    "reason": "CoinGecko Trending. Starker Pump +10.35%. Auf MEXC verfügbar. Nur 1 Quelle - zu wenig für höheren Score (L010).",
-    "lesson_ref": null,
-    "source": "analyst-mar6-trending",
-    "source_channels": null,
-    "scanned_at": "2026-03-06 23:42:51",
-    "updated_at": "2026-03-06 23:42:51"
-  },
-  {
     "symbol": "HYPER",
     "name": "Hyperlane",
     "address": "0x...EVM",
@@ -4120,6 +4156,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-17 01:03:42",
     "updated_at": "2026-02-17 01:03:42"
+  },
+  {
+    "symbol": "DeepSeekAI",
+    "name": "DeepSeek AI Agent",
+    "address": "9A2jUqBypRckyeRsLGTU4ZYLsjdAYeBQCLzZFgzwn9Y",
+    "chain": "Solana",
+    "narrative": "AI Agent",
+    "market_cap": 234000,
+    "liquidity": 74000,
+    "volume_24h": 1600,
+    "score": 55,
+    "result": "watchlist",
+    "reason": null,
+    "lesson_ref": null,
+    "source": "DexScreener",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 01:06:47",
+    "updated_at": "2026-03-07 01:06:47"
   },
   {
     "symbol": "UAI",
