@@ -2736,6 +2736,24 @@
     "updated_at": "2026-03-05 02:42:22"
   },
   {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "cardano",
+    "chain": "Cardano",
+    "narrative": "L1 + Smart Contracts + RWA",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "AI-Analyse 7.3.26: 3x Multi-Source (CryptoPanic) - Bullish Sentiment #3, Dev Activity #8, Crypto.com 90M Users Integration. Starke Community + hohe Entwickler-Aktivität. MEXC verfügbar. Risiko: 3/10.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 22:12:05",
+    "updated_at": "2026-03-07 22:12:05"
+  },
+  {
     "symbol": "XRP",
     "name": "Ripple",
     "address": "native",
