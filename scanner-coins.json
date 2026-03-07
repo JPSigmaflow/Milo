@@ -1260,6 +1260,24 @@
     "updated_at": "2026-03-06 12:42:46"
   },
   {
+    "symbol": "BLEND",
+    "name": "Fluent",
+    "address": "unknown",
+    "chain": "unknown",
+    "narrative": "Unknown - Coinbase Listing",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 72,
+    "result": "deep-dive",
+    "reason": "Coinbase Asset Listing Roadmap - starkes Signal fuer Multi-Exchange Potential. Narrativ muss noch erforscht werden.",
+    "lesson_ref": null,
+    "source": "analyst-mar7-coinbase",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 20:12:22",
+    "updated_at": "2026-03-07 20:12:22"
+  },
+  {
     "symbol": "AKT",
     "name": "Akash Network",
     "address": "",
@@ -2088,6 +2106,24 @@
     "updated_at": "2026-02-27 16:39:42"
   },
   {
+    "symbol": "ALCX",
+    "name": "Alchemix",
+    "address": "0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF",
+    "chain": "ethereum",
+    "narrative": "DeFi / Self-Repaying Loans",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 68,
+    "result": "deep-dive",
+    "reason": "Etabliertes DeFi-Projekt seit 2021. CoinGecko Trending heute. Solides Yield-Protokoll mit innovativem Ansatz.",
+    "lesson_ref": null,
+    "source": "analyst-mar7-coingecko",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 20:12:22",
+    "updated_at": "2026-03-07 20:12:22"
+  },
+  {
     "symbol": "NEXI",
     "name": "Nexira",
     "address": "TBD-kucoin-listing",
@@ -2644,6 +2680,24 @@
     "source_channels": null,
     "scanned_at": "2026-03-05 02:42:22",
     "updated_at": "2026-03-05 02:42:22"
+  },
+  {
+    "symbol": "HBAR",
+    "name": "Hedera",
+    "address": "hbar",
+    "chain": "hedera",
+    "narrative": "RWA / Enterprise Blockchain",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "RWA Narrativ mit XRP und ONDO. Analyst Report deutet auf generational bet. Bereits etabliert, MEXC gelistet.",
+    "lesson_ref": null,
+    "source": "analyst-mar7-cryptopanic",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 20:12:22",
+    "updated_at": "2026-03-07 20:12:22"
   },
   {
     "symbol": "ADA",
