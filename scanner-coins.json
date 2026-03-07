@@ -2142,6 +2142,24 @@
     "updated_at": "2026-02-27 16:39:42"
   },
   {
+    "symbol": "PI",
+    "name": "Pi Network",
+    "address": "",
+    "chain": "mainnet",
+    "narrative": "Distributed AI Computing",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 68,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: 16% Anstieg heute. Team hat Distributed AI Computing Pläne angekündigt (CryptoPanic Multi-Source). MEXC verfügbar. Risiko: Umstrittenes Projekt mit langer Mainnet-Phase, aber AI Computing = aktueller Mega-Trend.",
+    "lesson_ref": null,
+    "source": "analyst-mar7-ai-computing",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 16:12:05",
+    "updated_at": "2026-03-07 16:12:05"
+  },
+  {
     "symbol": "ALCX",
     "name": "Alchemix",
     "address": "N/A",
@@ -4318,6 +4336,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-17 01:03:42",
     "updated_at": "2026-02-17 01:03:42"
+  },
+  {
+    "symbol": "ALCX",
+    "name": "Alchemix",
+    "address": "0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF",
+    "chain": "ethereum",
+    "narrative": "DeFi - Self-Repaying Loans",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 55,
+    "result": "watchlist",
+    "reason": "AI-Analyse: CoinGecko Trending, etabliertes DeFi-Protokoll seit 2021. Single-Source Erwähnung, moderate Aktivität. Bekanntes Team, funktionierende Produkte. Risiko 4/10.",
+    "lesson_ref": null,
+    "source": "analyst-mar7-coingecko",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 15:42:00",
+    "updated_at": "2026-03-07 15:42:00"
   },
   {
     "symbol": "RNBW",
