@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-06T15:43:13.704419Z",
-  "total_coins": 283,
+  "updated_at": "2026-03-07T12:12:46.618976Z",
+  "total_coins": 322,
   "coins": [
     {
       "id": 187,
@@ -19,7 +19,10 @@
       "source": "analyst-mar5-nyse-ice",
       "scanned_at": "2026-03-05 13:43:21",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 192,
@@ -38,7 +41,10 @@
       "source": "analyst-mar5-nyse-ice",
       "scanned_at": "2026-03-05 14:12:59",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": "cryptopanic + telegram (CoindeskGlobal, Cointelegraph, coingape)"
+      "source_channels": "cryptopanic + telegram (CoindeskGlobal, Cointelegraph, coingape)",
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 110,
@@ -57,7 +63,10 @@
       "source": "analyst-mar5-coinbase",
       "scanned_at": "2026-02-25 15:39:17",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 141,
@@ -76,7 +85,10 @@
       "source": "analyst + binance-migration-mar5 + blockchain-mag + crypto-times + invezz + cryptopanic",
       "scanned_at": "2026-03-04 19:41:32",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 143,
@@ -95,7 +107,10 @@
       "source": "analyst-mar5-coinbase",
       "scanned_at": "2026-03-04 20:13:21",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 146,
@@ -114,7 +129,10 @@
       "source": "analyst + binance-migration-mar5 + blockchain-mag + crypto-times + invezz + cryptopanic",
       "scanned_at": "2026-03-04 20:13:21",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 151,
@@ -133,7 +151,10 @@
       "source": "analyst + binance-migration-mar5 + blockchain-mag + crypto-times + invezz + cryptopanic",
       "scanned_at": "2026-03-04 20:41:59",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 191,
@@ -152,7 +173,10 @@
       "source": "analyst-mar5-coinbase",
       "scanned_at": "2026-03-05 14:12:59",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": "telegram (TheBlockBeats, ForesightNews, WuBlock, cointime_cn, bitpush, ChainCatcher, ODaily_News, PANewsOfficial) + cryptopanic + binance-launchpool"
+      "source_channels": "telegram (TheBlockBeats, ForesightNews, WuBlock, cointime_cn, bitpush, ChainCatcher, ODaily_News, PANewsOfficial) + cryptopanic + binance-launchpool",
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 134,
@@ -171,7 +195,10 @@
       "source": "analyst + telegram-the-block + cryptopanic + usdui-launch-mar4 + mexc",
       "scanned_at": "2026-03-04 15:12:56",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 136,
@@ -190,7 +217,10 @@
       "source": "analyst + telegram-the-block + cryptopanic + usdui-launch-mar4 + mexc",
       "scanned_at": "2026-03-04 16:40:53",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 138,
@@ -209,7 +239,10 @@
       "source": "analyst + telegram-the-block + cryptopanic + usdui-launch-mar4 + mexc",
       "scanned_at": "2026-03-04 17:42:09",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 139,
@@ -228,7 +261,10 @@
       "source": "analyst + analyst-update-mar4-binance-alpha",
       "scanned_at": "2026-03-04 17:42:09",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 144,
@@ -247,7 +283,10 @@
       "source": "analyst + telegram-the-block + cryptopanic + usdui-launch-mar4 + mexc",
       "scanned_at": "2026-03-04 20:13:21",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 145,
@@ -266,7 +305,10 @@
       "source": "analyst + analyst-update-mar4-binance-alpha",
       "scanned_at": "2026-03-04 20:13:21",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 153,
@@ -285,7 +327,10 @@
       "source": "analyst + analyst-update-mar4-binance-alpha",
       "scanned_at": "2026-03-04 20:41:59",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 155,
@@ -304,7 +349,10 @@
       "source": "analyst + telegram-the-block + cryptopanic + usdui-launch-mar4 + mexc",
       "scanned_at": "2026-03-04 21:43:35",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 197,
@@ -323,7 +371,10 @@
       "source": "analyst-mar5-nyse-ice",
       "scanned_at": "2026-03-05 14:41:59",
       "updated_at": "2026-03-05 18:42:24",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 78,
@@ -342,7 +393,10 @@
       "source": "analyst + coingecko-ai-scan + x-twitter-rally-36pct + near-partnership + cryptopanic-lead-mar5",
       "scanned_at": "2026-02-17 01:03:42",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 148,
@@ -361,7 +415,10 @@
       "source": "analyst + coingecko-ai-scan + x-twitter-rally-36pct + near-partnership + cryptopanic-lead-mar5",
       "scanned_at": "2026-03-04 20:14:01",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 156,
@@ -380,7 +437,10 @@
       "source": "analyst + coingecko-ai-scan + x-twitter-rally-36pct + near-partnership + cryptopanic-lead-mar5",
       "scanned_at": "2026-03-04 23:41:51",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 125,
@@ -399,7 +459,10 @@
       "source": "analyst + upbit-listing-mar4 + x-twitter-feature-4x-pump + coingecko-trending",
       "scanned_at": "2026-03-04 06:09:13",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 149,
@@ -418,7 +481,10 @@
       "source": "analyst + upbit-listing-mar4 + x-twitter-feature-4x-pump + coingecko-trending",
       "scanned_at": "2026-03-04 20:14:01",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 152,
@@ -437,7 +503,10 @@
       "source": "analyst + upbit-listing-mar4 + x-twitter-feature-4x-pump + coingecko-trending",
       "scanned_at": "2026-03-04 20:41:59",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 154,
@@ -456,7 +525,10 @@
       "source": "analyst + upbit-listing-mar4 + x-twitter-feature-4x-pump + coingecko-trending",
       "scanned_at": "2026-03-04 21:43:35",
       "updated_at": "2026-03-05 22:14:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 174,
@@ -475,7 +547,10 @@
       "source": "analyst-update-mar5-privacy",
       "scanned_at": "2026-03-05 05:43:03",
       "updated_at": "2026-03-05 07:42:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 104,
@@ -494,7 +569,10 @@
       "source": "analyst + coingecko-trending + cryptopanic + wall-street-defi-surge + whale-activity-120m-mar4",
       "scanned_at": "2026-02-22 13:38:59",
       "updated_at": "2026-03-04 16:11:29",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 132,
@@ -513,7 +591,10 @@
       "source": "analyst + whale-activity-120m-mar4",
       "scanned_at": "2026-03-04 15:12:56",
       "updated_at": "2026-03-04 16:11:29",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 248,
@@ -532,7 +613,10 @@
       "source": "analyst-mar5-tvl-explosion",
       "scanned_at": "2026-03-06 02:12:40",
       "updated_at": "2026-03-06 02:12:40",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 182,
@@ -551,7 +635,10 @@
       "source": "hawk_scanner",
       "scanned_at": "2026-03-05 07:01:57",
       "updated_at": "2026-03-05 07:01:57",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 181,
@@ -570,7 +657,10 @@
       "source": "hawk_scanner",
       "scanned_at": "2026-03-05 07:01:57",
       "updated_at": "2026-03-05 07:01:57",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 180,
@@ -589,7 +679,10 @@
       "source": "hawk_scanner",
       "scanned_at": "2026-03-05 07:01:57",
       "updated_at": "2026-03-05 07:01:57",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 198,
@@ -608,7 +701,10 @@
       "source": "analyst-mar5-whale-alerts",
       "scanned_at": "2026-03-05 15:13:33",
       "updated_at": "2026-03-05 15:13:33",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 204,
@@ -627,7 +723,10 @@
       "source": "analyst-mar5-kraken-listing-high-score",
       "scanned_at": "2026-03-05 18:14:10",
       "updated_at": "2026-03-05 18:14:10",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 227,
@@ -646,7 +745,10 @@
       "source": "analyst-mar5-multi",
       "scanned_at": "2026-03-05 23:12:34",
       "updated_at": "2026-03-05 23:12:34",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 232,
@@ -665,7 +767,32 @@
       "source": "analyst-mar5-halving-etf",
       "scanned_at": "2026-03-05 23:42:36",
       "updated_at": "2026-03-05 23:42:36",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 326,
+      "symbol": "OPN",
+      "name": "Opinion Labs",
+      "address": "",
+      "chain": "multi",
+      "narrative": "DeFi, Prediction Markets",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 85,
+      "result": "deep-dive",
+      "reason": "Binance Listing + 200% APR Earn + 2.5M Token Campaign. Multi-Source (Binance Announcements, PoolX). Prediction Markets Narrativ stark (\u00e4hnlich Polymarket).",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar7",
+      "scanned_at": "2026-03-07 06:42:01",
+      "updated_at": "2026-03-07 06:42:01",
+      "source_channels": null,
+      "alert_sent_at": "2026-03-07 11:42:01",
+      "alert_price": null,
+      "last_alert_score": 85
     },
     {
       "id": 91,
@@ -684,7 +811,10 @@
       "source": "analyst + coinbase-roadmap + TheBlockBeats + ForesightNews + ChainCatcher + WuBlock + bitpush + PANews + CryptoPanic",
       "scanned_at": "2026-02-20 17:39:17",
       "updated_at": "2026-02-20 19:39:05",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 99,
@@ -703,7 +833,10 @@
       "source": "analyst + coingecko-trending + cryptopanic-whale + chaincatcher-coinbase + bitget-whale",
       "scanned_at": "2026-02-22 06:09:16",
       "updated_at": "2026-02-22 08:09:17",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 222,
@@ -722,7 +855,10 @@
       "source": "analyst-mar5-multi-exchange",
       "scanned_at": "2026-03-05 22:43:30",
       "updated_at": "2026-03-05 22:43:30",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 228,
@@ -741,7 +877,54 @@
       "source": "analyst-mar5-multi",
       "scanned_at": "2026-03-05 23:12:34",
       "updated_at": "2026-03-05 23:12:34",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 341,
+      "symbol": "IOTX",
+      "name": "IoTeX",
+      "address": "native",
+      "chain": "iotex",
+      "narrative": "DePIN + IoT L1",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 82,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: Multi-catalyst DePIN project. BeInCrypto Award Winner, x402 Coinbase integration trending, IIP-55 governance vote live, ioTube exploit recovery complete (100% refunds). Established L1 seit Jahren. Risiko 4/10 post-exploit aber strong recovery signals.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-07 07:42:09",
+      "updated_at": "2026-03-07 07:42:09",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 353,
+      "symbol": "ZRO",
+      "name": "LayerZero",
+      "address": "TBA",
+      "chain": "layerzero",
+      "narrative": "Infrastructure, L1 Launch (Zero)",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 82,
+      "result": "deep-dive",
+      "reason": "Zero L1 Ank\u00fcndigung, 57% crosschain messaging market share, Multi-Source (Telegram 2x + Twitter + Enterprise Analysis)",
+      "lesson_ref": null,
+      "source": "analyst-mar7-l1-launch",
+      "scanned_at": "2026-03-07 10:42:19",
+      "updated_at": "2026-03-07 10:42:19",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 233,
@@ -760,7 +943,10 @@
       "source": "analyst-mar5-developer-lead",
       "scanned_at": "2026-03-05 23:42:36",
       "updated_at": "2026-03-05 23:42:36",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 245,
@@ -779,7 +965,10 @@
       "source": "analyst-mar5-stablecoin-expansion",
       "scanned_at": "2026-03-06 01:12:35",
       "updated_at": "2026-03-06 01:12:35",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 260,
@@ -798,7 +987,10 @@
       "source": "analyst-mar6-multi",
       "scanned_at": "2026-03-06 05:12:40",
       "updated_at": "2026-03-06 05:12:40",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 301,
@@ -817,7 +1009,10 @@
       "source": "HAWK DexScreener (pancakeswap)",
       "scanned_at": "2026-03-06 13:03:28",
       "updated_at": "2026-03-06 13:03:28",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 314,
@@ -836,7 +1031,54 @@
       "source": "analyst-mar6-scanner",
       "scanned_at": "2026-03-06 15:13:21",
       "updated_at": "2026-03-06 15:13:21",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 350,
+      "symbol": "SPELL",
+      "name": "Spell Token (Abracadabra)",
+      "address": "0x090185f2135308bad17527004364ebcc2d37e5f6",
+      "chain": "ethereum",
+      "narrative": "DeFi Stablecoin",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 80,
+      "result": "deep-dive",
+      "reason": "Multi-source (X-Twitter, Senate discussion) + US Senate floor mention + 216% volume spike + 26.2% price increase + MEXC available + Strong DeFi narrative. Dual-approval buttons sent.",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar7",
+      "scanned_at": "2026-03-07 10:13:07",
+      "updated_at": "2026-03-07 10:13:07",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 355,
+      "symbol": "SPELL",
+      "name": "Abracadabra Money",
+      "address": "0x090185f2135308bad17527004364ebcc2d37e5f6",
+      "chain": "ethereum",
+      "narrative": "DeFi Revival",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 80,
+      "result": "deep-dive",
+      "reason": "Multi-source X-Twitter: Daniele Sesta 18B SPELL R\u00fcckzahlung + MIM im US Senate diskutiert. Volume +216%, Preis +26%. MEXC verf\u00fcgbar. Dual-Approval-Buttons gesendet Mar7 06:10.",
+      "lesson_ref": null,
+      "source": "analyst-mar7",
+      "scanned_at": "2026-03-07 11:12:44",
+      "updated_at": "2026-03-07 11:12:44",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 72,
@@ -855,7 +1097,10 @@
       "source": "analyst + cryptopanic + telegram + upbit + bithumb + whale_alert",
       "scanned_at": "2026-02-16 11:09:02",
       "updated_at": "2026-02-20 15:38:52",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 96,
@@ -874,7 +1119,10 @@
       "source": "analyst + x-twitter + us-senate-catalyst",
       "scanned_at": "2026-02-22 00:09:04",
       "updated_at": "2026-02-22 01:39:10",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 157,
@@ -893,7 +1141,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-04 23:41:51",
       "updated_at": "2026-03-04 23:41:51",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 207,
@@ -912,7 +1163,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-03-05 19:02:23",
       "updated_at": "2026-03-05 19:02:23",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 229,
@@ -931,7 +1185,10 @@
       "source": "analyst-mar5-multi",
       "scanned_at": "2026-03-05 23:12:34",
       "updated_at": "2026-03-05 23:12:34",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 234,
@@ -950,7 +1207,10 @@
       "source": "analyst-mar5-coinbase-platform",
       "scanned_at": "2026-03-05 23:42:36",
       "updated_at": "2026-03-05 23:42:36",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 246,
@@ -969,7 +1229,10 @@
       "source": "analyst-mar5-night",
       "scanned_at": "2026-03-06 01:42:46",
       "updated_at": "2026-03-06 01:42:46",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 266,
@@ -988,7 +1251,10 @@
       "source": "CoinGecko/GeckoTerminal",
       "scanned_at": "2026-03-06 07:02:56",
       "updated_at": "2026-03-06 07:02:56",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 277,
@@ -1007,7 +1273,10 @@
       "source": "analyst-mar6-multi-source",
       "scanned_at": "2026-03-06 08:43:27",
       "updated_at": "2026-03-06 08:43:27",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 281,
@@ -1026,7 +1295,32 @@
       "source": "analyst-mar6-multi",
       "scanned_at": "2026-03-06 09:43:09",
       "updated_at": "2026-03-06 09:43:09",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 352,
+      "symbol": "SPELL",
+      "name": "Spell Token (Abracadabra)",
+      "address": "0x090185f2135308BaD17527004364eBcC2D37e5F6",
+      "chain": "ethereum",
+      "narrative": "DeFi, Stablecoin Infrastructure",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 78,
+      "result": "deep-dive",
+      "reason": "US Senat MIM Diskussion, Volume +216%, Preis +26.2%, Wonderland Merger, Multi-Source (Twitter 4x + Telegram)",
+      "lesson_ref": null,
+      "source": "analyst-mar7-senate",
+      "scanned_at": "2026-03-07 10:42:19",
+      "updated_at": "2026-03-07 10:42:19",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 128,
@@ -1045,7 +1339,10 @@
       "source": "analyst + kucoin-listing + okx-boost-listing + kucoin-gempool-2026-03-04 + mexc-tge-march5 + okx-boost-2026-03-04 + multi-exchange-tge-eve + triple-tge-march5",
       "scanned_at": "2026-03-04 09:39:10",
       "updated_at": "2026-03-04 14:11:03",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 179,
@@ -1064,7 +1361,10 @@
       "source": "hawk_scanner",
       "scanned_at": "2026-03-05 07:01:57",
       "updated_at": "2026-03-05 07:01:57",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 208,
@@ -1083,7 +1383,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 19:41:58",
       "updated_at": "2026-03-05 19:41:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 218,
@@ -1102,7 +1405,10 @@
       "source": "analyst-mar5-coinbase-vector-acquisition",
       "scanned_at": "2026-03-05 21:42:58",
       "updated_at": "2026-03-05 21:42:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 261,
@@ -1121,7 +1427,10 @@
       "source": "analyst-cron-mar6",
       "scanned_at": "2026-03-06 05:42:54",
       "updated_at": "2026-03-06 05:42:54",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 274,
@@ -1140,7 +1449,10 @@
       "source": "analyst-mar6-whale-accumulation",
       "scanned_at": "2026-03-06 08:13:07",
       "updated_at": "2026-03-06 08:13:07",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 295,
@@ -1159,7 +1471,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-06 11:42:39",
       "updated_at": "2026-03-06 11:42:39",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 308,
@@ -1178,7 +1493,32 @@
       "source": "analyst-mar6-dual-source",
       "scanned_at": "2026-03-06 14:42:56",
       "updated_at": "2026-03-06 14:42:56",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 327,
+      "symbol": "IDOS",
+      "name": "idOS Network",
+      "address": "",
+      "chain": "multi",
+      "narrative": "Identity Layer, DeFi",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 75,
+      "result": "deep-dive",
+      "reason": "KuCoin World Premiere + GemPool. Identity Layer f\u00fcr Web3/Stablecoins. Multi-Source (KuCoin News, GemPool).",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar7",
+      "scanned_at": "2026-03-07 06:42:01",
+      "updated_at": "2026-03-07 06:42:01",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 298,
@@ -1197,7 +1537,10 @@
       "source": "analyst-mar6-scanner",
       "scanned_at": "2026-03-06 12:42:46",
       "updated_at": "2026-03-06 12:42:46",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 127,
@@ -1216,7 +1559,10 @@
       "source": "analyst + mexc-premarket + okx-premarket + binance-wallet + telegram + binance-wallet-campaign-2026-03-04",
       "scanned_at": "2026-03-04 08:39:29",
       "updated_at": "2026-03-04 10:09:26",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 162,
@@ -1235,7 +1581,10 @@
       "source": "GeckoTerminal",
       "scanned_at": "2026-03-05 01:04:57",
       "updated_at": "2026-03-05 01:04:57",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 168,
@@ -1254,7 +1603,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 03:42:33",
       "updated_at": "2026-03-05 03:42:33",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 178,
@@ -1273,7 +1625,10 @@
       "source": "analyst + telegram + foresightnews + mexc + 2026-roadmap-mar5",
       "scanned_at": "2026-03-05 06:42:24",
       "updated_at": "2026-03-05 06:42:24",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 186,
@@ -1292,7 +1647,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 13:11:05",
       "updated_at": "2026-03-05 13:11:05",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 195,
@@ -1311,7 +1669,10 @@
       "source": "analyst-mar5-airdrop",
       "scanned_at": "2026-03-05 14:41:52",
       "updated_at": "2026-03-05 14:41:52",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 202,
@@ -1330,7 +1691,10 @@
       "source": "analyst-mar5-multi-source-binance-killers",
       "scanned_at": "2026-03-05 16:42:10",
       "updated_at": "2026-03-05 18:12:10",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 206,
@@ -1349,7 +1713,10 @@
       "source": "DexScreener + CoinGecko",
       "scanned_at": "2026-03-05 19:02:23",
       "updated_at": "2026-03-05 19:02:23",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 210,
@@ -1368,7 +1735,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 19:41:58",
       "updated_at": "2026-03-05 19:41:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 215,
@@ -1387,7 +1757,10 @@
       "source": "analyst-mar5-cron",
       "scanned_at": "2026-03-05 20:42:14",
       "updated_at": "2026-03-05 20:42:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 235,
@@ -1406,7 +1779,10 @@
       "source": "analyst-mar5-coinbase-acquisition",
       "scanned_at": "2026-03-05 23:42:36",
       "updated_at": "2026-03-05 23:42:36",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 241,
@@ -1425,7 +1801,10 @@
       "source": "analyst-mar5-ai-agent-cli",
       "scanned_at": "2026-03-06 00:42:16",
       "updated_at": "2026-03-06 00:42:16",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 265,
@@ -1444,7 +1823,10 @@
       "source": "DexScreener/CoinGecko",
       "scanned_at": "2026-03-06 07:02:56",
       "updated_at": "2026-03-06 07:02:56",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 280,
@@ -1463,7 +1845,10 @@
       "source": "analyst-mar6-whale-signal",
       "scanned_at": "2026-03-06 09:12:01",
       "updated_at": "2026-03-06 09:12:01",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 282,
@@ -1482,7 +1867,10 @@
       "source": "analyst-mar6-coingecko",
       "scanned_at": "2026-03-06 09:43:09",
       "updated_at": "2026-03-06 09:43:09",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 285,
@@ -1501,7 +1889,10 @@
       "source": "analyst-mar6-okx",
       "scanned_at": "2026-03-06 10:12:15",
       "updated_at": "2026-03-06 10:12:15",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 288,
@@ -1520,7 +1911,10 @@
       "source": "analyst-mar6-cron",
       "scanned_at": "2026-03-06 10:42:18",
       "updated_at": "2026-03-06 10:42:18",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 296,
@@ -1539,7 +1933,10 @@
       "source": "analyst-mar6-multi-cex",
       "scanned_at": "2026-03-06 12:12:35",
       "updated_at": "2026-03-06 12:12:35",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 305,
@@ -1558,7 +1955,76 @@
       "source": "analyst-mar6-multi",
       "scanned_at": "2026-03-06 14:12:20",
       "updated_at": "2026-03-06 14:12:20",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 328,
+      "symbol": "NEXI",
+      "name": "Nexira",
+      "address": "",
+      "chain": "multi",
+      "narrative": "Gaming Ecosystem",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 72,
+      "result": "watchlist",
+      "reason": "KuCoin World Premiere. Gaming Ecosystem von Heroes of Mavia Creators. Gaming Narrativ OK, aber nicht Top-Tier.",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar7",
+      "scanned_at": "2026-03-07 06:42:01",
+      "updated_at": "2026-03-07 06:42:01",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 333,
+      "symbol": "ARC",
+      "name": "AI Rig Complex",
+      "address": "",
+      "chain": "Multiple",
+      "narrative": "AI Infrastructure",
+      "market_cap": 36489699.0,
+      "liquidity": 7904974.0,
+      "volume_24h": 7904974.0,
+      "score": 72,
+      "result": "deep-dive",
+      "reason": "7d +20%, gute Liquidit\u00e4t, AI Infra narrative",
+      "lesson_ref": null,
+      "source": "CoinGecko Trending",
+      "scanned_at": "2026-03-07 07:02:32",
+      "updated_at": "2026-03-07 07:02:32",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 345,
+      "symbol": "ROBO",
+      "name": "Fabric Protocol",
+      "address": "TBD-binance-listing",
+      "chain": "ethereum",
+      "narrative": "AI Infrastructure, Decentralized Coordination",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 72,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: Major Listings (Binance Spot + OKX), 30M ROBO Giveaway, AI Agent Infrastructure Narrativ, Multi-Source (3+), Score 72/100",
+      "lesson_ref": null,
+      "source": "analyst-mar7-2026",
+      "scanned_at": "2026-03-07 09:43:12",
+      "updated_at": "2026-03-07 09:43:12",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 254,
@@ -1577,7 +2043,10 @@
       "source": "analyst-mar5-telegram",
       "scanned_at": "2026-03-06 03:42:17",
       "updated_at": "2026-03-06 03:42:17",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 60,
@@ -1596,7 +2065,10 @@
       "source": "analyst + CoinGecko AI Category + coingecko-trending-2026-02-27 + coingecko-trending-repeat",
       "scanned_at": "2026-02-14 01:03:02",
       "updated_at": "2026-02-27 16:39:42",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 163,
@@ -1615,7 +2087,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 01:41:26",
       "updated_at": "2026-03-05 01:41:26",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 175,
@@ -1634,7 +2109,10 @@
       "source": "analyst + ForesightNews + MEXC",
       "scanned_at": "2026-03-05 05:43:03",
       "updated_at": "2026-03-05 05:43:03",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 183,
@@ -1653,7 +2131,10 @@
       "source": "hawk_scanner",
       "scanned_at": "2026-03-05 07:01:57",
       "updated_at": "2026-03-05 07:01:57",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 200,
@@ -1672,7 +2153,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 15:41:51",
       "updated_at": "2026-03-05 15:41:51",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 212,
@@ -1691,7 +2175,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 20:12:25",
       "updated_at": "2026-03-05 20:12:25",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 219,
@@ -1710,7 +2197,10 @@
       "source": "analyst-mar5-coinbase-chainlink",
       "scanned_at": "2026-03-05 21:43:37",
       "updated_at": "2026-03-05 21:43:37",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 230,
@@ -1729,7 +2219,10 @@
       "source": "analyst-mar5-multi",
       "scanned_at": "2026-03-05 23:12:34",
       "updated_at": "2026-03-05 23:12:34",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 240,
@@ -1748,7 +2241,10 @@
       "source": "analyst-mar5-multi-source",
       "scanned_at": "2026-03-06 00:42:16",
       "updated_at": "2026-03-06 00:42:16",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 263,
@@ -1767,7 +2263,10 @@
       "source": "analyst-mar6-scanner",
       "scanned_at": "2026-03-06 06:12:30",
       "updated_at": "2026-03-06 06:12:30",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 286,
@@ -1786,7 +2285,10 @@
       "source": "analyst-mar6-multi",
       "scanned_at": "2026-03-06 10:12:15",
       "updated_at": "2026-03-06 10:12:15",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 292,
@@ -1805,7 +2307,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-06 11:12:28",
       "updated_at": "2026-03-06 11:12:28",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 299,
@@ -1824,7 +2329,10 @@
       "source": "analyst-mar6-scanner",
       "scanned_at": "2026-03-06 12:42:46",
       "updated_at": "2026-03-06 12:42:46",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 302,
@@ -1843,7 +2351,164 @@
       "source": "analyst-mar6-payment-surge",
       "scanned_at": "2026-03-06 13:12:33",
       "updated_at": "2026-03-06 13:12:33",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 318,
+      "symbol": "UTXO",
+      "name": "Utexo",
+      "address": "TBA-PreToken",
+      "chain": "Bitcoin",
+      "narrative": "BTC Native Payments & USDT Settlement (Lightning + RGB)",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 70,
+      "result": "watchlist",
+      "reason": "AI-Analyse: 7.5M Seed Round led by TETHER + Franklin Templeton. Bitcoin payment infrastructure for exchanges/wallets. Pre-token but HIGH priority watchlist. Multi-source (5x mentions). Strong narrative + top-tier backing.",
+      "lesson_ref": null,
+      "source": "analyst-mar6-cron",
+      "scanned_at": "2026-03-06 16:12:39",
+      "updated_at": "2026-03-06 16:12:39",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 329,
+      "symbol": "NOON",
+      "name": "NOON Capital",
+      "address": "",
+      "chain": "multi",
+      "narrative": "Stablecoin Yield",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 70,
+      "result": "watchlist",
+      "reason": "KuCoin World Premiere. Stablecoin mit hohen Yields. Weniger volatil, aber interessantes DeFi Play.",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar7",
+      "scanned_at": "2026-03-07 06:42:01",
+      "updated_at": "2026-03-07 06:42:01",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 330,
+      "symbol": "H",
+      "name": "Humanity Protocol",
+      "address": "",
+      "chain": "multi",
+      "narrative": "AI, Identity",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 70,
+      "result": "watchlist",
+      "reason": "Binance Alpha Trading Competition. AI + Identity Narrativ. Binance Support positiv.",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar7",
+      "scanned_at": "2026-03-07 06:42:01",
+      "updated_at": "2026-03-07 06:42:01",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 337,
+      "symbol": "IOTX",
+      "name": "IoTeX",
+      "address": "io1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqps3qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3epyqp",
+      "chain": "iotex",
+      "narrative": "DePIN/IoT",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 70,
+      "result": "watchlist",
+      "reason": "AI-Analyse: DePIN Narrativ stark. Mehrere Updates (ioTube Exploit Claims Portal live, IIP-56 Voting). Multi-Source Erw\u00e4hnung. Recovery Phase nach Exploit = Risk/Reward Setup. MEXC wahrscheinlich verf\u00fcgbar (established)",
+      "lesson_ref": null,
+      "source": "analyst-mar7-iotex-recovery",
+      "scanned_at": "2026-03-07 07:12:21",
+      "updated_at": "2026-03-07 07:12:21",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 342,
+      "symbol": "NEXI",
+      "name": "Nexira",
+      "address": "tbd",
+      "chain": "multi",
+      "narrative": "Gaming Ecosystem",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 70,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Gaming ecosystem von Heroes of Mavia creators. KuCoin World Premiere listing gerade live. Gaming = hot narrative 2026. Team established. Risiko 6/10 neuer launch.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-07 07:42:09",
+      "updated_at": "2026-03-07 07:42:09",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 351,
+      "symbol": "IOTX",
+      "name": "IoTeX Network",
+      "address": "io1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqps833xv",
+      "chain": "iotex",
+      "narrative": "DePIN/IoT + AI Agents",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 70,
+      "result": "watchlist",
+      "reason": "Multi-source official updates (4 channel mentions) + Won BeInCrypto Best Ecosystem Award + Coinbase integration announced + x402 AI agent trending + IIP-55 governance vote + MEXC available",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar7",
+      "scanned_at": "2026-03-07 10:13:07",
+      "updated_at": "2026-03-07 10:13:07",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 356,
+      "symbol": "SPELL",
+      "name": "Abracadabra Money",
+      "address": "ethereum",
+      "chain": "ethereum",
+      "narrative": "DeFi Stablecoin (MIM)",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 70,
+      "result": "watchlist",
+      "reason": "AI-Analyse: 216% volume spike, Senate mention, Whale-Deal (18B SPELL payment danielesesta+0xM3rlin), Multi-Source X-Twitter",
+      "lesson_ref": null,
+      "source": "analyst-mar7-spell-volume",
+      "scanned_at": "2026-03-07 12:12:23",
+      "updated_at": "2026-03-07 12:12:23",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 43,
@@ -1862,7 +2527,10 @@
       "source": "analyst + coingecko-trending + upbit-volume-top7",
       "scanned_at": "2026-02-13 01:02:47",
       "updated_at": "2026-03-04 06:39:02",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 53,
@@ -1881,7 +2549,10 @@
       "source": "analyst + coingecko-trending + cryptopanic + beincrypto + yahoo-finance + ForesightNews-815pct",
       "scanned_at": "2026-02-13 15:08:23",
       "updated_at": "2026-03-03 14:09:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 88,
@@ -1900,7 +2571,10 @@
       "source": "analyst + telegram-whale-mar5",
       "scanned_at": "2026-02-20 09:39:21",
       "updated_at": "2026-03-05 08:42:04",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 94,
@@ -1919,7 +2593,10 @@
       "source": "CoinGecko AI Category + Defiant",
       "scanned_at": "2026-02-21 01:03:44",
       "updated_at": "2026-02-21 01:03:44",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 107,
@@ -1938,7 +2615,10 @@
       "source": "analyst + ChainCatcher + bitpush + x-twitter + smart-money",
       "scanned_at": "2026-02-23 07:39:12",
       "updated_at": "2026-02-27 06:39:03",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 113,
@@ -1957,7 +2637,10 @@
       "source": "analyst + coingecko-trending + coingecko-trending-2026-02-27 + coingecko-trending-repeat",
       "scanned_at": "2026-02-27 14:39:56",
       "updated_at": "2026-02-27 17:39:13",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 121,
@@ -1976,7 +2659,10 @@
       "source": "analyst + CoinGecko Trending #2 + TheBlockBeats + ChainCatcher + bitpush + GMGN + multi-source-pump",
       "scanned_at": "2026-03-02 19:01:12",
       "updated_at": "2026-03-06 03:12:47",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 137,
@@ -1995,7 +2681,10 @@
       "source": "analyst + binance-alpha + mexc + bitget + wallet-campaign-mar4",
       "scanned_at": "2026-03-04 17:11:53",
       "updated_at": "2026-03-04 17:11:53",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 140,
@@ -2014,7 +2703,10 @@
       "source": "analyst + mexc + tokenomist + airdropalert",
       "scanned_at": "2026-03-04 17:42:09",
       "updated_at": "2026-03-04 17:42:09",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 142,
@@ -2033,7 +2725,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-04 19:41:32",
       "updated_at": "2026-03-04 19:41:32",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 147,
@@ -2052,7 +2747,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-04 20:14:01",
       "updated_at": "2026-03-06 03:12:47",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 150,
@@ -2071,7 +2769,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-04 20:14:01",
       "updated_at": "2026-03-04 20:14:01",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 160,
@@ -2090,7 +2791,10 @@
       "source": "CoinMarketCap",
       "scanned_at": "2026-03-05 01:04:57",
       "updated_at": "2026-03-05 01:04:57",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 169,
@@ -2109,7 +2813,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 03:42:33",
       "updated_at": "2026-03-05 03:42:33",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 185,
@@ -2128,7 +2835,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 13:11:05",
       "updated_at": "2026-03-05 13:11:05",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 211,
@@ -2147,7 +2857,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 19:41:58",
       "updated_at": "2026-03-05 19:41:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 213,
@@ -2166,7 +2879,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 20:12:25",
       "updated_at": "2026-03-05 20:12:25",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 216,
@@ -2185,7 +2901,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 21:11:53",
       "updated_at": "2026-03-05 21:11:53",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 236,
@@ -2204,7 +2923,10 @@
       "source": "analyst-mar5-l2-forecast",
       "scanned_at": "2026-03-05 23:42:36",
       "updated_at": "2026-03-05 23:42:36",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 252,
@@ -2223,7 +2945,10 @@
       "source": "analyst-mar6-cron",
       "scanned_at": "2026-03-06 02:42:18",
       "updated_at": "2026-03-06 03:12:47",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 253,
@@ -2242,7 +2967,10 @@
       "source": "analyst-mar5",
       "scanned_at": "2026-03-06 03:12:08",
       "updated_at": "2026-03-06 03:12:47",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 255,
@@ -2261,7 +2989,10 @@
       "source": "analyst-mar5-telegram",
       "scanned_at": "2026-03-06 03:42:17",
       "updated_at": "2026-03-06 03:42:17",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 283,
@@ -2280,7 +3011,10 @@
       "source": "analyst-mar6-upgrade",
       "scanned_at": "2026-03-06 09:43:09",
       "updated_at": "2026-03-06 09:43:09",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 287,
@@ -2299,7 +3033,10 @@
       "source": "analyst-mar6-coingecko",
       "scanned_at": "2026-03-06 10:12:15",
       "updated_at": "2026-03-06 10:12:15",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 289,
@@ -2318,7 +3055,10 @@
       "source": "analyst-mar6-cron",
       "scanned_at": "2026-03-06 10:42:18",
       "updated_at": "2026-03-06 10:42:18",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 306,
@@ -2337,7 +3077,76 @@
       "source": "analyst-mar6-litecoin-foundation",
       "scanned_at": "2026-03-06 14:12:20",
       "updated_at": "2026-03-06 14:12:20",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 331,
+      "symbol": "BSB",
+      "name": "Block Street",
+      "address": "",
+      "chain": "solana",
+      "narrative": "DeFi, Prediction Markets",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 68,
+      "result": "watchlist",
+      "reason": "Bitget PoolX + Binance Alpha. Prediction Markets auf Bonding Curve (Pumpfun meets Polymarket). Multi-Source.",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar7",
+      "scanned_at": "2026-03-07 06:42:01",
+      "updated_at": "2026-03-07 06:42:01",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 343,
+      "symbol": "IDOS",
+      "name": "idOS Network",
+      "address": "tbd",
+      "chain": "multi",
+      "narrative": "Identity Layer + Web3",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 68,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Identity layer f\u00fcr web3 + stablecoin economy. KuCoin World Premiere + 6M IDOS GemPool rewards. Strukturierter launch. Risiko 6/10.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-07 07:42:09",
+      "updated_at": "2026-03-07 07:42:09",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 346,
+      "symbol": "NEXI",
+      "name": "Nexira",
+      "address": "TBD-kucoin-listing",
+      "chain": "ethereum",
+      "narrative": "Gaming, Multi-Game Ecosystem",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 68,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: KuCoin World Premiere, Heroes of Mavia Team (bekannte Creator), Gaming Ecosystem Narrativ, Multi-Source, Score 68/100",
+      "lesson_ref": null,
+      "source": "analyst-mar7-2026",
+      "scanned_at": "2026-03-07 09:43:13",
+      "updated_at": "2026-03-07 09:43:13",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 167,
@@ -2356,7 +3165,10 @@
       "source": "analyst + telegram + cryptopanic + cmc-mar5",
       "scanned_at": "2026-03-05 02:42:22",
       "updated_at": "2026-03-05 02:42:22",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 309,
@@ -2375,7 +3187,10 @@
       "source": "analyst-mar6-multi-source",
       "scanned_at": "2026-03-06 14:42:56",
       "updated_at": "2026-03-06 14:42:56",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 9,
@@ -2394,7 +3209,10 @@
       "source": "analyst-mar5-x-twitter-bullish",
       "scanned_at": "2026-02-12 19:41:19",
       "updated_at": "2026-03-05 18:12:14",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 81,
@@ -2413,7 +3231,10 @@
       "source": "analyst + coingecko-trending + cryptopanic + okx-x-launch + digifinex + okx-perp-futures-2026-03-01",
       "scanned_at": "2026-02-18 23:08:51",
       "updated_at": "2026-03-01 17:38:59",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 85,
@@ -2432,7 +3253,10 @@
       "source": "analyst + telegram + TheBlockBeats",
       "scanned_at": "2026-02-20 03:39:41",
       "updated_at": "2026-02-20 06:09:02",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 101,
@@ -2451,7 +3275,10 @@
       "source": "portfolio-analysis",
       "scanned_at": "2026-02-22 09:12:31",
       "updated_at": "2026-02-22 09:12:31",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 103,
@@ -2470,7 +3297,10 @@
       "source": "analyst + kucoin-gempool + telegram",
       "scanned_at": "2026-02-22 11:38:59",
       "updated_at": "2026-02-27 15:39:29",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 129,
@@ -2489,7 +3319,10 @@
       "source": "analyst + coingecko-trending + mexc + binance-alpha-competition-mar4 + coingecko-trending-mar4",
       "scanned_at": "2026-03-04 12:10:43",
       "updated_at": "2026-03-04 14:11:03",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 133,
@@ -2508,7 +3341,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-04 15:12:56",
       "updated_at": "2026-03-04 15:12:56",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 161,
@@ -2527,7 +3363,10 @@
       "source": "CoinMarketCap",
       "scanned_at": "2026-03-05 01:04:57",
       "updated_at": "2026-03-05 01:04:57",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 170,
@@ -2546,7 +3385,10 @@
       "source": "analyst + telegram-foresight + mexc-blog + openclaw-integration-mar5",
       "scanned_at": "2026-03-05 04:12:23",
       "updated_at": "2026-03-05 04:12:23",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 171,
@@ -2565,7 +3407,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 04:42:04",
       "updated_at": "2026-03-05 04:42:04",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 173,
@@ -2584,7 +3429,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 05:12:34",
       "updated_at": "2026-03-05 05:12:34",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 176,
@@ -2603,7 +3451,10 @@
       "source": "analyst + TheBlockBeats + ChainCatcher + bitpush + MEXC",
       "scanned_at": "2026-03-05 05:43:03",
       "updated_at": "2026-03-05 05:43:03",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 188,
@@ -2622,7 +3473,10 @@
       "source": "analyst-mar5-coingecko",
       "scanned_at": "2026-03-05 13:43:21",
       "updated_at": "2026-03-05 13:43:21",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 193,
@@ -2641,7 +3495,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 14:12:59",
       "updated_at": "2026-03-05 14:12:59",
-      "source_channels": "coingecko-trending + telegram (ForesightNews)"
+      "source_channels": "coingecko-trending + telegram (ForesightNews)",
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 194,
@@ -2660,7 +3517,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 14:12:59",
       "updated_at": "2026-03-05 14:12:59",
-      "source_channels": "telegram (ForesightNews, TheDailyHodl)"
+      "source_channels": "telegram (ForesightNews, TheDailyHodl)",
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 196,
@@ -2679,7 +3539,10 @@
       "source": "analyst-mar5-tge",
       "scanned_at": "2026-03-05 14:41:52",
       "updated_at": "2026-03-05 14:41:52",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 199,
@@ -2698,7 +3561,10 @@
       "source": "analyst-mar5-airdrop-trending",
       "scanned_at": "2026-03-05 15:13:33",
       "updated_at": "2026-03-05 15:13:33",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 201,
@@ -2717,7 +3583,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 16:12:06",
       "updated_at": "2026-03-05 16:12:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 209,
@@ -2736,7 +3605,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 19:41:58",
       "updated_at": "2026-03-05 19:41:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 217,
@@ -2755,7 +3627,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 21:11:53",
       "updated_at": "2026-03-05 21:11:53",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 220,
@@ -2774,7 +3649,10 @@
       "source": "analyst-mar5-spar-adoption",
       "scanned_at": "2026-03-05 21:43:37",
       "updated_at": "2026-03-05 21:43:37",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 221,
@@ -2793,7 +3671,10 @@
       "source": "analyst-mar5-ripple-coinbase",
       "scanned_at": "2026-03-05 21:43:37",
       "updated_at": "2026-03-05 21:43:37",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 237,
@@ -2812,7 +3693,10 @@
       "source": "analyst-cron-mar5",
       "scanned_at": "2026-03-06 00:11:58",
       "updated_at": "2026-03-06 00:11:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 239,
@@ -2831,7 +3715,10 @@
       "source": "analyst-mar5-network-update",
       "scanned_at": "2026-03-06 00:42:16",
       "updated_at": "2026-03-06 00:42:16",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 257,
@@ -2850,7 +3737,10 @@
       "source": "analyst-mar5-scanner",
       "scanned_at": "2026-03-06 04:12:45",
       "updated_at": "2026-03-06 04:12:45",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 262,
@@ -2869,7 +3759,10 @@
       "source": "analyst-cron-mar6",
       "scanned_at": "2026-03-06 05:42:54",
       "updated_at": "2026-03-06 05:42:54",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 267,
@@ -2888,7 +3781,10 @@
       "source": "CoinGecko/Kraken",
       "scanned_at": "2026-03-06 07:02:56",
       "updated_at": "2026-03-06 07:02:56",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 268,
@@ -2907,7 +3803,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-06 07:13:06",
       "updated_at": "2026-03-06 07:13:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 269,
@@ -2926,7 +3825,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-06 07:13:06",
       "updated_at": "2026-03-06 07:13:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 273,
@@ -2945,7 +3847,10 @@
       "source": "analyst-mar6-whale",
       "scanned_at": "2026-03-06 07:42:26",
       "updated_at": "2026-03-06 07:42:26",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 284,
@@ -2964,7 +3869,10 @@
       "source": "analyst-mar6-treasury",
       "scanned_at": "2026-03-06 09:43:09",
       "updated_at": "2026-03-06 09:43:09",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 290,
@@ -2983,7 +3891,10 @@
       "source": "analyst-mar6-cron",
       "scanned_at": "2026-03-06 10:42:18",
       "updated_at": "2026-03-06 10:42:18",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 300,
@@ -3002,7 +3913,10 @@
       "source": "analyst-mar6-scanner",
       "scanned_at": "2026-03-06 12:42:46",
       "updated_at": "2026-03-06 12:42:46",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 303,
@@ -3021,7 +3935,10 @@
       "source": "analyst-mar6-coinbase-derivatives",
       "scanned_at": "2026-03-06 13:12:33",
       "updated_at": "2026-03-06 13:12:33",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 304,
@@ -3040,7 +3957,10 @@
       "source": "analyst-mar6-spar-integration",
       "scanned_at": "2026-03-06 13:12:33",
       "updated_at": "2026-03-06 13:12:33",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 307,
@@ -3059,7 +3979,10 @@
       "source": "analyst-mar6-binance",
       "scanned_at": "2026-03-06 14:12:20",
       "updated_at": "2026-03-06 14:12:20",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 312,
@@ -3078,7 +4001,10 @@
       "source": "analyst-mar6-scanner",
       "scanned_at": "2026-03-06 15:13:16",
       "updated_at": "2026-03-06 15:13:16",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 315,
@@ -3097,7 +4023,164 @@
       "source": "analyst-mar6-ai-scanner",
       "scanned_at": "2026-03-06 15:42:57",
       "updated_at": "2026-03-06 15:42:57",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 320,
+      "symbol": "XRP",
+      "name": "Ripple",
+      "address": "native",
+      "chain": "XRP Ledger",
+      "narrative": "Payments / RWA Settlement",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Multi-source mentions (6x). Whale accumulation continues despite Binance reserve drop. Mainstream coin, not new discovery but momentum building. MEXC available.",
+      "lesson_ref": null,
+      "source": "analyst-mar6-cron",
+      "scanned_at": "2026-03-06 16:12:39",
+      "updated_at": "2026-03-06 16:12:39",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 332,
+      "symbol": "FAI",
+      "name": "Freysa AI",
+      "address": "",
+      "chain": "multi",
+      "narrative": "AI Agent",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "CoinGecko Trending. AI Narrativ stark, aber nur 1 Quelle. MEXC Status unklar.",
+      "lesson_ref": null,
+      "source": "analyst-cron-mar7",
+      "scanned_at": "2026-03-07 06:42:01",
+      "updated_at": "2026-03-07 06:42:01",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 334,
+      "symbol": "TRAC",
+      "name": "OriginTrail",
+      "address": "",
+      "chain": "Multiple",
+      "narrative": "AI Knowledge Graph",
+      "market_cap": 136174141.0,
+      "liquidity": 6075427.0,
+      "volume_24h": 6075427.0,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "Solide MC, AI infrastructure use case",
+      "lesson_ref": null,
+      "source": "CoinGecko AI Agents",
+      "scanned_at": "2026-03-07 07:02:32",
+      "updated_at": "2026-03-07 07:02:32",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 338,
+      "symbol": "BSB",
+      "name": "Block Street Token",
+      "address": "unknown",
+      "chain": "solana",
+      "narrative": "Gaming/Trading",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "AI-Analyse: 3 CEX Promotions gleichzeitig (Binance 16M, KuCoin 1.133M, Bitget 1.133M BSB). Sehr starke Multi-Source. Gaming Ecosystem. Kein MEXC in Alerts = Trade-Zug\u00e4nglichkeit unklar",
+      "lesson_ref": null,
+      "source": "analyst-mar7-triple-cex",
+      "scanned_at": "2026-03-07 07:12:21",
+      "updated_at": "2026-03-07 07:12:21",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 344,
+      "symbol": "IDOS",
+      "name": "idOS Network",
+      "address": "unknown",
+      "chain": "multi",
+      "narrative": "Identity Layer, Self-Custodial Data, Web3 Identity",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "AI-Analyse: KuCoin + Bitget World Premiere. Identity Layer f\u00fcr Web3, interessantes Narrativ aber neuer Launch ohne MEXC-Best\u00e4tigung. Multi-Source (2 CEX), aber kein organisches Social Momentum. Watchlist bis mehr Daten verf\u00fcgbar.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-07 08:12:23",
+      "updated_at": "2026-03-07 08:12:23",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 347,
+      "symbol": "IDOS",
+      "name": "idOS Network",
+      "address": "TBD-kucoin-listing",
+      "chain": "ethereum",
+      "narrative": "Identity Layer, Web3 Infrastructure",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "deep-dive",
+      "reason": "AI-Analyse: KuCoin World Premiere (6M IDOS GemPool), Identity Layer f\u00fcr Web3, Portable Identity, Multi-Source (3x KuCoin), Score 65/100",
+      "lesson_ref": null,
+      "source": "analyst-mar7-2026",
+      "scanned_at": "2026-03-07 09:43:13",
+      "updated_at": "2026-03-07 09:43:13",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 354,
+      "symbol": "ROBO",
+      "name": "LayerZero Ecosystem Token",
+      "address": "TBA",
+      "chain": "unknown",
+      "narrative": "Infrastructure, Airdrop",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 65,
+      "result": "watchlist",
+      "reason": "Airdrop Portal live, LayerZero ecosystem connection",
+      "lesson_ref": null,
+      "source": "analyst-mar7-airdrop",
+      "scanned_at": "2026-03-07 10:42:19",
+      "updated_at": "2026-03-07 10:42:19",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 126,
@@ -3116,7 +4199,10 @@
       "source": "analyst + telegram + bitget-poolx-2026-03-04 + chaincatcher + bitpush + bitget-poolx-live-mar4",
       "scanned_at": "2026-03-04 06:09:13",
       "updated_at": "2026-03-04 14:11:03",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 293,
@@ -3135,7 +4221,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-06 11:12:28",
       "updated_at": "2026-03-06 11:12:28",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 256,
@@ -3154,7 +4243,10 @@
       "source": "analyst-mar5-cryptopanic",
       "scanned_at": "2026-03-06 03:42:17",
       "updated_at": "2026-03-06 03:42:17",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 44,
@@ -3173,7 +4265,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-13 01:02:47",
       "updated_at": "2026-02-13 01:02:47",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 54,
@@ -3192,7 +4287,10 @@
       "source": "coingecko-ai-category + X-Twitter",
       "scanned_at": "2026-02-13 19:00:58",
       "updated_at": "2026-02-19 22:08:53",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 73,
@@ -3211,7 +4309,10 @@
       "source": "coingecko-ai-category",
       "scanned_at": "2026-02-16 19:00:53",
       "updated_at": "2026-02-16 19:00:53",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 74,
@@ -3230,7 +4331,10 @@
       "source": "coingecko-ai-scan",
       "scanned_at": "2026-02-17 01:03:42",
       "updated_at": "2026-02-17 01:03:42",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 89,
@@ -3249,7 +4353,10 @@
       "source": "analyst + telegram + ForesightNews + Consensys",
       "scanned_at": "2026-02-20 09:39:21",
       "updated_at": "2026-02-20 11:38:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 117,
@@ -3268,7 +4375,10 @@
       "source": "analyst + coingecko-trending + mexc-news",
       "scanned_at": "2026-02-28 12:39:22",
       "updated_at": "2026-02-28 12:39:22",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 119,
@@ -3287,7 +4397,10 @@
       "source": "analyst + coingecko-trending + binance-alpha-competition",
       "scanned_at": "2026-03-01 04:39:31",
       "updated_at": "2026-03-01 05:39:01",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 123,
@@ -3306,7 +4419,10 @@
       "source": "analyst + coinbase-roadmap + ForesightNews + mexc-premarket",
       "scanned_at": "2026-03-04 04:09:31",
       "updated_at": "2026-03-04 04:09:31",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 158,
@@ -3325,7 +4441,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-04 23:41:51",
       "updated_at": "2026-03-04 23:41:51",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 166,
@@ -3344,7 +4463,10 @@
       "source": "analyst + cryptopanic + ambcrypto-mar5",
       "scanned_at": "2026-03-05 02:42:22",
       "updated_at": "2026-03-05 02:42:22",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 184,
@@ -3363,7 +4485,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 13:11:05",
       "updated_at": "2026-03-05 13:11:05",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 205,
@@ -3382,7 +4507,10 @@
       "source": "analyst-mar5",
       "scanned_at": "2026-03-05 18:42:10",
       "updated_at": "2026-03-05 18:42:10",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 214,
@@ -3401,7 +4529,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 20:12:25",
       "updated_at": "2026-03-05 20:12:25",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 231,
@@ -3420,7 +4551,10 @@
       "source": "analyst-mar5-single",
       "scanned_at": "2026-03-05 23:12:34",
       "updated_at": "2026-03-05 23:12:34",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 247,
@@ -3439,7 +4573,10 @@
       "source": "analyst-mar5-night",
       "scanned_at": "2026-03-06 01:42:46",
       "updated_at": "2026-03-06 01:42:46",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 291,
@@ -3458,7 +4595,10 @@
       "source": "analyst-mar6-cron",
       "scanned_at": "2026-03-06 10:42:18",
       "updated_at": "2026-03-06 10:42:18",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 297,
@@ -3477,7 +4617,10 @@
       "source": "analyst-mar6-coingecko",
       "scanned_at": "2026-03-06 12:12:35",
       "updated_at": "2026-03-06 12:12:35",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 313,
@@ -3496,7 +4639,98 @@
       "source": "analyst-mar6-scanner",
       "scanned_at": "2026-03-06 15:13:16",
       "updated_at": "2026-03-06 15:13:16",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 319,
+      "symbol": "FAI",
+      "name": "Freysa AI",
+      "address": "0x...Base",
+      "chain": "Base",
+      "narrative": "AI Agent Game",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 62,
+      "result": "watchlist",
+      "reason": "AI-Analyse: +112% pump to 60M MC, on MEXC. Base chain AI agent project, Elon musk retweet history (peaked 660M). High volatility, fell from peak. Watchlist for dip entry.",
+      "lesson_ref": null,
+      "source": "analyst-mar6-cron",
+      "scanned_at": "2026-03-06 16:12:39",
+      "updated_at": "2026-03-06 16:12:39",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 322,
+      "symbol": "DOT",
+      "name": "Polkadot",
+      "address": "native",
+      "chain": "Polkadot",
+      "narrative": "L1 Parachain Infrastructure",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 62,
+      "result": "watchlist",
+      "reason": "AI-Analyse: First US Spot ETF (TDOT by 21Shares) just launched. Bullish institutional signal. MEXC available. Established L1, not new but ETF = revaluation catalyst.",
+      "lesson_ref": null,
+      "source": "analyst-mar6-cron",
+      "scanned_at": "2026-03-06 16:12:39",
+      "updated_at": "2026-03-06 16:12:39",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 339,
+      "symbol": "IDOS",
+      "name": "idOS Network",
+      "address": "unknown",
+      "chain": "ethereum",
+      "narrative": "Identity/Web3",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 62,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Identity Layer f\u00fcr Web3. Self-custodial Data Storage. 2 CEX Launches (KuCoin World Premiere + OKX GemPool 6M rewards). Nische aber fundamentaler Use-Case. Kein MEXC erw\u00e4hnt",
+      "lesson_ref": null,
+      "source": "analyst-mar7-identity-layer",
+      "scanned_at": "2026-03-07 07:12:21",
+      "updated_at": "2026-03-07 07:12:21",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 348,
+      "symbol": "NOON",
+      "name": "Noon Capital",
+      "address": "TBD-kucoin-listing",
+      "chain": "ethereum",
+      "narrative": "Stablecoin, DeFi Yield",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 62,
+      "result": "watchlist",
+      "reason": "AI-Analyse: KuCoin World Premiere, Stablecoin f\u00fcr High Yields, DeFi Narrativ, Multi-Source, Score 62/100, Risiko: Stablecoin-Regulierung",
+      "lesson_ref": null,
+      "source": "analyst-mar7-2026",
+      "scanned_at": "2026-03-07 09:43:13",
+      "updated_at": "2026-03-07 09:43:13",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 75,
@@ -3515,7 +4749,10 @@
       "source": "analyst + coingecko-trending + binance-alpha-competition + binance-mira-voucher-2026-03-03",
       "scanned_at": "2026-02-17 01:03:42",
       "updated_at": "2026-03-03 14:09:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 172,
@@ -3534,7 +4771,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 04:42:04",
       "updated_at": "2026-03-05 04:42:04",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 177,
@@ -3553,7 +4793,10 @@
       "source": "analyst + telegram-bitpush + cryptopanic + mexc",
       "scanned_at": "2026-03-05 06:12:08",
       "updated_at": "2026-03-05 06:12:08",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 203,
@@ -3572,7 +4815,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 17:12:48",
       "updated_at": "2026-03-05 17:12:48",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 258,
@@ -3591,7 +4837,10 @@
       "source": "analyst-mar5-scanner",
       "scanned_at": "2026-03-06 04:12:45",
       "updated_at": "2026-03-06 04:12:45",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 271,
@@ -3610,7 +4859,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-06 07:13:06",
       "updated_at": "2026-03-06 07:13:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 294,
@@ -3629,7 +4881,54 @@
       "source": "analyst",
       "scanned_at": "2026-03-06 11:12:28",
       "updated_at": "2026-03-06 11:12:28",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 340,
+      "symbol": "NEXI",
+      "name": "Nexira",
+      "address": "unknown",
+      "chain": "ethereum",
+      "narrative": "Gaming",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 60,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Gaming Ecosystem von Heroes of Mavia Creators (known team = plus). KuCoin World Premiere. Gaming Narrativ okay aber weniger hei\u00df als AI/DeFi. Single CEX = lower multi-source",
+      "lesson_ref": null,
+      "source": "analyst-mar7-mavia-team",
+      "scanned_at": "2026-03-07 07:12:21",
+      "updated_at": "2026-03-07 07:12:21",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 349,
+      "symbol": "BSB",
+      "name": "Block Street Token",
+      "address": "TBD-bitget-listing",
+      "chain": "ethereum",
+      "narrative": "Trading, Community",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 60,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Bitget PoolX + Binance Alpha, 1M BSB Rewards, Trading Competition, Multi-Source, Score 60/100, Narrativ unklar",
+      "lesson_ref": null,
+      "source": "analyst-mar7-2026",
+      "scanned_at": "2026-03-07 09:43:13",
+      "updated_at": "2026-03-07 09:43:13",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 58,
@@ -3648,7 +4947,10 @@
       "source": "CoinGecko AI Category + crypto100xprojects",
       "scanned_at": "2026-02-14 01:03:02",
       "updated_at": "2026-02-27 06:09:48",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 76,
@@ -3667,7 +4969,10 @@
       "source": "coingecko-ai-scan",
       "scanned_at": "2026-02-17 01:03:42",
       "updated_at": "2026-02-17 01:03:42",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 118,
@@ -3686,7 +4991,10 @@
       "source": "analyst + binance-alpha-competition-200k",
       "scanned_at": "2026-03-01 04:39:31",
       "updated_at": "2026-03-03 14:09:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 124,
@@ -3705,7 +5013,10 @@
       "source": "analyst + coingecko-trending + 2026-03-04-repeat",
       "scanned_at": "2026-03-04 04:39:24",
       "updated_at": "2026-03-04 08:09:11",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 165,
@@ -3724,7 +5035,10 @@
       "source": "analyst + coingecko-trending-mar5",
       "scanned_at": "2026-03-05 02:42:22",
       "updated_at": "2026-03-05 02:42:22",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 278,
@@ -3743,7 +5057,32 @@
       "source": "analyst-mar6-kucoin",
       "scanned_at": "2026-03-06 08:43:37",
       "updated_at": "2026-03-06 08:43:37",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 321,
+      "symbol": "HYPER",
+      "name": "Hyperlane",
+      "address": "0x...EVM",
+      "chain": "Multi-Chain",
+      "narrative": "Cross-Chain Interoperability",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 58,
+      "result": "no-go",
+      "reason": "AI-Analyse: Token claim live. Cross-chain messaging protocol. MC 30M, FDV 139M. On MEXC. Solid tech but low momentum right now. No-go for now.",
+      "lesson_ref": null,
+      "source": "analyst-mar6-cron",
+      "scanned_at": "2026-03-06 16:12:39",
+      "updated_at": "2026-03-06 16:12:39",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 10,
@@ -3762,7 +5101,10 @@
       "source": "hawk-scan",
       "scanned_at": "2026-02-12 20:45:34",
       "updated_at": "2026-02-12 20:45:34",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 45,
@@ -3781,7 +5123,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-13 01:02:47",
       "updated_at": "2026-02-13 01:02:47",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 49,
@@ -3800,7 +5145,10 @@
       "source": "coingecko-ai",
       "scanned_at": "2026-02-13 13:01:41",
       "updated_at": "2026-02-13 13:01:41",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 59,
@@ -3819,7 +5167,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-14 01:03:02",
       "updated_at": "2026-02-14 01:03:02",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 67,
@@ -3838,7 +5189,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-15 13:02:04",
       "updated_at": "2026-02-15 13:02:04",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 71,
@@ -3857,7 +5211,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-16 01:01:40",
       "updated_at": "2026-02-16 01:01:40",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 77,
@@ -3876,7 +5233,10 @@
       "source": "coingecko-ai-scan",
       "scanned_at": "2026-02-17 01:03:42",
       "updated_at": "2026-02-17 01:03:42",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 90,
@@ -3895,7 +5255,10 @@
       "source": "analyst + coingecko-trending",
       "scanned_at": "2026-02-20 10:39:14",
       "updated_at": "2026-02-20 11:38:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 92,
@@ -3914,7 +5277,10 @@
       "source": "CoinGecko Trending #1, HAWK Scanner 2026-02-20",
       "scanned_at": "2026-02-20 19:01:20",
       "updated_at": "2026-02-20 19:01:20",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 93,
@@ -3933,7 +5299,10 @@
       "source": "analyst + coingecko-trending + cryptopanic",
       "scanned_at": "2026-02-20 20:39:03",
       "updated_at": "2026-02-20 21:39:03",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 102,
@@ -3952,7 +5321,10 @@
       "source": "analyst + coingecko-trending + cryptopanic",
       "scanned_at": "2026-02-22 11:38:59",
       "updated_at": "2026-02-22 14:09:12",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 109,
@@ -3971,7 +5343,10 @@
       "source": "analyst + coingecko-trending + cryptopanic + xrp-bridge-usage",
       "scanned_at": "2026-02-25 11:39:30",
       "updated_at": "2026-02-25 12:38:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 122,
@@ -3990,7 +5365,10 @@
       "source": "analyst + coingecko-trending + coingecko-trending-repeat",
       "scanned_at": "2026-03-03 01:03:37",
       "updated_at": "2026-03-03 02:39:18",
-      "source_channels": "hawk-scanner"
+      "source_channels": "hawk-scanner",
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 164,
@@ -4009,7 +5387,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-05 02:11:42",
       "updated_at": "2026-03-05 02:11:42",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 189,
@@ -4028,7 +5409,10 @@
       "source": "analyst-mar5-tge",
       "scanned_at": "2026-03-05 13:43:21",
       "updated_at": "2026-03-05 13:43:21",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 224,
@@ -4047,7 +5431,10 @@
       "source": "analyst-mar5-airdrop",
       "scanned_at": "2026-03-05 22:43:30",
       "updated_at": "2026-03-05 22:43:30",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 238,
@@ -4066,7 +5453,10 @@
       "source": "analyst-cron-mar5",
       "scanned_at": "2026-03-06 00:12:32",
       "updated_at": "2026-03-06 00:12:32",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 249,
@@ -4085,7 +5475,10 @@
       "source": "analyst-mar5-paraficapital",
       "scanned_at": "2026-03-06 02:12:47",
       "updated_at": "2026-03-06 02:12:47",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 270,
@@ -4104,7 +5497,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-06 07:13:06",
       "updated_at": "2026-03-06 07:13:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 46,
@@ -4123,7 +5519,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-13 07:01:41",
       "updated_at": "2026-02-13 07:01:41",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 62,
@@ -4142,7 +5541,10 @@
       "source": "coingecko-ai-category",
       "scanned_at": "2026-02-14 13:02:07",
       "updated_at": "2026-02-14 13:02:07",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 64,
@@ -4161,7 +5563,10 @@
       "source": "CoinGecko AI Category + X-Twitter",
       "scanned_at": "2026-02-14 19:00:49",
       "updated_at": "2026-02-18 07:08:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 65,
@@ -4180,7 +5585,10 @@
       "source": "coingecko-ai-category",
       "scanned_at": "2026-02-15 01:02:29",
       "updated_at": "2026-02-15 01:02:29",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 83,
@@ -4199,7 +5607,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-19 04:57:15",
       "updated_at": "2026-02-19 04:57:15",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 86,
@@ -4218,7 +5629,10 @@
       "source": "analyst + coingecko-trending",
       "scanned_at": "2026-02-20 03:39:41",
       "updated_at": "2026-02-20 06:09:02",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 95,
@@ -4237,7 +5651,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-21 07:01:43",
       "updated_at": "2026-02-21 07:01:43",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 97,
@@ -4256,7 +5673,10 @@
       "source": "CoinGecko AI Cat / HAWK Scanner",
       "scanned_at": "2026-02-22 01:04:40",
       "updated_at": "2026-02-22 01:04:40",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 105,
@@ -4275,7 +5695,10 @@
       "source": "analyst + coingecko-trending",
       "scanned_at": "2026-02-22 22:39:16",
       "updated_at": "2026-02-22 22:39:16",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 108,
@@ -4294,7 +5717,10 @@
       "source": "analyst + bitpush",
       "scanned_at": "2026-02-25 05:39:10",
       "updated_at": "2026-02-25 05:39:10",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 130,
@@ -4313,7 +5739,10 @@
       "source": "analyst + kucoin-world-premiere-2026-03-04 + telegram",
       "scanned_at": "2026-03-04 12:41:03",
       "updated_at": "2026-03-04 13:10:25",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 275,
@@ -4332,7 +5761,10 @@
       "source": "analyst-mar6",
       "scanned_at": "2026-03-06 08:13:21",
       "updated_at": "2026-03-06 08:13:21",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 279,
@@ -4351,7 +5783,10 @@
       "source": "analyst-mar6-twitter",
       "scanned_at": "2026-03-06 08:43:37",
       "updated_at": "2026-03-06 08:43:37",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 8,
@@ -4370,7 +5805,10 @@
       "source": "dexscreener",
       "scanned_at": "2026-02-12 19:41:19",
       "updated_at": "2026-02-12 19:41:19",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 11,
@@ -4389,7 +5827,10 @@
       "source": "hawk-scan",
       "scanned_at": "2026-02-12 20:45:34",
       "updated_at": "2026-02-12 20:45:34",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 48,
@@ -4408,7 +5849,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-13 07:01:41",
       "updated_at": "2026-02-13 07:01:41",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 50,
@@ -4427,7 +5871,10 @@
       "source": "coingecko-ai",
       "scanned_at": "2026-02-13 13:01:41",
       "updated_at": "2026-02-13 13:01:41",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 55,
@@ -4446,7 +5893,10 @@
       "source": "coingecko-ai-category",
       "scanned_at": "2026-02-13 19:00:58",
       "updated_at": "2026-02-13 19:00:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 61,
@@ -4465,7 +5915,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-14 01:03:02",
       "updated_at": "2026-02-14 01:03:02",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 68,
@@ -4484,7 +5937,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-15 13:02:04",
       "updated_at": "2026-02-15 13:02:04",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 79,
@@ -4503,7 +5959,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-18 01:02:54",
       "updated_at": "2026-02-18 07:08:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 106,
@@ -4522,7 +5981,10 @@
       "source": "analyst + pumpfun",
       "scanned_at": "2026-02-22 22:39:16",
       "updated_at": "2026-02-22 22:39:16",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 225,
@@ -4541,7 +6003,10 @@
       "source": "analyst-mar5-airdrop",
       "scanned_at": "2026-03-05 22:43:30",
       "updated_at": "2026-03-05 22:43:30",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 251,
@@ -4560,7 +6025,10 @@
       "source": "analyst-mar5-coingecko-trending",
       "scanned_at": "2026-03-06 02:12:47",
       "updated_at": "2026-03-06 02:12:47",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 316,
@@ -4579,7 +6047,10 @@
       "source": "analyst-mar6-ai-scanner",
       "scanned_at": "2026-03-06 15:43:05",
       "updated_at": "2026-03-06 15:43:05",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 317,
@@ -4598,7 +6069,10 @@
       "source": "analyst-mar6-ai-scanner",
       "scanned_at": "2026-03-06 15:43:05",
       "updated_at": "2026-03-06 15:43:05",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 98,
@@ -4617,7 +6091,10 @@
       "source": "CoinGecko AI Cat / HAWK Scanner",
       "scanned_at": "2026-02-22 01:04:40",
       "updated_at": "2026-02-22 01:04:40",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 100,
@@ -4636,7 +6113,10 @@
       "source": "analyst + coingecko-trending",
       "scanned_at": "2026-02-22 07:39:21",
       "updated_at": "2026-02-22 07:39:21",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 114,
@@ -4655,7 +6135,10 @@
       "source": "analyst + coingecko-trending",
       "scanned_at": "2026-02-28 00:39:09",
       "updated_at": "2026-02-28 00:39:09",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 116,
@@ -4674,7 +6157,10 @@
       "source": "analyst + coingecko-trending",
       "scanned_at": "2026-02-28 02:39:26",
       "updated_at": "2026-02-28 02:39:26",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 120,
@@ -4693,7 +6179,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-02 06:09:15",
       "updated_at": "2026-03-03 02:09:19",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 276,
@@ -4712,7 +6201,10 @@
       "source": "analyst-mar6-coingecko-trending",
       "scanned_at": "2026-03-06 08:13:21",
       "updated_at": "2026-03-06 08:13:21",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 7,
@@ -4731,7 +6223,10 @@
       "source": "dexscreener",
       "scanned_at": "2026-02-12 19:41:19",
       "updated_at": "2026-02-12 19:41:19",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 51,
@@ -4750,7 +6245,10 @@
       "source": "coingecko-ai",
       "scanned_at": "2026-02-13 13:01:41",
       "updated_at": "2026-02-13 13:01:41",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 56,
@@ -4769,7 +6267,10 @@
       "source": "analyst",
       "scanned_at": "2026-02-13 23:08:19",
       "updated_at": "2026-02-13 23:08:19",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 66,
@@ -4788,7 +6289,10 @@
       "source": "coingecko-ai-category",
       "scanned_at": "2026-02-15 01:02:29",
       "updated_at": "2026-02-15 01:02:29",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 69,
@@ -4807,7 +6311,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-15 13:02:04",
       "updated_at": "2026-02-15 13:02:04",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 80,
@@ -4826,7 +6333,10 @@
       "source": "CoinGecko Trending + AI Category",
       "scanned_at": "2026-02-18 07:01:28",
       "updated_at": "2026-02-18 07:01:28",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 82,
@@ -4845,7 +6355,10 @@
       "source": "analyst",
       "scanned_at": "2026-02-18 23:08:51",
       "updated_at": "2026-02-18 23:08:51",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 112,
@@ -4864,7 +6377,10 @@
       "source": "coingecko-ai-category",
       "scanned_at": "2026-02-26 07:01:24",
       "updated_at": "2026-02-26 07:01:24",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 115,
@@ -4883,7 +6399,10 @@
       "source": "analyst + coingecko-trending",
       "scanned_at": "2026-02-28 00:39:09",
       "updated_at": "2026-02-28 00:39:09",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 131,
@@ -4902,7 +6421,10 @@
       "source": "coingecko-ai-category",
       "scanned_at": "2026-03-04 13:02:18",
       "updated_at": "2026-03-04 13:02:18",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 135,
@@ -4921,7 +6443,10 @@
       "source": "analyst + binance-alpha-mar4",
       "scanned_at": "2026-03-04 16:11:29",
       "updated_at": "2026-03-04 16:11:29",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 190,
@@ -4940,7 +6465,10 @@
       "source": "analyst-mar5-tge",
       "scanned_at": "2026-03-05 13:43:22",
       "updated_at": "2026-03-05 13:43:22",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 223,
@@ -4959,7 +6487,10 @@
       "source": "analyst-mar5-coinbase-acquisition",
       "scanned_at": "2026-03-05 22:43:30",
       "updated_at": "2026-03-05 22:43:30",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 226,
@@ -4978,7 +6509,10 @@
       "source": "analyst-mar5-binance-alpha",
       "scanned_at": "2026-03-05 22:43:30",
       "updated_at": "2026-03-05 22:43:30",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 242,
@@ -4997,7 +6531,10 @@
       "source": "Coinspeaker Micro-Cap",
       "scanned_at": "2026-03-06 01:05:26",
       "updated_at": "2026-03-06 01:05:26",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 250,
@@ -5016,7 +6553,10 @@
       "source": "analyst-mar5-network-upgrade",
       "scanned_at": "2026-03-06 02:12:47",
       "updated_at": "2026-03-06 02:12:47",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 259,
@@ -5035,7 +6575,10 @@
       "source": "analyst-mar5-scanner",
       "scanned_at": "2026-03-06 04:12:45",
       "updated_at": "2026-03-06 04:12:45",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 264,
@@ -5054,7 +6597,10 @@
       "source": "analyst-mar6-whale",
       "scanned_at": "2026-03-06 06:42:18",
       "updated_at": "2026-03-06 06:42:18",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 272,
@@ -5073,7 +6619,10 @@
       "source": "analyst",
       "scanned_at": "2026-03-06 07:13:06",
       "updated_at": "2026-03-06 07:13:06",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 310,
@@ -5092,7 +6641,10 @@
       "source": "analyst-mar6-cryptopanic",
       "scanned_at": "2026-03-06 14:42:56",
       "updated_at": "2026-03-06 14:42:56",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 311,
@@ -5111,7 +6663,76 @@
       "source": "analyst-mar6-coingecko",
       "scanned_at": "2026-03-06 14:42:56",
       "updated_at": "2026-03-06 14:42:56",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 324,
+      "symbol": "IDOS",
+      "name": "idOS Network",
+      "address": "unknown",
+      "chain": "ethereum",
+      "narrative": "DePIN Identity Layer",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 45,
+      "result": "watchlist",
+      "reason": "AI-Analyse: KuCoin World Premiere. DePIN/Identity narrative. Multi-announcement coverage.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-07 06:12:23",
+      "updated_at": "2026-03-07 06:12:23",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 325,
+      "symbol": "NEXI",
+      "name": "Nexira",
+      "address": "unknown",
+      "chain": "ethereum",
+      "narrative": "Gaming Ecosystem",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 45,
+      "result": "watchlist",
+      "reason": "AI-Analyse: KuCoin World Premiere. Von Heroes of Mavia (MAVIA) creators. Unified gaming ecosystem.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-07 06:12:23",
+      "updated_at": "2026-03-07 06:12:23",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 335,
+      "symbol": "AMIKO",
+      "name": "Amiko",
+      "address": "",
+      "chain": "Solana",
+      "narrative": "AI Agent",
+      "market_cap": 24567211.0,
+      "liquidity": 331244.0,
+      "volume_24h": 331244.0,
+      "score": 45,
+      "result": "rejected",
+      "reason": "Sehr niedrige Liquidit\u00e4t <$500K",
+      "lesson_ref": null,
+      "source": "CoinGecko AI Agents",
+      "scanned_at": "2026-03-07 07:02:32",
+      "updated_at": "2026-03-07 07:02:32",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 63,
@@ -5130,7 +6751,10 @@
       "source": "coingecko-ai-category",
       "scanned_at": "2026-02-14 13:02:07",
       "updated_at": "2026-02-14 13:02:07",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 244,
@@ -5149,7 +6773,10 @@
       "source": "CoinGecko/CMC",
       "scanned_at": "2026-03-06 01:05:26",
       "updated_at": "2026-03-06 01:05:26",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 52,
@@ -5168,7 +6795,10 @@
       "source": "coingecko-ai",
       "scanned_at": "2026-02-13 13:01:41",
       "updated_at": "2026-02-13 13:01:41",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 159,
@@ -5187,7 +6817,32 @@
       "source": "analyst + coingecko-trending",
       "scanned_at": "2026-03-05 00:42:58",
       "updated_at": "2026-03-05 00:42:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 323,
+      "symbol": "BSB",
+      "name": "Block Street Token",
+      "address": "unknown",
+      "chain": "unknown",
+      "narrative": "Social Casino Gaming",
+      "market_cap": null,
+      "liquidity": null,
+      "volume_24h": null,
+      "score": 40,
+      "result": "watchlist",
+      "reason": "AI-Analyse: Multi-Source (Binance Wallet + Bitget PoolX). Gaming/Casino Niche. Moderate Social Velocity.",
+      "lesson_ref": null,
+      "source": "analyst",
+      "scanned_at": "2026-03-07 06:12:23",
+      "updated_at": "2026-03-07 06:12:23",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 111,
@@ -5206,7 +6861,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-25 19:01:08",
       "updated_at": "2026-02-25 19:01:08",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 5,
@@ -5225,7 +6883,10 @@
       "source": "dexscreener",
       "scanned_at": "2026-02-12 19:41:19",
       "updated_at": "2026-02-12 19:41:19",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 70,
@@ -5244,7 +6905,10 @@
       "source": "CoinGecko AI Category + DexScreener",
       "scanned_at": "2026-02-15 19:01:04",
       "updated_at": "2026-02-19 22:08:53",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 84,
@@ -5263,7 +6927,10 @@
       "source": "CoinGecko AI Trending Volume",
       "scanned_at": "2026-02-19 04:57:15",
       "updated_at": "2026-02-19 04:57:15",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 87,
@@ -5282,7 +6949,10 @@
       "source": "analyst + telegram + bybit + bitpush + BeInCrypto + ForesightNews",
       "scanned_at": "2026-02-20 09:39:21",
       "updated_at": "2026-02-20 11:38:58",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 243,
@@ -5301,7 +6971,32 @@
       "source": "Solflare/CoinBrain",
       "scanned_at": "2026-03-06 01:05:26",
       "updated_at": "2026-03-06 01:05:26",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
+    },
+    {
+      "id": 336,
+      "symbol": "SINGULARRY",
+      "name": "Singularry",
+      "address": "",
+      "chain": "Multiple",
+      "narrative": "AI Agent",
+      "market_cap": 35989402.0,
+      "liquidity": 51342.0,
+      "volume_24h": 51342.0,
+      "score": 35,
+      "result": "rejected",
+      "reason": "Extrem niedrige Liquidit\u00e4t <$100K",
+      "lesson_ref": null,
+      "source": "CoinGecko AI Agents",
+      "scanned_at": "2026-03-07 07:02:32",
+      "updated_at": "2026-03-07 07:02:32",
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 6,
@@ -5320,7 +7015,10 @@
       "source": "dexscreener",
       "scanned_at": "2026-02-12 19:41:19",
       "updated_at": "2026-02-12 19:41:19",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 12,
@@ -5339,7 +7037,10 @@
       "source": "hawk-scan",
       "scanned_at": "2026-02-12 20:45:34",
       "updated_at": "2026-02-12 20:45:34",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 57,
@@ -5358,7 +7059,10 @@
       "source": "CoinGecko AI Category",
       "scanned_at": "2026-02-14 01:03:02",
       "updated_at": "2026-02-14 01:03:02",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     },
     {
       "id": 1,
@@ -5377,7 +7081,10 @@
       "source": "dexscreener",
       "scanned_at": "2026-02-12 19:38:56",
       "updated_at": "2026-02-12 19:38:56",
-      "source_channels": null
+      "source_channels": null,
+      "alert_sent_at": null,
+      "alert_price": null,
+      "last_alert_score": null
     }
   ]
 }
