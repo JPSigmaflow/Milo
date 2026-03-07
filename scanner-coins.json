@@ -2646,6 +2646,24 @@
     "updated_at": "2026-03-05 02:42:22"
   },
   {
+    "symbol": "ADA",
+    "name": "Cardano",
+    "address": "N/A",
+    "chain": "Cardano",
+    "narrative": "L1 Smart Contracts",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "deep-dive",
+    "reason": "AI-Analyse: Multi-Source (2x CryptoPanic), 3rd bullish community sentiment, 8th dev activity, MEXC verfügbar, starke Community + Dev",
+    "lesson_ref": null,
+    "source": "analyst-mar7-scan",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 19:42:06",
+    "updated_at": "2026-03-07 19:42:06"
+  },
+  {
     "symbol": "HBAR",
     "name": "Hedera",
     "address": "",
@@ -3978,6 +3996,24 @@
     "updated_at": "2026-02-13 01:02:47"
   },
   {
+    "symbol": "HBAR",
+    "name": "Hedera Hashgraph",
+    "address": "N/A",
+    "chain": "Hedera",
+    "narrative": "Enterprise L1 + RWA",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 60,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Analyst als \"Generational RWA Bet\" bezeichnet, Enterprise Fokus, MEXC verfügbar, RWA Narrativ stark",
+    "lesson_ref": null,
+    "source": "analyst-mar7-scan",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 19:42:06",
+    "updated_at": "2026-03-07 19:42:06"
+  },
+  {
     "symbol": "ROBO",
     "name": "Fabric Protocol",
     "address": "TBD",
@@ -4282,6 +4318,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-17 01:03:42",
     "updated_at": "2026-02-17 01:03:42"
+  },
+  {
+    "symbol": "XRP",
+    "name": "Ripple",
+    "address": "N/A",
+    "chain": "XRP Ledger",
+    "narrative": "L1 Payments",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 55,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Multi-Source (3x CryptoPanic), Mixed Sentiment (bullish  vs bearish ), MEXC verfügbar, hohe MC aber volatil",
+    "lesson_ref": null,
+    "source": "analyst-mar7-scan",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 19:42:06",
+    "updated_at": "2026-03-07 19:42:06"
   },
   {
     "symbol": "IDOS",
