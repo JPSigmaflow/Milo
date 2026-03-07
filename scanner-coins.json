@@ -2664,6 +2664,24 @@
     "updated_at": "2026-03-06 20:13:00"
   },
   {
+    "symbol": "JUP",
+    "name": "Jupiter",
+    "address": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+    "chain": "Solana",
+    "narrative": "DeFi DEX Aggregator",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 65,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Etablierter Solana DEX Aggregator mit starkem Track-Record. Single Alert aber bekanntes Top-Projekt. Risiko niedrig (3/10). MEXC wahrscheinlich verfügbar.",
+    "lesson_ref": null,
+    "source": "analyst",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 03:42:00",
+    "updated_at": "2026-03-07 03:42:00"
+  },
+  {
     "symbol": "ZRO",
     "name": "LayerZero",
     "address": "",
@@ -5092,6 +5110,24 @@
     "source_channels": null,
     "scanned_at": "2026-02-12 19:41:19",
     "updated_at": "2026-02-12 19:41:19"
+  },
+  {
+    "symbol": "QUAI",
+    "name": "Quai Network",
+    "address": "",
+    "chain": "quai",
+    "narrative": "Layer-1 PoW",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 48,
+    "result": "watchlist",
+    "reason": "CoinGecko Trending, aber Single-Source. L1 Narrativ interessant, aber zu früh. Keine MEXC-Listung.",
+    "lesson_ref": null,
+    "source": "analyst-mar7-scanner",
+    "source_channels": null,
+    "scanned_at": "2026-03-07 02:41:55",
+    "updated_at": "2026-03-07 02:41:55"
   },
   {
     "symbol": "PUMP",
