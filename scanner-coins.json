@@ -1674,6 +1674,24 @@
     "updated_at": "2026-03-06 03:42:17"
   },
   {
+    "symbol": "PUMP",
+    "name": "PumpFun Token",
+    "address": "pump.fun",
+    "chain": "SOL",
+    "narrative": "PumpFun Ecosystem",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 70,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Massive Whale-Akkumulation (16.4M$ über 2 Wochen, 8.71B PUMP). Multi-Source Telegram Erwähnungen. MEXC verfügbar. 24h Vol 729K$. Risiko: Medium (PumpFun-gebunden, aber starke Whale-Signale).",
+    "lesson_ref": null,
+    "source": "analyst-mar8-whale",
+    "source_channels": null,
+    "scanned_at": "2026-03-08 05:42:33",
+    "updated_at": "2026-03-08 05:42:33"
+  },
+  {
     "symbol": "BLEND",
     "name": "Fluent",
     "address": "unknown",
