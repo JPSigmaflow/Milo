@@ -1242,7 +1242,7 @@ async function loadStocks() {
 async function loadPumpfun() {
   let pf;
   try {
-    const r = await fetch('./pumpfun-data.json?t=' + Date.now());
+    const r = await fetch('https://raw.githubusercontent.com/JPSigmaflow/Milo/main/pumpfun-data.json?t=' + Date.now());
     pf = await r.json();
   } catch(e) {
     $('#pumpfunList').innerHTML = '<div class="dim" style="padding:20px">✕ pumpfun-data.json nicht gefunden</div>';
@@ -1528,3 +1528,5 @@ init();
 </html>
 <!-- Force rebuild Fri Mar  6 23:56:13 EST 2026 -->
 <!-- Rebuild Fri Mar  6 23:56:39 EST 2026 -->
+<!-- cache bust 1772933507 -->
+<!-- Force rebuild 1772934150 -->
