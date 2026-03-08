@@ -19,14 +19,3 @@
 
 ## XINGXING
 - **Status:** MEXC Listing Watch, DEX only
-
-## FAI (Freysa AI)
-- **Status:** Wait for Dip
-- **Current:** $0.00799 (MC $65M)
-- **Entry Target:** $0.005-0.006 (-30% von jetzt)
-- **Condition:** Volume >$40M bleibt
-- **Reasoning:** +467% in 7d = überhitzt, braucht Konsolidierung
-- **Narrativ:** AI Agents + Base Chain (Brian Armstrong backing)
-- **Position:** Small-Cap (max 2-3% Portfolio)
-- **Stop-Loss:** -20% vom Entry
-- **Updated:** 07.03.2026 06:59 (Chris: "warten")
