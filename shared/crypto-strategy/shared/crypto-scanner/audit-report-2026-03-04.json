@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-03-05T02:50:53.810Z",
+  "totalInConfig": 1139,
+  "sampleSize": 50,
+  "alive": 32,
+  "dead": 7,
+  "smallFollowers": 11,
+  "deadAccounts": [
+    "BlastDotIO",
+    "CryptoDonAlt_",
+    "Lido_fi",
+    "NftsAreLife",
+    "OlimpioDeFi",
+    "RealNatashaChe",
+    "SEI_Protocol"
+  ],
+  "smallFollowerAccounts": [
+    {
+      "status": "alive",
+      "username": "AlphaRunCn",
+      "followers": 263,
+      "following": 185,
+      "tweets": 1917,
+      "verified": false,
+      "created": "Wed Jun 29 15:32:03 +0000 2022"
+    },
+    {
+      "status": "alive",
+      "username": "AVAXofficial",
+      "followers": 0,
+      "following": 0,
+      "tweets": 0,
+      "verified": false,
+      "created": "Sat Jun 20 18:25:45 +0000 2020"
+    },
+    {
+      "status": "alive",
+      "username": "BenGCrypto",
+      "followers": 1,
+      "following": 15,
+      "tweets": 0,
+      "verified": false,
+      "created": "Thu Feb 08 21:32:00 +0000 2018"
+    },
+    {
+      "status": "alive",
+      "username": "bitcoinlfg",
+      "followers": 442,
+      "following": 0,
+      "tweets": 21,
+      "verified": false,
+      "created": "Fri Feb 04 07:58:10 +0000 2011"
+    },
+    {
+      "status": "alive",
+      "username": "CoinShares",
+      "followers": 112,
+      "following": 0,
+      "tweets": 0,
+      "verified": false,
+      "created": "Tue Sep 08 15:12:16 +0000 2020"
+    },
+    {
+      "status": "alive",
+      "username": "CryptoManDan",
+      "followers": 0,
+      "following": 8,
+      "tweets": 1,
+      "verified": false,
+      "created": "Fri Mar 05 18:22:08 +0000 2021"
+    },
+    {
+      "status": "alive",
+      "username": "Foundationapp",
+      "followers": 103,
+      "following": 45,
+      "tweets": 6,
+      "verified": false,
+      "created": "Tue Oct 21 04:37:39 +0000 2008"
+    },
+    {
+      "status": "alive",
+      "username": "jump_crypto",
+      "followers": 1072,
+      "following": 312,
+      "tweets": 667,
+      "verified": false,
+      "created": "Thu Apr 11 12:13:33 +0000 2019"
+    },
+    {
+      "status": "alive",
+      "username": "masa_finance",
+      "followers": 23,
+      "following": 82,
+      "tweets": 66,
+      "verified": false,
+      "created": "Tue Aug 31 01:00:20 +0000 2021"
+    },
+    {
+      "status": "alive",
+      "username": "SMCRYPTO",
+      "followers": 6,
+      "following": 52,
+      "tweets": 0,
+      "verified": false,
+      "created": "Fri Jun 13 04:04:10 +0000 2014"
+    },
+    {
+      "status": "alive",
+      "username": "TitanBuilder",
+      "followers": 1,
+      "following": 0,
+      "tweets": 0,
+      "verified": false,
+      "created": "Thu Nov 18 18:03:24 +0000 2021"
+    }
+  ],
+  "errors": []
+}

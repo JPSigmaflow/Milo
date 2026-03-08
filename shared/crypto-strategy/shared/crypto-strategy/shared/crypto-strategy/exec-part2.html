@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e;--green:#3fb950;--red:#f85149;--blue:#58a6ff;--purple:#a371f7;--gold:#f0c000;--orange:#d29922}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);padding:28px;width:1200px}
+h1{font-size:24px;margin-bottom:3px}
+h2{font-size:16px;color:var(--blue);margin:20px 0 12px}
+.sub{color:var(--muted);font-size:12px;margin-bottom:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px}
+.card h3{font-size:13px;margin-bottom:8px}
+.card ul{list-style:none;font-size:11px;color:var(--muted);line-height:1.8}
+.card ul li{padding-left:14px;position:relative}
+.card ul li::before{content:"→ ";position:absolute;left:0;color:var(--blue)}
+table.plan{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:16px}
+table.plan th{background:var(--card);color:var(--muted);padding:8px 6px;text-align:left;border-bottom:2px solid var(--border);font-size:10px;text-transform:uppercase}
+table.plan td{padding:7px 6px;border-bottom:1px solid var(--border)}
+table.plan tr:hover{background:rgba(88,166,255,0.05)}
+.badge{display:inline-block;padding:2px 6px;border-radius:3px;font-size:10px;font-weight:600}
+.badge.s{background:#1a3a1a;color:var(--green)}
+.badge.m{background:#3a2a1a;color:var(--orange)}
+.badge.l{background:#3a1a1a;color:var(--red)}
+.badge.low{background:#1a3a1a;color:var(--green)}
+.badge.med{background:#3a2a1a;color:var(--orange)}
+.badge.high{background:#3a1a1a;color:var(--red)}
+.score-table{width:100%;border-collapse:collapse;font-size:11px;margin-bottom:12px}
+.score-table th{background:var(--card);color:var(--muted);padding:6px;text-align:left;font-size:10px}
+.score-table td{padding:6px;border-bottom:1px solid var(--border)}
+.kill{background:linear-gradient(135deg,#1a1117 0%,var(--card) 100%);border:2px solid var(--red);border-radius:12px;padding:18px;margin-bottom:16px}
+.kill h3{color:var(--red);font-size:15px;margin-bottom:12px}
+.kill-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kill-item{background:rgba(248,81,73,0.08);border:1px solid rgba(248,81,73,0.2);border-radius:8px;padding:10px;font-size:11px}
+.kill-item .trigger{color:var(--red);font-weight:700;margin-bottom:4px}
+.kill-item .action{color:var(--muted)}
+.review{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:16px}
+.review-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px}
+.review-card h4{font-size:12px;margin-bottom:8px}
+.review-card ul{list-style:none;font-size:11px;color:var(--muted);line-height:1.8}
+.review-card ul li::before{content:"☐ "}
+.section-label{display:inline-block;background:var(--purple);color:#fff;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:600;margin-bottom:10px}
+.footer{text-align:center;color:var(--muted);font-size:10px;margin-top:16px;border-top:1px solid var(--border);padding-top:12px}
+</style>
+</head>
+<body>
+
+<h1>🏗️ Milo Crypto System v2.0 — Execution Plan</h1>
+<p class="sub">Teil 2: Umsetzung, Tracking & Kill-Switch | Stand: 11.02.2026</p>
+
+<!-- FIRST 24H -->
+<h2>3️⃣ First 24 Hours — Top 5</h2>
+<table class="plan">
+<tr><th>#</th><th>Maßnahme</th><th>Warum</th><th>Aufwand</th><th>Risiko</th><th>Owner</th><th>Success-Kriterium</th></tr>
+<tr><td>1</td><td><strong>Stop-Loss für alle 6 Positionen definieren</strong></td><td>Ohne SL = unkontrolliertes Risiko</td><td><span class="badge s">S</span></td><td><span class="badge high">Hoch</span></td><td>Milo</td><td>Alle 6 Positionen haben SL-Level</td></tr>
+<tr><td>2</td><td><strong>Portfolio-Snapshot erstellen</strong></td><td>Baseline für Tracking</td><td><span class="badge s">S</span></td><td><span class="badge low">Low</span></td><td>Milo</td><td>Snapshot-Tabelle im Journal</td></tr>
+<tr><td>3</td><td><strong>Decision Gate Template implementieren</strong></td><td>Kein Trade ohne Gate</td><td><span class="badge m">M</span></td><td><span class="badge low">Low</span></td><td>Milo</td><td>Bot sendet Checkliste vor Trade</td></tr>
+<tr><td>4</td><td><strong>Trade-Journal Template erstellen</strong></td><td>Ohne Journal kein Review</td><td><span class="badge s">S</span></td><td><span class="badge low">Low</span></td><td>Milo</td><td>Template erstellt und geteilt</td></tr>
+<tr><td>5</td><td><strong>Team-Briefing: Regeln durchgehen</strong></td><td>Buy-In nötig</td><td><span class="badge s">S</span></td><td><span class="badge med">Med</span></td><td>Juri/Chris</td><td>Alle 3 haben Regeln bestätigt</td></tr>
+</table>
+
+<!-- FIRST 7 DAYS -->
+<h2>📅 First 7 Days — Top 10</h2>
+<table class="plan">
+<tr><th>#</th><th>Maßnahme</th><th>Warum</th><th>Aufwand</th><th>Owner</th><th>Deadline</th></tr>
+<tr><td>1</td><td><strong>Watchlist-System aufsetzen</strong></td><td>Systematische Pipeline</td><td><span class="badge m">M</span></td><td>Milo</td><td>Tag 2</td></tr>
+<tr><td>2</td><td><strong>Honeypot-Automation (RugCheck API)</strong></td><td>Manuelle Checks fehleranfällig</td><td><span class="badge m">M</span></td><td>Milo</td><td>Tag 3</td></tr>
+<tr><td>3</td><td><strong>Liquidity-Monitor für alle 6 Coins</strong></td><td>Frühwarnung bei LP-Abzug</td><td><span class="badge m">M</span></td><td>Milo</td><td>Tag 3</td></tr>
+<tr><td>4</td><td><strong>Paper-Trade pro Playbook</strong></td><td>Playbooks testen ohne Risiko</td><td><span class="badge s">S</span></td><td>Milo</td><td>Tag 4</td></tr>
+<tr><td>5</td><td><strong>Sektor-Mapping aller Positionen</strong></td><td>Klumpenrisiko erkennen</td><td><span class="badge s">S</span></td><td>Milo</td><td>Tag 2</td></tr>
+<tr><td>6</td><td><strong>Preis-Alerts bei SL/TP-Levels</strong></td><td>Kein manuelles Überwachen</td><td><span class="badge m">M</span></td><td>Milo</td><td>Tag 4</td></tr>
+<tr><td>7</td><td><strong>Discovery-Routine starten (10 min/Tag)</strong></td><td>Pipeline füllen</td><td><span class="badge s">S</span></td><td>Alle</td><td>Tag 3</td></tr>
+<tr><td>8</td><td><strong>Kill-Switch Simulation</strong></td><td>Im Ernstfall muss es sitzen</td><td><span class="badge s">S</span></td><td>Milo</td><td>Tag 5</td></tr>
+<tr><td>9</td><td><strong>Scorecard v1 ausfüllen</strong></td><td>Baseline-Messung</td><td><span class="badge s">S</span></td><td>Milo</td><td>Tag 7</td></tr>
+<tr><td>10</td><td><strong>Weekly Review #1</strong></td><td>Review-Rhythmus etablieren</td><td><span class="badge m">M</span></td><td>Alle</td><td>Tag 7</td></tr>
+</table>
+
+<!-- FIRST 30 DAYS -->
+<h2>📆 First 30 Days — Top 10</h2>
+<table class="plan">
+<tr><th>#</th><th>Maßnahme</th><th>Warum</th><th>Aufwand</th><th>Owner</th><th>Deadline</th></tr>
+<tr><td>1</td><td><strong>Erster System-Trade (Playbook + Gate)</strong></td><td>Proof of Concept</td><td><span class="badge m">M</span></td><td>Alle</td><td>Tag 10</td></tr>
+<tr><td>2</td><td><strong>Portfolio-Rebalancing vs. neue Regeln</strong></td><td>Legacy-Positionen prüfen</td><td><span class="badge m">M</span></td><td>Juri/Chris</td><td>Tag 14</td></tr>
+<tr><td>3</td><td><strong>Bot-Automation v2 (Auto-Reports)</strong></td><td>Weniger manuelle Arbeit</td><td><span class="badge l">L</span></td><td>Milo</td><td>Tag 21</td></tr>
+<tr><td>4</td><td><strong>Korrelations-Analyse Portfolio</strong></td><td>Diversifikation validieren</td><td><span class="badge m">M</span></td><td>Milo</td><td>Tag 14</td></tr>
+<tr><td>5</td><td><strong>Drawdown-Stress-Test (BTC -30%)</strong></td><td>Worst-Case vorbereiten</td><td><span class="badge m">M</span></td><td>Milo</td><td>Tag 21</td></tr>
+<tr><td>6</td><td><strong>Datenqualität-Audit</strong></td><td>Falsche Daten = falsche Trades</td><td><span class="badge m">M</span></td><td>Milo</td><td>Tag 14</td></tr>
+<tr><td>7</td><td><strong>Playbook-Refinement nach 3+ Trades</strong></td><td>Kontinuierliche Verbesserung</td><td><span class="badge m">M</span></td><td>Milo</td><td>Tag 30</td></tr>
+<tr><td>8</td><td><strong>Monthly Performance Review</strong></td><td>Systemische Optimierung</td><td><span class="badge m">M</span></td><td>Alle</td><td>Tag 30</td></tr>
+<tr><td>9</td><td><strong>Team-Retro (Keep/Change)</strong></td><td>Team-Alignment</td><td><span class="badge s">S</span></td><td>Alle</td><td>Tag 30</td></tr>
+<tr><td>10</td><td><strong>v2.1 Roadmap erstellen</strong></td><td>Weiterentwicklung planen</td><td><span class="badge m">M</span></td><td>Milo</td><td>Tag 30</td></tr>
+</table>
+
+<!-- TRACKING -->
+<h2>4️⃣ Tracking-Setup</h2>
+
+<div class="grid3">
+  <div class="card">
+    <h3 style="color:var(--gold)">📊 Wöchentliche Scorecard</h3>
+    <table class="score-table">
+      <tr><th>Metrik</th><th>Ziel</th></tr>
+      <tr><td>Portfolio-Drawdown</td><td>< -20%</td></tr>
+      <tr><td>Winrate</td><td>> 50%</td></tr>
+      <tr><td>Avg R-Multiple</td><td>> 1.5</td></tr>
+      <tr><td>Regel-Verstöße</td><td>0</td></tr>
+      <tr><td>Exposure</td><td>40-80%</td></tr>
+      <tr><td>Trades/Woche</td><td>≤ 3</td></tr>
+      <tr><td>Gate bestanden</td><td>12/12</td></tr>
+      <tr><td>Discovery-Sessions</td><td>≥ 5</td></tr>
+    </table>
+  </div>
+  <div class="card">
+    <h3 style="color:var(--blue)">📝 Trade-Journal (pro Trade)</h3>
+    <ul>
+      <li>Trade-ID (MCS-001, 002...)</li>
+      <li>Datum Open/Close</li>
+      <li>Coin, Exchange, Playbook</li>
+      <li>Entry / SL / TP1 / TP2</li>
+      <li>Positionsgröße ($ + %)</li>
+      <li>R:R geplant vs. realisiert</li>
+      <li>Decision Gate 12/12?</li>
+      <li>Thesis (1-2 Sätze)</li>
+      <li>P&L ($ + %)</li>
+      <li>Regelbruch? Ja/Nein</li>
+      <li>Lernpunkt (1 Satz)</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3 style="color:var(--green)">🔍 Watchlist-Tracker (täglich)</h3>
+    <ul>
+      <li>Kandidat + Sektor</li>
+      <li>Filter-Score (/10)</li>
+      <li>Red Flags (Y/N)</li>
+      <li>Catalyst (falls vorhanden)</li>
+      <li>Trigger-Level (Preis)</li>
+      <li>Status: Watch / Freigeben / Verwerfen</li>
+      <li>Letzter Review (Datum)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- REVIEW CYCLES -->
+<h2>5️⃣ Review-Zyklen</h2>
+<div class="review">
+  <div class="review-card">
+    <h4 style="color:var(--green)">☀️ Daily Check (10 Min)</h4>
+    <ul>
+      <li>Portfolio-Wert + Drawdown</li>
+      <li>SL/TP-Alerts ausgelöst?</li>
+      <li>News-Scan: Katalysatoren/Red Flags</li>
+      <li>Watchlist: 1-2 neue Kandidaten</li>
+    </ul>
+  </div>
+  <div class="review-card">
+    <h4 style="color:var(--blue)">📅 Weekly Review (30 Min, Sonntag)</h4>
+    <ul>
+      <li>Scorecard ausfüllen</li>
+      <li>Alle Positionen bewerten</li>
+      <li>3 Entscheidungen nächste Woche</li>
+      <li>Pipeline-Status prüfen</li>
+      <li>Fehler-Analyse</li>
+    </ul>
+  </div>
+  <div class="review-card">
+    <h4 style="color:var(--purple)">📆 Monthly Review (60 Min)</h4>
+    <ul>
+      <li>Performance-Report (P&L, Winrate)</li>
+      <li>Playbook-Analyse (welches performt?)</li>
+      <li>Risk Engine Review</li>
+      <li>Prozess-Optimierung</li>
+      <li>Team-Retro</li>
+    </ul>
+  </div>
+</div>
+
+<!-- KILL-SWITCH -->
+<h2>6️⃣ Kill-Switch-Regeln</h2>
+<div class="kill">
+  <h3>⚠️ HART & NICHT VERHANDELBAR</h3>
+  <div class="kill-grid">
+    <div class="kill-item"><div class="trigger">K1: Portfolio -20%</div><div class="action">→ ALLE Trades stoppen. Keine neuen Positionen. Nur SLs laufen lassen. Restart nur nach Team-Review.</div></div>
+    <div class="kill-item"><div class="trigger">K2: 3 Verlust-Trades in Folge</div><div class="action">→ 7 Tage Pause. Keine neuen Trades. Review aller 3 Trades.</div></div>
+    <div class="kill-item"><div class="trigger">K3: Position -15% unter Entry</div><div class="action">→ Sofort schließen. SL hätte bei -10% greifen müssen → Fehleranalyse.</div></div>
+    <div class="kill-item"><div class="trigger">K4: Liquidity fällt unter $25k</div><div class="action">→ Position innerhalb 24h schließen.</div></div>
+    <div class="kill-item"><div class="trigger">K5: Trade ohne Decision Gate</div><div class="action">→ Sofort schließen, unabhängig von P&L. Warnung an Team.</div></div>
+    <div class="kill-item"><div class="trigger">K6: Honeypot-Verdacht</div><div class="action">→ Sofort maximal möglichen Betrag verkaufen.</div></div>
+    <div class="kill-item"><div class="trigger">K7: Mehr als 3 Trades/Woche</div><div class="action">→ Woche ist gesperrt. Kein weiterer Trade bis Montag.</div></div>
+  </div>
+</div>
+
+<div class="footer">🦁 Milo Crypto System v2.0 — Teil 2: Umsetzung, Tracking & Kill-Switch | 11.02.2026 | Nächster Review: KW 07/2026</div>
+</body>
+</html>

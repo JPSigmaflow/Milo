@@ -1,0 +1,11 @@
+{
+  "coin": "ALLO",
+  "amount_usdt": 400,
+  "type": "buy",
+  "chris_approved": true,
+  "chris_timestamp": "2026-02-22T20:50:00-05:00",
+  "chris_msg_id": "chris_approve_allo_cash",
+  "juri_approved": true,
+  "juri_timestamp": "2026-02-22T20:58:00-05:00",
+  "juri_msg_id": "8021363491095760451"
+}

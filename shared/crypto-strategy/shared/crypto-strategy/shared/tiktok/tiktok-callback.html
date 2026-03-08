@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html><head><title>PomesTeam - TikTok Auth</title></head>
+<body>
+<h1>Authorization successful!</h1>
+<p>You can close this window.</p>
+<script>
+const params = new URLSearchParams(window.location.search);
+document.body.innerHTML += '<pre>' + JSON.stringify(Object.fromEntries(params), null, 2) + '</pre>';
+</script>
+</body></html>

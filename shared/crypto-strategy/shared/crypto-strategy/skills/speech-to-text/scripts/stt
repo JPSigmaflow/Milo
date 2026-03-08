@@ -1,0 +1,28 @@
+#!/bin/bash
+# Speech-to-Text using local whisper-cpp (FREE, no API key needed)
+
+set -e
+
+WHISPER_CLI="/opt/homebrew/bin/whisper-cli"
+MODEL="$HOME/.local/share/whisper-cpp/ggml-base.bin"
+LANG="${2:-de}"  # Default to German
+
+if [ -z "$1" ]; then
+    echo "Usage: stt <audio_file> [language]" >&2
+    echo "Example: stt voice.ogg de" >&2
+    exit 1
+fi
+
+INPUT="$1"
+TMPWAV="/tmp/stt_$$_$(date +%s).wav"
+
+# Convert to WAV (16kHz mono) for whisper
+ffmpeg -i "$INPUT" -ar 16000 -ac 1 "$TMPWAV" -y 2>/dev/null
+
+# Transcribe
+RESULT=$("$WHISPER_CLI" -m "$MODEL" -l "$LANG" -np "$TMPWAV" 2>/dev/null | sed 's/\[.*\] *//')
+
+# Cleanup
+rm -f "$TMPWAV"
+
+echo "$RESULT"

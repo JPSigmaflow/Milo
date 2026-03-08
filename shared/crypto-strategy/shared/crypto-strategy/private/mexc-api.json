@@ -1,0 +1,11 @@
+{
+  "exchange": "MEXC",
+  "access_key": "mx0vglPqN8IwDPj4N0",
+  "secret_key": "817579cb761b4793a2fd4bd6cdc7a7cf",
+  "permissions": ["read", "spot_trade"],
+  "no_withdraw": true,
+  "created": "2026-02-19",
+  "expires": "2026-05-19",
+  "note": "Final secure API credentials post-incident. 7-layer security active. Dual-approval required: Chris + Juri.",
+  "label": "Milo Bot v2 - Production"
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BILANZ TEST - FUNKTIONIERT GARANTIERT</title>
+<style>
+body { background: #0a0a0f; color: white; font-family: Arial; padding: 20px; }
+.box { 
+  background: #14141f; 
+  border: 1px solid #2a2a3a; 
+  border-radius: 12px; 
+  margin: 20px 0;
+  cursor: pointer;
+  user-select: none;
+}
+.header { 
+  padding: 20px; 
+  font-size: 18px; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+.header:hover { background: rgba(255,255,255,0.05); }
+.content { 
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height 0.3s ease;
+  background: #1a1a1a;
+}
+.box.open .content { max-height: 300px; }
+.box.open .arrow { transform: rotate(180deg); }
+.arrow { transition: transform 0.25s; color: #888; }
+.inner { padding: 20px; }
+.green { color: #00e676; }
+.orange { color: #f7931a; }
+</style>
+</head>
+<body>
+
+<h1>🧪 DROPDOWN TEST</h1>
+
+<div class="box" onclick="this.classList.toggle('open')">
+  <div class="header">
+    💰 Bilanz
+    <span class="arrow">▼</span>
+  </div>
+  <div class="content">
+    <div class="inner">
+      <h4 class="orange">📊 Business Bilanz</h4>
+      <p class="green">Status: Ausgeglichen ✅</p>
+      <p>Chris: €7.500,00</p>
+      <p>Juri: €5.141,00</p>
+      <p><strong>Gesamt: €12.641,00</strong></p>
+    </div>
+  </div>
+</div>
+
+<div class="box" onclick="this.classList.toggle('open')">
+  <div class="header">
+    📖 Lessons Learned  
+    <span class="arrow">▼</span>
+  </div>
+  <div class="content">
+    <div class="inner">
+      <p>✅ Lesson 1: Always test before push</p>
+      <p>✅ Lesson 2: Keep it simple</p>
+      <p>✅ Lesson 3: Minimal code works better</p>
+    </div>
+  </div>
+</div>
+
+<p style="margin-top:40px; color:#888;">
+WENN DIESE BUTTONS FUNKTIONIEREN → Problem ist im main Dashboard<br>
+WENN DIESE BUTTONS NICHT FUNKTIONIEREN → Browser/JavaScript Problem
+</p>
+
+<script>
+console.log('✅ Test page loaded - onclick should work');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,958 @@
+{
+  "generated": "2026-02-14",
+  "tiers": {
+    "tier1": [
+      {
+        "handle": "VitalikButerin",
+        "followers": "5M",
+        "category": "founder/ethereum"
+      },
+      {
+        "handle": "saylor",
+        "followers": "3M",
+        "category": "Bitcoin/macro"
+      },
+      {
+        "handle": "APompliano",
+        "followers": "1.6M",
+        "category": "fund manager/macro"
+      },
+      {
+        "handle": "CathieDWood",
+        "followers": "1.5M",
+        "category": "fund manager/macro"
+      },
+      {
+        "handle": "brian_armstrong",
+        "followers": "1M",
+        "category": "founder/coinbase"
+      },
+      {
+        "handle": "balajis",
+        "followers": "900K",
+        "category": "tech/macro"
+      },
+      {
+        "handle": "cobie",
+        "followers": "700K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "Crypto_Birb",
+        "followers": "700K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "PeterLBrandt",
+        "followers": "700K",
+        "category": "trader/veteran"
+      },
+      {
+        "handle": "aantonop",
+        "followers": "700K",
+        "category": "educator/analyst"
+      },
+      {
+        "handle": "CryptoCapo_",
+        "followers": "600K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "zachxbt",
+        "followers": "600K",
+        "category": "on-chain sleuth"
+      },
+      {
+        "handle": "CryptoKaleo",
+        "followers": "550K",
+        "category": "trader"
+      },
+      {
+        "handle": "scottmelker",
+        "followers": "500K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "MilesDeutscher",
+        "followers": "500K",
+        "category": "trader/alpha"
+      },
+      {
+        "handle": "RaoulGMI",
+        "followers": "500K",
+        "category": "fund manager/macro"
+      },
+      {
+        "handle": "ErikVoorhees",
+        "followers": "500K",
+        "category": "founder/analyst"
+      },
+      {
+        "handle": "LayerZero_Labs",
+        "followers": "500K",
+        "category": "protocol"
+      },
+      {
+        "handle": "DonAlt",
+        "followers": "500K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "a16zcrypto",
+        "followers": "500K",
+        "category": "VC/fund"
+      },
+      {
+        "handle": "100trillionUSD",
+        "followers": "400K",
+        "category": "analyst/S2F model"
+      },
+      {
+        "handle": "whale_alert",
+        "followers": "400K",
+        "category": "whale watcher"
+      },
+      {
+        "handle": "punk6529",
+        "followers": "400K",
+        "category": "NFT/culture"
+      },
+      {
+        "handle": "IvanOnTech",
+        "followers": "400K",
+        "category": "educator/content"
+      },
+      {
+        "handle": "Bankless",
+        "followers": "400K",
+        "category": "media/DeFi"
+      },
+      {
+        "handle": "DocumentingBTC",
+        "followers": "400K",
+        "category": "Bitcoin news"
+      },
+      {
+        "handle": "CredibleCrypto",
+        "followers": "350K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "DaanCrypto",
+        "followers": "350K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "TheMoonCarl",
+        "followers": "300K",
+        "category": "analyst/content"
+      },
+      {
+        "handle": "MoonOverlord",
+        "followers": "300K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "MessariCrypto",
+        "followers": "300K",
+        "category": "research/data"
+      },
+      {
+        "handle": "DefiLlama",
+        "followers": "300K",
+        "category": "DeFi data"
+      },
+      {
+        "handle": "BarrySilbert",
+        "followers": "300K",
+        "category": "fund manager"
+      },
+      {
+        "handle": "laurashin",
+        "followers": "300K",
+        "category": "journalist"
+      },
+      {
+        "handle": "ansem",
+        "followers": "300K",
+        "category": "Solana/alpha"
+      },
+      {
+        "handle": "jimfan",
+        "followers": "300K",
+        "category": "AI researcher"
+      },
+      {
+        "handle": "CelestiaOrg",
+        "followers": "300K",
+        "category": "protocol/modular"
+      },
+      {
+        "handle": "willclemente",
+        "followers": "300K",
+        "category": "on-chain analyst"
+      },
+      {
+        "handle": "EmperorBTC",
+        "followers": "300K",
+        "category": "trader/educator"
+      },
+      {
+        "handle": "davincij15",
+        "followers": "300K",
+        "category": "trader/Bitcoin OG"
+      },
+      {
+        "handle": "GarethSoloway",
+        "followers": "300K",
+        "category": "trader/TA"
+      },
+      {
+        "handle": "ColdBloodShill",
+        "followers": "250K",
+        "category": "trader"
+      },
+      {
+        "handle": "SmartContracter",
+        "followers": "250K",
+        "category": "trader"
+      },
+      {
+        "handle": "Elliotrades",
+        "followers": "250K",
+        "category": "DeFi/analyst"
+      },
+      {
+        "handle": "nansen_ai",
+        "followers": "250K",
+        "category": "on-chain analytics"
+      },
+      {
+        "handle": "glassnode",
+        "followers": "250K",
+        "category": "on-chain analytics"
+      },
+      {
+        "handle": "cburniske",
+        "followers": "250K",
+        "category": "fund manager/analyst"
+      }
+    ],
+    "tier2": [
+      {
+        "handle": "GCRClassic",
+        "followers": "200K",
+        "category": "trader/macro"
+      },
+      {
+        "handle": "AltcoinSherpa",
+        "followers": "200K",
+        "category": "trader/altcoins"
+      },
+      {
+        "handle": "CryptoGodJohn",
+        "followers": "200K",
+        "category": "trader"
+      },
+      {
+        "handle": "CryptoTony__",
+        "followers": "200K",
+        "category": "trader"
+      },
+      {
+        "handle": "LomahCrypto",
+        "followers": "200K",
+        "category": "trader"
+      },
+      {
+        "handle": "cryptomanran",
+        "followers": "200K",
+        "category": "analyst/content"
+      },
+      {
+        "handle": "adam3us",
+        "followers": "200K",
+        "category": "Bitcoin OG"
+      },
+      {
+        "handle": "TaschaLabs",
+        "followers": "200K",
+        "category": "analyst/macro"
+      },
+      {
+        "handle": "CryptoDiffer",
+        "followers": "200K",
+        "category": "data/analytics"
+      },
+      {
+        "handle": "boxmining",
+        "followers": "200K",
+        "category": "analyst/content"
+      },
+      {
+        "handle": "ai16zdao",
+        "followers": "200K",
+        "category": "AI/crypto"
+      },
+      {
+        "handle": "Tetranode",
+        "followers": "200K",
+        "category": "whale/DeFi"
+      },
+      {
+        "handle": "andrecronje",
+        "followers": "200K",
+        "category": "DeFi founder"
+      },
+      {
+        "handle": "AutismCapital",
+        "followers": "200K",
+        "category": "alpha/memes"
+      },
+      {
+        "handle": "nebraskangooner",
+        "followers": "200K",
+        "category": "trader"
+      },
+      {
+        "handle": "CryptoWendyO",
+        "followers": "200K",
+        "category": "trader/content"
+      },
+      {
+        "handle": "MMCrypto",
+        "followers": "200K",
+        "category": "trader/content"
+      },
+      {
+        "handle": "CriptoNoticias",
+        "followers": "200K",
+        "category": "news/media"
+      },
+      {
+        "handle": "blknoiz06",
+        "followers": "150K",
+        "category": "trader/alpha"
+      },
+      {
+        "handle": "KoroushAK",
+        "followers": "150K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "santimentfeed",
+        "followers": "150K",
+        "category": "on-chain analytics"
+      },
+      {
+        "handle": "IntoTheBlock",
+        "followers": "150K",
+        "category": "on-chain analytics"
+      },
+      {
+        "handle": "CamiRusso",
+        "followers": "150K",
+        "category": "journalist"
+      },
+      {
+        "handle": "Zeneca_33",
+        "followers": "150K",
+        "category": "NFT/alpha"
+      },
+      {
+        "handle": "SolanaLegend",
+        "followers": "150K",
+        "category": "Solana/trader"
+      },
+      {
+        "handle": "JasonYanowitz",
+        "followers": "150K",
+        "category": "analyst/Blockworks"
+      },
+      {
+        "handle": "KaitoAI",
+        "followers": "150K",
+        "category": "AI/crypto analytics"
+      },
+      {
+        "handle": "gainzy222",
+        "followers": "100K",
+        "category": "trader/alpha"
+      },
+      {
+        "handle": "Trader_XO",
+        "followers": "100K",
+        "category": "trader"
+      },
+      {
+        "handle": "GiganticRebirth",
+        "followers": "100K",
+        "category": "trader"
+      },
+      {
+        "handle": "CryptoCapital_V",
+        "followers": "100K",
+        "category": "trader"
+      },
+      {
+        "handle": "Rewkang",
+        "followers": "100K",
+        "category": "DeFi/fund manager"
+      },
+      {
+        "handle": "SOLBigBrain",
+        "followers": "100K",
+        "category": "Solana/alpha"
+      },
+      {
+        "handle": "CryptoRank_io",
+        "followers": "100K",
+        "category": "data/analytics"
+      },
+      {
+        "handle": "RunnerXBT",
+        "followers": "100K",
+        "category": "trader"
+      },
+      {
+        "handle": "shawmakesmagic",
+        "followers": "100K",
+        "category": "AI/crypto dev"
+      },
+      {
+        "handle": "0xSisyphus",
+        "followers": "100K",
+        "category": "DeFi/alpha"
+      },
+      {
+        "handle": "DeFi_Dad",
+        "followers": "100K",
+        "category": "DeFi educator"
+      },
+      {
+        "handle": "CroissantEth",
+        "followers": "100K",
+        "category": "DeFi/alpha"
+      },
+      {
+        "handle": "0xHamz",
+        "followers": "100K",
+        "category": "DeFi/researcher"
+      },
+      {
+        "handle": "mrjasonchoi",
+        "followers": "100K",
+        "category": "fund manager/analyst"
+      },
+      {
+        "handle": "hasufl",
+        "followers": "100K",
+        "category": "researcher/analyst"
+      },
+      {
+        "handle": "0xngmi",
+        "followers": "100K",
+        "category": "DeFi dev/DefiLlama"
+      },
+      {
+        "handle": "DeFianceCapital",
+        "followers": "100K",
+        "category": "fund manager"
+      },
+      {
+        "handle": "sassal0x",
+        "followers": "100K",
+        "category": "Ethereum/DeFi"
+      },
+      {
+        "handle": "virtuals_io",
+        "followers": "100K",
+        "category": "AI/crypto"
+      },
+      {
+        "handle": "JulianHosp",
+        "followers": "100K",
+        "category": "educator/DeFi"
+      },
+      {
+        "handle": "finanzfluss",
+        "followers": "100K",
+        "category": "finance/crypto"
+      },
+      {
+        "handle": "marc_friedrich",
+        "followers": "100K",
+        "category": "macro/Bitcoin"
+      },
+      {
+        "handle": "JuanEnCripto",
+        "followers": "100K",
+        "category": "educator/content"
+      }
+    ],
+    "tier3": [
+      {
+        "handle": "ErgoBTC",
+        "followers": "50K",
+        "category": "on-chain analyst"
+      },
+      {
+        "handle": "CryptoMaestro_",
+        "followers": "50K",
+        "category": "trader"
+      },
+      {
+        "handle": "FrankResearcher",
+        "followers": "50K",
+        "category": "researcher"
+      },
+      {
+        "handle": "blocktrainer",
+        "followers": "50K",
+        "category": "educator/Bitcoin"
+      },
+      {
+        "handle": "InvestmentPunk",
+        "followers": "50K",
+        "category": "finance/crypto"
+      },
+      {
+        "handle": "CriptoDinero",
+        "followers": "50K",
+        "category": "educator"
+      },
+      {
+        "handle": "Criptomonedas_",
+        "followers": "50K",
+        "category": "news"
+      },
+      {
+        "handle": "Cripto247",
+        "followers": "50K",
+        "category": "news/media"
+      },
+      {
+        "handle": "btcecho",
+        "followers": "30K",
+        "category": "news/media"
+      },
+      {
+        "handle": "roman_reher",
+        "followers": "30K",
+        "category": "Bitcoin educator"
+      },
+      {
+        "handle": "Matidroid",
+        "followers": "30K",
+        "category": "trader/content"
+      },
+      {
+        "handle": "CryptoSpanish",
+        "followers": "30K",
+        "category": "educator"
+      },
+      {
+        "handle": "CriptoTendencia",
+        "followers": "30K",
+        "category": "news/trends"
+      },
+      {
+        "handle": "HossDE",
+        "followers": "20K",
+        "category": "trader/analyst"
+      },
+      {
+        "handle": "KryptoKumpel",
+        "followers": "20K",
+        "category": "educator"
+      },
+      {
+        "handle": "Blockmagazin",
+        "followers": "15K",
+        "category": "news/media"
+      }
+    ]
+  },
+  "verified_connections": [
+    {
+      "from": "saylor",
+      "to": "DocumentingBTC",
+      "strength": 4,
+      "type": "mutual_mention"
+    },
+    {
+      "from": "saylor",
+      "to": "brian_armstrong",
+      "strength": 2,
+      "type": "mention"
+    },
+    {
+      "from": "cobie",
+      "to": "saylor",
+      "strength": 6,
+      "type": "mention"
+    },
+    {
+      "from": "PeterLBrandt",
+      "to": "RaoulGMI",
+      "strength": 4,
+      "type": "mention"
+    },
+    {
+      "from": "Bankless",
+      "to": "VitalikButerin",
+      "strength": 4,
+      "type": "mention"
+    },
+    {
+      "from": "MilesDeutscher",
+      "to": "VitalikButerin",
+      "strength": 2,
+      "type": "mention"
+    },
+    {
+      "from": "DonAlt",
+      "to": "VitalikButerin",
+      "strength": 2,
+      "type": "mention"
+    },
+    {
+      "from": "Crypto_Birb",
+      "to": "cryptomanran",
+      "strength": 4,
+      "type": "mention"
+    },
+    {
+      "from": "ErikVoorhees",
+      "to": "cryptomanran",
+      "strength": 2,
+      "type": "mention"
+    },
+    {
+      "from": "MoonOverlord",
+      "to": "brian_armstrong",
+      "strength": 2,
+      "type": "mention"
+    },
+    {
+      "from": "balajis",
+      "to": "VitalikButerin",
+      "strength": 4,
+      "type": "mutual"
+    }
+  ],
+  "clusters": [
+    {
+      "name": "Bitcoin Maximalist / Macro",
+      "emoji": "\u20bf",
+      "members": [
+        "saylor",
+        "APompliano",
+        "aantonop",
+        "DocumentingBTC",
+        "100trillionUSD",
+        "PeterLBrandt",
+        "davincij15",
+        "adam3us"
+      ]
+    },
+    {
+      "name": "Trading / TA",
+      "emoji": "\ud83d\udcc8",
+      "members": [
+        "DaanCrypto",
+        "CryptoKaleo",
+        "DonAlt",
+        "CryptoCapo_",
+        "CredibleCrypto",
+        "EmperorBTC",
+        "GarethSoloway",
+        "scottmelker",
+        "Crypto_Birb",
+        "KoroushAK",
+        "LomahCrypto",
+        "CryptoTony__",
+        "AltcoinSherpa",
+        "blknoiz06",
+        "gainzy222",
+        "Trader_XO",
+        "ColdBloodShill",
+        "SmartContracter"
+      ]
+    },
+    {
+      "name": "On-Chain / Research",
+      "emoji": "\ud83d\udd2c",
+      "members": [
+        "zachxbt",
+        "willclemente",
+        "glassnode",
+        "nansen_ai",
+        "MessariCrypto",
+        "DefiLlama",
+        "whale_alert",
+        "santimentfeed",
+        "ErgoBTC",
+        "0xngmi",
+        "hasufl",
+        "IntoTheBlock"
+      ]
+    },
+    {
+      "name": "DeFi",
+      "emoji": "\ud83c\udf3e",
+      "members": [
+        "Bankless",
+        "Elliotrades",
+        "andrecronje",
+        "Tetranode",
+        "DeFi_Dad",
+        "0xSisyphus",
+        "CroissantEth",
+        "0xHamz",
+        "cburniske",
+        "Rewkang",
+        "DeFianceCapital",
+        "mrjasonchoi",
+        "sassal0x"
+      ]
+    },
+    {
+      "name": "AI x Crypto",
+      "emoji": "\ud83e\udd16",
+      "members": [
+        "ai16zdao",
+        "shawmakesmagic",
+        "KaitoAI",
+        "virtuals_io",
+        "jimfan",
+        "balajis"
+      ]
+    },
+    {
+      "name": "Solana",
+      "emoji": "\u2600\ufe0f",
+      "members": [
+        "ansem",
+        "SOLBigBrain",
+        "SolanaLegend",
+        "MilesDeutscher"
+      ]
+    },
+    {
+      "name": "NFT / Culture",
+      "emoji": "\ud83d\uddbc\ufe0f",
+      "members": [
+        "punk6529",
+        "Zeneca_33",
+        "cobie"
+      ]
+    },
+    {
+      "name": "Institutional / VC",
+      "emoji": "\ud83c\udfdb\ufe0f",
+      "members": [
+        "CathieDWood",
+        "brian_armstrong",
+        "RaoulGMI",
+        "BarrySilbert",
+        "ErikVoorhees",
+        "a16zcrypto",
+        "balajis"
+      ]
+    },
+    {
+      "name": "German Crypto",
+      "emoji": "\ud83c\udde9\ud83c\uddea",
+      "members": [
+        "MMCrypto",
+        "JulianHosp",
+        "marc_friedrich",
+        "finanzfluss",
+        "blocktrainer",
+        "btcecho",
+        "roman_reher"
+      ]
+    },
+    {
+      "name": "Spanish Crypto",
+      "emoji": "\ud83c\uddea\ud83c\uddf8",
+      "members": [
+        "CriptoNoticias",
+        "JuanEnCripto",
+        "Cripto247",
+        "CriptoTendencia",
+        "CryptoDinero"
+      ]
+    }
+  ],
+  "missing_accounts": [
+    {
+      "handle": "elonmusk",
+      "mentions": 154,
+      "priority": "high",
+      "reason": "Mentioned by nearly every whale"
+    },
+    {
+      "handle": "cz_binance",
+      "mentions": 10,
+      "priority": "high",
+      "reason": "Binance founder"
+    },
+    {
+      "handle": "paradigm",
+      "mentions": 106,
+      "priority": "high",
+      "reason": "Major crypto VC, zachxbt connection"
+    },
+    {
+      "handle": "coindesk",
+      "mentions": 6,
+      "priority": "medium",
+      "reason": "Crypto media"
+    },
+    {
+      "handle": "cointelegraph",
+      "mentions": 4,
+      "priority": "medium",
+      "reason": "Crypto media"
+    },
+    {
+      "handle": "bitcoinmagazine",
+      "mentions": 6,
+      "priority": "medium",
+      "reason": "Bitcoin media"
+    },
+    {
+      "handle": "watcherguru",
+      "mentions": 6,
+      "priority": "medium",
+      "reason": "Crypto news"
+    },
+    {
+      "handle": "polymarket",
+      "mentions": 4,
+      "priority": "medium",
+      "reason": "Prediction markets"
+    },
+    {
+      "handle": "ericbalchunas",
+      "mentions": 10,
+      "priority": "high",
+      "reason": "Bloomberg ETF analyst"
+    },
+    {
+      "handle": "cdixon",
+      "mentions": 4,
+      "priority": "medium",
+      "reason": "a16z partner"
+    },
+    {
+      "handle": "ryansadams",
+      "mentions": 2,
+      "priority": "high",
+      "reason": "Bankless co-founder"
+    },
+    {
+      "handle": "trustlessstate",
+      "mentions": 2,
+      "priority": "high",
+      "reason": "Bankless co-founder"
+    },
+    {
+      "handle": "johnedeaton1",
+      "mentions": 6,
+      "priority": "medium",
+      "reason": "Crypto lawyer"
+    },
+    {
+      "handle": "peterschiff",
+      "mentions": 4,
+      "priority": "low",
+      "reason": "Bitcoin bear"
+    },
+    {
+      "handle": "drakefjustin",
+      "mentions": 2,
+      "priority": "medium",
+      "reason": "Ethereum researcher Justin Drake"
+    },
+    {
+      "handle": "tier10k",
+      "mentions": 2,
+      "priority": "medium",
+      "reason": "Market data"
+    },
+    {
+      "handle": "xcopyart",
+      "mentions": 2,
+      "priority": "low",
+      "reason": "NFT artist"
+    },
+    {
+      "handle": "geiger_capital",
+      "mentions": 6,
+      "priority": "medium",
+      "reason": "Macro finance"
+    },
+    {
+      "handle": "marionawfal",
+      "mentions": 6,
+      "priority": "medium",
+      "reason": "Web3 media"
+    }
+  ],
+  "hub_nodes": [
+    {
+      "handle": "VitalikButerin",
+      "bridges": [
+        "DeFi",
+        "Research",
+        "Institutional",
+        "AI"
+      ],
+      "centrality": "highest"
+    },
+    {
+      "handle": "balajis",
+      "bridges": [
+        "AI",
+        "Institutional",
+        "Bitcoin"
+      ],
+      "centrality": "high"
+    },
+    {
+      "handle": "cobie",
+      "bridges": [
+        "Trading",
+        "NFT",
+        "Institutional"
+      ],
+      "centrality": "high"
+    },
+    {
+      "handle": "MilesDeutscher",
+      "bridges": [
+        "Trading",
+        "Solana",
+        "DeFi"
+      ],
+      "centrality": "high"
+    },
+    {
+      "handle": "brian_armstrong",
+      "bridges": [
+        "Institutional",
+        "All"
+      ],
+      "centrality": "high"
+    }
+  ],
+  "methodology": {
+    "source": "Twitter Syndication API",
+    "accounts_analyzed": 25,
+    "accounts_blocked": 65,
+    "date": "2026-02-14"
+  }
+}

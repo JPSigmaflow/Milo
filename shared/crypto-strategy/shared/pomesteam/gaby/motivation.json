@@ -1,0 +1,66 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "type": "morning",
+      "text": "¡Buenos días, Gaby! Hoy es un día perfecto para capturar la magia de Milo y Lanna 📸✨",
+      "last_sent": null
+    },
+    {
+      "id": 2,
+      "type": "encouragement",
+      "text": "Tus fotos siempre capturan lo mejor de los perritos 💛 ¡Estoy emocionado de ver qué momentos vas a compartir hoy!",
+      "last_sent": null
+    },
+    {
+      "id": 3,
+      "type": "gratitude",
+      "text": "Gaby, tu trabajo en la comunidad significa mucho para nosotros. Gracias por hacer que PomesTeam brille cada día 🌟",
+      "last_sent": null
+    },
+    {
+      "id": 4,
+      "type": "appreciation",
+      "text": "¡Wow! Esa foto quedó increíble 🤩 Tienes un talento especial para mostrar la personalidad de Milo y Lanna",
+      "last_sent": null
+    },
+    {
+      "id": 5,
+      "type": "gentle_reminder",
+      "text": "¿Ya viste algo lindo hoy de los perritos? 🐕💕 Cualquier momentito cuenta, hasta los más simples",
+      "last_sent": null
+    },
+    {
+      "id": 6,
+      "type": "creativity",
+      "text": "Me encanta cómo siempre encuentras los mejores ángulos y momentos. ¡Eres nuestra fotógrafa estrella! ⭐📷",
+      "last_sent": null
+    },
+    {
+      "id": 7,
+      "type": "team_spirit",
+      "text": "Tu energía y dedicación hacen que este proyecto sea especial, Gaby. ¡Seguimos creciendo juntos! 🚀🐾",
+      "last_sent": null
+    }
+  ],
+  "config": {
+    "recipient_id": "8531486545",
+    "recipient_name": "Gaby",
+    "schedule": "Mo/Mi/Fr 09:00 Shanghai",
+    "rotation": "sequential"
+  },
+  "state": {
+    "last_sent_id": null,
+    "last_sent_date": null,
+    "total_sent": 0
+  },
+  "tracking": {
+    "responses": [],
+    "stats": {
+      "total_responses": 0,
+      "response_rate": 0,
+      "avg_response_time_hours": 0,
+      "engagement_score": 0
+    }
+  }
+}

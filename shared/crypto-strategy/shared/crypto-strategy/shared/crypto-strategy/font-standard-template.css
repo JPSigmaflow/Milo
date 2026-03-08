@@ -1,0 +1,68 @@
+/* STANDARDISIERTE FONT-DEFINITIONEN - Inter Font für alle Dashboard-Templates */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0f;
+    color: #e0e0e0;
+    font-family: 'Inter', system-ui, sans-serif;
+    padding: 30px;
+    width: 1080px;
+}
+
+/* STANDARDISIERTE SCHRIFTGRÖSSENEN */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f7931a;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f7931a;
+    margin: 24px 0 12px;
+    border-bottom: 3px solid #f7931a44;
+    padding-bottom: 6px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #64b5f6;
+    margin: 16px 0 8px;
+}
+
+p, li {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+td, th {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 14px;
+}
+
+th {
+    font-weight: 600;
+}
+
+/* KLEINE TEXTE (Labels, Footer, etc.) */
+.sub, .footer {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.big {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f7931a;
+}

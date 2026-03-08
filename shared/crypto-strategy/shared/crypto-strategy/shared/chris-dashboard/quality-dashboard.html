@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUALITY DASHBOARD</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--card:#14141f;--border:#2a2a3a;--text:#e0e0e0;--dim:#888;--green:#00e676;--red:#ff5252;--orange:#f7931a;--blue:#64b5f6;--header-bg:#1a1a2e}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:12px;max-width:1200px;margin:0 auto;line-height:1.5}
+h1{color:#ffffff;font-size:1.8rem;margin-bottom:4px;font-weight:700;letter-spacing:2px}
+h2{color:#ffffff;font-size:1.2rem;margin:24px 0 12px;border-bottom:1px solid var(--border);padding-bottom:6px;font-weight:600}
+.sub{color:var(--dim);font-size:.85rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
+.stat .label{color:var(--dim);font-size:.75rem;text-transform:uppercase;letter-spacing:1px}
+.stat .value{font-size:1.5rem;font-weight:700;margin-top:4px}
+table{width:100%;border-collapse:collapse;font-size:.85rem}
+th{background:var(--header-bg);color:#ffffff;text-align:left;padding:8px 6px;position:sticky;top:0}
+td{padding:7px 6px;border-bottom:1px solid var(--border)}
+tr:hover{background:rgba(255,255,255,.03)}
+tr.clickable{cursor:pointer}
+tr.clickable:hover{background:rgba(79,195,247,.08)}
+.green{color:var(--green)}.red{color:var(--red)}.dim{color:var(--dim)}
+.badge{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.7rem;font-weight:600;text-transform:uppercase}
+.badge-green{background:rgba(0,230,118,.15);color:var(--green)}
+.badge-yellow{background:rgba(255,215,64,.15);color:#ffd740}
+.badge-red{background:rgba(255,82,82,.15);color:var(--red)}
+.overflow-x{overflow-x:auto}
+.chart-wrap{height:300px;position:relative}
+#loading{text-align:center;padding:60px;color:var(--dim);font-size:1.2rem}
+
+/* Plant Cards (wie Scanner Cards) */
+.plant-card{background:var(--card);border:1px solid var(--border);border-radius:12px;margin-bottom:10px;overflow:hidden}
+.plant-header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;cursor:pointer;user-select:none;gap:10px}
+.plant-header:hover{background:rgba(255,255,255,.03)}
+.plant-left{display:flex;align-items:center;gap:10px;flex:1;min-width:0}
+.plant-name{font-weight:700;font-size:1.1rem;white-space:nowrap}
+.plant-models{color:var(--dim);font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.plant-right{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.plant-rate{font-weight:700;font-size:1rem;background:var(--header-bg);padding:3px 10px;border-radius:8px}
+.plant-status{display:inline-block;width:12px;height:12px;border-radius:50%;margin-left:8px}
+.status-green{background:var(--green);box-shadow:0 0 8px rgba(0,230,118,.6)}
+.status-yellow{background:#ffd740;box-shadow:0 0 8px rgba(255,215,64,.6)}
+.status-red{background:var(--red);box-shadow:0 0 8px rgba(255,82,82,.6)}
+.status-gray{background:var(--dim);box-shadow:0 0 8px rgba(136,136,136,.6)}
+
+/* Breadcrumb */
+.breadcrumb{margin-bottom:16px;color:var(--dim);font-size:.9rem}
+.breadcrumb .active{color:var(--text)}
+.breadcrumb a{color:var(--blue);text-decoration:none;cursor:pointer}
+.breadcrumb a:hover{text-decoration:underline}
+
+/* Back Button */
+.back-btn{background:var(--card);border:1px solid var(--border);color:var(--text);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:.9rem;margin-bottom:16px;display:inline-block}
+.back-btn:hover{background:rgba(255,255,255,.05)}
+
+/* Views */
+.view{display:none}
+.view.active{display:block}
+
+/* Rate Colors */
+.rate-green{color:var(--green);font-weight:600}
+.rate-yellow{color:#ffd740;font-weight:600}
+.rate-red{color:var(--red);font-weight:600}
+.rate-gray{color:var(--dim);font-weight:600}
+
+@media(max-width:600px){h1{font-size:1.3rem}h2{font-size:1rem}table{font-size:.68rem}td,th{padding:4px 3px}.stat .value{font-size:1rem}.stat .label{font-size:.65rem}.stats{gap:8px}.stat{padding:10px}.plant-name{font-size:.95rem}.plant-models{font-size:.7rem}.plant-rate{font-size:.85rem;padding:2px 8px}}
+</style>
+</head>
+<body>
+
+<div id="home-view" class="view active">
+<header style="margin-bottom:20px">
+<h1>QUALITY DASHBOARD</h1>
+<div class="sub">Monthly Online Q-Indicator • <span id="current-month">Januar 2026</span></div>
+</header>
+
+<div class="stats">
+<div class="stat"><div class="label">Average Complete Rate</div><div class="value rate-green" id="avg-rate">96.99%</div></div>
+<div class="stat"><div class="label">Alarm Count</div><div class="value rate-red" id="alarm-count">1</div></div>
+<div class="stat"><div class="label">Total Models</div><div class="value" id="total-models">18</div></div>
+<div class="stat"><div class="label">Active Plants</div><div class="value" id="active-plants">6</div></div>
+</div>
+
+<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="#fff"/></svg>Plants Overview</h2>
+<div id="plants-container"></div>
+
+<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><polyline points="3,17 9,11 13,15 21,7"/><polyline points="16,7 21,7 21,12"/></svg>Complete Rate Trend</h2>
+<div class="card chart-wrap"><canvas id="overview-chart"></canvas></div>
+
+</div>
+
+<!-- PLANT VIEW -->
+<div id="plant-view" class="view">
+<div class="breadcrumb">
+<a onclick="showView('home')">Home</a> > <span class="active" id="plant-breadcrumb">Plant</span>
+</div>
+
+<button class="back-btn" onclick="showView('home')">← Zurück zur Übersicht</button>
+
+<div class="stats">
+<div class="stat"><div class="label">Complete Rate</div><div class="value" id="plant-complete-rate">--</div></div>
+<div class="stat"><div class="label">Modelle</div><div class="value" id="plant-model-count">--</div></div>
+<div class="stat"><div class="label">Alarm-Modelle</div><div class="value rate-red" id="plant-alarm-count">--</div></div>
+</div>
+
+<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 3v18"/></svg>Modelle</h2>
+<div class="card overflow-x">
+<table id="models-table">
+<thead><tr>
+<th>Modell</th><th>Nov 2025</th><th>Dez 2025</th><th>Jan 2026</th><th>Trend</th><th>Status</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+
+</div>
+
+<!-- MODEL VIEW -->
+<div id="model-view" class="view">
+<div class="breadcrumb">
+<a onclick="showView('home')">Home</a> > <a onclick="showPlantView(currentPlant)" id="model-plant-link">Plant</a> > <span class="active" id="model-breadcrumb">Model</span>
+</div>
+
+<button class="back-btn" onclick="showPlantView(currentPlant)">← Zurück zur Werkansicht</button>
+
+<div class="stats">
+<div class="stat"><div class="label">Complete Rate</div><div class="value" id="model-complete-rate">--</div></div>
+</div>
+
+<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 3v18"/></svg>Module</h2>
+<div class="card overflow-x">
+<table id="modules-table">
+<thead><tr>
+<th>Module</th><th>Power Weight</th><th>Target</th><th>Real</th><th>Complete Rate</th><th>Status</th>
+</tr></thead>
+<tbody></tbody>
+</table>
+</div>
+
+<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><polyline points="3,17 9,11 13,15 21,7"/><polyline points="16,7 21,7 21,12"/></svg>Trend Complete Rate</h2>
+<div class="card chart-wrap"><canvas id="model-trend-chart"></canvas></div>
+
+<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><polyline points="3,17 9,11 13,15 21,7"/><polyline points="16,7 21,7 21,12"/></svg>Detail Value IST vs ZIEL</h2>
+<div class="card chart-wrap"><canvas id="model-detail-chart"></canvas></div>
+
+<h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" style="vertical-align:-3px;margin-right:6px"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="#fff"/></svg>Problem Analysis</h2>
+<div class="card overflow-x">
+<table>
+<thead><tr>
+<th>Found Date</th><th>Car Type</th><th>Source</th><th>Problem</th><th>Analysis</th><th>Countermeasure</th><th>Status</th>
+</tr></thead>
+<tbody>
+<tr><td colspan="7" class="dim" style="text-align:center;padding:20px">Keine Probleme gefunden</td></tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+<script>
+// Dashboard Data - EXAKT die gleichen Daten beibehalten
+const dashboardData = {
+    month: "202601",
+    averageCompleteRate: 96.99,
+    alarmCount: 1,
+    plants: {
+        CPM: {
+            completeRate: null,
+            models: {
+                "ID.3": { nov: 97.0, dec: null, jan: null },
+                "ID.4 X": { nov: 99.9, dec: null, jan: null }
+            }
+        },
+        CPA2: {
+            completeRate: null,
+            models: {
+                "AUDI E5 Sportback": { nov: 100.0, dec: 100.0, jan: null }
+            }
+        },
+        CPA3: {
+            completeRate: 96.14,
+            models: {
+                "A7L": { nov: 92.9, dec: null, jan: 92.6 },
+                "Tiguan L PA": { nov: 99.6, dec: 99.6, jan: 99.3 },
+                "Tiguan L Pro": { nov: 91.9, dec: 92.0, jan: 92.4 },
+                "A5L": { nov: 100.0, dec: 100.0, jan: 100.0 }
+            }
+        },
+        CPY: {
+            completeRate: 97.11,
+            models: {
+                "Tharu XR": { nov: 98.8, dec: 99.6, jan: 100.0 },
+                "Passat PA DS": { nov: 97.7, dec: 98.5, jan: 100.0 },
+                "Passat Pro DS": { nov: 100.0, dec: 90.5, jan: 91.3 }
+            },
+            modelDetails: {
+                "Tharu XR": {
+                    completeRate: 100.0,
+                    modules: {
+                        "Process Audit": { weight: 0.10, real: 0.92, target: 0.90, complete: 100.0 },
+                        "ZP8 DLQ": { weight: 0.10, real: 0.94, target: 0.92, complete: 100.0 },
+                        "Water Test": { weight: 0.15, real: 1.00, target: 0.98, complete: 100.0 },
+                        "Road Test": { weight: 0.15, real: 1.00, target: 0.98, complete: 100.0 },
+                        "PZ": { weight: 0.04, real: 0.04, target: 0.09, complete: 100.0 },
+                        "DKA": { weight: 0.04, real: 0.42, target: 0.90, complete: 100.0 },
+                        "PSB": { weight: 0.02, real: 100.00, target: 100.00, complete: 100.0 },
+                        "ZP8_QK": { weight: 0.05, real: 1.39, target: 1.40, complete: 100.0 },
+                        "ZP8_B": { weight: 0.05, real: 0.41, target: 0.90, complete: 100.0 },
+                        "OMIS": { weight: 0.15, real: 0.79, target: 0.81, complete: 100.0 },
+                        "3MIS": { weight: 0.14, real: 0.18, target: 0.20, complete: 100.0 }
+                    },
+                    trendComplete: [100,100,100,100,100,100,100,100,100,100,100],
+                    trendDetailIST: [0.93,0.93,0.93,0.92,0.92,0.92,0.92,0.92,0.92,0.92,0.92],
+                    trendDetailZIEL: [0.90,0.90,0.90,0.90,0.90,0.90,0.90,0.90,0.90,0.90,0.90]
+                }
+            }
+        },
+        CPH2: {
+            completeRate: 97.01,
+            models: {
+                "Teramont PA": { nov: 96.3, dec: 96.1, jan: 97.0 },
+                "Viloran PA": { nov: 97.6, dec: 97.7, jan: 100.0 },
+                "Teramont X PA2": { nov: 100.0, dec: 100.0, jan: 100.0 },
+                "Q6": { nov: 94.3, dec: 94.5, jan: 94.6 },
+                "Tharu PA": { nov: 89.4, dec: 89.1, jan: 88.9 },
+                "Lamando L PA": { nov: 97.8, dec: 95.7, jan: 95.5 },
+                "Teramont Pro": { nov: 100.0, dec: 100.0, jan: 100.0 },
+                "Lavida XR DS": { nov: 100.0, dec: 100.0, jan: 100.0 }
+            }
+        },
+        CPC: {
+            completeRate: 98.44,
+            models: {
+                "Lavida NF PA": { nov: 99.0, dec: 99.3, jan: 98.6 },
+                "Lavida Pro": { nov: 100.0, dec: 100.0, jan: 98.3 }
+            }
+        },
+        CPN: { completeRate: null, models: {} },
+        CPW: { completeRate: null, models: {} }
+    }
+};
+
+// Global state
+let currentPlant = null;
+let currentModel = null;
+
+// Utility functions
+function getStatusClass(rate) {
+    if (rate === null || rate === undefined) return 'gray';
+    if (rate >= 96) return 'green';
+    if (rate >= 90) return 'yellow';
+    return 'red';
+}
+
+function formatRate(rate) {
+    if (rate === null || rate === undefined) return '--';
+    return rate.toFixed(1) + '%';
+}
+
+function getTrendIcon(values) {
+    if (!values || values.length < 2) return '→';
+    const last = values[values.length - 1];
+    const previous = values[values.length - 2];
+    if (last > previous) return '↗';
+    if (last < previous) return '↘';
+    return '→';
+}
+
+function getTrendClass(values) {
+    if (!values || values.length < 2) return 'dim';
+    const last = values[values.length - 1];
+    const previous = values[values.length - 2];
+    if (last > previous) return 'green';
+    if (last < previous) return 'red';
+    return 'dim';
+}
+
+// View management
+function showView(viewName) {
+    document.querySelectorAll('.view').forEach(view => {
+        view.classList.remove('active');
+    });
+    document.getElementById(viewName + '-view').classList.add('active');
+}
+
+function showPlantView(plantCode) {
+    currentPlant = plantCode;
+    const plant = dashboardData.plants[plantCode];
+    
+    document.getElementById('plant-breadcrumb').textContent = plantCode;
+    document.getElementById('plant-complete-rate').innerHTML = formatRate(plant.completeRate);
+    document.getElementById('plant-model-count').textContent = Object.keys(plant.models).length;
+    
+    // Count alarm models
+    let alarmCount = 0;
+    Object.values(plant.models).forEach(model => {
+        const latestRate = model.jan || model.dec || model.nov;
+        if (latestRate && latestRate < 90) alarmCount++;
+    });
+    document.getElementById('plant-alarm-count').textContent = alarmCount;
+
+    // Update breadcrumb link
+    document.getElementById('model-plant-link').textContent = plantCode;
+
+    // Populate models table
+    const tbody = document.querySelector('#models-table tbody');
+    tbody.innerHTML = '';
+    
+    Object.entries(plant.models).forEach(([modelName, model]) => {
+        const row = document.createElement('tr');
+        row.classList.add('clickable');
+        row.onclick = () => showModelView(plantCode, modelName);
+        
+        const values = [model.nov, model.dec, model.jan].filter(v => v !== null);
+        const trendClass = getTrendClass(values);
+        const trendIcon = getTrendIcon(values);
+        
+        const latestRate = model.jan || model.dec || model.nov;
+        const statusClass = getStatusClass(latestRate);
+        
+        row.innerHTML = `
+            <td><strong>${modelName}</strong></td>
+            <td class="rate-${getStatusClass(model.nov)}">${formatRate(model.nov)}</td>
+            <td class="rate-${getStatusClass(model.dec)}">${formatRate(model.dec)}</td>
+            <td class="rate-${getStatusClass(model.jan)}">${formatRate(model.jan)}</td>
+            <td class="${trendClass}" style="font-size:1.2rem">${trendIcon}</td>
+            <td><span class="badge badge-${statusClass}">${statusClass}</span></td>
+        `;
+        tbody.appendChild(row);
+    });
+
+    showView('plant');
+}
+
+function showModelView(plantCode, modelName) {
+    currentModel = modelName;
+    const plant = dashboardData.plants[plantCode];
+    const modelDetails = plant.modelDetails && plant.modelDetails[modelName];
+    
+    document.getElementById('model-breadcrumb').textContent = modelName;
+    
+    if (modelDetails) {
+        document.getElementById('model-complete-rate').textContent = modelDetails.completeRate.toFixed(1) + '%';
+        
+        // Populate modules table
+        const tbody = document.querySelector('#modules-table tbody');
+        tbody.innerHTML = '';
+        
+        Object.entries(modelDetails.modules).forEach(([moduleName, module]) => {
+            const row = document.createElement('tr');
+            const statusClass = module.real >= module.target ? 'green' : 'yellow';
+            
+            row.innerHTML = `
+                <td><strong>${moduleName}</strong></td>
+                <td>${(module.weight * 100).toFixed(0)}%</td>
+                <td>${module.target.toFixed(2)}</td>
+                <td>${module.real.toFixed(2)}</td>
+                <td class="rate-${getStatusClass(module.complete)}">${module.complete.toFixed(1)}%</td>
+                <td><span class="status-${statusClass}"></span></td>
+            `;
+            tbody.appendChild(row);
+        });
+        
+        drawModelCharts(modelDetails);
+    } else {
+        // Basic model info
+        const model = plant.models[modelName];
+        const latestRate = model.jan || model.dec || model.nov || 0;
+        document.getElementById('model-complete-rate').textContent = latestRate.toFixed(1) + '%';
+        
+        // Clear modules table
+        document.querySelector('#modules-table tbody').innerHTML = '<tr><td colspan="6" class="dim" style="text-align:center;padding:20px">Keine Modul-Details verfügbar</td></tr>';
+    }
+    
+    showView('model');
+}
+
+// Initialize home view
+function initHome() {
+    // Count active plants and total models
+    let activePlants = 0;
+    let totalModels = 0;
+    
+    Object.entries(dashboardData.plants).forEach(([plantCode, plant]) => {
+        const modelCount = Object.keys(plant.models).length;
+        if (modelCount > 0) {
+            activePlants++;
+            totalModels += modelCount;
+        }
+    });
+    
+    document.getElementById('active-plants').textContent = activePlants;
+    document.getElementById('total-models').textContent = totalModels;
+    
+    // Build plants list
+    const container = document.getElementById('plants-container');
+    container.innerHTML = '';
+    
+    Object.entries(dashboardData.plants).forEach(([plantCode, plant]) => {
+        const modelCount = Object.keys(plant.models).length;
+        if (modelCount === 0) return; // Skip empty plants
+        
+        const statusClass = getStatusClass(plant.completeRate);
+        
+        const plantCard = document.createElement('div');
+        plantCard.className = 'plant-card';
+        plantCard.innerHTML = `
+            <div class="plant-header" onclick="showPlantView('${plantCode}')">
+                <div class="plant-left">
+                    <span class="plant-name">${plantCode}</span>
+                    <span class="plant-models">${modelCount} Modelle</span>
+                </div>
+                <div class="plant-right">
+                    <span class="plant-rate rate-${statusClass}">${formatRate(plant.completeRate)}</span>
+                    <span class="plant-status status-${statusClass}"></span>
+                </div>
+            </div>
+        `;
+        container.appendChild(plantCard);
+    });
+    
+    drawOverviewChart();
+}
+
+function drawOverviewChart() {
+    const ctx = document.getElementById('overview-chart').getContext('2d');
+    
+    // Sample trend data
+    const months = ['Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez', 'Jan'];
+    const overallTrend = [95.2, 96.1, 96.8, 97.2, 96.9, 97.3, 97.8, 96.9, 97.1, 96.99];
+    
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: months,
+            datasets: [{
+                label: 'Complete Rate (%)',
+                data: overallTrend,
+                borderColor: '#f7931a',
+                backgroundColor: 'rgba(247,147,26,0.1)',
+                fill: true,
+                tension: 0.3,
+                pointRadius: 4,
+                pointBackgroundColor: '#f7931a'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { 
+                legend: { labels: { color: '#e0e0e0' } }
+            },
+            scales: {
+                x: { 
+                    ticks: { color: '#888' }, 
+                    grid: { color: '#2a2a3a' }
+                },
+                y: { 
+                    ticks: { color: '#888', callback: v => v + '%' }, 
+                    grid: { color: '#2a2a3a' },
+                    min: 94,
+                    max: 99
+                }
+            }
+        }
+    });
+}
+
+function drawModelCharts(modelDetails) {
+    // Trend Complete Rate Chart
+    const ctx1 = document.getElementById('model-trend-chart').getContext('2d');
+    const months = ['Mar', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez', 'Jan'];
+    
+    new Chart(ctx1, {
+        type: 'line',
+        data: {
+            labels: months,
+            datasets: [{
+                label: 'Complete Rate (%)',
+                data: modelDetails.trendComplete,
+                borderColor: '#00e676',
+                backgroundColor: 'rgba(0,230,118,0.1)',
+                fill: true,
+                tension: 0.3,
+                pointRadius: 3
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: {
+                x: { ticks: { color: '#888' }, grid: { color: '#2a2a3a' } },
+                y: { ticks: { color: '#888', callback: v => v + '%' }, grid: { color: '#2a2a3a' }, min: 95 }
+            }
+        }
+    });
+    
+    // Detail Value IST vs ZIEL Chart
+    const ctx2 = document.getElementById('model-detail-chart').getContext('2d');
+    
+    new Chart(ctx2, {
+        type: 'line',
+        data: {
+            labels: months,
+            datasets: [
+                {
+                    label: 'IST',
+                    data: modelDetails.trendDetailIST,
+                    borderColor: '#64b5f6',
+                    backgroundColor: 'rgba(100,181,246,0.1)',
+                    fill: false,
+                    tension: 0.3,
+                    pointRadius: 3
+                },
+                {
+                    label: 'ZIEL',
+                    data: modelDetails.trendDetailZIEL,
+                    borderColor: '#ff5252',
+                    backgroundColor: 'rgba(255,82,82,0.1)',
+                    fill: false,
+                    tension: 0.3,
+                    pointRadius: 3,
+                    borderDash: [5, 5]
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: { legend: { labels: { color: '#e0e0e0' } } },
+            scales: {
+                x: { ticks: { color: '#888' }, grid: { color: '#2a2a3a' } },
+                y: { ticks: { color: '#888' }, grid: { color: '#2a2a3a' } }
+            }
+        }
+    });
+}
+
+// Initialize
+initHome();
+</script>
+</body>
+</html>

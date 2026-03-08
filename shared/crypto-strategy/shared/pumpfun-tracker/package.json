@@ -1,0 +1,9 @@
+{
+  "name": "pumpfun-tracker",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pump.fun Watchlist Price Tracker & History DB",
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  }
+}

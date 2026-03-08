@@ -1,0 +1,75 @@
+{
+  "results": [
+    {
+      "ticker": "ISRG",
+      "price": "$492.10",
+      "change": "-2.37%",
+      "newInsights": [
+        "ISRG down 2.37% as Trump tariff escalation weighs on healthcare sentiment",
+        "Wells Fargo downgrades ISRG, multiple analysts trim price targets post-earnings"
+      ]
+    },
+    {
+      "ticker": "FANUY",
+      "price": "$20.72",
+      "change": "-0.37%",
+      "newInsights": [
+        "FANUC and NVIDIA partner on physical AI for industrial robotics",
+        "Fanuc shares gain after earnings beat and guidance upgrade"
+      ]
+    },
+    {
+      "ticker": "ROK",
+      "price": "$387.63",
+      "change": "-2.80%",
+      "newInsights": [
+        "ROK down 2.80% on Trump 15% global tariff announcement",
+        "ROK price target raised to $350 by analyst"
+      ]
+    },
+    {
+      "ticker": "HDSY",
+      "price": "N/A",
+      "change": "N/A",
+      "newInsights": [],
+      "note": "Not found on Perplexity Finance (404)"
+    },
+    {
+      "ticker": "TER",
+      "price": "$318.50",
+      "change": "-1.95%",
+      "newInsights": [
+        "Teradyne Q4 blowout: AI-related revenue exceeds 60%, guidance crushes estimates",
+        "Teradyne and MultiLane form joint venture for AI data center testing"
+      ]
+    },
+    {
+      "ticker": "CGNX",
+      "price": "$56.47",
+      "change": "+0.79%",
+      "newInsights": [
+        "Cognex Q4 earnings beat triggers 36% surge, EBITDA margin target raised to 25-31%",
+        "Multiple analyst upgrades for CGNX: HSBC to Buy, KeyCorp target $70, Raymond James $80"
+      ]
+    },
+    {
+      "ticker": "ABBNY",
+      "price": "$90.56",
+      "change": "0.00%",
+      "newInsights": [
+        "ABB achieves record operational EBITA margin of 19% for full year, Q4 EBITA up 19%"
+      ]
+    },
+    {
+      "ticker": "NOVT",
+      "price": "$142.38",
+      "change": "-2.45%",
+      "newInsights": [
+        "Novanta Q4 earnings due Feb 24, bookings growth 17% with book-to-bill 1.03",
+        "NOVT down 2.45% ahead of earnings amid tariff uncertainty and insider selling"
+      ]
+    }
+  ],
+  "scannedAt": "2026-02-23T17:02:00-05:00",
+  "source": "perplexity-finance"
+}

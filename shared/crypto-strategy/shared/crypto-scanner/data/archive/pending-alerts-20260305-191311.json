@@ -1,0 +1,4645 @@
+[
+  {
+    "source": "telegram",
+    "channel": "OKXAnnouncements",
+    "text": "New Boost Listing: Fabric Protocol 10M &#036;ROBO Prize Pool Register to claim by Mar 6, 10 AM UTC Claims go live on Mar 6, 12 PM UTC Open to CeDeFi users on OKX Exchange. Our Socials: ⚫️ Create OKX Wallet now | Join Affiliate | TG | DC | Wallet TG | Spotify | Wallet X ⭐️ CN DC | CN TG ‼️ Please che",
+    "keywords": [
+      "listing",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T12:46:58.442Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "KuCoin_News",
+    "text": "💎 GoldFinger (GF) Gets Listed on KuCoin&#33; World Premiere&#33; 🤑 Deposit now 🚀 Trade GF/USDT: 12:00 on March 6, 2026 (UTC) 👉 Listing Details here&#33; Get your KuCoin account today&#33; #KuListing",
+    "keywords": [
+      "listing",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T12:46:58.445Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "TheBlockBeats",
+    "text": "⚡️ OpenClaw出现「自我攻击」漏洞：误执行Bash命令致密钥泄露 BlockBeats 消息，3 月 5 日，Web3 安全公司 GoPlus 发文称，AI 开发工具 OpenClaw 近日被曝出现一次「自我攻击」安全事件。在执行自动化任务时，系统在调用 Shell 命令创建 GitHub Issue 过程中构造了错误的 Bash 指令，意外触发命令注入，导致大量敏感环境变量被公开。 事件中，AI 生成的字符串包含反引号包裹的 set，被 Bash 解释为命令替换并自动执行。由于 Bash 在无参数执行 set 时会输出当前所有环境变量，最终导致超过 100 行敏感信息（包括 Tele",
+    "keywords": [
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T12:46:58.447Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【预测市场 Limitless 推出 CLI 命令行工具】 Foresight News 消息，预测市场 Limitless 推出名为 Limitless CLI 的命令行工具，旨在为用户提供在「终端」环境中进行市场浏览、下单、仓位管理和平台交互的解决方案。该工具采用 Rust 语言开发，运行在 Base 区块链网络上，支持查询预测市场赔率、下注、追踪盈亏以及实时查看订单簿等功能，一次安装即可使用该工具。 https://foresightnews.pro/news/h5Detail/98984",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T12:46:58.449Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "bitpush",
+    "text": "【分析：比特币与美元同步走强引发市场关注，宏观指标或是重要催化剂】 比推消息， 比特币近期持续反弹，一度接近 7.4 万美元关口，中东冲突爆发以来累计涨幅已超过 10%。值得注意的是，此轮上涨出现在全球股市风险偏好下降、美元同步走强的背景下。美元指数（DXY）本周上涨超过 1%，并在周三触及 99.68，为去年 11 月以来高位。历史上，比特币通常与美元呈负相关，但自特朗普在 2024 年大选获胜并提出亲加密政策以来，两者多次出现同步涨跌的情况。资金流向方面，美国投资者需求有所增强，数据显示衡量美国交易所与离岸市场价差的 Coinbase 溢价指数升至 0.0227%，为去年 12 月以来最高",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T12:46:58.452Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "bitpush",
+    "text": "【OpenClaw 出现自我攻击漏洞：误执行 Bash 命令致密钥泄露】 比推消息，Web3 安全公司 GoPlus 发文称，AI 开发工具 OpenClaw 近日被曝出现一次自我攻击安全事件。在执行自动化任务时，系统在调用 Shell 命令创建 GitHub Issue 过程中构造了错误的 Bash 指令，意外触发命令注入，导致大量敏感环境变量被公开。事件中，AI 生成的字符串包含反引号包裹的 set，被 Bash 解释为命令替换并自动执行。由于 Bash 在无参数执行 set 时会输出当前所有环境变量，最终导致超过 100 行敏感信息（包括 Telegram 密钥、认证 Token 等）被",
+    "keywords": [
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T12:46:58.455Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "PANewsOfficial",
+    "text": "Gate는 CEX, DEX, 지갑, 정보 및 데이터라는 5가지 핵심 기능을 포괄하는 업계 최초의 통합 AI 포털인 Gate for AI를 출시했습니다. Gate.cn은 업계 최초의 전 영역 AI 에이전트 인프라인 Gate for AI를 출시했습니다. 이는 중앙 집중식 거래, 온체인 거래, 지갑 서명, 실시간 정보 및 온체인 데이터라는 5가지 기능을 통합하고 개방하여 AI가 조사 및 의사 결정부터 실행에 이르기까지 완전 자동화된 작업을 수행할 수 있도록 지원합니다. 🔗 https://www.panewslab.com/ko/articl",
+    "keywords": [
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T12:46:58.458Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "AI just bypassed the Cloudflare protection that DeFi needs  protos.com",
+    "url": "",
+    "time": "2026-03-05T12:53:28.469Z",
+    "timestamp": "2026-03-05T12:53:28.495Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Ethereum Price Prediction: MVRV Signals Bottom Ahead of Wave 4  coinpaper.com",
+    "url": "",
+    "time": "2026-03-05T12:53:28.469Z",
+    "timestamp": "2026-03-05T12:53:28.497Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Earnings Recap: Ciena, Kroger, and Burlington Share Quarterly Results  tokenist.com",
+    "url": "",
+    "time": "2026-03-05T12:53:28.469Z",
+    "timestamp": "2026-03-05T12:53:28.498Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Coral Protocol",
+    "symbol": "CORAL",
+    "contract": "CoRAitPvr9seu5F9Hk39vbjqA1o1XuoryHjSk1Z1q2mo",
+    "marketCap": 3929140.1082503116,
+    "time": "2026-03-05T12:53:34.143Z",
+    "timestamp": "2026-03-05T12:53:34.163Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Game developer Sillytuna reports losing $24M of crypto in UK ‘wrench’ attack  protos.com",
+    "url": "",
+    "time": "2026-03-05T13:00:04.061Z",
+    "timestamp": "2026-03-05T13:00:04.097Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Cryptocurrency Fear and Greed Index Rises with Latest Data! Here Are the Details  en.bitcoinsistemi.com",
+    "url": "",
+    "time": "2026-03-05T13:00:04.061Z",
+    "timestamp": "2026-03-05T13:00:04.099Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Revolut Files for U.S. Bank Charter to Expand U.S. Banking Services  coinpaper.com",
+    "url": "",
+    "time": "2026-03-05T13:00:04.061Z",
+    "timestamp": "2026-03-05T13:00:04.100Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Jupiter Staked SOL",
+    "symbol": "JupSOL",
+    "contract": "jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v",
+    "marketCap": 442571331.8745551,
+    "time": "2026-03-05T13:00:09.589Z",
+    "timestamp": "2026-03-05T13:00:09.610Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "Cointelegraph",
+    "text": "🇺🇸 BIG: NYSE parent company, Intercontinental Exchange, invests in OKX at a &#036;25B valuation as it moves into blockchain-based stock trading. News | Markets | YouTube",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:04:39.694Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "cryptoquant_alert",
+    "text": "🚨 🚨 2,739.57 #BTC (&#036;184,263,880) aggregated inflows to #Coinbase Pro View Chart | @cryptoquant_alert",
+    "keywords": [
+      "alert",
+      "base"
+    ],
+    "timestamp": "2026-03-05T13:04:39.699Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 🔎 ZachXBT: Axiom employees engaged in insider trading. 2. 🗺 Ethereum Foundation releases &#39;strawmap&#39;. 3. 😭 Vitalik Buterin finishes selling 19,326 ETH (~&#036;39M). 4. 🤔 Aave-Chan Initiative publishes Aave Labs audit. 5. 🥀 US threatens to decl",
+    "keywords": [
+      "sell",
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:04:39.704Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 12,000,000 USDC From: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) To: 0x4a7593ad82e638c183fa0b19a195848ca19c1eb4 Block: 24591373 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:04:39.707Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 12,000,000 USDC From: 0x4a7593ad82e638c183fa0b19a195848ca19c1eb4 To: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) Block: 24591393 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:04:39.710Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SolanaTrending",
+    "text": "Anthropic AI trending on X. This is &#036;Anthropic AI on Solana BFVy7x4rRt71d2GX3kFgBCHuFVfFXVcRryD4gtz1pump https://x.com/i/communities/2027544415120818597",
+    "keywords": [
+      "pump",
+      "solana",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:04:39.713Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "TheDailyHodl",
+    "text": "Paradex Signals Upcoming &#036;DIME Token Generation Event https://dailyhodl.com/2026/03/03/paradex-signals-upcoming-dime-token-generation-event/",
+    "keywords": [
+      "token",
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T13:04:39.715Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OKXAnnouncements",
+    "text": "Win from a 770.5 &#036;GOOGLon prize pool Trade the eligible Ondo OndoFinance RWA tokens with 0 trading fee on our DEX from now till Mar 10, 2:30 PM UTC. 👉 Start now Our Socials: ⚫️ Create OKX Wallet now | Join Affiliate | TG | DC | Wallet TG | Spotify | Wallet X ⭐️ CN DC | CN TG ‼️ Please check th",
+    "keywords": [
+      "token",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T13:04:39.717Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "coingape",
+    "text": "🇺🇸 BIG : NYSE parent company, Intercontinental Exchange, invests in OKX at a &#036;25B valuation as it moves into blockchain-based stock trading. News ✦ X (Twitter) ✦ YouTube",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:04:39.720Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【彭博社：Opinion 亚洲市场渗透率超过 Polymarket 和 Kalshi】 Foresight News 消息，据彭博社报道，于去年 10 月推出的预测市场平台 Opinion Labs 在上线几周内名义交易量就达到能于 Polymarket 和 Kalshi 相匹敌的水平。数据显示，截至 1 月 25 日的一周内，Opinion 的交易额接近 20 亿美元，超过了 Polymarket，仅略低于同期 Kalshi 的交易额。Opinion 在亚洲的地理优势是一项关键优势，根据 Similarweb 的数据，今年 1 月，Opinion 约 42% 的网站访问量来自亚洲，而 Pol",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:04:39.723Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "Altcoin Daily",
+    "title": "Tom Lee has gone insane (ethereum).",
+    "videoId": "KUl2p8MQGBg",
+    "url": "https://youtube.com/watch?v=KUl2p8MQGBg",
+    "time": "2026-03-05T13:00:00+00:00",
+    "timestamp": "2026-03-05T13:19:54.927Z"
+  },
+  {
+    "source": "coingecko-trending",
+    "name": "Opinion",
+    "symbol": "OPN",
+    "id": "opinion",
+    "marketCapRank": 298,
+    "thumb": "https://coin-images.coingecko.com/coins/images/102171893/standard/Opinon.jpg?1770269253",
+    "score": 1,
+    "time": "2026-03-05T13:19:55.052Z",
+    "timestamp": "2026-03-05T13:19:55.056Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "NALCO Shares Rally as Aluminum Price Surges to 4-Year High  coinpaper.com",
+    "url": "",
+    "time": "2026-03-05T13:20:00.618Z",
+    "timestamp": "2026-03-05T13:20:00.653Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin bears 'annihilated' as analysis sees $65K support test next  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T13:20:00.618Z",
+    "timestamp": "2026-03-05T13:20:00.654Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Slots Appeal And The Psychology Of The Spin  cryptointelligence.co.uk",
+    "url": "",
+    "time": "2026-03-05T13:20:00.618Z",
+    "timestamp": "2026-03-05T13:20:00.656Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "nuit",
+    "symbol": "nuit",
+    "contract": "2eXamy7t3kvKhfV6aJ6Uwe3eh8cuREFcTKs1mFKZpump",
+    "marketCap": 1838579.8336153724,
+    "time": "2026-03-05T13:20:06.247Z",
+    "timestamp": "2026-03-05T13:20:06.269Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Get Shit Done",
+    "symbol": "GSD",
+    "contract": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
+    "marketCap": 898875.9923056534,
+    "time": "2026-03-05T13:20:06.247Z",
+    "timestamp": "2026-03-05T13:20:06.270Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "ECB accounts show growing inflation undershoot worries before Iran war  @reutersbiz",
+    "url": "",
+    "time": "2026-03-05T13:26:38.362Z",
+    "timestamp": "2026-03-05T13:26:38.399Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "WATCH: Natural gas wholesale prices jumped nearly 50% since the start of the week after Qatar halted exports and the Strait of Hormuz was blocked. Michael Browne from Franklin Templeton says the infla",
+    "url": "",
+    "time": "2026-03-05T13:26:38.362Z",
+    "timestamp": "2026-03-05T13:26:38.401Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "SOL Strategies stock surges 21% after liquid staking platform hits 691K SOL  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T13:26:38.362Z",
+    "timestamp": "2026-03-05T13:26:38.403Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Pippin",
+    "symbol": "pippin",
+    "contract": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+    "marketCap": 359513758.97059935,
+    "time": "2026-03-05T13:26:43.928Z",
+    "timestamp": "2026-03-05T13:26:43.951Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Print",
+    "symbol": "$PRINT",
+    "contract": "28a2oQVCPrJB7SLZo4DVMVdHchSXiG8sZy31DohPpump",
+    "marketCap": 1267881.412414359,
+    "time": "2026-03-05T13:26:43.928Z",
+    "timestamp": "2026-03-05T13:26:43.952Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DeFimillion",
+    "text": "Tap To earn and Claim Reward in Telegram. Memecoin Game for @Defimillion users. Visit Memecoin Telegram Groups",
+    "keywords": [
+      "AI",
+      "memecoin"
+    ],
+    "timestamp": "2026-03-05T13:31:14.023Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 13,189.99988083 ETH From: 0xbce98108c113caae955d4b5e82b028d6195ff55a To: 0x5877626d3cdc57317d861207244a4eea28decf9e Block: 24571013 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:31:14.027Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ ⚪ Transfer: 21,230.86542270 ETH From: 0x28c6c06298d514db089934071355e5743bf21d60 (Binance 14) To: 0x21a31ee1afc51d94c2efccaa2092ad1028285549 (Binance 15) Block: 24571024 Details #ETHx2",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:31:14.030Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 13,189.99988083 ETH From: 0x5877626d3cdc57317d861207244a4eea28decf9e To: 0xd01607c3c5ecaba394d8be377a08590149325722 Block: 24571036 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:31:14.033Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 12,618,545 USDC From: 0x2d3e6f78efca59f15220b4478cfc5d06daaff504 To: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) Block: 24591403 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:31:14.037Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🟢 Transfer: 10,581,551 USDT From: 0x23878914efe38d27c4d67ab83ed1b93a74d4086a (Aave: Ethereum USDT) To: 0x356b8d89c1e1239cbbb9de4815c39a1474d5ba7d Block: 24591403 Details #USDTx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:31:14.040Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 13,039.99989542 ETH From: 0xbce98108c113caae955d4b5e82b028d6195ff55a To: 0x5877626d3cdc57317d861207244a4eea28decf9e Block: 24571168 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:31:14.043Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【Tether 投资资金管理和结算基础设施 Axiym】 Foresight News 消息，稳定币发行商 Tether 宣布投资资金管理和结算基础设施 Axiym，具体金额暂未披露，旨在推进数字资产在全球支付生态系统中的应用。Axiym 是在受监管的支付生态系统内构建的全球分布式资金结算基础设施，支持嵌入式金融服务，包括先付后结算 (PNSL) 等后付费结算解决方案，同时支持美元现金流的原生集成。 https://foresightnews.pro/news/h5Detail/98991",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:31:14.046Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【Uniswap 开启八条链费用转换提案投票已达到通过条件，支持率达 99.9%】 Foresight News 消息，Uniswap 开启八条 L2 链费用转换及启用所有 v3 池的手续费的第二个治理提案将于 4 小时后投票结束，目前已达到通过条件，支持率 99.9%，实际投票权重达 7,783.17 万。该提案旨在在 Arbitrum、Base、Celo、OP Mainnet、Soneium、XLayer、Worldchain 和 Zora 等多条链上扩展 Uniswap v2 和 v3 的协议费用，并在主网和这些 L2 上的所有 v3 池启用新的基于等级制的费用系统。 https://f",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:31:14.048Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【Tether 投资资金管理和结算基础设施 Axiym】 https://www.chaincatcher.com/article/2249836",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:31:14.050Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "NEW: MICHAEL SAYLOR (@SAYLOR) SAYS THERE ISN'T ENOUGH BITCOIN $BTC FOR EVERYONE  @bscnews",
+    "url": "",
+    "time": "2026-03-05T13:37:46.052Z",
+    "timestamp": "2026-03-05T13:37:46.088Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin Whales Place Strong Bids at $71,000, Price Scenarios to Watch  u.today",
+    "url": "",
+    "time": "2026-03-05T13:37:46.052Z",
+    "timestamp": "2026-03-05T13:37:46.089Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "US Bitcoin reserve still has no plan to stack sats  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T13:37:46.052Z",
+    "timestamp": "2026-03-05T13:37:46.091Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "AGI ALPHA AGENT",
+    "symbol": "AGIALPHA",
+    "contract": "tWKHzXd5PRmxTF5cMfJkm2Ua3TcjwNNoSRUqx6Apump",
+    "marketCap": 2756189.076609262,
+    "time": "2026-03-05T13:37:51.672Z",
+    "timestamp": "2026-03-05T13:37:51.695Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Act I : The AI Prophecy",
+    "symbol": "ACT",
+    "contract": "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump",
+    "marketCap": 13041401.54430629,
+    "time": "2026-03-05T13:37:51.672Z",
+    "timestamp": "2026-03-05T13:37:51.696Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "AU79",
+    "symbol": "AU79",
+    "contract": "AT13ipG8K4HDyEJm3H1ZVQV2Bw8sihewoLQReSMsYo3o",
+    "marketCap": 3589749.6408858085,
+    "time": "2026-03-05T13:37:51.672Z",
+    "timestamp": "2026-03-05T13:37:51.697Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Eric Trump Accuses Banks of Blocking Stablecoins to Guard Their Own Profit Margins  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T13:53:14.614Z",
+    "timestamp": "2026-03-05T13:53:14.651Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "OKB Surges 32% After Intercontinental Exchange Announces OKX Investment  coindoo.com",
+    "url": "",
+    "time": "2026-03-05T13:53:14.614Z",
+    "timestamp": "2026-03-05T13:53:14.653Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Morgan Stanley provides $500 million loan facility to Core Scientific with option to extend to $1 billion  theblock.co",
+    "url": "",
+    "time": "2026-03-05T13:53:14.614Z",
+    "timestamp": "2026-03-05T13:53:14.655Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 13,039.99989542 ETH From: 0x5877626d3cdc57317d861207244a4eea28decf9e To: 0xd01607c3c5ecaba394d8be377a08590149325722 Block: 24571219 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:57:51.973Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 10,582.16715418 ETH From: 0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea To: 0x3606f0f14828cbf4962a284a4bff93bc94b63665 Block: 24571272 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:57:51.979Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "CoinCodeCap",
+    "text": "&#036;BTC BTC has successfully broken above the 70K–71K supply/accumulation zone and is now holding above it, showing strength. The breakout was impulsive, indicating strong buying pressure. As long as price sustains above this flipped support zone, continuation toward 74K–76K is likely. If we see a",
+    "keywords": [
+      "buy",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:57:51.983Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "Bitget_Announcements",
+    "text": "🔥 Bitget has launched a new CandyBomb promotion. Trade futures to grab a share of 250,000 BSB&#33; 🤑 ⏰ Promotion period: March 5, 2026, 6:00 PM – March 15, 2025, 6:00 PM (UTC+8) Join Now ⬇️ https://www.bitget.com/events/candy-bomb/detail/233143 About Bitget 🔹 Website 🌐 &nbsp; | Twitter ❌ Telegra",
+    "keywords": [
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:57:51.986Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "Bitget_Announcements",
+    "text": "🔥 OPNUSDT now launched for futures trading and trading bots ⭐️ Bitget has launched OPNUSDT for futures trading with a maximum leverage of 20, along with support for futures trading bots, on March 5, 2026(UTC+8). ⭐️ ✍️ Welcome to try futures trading via our official website or Bitget APP. More Detai",
+    "keywords": [
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:57:51.990Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【Avantis 开放第二季空投申领】 Foresight News 消息，Base 生态去中心化衍生品交易所 Avantis 已开放第二季空投申领，申领将分 4 天发放，自今日起接下来每天 19:30 解锁 25%，申领时限均为 24 小时。 https://foresightnews.pro/news/h5Detail/98999",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T13:57:51.992Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "Crypto Banter",
+    "title": "Arthur Hayes: Israel-Iran War Will End in ** Days [It’s All Calculated]",
+    "videoId": "-0Lysi1bz7Q",
+    "url": "https://youtube.com/watch?v=-0Lysi1bz7Q",
+    "time": "2026-03-05T13:58:39+00:00",
+    "timestamp": "2026-03-05T14:04:17.130Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Ex U.S. Combat Medic Claims U.S. Global Conflicts Tie to Financial War Involving XRP  thecryptobasic.com",
+    "url": "",
+    "time": "2026-03-05T14:04:23.000Z",
+    "timestamp": "2026-03-05T14:04:23.034Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Solana Unlocks Over 2.3 Million SOL from Unknown Wallet  square.binance.com",
+    "url": "",
+    "time": "2026-03-05T14:04:23.000Z",
+    "timestamp": "2026-03-05T14:04:23.036Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Iran Launches Drone Attack on U.S. Military Headquarters in Erbil  square.binance.com",
+    "url": "",
+    "time": "2026-03-05T14:04:23.000Z",
+    "timestamp": "2026-03-05T14:04:23.038Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "SYNAPZ",
+    "symbol": "SYNAPZ",
+    "contract": "HfJvxwLQeHeiDz8e91RWSwMm3R1pLh1vyjLoSr5gpump",
+    "marketCap": 592644.3920363339,
+    "time": "2026-03-05T14:04:28.670Z",
+    "timestamp": "2026-03-05T14:04:28.691Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Believe",
+    "symbol": "BELIEVE",
+    "contract": "BLVxek8YMXUQhcKmMvrFTrzh5FXg8ec88Crp6otEaCMf",
+    "marketCap": 1685462.6418012055,
+    "time": "2026-03-05T14:04:28.670Z",
+    "timestamp": "2026-03-05T14:04:28.692Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Opal",
+    "symbol": "OPAL",
+    "contract": "2PzS5SYYWjUFvzXNFaMmRkpjkxGX6R5v8DnKYtdcpump",
+    "marketCap": 708084.8442061228,
+    "time": "2026-03-05T14:04:28.670Z",
+    "timestamp": "2026-03-05T14:04:28.693Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Wall Street’s crypto embrace: Morgan Stanley files for Spot Bitcoin ETF  ambcrypto.com",
+    "url": "",
+    "time": "2026-03-05T14:11:00.019Z",
+    "timestamp": "2026-03-05T14:11:00.055Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Methods for Generating Bitcoin Income | Strategy World 2026  BitcoinMagazine",
+    "url": "",
+    "time": "2026-03-05T14:11:00.019Z",
+    "timestamp": "2026-03-05T14:11:00.057Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "AI Agents and the Next Wave of Crypto Demand | The Breakdown  TheBreakdown",
+    "url": "",
+    "time": "2026-03-05T14:11:00.019Z",
+    "timestamp": "2026-03-05T14:11:00.058Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Solana",
+    "symbol": "SOL",
+    "contract": "So11111111111111111111111111111111111111112",
+    "marketCap": 51688564080.40112,
+    "time": "2026-03-05T14:11:05.624Z",
+    "timestamp": "2026-03-05T14:11:05.645Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "DOWGE",
+    "symbol": "DJI6930",
+    "contract": "DQnkBM4eYYMnVE8Qy2K3BB7uts1fh2EwBVktEz6jpump",
+    "marketCap": 5541676.07666496,
+    "time": "2026-03-05T14:11:05.624Z",
+    "timestamp": "2026-03-05T14:11:05.646Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "cryptoquant_alert",
+    "text": "🚨 1,553.17 #BTC (&#036;106,176,717) aggregated inflows to #Coinbase Pro View Chart | @cryptoquant_alert",
+    "keywords": [
+      "alert",
+      "base"
+    ],
+    "timestamp": "2026-03-05T14:15:35.305Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "infinityhedge",
+    "text": "IRANIAN REVOLUTIONARY GUARDS SAY THEY TARGETED U.S. AIRCRAFT CARRIER LINCOLN WITH 4 BALLISTIC MISSILES - STATE MEDIA US MILITARY: AIRCRAFT CARRIER LINCOLN NOT HIT BY IRAN. THE MISSILES LAUNCHED DID NOT EVEN COME CLOSE",
+    "keywords": [
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:15:35.310Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 12,897.99971032 ETH From: 0xbce98108c113caae955d4b5e82b028d6195ff55a To: 0x5877626d3cdc57317d861207244a4eea28decf9e Block: 24571357 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:15:35.314Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 12,897.99999179 ETH From: 0x5877626d3cdc57317d861207244a4eea28decf9e To: 0xd01607c3c5ecaba394d8be377a08590149325722 Block: 24571393 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:15:35.317Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【Coinbase 上线 OPINION（OPN）】 Foresight News 消息，Coinbase 宣布 OPINION（OPN）现已在 coinbase.com 和 Coinbase 应用程序中上线。 https://foresightnews.pro/news/h5Detail/99003",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:15:35.320Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【数据：若 ETH 跌破 2,014 美元，主流 CEX 累计多单清算强度将达 10.58 亿美元】 https://www.chaincatcher.com/article/2249856",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:15:35.322Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【Coinbase 已上线 OPINION (OPN)】 https://www.chaincatcher.com/article/2249861",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:15:35.325Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "Coin Bureau",
+    "title": "Blackrock's Crypto Trap",
+    "videoId": "YJn5RPCmB84",
+    "url": "https://youtube.com/watch?v=YJn5RPCmB84",
+    "time": "2026-03-05T14:00:51+00:00",
+    "timestamp": "2026-03-05T14:30:25.013Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "WhiteBIT Coin (WBT) listed on Kraken with EUR and USD trading pairs  finbold.com",
+    "url": "",
+    "time": "2026-03-05T14:30:30.664Z",
+    "timestamp": "2026-03-05T14:30:30.698Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "How US investigators traced $61M in crypto tied to romance scams across wallets  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T14:30:30.664Z",
+    "timestamp": "2026-03-05T14:30:30.700Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Chainlink Powered a Cross-Border Settlement Between Visa, ANZ, and Fidelity  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T14:30:30.664Z",
+    "timestamp": "2026-03-05T14:30:30.702Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "If you invested $1,000 in the top 10 cryptos when Trump took office – here’s what it’s worth today  finbold.com",
+    "url": "",
+    "time": "2026-03-05T14:37:09.867Z",
+    "timestamp": "2026-03-05T14:37:09.904Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "X Tests Built-In Crypto Wallet As Analyst Bets Big on XRP Access  dailycoin.com",
+    "url": "",
+    "time": "2026-03-05T14:37:09.867Z",
+    "timestamp": "2026-03-05T14:37:09.905Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Cardano can now be used to pay at 137 Spar stores across Switzerland  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T14:37:09.867Z",
+    "timestamp": "2026-03-05T14:37:09.907Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "binancekillers",
+    "text": "🔥 GEM SIGNAL: &#036;ZIG 🔥 ➖ ➖ ➖ ➖ ➖ ➖ ➖ Exchanges: ByBit, Bitget, MEXC, Gate &#036;ZIG has consolidated above &#036;0.035 and confirmed a double bottom, &#036;ZIG is about to announce one of the biggest news in the market of the year, and it’s about to start it’s next wave. Enjoy This is an an eas",
+    "keywords": [
+      "gem",
+      "buy"
+    ],
+    "timestamp": "2026-03-05T14:41:54.916Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "Crypto_FinderNews",
+    "text": "🌐 GLOBAL CRYPTOCURRENCY COMMUNITY (GCC) &#036;GCC is more than a token; it’s a Solana based ecosystem launched last December, built to create trends, not follow them. Our mission is rooted in community strength, unity, and sustainable growth, focusing on organic connections rather than fake hype, b",
+    "keywords": [
+      "solana",
+      "eth",
+      "base",
+      "token",
+      "launch",
+      "AI",
+      "contract"
+    ],
+    "timestamp": "2026-03-05T14:41:54.921Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 Transfer: 29,446,874 USDC From: 0xab851a4fd55e040b3958064028eb9eddcbcda33b To: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) Block: 24591892 Details #USDCx2",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:41:54.924Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 Transfer: 35,000,000 USDC From: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) To: 0x9649788adfbdfc2bd39a0058be57ed36583c6043 Block: 24591898 Details #USDCx2",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:41:54.927Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "defimon_alerts",
+    "text": "💌 Onchain message: Transaction 📤 From: 0x62d9d6c24f37d969060c0587d3b5fcbfbf971e92 📥 To: 0x0000e83906facc4132c520403ae99ee0ab8feaa7 🌎 Network: base 💬 Message: Good work, I fucked up the unstaked method. If you&#39;re a whitehat, I would pay you a bounty worth way more than the amount you&#39;d h",
+    "keywords": [
+      "eth",
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:41:54.929Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SolanaTrending",
+    "text": "DEXSCREENER UPDATED https://dexscreener.com/solana/arnmdcohmjgxdoumbqnaahudvp9e35mkdumxypajvmnj CLAUDEWAR is a memecoin tied to CLAUDEWAR.INFO which i am building in public. On live stream now: https://pump.fun/coin/9fnRi189Xd11iz7Hee47mZuxK6wM3zDpsvgsAkgZpump The narrative is CLAUDE AI, ANTHROPIC, ",
+    "keywords": [
+      "pump",
+      "solana",
+      "AI",
+      "memecoin",
+      "CA:",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T14:41:54.932Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "coingape",
+    "text": "📉 Bitcoin Price Still Risks Decline If Iran War Mirrors Ukraine War Market Reaction, JPMorgan Warns This came as they noted that stocks did not initially sell off until about a month after the Ukraine war began, a similar pattern that played out for BTC back then. https://coingape.com/bitcoin-price",
+    "keywords": [
+      "sell",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:41:54.934Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【采购代理系统 Lio 完成 a16z 领投的 3000 万美元 A 轮融资】 Foresight News 消息，用于采购的 agent 系统 Lio 完成由 Andreessen Horowitz 领投的 3000 万美元 A 轮融资，SV Angel、Harry Stebbings 和 Y Combinator 等参投。Lio 是一个多代理 AI 系统，致力于解决企业采购流程中的低效问题，可在现有采购软件和 ERP 系统之上自主执行端到端工作流程，无需进行系统替换。 https://foresightnews.pro/news/h5Detail/99004",
+    "keywords": [
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T14:41:54.937Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【数据：今日美国比特币 ETF 净流入 5,187 枚 BTC，以太坊 ETF 净流入 43,282 枚 ETH】 https://www.chaincatcher.com/article/2249864",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:41:54.940Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "bitpush",
+    "text": "【今日美国比特币 ETF 净流入 5187 枚 BTC，以太坊 ETF 净流入 43282 枚 ETH】 比推消息， 据 Lookonchain 监测，今日美国比特币 ETF 净流入 5,187 枚 BTC（价值 3.7608 亿美元），以太坊 ETF 净流入 43,282 枚 ETH（价值 9176 万美元），Solana ETF 净流入 205,711 枚 SOL（价值 1872 万美元）。 来源： https://x.com/lookonchain/status/2029202214309576735",
+    "keywords": [
+      "solana",
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T14:41:54.942Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Are All Crypto Exchanges Equally Safe? Proof-of-Reservers Are Different  u.today",
+    "url": "",
+    "time": "2026-03-05T14:48:30.677Z",
+    "timestamp": "2026-03-05T14:48:30.714Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Trump-linked American Bitcoin pushes holdings to 6,500 BTC amid mining-fueled treasury expansion as stock jumps  theblock.co",
+    "url": "",
+    "time": "2026-03-05T14:48:30.677Z",
+    "timestamp": "2026-03-05T14:48:30.715Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "'Ripple Is Next For Fed Access,' XRP Commentator Says—But Is That True?  feeds2.benzinga.com",
+    "url": "",
+    "time": "2026-03-05T14:48:30.677Z",
+    "timestamp": "2026-03-05T14:48:30.717Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Powerful Electric Chicken",
+    "symbol": "PEC",
+    "contract": "2rC1nTbdFEWZoqyfWnCezLwWh2VDd4W2WEBbCRBHpump",
+    "marketCap": 1775510.923739725,
+    "time": "2026-03-05T14:48:36.321Z",
+    "timestamp": "2026-03-05T14:48:36.341Z"
+  },
+  {
+    "source": "x-twitter",
+    "handle": "nansen_ai",
+    "text": "A 30D Smart Trader [0x902a] bought $30K worth of $AIXBT 13 hours ago.\n\nSome of this Smart Trader's notable wins:\n- $659.81K on $TST (2,887% ROI),\n- $343.59K on $4 (125% ROI)\n\nTheir highest ROI was for $KUMA, realised $27.5K, a 7,499% gain. https://t.co/u8yvg6fhsl",
+    "tickers": [
+      "AIXBT",
+      "TST",
+      "KUMA"
+    ],
+    "time": "2026-03-05T14:55:02.439Z",
+    "timestamp": "2026-03-05T14:57:26.779Z"
+  },
+  {
+    "source": "x-twitter",
+    "handle": "nansen_ai",
+    "text": "RT @nansen_jp: Nansenでミームコインのインサイダーウォレットを特定する方法 🧵\n\n例: $PENGUIN（Solana）\n\nPnL上位のウォレットが何をしていたか、5ステップで丸裸にする。 https://t.co/07mn0Fkw3h",
+    "tickers": [
+      "PENGUIN"
+    ],
+    "time": "2026-03-05T14:55:02.439Z",
+    "timestamp": "2026-03-05T14:57:26.783Z"
+  },
+  {
+    "source": "x-twitter",
+    "handle": "nansen_ai",
+    "text": "Nansenでミームコインのインサイダーウォレットを特定する方法 🧵\n\n例: $PENGUIN（Solana）\n\nPnL上位のウォレットが何をしていたか、5ステップで丸裸にする。 https://t.co/07mn0Fkw3h",
+    "tickers": [
+      "PENGUIN"
+    ],
+    "time": "2026-03-05T14:55:02.439Z",
+    "timestamp": "2026-03-05T14:57:26.787Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "Lark Davis",
+    "title": "They Don't Teach This in Schools",
+    "videoId": "ivijgZYQdyE",
+    "url": "https://youtube.com/watch?v=ivijgZYQdyE",
+    "time": "2026-03-05T15:01:14+00:00",
+    "timestamp": "2026-03-05T15:03:52.669Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Global Giant with Cryptocurrency Exchange is Preparing to Enter the US Market! Also Interested in the Turkish Market!  en.bitcoinsistemi.com",
+    "url": "",
+    "time": "2026-03-05T15:03:58.403Z",
+    "timestamp": "2026-03-05T15:03:58.439Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "LATEST:  SOL Strategies shares jumped nearly 21% on Wednesday after reporting its validator network grew to 33,568 wallets in February and staking revenue rose 69% YoY.  @coinmarketcap",
+    "url": "",
+    "time": "2026-03-05T15:03:58.403Z",
+    "timestamp": "2026-03-05T15:03:58.441Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "BCGame Coin",
+    "symbol": "BC",
+    "contract": "BCNT4t3rv5Hva8RnUtJUJLnxzeFAabcYp8CghC1SmWin",
+    "marketCap": 72292252.77287361,
+    "time": "2026-03-05T15:04:04.014Z",
+    "timestamp": "2026-03-05T15:04:04.035Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "Crypto_FinderNews",
+    "text": "Intorducing Bitcoin-Battles&#33; Bitcoin-Battles is a skill-based PvP crypto gaming platform where players compete 1v1 for real stakes. No platform edge just pure competition between players. 🎮 11 skill-based duel modes 💰 Stake BTC, SOL, or USDT ⚡ Fast head-to-head matches 🏆 Winner takes the stac",
+    "keywords": [
+      "base",
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.281Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 🔵 🔵 Transfer: 100,343,544 USDC From: 0x6aceb4caba81fa6a8065059f3a944fb066a10fac To: 0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b (Syrup: syrupUSDC Token) Block: 24591968 Details #USDCx4",
+    "keywords": [
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.289Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 🔵 🔵 Transfer: 100,343,544 USDC From: 0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b (Syrup: syrupUSDC Token) To: 0x859c9980931fa0a63765fd8ef2e29918af5b038c Block: 24591980 Details #USDCx4",
+    "keywords": [
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.292Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SpotOnChain",
+    "text": "Amid recent market volatility, some major players are letting go of their &#036;BTC and &#036;ETH 👇 🔶 Owen Gunden , a #Bitcoin OG holding over 10,000 &#036;BTC, deposited 395.8 &#036;BTC (&#036;43.7M) into #Kraken ~8 hours ago. ➡️ Over the last 9 days, he’s offloaded 2,587 &#036;BTC (&#036;289M) a",
+    "keywords": [
+      "whale",
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.295Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SpotOnChain",
+    "text": "🚨 BREAKING: &#036;117M in assets stolen from @Balancer in the last 2 hours after a major hack&#33;&#33;&#33; 🔹 Assets stolen are across multiple chains: #Ethereum , #Base , #Optimism , #Sonic , #Polygon , #Berachain – mainly in Liquid Staking Tokens (LSTs) of &#036;ETH. Top 5 stolen assets: • 7,83",
+    "keywords": [
+      "whale",
+      "alert",
+      "eth",
+      "base",
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.298Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SpotOnChain",
+    "text": "This smart trader flipped from shorts to longs today — and is still in profit&#33; 👇 In the past 26 hours, trader “0x926” on #Hyperliquid closed 4 short positions on &#036;BTC & &#036;SOL, banking &#036;4.74M . Now they’re long on &#036;ETH (25x), &#036;BTC (20x), &#036;SOL (20x) & &#036;UNI (10x) ",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.302Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SpotOnChain",
+    "text": "Whales are loading up BIG on &#036;HYPE over the past 2 days&#33; 1️⃣ Whale “0x5AE” spent 11.21M &#036;USDC to acquire 285,821 &#036;HYPE at an average price of &#036;39.23 — still holding 2.79M &#036;USDC in reserve. 2️⃣ Whale “0x152” dropped 9.85M &#036;USDC for 249,073 &#036;HYPE at an average of",
+    "keywords": [
+      "whale",
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.305Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SpotOnChain",
+    "text": "⚠️ Large amounts of &#036;UNI have been flowing into exchanges in the past 6 hours&#33; 1️⃣ Two wallets, likely controlled by one whale, deposited all 1.71M &#036;UNI (&#036;15M) into #Binance ~3 hours ago—possibly losing &#036;1.44M (-8.8%). The whale accumulated these &#036;UNI tokens for &#036;16",
+    "keywords": [
+      "whale",
+      "base",
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.308Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SpotOnChain",
+    "text": "🔥 &#036;ETH still attracts MANY major market players despite recent market volatility&#33; 👀 🔹 Whale “0xe5c” purchased 36,445 &#036;ETH (&#036;114.5M) at &#036;3,154 today. Since Nov 2, this whale has: • Accumulated 488,217 &#036;ETH (~&#036;1.7B, of which &#036;505M was borrowed from #Aave ) fro",
+    "keywords": [
+      "whale",
+      "eth",
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.310Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SpotOnChain",
+    "text": "The giant whale \"0xe5c\" scooped up another 90,690 &#036;ETH (~&#036;254.3M) from #Binance at an average price of &#036;2,804 today, following a ~15% drop in #Ethereum this week&#33; 📉 The whale now holds 465,692 &#036;ETH (~&#036;1.26B) and has borrowed &#036;627.65M from #Aave to fuel these aggres",
+    "keywords": [
+      "whale",
+      "buy",
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.312Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SpotOnChain",
+    "text": "🚀 SpotOnChain enters a new chapter After 3+ years serving 400K+ users, we’re expanding our AI beyond SpotOnChain to partner platforms. 🔥 First partner: Hupzy — trade multiple DEXs (Hyperliquid, Aster, Polymarket…) in one account, powered by AI & earn &#036;HUPZY. 🎁 300K &#036;HUPZY reserved for S",
+    "keywords": [
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T15:08:35.315Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "IoTeXChannel",
+    "text": "📢 x402 is trending... but we’ve been building it since May&#33; 😉 Long before it went viral, Coinbase’s pull request already added IoTeX network + USDC support - making any AI agent on IoTeX ready for on-chain payments 💸 👉 Read Here That’s exactly what we showcased in Quicksilver Alpha - where a",
+    "keywords": [
+      "buy",
+      "base",
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T15:08:35.317Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "IoTeXChannel",
+    "text": "📢 IoTeX x BeInCrypto 100 Awards 2025 IoTeX is nominated for Best Ecosystem Program for Developers thanks to the impact of Crypto&#39;s Got Talent. What started as an idea to give builders a real stage is now a major launchpad for early DePIN and AI projects. Hundreds applied. Dozens pitched live. M",
+    "keywords": [
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.319Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "IoTeXChannel",
+    "text": "🏆 IoTeX x BeInCrypto 100 Awards - Ceremony Time 🌍 Thanks again to everyone who supported our nomination for Best Ecosystem Program for Developers at the BeInCrypto 100 Awards . Your votes and support helped highlight what started as a simple idea with Crypto’s Got Talent, now becoming a trusted la",
+    "keywords": [
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.321Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "IoTeXChannel",
+    "text": "🏆 IoTeX x BeInCrypto 100 Awards - We Did It&#33; 🌍 Hey everyone&#33; Quick update - we won Best Ecosystem Program for Developers at the BeInCrypto 100 Awards&#33; Huge thank you to everyone who backed us, voted, shared and kept pushing this crazy idea that started with Crypto&#39;s Got Talent and ",
+    "keywords": [
+      "eth",
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.322Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "IoTeXChannel",
+    "text": "🚨 IIP-55 is LIVE for voting 🚨 This proposal introduces: - Rotating witness committee - Per-token security settings - Scalable cross-chain infra for the next phase of IoTeX growth 🗳️ Vote now - voting closes Dec 24 👉 https://hub.iotex.io/governance/iip-55-dynamic-witness-committee-for-iotube",
+    "keywords": [
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.324Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【麻吉向 HyperLiquid 存入 10 万 USDC 增加 ETH 多头仓位，目前浮盈超 20 万美元】 Foresight News 消息，据 Onchain Lens 监测，麻吉向 HyperLiquid 存入 10 万枚 USDC 以增加其 ETH 多头仓位（25 倍杠杆），目前浮盈超 20 万美元。 https://foresightnews.pro/news/h5Detail/99007",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.326Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【OpenEden 收益型稳定币 USDO 与 FalconX 集成】 Foresight News 消息，OpenEden 发行的收益型稳定币 USDO 已与机构加密资产交易平台 FalconX 集成。此举使 FalconX 的机构客户能够在保持交易和融资流动性的同时，对闲置资本进行美国国债收益投资。此前，OpenEden 推出了多策略收益产品 PRISM，该产品由 FalconX Global 旗下量化资产管理部门 Monarq Asset Management 负责管理。OpenEden 持有百慕大金融管理局颁发的数字资产业务许可证。 https://foresightnews.pro/",
+    "keywords": [
+      "gem",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.328Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【Coinbase 将上线 OPN 永续合约】 Foresight News 消息，Coinbase 将上线 OPN 永续合约，若流动性条件得到满足并且在交易得到支持的地区， OPN-PERP 市场将会开放。 https://foresightnews.pro/news/h5Detail/99010",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.329Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【Polygon 推出专为代理经济构建的链上工具包 Polygon Agent CLI】 Foresight News 消息，Polygon 推出了一款专为代理经济构建的链上工具包 Polygon Agent CLI，只需一次安装即可使用，其中包括钱包、代币、兑换、桥接、身份验证和支付功能，最终结算在 Polygon 上。Polygon Agent CLI 使用稳定币支付所有费用，原生支持 ERC-8004，x402 支持允许代理商使用稳定币按请求支付 API 和数据源的费用，兼容 Claude 和 Openclaw。 https://foresightnews.pro/news/h5Deta",
+    "keywords": [
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T15:08:35.331Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【FlowDesk 关联钱包向币安转入总价值 2810 万美元的 LINK 和 ETH】 https://www.chaincatcher.com/article/2249871",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.332Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【Coinbase 将上线 OPN 永续期货合约】 https://www.chaincatcher.com/article/2249874",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.334Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "wublock",
+    "text": "代币化美股平台 xStocks 宣布推出统一执行层 xChange，旨在整合 Ethereum 和 Solana 上的代币化股票流动性。xChange 采用原子化结算机制，确保交易要么按报价全额成交，要么完全不执行，从而消除部分成交的风险。xStocks 表示所有资产均与底层美股 1:1 挂钩并全额抵押，且价格锚定实时公开市场。 — link",
+    "keywords": [
+      "solana",
+      "eth"
+    ],
+    "timestamp": "2026-03-05T15:08:35.336Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "cointime_cn",
+    "text": "FlowDesk 关联钱包向币安转入总价值 2810 万美元的 LINK 和 ETH 据 Onchain Lens 监测，一个与 FlowDesk 相关联的钱包在过去 20 分钟内向币安交易所转入了 161 万枚 LINK（约 1519 万美元）和 6091 枚 ETH（约 1292 万美元）。此次转账总价值约 2810 万美元。 -Read More",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:08:35.337Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "(╯°□°）╯︵ ┻━┻\n           \n          Can't  retrieve data. Possible maintenance. Please try again in a\n          moment.",
+    "url": "",
+    "time": "2026-03-05T15:15:08.191Z",
+    "timestamp": "2026-03-05T15:15:08.224Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "XRP Rally Could Exceed 600%, Analyst Says  techgaged.com",
+    "url": "",
+    "time": "2026-03-05T15:15:08.191Z",
+    "timestamp": "2026-03-05T15:15:08.227Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "2\n             \n                2\n             \n                1\n             \n                1",
+    "url": "",
+    "time": "2026-03-05T15:15:08.191Z",
+    "timestamp": "2026-03-05T15:15:08.228Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "2\n             \n                1\n             \n                1",
+    "url": "",
+    "time": "2026-03-05T15:15:08.191Z",
+    "timestamp": "2026-03-05T15:15:08.230Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Crypto theft returns with real-world tactics to target known wallet holder  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T15:15:08.191Z",
+    "timestamp": "2026-03-05T15:15:08.232Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Buttcoin",
+    "symbol": "Buttcoin",
+    "contract": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+    "marketCap": 15045958.271383975,
+    "time": "2026-03-05T15:15:13.816Z",
+    "timestamp": "2026-03-05T15:15:13.837Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Grokius Maximus",
+    "symbol": "GROKIUS",
+    "contract": "67ezHLk8PUkjJCXjmmgPbx85VowA52ghfRXa9A8Tpump",
+    "marketCap": 932453.8278226199,
+    "time": "2026-03-05T15:15:13.816Z",
+    "timestamp": "2026-03-05T15:15:13.838Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "WAGMI",
+    "symbol": "WAGMI",
+    "contract": "GnM6XZ7DN9KSPW2ZVMNqCggsxjnxHMGb2t4kiWrUpump",
+    "marketCap": 623524.8322389656,
+    "time": "2026-03-05T15:15:13.816Z",
+    "timestamp": "2026-03-05T15:15:13.839Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bybit TradFi Stock Festival announces trading competition with 100,000 USDT prize pool  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T15:21:45.652Z",
+    "timestamp": "2026-03-05T15:21:45.686Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin Mining Cost Climbs to $70,027 Per BTC  thecryptobasic.com",
+    "url": "",
+    "time": "2026-03-05T15:21:45.652Z",
+    "timestamp": "2026-03-05T15:21:45.688Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Toronto home sales fall to 10-month low as trade war weighs  @reutersbiz",
+    "url": "",
+    "time": "2026-03-05T15:21:45.652Z",
+    "timestamp": "2026-03-05T15:21:45.689Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: WHERE IS AN AIRBUS? Symbol: WHEIR Description: No description available... Token CA: AcfzQPQ9LMnt5WnEDvWsmXGsSsQumg3NvhHbjMQGpump MCAP: &#036;15,954.00 Volume: &#036;10,593.00 Liquidity: &#036;16,144.00 Age: 546.5 minutes 🔮 Predicted Multiplier: 3.79x 📊 Token Metr",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T15:26:20.889Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: Ice Cream Symbol: Iseekareem Description: No description available... Token CA: 9E9RdJ4c5XLFYSNkNNSnUKioVh6DvSqs35cHKdkdpump MCAP: &#036;24,680.00 Volume: &#036;46,528.00 Liquidity: &#036;20,137.00 Age: 660.8 minutes 🌐 Links: - website 🔮 Predicted Multiplier: 1.84",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T15:26:20.894Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: Runner - Marathon Bu Symbol: RUNNER Description: No description available... Token CA: 9FQmiSsKeH1b2G5TgANYssAuZ1sFawUj23wVtT4rpump MCAP: &#036;21,041.00 Volume: &#036;10,061.00 Liquidity: &#036;18,841.00 Age: 228.7 minutes 🌐 Links: - twitter - website - telegram \ud83d",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T15:26:20.897Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DEXToolsNews",
+    "text": "Quick heads up 👀 If you haven’t checked it yet, the KOLs Dashboard on DEXTools makes it much easier to see who’s actually cooking and who’s getting cooked. You can sort columns, customize your board, switch between 1 or 7 days, run quick searches, and jump straight to KOLs’ socials to track them in",
+    "keywords": [
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T15:26:20.900Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DEXToolsNews",
+    "text": "🆕 @krownnetwork is now live on DEXTools&#33; 🔥 🚀 ℹ️ Krown Network, a Layer-1 blockchain ecosystem, officially launched its mainnet on January 3, 2026. Krown is designed for high-speed, affordable transactions with native quantum-resistant security to protect against emerging quantum computing thr",
+    "keywords": [
+      "launch",
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T15:26:20.903Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DEXToolsNews",
+    "text": "🖥 DEXTools is now fully customizable. You can move charts, tables and dashboards around and set the app exactly how you like to trade. ⚙️ If you haven’t checked the new UI yet, jump into the app and customize your layout&#33; It’s smoother, cleaner and way more flexible. 🚀 ➡️ https://www.dextools.",
+    "keywords": [
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T15:26:20.906Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DEXToolsNews",
+    "text": "🚀 DEXTools Trading Bot goes multi-chain&#33; Live on Solana , and now expanded to Ethereum , BNB Chain and Base&#33; ⚡ Move faster on new launches 💎 Catch the next x100 gem before anyone else 👇 Trade now here: https://www.dextools.io/app/user/account",
+    "keywords": [
+      "gem",
+      "solana",
+      "eth",
+      "base",
+      "launch",
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T15:26:20.908Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DEXToolsNews",
+    "text": "Early users can now claim free AI Agents on PerpTools&#33; 🤖 🧠 Autonomous AI trading 📈 Perps + prediction markets, one platform 🧠 Built by the OGs behind DEXTools Claim your free agent and get access to the upcoming airdrop 👉 app.perptools.ai",
+    "keywords": [
+      "AI",
+      "agent",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T15:26:20.911Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DEXToolsNews",
+    "text": "🎯 🥷 Track sniper activity on new token launches&#33; Buys, partial sells, current holdings, and % of total supply. Have you ever sniped a launch? 👀",
+    "keywords": [
+      "buy",
+      "sell",
+      "token",
+      "launch"
+    ],
+    "timestamp": "2026-03-05T15:26:20.914Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DEXToolsNews",
+    "text": "Your watchlist, always on-screen. Track your favorite tokens with DEXTools Favorites Widget&#33; ⭐️ 💎 Android: https://play.google.com/store/apps/details?id=io.dextools.app&hl=en&gl=US&pli=1 iOS: https://apps.apple.com/es/app/dextools/id1628834724?l=en-GB",
+    "keywords": [
+      "token",
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T15:26:20.916Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "TheBlockBeats",
+    "text": "AI健康数据项目HEALTH近期完成300万美元融资， IBC等参投 BlockBeats 消息，3 月 5 日，AI 健康科技项目 HEALTH 近日回顾项目发展里程碑。团队此前已完成 300 万美元融资，投资方包括 IBC、Gemhead Capital、Castrum Capital、M2M 以及 BD Ventures。 据悉，HEALTH 由 Roy Labs 团队开发，致力于结合 AI 与区块链技术，构建以用户为核心的健康数据经济体系。其核心产品 PULSE App 通过心率监测、活动追踪等健康数据记录，帮助用户更好地理解与管理自身健康，并探索 Health-to-Earn 的应用",
+    "keywords": [
+      "gem",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:26:20.918Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ODaily_News",
+    "text": "🔔 重要快讯 Polygon推出AI代理链上工具包Polygon Agent CLI 查看原文",
+    "keywords": [
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T15:26:20.920Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【Polygon 推出 AI 代理链上工具包 Polygon Agent CLI】 https://www.chaincatcher.com/article/2249878",
+    "keywords": [
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T15:26:20.922Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "bitpush",
+    "text": "【Polygon 推出 AI 代理链上工具包 Polygon Agent CLI】 比推消息，Polygon 宣布推出 AI 代理链上工具包 Polygon Agent CLI，支持 AI 代理创建钱包、转移稳定币、进行跨链桥接、执行 Swap 以及基于 ERC-8004 标准注册链上身份，并且能在 Polygon 网络上完成结算，让开发者能够快速构建可进行资金管理和交易的链上代理。",
+    "keywords": [
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T15:26:20.924Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "President Trump commits tech giants to cover power costs amid AI data center rush  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T15:41:36.633Z",
+    "timestamp": "2026-03-05T15:41:36.666Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "It looks like Jez San(@aerobatic) has sold 6,091 $ETH($12.92M) and 1.618M $LINK($15.19M).\n\nTwo days ago, wallets linked to Jez San moved the following assets to two new wallets:\n\n1.618M $LINK($15.19M)",
+    "url": "",
+    "time": "2026-03-05T15:41:36.633Z",
+    "timestamp": "2026-03-05T15:41:36.668Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Revolut seeks de novo banking charter with OCC  theblock.co",
+    "url": "",
+    "time": "2026-03-05T15:41:36.633Z",
+    "timestamp": "2026-03-05T15:41:36.669Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Kabuto",
+    "symbol": "KABUTO",
+    "contract": "A9E2AopuG56LWYiXsvGLLTcLjUjQ539PY6k5Fhfepump",
+    "marketCap": 534466.3882014473,
+    "time": "2026-03-05T15:41:42.189Z",
+    "timestamp": "2026-03-05T15:41:42.210Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Xaman Founder Warns XRP Users: “There Is No Xaman Browser Plugin” as Fake Extensions Emerge  thecryptobasic.com",
+    "url": "",
+    "time": "2026-03-05T15:48:14.246Z",
+    "timestamp": "2026-03-05T15:48:14.283Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "IRS proposes letting crypto exchanges like Coinbase require electronic delivery of tax forms  theblock.co",
+    "url": "",
+    "time": "2026-03-05T15:48:14.246Z",
+    "timestamp": "2026-03-05T15:48:14.285Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Core Scientific Secures Up to $1 Billion From Morgan Stanley for Pivot From Bitcoin Mining to AI  decrypt.co",
+    "url": "",
+    "time": "2026-03-05T15:48:14.246Z",
+    "timestamp": "2026-03-05T15:48:14.286Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "NoLimitGains",
+    "symbol": "NoLimit",
+    "contract": "4nURS6qxY9bCEhramG2VZfnphJZyzis5EE86w5qLpump",
+    "marketCap": 766544.2228811814,
+    "time": "2026-03-05T15:48:19.848Z",
+    "timestamp": "2026-03-05T15:48:19.870Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "defimon_alerts",
+    "text": "🚨 STO Protocol - Loss &#036;16.1K (2026-02-23) Token: &#036;STO (no CoinGecko listing) MC: Unknown TVL: &#036;5.65K (STO/WBNB pair) Type: Logic Error — Deflationary Sell-Burn Drain The STO token burns sold tokens from the PancakePair on every subsequent sell via &#092;_executePendingSellBurn() , wh",
+    "keywords": [
+      "sell",
+      "token",
+      "listing",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:52:49.628Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: House Air Symbol: HouseAir Description: No description available... Token CA: Be9reB2pVFrd61AYaLnjHuu5rp9G1cyPNXQD5v4Dpump MCAP: &#036;31,495.00 Volume: &#036;43,328.00 Liquidity: &#036;23,039.00 Age: 94.6 minutes 🌐 Links: - twitter 🔮 Predicted Multiplier: 1.52x \ud83d",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T15:52:49.632Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: 51st State of Americ Symbol: GREENLAND Description: No description available... Token CA: AfVvZ58yVoyzs7ZUmgkGyZBYafLywaoAHwWhukPHpump MCAP: &#036;30,612.00 Volume: &#036;19,997.00 Liquidity: &#036;22,709.00 Age: 132.5 minutes 🌐 Links: - twitter 🔮 Predicted Multip",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T15:52:49.635Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: 4 HAMSTERS Symbol: HAMSTERS Description: No description available... Token CA: 2p4ZtANE8KvC11u6MH5Ec5EzZQiPA1zN7FJGD8Cjpump MCAP: &#036;19,515.00 Volume: &#036;10,594.00 Liquidity: &#036;18,135.00 Age: 293.2 minutes 🌐 Links: - twitter - website 🔮 Predicted Multipl",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T15:52:49.638Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: Performative Mom Symbol: MEGHAN Description: No description available... Token CA: Fr5WTrJ7CtHShpzwabDzHVRgNZEV7QoZKDeh4oecpump MCAP: &#036;17,349.00 Volume: &#036;34,592.00 Liquidity: &#036;17,040.00 Age: 362.7 minutes 🌐 Links: - twitter - website 🔮 Predicted Mul",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T15:52:49.641Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: COCK COIN Symbol: COCK Description: No description available... Token CA: Axdd2DEpsQgTZ71ZTZwHyQ65iBpGA2p8d3Lm3sLopump MCAP: &#036;24,999.00 Volume: &#036;11,190.00 Liquidity: &#036;20,462.00 Age: 1250.2 minutes 🌐 Links: - twitter - website 🔮 Predicted Multiplier:",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T15:52:49.643Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: Swag The Synthesize Symbol: Swag Description: No description available... Token CA: FiNvK1WNdcdJJMLQDakZ5vGFTr5opAHCqd6GR2rTpump MCAP: &#036;15,958.00 Volume: &#036;30,751.00 Liquidity: &#036;16,347.00 Age: 635.6 minutes 🌐 Links: - twitter - website 🔮 Predicted Mu",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T15:52:49.645Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "IoTeXChannel",
+    "text": "🚨 SCAM ALERT Fake posts are circulating offering “refunds” via ⚠️ event-iotex[.]com This is a wallet drainer. Do NOT connect your wallet. ✅ Our only official domain is http://iotex.io ✅ We will NEVER ask you to claim refunds via a link. Stay safe. Report & block. 🛡️",
+    "keywords": [
+      "alert",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:52:49.648Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "TheBlockBeats",
+    "text": "🔍 链上侦探 | Jez San地址抛售6,091枚ETH和161.8万枚LINK，价值超2800万美元 BlockBeats 消息，3 月 5 日，据 lookonchain 监测，英国知名游戏开发者，FunFair 创始人 Jez San（ @aerobatic ）地址已卖出 6,091 枚 ETH（约 1292 万美元）和 161.8 万枚 LINK（约 1519 万美元）。 两天前，与 Jez San 相关的钱包将以下资产转入两个新钱包： 161.8 万枚 LINK（约 1519 万美元） 6,091 枚 ETH（约 1292 万美元） 4353 万枚 ENA（约 471 万美元） ",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:52:49.651Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ForesightNews",
+    "text": "【Bitwise 再次从其以太坊 ETF 利润中捐赠 10 万美元支持开源开发者】 Foresight News 消息，资产管理公司 Bitwise 宣布，向以太坊开源开发者进行第二次年度捐赠，金额为 10 万美元。这笔捐赠是 Bitwise 承诺每年捐出其 Bitwise 以太坊 ETF（ETHW）总利润 10% 的一部分。资金将分配给两个非营利组织：Protocol Guild 和 PBS Foundation，用于支持以太坊协议研究开发和开源基础设施的维护。 https://foresightnews.pro/news/h5Detail/99014",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:52:49.654Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【Jez San 地址抛售 6,091 枚 ETH 和 161.8 万枚 LINK，价值超 2800 万美元】 https://www.chaincatcher.com/article/2249881",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:52:49.656Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DiarioBitcoin",
+    "text": "Partido Reform UK recibe millones de inversor cripto en Tailandia con participación en Tether https://www.diariobitcoin.com/criptomonedas/partido-reform-uk-recibe-millones-de-inversor-cripto-en-tailandia-con-participacion-en-tether/",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:52:49.658Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "cointime_cn",
+    "text": "FunFair创始人地址抛售6,091枚ETH和161.8万枚LINK，价值超2800万美元 据 lookonchain 监测，英国知名游戏开发者，FunFair 创始人 Jez San 地址已卖出 6,091 枚 ETH（约 1292 万美元）和 161.8 万枚 LINK（约 1519 万美元）。 -Read More",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:52:49.660Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "bitpush",
+    "text": "【Jez San 地址抛售 6,091 枚 ETH 和 161.8 万枚 LINK，价值超 2800 万美元】 比推消息，据 lookonchain 监测，英国知名游戏开发者，FunFair 创始人 Jez San（ @aerobatic ）地址已卖出 6,091 枚 ETH（约 1292 万美元）和 161.8 万枚 LINK（约 1519 万美元）。两天前，与 Jez San 相关的钱包将以下资产转入两个新钱包：161.8 万枚 LINK（约 1519 万美元）6,091 枚 ETH（约 1292 万美元）4353 万枚 ENA（约 471 万美元）32,907 枚 AAVE（约 360 ",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T15:52:49.663Z"
+  },
+  {
+    "id": "1rlh027",
+    "title": "It's Been a Rough Year",
+    "score": 522,
+    "permalink": "/r/CryptoCurrency/comments/1rlh027/its_been_a_rough_year/",
+    "sub": "cryptocurrency",
+    "source": "reddit",
+    "timestamp": "2026-03-05T15:59:15.037Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin Whales Now Distributing Heavily Above $73K: What Does BTC Need to Scale Higher?  thecryptobasic.com",
+    "url": "",
+    "time": "2026-03-05T15:59:24.518Z",
+    "timestamp": "2026-03-05T15:59:24.554Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Eric Trump Accuses Major Banks of Lobbying Against Crypto Yield Laws  coindoo.com",
+    "url": "",
+    "time": "2026-03-05T15:59:24.518Z",
+    "timestamp": "2026-03-05T15:59:24.556Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "XRP Bounced Hard From Support and Is Now Compressing: Two Levels Will Decide the Next Move  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T15:59:24.518Z",
+    "timestamp": "2026-03-05T15:59:24.558Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "Ivan on Tech",
+    "title": "Bitcoin bounce: Is the bull market back? #shorts",
+    "videoId": "QeIVB89tlXQ",
+    "url": "https://youtube.com/watch?v=QeIVB89tlXQ",
+    "time": "2026-03-05T15:56:39+00:00",
+    "timestamp": "2026-03-05T16:14:21.253Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Suspect in alleged $46 million US Marshals crypto theft arrested in Saint Martin, FBI says  theblock.co",
+    "url": "",
+    "time": "2026-03-05T16:14:26.770Z",
+    "timestamp": "2026-03-05T16:14:26.803Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin: Analysts are back to predicting $100K for BTC – THIS is why  ambcrypto.com",
+    "url": "",
+    "time": "2026-03-05T16:14:26.770Z",
+    "timestamp": "2026-03-05T16:14:26.804Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Morgan Stanley Files for Spot Bitcoin ETF Under Own Brand  cryptodnes.bg",
+    "url": "",
+    "time": "2026-03-05T16:14:26.770Z",
+    "timestamp": "2026-03-05T16:14:26.806Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "パンチ",
+    "symbol": "Punch",
+    "contract": "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+    "marketCap": 10748616.304237964,
+    "time": "2026-03-05T16:14:32.340Z",
+    "timestamp": "2026-03-05T16:14:32.361Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Wrapped Ether (Wormhole)",
+    "symbol": "WETH",
+    "contract": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+    "marketCap": 133341138.86235382,
+    "time": "2026-03-05T16:14:32.340Z",
+    "timestamp": "2026-03-05T16:14:32.362Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "ZERA",
+    "symbol": "ZERA",
+    "contract": "8avjtjHAHFqp4g2RR9ALAGBpSTqKPZR8nRbzSTwZERA",
+    "marketCap": 5367209.909984519,
+    "time": "2026-03-05T16:14:32.340Z",
+    "timestamp": "2026-03-05T16:14:32.363Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "whale_alert_io",
+    "text": "📉 📉 📉 Son of U.S. federal contractor arrested after alleged theft of seized crypto; on-chain links to 12,540 ETH (~&#036;36M) and ~&#036;20M moved in Oct 2024 Read Analysis",
+    "keywords": [
+      "eth",
+      "AI",
+      "contract"
+    ],
+    "timestamp": "2026-03-05T16:19:02.619Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "the_block_crypto",
+    "text": "Doppler token creation platform powering most Base launches expands to Solana",
+    "keywords": [
+      "solana",
+      "base",
+      "token",
+      "launch"
+    ],
+    "timestamp": "2026-03-05T16:19:02.624Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "cryptonarratives1",
+    "text": "So this is going to be a third day of &#036;150M+ volume for &#036;STRC, while trading at par STRC is progressively seasoning This means that Saylor can issue a lot of new STRC shares, buy BTC with the proceeds + issue MSTR (and buy BTC) to maintain a stable leverage ratio",
+    "keywords": [
+      "buy",
+      "AI",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.627Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: BUY Symbol: BUY Description: No description available... Token CA: A8PJA4gjSMnV1FdbaLshdwpFKet5tgaiFup8X14bpump MCAP: &#036;20,054.00 Volume: &#036;15,300.00 Liquidity: &#036;18,301.00 Age: 66.2 minutes 🔮 Predicted Multiplier: 2.53x 📊 Token Metrics: - Dev Holding:",
+    "keywords": [
+      "pump",
+      "alert",
+      "buy",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.630Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: Good Ai is always be Symbol: GoodAi Description: No description available... Token CA: CQ2XfGFpLvUmte5GRoRwTzutHdfWVB4yLsi3pNZgpump MCAP: &#036;18,766.00 Volume: &#036;14,852.00 Liquidity: &#036;17,716.00 Age: 214.0 minutes 🌐 Links: - twitter - telegram 🔮 Predicte",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.633Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: TIty Symbol: TITY Description: No description available... Token CA: 34Zynd8xH9JFAUGpt7eL7nSTa9646EpngsLXLu5hpump MCAP: &#036;25,164.00 Volume: &#036;29,862.00 Liquidity: &#036;20,614.00 Age: 242.3 minutes 🌐 Links: - twitter - website 🔮 Predicted Multiplier: 1.97x",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.635Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: XMAN Symbol: XMAN Description: No description available... Token CA: HCZhaZnwWA4HhZ5yWcrtbsw3WwQUMV2cBc4PUV5Xpump MCAP: &#036;22,045.00 Volume: &#036;88,284.00 Liquidity: &#036;19,201.00 Age: 511.4 minutes 🌐 Links: - twitter - website 🔮 Predicted Multiplier: 1.33x",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.638Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: YOROKOBI Symbol: YRKB Description: No description available... Token CA: A4uM6rsFTsULSs54DkQBRuyDK3A9vdQDNw3REKWipump MCAP: &#036;15,156.00 Volume: &#036;14,571.00 Liquidity: &#036;15,933.00 Age: 1130.3 minutes 🔮 Predicted Multiplier: 2.62x 📊 Token Metrics: - Dev ",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.641Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: Xhiba Symbol: XHIBA Description: No description available... Token CA: 7FNCzW1WCmojESmHeJKGfAoNt36GXkymqohuSkqQpump MCAP: &#036;17,902.00 Volume: &#036;56,553.00 Liquidity: &#036;17,465.00 Age: 384.2 minutes 🌐 Links: - twitter - website - telegram 🔮 Predicted Mult",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.643Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: Schrodinger&#39;s cat Symbol: CAT Description: No description available... Token CA: DQ5CWtNZ5HYvhs59w6jgwrdVv8ww1bgzngZYykVupump MCAP: &#036;16,505.00 Volume: &#036;119,400.00 Liquidity: &#036;16,654.00 Age: 1169.1 minutes 🌐 Links: - twitter - website 🔮 Predicted",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.645Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: Sakura Inuko Symbol: INUKO Description: No description available... Token CA: 6ZpdJwpxsFWUnNqmG4wCZVJmbQbnaKCzGLGzqWZMpump MCAP: &#036;16,429.00 Volume: &#036;11,483.00 Liquidity: &#036;16,430.00 Age: 855.9 minutes 🌐 Links: - twitter 🔮 Predicted Multiplier: 3.08x ",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.648Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: SMONKE Symbol: SMONKE Description: No description available... Token CA: 5oQWqaov5wJS4FDwNfrLDJMAdH1uNKD3gS8VENaxpump MCAP: &#036;23,223.00 Volume: &#036;11,126.00 Liquidity: &#036;19,527.00 Age: 1192.1 minutes 🌐 Links: - twitter 🔮 Predicted Multiplier: 8.20x 📊 T",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.650Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: WELO COIN Symbol: WELO Description: No description available... Token CA: 7yQndYK6KNLBCXp7HqonDXTxfodYmqzCPEsHpSGRpump MCAP: &#036;15,067.00 Volume: &#036;26,685.00 Liquidity: &#036;15,778.00 Age: 370.1 minutes 🌐 Links: - twitter - website 🔮 Predicted Multiplier: ",
+    "keywords": [
+      "pump",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.652Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "AISolanaGems",
+    "text": "🚨 New Token Alert 🚨 Token Name: The Chinese Whale Symbol: REDWHALE Description: No description available... Token CA: DMM8aATgFrDCf4yENaq6aQcG4rvRWp5haLmtWkAApump MCAP: &#036;17,359.00 Volume: &#036;33,337.00 Liquidity: &#036;16,923.00 Age: 504.8 minutes 🌐 Links: - twitter 🔮 Predicted Multiplier",
+    "keywords": [
+      "pump",
+      "whale",
+      "alert",
+      "token",
+      "AI",
+      "CA:",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T16:19:02.654Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "coingape",
+    "text": "Ripple Prime Adds Support For Bitcoin, Ethereum, XRP, Solana Derivatives on Coinbase https://coingape.com/ripple-prime-adds-support-for-bitcoin-ethereum-xrp-solana-derivatives-on-coinbase/?utm_source=telegram&utm_medium=social&utm_campaign=coingape_285005",
+    "keywords": [
+      "solana",
+      "eth",
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T16:19:02.656Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【数据：ETH 当前全网 8 小时平均资金费率为 -0%】 https://www.chaincatcher.com/article/2249890",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T16:19:02.658Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【Polygon 推出面向 AI 代理的链上工具包 Agent CLI】 https://www.chaincatcher.com/article/2249892",
+    "keywords": [
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T16:19:02.659Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "PANewsOfficial",
+    "text": "폴리곤은 AI 에이전트를 위한 온체인 툴킷인 Agent CLI를 출시했습니다. PANews는 3월 5일, 폴리곤 랩스 블로그를 인용하여 폴리곤 랩스가 AI 에이전트를 위한 원스톱 솔루션인 폴리곤 에이전트 CLI를 출시했다고 보도했습니다. 이 솔루션은 지갑, 결제, 크로스체인 기능, 신원 관리 등 완벽한 온체인 인프라를 제공합니다. 개발자는 단 한 번의 명령 설치로 에이전트가 세션 지갑 생성, 멀티체인 잔액 조회, 스테이블코인 전송, 스왑 및 크로스체인 거래 수행, DeFi 접근, 온체인 신원 등록 및 ERC-8004 표준을 사용한 ",
+    "keywords": [
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T16:19:02.661Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "FBI arrests suspect in $46M U.S. Marshals crypto theft case  ambcrypto.com",
+    "url": "",
+    "time": "2026-03-05T16:25:35.563Z",
+    "timestamp": "2026-03-05T16:25:35.600Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin Whipsaws From $62.3K Scare To $73K: $80K Next?  dailycoin.com",
+    "url": "",
+    "time": "2026-03-05T16:25:35.563Z",
+    "timestamp": "2026-03-05T16:25:35.602Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "FBI announced that John Daghita, the son of CMDSS CEO Dean Daghita and a U.S. government contractor suspected of stealing more than $46 million in cryptocurrency from the United States Marshals Servic",
+    "url": "",
+    "time": "2026-03-05T16:25:35.563Z",
+    "timestamp": "2026-03-05T16:25:35.604Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Stablecoins face new rules as Russia advances payments bill  coincu.com",
+    "url": "",
+    "time": "2026-03-05T16:32:15.079Z",
+    "timestamp": "2026-03-05T16:32:15.115Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin Surges $66K → $74K… But This Signal Matters More  DataDash",
+    "url": "",
+    "time": "2026-03-05T16:32:15.079Z",
+    "timestamp": "2026-03-05T16:32:15.117Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Tung Tung Tung Sahur",
+    "symbol": "TripleT",
+    "contract": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
+    "marketCap": 2117124.2688628687,
+    "time": "2026-03-05T16:32:20.681Z",
+    "timestamp": "2026-03-05T16:32:20.700Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Bullish Degen",
+    "symbol": "BULLISH",
+    "contract": "C2omVhcvt3DDY77S2KZzawFJQeETZofgZ4eNWWkXpump",
+    "marketCap": 4182856.54310193,
+    "time": "2026-03-05T16:32:20.681Z",
+    "timestamp": "2026-03-05T16:32:20.701Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "whale_alert_io",
+    "text": "🚨 🚨 🚨 🚨 1,234 #BTC (87,665,420 USD) transferred from unknown wallet to Coinbase Institutional Details",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T16:36:50.831Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 🔵 Transfer: 50,000,120 USDC From: 0x28c5b0445d0728bc25f143f8eba5c5539fae151a To: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) Block: 24592389 Details #USDCx3",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T16:36:50.836Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "defimon_alerts",
+    "text": "🚨 Solv.finance has been exploited for &#036;2.7M The BitcoinReserveOffering (BRO-SOLV-20MAY2026) contract&#39;s mint() function has a double-minting flaw. When a user mints by transferring a full ERC-3525 NFT, doSafeTransferIn triggers the onERC721Received callback which mints BRO tokens to the cal",
+    "keywords": [
+      "alert",
+      "eth",
+      "token",
+      "AI",
+      "contract"
+    ],
+    "timestamp": "2026-03-05T16:36:50.839Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "wublock",
+    "text": "Doppler 表示将把其代币发行平台扩展至 Solana。该平台目前已部署在多个 EVM 链，并通过与 Zora、Bankr 等应用集成，为 Base 上多数新代币发行提供基础设施。Doppler 称 Solana 版本并非移植或分叉，而是针对 Solana 架构、编程与经济模型重新设计的原生实现。（The Block） — link",
+    "keywords": [
+      "solana",
+      "base"
+    ],
+    "timestamp": "2026-03-05T16:36:50.841Z"
+  },
+  {
+    "source": "x-twitter",
+    "handle": "cryptorand",
+    "text": "$TAO will melt faces in the next months. Bookmark this\n\n📍 More trade setups at: https://t.co/N3WuQcWWkm https://t.co/mWtYKtQ0Ga",
+    "tickers": [
+      "TAO"
+    ],
+    "time": "2026-03-05T16:42:07.358Z",
+    "timestamp": "2026-03-05T16:45:33.787Z"
+  },
+  {
+    "source": "x-twitter",
+    "handle": "glassnode",
+    "text": "$BTC Spot ETF flows are stabilising after sustained outflows. The 14-day netflow trend has turned higher, signalling easing distribution pressure as BTC breaks above 70k. Institutional demand remains tentative, but early re-accumulation signs are emerging.\nhttps://t.co/hg7QVKm2v7 https://t.co/1jOmbMoojE",
+    "tickers": [
+      "BTC"
+    ],
+    "time": "2026-03-05T16:42:43.182Z",
+    "timestamp": "2026-03-05T16:45:33.792Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "Benjamin Cowen",
+    "title": "Bitcoin's Midterm Year Pattern - Are We In A Simulation?",
+    "videoId": "IAt3LDsUbvs",
+    "url": "https://youtube.com/watch?v=IAt3LDsUbvs",
+    "time": "2026-03-05T16:42:20+00:00",
+    "timestamp": "2026-03-05T16:52:04.188Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "When a big move is accompanied by a large increase in open interest, it is common for those new positions to get chopped and washed out before the next big move takes place.  @stackersatoshi",
+    "url": "",
+    "time": "2026-03-05T16:52:09.662Z",
+    "timestamp": "2026-03-05T16:52:09.699Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Polymarket’s $838K reckless bet on nuclear detonation shockingly pulled as ethics firestorm ignites  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T16:52:09.662Z",
+    "timestamp": "2026-03-05T16:52:09.700Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin Price Predictions Flip Bullish, But Ethereum Is Still Stuck  decrypt.co",
+    "url": "",
+    "time": "2026-03-05T16:52:09.662Z",
+    "timestamp": "2026-03-05T16:52:09.702Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "clanker_world",
+    "symbol": "CLANKER",
+    "contract": "83Z2iQc2BASkFabxeM17WgurDJDTsBUFnr4rX64XBAGS",
+    "marketCap": 697312.0687496491,
+    "time": "2026-03-05T16:52:15.279Z",
+    "timestamp": "2026-03-05T16:52:15.300Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Cardano's ADA Token Now Accepted at Spar Supermarkets in Switzerland  decrypt.co",
+    "url": "",
+    "time": "2026-03-05T16:58:48.097Z",
+    "timestamp": "2026-03-05T16:58:48.129Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Japan’s Three Biggest Banks Are Building a Shared Stablecoin  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T16:58:48.097Z",
+    "timestamp": "2026-03-05T16:58:48.130Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "JUST IN: Odds of Bitcoin pumping to $75,000 this month rise to 69% on Polymarket!   @bitcoinmagazine",
+    "url": "",
+    "time": "2026-03-05T16:58:48.097Z",
+    "timestamp": "2026-03-05T16:58:48.132Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "FLUID",
+    "symbol": "FLUID",
+    "contract": "DuEy8wWrzCUun5ZbbG9hkVqXqqicpTQw8gB7nEAzpCHQ",
+    "marketCap": 176173884.5674405,
+    "time": "2026-03-05T16:58:53.661Z",
+    "timestamp": "2026-03-05T16:58:53.683Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Mushu",
+    "symbol": "MUSHU",
+    "contract": "5Jr9hGmJgxBRjjF8XGcGgQzXUdsbpZNNMpigEv8Wpump",
+    "marketCap": 599249.4453772155,
+    "time": "2026-03-05T16:58:53.661Z",
+    "timestamp": "2026-03-05T16:58:53.684Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "AgenC",
+    "symbol": "AgenC",
+    "contract": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+    "marketCap": 2478945.6872518086,
+    "time": "2026-03-05T16:58:53.661Z",
+    "timestamp": "2026-03-05T16:58:53.685Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DeFimillion",
+    "text": "Today we are pumping this Gentleman Join us for 15000% PUMP VIP paid @dextoolstracker Free Public @dextoolspumps",
+    "keywords": [
+      "pump",
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T17:03:23.488Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 16,739.98987165 ETH From: 0xd6bca7f5f7f1be0494dcd2da16381176da425131 To: 0x0323500c3f2e29f7b7f42f83d7646a5b3d0591b1 Block: 24572229 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:03:23.493Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 16,938.99999854 ETH From: 0x0003b5aa5e30e97fcc596bb5d0f3a75255e08d4e To: 0xb0a27099582833c0cb8c7a0565759ff145113d64 Block: 24572246 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:03:23.496Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🟢 🟢 🟢 🟢 🟢 🟢 Transfer: 430,000,000 USDT From: 0x18709e89bd403f470088abdacebe86cc60dda12e To: 0x23878914efe38d27c4d67ab83ed1b93a74d4086a (Aave: Ethereum USDT) Block: 24592513 Details #USDTx6",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:03:23.499Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SolanaTrending",
+    "text": "🚨 &#036;SOLPREDS TESTNET AIRDROP IS LIVE 🚨 Help test our Solana price prediction market & earn FREE &#036;SOLPREDS tokens. 3x the pace of Polymarkets, 100x the fun&#33; 💰 Like + RT + Drop your wallet HERE: 👇 https://x.com/SOLPREDS_FUN/status/2014670840529391985 Full guide 🧵 (FOLLOW INSTRUCTIONS",
+    "keywords": [
+      "100x",
+      "solana",
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:03:23.503Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SolanaTrending",
+    "text": "Hop in my live stream. I&#39;m just trying to get rich from the Internet.. Kick.com/TBG-Just-G ☝️ Drop a follow & sub while you&#39;re there Or &#036;solcity on @Pumpfun https://pump.fun/coin/HNSPNdqt8KrwmmhTGq6MxPvgk2gaiHMxUxGtkucKpump",
+    "keywords": [
+      "pump",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:03:23.506Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SolanaTrending",
+    "text": "SOLCITY - @SOLANATRENDING IP Owner pinned « Hop in my live stream. I&#39;m just trying to get rich from the Internet.. Kick.com/TBG-Just-G ☝️ Drop a follow & sub while you&#39;re there Or &#036;solcity on @Pumpfun https://pump.fun/coin/HNSPNdqt8KrwmmhTGq6MxPvgk2gaiHMxUxGtkucKpump »",
+    "keywords": [
+      "pump",
+      "solana",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:03:23.509Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Hedera Is Compressing Just Below $0.10 – The Next Move Could Be Significant  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T17:09:54.740Z",
+    "timestamp": "2026-03-05T17:09:54.779Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "LATEST:  Western Union is partnering with Crossmint to support the planned launch of the payments network's US Dollar Payment Token (USDPT) stablecoin on Solana.  @coinmarketcap",
+    "url": "",
+    "time": "2026-03-05T17:09:54.740Z",
+    "timestamp": "2026-03-05T17:09:54.781Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "SOL Strategies Shares Jump 21% as Validator Revenue Climbs 120% YoY  coinpaper.com",
+    "url": "",
+    "time": "2026-03-05T17:09:54.740Z",
+    "timestamp": "2026-03-05T17:09:54.782Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "alon",
+    "symbol": "ALON",
+    "contract": "8XtRWb4uAAJFMP4QQhoYYCWR6XXb7ybcCdiqPwz9s5WS",
+    "marketCap": 1118879.5512028027,
+    "time": "2026-03-05T17:10:00.313Z",
+    "timestamp": "2026-03-05T17:10:00.335Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Metaplex",
+    "symbol": "MPLX",
+    "contract": "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m",
+    "marketCap": 16699012.791059315,
+    "time": "2026-03-05T17:10:00.313Z",
+    "timestamp": "2026-03-05T17:10:00.336Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "BER",
+    "symbol": "BER",
+    "contract": "5kkkNahbYVYZUQthCZCU6ax4zkcN622jAMTnAvJApump",
+    "marketCap": 787823.235705352,
+    "time": "2026-03-05T17:10:00.313Z",
+    "timestamp": "2026-03-05T17:10:00.337Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "Altcoin Daily",
+    "title": "BlackRock Caught RED HANDED!! Crypto WARNING!!",
+    "videoId": "Pa90hmUWqps",
+    "url": "https://youtube.com/watch?v=Pa90hmUWqps",
+    "time": "2026-03-05T17:02:44+00:00",
+    "timestamp": "2026-03-05T17:25:14.017Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Iranian Foreign Minister Responds to US Claims of Ground Operations – “We Are Waiting for Them”  en.bitcoinsistemi.com",
+    "url": "",
+    "time": "2026-03-05T17:25:19.549Z",
+    "timestamp": "2026-03-05T17:25:19.585Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "According to RBC, Russia’s Ministry of Finance is considering drafting a standalone stablecoin bill rather than incorporating it into the forthcoming crypto exchange regulation. Stablecoins currently ",
+    "url": "",
+    "time": "2026-03-05T17:25:19.549Z",
+    "timestamp": "2026-03-05T17:25:19.586Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Goldman Sachs CEO identifies major risk for all investors amid Iran conflict  thestreet.com",
+    "url": "",
+    "time": "2026-03-05T17:25:19.549Z",
+    "timestamp": "2026-03-05T17:25:19.588Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "whale_alert_io",
+    "text": "🚨 🚨 🚨 715 #BTC (50,752,901 USD) transferred from Coinbase Institutional to unknown wallet Details",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:29:54.661Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DeFimillion",
+    "text": "Is Bitcoin Controlled by U.S. Politics? Have you noticed something interesting? Every time Trump speaks tough, the Fed signals tightening, or America shows “strength” on the geopolitical stage — Bitcoin suddenly feels pressure. Markets dump. Fear rises. Liquidity dries up. But when the U.S. governme",
+    "keywords": [
+      "pump",
+      "eth",
+      "AI",
+      "liquidity"
+    ],
+    "timestamp": "2026-03-05T17:29:54.665Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DeFimillion",
+    "text": "Who is ready for pump today. Drop your Solana wallet in my dm for a free Airdrop If you not joined @dextoolspumps yet - Join now.",
+    "keywords": [
+      "pump",
+      "solana",
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T17:29:54.668Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DeFimillion",
+    "text": "Today Exclusively on @Dextoolspumps set up your reminder at 4PM UTC mega Pump For Olympic Coin share to your community and get 1M coins reward.",
+    "keywords": [
+      "pump",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T17:29:54.672Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "Crypto_FinderNews",
+    "text": "🎰 Others chase dogs 🐶 and frogs 🐸 … We chose MAGIC ✨ 🪄 &#036;MGC — the memecoin blending vibes with real utility on Solana ⚡ 🌊 Not just hype. Not just noise. We’re building something that lasts. 💎 🔥 What’s cooking? 🎮 On-chain game dropping soon 💰 Staking rewards in progress 🚀 Community-pow",
+    "keywords": [
+      "pump",
+      "solana",
+      "eth",
+      "AI",
+      "memecoin",
+      "CA:"
+    ],
+    "timestamp": "2026-03-05T17:29:54.674Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🟢 🟢 Transfer: 31,506,058 USDT From: 0x2b817b822b0ddd4597a92dbed1bd0a6796ca37e0 To: 0x23878914efe38d27c4d67ab83ed1b93a74d4086a (Aave: Ethereum USDT) Block: 24592646 Details #USDTx2",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:29:54.677Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🟢 🟢 Transfer: 25,002,474 USDT From: 0x23878914efe38d27c4d67ab83ed1b93a74d4086a (Aave: Ethereum USDT) To: 0x356b8d89c1e1239cbbb9de4815c39a1474d5ba7d Block: 24592675 Details #USDTx2",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:29:54.679Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Revolut Wants to Become a Real U.S. Bank and It Just Filed the Paperwork  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T17:36:27.524Z",
+    "timestamp": "2026-03-05T17:36:27.553Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "ADA price stuck near $0.27 despite SPAR payment integration  coinjournal.net",
+    "url": "",
+    "time": "2026-03-05T17:36:27.524Z",
+    "timestamp": "2026-03-05T17:36:27.554Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Algún consejo para iniciar?  r/binance",
+    "url": "",
+    "time": "2026-03-05T17:36:27.524Z",
+    "timestamp": "2026-03-05T17:36:27.556Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "OLIO",
+    "symbol": "OIL",
+    "contract": "91D9BXEGYsqjPGWNmzhSesvnz76L8nz4pSTY4FY6surg",
+    "marketCap": 2719340.36583118,
+    "time": "2026-03-05T17:36:33.135Z",
+    "timestamp": "2026-03-05T17:36:33.155Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "SEC Investor Advisory Committee to Consider Recommendations on Tokenized Equity Securities  cryptomegaphone.com",
+    "url": "",
+    "time": "2026-03-05T17:43:05.735Z",
+    "timestamp": "2026-03-05T17:43:05.772Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Cardano Founder Clashes with Ripple Over “Predatory” US Crypto Bill  dailycoin.com",
+    "url": "",
+    "time": "2026-03-05T17:43:05.735Z",
+    "timestamp": "2026-03-05T17:43:05.774Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Crypto Treasury Inflows Slide To October 2024 Levels—What Happened?  newsbtc.com",
+    "url": "",
+    "time": "2026-03-05T17:43:05.735Z",
+    "timestamp": "2026-03-05T17:43:05.776Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "LABUBU",
+    "symbol": "LABUBU",
+    "contract": "JB2wezZLdzWfnaCfHxLg193RS3Rh51ThiXxEDWQDpump",
+    "marketCap": 1134832.8426662355,
+    "time": "2026-03-05T17:43:11.249Z",
+    "timestamp": "2026-03-05T17:43:11.269Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Monad",
+    "symbol": "MON",
+    "contract": "CrAr4RRJMBVwRsZtT62pEhfA9H5utymC2mVx8e7FreP2",
+    "marketCap": 13092779.615723843,
+    "time": "2026-03-05T17:43:11.249Z",
+    "timestamp": "2026-03-05T17:43:11.270Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "testicle",
+    "symbol": "testicle",
+    "contract": "4TyZGqRLG3VcHTGMcLBoPUmqYitMVojXinAmkL8xpump",
+    "marketCap": 3530841.501392493,
+    "time": "2026-03-05T17:43:11.249Z",
+    "timestamp": "2026-03-05T17:43:11.271Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ZachXBT",
+    "text": "Onchain clown of the month: A Cardano holder swapped 14.4M ADA (&#036;6.9M) for 847K USDA (Cardano stable pegged to USD) two hours ago and lost &#036;6.05M due to low liquidity causing the price to sharply spike temporarily. Previously the funds sat dormant for ~5 years Address addr1qy5lcrk497pg88xk",
+    "keywords": [
+      "AI",
+      "liquidity"
+    ],
+    "timestamp": "2026-03-05T17:47:41.759Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ZachXBT",
+    "text": "Earlier today Serpent (Ethos Network founder) publicly shared a dataset of 70K InfoFi users from Kaito, Wallchain, Cookie, Galxe, Xeet, & Ethos. I worked with Shob to compare the InfoFi users to their X account location and here were the results:",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.763Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ZachXBT",
+    "text": "A victim had suspicious outflows of ~&#036;1.1M from five wallets on EVM chains 23 hours ago in a private key compromise. The attacker swapped out of all assets for ETH immediately and deposited 330 ETH to Tornado. Theft address 0x4f8affe6cd269d1f8352d0542432de6975c3912d",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.766Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ZachXBT",
+    "text": "Community alert: A number of Trust Wallet users have reported that funds were drained from wallet addresses within the past couple of hours. While the exact root cause has not been determined coincidentally the Trust Wallet Chrome extension pushed a new update yesterday. Send me a DM on X (Twitter) ",
+    "keywords": [
+      "alert",
+      "solana",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.769Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ZachXBT",
+    "text": "Community alert: Ledger had another data breach via payment processor Global-e leaking the personal data of customers (name & contact information). Earlier today customers received the email below.",
+    "keywords": [
+      "alert",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.772Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ZachXBT",
+    "text": "The head of product at X (Nikita Bier) announced 30 minutes ago they will no longer allow InfoFi apps to operate on X (formerly Twitter) due to excessive AI slop / spam. The Kaito Yapper community on X with 157K members was banned and the KAITO token price has crashed 17% since the announcement.",
+    "keywords": [
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.775Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 19,238,094 USDC From: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) To: 0xabb29974b99c0fb96a1f3838c1df4a0b207a26fe Block: 24592703 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.777Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 19,238,094 USDC From: 0xabb29974b99c0fb96a1f3838c1df4a0b207a26fe To: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) Block: 24592715 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.780Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 12,000,000 USDC From: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) To: 0x1064596958ffe8bc44e74e7c484241736035b007 Block: 24592726 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.783Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 12,000,000 USDC From: 0x1064596958ffe8bc44e74e7c484241736035b007 To: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) Block: 24592742 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.785Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【数据：ETH 全网合约持仓量 24h 减少 5.62%】 https://www.chaincatcher.com/article/2249903",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T17:47:41.788Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "MakeMyTrip Strengthens Travel Network with Majority Stake in Flamingo Transworld  sfctoday.com",
+    "url": "",
+    "time": "2026-03-05T18:02:49.297Z",
+    "timestamp": "2026-03-05T18:02:49.329Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Solana Pulled Back to $88 After Touching $93 – Two Levels Could Define the Next Month  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T18:02:49.297Z",
+    "timestamp": "2026-03-05T18:02:49.331Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "38% of altcoins near all-time lows, worse than FTX crash: Analyst  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T18:02:49.297Z",
+    "timestamp": "2026-03-05T18:02:49.333Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "2131KOBUSHIDE",
+    "symbol": "21",
+    "contract": "4vGHdzcNrDf8XVE8H19Rqea86RULz7xi89ew1sSJpump",
+    "marketCap": 690242.2097479124,
+    "time": "2026-03-05T18:02:54.860Z",
+    "timestamp": "2026-03-05T18:02:54.882Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Ether traders see 'larger bounce' after ETH price taps $2.2K  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T18:09:25.525Z",
+    "timestamp": "2026-03-05T18:09:25.557Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "OKX’s OKB token goes vertical with NYSE parent company backing at $25B valuation  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T18:09:25.525Z",
+    "timestamp": "2026-03-05T18:09:25.559Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ZachXBT",
+    "text": "On January 10, 2026 at around 11 pm UTC a victim lost &#036;282M+ worth of LTC & BTC due to a hardware wallet social engineering scam. The attacker began converting the stolen LTC & BTC to Monero via multiple instant exchanges causing the XMR price to sharply increase. BTC was also bridged to Ethere",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.727Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ZachXBT",
+    "text": "A special thanks to Hyperliquid for their recent generous donation. Here&#39;s the updated all time leaderboard for my top 10 largest donors by amount: 1). Optimism 2). Hyperliquid 3). Octant 4). The White Whale 5). Arbitrum 6). BNB Chain 7). Unipcs 8). Nouns 9). CL207 10). High Stakes Capital",
+    "keywords": [
+      "whale",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.732Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "🔥 PCGAMEFI: THE FUTURE OF DECENTRALIZED GAMING ON ETHEREUM&#33; 🔥 Tired of centralized servers dictating your assets? PCGameFi is driving the revolution: You are the true owner of your assets (NFTs) in a fair, community-driven (DAO) P2E gaming ecosystem&#33; 💎 Why PCGAMEFI is the Next 100x Opport",
+    "keywords": [
+      "100x",
+      "buy",
+      "sell",
+      "eth",
+      "token",
+      "launch",
+      "listing",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.735Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "⚡️ Discover Infrared Finance: Revolutionizing DeFi in the Berachain Ecosystem&#33; Are you ready to dive into an innovative and opportunity-filled DeFi world? Infrared Finance (&#036;IR) is a DeFi infrastructure protocol built on the Berachain network, designed to simplify and maximize participation",
+    "keywords": [
+      "whale",
+      "buy",
+      "token",
+      "launch",
+      "AI",
+      "dex",
+      "liquidity",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T18:14:00.738Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "🔥 South Korea’s gaming giant Netmarble has thrown its weight behind &#036;OPEN through its MARBLEX arm, signaling a surge of institutional confidence in the next wave of on-chain AI infrastructure. ✔️ With high-profile partnerships spanning Cambridge and Chainbase, a crystal clear public roadmap, a",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.741Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "Hyperliquid announces token unlock schedule DEX Hyperliquid plans to unlock 1.2 million team-allocated tokens every month. The first HYPE unlock will take place on January 6 , with subsequent unlocks also scheduled for the 6th of each month and expected to continue for about two years. Analysts beli",
+    "keywords": [
+      "token",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T18:14:00.743Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "How to lose a &#036;50,000 bet because of Ethereum? Crypto entrepreneur Kain Warwick lost a &#036;50,000 bet. He was confident that Ethereum would rise to &#036;25,000 by the end of 2025. After losing the bet, Warwick now believes Ethereum is aiming for &#036;10,000 in 2026.",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.746Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "📊 Mid-Tier Crypto Exchanges Close the Gap in 2025 📈 Major crypto exchanges increased trading volumes in 2025, but growth was uneven, according to data compiled by WuBlockchain. On the spot market, the top players were Binance, Bybit, MEXC, and Gate. Binance remains the clear leader, with volumes n",
+    "keywords": [
+      "AI",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T18:14:00.749Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "Empire of Sight: Build Your Legacy in a Blockchain-Powered Fantasy Realm&#33; 👑 Step into Empire of Sight – the addictive 2D MMORPG that&#39;s redefining GameFi with endless quests, fierce battles, and crypto earnings tied to your skills&#33; With 75K+ users in beta, 5.6K active players logging 5.4",
+    "keywords": [
+      "buy",
+      "token",
+      "listing",
+      "AI",
+      "contract",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T18:14:00.751Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "Bermuda aims to move to blockchain The Government of Bermuda plans to build an economy fully based on blockchain technology. The state has partnered with Coinbase and Circle, which will provide the necessary infrastructure. The project will be built around the USDC stablecoin.",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.754Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 18,000,000 USDC From: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) To: 0x1c68c3de2b02d9ae478d37c7e6c92a53ff01fc66 Block: 24592807 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.756Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 Transfer: 20,001,998 USDC From: 0x67f08b94f47abd8f81d042efe46f29d65803b82f To: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) Block: 24592807 Details #USDCx2",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.758Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🟢 🟢 🟢 Transfer: 49,200,000 USDT From: 0x5754284f345afc66a98fbb0a0afe71e0f007b949 (Tether: Treasury) To: 0x17dc4d78e8abca9408c43541beb3c8215655403a Block: 24592832 Details #USDTx3",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.760Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🟢 🟢 🟢 Transfer: 60,000,000 USDT From: 0xed0c6079229e2d407672a117c22b62064f4a4312 To: 0x23878914efe38d27c4d67ab83ed1b93a74d4086a (Aave: Ethereum USDT) Block: 24592900 Details #USDTx3",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.762Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "SolanaTrending",
+    "text": "https://x.com/i/status/2019657263946842137 My projects &#036;SOLPREDS token presale will be hosted on 👉 https://presale.solpreds.fun Exact date T.B.A &#036;USDC will be accepted on 3 crypto blockchains: - Base Chain - Solana - &#036;BNB chain The main token will launch on Solana 🚀 More announcemen",
+    "keywords": [
+      "solana",
+      "base",
+      "token",
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.764Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "CoinCodeCap",
+    "text": "MONTH LY PNL PREMIUM UPDATE 📣 🔥 CCC February 2026 -Trades Summary What an pumpy month baby&#33; 🤩 Finally closed pumpy Feb-26 with meaty profits whereas kissed by minor SL&#39;s, the wonders of world class risk management + awareness, capital portfolio protection techniques & best RRR based trade",
+    "keywords": [
+      "pump",
+      "gem",
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:14:00.765Z"
+  },
+  {
+    "source": "coingecko-trending",
+    "name": "Trust Wallet",
+    "symbol": "TWT",
+    "id": "trust-wallet-token",
+    "marketCapRank": 175,
+    "thumb": "https://coin-images.coingecko.com/coins/images/11085/standard/Trust.png?1696511026",
+    "score": 13,
+    "time": "2026-03-05T18:20:30.728Z",
+    "timestamp": "2026-03-05T18:20:30.731Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "U.S. Crypto Market Structure Bill Faces Impasse as Banks Reject Stablecoin Reward Proposal  cryptomegaphone.com",
+    "url": "",
+    "time": "2026-03-05T18:20:36.247Z",
+    "timestamp": "2026-03-05T18:20:36.284Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Market Makers Say BlockDAG Could Move from $0.0005 to $0.05 as Trading Begins  dailycoin.com",
+    "url": "",
+    "time": "2026-03-05T18:20:36.247Z",
+    "timestamp": "2026-03-05T18:20:36.286Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "UPDATE: Global gold ETFs saw $5.3B in inflows in February, marking the ninth straight month of gains, per World Gold Council.  @cointelegraph",
+    "url": "",
+    "time": "2026-03-05T18:20:36.247Z",
+    "timestamp": "2026-03-05T18:20:36.288Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Japan’s Megabanks Move to Replace Correspondent Banking With Shared Stablecoin  coindoo.com",
+    "url": "",
+    "time": "2026-03-05T18:35:43.686Z",
+    "timestamp": "2026-03-05T18:35:43.723Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "IRS Proposed Making Crypto Tax Forms Digital Only  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T18:35:43.686Z",
+    "timestamp": "2026-03-05T18:35:43.725Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Clippy",
+    "symbol": "Clippy",
+    "contract": "GKjAe1bQXXLoEitJYSuyw6qt97tTVoKkGEgWPEo6pump",
+    "marketCap": 572717.7184092893,
+    "time": "2026-03-05T18:35:49.237Z",
+    "timestamp": "2026-03-05T18:35:49.259Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "XPT ",
+    "symbol": "XPT ",
+    "contract": "DmxDBXTxEnNXVNNVVZe9QhgoKnr8anjE1b49dpZapump",
+    "marketCap": 16734911.722537382,
+    "time": "2026-03-05T18:35:49.237Z",
+    "timestamp": "2026-03-05T18:35:49.260Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "🚀 GramFi — The Telegram-Native InfoFi Layer GramFi transforms everyday Telegram crypto conversations into reputation, intelligence, and future rewards . While attention farming happens on X, GramFi brings InfoFi to where crypto actually lives — Telegram. 💬 By analyzing large-scale Telegram data, G",
+    "keywords": [
+      "base",
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:40:19.685Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "coingape",
+    "text": "⚡️ HOOD Stock Targets &#036;100 as Robinhood Unveils Platinum Card and Advance Dividend Feature Still, the stock could be on the verge of a bullish breakout to &#036;100 after launching new products. https://coingape.com/markets/hood-stock-targets-100-as-robinhood-unveils-platinum-card-and-advance-d",
+    "keywords": [
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:40:19.689Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【数据：若 ETH 突破 2,168 美元，主流 CEX 累计空单清算强度将达 6.24 亿美元】 https://www.chaincatcher.com/article/2249907",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:40:19.693Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "bitpush",
+    "text": "【OpenAI推出GPT-5.4。称为最具事实性和最高效的模型】 比推消息，OpenAI正式推出GPT-5.4，称该模型是最具事实性和高效的模型——更少的tokens，更快的速度。在ChatGPT中，GPT-5.4的思维在深网研究方面有所提升，长时间思考时的上下文保留更好——现在用户可以在模型响应过程中打断它，添加指令或调整方向。引导功能本周已在Android和网页端上线，iOS版本即将推出。OpenAI开发者称，GPT-5.4具备原生计算机使用能力。Codex和API支持高达100万个上下文标记，能够针对复杂任务的最佳代理编码，提供在更大生态系统中可扩展的工具搜索，能够对长时间、工具密集型工",
+    "keywords": [
+      "token",
+      "AI",
+      "dex"
+    ],
+    "timestamp": "2026-03-05T18:40:19.696Z"
+  },
+  {
+    "id": "1rl1a2b",
+    "title": "For those always waiting to time the bottom versus DCA…",
+    "score": 500,
+    "permalink": "/r/Bitcoin/comments/1rl1a2b/for_those_always_waiting_to_time_the_bottom/",
+    "sub": "bitcoin",
+    "source": "reddit",
+    "timestamp": "2026-03-05T18:46:47.703Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Japanese Fintech Goes Live On XRP Ledger As ETFs Climb  dailycoin.com",
+    "url": "",
+    "time": "2026-03-05T18:46:55.423Z",
+    "timestamp": "2026-03-05T18:46:55.458Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Iran conflict a risk to economic growth, EBRD president says  @reutersbiz",
+    "url": "",
+    "time": "2026-03-05T18:46:55.423Z",
+    "timestamp": "2026-03-05T18:46:55.459Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Techemynt Launches Tokenized Gold, Silver  catenaa.com",
+    "url": "",
+    "time": "2026-03-05T18:46:55.423Z",
+    "timestamp": "2026-03-05T18:46:55.461Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "AI SLOP",
+    "symbol": "AISLOP",
+    "contract": "2wzVMXhLypmP92mXNCq4fuFcd9TCC972AbMfuiH3pump",
+    "marketCap": 903374.3758930516,
+    "time": "2026-03-05T18:47:00.997Z",
+    "timestamp": "2026-03-05T18:47:01.019Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Interoperability Is 'Essential' for Digital Assets to Reach Their Full Potential: DTCC  thedefiant.io",
+    "url": "",
+    "time": "2026-03-05T18:53:32.812Z",
+    "timestamp": "2026-03-05T18:53:32.845Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Solana evolved into a payment settlement layer  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T18:53:32.812Z",
+    "timestamp": "2026-03-05T18:53:32.846Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Comedian",
+    "symbol": "Ban",
+    "contract": "9PR7nCP9DpcUotnDPVLUBUZKu5WAYkwrCUx9wDnSpump",
+    "marketCap": 111802760.11328566,
+    "time": "2026-03-05T18:53:38.353Z",
+    "timestamp": "2026-03-05T18:53:38.373Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 💸 Neynar acquires Farcaster; Mask Network takes over Lens. 2. 🥀 US Crypto Market Structure Bill potentially delayed. 3. 💎 Nado launches \"The Choice\" for Private Alpha users. 4. 🪂 Seeker &#036;SKR (Solana Mobile) launches airdrop claim. 5. 🤔 President",
+    "keywords": [
+      "buy",
+      "solana",
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.052Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 💰 BitGo goes public, Ledger & CertiK next? 2. 🐰 MegaETH launches global stress test. 3. 🦊 MetaMask Rewards Season 1 ends. 4. 🪂 Mezo to launch airdrop allocation checker. 5. 📉 Intel dumps after reporting Q4 earnings. ————————— Presented by Socket ————",
+    "keywords": [
+      "eth",
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.057Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 🚨 US Marshals investigate &#036;40M crypto theft. 2. 📜 Clarity Act markup delayed to January 29th. 3. 👀 Aztec &#036;AZTEC launches TGE proposal. 4. 📸 Rainbow &#036;RNBW completes points snapshot. 5. 🤖 Microsoft &#036;MSFT launches Maia 200 AI chip. —",
+    "keywords": [
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.060Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 💲 Tether launches USA₮; Fidelity to launch FIDD. 2. 🔮 Coinbase launches prediction markets via Kalshi. 3. 🐰 MegaETH to launch public mainnet on Feb 9th. 4. 🪂 USDai to launch CHIP airdrop in Q1 2026. 5. 📈 Gold & Silver reach new ATHs (again & again & ",
+    "keywords": [
+      "eth",
+      "base",
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.062Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "New farm in MegaETH, OHM fork, currently in waitlist You can join here (Early access): https://early.blackhaven.xyz/ref/OlimpioCrypto Could be a good farm, still assessing Here are the docs: https://docs.blackhaven.xyz/overview Wallets with MegaETH echo or Fluffles have a boost",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.065Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 🤔 CZ rejects claims that Binance caused Oct crash. 2. 🐔 Moonbirds &#036;BIRB launches airdrop claim. 3. 🪄 Trump nominates Kevin Warsh as new Fed Chair. 4. 📉 Gold &#036;XAU (-9%) & Silver &#036;XAG (-26%) collapse. 5. 💰 Talos raises &#036;45M from Rob",
+    "keywords": [
+      "moon",
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.068Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 🤔 Vitalik Buterin says L2s no longer makes sense. 2. ✌️ Kyle Samani steps down from Multicoin Capital. 3. 🪂 Rainbow &#036;RNBW & YO &#036;YO airdrops today (Feb 5th). 4. 🔮 Polymarket: ~63% chance US gov shuts down by Feb 14th. 5. 🔍 TRM Labs raises &#0",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.070Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 🤯 Bithumb accidentally airdrops 620K BTC to users. 2. 💸 Crypto[.]com CEO buys AI[.]com for &#036;70M. 3. 👀 Polymarket files trademark application for &#036;POLY. 4. 🐰 MegaETH to launch public mainnet on Feb 9th. 5. 💰 Relay raises &#036;17M Series B l",
+    "keywords": [
+      "buy",
+      "eth",
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.073Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 🥕 MegaETH launches public mainnet. 2. 💰 Jump Trading to acquire stakes in Polymarket & Kalshi. 3. 👀 Dan Romero & Varun Srinivasan join Tempo. 4. 🪂 Backpack allocates 25% of supply for airdrop at TGE. 5. 🤝 MrBeast acquires financial services app Step.",
+    "keywords": [
+      "eth",
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.076Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "OlimpioAlpha",
+    "text": "AlphaPacked Round-Up: Last 24hs in Crypto 1. 0️⃣ LayerZero to launch layer 1 blockchain &#39;Zero&#39;. 2. 🤫 Aztec to launch &#036;AZTEC TGE on February 12th. 3. 🪂 Espresso to launch &#036;ESP airdrop claim soon. 4. 🏗 Robinhood launches Robinhood Chain public testnet. 5. 🛡 Apple & Microsoft rele",
+    "keywords": [
+      "launch",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.078Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "TreeNewsFeed",
+    "text": "Metamask Registers Domain for Claiming Metamask Tokens, Indicating Nearing Airdrop: Website",
+    "keywords": [
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.080Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 10,329,312 USDC From: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) To: 0x879d8aa88c4e4baaf4c7da0f7290e2c483bcaa51 Block: 24593011 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.082Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 14,000,000 USDC From: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) To: 0x879d8aa88c4e4baaf4c7da0f7290e2c483bcaa51 Block: 24593039 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T18:58:08.084Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Big Boost for Cardano: ADA Payments Roll Out Across 137 Spar Stores in Switzerland  zycrypto.com",
+    "url": "",
+    "time": "2026-03-05T19:13:20.218Z",
+    "timestamp": "2026-03-05T19:13:20.242Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Rise Adds USDC Yield to Payroll Platform  catenaa.com",
+    "url": "",
+    "time": "2026-03-05T19:13:20.218Z",
+    "timestamp": "2026-03-05T19:13:20.243Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Broadcom Expects Its AI Chip Sales To Top $100Bn In 2027  catenaa.com",
+    "url": "",
+    "time": "2026-03-05T19:13:20.218Z",
+    "timestamp": "2026-03-05T19:13:20.245Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Just a chill guy",
+    "symbol": "CHILLGUY",
+    "contract": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
+    "marketCap": 10770768.61899622,
+    "time": "2026-03-05T19:13:25.825Z",
+    "timestamp": "2026-03-05T19:13:25.845Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Pudgy Penguins",
+    "symbol": "PENGU",
+    "contract": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+    "marketCap": 448152288.18758994,
+    "time": "2026-03-05T19:13:25.825Z",
+    "timestamp": "2026-03-05T19:13:25.846Z"
+  },
+  {
+    "id": "1rkslfi",
+    "title": "White House officially nominates pro-Bitcoin Kevin Warsh to be the new Federal Reserve Chairman",
+    "score": 500,
+    "permalink": "/r/CryptoCurrency/comments/1rkslfi/white_house_officially_nominates_probitcoin_kevin/",
+    "sub": "cryptocurrency",
+    "source": "reddit",
+    "timestamp": "2026-03-05T19:19:51.379Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Google Warns of High-End iPhone Exploit Hunting Crypto Wallet Data  zycrypto.com",
+    "url": "",
+    "time": "2026-03-05T19:19:59.906Z",
+    "timestamp": "2026-03-05T19:19:59.937Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "LATEST:  US Ethereum ETFs pulled in $169 million on Wednesday, the highest daily inflow since Jan. 14, with analysts pointing to global tensions, lower prices and improving regulatory clarity.  @coinm",
+    "url": "",
+    "time": "2026-03-05T19:19:59.906Z",
+    "timestamp": "2026-03-05T19:19:59.938Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Goldman Sachs Says Tax Cuts and Tariff Certainty Could Boost US Economic Growth in 2026 – But There’s a Catch  dailyhodl.com",
+    "url": "",
+    "time": "2026-03-05T19:19:59.906Z",
+    "timestamp": "2026-03-05T19:19:59.940Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "The Shape Store",
+    "symbol": "SHAPE",
+    "contract": "4HhWcsfjaWYKJtjaxd4EyGSAL4Ky8C3DvqAWPHnrpump",
+    "marketCap": 1390109.9575052198,
+    "time": "2026-03-05T19:20:05.546Z",
+    "timestamp": "2026-03-05T19:20:05.567Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "deBridge",
+    "symbol": "DBR",
+    "contract": "DBRiDgJAMsM95moTzJs7M9LnkGErpbv9v6CUR1DXnUu5",
+    "marketCap": 73273420.09400395,
+    "time": "2026-03-05T19:20:05.546Z",
+    "timestamp": "2026-03-05T19:20:05.568Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Minecraft Grandma Fund",
+    "symbol": "Grandma",
+    "contract": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump",
+    "marketCap": 614464.6411371392,
+    "time": "2026-03-05T19:20:05.546Z",
+    "timestamp": "2026-03-05T19:20:05.569Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 🔵 Transfer: 40,076,848 USDC From: 0x0584f6a93718d7de52b40a71b42439acee4be655 To: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) Block: 24593261 Details #USDCx3",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T19:24:36.036Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DiarioBitcoin",
+    "text": "1611 https://mailchi.mp/diariobitcoin/1611-bitcoin-entre-dudas-apuestas-prudentes-y-la-irrupcin-de-empresas-sin-humanos 🎲 Polymarket ve a Bitcoin bajo &#036;150.000 como escenario base para 2026 🏦 Chamath duda que BTC sirva como reserva de bancos centrales 🧪 Influencer pierde &#036;24M por ataque",
+    "keywords": [
+      "base",
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T19:24:36.041Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "JUST IN: Cardano Foundation CEO Frederik Gregaard says \"CIP-113 will give us some capabilities for RWAs and others as well. We're getting really mature from the technology stack and interoperability s",
+    "url": "",
+    "time": "2026-03-05T19:31:09.797Z",
+    "timestamp": "2026-03-05T19:31:09.834Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Cardano Now Accepted at a Chain of 137 Supermarkets in Switzerland  coindoo.com",
+    "url": "",
+    "time": "2026-03-05T19:31:09.797Z",
+    "timestamp": "2026-03-05T19:31:09.836Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Barking Puppy",
+    "symbol": "BP",
+    "contract": "3B1ijcocM5EDga6XxQ7JLW7weocQPWWjuhBYG8Vepump",
+    "marketCap": 6230095.6305175545,
+    "time": "2026-03-05T19:31:15.350Z",
+    "timestamp": "2026-03-05T19:31:15.373Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Canadian government and TD Bank successfully pilot $100 million CAD bond issuance using Hyperledger Fabric tech  theblock.co",
+    "url": "",
+    "time": "2026-03-05T19:46:31.054Z",
+    "timestamp": "2026-03-05T19:46:31.084Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "RLUSD Approaching Fresh Milestone Following Latest Mint  u.today",
+    "url": "",
+    "time": "2026-03-05T19:46:31.054Z",
+    "timestamp": "2026-03-05T19:46:31.086Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Patients Receiving Up To $5,000 After Healthcare Firm Breached, Exposing Records of 426,536 Americans  dailyhodl.com",
+    "url": "",
+    "time": "2026-03-05T19:46:31.054Z",
+    "timestamp": "2026-03-05T19:46:31.087Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "whale_alert_io",
+    "text": "🚨 🚨 🚨 716 #BTC (50,939,640 USD) transferred from unknown wallet to #Coinbase Details",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T19:51:06.187Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "whale_alert_io",
+    "text": "🚨 🚨 🚨 🚨 🚨 🚨 1,816 #BTC (129,102,472 USD) transferred from unknown wallet to Coinbase Institutional Details",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T19:51:06.191Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "CoindeskGlobal",
+    "text": "Ripple adds Coinbase crypto futures to its &#036;3 trillion trading venue Ripple Prime institutional clients can now trade Coinbase&#39;s bitcoin, ether, solana and XRP futures in a regulated U.S. market.",
+    "keywords": [
+      "solana",
+      "eth",
+      "base"
+    ],
+    "timestamp": "2026-03-05T19:51:06.195Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "the_block_crypto",
+    "text": "Coinbase CEO Brian Armstrong and execs face shareholder lawsuit over disclosures, compliance failures",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T19:51:06.197Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "TreeNewsFeed",
+    "text": "Coinbase Debuts Token Offering Platform, Starting With Monad: WSJ",
+    "keywords": [
+      "base",
+      "token"
+    ],
+    "timestamp": "2026-03-05T19:51:06.200Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 10,033.41254678 ETH From: 0xc2bf398b4805893089ed4eb4fa25cb2e78c0ce87 To: 0xb5d85cbf7cb3ee0d56b3bb207d5fc4b82f43f511 Block: 24573085 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T19:51:06.202Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 Transfer: 27,612,678 USDC From: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) To: 0x0584f6a93718d7de52b40a71b42439acee4be655 Block: 24593339 Details #USDCx2",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T19:51:06.204Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "CoinCodeCap",
+    "text": "&#036;BTC UPDATE The market never moves in a straight line, even in strong downtrends, retracements are inevitable. Smart money uses these pullbacks to reposition, trap late sellers, and build momentum for the next move.",
+    "keywords": [
+      "sell",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T19:51:06.207Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Dollar-cost averaging Bitcoin is safest strategy for long-term gains: Data  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T19:57:40.641Z",
+    "timestamp": "2026-03-05T19:57:40.678Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "The Next Crypto Bull Market May Already Be Starting… (Behind the Scenes) w/ Nic Roberts-Huntely  MilkRoadYoutube",
+    "url": "",
+    "time": "2026-03-05T19:57:40.641Z",
+    "timestamp": "2026-03-05T19:57:40.680Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Ripple Just Gave Its Institutional Clients Access to Regulated Crypto Derivatives Around the Clock  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T19:57:40.641Z",
+    "timestamp": "2026-03-05T19:57:40.681Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Valeo",
+    "symbol": "Valeo",
+    "contract": "nn944oFMxsHg9AnEuBHWxtBpGjRX3DRxx86PseuDrPJ",
+    "marketCap": 1323525.7058182554,
+    "time": "2026-03-05T19:57:46.267Z",
+    "timestamp": "2026-03-05T19:57:46.289Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "Ivan on Tech",
+    "title": "Bitcoin's fate tied to S&amp;P 500's next move #shorts",
+    "videoId": "3UXaJ3mMuSs",
+    "url": "https://youtube.com/watch?v=3UXaJ3mMuSs",
+    "time": "2026-03-05T19:56:38+00:00",
+    "timestamp": "2026-03-05T20:04:15.585Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Following the US, Russia is Now Introducing Major Regulations for Cryptocurrencies  en.bitcoinsistemi.com",
+    "url": "",
+    "time": "2026-03-05T20:04:21.313Z",
+    "timestamp": "2026-03-05T20:04:21.350Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Zero Hash Moves to Secure Federal Banking Charter for Digital Asset Operations  coindoo.com",
+    "url": "",
+    "time": "2026-03-05T20:04:21.313Z",
+    "timestamp": "2026-03-05T20:04:21.352Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "cryptoquant_alert",
+    "text": "🚨 🚨 2,043.81 #BTC (&#036;145,054,774) aggregated inflows to #Coinbase Pro View Chart | @cryptoquant_alert",
+    "keywords": [
+      "alert",
+      "base"
+    ],
+    "timestamp": "2026-03-05T20:08:56.662Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "TreeNewsFeed",
+    "text": "Coinbase Announces It Will Buy Solana Trading Platform Vector.Fun, Days After Its Maker&#39;s TNSR Token Is Seen Mysteriously Pumping 1000%: Blog",
+    "keywords": [
+      "pump",
+      "buy",
+      "solana",
+      "base",
+      "token"
+    ],
+    "timestamp": "2026-03-05T20:08:56.666Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "TreeNewsFeed",
+    "text": "Tether Announces the Launch of USA₮, the Federally Regulated, Dollar-Backed Stablecoin, Made in America: Blog",
+    "keywords": [
+      "eth",
+      "launch",
+      "CA:"
+    ],
+    "timestamp": "2026-03-05T20:08:56.669Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "officer_cia",
+    "text": "Saga EVM has been exploited for &#036;7 million&#33; An attacker minted D tokens (Saga Dollar) out of thin air with a helper contract that abused IBC mechanisms with custom messages: https://x.com/officer_secret/status/2014015959174963548?s=46 #alert",
+    "keywords": [
+      "alert",
+      "token",
+      "AI",
+      "contract"
+    ],
+    "timestamp": "2026-03-05T20:08:56.672Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "officer_cia",
+    "text": "Just spotted someone lost 4556 ETH (12374075 USD) due to address poisoning&#33; Just…wow&#33; • https://x.com/officer_secret/status/2017288567886619007?s=46 #security #alert",
+    "keywords": [
+      "alert",
+      "eth"
+    ],
+    "timestamp": "2026-03-05T20:08:56.676Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "binance_announcements",
+    "text": "Wallet Maintenance for Ethereum Network (ETH) - 2026-03-04 Binance will perform wallet maintenance for Ethereum Network (ETH) at 2026-03-04 06:00 (UTC). To support the wallet maintenance, deposits and withdrawals on Ethereum Network (ETH) will be suspended starting from 2026-03-04 05:55 (UTC), and b",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T20:08:56.679Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "InvestAnswers",
+    "title": "How Big Tech Is Secretly Fighting the AI War 🤖⚔️",
+    "videoId": "owTc8iR8rIg",
+    "url": "https://youtube.com/watch?v=owTc8iR8rIg",
+    "time": "2026-03-05T20:08:30+00:00",
+    "timestamp": "2026-03-05T20:23:48.191Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Wyoming Is Putting Public Money Into a Bitcoin Treasury Company  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T20:23:53.891Z",
+    "timestamp": "2026-03-05T20:23:53.923Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Is Ethereum Waking Up? Binance ETH Turnover Hits 6-Month High as Volatility Returns  cryptopotato.com",
+    "url": "",
+    "time": "2026-03-05T20:23:53.891Z",
+    "timestamp": "2026-03-05T20:23:53.924Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "The U.S. Was Supposed to Buy Bitcoin… Instead They Bought GOLD?! | EP 1454  SimplyBitcoin",
+    "url": "",
+    "time": "2026-03-05T20:23:53.891Z",
+    "timestamp": "2026-03-05T20:23:53.926Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Moby AI",
+    "symbol": "MOBY",
+    "contract": "Cy1GS2FqefgaMbi45UunrUzin1rfEmTUYnomddzBpump",
+    "marketCap": 2475932.5754606132,
+    "time": "2026-03-05T20:23:59.481Z",
+    "timestamp": "2026-03-05T20:23:59.501Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "CUDIS",
+    "symbol": "CUDIS",
+    "contract": "CudisfkgWvMKnZ3TWf6iCuHm8pN2ikXhDcWytwz6f6RN",
+    "marketCap": 4876019.212312301,
+    "time": "2026-03-05T20:23:59.481Z",
+    "timestamp": "2026-03-05T20:23:59.502Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Core Scientific’s AI pivot gets $500M boost as BTC miners count pennies  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T20:30:33.924Z",
+    "timestamp": "2026-03-05T20:30:33.962Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Revolut seeks U.S. bank charter amid bid for Fed access  coincu.com",
+    "url": "",
+    "time": "2026-03-05T20:30:33.924Z",
+    "timestamp": "2026-03-05T20:30:33.963Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Western Union Launches $3B USDPT Stablecoin on Solana  coinpaper.com",
+    "url": "",
+    "time": "2026-03-05T20:30:33.924Z",
+    "timestamp": "2026-03-05T20:30:33.965Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "BRAINLET",
+    "symbol": "BRAINLET",
+    "contract": "9jCJEc8JYAQHrWc1NVnKW21vY96eHoY9ZJmbzCsupump",
+    "marketCap": 645231.1023211869,
+    "time": "2026-03-05T20:30:39.491Z",
+    "timestamp": "2026-03-05T20:30:39.514Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DiarioBitcoin",
+    "text": "OpenAI lanza GPT-5.4: agentes con uso nativo de computadora y contexto de 1 millón de tokens https://www.diariobitcoin.com/tecnologia/openai-lanza-gpt-5-4-agentes-con-uso-nativo-de-computadora-y-contexto-de-1-millon-de-tokens/",
+    "keywords": [
+      "token",
+      "AI",
+      "agent"
+    ],
+    "timestamp": "2026-03-05T20:35:11.270Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "JUST IN: @COINBASE CEO AND EXECS FACES SHAREHOLDER LAWSUIT OVER DISCLOSURE AND COMPLIANCE FAILURES \n\nA Coinbase shareholder has filed a derivative lawsuit against CEO Brian Armstrong and several membe",
+    "url": "",
+    "time": "2026-03-05T20:41:45.013Z",
+    "timestamp": "2026-03-05T20:41:45.048Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Penguin Apparel Brand Targets Crypto IP Pudgy Penguins in Trademark Infringement Lawsuit  decrypt.co",
+    "url": "",
+    "time": "2026-03-05T20:41:45.013Z",
+    "timestamp": "2026-03-05T20:41:45.050Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "🇺🇸 HISTORY: On March 5, 2015, the U.S. Marshals Service auctioned 50,000 Silk Road–seized Bitcoin at about $270 each, raising roughly $13.5 million. \n\nToday, that same amount of Bitcoin would be wor",
+    "url": "",
+    "time": "2026-03-05T20:41:45.013Z",
+    "timestamp": "2026-03-05T20:41:45.052Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Layer-2 Altcoins That Crypto Developers Have Focused On Most in the Last 30 Days Have Been Revealed  en.bitcoinsistemi.com",
+    "url": "",
+    "time": "2026-03-05T20:57:07.811Z",
+    "timestamp": "2026-03-05T20:57:07.844Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Revoult, ZeroHash Apply for U.S. Banking Charters  bankless.com",
+    "url": "",
+    "time": "2026-03-05T20:57:07.811Z",
+    "timestamp": "2026-03-05T20:57:07.845Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Solv Protocol says exploit drained $2.7 million from Bitcoin yield vault  theblock.co",
+    "url": "",
+    "time": "2026-03-05T20:57:07.811Z",
+    "timestamp": "2026-03-05T20:57:07.847Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "The Last Play",
+    "symbol": "retire",
+    "contract": "zGh48JtNHVBb5evgoZLXwgPD2Qu4MhkWdJLGDAupump",
+    "marketCap": 2927963.9735105336,
+    "time": "2026-03-05T20:57:13.358Z",
+    "timestamp": "2026-03-05T20:57:13.378Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "HYPE",
+    "symbol": "HYPE",
+    "contract": "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g",
+    "marketCap": 11607243.77519845,
+    "time": "2026-03-05T20:57:13.358Z",
+    "timestamp": "2026-03-05T20:57:13.379Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Bitcoin Hyper",
+    "symbol": "HYPER",
+    "contract": "6fQ55CghVKVZe9bqMpsR6sVZUqVjXvZ159ERjmGpump",
+    "marketCap": 1063749.990001,
+    "time": "2026-03-05T20:57:13.358Z",
+    "timestamp": "2026-03-05T20:57:13.380Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Goyim",
+    "symbol": "Goyim",
+    "contract": "9S8edqWxoWz5LYLnxWUmWBJnePg35WfdYQp7HQkUpump",
+    "marketCap": 1124893.6621436737,
+    "time": "2026-03-05T20:57:13.358Z",
+    "timestamp": "2026-03-05T20:57:13.381Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 14,000,000 USDC From: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) To: 0x1c68c3de2b02d9ae478d37c7e6c92a53ff01fc66 Block: 24593619 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:01:48.858Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🟢 Transfer: 10,120,000 USDT From: 0x23878914efe38d27c4d67ab83ed1b93a74d4086a (Aave: Ethereum USDT) To: 0xf42bcfd3dd5fcdd984d24fd2787383195c7f2b51 Block: 24593679 Details #USDTx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:01:48.863Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "⚪ Transfer: 10,207.59911400 ETH From: 0xceb69f6342ece283b2f5c9088ff249b5d0ae66ea To: 0x3606f0f14828cbf4962a284a4bff93bc94b63665 Block: 24573441 Details #ETHx1",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:01:48.866Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "misttrack_alert",
+    "text": "2,308.3493 #BTC transferred from #Coinbase to 22 wallet addresses. Go MistTrack | Transaction Details",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:01:48.868Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DiarioBitcoin",
+    "text": "OpenAI lanza GPT-5.4: versiones Pro y Thinking con contexto de 1 millón de tokens https://www.diariobitcoin.com/tecnologia/openai-lanza-gpt-5-4-versiones-pro-y-thinking-con-contexto-de-1-millon-de-tokens/",
+    "keywords": [
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:01:48.871Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "IRS proposes mandating electronic delivery of tax forms for crypto  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T21:08:21.067Z",
+    "timestamp": "2026-03-05T21:08:21.104Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin miners offload 15K BTC since October, with more sales expected  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T21:08:21.067Z",
+    "timestamp": "2026-03-05T21:08:21.106Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Bitcoin rebound appears a ‘relief rally,’ not the start of a new bullish cycle, says CryptoQuant  theblock.co",
+    "url": "",
+    "time": "2026-03-05T21:15:02.509Z",
+    "timestamp": "2026-03-05T21:15:02.544Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Iran Regime's Crypto Activity Topped $3 Billion as Illicit Transactions Surged in 2025: Report  decrypt.co",
+    "url": "",
+    "time": "2026-03-05T21:15:02.509Z",
+    "timestamp": "2026-03-05T21:15:02.545Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Shiba Inu Price Pops 5.5%, But Traders See a Tough Ceiling  dailycoin.com",
+    "url": "",
+    "time": "2026-03-05T21:15:02.509Z",
+    "timestamp": "2026-03-05T21:15:02.547Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "NullTrace",
+    "symbol": "NULL",
+    "contract": "48eKhwwadm7LJ57msuDYdq36CXx23Ratdbu74Pa1NULL",
+    "marketCap": 1311814.8186477101,
+    "time": "2026-03-05T21:15:08.149Z",
+    "timestamp": "2026-03-05T21:15:08.168Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "CoindeskGlobal",
+    "text": "Short seller Culper bets against ether, BitMine citing &#39;death spiral&#39; risk The short seller firm said that Ethereum&#39;s native token is \"impaired,\" leaving treasury firm BitMine holding the bag while co-founder Vitalik buterin is selling.",
+    "keywords": [
+      "sell",
+      "eth",
+      "token",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:19:39.523Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Solana Payment Volume Up 755%: The Ecosystem Map Shows Why  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T21:34:47.471Z",
+    "timestamp": "2026-03-05T21:34:47.507Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Tether funds Axiym as USDT targets regulated payment rails  coincu.com",
+    "url": "",
+    "time": "2026-03-05T21:34:47.471Z",
+    "timestamp": "2026-03-05T21:34:47.509Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Today’s Overlooked News: Major Partnership Announced Between Coinbase and Ripple (XRP)  en.bitcoinsistemi.com",
+    "url": "",
+    "time": "2026-03-05T21:34:47.471Z",
+    "timestamp": "2026-03-05T21:34:47.511Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "DIME Exchange",
+    "symbol": "DIME",
+    "contract": "F4TJCcaLFHnqkhgFgpgT79UrbG6toNdzbnYcZ9iepump",
+    "marketCap": 659923.3409469133,
+    "time": "2026-03-05T21:34:53.033Z",
+    "timestamp": "2026-03-05T21:34:53.054Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "level941",
+    "symbol": "Pigeon",
+    "contract": "4fSWEw2wbYEUCcMtitzmeGUfqinoafXxkhqZrA9Gpump",
+    "marketCap": 3943891.216676308,
+    "time": "2026-03-05T21:34:53.033Z",
+    "timestamp": "2026-03-05T21:34:53.055Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "AGENDA 47",
+    "symbol": "A47",
+    "contract": "CN162nCPpq3DxPCyKLbAvEJeB1aCxsnVTEG4ZU8vpump",
+    "marketCap": 6947147.705241198,
+    "time": "2026-03-05T21:34:53.033Z",
+    "timestamp": "2026-03-05T21:34:53.056Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Mac mini",
+    "symbol": "MACMINI",
+    "contract": "2QKrBtNECja4cJygxA7igwqxahs93GNmuQ2We2stpump",
+    "marketCap": 2445483.184346589,
+    "time": "2026-03-05T21:34:53.033Z",
+    "timestamp": "2026-03-05T21:34:53.057Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Fartcoin ",
+    "symbol": "Fartcoin ",
+    "contract": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+    "marketCap": 169626950.2414519,
+    "time": "2026-03-05T21:34:53.033Z",
+    "timestamp": "2026-03-05T21:34:53.058Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "SPX6900 (Wormhole)",
+    "symbol": "SPX",
+    "contract": "J3NKxxXZcnNiMjKw9hYb2K4LUxgwB6t1FtPtQVsv3KFr",
+    "marketCap": 326112260.7495734,
+    "time": "2026-03-05T21:34:53.033Z",
+    "timestamp": "2026-03-05T21:34:53.059Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Illusion of Life",
+    "symbol": "SPARK",
+    "contract": "5zCETicUCJqJ5Z3wbfFPZqtSpHPYqnggs1wX7ZRpump",
+    "marketCap": 700672.9234943719,
+    "time": "2026-03-05T21:34:53.033Z",
+    "timestamp": "2026-03-05T21:34:53.059Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "INSIGHT: Bitcoin’s Bull Score Index is 10/100, signaling the market may still be in bearish territory, according to a CryptoQuant analyst.  @cointelegraph",
+    "url": "",
+    "time": "2026-03-05T21:41:29.223Z",
+    "timestamp": "2026-03-05T21:41:29.260Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "BREAKING: SEC Reaches Settlement with Justin Sun and Tron – Price Volatility Observed  en.bitcoinsistemi.com",
+    "url": "",
+    "time": "2026-03-05T21:41:29.223Z",
+    "timestamp": "2026-03-05T21:41:29.261Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "SmarDex Token (Wormhole)",
+    "symbol": "SDEX",
+    "contract": "9dzSzFvPsKDoY2gdWErsuz2H1o4tbzvgBhrNZ9cvkD2j",
+    "marketCap": 28119182.798188817,
+    "time": "2026-03-05T21:41:34.862Z",
+    "timestamp": "2026-03-05T21:41:34.882Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Seeker",
+    "symbol": "SKR",
+    "contract": "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3",
+    "marketCap": 134036012.4790001,
+    "time": "2026-03-05T21:41:34.862Z",
+    "timestamp": "2026-03-05T21:41:34.883Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Pandu Pandas",
+    "symbol": "PANDU",
+    "contract": "4NGbC4RRrUjS78ooSN53Up7gSg4dGrj6F6dxpMWHbonk",
+    "marketCap": 779835.7495901124,
+    "time": "2026-03-05T21:41:34.862Z",
+    "timestamp": "2026-03-05T21:41:34.884Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Monero-Chan",
+    "symbol": "MONEROCHAN",
+    "contract": "H5b4iYiZYycr7fmQ1dMj7hdfLGAEPcDH261K4hugpump",
+    "marketCap": 596538.1294128895,
+    "time": "2026-03-05T21:41:34.862Z",
+    "timestamp": "2026-03-05T21:41:34.885Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "whale_alert_io",
+    "text": "🚨 🚨 🚨 719 #BTC (51,453,381 USD) transferred from Coinbase Institutional to unknown wallet Details",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:46:15.784Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "whale_alert_io",
+    "text": "🚨 🚨 🚨 719 #BTC (51,451,907 USD) transferred from Coinbase Institutional to unknown wallet Details",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:46:15.789Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 Transfer: 30,397,708 USDC From: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) To: 0xaeb3f4e29ad5818e3da60c709566ba8c33e8cde1 Block: 24593881 Details #USDCx2",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:46:15.793Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 🔵 Transfer: 42,263,916 USDC From: 0x0584f6a93718d7de52b40a71b42439acee4be655 To: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) Block: 24593885 Details #USDCx3",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:46:15.796Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 Transfer: 30,397,708 USDC From: 0xaeb3f4e29ad5818e3da60c709566ba8c33e8cde1 To: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) Block: 24593904 Details #USDCx2",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T21:46:15.799Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "criptonoticias",
+    "text": "📌 El grupo financiero ICE anunció una inversión estratégica en el exchange de criptomonedas, OKX . La operación valora a OKX en USD 25.000 millones y le da a ICE un asiento en el directorio. 💡 El plan incluye que ICE use precios spot de OKX para lanzar en EE. UU. futuros cripto regulados. A la vez",
+    "keywords": [
+      "token",
+      "launch"
+    ],
+    "timestamp": "2026-03-05T21:46:15.801Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "REPORT: IRGC-LINKED CRYPTO ADDRESSES MOVED OVER $3B IN 2025 PER @CHAINALYSIS \n\nThe figure comes from the company’s 2026 Crypto Crime Report, which estimates that illicit cryptocurrency addresses recei",
+    "url": "",
+    "time": "2026-03-05T21:52:48.983Z",
+    "timestamp": "2026-03-05T21:52:49.020Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "SEC proposes 'token taxonomy' for interpreting crypto under securities laws  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T21:52:48.983Z",
+    "timestamp": "2026-03-05T21:52:49.021Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Roblox Is Now Using AI to Rewrite Chat Swears and Slurs in Real Time  decrypt.co 2 sources",
+    "url": "",
+    "time": "2026-03-05T21:52:48.983Z",
+    "timestamp": "2026-03-05T21:52:49.023Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "GIGACHAD",
+    "symbol": "GIGA",
+    "contract": "63LfDmNb3MQ8mw9MtZ2To9bEA2M71kZUUGq5tiJxcqj9",
+    "marketCap": 19861125.473929245,
+    "time": "2026-03-05T21:52:54.606Z",
+    "timestamp": "2026-03-05T21:52:54.627Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Verse World",
+    "symbol": "Verse",
+    "contract": "vRseBFqTy9QLmmo5qGiwo74AVpdqqMTnxPqWoWMpump",
+    "marketCap": 3452401.207951846,
+    "time": "2026-03-05T21:52:54.606Z",
+    "timestamp": "2026-03-05T21:52:54.628Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Nvidia stops making AI chips for China, redirects capacity to next-gen Vera Rubin processors  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T22:07:51.307Z",
+    "timestamp": "2026-03-05T22:07:51.334Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Western Union Launches USDPT Stablecoin on Solana with Crossmint Partnership  btcusa.com",
+    "url": "",
+    "time": "2026-03-05T22:07:51.307Z",
+    "timestamp": "2026-03-05T22:07:51.336Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "U.S. banking agencies say capital should be same for standard or tokenized securities  coindesk.com",
+    "url": "",
+    "time": "2026-03-05T22:07:51.307Z",
+    "timestamp": "2026-03-05T22:07:51.337Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "dogwifhat",
+    "symbol": "$WIF",
+    "contract": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+    "marketCap": 214676061.83456272,
+    "time": "2026-03-05T22:07:56.873Z",
+    "timestamp": "2026-03-05T22:07:56.894Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "BOOK OF MEME",
+    "symbol": "BOME",
+    "contract": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+    "marketCap": 28409787.029943388,
+    "time": "2026-03-05T22:07:56.873Z",
+    "timestamp": "2026-03-05T22:07:56.895Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "CoindeskGlobal",
+    "text": "U.S. banking agencies say capital should be same for standard or tokenized securities The Federal Reserve and other banking regulators clarified that the capital tally in banks needs identical treatment whether securities are tokenized or not.",
+    "keywords": [
+      "eth",
+      "token"
+    ],
+    "timestamp": "2026-03-05T22:12:27.257Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 🔵 Transfer: 50,000,000 USDC From: 0x28c5b0445d0728bc25f143f8eba5c5539fae151a To: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) Block: 24594079 Details #USDCx3",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T22:12:27.262Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DiarioBitcoin",
+    "text": "Solana se consolida como capa de liquidación de pagos tras disparar su volumen un 755% en 2025 https://www.diariobitcoin.com/bancos-y-pagos-verticales/solana-se-consolida-como-capa-de-liquidacion-de-pagos-tras-disparar-su-volumen-un-755-en-2025/",
+    "keywords": [
+      "solana",
+      "volume"
+    ],
+    "timestamp": "2026-03-05T22:12:27.265Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "21Shares launches first Polkadot ETF as altcoin investment products expand  ambcrypto.com",
+    "url": "",
+    "time": "2026-03-05T22:18:59.942Z",
+    "timestamp": "2026-03-05T22:18:59.978Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "SEC dismisses claims against Justin Sun and Tron Foundation, BitTorrent developer Rainberry agrees to pay $10M fine  theblock.co",
+    "url": "",
+    "time": "2026-03-05T22:18:59.942Z",
+    "timestamp": "2026-03-05T22:18:59.980Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "ربح $10 دولار في تطبيق Binnance مجانا  r/binance",
+    "url": "",
+    "time": "2026-03-05T22:18:59.942Z",
+    "timestamp": "2026-03-05T22:18:59.981Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "US SEC Proposes Guidelines on How Securities Laws Can be Applied to Crypto  cryptopotato.com",
+    "url": "",
+    "time": "2026-03-05T22:25:36.209Z",
+    "timestamp": "2026-03-05T22:25:36.246Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Fed clarifies capital rules for tokenized securities, says framework is ‘technology neutral’  theblock.co",
+    "url": "",
+    "time": "2026-03-05T22:25:36.209Z",
+    "timestamp": "2026-03-05T22:25:36.248Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "swarms",
+    "symbol": "swarms",
+    "contract": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+    "marketCap": 7263328.520775733,
+    "time": "2026-03-05T22:25:41.845Z",
+    "timestamp": "2026-03-05T22:25:41.866Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 Transfer: 12,521,634 USDC From: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) To: 0x0584f6a93718d7de52b40a71b42439acee4be655 Block: 24594108 Details #USDCx1",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T22:30:12.611Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 Transfer: 34,800,000 USDC From: 0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43 (Coinbase 10) To: 0x0584f6a93718d7de52b40a71b42439acee4be655 Block: 24594108 Details #USDCx2",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T22:30:12.616Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "msgeth",
+    "text": "🔵 🔵 Transfer: 30,410,218 USDC From: 0xcd531ae9efcce479654c4926dec5f6209531ca7b (Coinbase Prime) To: 0x879d8aa88c4e4baaf4c7da0f7290e2c483bcaa51 Block: 24594195 Details #USDCx2",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T22:30:12.619Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【数据：150 枚 BTC 从 Coinbase 转出，价值约 1067 万美元】 https://www.chaincatcher.com/article/2249918",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T22:30:12.622Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Iranian Foreign Minister Abbas Araghchi has declared that Iran is ready to face a potential U.S. ground invasion, per NBC  @cryptonwsuk",
+    "url": "",
+    "time": "2026-03-05T22:45:27.939Z",
+    "timestamp": "2026-03-05T22:45:27.977Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Ticker is $ADA  @angrycryptoshow",
+    "url": "",
+    "time": "2026-03-05T22:45:27.939Z",
+    "timestamp": "2026-03-05T22:45:27.978Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "️ UPDATE: Santiment data shows Starknet leading all Layer 2 projects in developer activity, followed by Aztec Network and Arbitrum.  @cointelegraph",
+    "url": "",
+    "time": "2026-03-05T22:45:27.939Z",
+    "timestamp": "2026-03-05T22:45:27.980Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "bankme.fun",
+    "symbol": "BANK",
+    "contract": "8WQD8buLVUvpmEibkPmPF5GB8hFpZcakDJvWjUJXpump",
+    "marketCap": 9925030.742471775,
+    "time": "2026-03-05T22:45:33.509Z",
+    "timestamp": "2026-03-05T22:45:33.530Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Autism Coin",
+    "symbol": "AUTISM",
+    "contract": "8jiVXftnn2ZG6bugK7HAH5j2G3D6TpsG521gqsWwpump",
+    "marketCap": 1241160.2726299916,
+    "time": "2026-03-05T22:45:33.509Z",
+    "timestamp": "2026-03-05T22:45:33.531Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Ace Data Cloud",
+    "symbol": "ACE",
+    "contract": "GnHpRsrcyfHSMZNzmpjAzTFQA26vnbRMzbKQ11ZKpump",
+    "marketCap": 571101.4851196372,
+    "time": "2026-03-05T22:45:33.509Z",
+    "timestamp": "2026-03-05T22:45:33.532Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Ten Blockchain Projects Raised $1.2 Billion and Are Now Down 96% to 100% From Their Peaks  ethnews.com",
+    "url": "",
+    "time": "2026-03-05T22:52:05.255Z",
+    "timestamp": "2026-03-05T22:52:05.285Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "SEC ends case against Justin Sun with $10M settlement  cointelegraph.com",
+    "url": "",
+    "time": "2026-03-05T22:52:05.255Z",
+    "timestamp": "2026-03-05T22:52:05.286Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Jellybean",
+    "symbol": "Jellybean",
+    "contract": "412zDygnwP9DzitnQVgRKUFFTDmrYScFch6P2k39pump",
+    "marketCap": 829547.7530622041,
+    "time": "2026-03-05T22:52:10.870Z",
+    "timestamp": "2026-03-05T22:52:10.892Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "ORE",
+    "symbol": "ORE",
+    "contract": "oreoU2P8bN6jkk3jbaiVxYnG1dCXcYxwhwyK9jSybcp",
+    "marketCap": 24826304.73141241,
+    "time": "2026-03-05T22:52:10.870Z",
+    "timestamp": "2026-03-05T22:52:10.893Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【数据：5.27 万枚 SOL 从 Stake Account 转入 Coinbase Prime，价值约 469.57 万美元】 https://www.chaincatcher.com/article/2249920",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T22:56:40.891Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Tech cloud stocks rally to new highs despite Dow plunge and oil spike tied to Israel’s war  cryptopolitan.com",
+    "url": "",
+    "time": "2026-03-05T23:03:17.816Z",
+    "timestamp": "2026-03-05T23:03:17.847Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Nvidia Is Probably Done Investing in OpenAI and Anthropic, Says CEO—Why?  @decryptmedia 2 sources",
+    "url": "",
+    "time": "2026-03-05T23:03:17.816Z",
+    "timestamp": "2026-03-05T23:03:17.849Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "SETTLEMENT: SEC SETTLES LAWSUIT WITH JUSTIN SUN, $TRON AND RELATED COMPANIES\n\nUnder the proposed judgment, Rainberry - the company behind BitTorrent, which became linked to the TRON ecosystem after it",
+    "url": "",
+    "time": "2026-03-05T23:03:17.816Z",
+    "timestamp": "2026-03-05T23:03:17.851Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "The Bitcoin Mascot",
+    "symbol": "BITTY",
+    "contract": "dTzEP9JU2NRDPuWtM32gaVKip2fTHBqjheU1APBpump",
+    "marketCap": 1097028.3690070314,
+    "time": "2026-03-05T23:03:23.467Z",
+    "timestamp": "2026-03-05T23:03:23.489Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Dark Horse",
+    "symbol": "DARKHORSE",
+    "contract": "3JjfgaXzhN6xr6WYJ4wBVoS19etj3ChLWaKz6TBXbonk",
+    "marketCap": 1390374.1053488662,
+    "time": "2026-03-05T23:03:23.467Z",
+    "timestamp": "2026-03-05T23:03:23.490Z"
+  },
+  {
+    "source": "x-twitter",
+    "handle": "Degen_Hardy",
+    "text": "🔥FEBRUARY WINNERS🔥\n\nAnother solid month of gains, trading with leverage and apeing low cap gems in the trenches.\n\n$PEACE 7x 🔥\n$PUNCH 4x 🔥\n$ALIENS 4x 🔥\n\n$ALPHA 3x 🔥\n$KAMIYO 3x 🔥\n$SAID 3x 🔥\n$URMOM 3x 🔥\n\n$CAPYSIM 2x 🔥\n$BUTTCOIN 2x 🔥\n$MBX 2x 🔥\n$MOG 2x 🔥\n$AUTISM 2x 🔥 https://t.co/Jv86ataxf0",
+    "tickers": [
+      "PEACE",
+      "PUNCH",
+      "ALIENS",
+      "ALPHA",
+      "KAMIYO",
+      "SAID",
+      "URMOM",
+      "CAPYSIM",
+      "BUTTCOIN",
+      "MBX",
+      "MOG",
+      "AUTISM"
+    ],
+    "time": "2026-03-05T23:05:18.515Z",
+    "timestamp": "2026-03-05T23:12:03.481Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "TRUMPEDO",
+    "symbol": "TRUMPEDO",
+    "contract": "Ah3QzaWjydAhL4fqGWp4gCnybTbrvCSdkYDakspDpump",
+    "marketCap": 3980036.3994910736,
+    "time": "2026-03-05T23:18:42.306Z",
+    "timestamp": "2026-03-05T23:18:42.325Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "michi",
+    "symbol": "$michi",
+    "contract": "5mbK36SZ7J19An8jFochhQS4of8g6BwUjbeCSxBSoWdp",
+    "marketCap": 844796.4969989693,
+    "time": "2026-03-05T23:18:42.306Z",
+    "timestamp": "2026-03-05T23:18:42.326Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "crypto100xprojects",
+    "text": "📣 CONFIRMED: HIVE Digital Releases Q3 Financial Report Today 😀 HIVE (mining company + AI infrastructure) will announce its 9-month results (up to December 2025) today at 08:00 ET. The market is waiting to see whether they are still profitable despite low hashprice and falling BTC prices. HIVE is a",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T23:23:12.784Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Going LIVE now! Join the Moongang and ask me anything as we discuss your favorite cryptocurrencies and the state of the market!\n\nCryptocurrency Request Show / AMA + $71,000 BTC & $2,050 ETH & $89 SOL ",
+    "url": "",
+    "time": "2026-03-05T23:29:45.999Z",
+    "timestamp": "2026-03-05T23:29:46.040Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "LATEST:  About 38% of altcoins are now trading near all-time lows, surpassing the level seen after the FTX collapse, according to CryptoQuant analyst Darkfost.  @coinmarketcap",
+    "url": "",
+    "time": "2026-03-05T23:29:45.999Z",
+    "timestamp": "2026-03-05T23:29:46.042Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Since the start of the conflict in the Middle East, bitcoin has bounced +14% vs gold.\n\nThis comes as the ratio has neared the levels at which it bottomed in 2022-2023.  @stackersatoshi",
+    "url": "",
+    "time": "2026-03-05T23:29:45.999Z",
+    "timestamp": "2026-03-05T23:29:46.043Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Jambo",
+    "symbol": "J",
+    "contract": "Jambjx1oJoZNBZiqbiF9TqgatEZPdyfvYa9WVsKNzUh",
+    "marketCap": 1876137.0016289065,
+    "time": "2026-03-05T23:29:51.642Z",
+    "timestamp": "2026-03-05T23:29:51.665Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "Pudgy Penguins Sued For Trademark Infringement  bankless.com",
+    "url": "",
+    "time": "2026-03-05T23:36:27.629Z",
+    "timestamp": "2026-03-05T23:36:27.667Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "BINDER",
+    "symbol": "BINDER",
+    "contract": "BeFtLwLtS9Rva12KrHKRMY1H5WoeM1Y2ULMnNJKopump",
+    "marketCap": 2261573.5657974794,
+    "time": "2026-03-05T23:36:33.296Z",
+    "timestamp": "2026-03-05T23:36:33.316Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "whale_alert_io",
+    "text": "💤 A dormant pre-mine address containing 401 #ETH (835,369 USD) has just been activated after 10.6 years (worth 124 USD in 2015)&#33; Details",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-05T23:41:03.757Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "DiarioBitcoin",
+    "text": "Ripple suma futuros de Coinbase para BTC, ETH, XRP y SOL en su plataforma institucional https://www.diariobitcoin.com/estados-unidos/ripple-suma-futuros-de-coinbase-para-btc-eth-xrp-y-sol-en-su-plataforma-institucional/",
+    "keywords": [
+      "eth",
+      "base"
+    ],
+    "timestamp": "2026-03-05T23:41:03.761Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "So binance demands now facial recognition EVERY TIME you login??  r/binance",
+    "url": "",
+    "time": "2026-03-05T23:55:59.401Z",
+    "timestamp": "2026-03-05T23:55:59.438Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "MASSIVE: $XRP ETFS HIT TEN DAY INFLOW STREAK\n\nSpot @Ripple ETFs in the US soaked up an additional $4.2 million on March 4, the products now holding more than 1.2% of $XRP's supply.\n\nMore impressively,",
+    "url": "",
+    "time": "2026-03-05T23:55:59.401Z",
+    "timestamp": "2026-03-05T23:55:59.439Z"
+  },
+  {
+    "source": "cryptopanic",
+    "title": "UPDATE: Pending Home Sales have fallen to lowest level ever recorded.  @cointelegraph",
+    "url": "",
+    "time": "2026-03-05T23:55:59.401Z",
+    "timestamp": "2026-03-05T23:55:59.441Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Obelisk ",
+    "symbol": "PRELODE",
+    "contract": "A9NRQhVs76nXdPFVJBT1edHDJHdkrxD4JsqF1bPdpump",
+    "marketCap": 3407884.228489011,
+    "time": "2026-03-05T23:56:05.060Z",
+    "timestamp": "2026-03-05T23:56:05.082Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Percolator",
+    "symbol": "Percolator",
+    "contract": "8PzFWyLpCVEmbZmVJcaRTU5r69XKJx1rd7YGpWvnpump",
+    "marketCap": 1150921.0436576034,
+    "time": "2026-03-05T23:56:05.060Z",
+    "timestamp": "2026-03-05T23:56:05.083Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "JUICE",
+    "symbol": "JUICE",
+    "contract": "2LzLh5pHg3nDQz6goTLAvDXfDbSBgAR8qem3bdXdpump",
+    "marketCap": 2512652.993370851,
+    "time": "2026-03-05T23:56:05.060Z",
+    "timestamp": "2026-03-05T23:56:05.083Z"
+  },
+  {
+    "source": "youtube",
+    "channel": "Lark Davis",
+    "title": "Are Altcoins Going to Have a Comeback?",
+    "videoId": "DCpBBFBUa2U",
+    "url": "https://youtube.com/watch?v=DCpBBFBUa2U",
+    "time": "2026-03-06T00:00:14+00:00",
+    "timestamp": "2026-03-06T00:02:34.904Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "ECLIPSE",
+    "symbol": "EFM",
+    "contract": "BK7HWWSWPemAoHvwj7nzBqqR6tj4C7FxdEGcwsDpsurg",
+    "marketCap": 636781.6936489032,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.055Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Orca",
+    "symbol": "ORCA",
+    "contract": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+    "marketCap": 64429370.71227277,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.056Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "LIL Bits",
+    "symbol": "LIL",
+    "contract": "qnko6WJGEwEU3JYQFZakLe9V8dmS4YAXFARHeRipump",
+    "marketCap": 785363.5458471865,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.056Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Shark Cat",
+    "symbol": "SC",
+    "contract": "6D7NaB2xsLd7cauWu1wKk6KBsJohJmP2qZH9GEfVi5Ui",
+    "marketCap": 577126.5157830488,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.057Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "Raydium",
+    "symbol": "RAY",
+    "contract": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+    "marketCap": 163951018.30520022,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.058Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "MANSORY",
+    "symbol": "MNSRY",
+    "contract": "1xdtu7y3LkkrVCAbm5KGKfYzq1qgKhxxk5AaJBqpump",
+    "marketCap": 8575718.871751998,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.059Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "GOHOME",
+    "symbol": "GOHOME",
+    "contract": "2Wu1g2ft7qZHfTpfzP3wLdfPeV1is4EwQ3CXBfRYAciD",
+    "marketCap": 46269098.27046815,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.060Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "AI Rig Complex",
+    "symbol": "arc",
+    "contract": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump",
+    "marketCap": 37226241.63663075,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.061Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "OFFICIAL TRUMP",
+    "symbol": "TRUMP",
+    "contract": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+    "marketCap": 754587343.4957427,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.061Z"
+  },
+  {
+    "source": "pumpfun",
+    "name": "You’ll own nothing & be happy",
+    "symbol": "NOTHING",
+    "contract": "F7pB3ZdfBnyFw2LRHydWEn9BmhEa5XihXLjhySFRpump",
+    "marketCap": 768661.2662549019,
+    "time": "2026-03-06T00:02:46.031Z",
+    "timestamp": "2026-03-06T00:02:46.062Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "Crypto_FinderNews",
+    "text": "🔥 🔥 &#036;Fern 🔥 🔥 ✅ Invite your friends ✅ Buy at least &#036;60 ✅ &#036;150 Giveaway 2 Lucky members will be selected for giveaway Buy Now: Fz4L6mxzF1h7C6czZ2PxhKYd6Xi6XwwNhTftKsGkpump Giveaway winner Will be announced on 10 Mar 11 AM UTC",
+    "keywords": [
+      "pump",
+      "buy"
+    ],
+    "timestamp": "2026-03-06T00:07:15.778Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "ChainCatcher",
+    "text": "【数据：ETH 全网合约持仓量 24h 减少 5.94%】 https://www.chaincatcher.com/article/2249924",
+    "keywords": [
+      "eth",
+      "AI"
+    ],
+    "timestamp": "2026-03-06T00:07:15.782Z"
+  },
+  {
+    "source": "telegram",
+    "channel": "bitpush",
+    "text": "【SEC 撤销对 Justin Sun 的诉讼，Rainberry 将支付 1000 万美元罚款】 比推消息， 美国证券交易委员会（SEC）将撤销对加密行业人士 Justin Sun 的诉讼。SEC 于 2023 年起诉 Justin Sun，指控其通过旗下控制的 Tron Foundation、BitTorrent Foundation Ltd.及 Rainberry Inc.出售未注册证券，并通过指示员工在其控制的账户间进行超 60 万笔清洗交易以人为抬高 Tronix 交易量。根据和解方案，SEC 将撤销对 Justin Sun 的全部指控，Rainberry 在不承认也不否认相关指控的",
+    "keywords": [
+      "base",
+      "AI"
+    ],
+    "timestamp": "2026-03-06T00:07:15.787Z"
+  }
+]

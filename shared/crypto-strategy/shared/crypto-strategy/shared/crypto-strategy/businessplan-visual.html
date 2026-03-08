@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+:root { --bg: #0d1117; --card: #161b22; --border: #30363d; --text: #e6edf3; --muted: #8b949e; --green: #3fb950; --red: #f85149; --blue: #58a6ff; --purple: #a371f7; --gold: #f0c000; --orange: #d29922; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); padding: 32px; width: 1200px; }
+h1 { font-size: 28px; margin-bottom: 2px; }
+h2 { font-size: 18px; margin-bottom: 14px; color: var(--blue); }
+.sub { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+.divider { border-top: 1px solid var(--border); margin: 24px 0; }
+
+/* Executive Summary */
+.exec { background: linear-gradient(135deg, #161b22 0%, #1a1f15 100%); border: 1px solid var(--gold); border-radius: 14px; padding: 24px; margin-bottom: 24px; }
+.exec h2 { color: var(--gold); margin-bottom: 10px; }
+.exec p { font-size: 14px; line-height: 1.7; color: var(--text); margin-bottom: 10px; }
+.exec .highlight { color: var(--gold); font-weight: 700; }
+
+/* Grid layouts */
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+.grid4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+.grid5 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+
+/* Cards */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+.card h3 { font-size: 14px; margin-bottom: 10px; }
+.card .big { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+.card .label { font-size: 12px; color: var(--muted); }
+.card ul { list-style: none; font-size: 12px; color: var(--muted); line-height: 1.9; }
+.card ul li { padding-left: 16px; position: relative; }
+.card ul li::before { content: "→ "; position: absolute; left: 0; color: var(--blue); }
+
+/* Scenarios */
+.scenario { text-align: center; }
+.scenario .amount { font-size: 24px; font-weight: 700; }
+.scenario .sub-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* Timeline */
+.timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 24px; }
+.phase { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.phase .week { font-size: 12px; font-weight: 600; margin-bottom: 6px; }
+.phase h4 { font-size: 14px; margin-bottom: 8px; }
+.phase ul { list-style: none; font-size: 11px; color: var(--muted); line-height: 1.8; }
+.phase ul li::before { content: "☐ "; }
+
+/* KPIs */
+.kpi { text-align: center; }
+.kpi .val { font-size: 22px; font-weight: 700; }
+.kpi .target { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* Competitors */
+.comp-row { display: grid; grid-template-columns: 2fr 1fr 1fr 2fr; gap: 0; font-size: 12px; padding: 10px 14px; border-bottom: 1px solid var(--border); }
+.comp-row.header { color: var(--muted); font-weight: 600; background: var(--bg); border-radius: 8px 8px 0 0; }
+.comp-row.us { background: rgba(63, 185, 80, 0.1); border: 1px solid var(--green); border-radius: 0 0 8px 8px; }
+
+/* Rules */
+.rule-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 24px; }
+.rule { background: var(--card); border-radius: 12px; padding: 16px; }
+.rule h4 { font-size: 13px; margin-bottom: 8px; }
+.rule ul { list-style: none; font-size: 12px; line-height: 1.9; }
+.rule.do ul li::before { content: "✅ "; }
+.rule.dont ul li::before { content: "❌ "; }
+.rule.do ul li { color: var(--green); }
+.rule.dont ul li { color: var(--red); }
+
+.badge { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 11px; font-weight: 700; }
+.badge.gold { background: var(--gold); color: #000; }
+.badge.green { background: var(--green); color: #000; }
+.badge.blue { background: var(--blue); color: #000; }
+
+.footer { text-align: center; color: var(--muted); font-size: 11px; border-top: 1px solid var(--border); padding-top: 14px; margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<h1>📋 Businessplan: Milo Crypto System</h1>
+<p class="sub">WEundMILO Crypto Trading | Gründer: Juri P. & Christian Schulz | Technologie: Milo AI | Februar 2026</p>
+
+<!-- EXECUTIVE SUMMARY -->
+<div class="exec">
+  <h2>Executive Summary</h2>
+  <p>AI-gestütztes Kryptowährungs-Handelssystem: Automatisiertes Monitoring von <span class="highlight">2.000+ Quellen</span>, intelligente Signalanalyse und sichere On-Chain-Execution. Reaktionszeit <span class="highlight">unter 5 Minuten</span> bei Betriebskosten von nur <span class="highlight">$30-65/Monat</span>.</p>
+  <p>Das Kernproblem: Jede Minute Verzögerung kostet 15-30% der möglichen Rendite. Manuelles Monitoring ist unmöglich. Unser System automatisiert den gesamten Prozess.</p>
+</div>
+
+<!-- KEY METRICS -->
+<div class="grid5">
+  <div class="card" style="text-align:center"><div class="big" style="color:var(--gold)">$30-65</div><div class="label">Betriebskosten/Monat</div></div>
+  <div class="card" style="text-align:center"><div class="big" style="color:var(--green)">2.000+</div><div class="label">Gescannte Quellen</div></div>
+  <div class="card" style="text-align:center"><div class="big" style="color:var(--blue)">< 5 Min</div><div class="label">Reaktionszeit</div></div>
+  <div class="card" style="text-align:center"><div class="big">6</div><div class="label">Security Checks/Trade</div></div>
+  <div class="card" style="text-align:center"><div class="big" style="color:var(--purple)">24/7</div><div class="label">Automatisiert</div></div>
+</div>
+
+<!-- 3 STAGES -->
+<h2>🏗️ Das 3-Stufen-System</h2>
+<div class="grid3">
+  <div class="card">
+    <h3>🔍 Stufe 1: Scannen <span class="badge green">$0/Tag</span></h3>
+    <ul>
+      <li>50-75 X/Twitter Influencer</li>
+      <li>12 Telegram Alpha-Gruppen</li>
+      <li>5 Reddit Subreddits</li>
+      <li>On-Chain APIs (CoinGecko, DexScreener)</li>
+      <li>10.000+ Posts/Tag → Keyword-Filter</li>
+      <li>Output: ~100-150 relevante Treffer</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>🧠 Stufe 2: Analysieren <span class="badge gold">~$1/Tag</span></h3>
+    <ul>
+      <li>AI Relevanz-Score (1-10)</li>
+      <li>Urgency: 🔴 Sofort / 🟡 Heute / 🟢 Info</li>
+      <li>Quellen-Autorität gewichtet (30%)</li>
+      <li>Multi-Source Bestätigung (25%)</li>
+      <li>Push-Alert bei Score ≥ 8</li>
+      <li>Täglicher Report aller Signale</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>⚡ Stufe 3: Handeln <span class="badge blue">1-Click</span></h3>
+    <ul>
+      <li>6 automatische Security Checks</li>
+      <li>Beste Route via Jupiter/1inch</li>
+      <li>Button-Bestätigung per Telegram</li>
+      <li>Auto-Logging ins Portfolio</li>
+      <li>Stop-Loss automatisch gesetzt</li>
+      <li>Steuer-Dokumentation ab Trade 1</li>
+    </ul>
+  </div>
+</div>
+
+<!-- WETTBEWERB -->
+<h2>📊 Wettbewerbsvergleich</h2>
+<div class="card" style="margin-bottom: 24px; padding: 0; overflow: hidden;">
+  <div class="comp-row header"><span>Lösung</span><span>Kosten/Monat</span><span>Funktion</span><span>Schwäche</span></div>
+  <div class="comp-row"><span>3Commas, Pionex (Trading Bots)</span><span>$30-100</span><span>Nur Execution</span><span>Kein Signalscanning</span></div>
+  <div class="comp-row"><span>Signal-Gruppen (Telegram)</span><span>$50-500</span><span>Manuelle Signale</span><span>Verzögerung, menschlicher Fehler</span></div>
+  <div class="comp-row"><span>Nansen, Arkham (Analytics)</span><span>$100-1.000</span><span>Datenanalyse</span><span>Teuer, keine Trade-Execution</span></div>
+  <div class="comp-row us"><span><strong>🦁 Milo Crypto System</strong></span><span><strong>$30-65</strong></span><span><strong>Scan+Analyse+Trade</strong></span><span><strong>All-in-One, 90% günstiger</strong></span></div>
+</div>
+
+<!-- RENDITE SZENARIEN -->
+<h2>💰 Renditeszenarien (Start: $3.900)</h2>
+<div class="grid3">
+  <div class="card scenario">
+    <h3 style="color:var(--muted)">Konservativ (+5%/Monat)</h3>
+    <div class="amount" style="color:var(--muted)">$5.224</div><div class="sub-label">Nach 6 Monaten</div>
+    <div class="amount" style="color:var(--muted); margin-top:8px">$7.005</div><div class="sub-label">Nach 12 Monaten</div>
+  </div>
+  <div class="card scenario" style="border-color:var(--green)">
+    <h3 style="color:var(--green)">Realistisch (+10%/Monat)</h3>
+    <div class="amount" style="color:var(--green)">$6.908</div><div class="sub-label">Nach 6 Monaten</div>
+    <div class="amount" style="color:var(--green); margin-top:8px">$12.231</div><div class="sub-label">Nach 12 Monaten (+213%)</div>
+  </div>
+  <div class="card scenario">
+    <h3 style="color:var(--gold)">Optimistisch (+20%/Monat)</h3>
+    <div class="amount" style="color:var(--gold)">$11.636</div><div class="sub-label">Nach 6 Monaten</div>
+    <div class="amount" style="color:var(--gold); margin-top:8px">$34.699</div><div class="sub-label">Nach 12 Monaten (+789%)</div>
+  </div>
+</div>
+
+<!-- KOSTEN -->
+<h2>📉 Kostenstruktur (monatlich)</h2>
+<div class="grid5">
+  <div class="card" style="text-align:center"><div class="big" style="color:var(--green); font-size:20px">$0</div><div class="label">Scanning & APIs</div></div>
+  <div class="card" style="text-align:center"><div class="big" style="color:var(--orange); font-size:20px">$15-45</div><div class="label">AI-Analyse</div></div>
+  <div class="card" style="text-align:center"><div class="big" style="color:var(--orange); font-size:20px">$5-10</div><div class="label">Trade-Checks</div></div>
+  <div class="card" style="text-align:center"><div class="big" style="color:var(--muted); font-size:20px">~$10</div><div class="label">Infrastruktur</div></div>
+  <div class="card" style="text-align:center; border-color:var(--green)"><div class="big" style="color:var(--green); font-size:20px">$30-65</div><div class="label">GESAMT</div></div>
+</div>
+<p style="text-align:center; font-size:12px; color:var(--muted); margin-bottom:24px">Break-Even: Nur +1.3% Rendite/Monat nötig → Sehr realistisch</p>
+
+<!-- TIMELINE -->
+<h2>🗓️ Implementierungs-Roadmap</h2>
+<div class="timeline">
+  <div class="phase"><div class="week" style="color:var(--blue)">WOCHE 1-2</div><h4>🔨 Foundation</h4><ul><li>Feed-Collector (Node.js)</li><li>Keyword-Filter</li><li>Cron-Jobs (15 Min)</li><li>75 Profile finalisieren</li><li>Test-Alerts</li></ul></div>
+  <div class="phase"><div class="week" style="color:var(--purple)">WOCHE 2-3</div><h4>🧠 Intelligence</h4><ul><li>AI Scoring-System</li><li>Alert-Templates</li><li>Telegram Buttons</li><li>Tages-Reports</li><li>Backtesting</li></ul></div>
+  <div class="phase"><div class="week" style="color:var(--orange)">WOCHE 3-4</div><h4>⚡ Execution</h4><ul><li>Wallet + Ledger</li><li>Jupiter API</li><li>Security Pipeline</li><li>Button-to-Trade</li><li>Steuer-Export</li></ul></div>
+  <div class="phase"><div class="week" style="color:var(--green)">MONAT 2+</div><h4>🚀 Vollbetrieb</h4><ul><li>24/7 Monitoring</li><li>Performance Dashboard</li><li>ROI-Reports</li><li>Multi-Chain</li><li>100+ Profile</li></ul></div>
+</div>
+
+<!-- KPIs -->
+<h2>📈 KPIs & Ziele</h2>
+<div class="grid4">
+  <div class="card kpi"><div class="val" style="color:var(--blue)">100+</div><div class="target">Signals/Tag (Monat 3)</div></div>
+  <div class="card kpi"><div class="val" style="color:var(--gold)">< 3 Min</div><div class="target">Reaktionszeit Tier-1</div></div>
+  <div class="card kpi"><div class="val" style="color:var(--green)">> 60%</div><div class="target">Trade-Erfolgsquote</div></div>
+  <div class="card kpi"><div class="val" style="color:var(--green)">> 10%</div><div class="target">Portfolio-Rendite/Monat</div></div>
+</div>
+
+<!-- TRADING REGELN -->
+<h2>🛡️ Trading-Regeln</h2>
+<div class="rule-grid">
+  <div class="rule do"><h4 style="color:var(--green)">IMMER</h4><ul><li>Button-Bestätigung vor jedem Trade</li><li>Stop-Loss automatisch gesetzt</li><li>Profits regelmäßig in Stablecoins sichern</li><li>Steuer-Dokumentation ab Trade 1</li><li>80% auf Cold Storage (Ledger)</li></ul></div>
+  <div class="rule dont"><h4 style="color:var(--red)">NIEMALS</h4><ul><li>Mehr als 5% pro Trade</li><li>Mehr als 10% in Micro-Caps</li><li>Leverage / Margin Trading</li><li>Trade ohne Security-Check</li><li>Milo handelt eigenständig</li></ul></div>
+</div>
+
+<!-- TEAM -->
+<h2>👥 Team</h2>
+<div class="grid3">
+  <div class="card" style="text-align:center"><div style="font-size:32px; margin-bottom:8px">🧑‍💼</div><h3>Juri & Chris</h3><div class="label">Strategie & Entscheidung<br>Investment-Thesen, Trade-Bestätigung</div></div>
+  <div class="card" style="text-align:center"><div style="font-size:32px; margin-bottom:8px">🦁</div><h3>Milo AI</h3><div class="label">Technologie & Execution<br>Scanner, Analyse, Alerts, Tracking</div></div>
+  <div class="card" style="text-align:center"><div style="font-size:32px; margin-bottom:8px">🤝</div><h3>Gemeinsam</h3><div class="label">Strategie-Änderungen<br>Neue Quellen, Risikotoleranz</div></div>
+</div>
+
+<div class="footer">📋 Businessplan v1.0 | WEundMILO Crypto Trading | Juri P. & Christian Schulz | Milo AI 🦁 | 09.02.2026 | Kein Financial Advice</div>
+
+</body>
+</html>
