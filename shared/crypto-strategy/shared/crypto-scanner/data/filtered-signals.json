@@ -1,15 +1,29 @@
 [
   {
-    "symbol": "INJ",
-    "mentions": 2,
+    "symbol": "SPELL",
+    "mentions": 4,
     "sources": [
       "x-twitter"
     ],
-    "score": 10,
+    "score": 20,
     "narratives": [],
     "sampleTexts": [
-      "The @Injective_ ecosystem is about to explode and many projects that are built on top have confirmed an airdrop.\n\nThe easiest way to buy, stake $INJ and get qualified for the airdrops.\n\n1/ 🧵",
-      "An IRL friend asked me what to buy with $5000 to start with.\n\nYesterday I told him to buy:\n\n$1100 $TAO\n$800 $INJ\n$800 $KAS \n$800 $ZEPH\n$500 $RUNE\n$500 $KUJI\n$500 $RNDR\n\nMost are top buys. Let’s come b"
+      "@0xM3rlin \\u0026amp; @danielesesta plan to personally pay 18B out of 98B $SPELL to @Wonderland_fi  for their treasury. \n➡️Rage quit option available for $TIME who do not want to become Abracadabra.\n➡️",
+      "@0xM3rlin \\u0026amp; @danielesesta plan to personally pay 18B out of 98B $SPELL to @Wonderland_fi  for their treasury. \n➡️Rage quit option available for $TIME who do not want to become Abracadabra.\n➡️",
+      "$SPELL trading volume is up 216% in the past 24hr since  Magic Internet Money $MIM was discussed on the floor of the US Senate. \nIn that time, the price of $SPELL is also up 26.2% on @coinbase \\u0026a"
+    ]
+  },
+  {
+    "symbol": "WBTC",
+    "mentions": 2,
+    "sources": [
+      "cryptopanic"
+    ],
+    "score": 20,
+    "narratives": [],
+    "sampleTexts": [
+      "Four wallets (possibly owned by the same entity) sold 395 $WBTC($26.5M) at an average price of $67,063 about 5 hours ago.\n\n5 months ago, this entity swapped $TBTC for $WBTC at $114,334.\n\nAfter holding",
+      "Four wallets (possibly owned by the same entity) sold 395 $WBTC($26.5M) at an average price of $67,063 about 5 hours ago.\n\n5 months ago, this entity swapped $TBTC for $WBTC at $114,334.\n\nAfter holding"
     ]
   }
 ]

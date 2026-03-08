@@ -1,0 +1,25 @@
+{
+  "symbol": "FAI",
+  "amount_usdt": 500,
+  "action": "BUY",
+  "requested_at": "2026-03-06T05:12:00Z",
+  "approvals": {
+    "chris": {
+      "user_id": "7590333825",
+      "approved": true,
+      "timestamp": "2026-03-06T05:14:00Z"
+    },
+    "juri": {
+      "user_id": "6162586520",
+      "approved": false,
+      "timestamp": null
+    }
+  },
+  "status": "pending_juri",
+  "metadata": {
+    "score": 80,
+    "market_cap": "$42M",
+    "narrative": "AI Agent (Base)",
+    "contract": "0xb33ff54b9f7242ef1593d2c9bcd8f9df46c77935"
+  }
+}

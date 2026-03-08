@@ -1,0 +1,50 @@
+{
+  "new_subs": [
+    {"name": "ethereum", "subscribers": 3713772, "active_users": 0, "category": "Chain-spezifisch", "description": "Next-generation platform for decentralised applications"},
+    {"name": "bitcoin", "subscribers": 8087083, "active_users": 0, "category": "Allgemeine Crypto", "description": "Bitcoin is the currency of the Internet"},
+    {"name": "ethtrader", "subscribers": 2342270, "active_users": 0, "category": "Trading & TA", "description": "Community-driven subreddit for ETH trading discussion"},
+    {"name": "CryptoMarkets", "subscribers": 1937278, "active_users": 0, "category": "Allgemeine Crypto", "description": "News and discussion about cryptocurrency finance"},
+    {"name": "CryptoTechnology", "subscribers": 1318745, "active_users": 0, "category": "News & Research", "description": "Serious & technical discussion of crypto/blockchain technology"},
+    {"name": "defi", "subscribers": 167862, "active_users": 0, "category": "DeFi", "description": "News and discussions about decentralized financial protocols"},
+    {"name": "ethfinance", "subscribers": 93809, "active_users": 0, "category": "Chain-spezifisch", "description": "Ethereum investors, traders, users, developers"},
+    {"name": "bitcoinmarkets", "subscribers": 306759, "active_users": 0, "category": "Trading & TA", "description": "Tips and strategies for Bitcoin trading"},
+    {"name": "CryptoCurrencies", "subscribers": 424268, "active_users": 0, "category": "Allgemeine Crypto", "description": "Uncensored crypto discussion community"},
+    {"name": "binance", "subscribers": 923566, "active_users": 0, "category": "Allgemeine Crypto", "description": "Community for Binance and crypto discussions"},
+    {"name": "cardano", "subscribers": 728431, "active_users": 0, "category": "Chain-spezifisch", "description": "Cardano (ADA) community"},
+    {"name": "polkadot", "subscribers": 93498, "active_users": 0, "category": "Chain-spezifisch", "description": "Polkadot network discussion"},
+    {"name": "cosmosnetwork", "subscribers": 99387, "active_users": 0, "category": "Chain-spezifisch", "description": "Cosmos interchain ecosystem"},
+    {"name": "algorand", "subscribers": 87049, "active_users": 0, "category": "Chain-spezifisch", "description": "Algorand blockchain community"},
+    {"name": "Chainlink", "subscribers": 94381, "active_users": 0, "category": "Chain-spezifisch", "description": "Chainlink oracle network discussion"},
+    {"name": "0xPolygon", "subscribers": 65273, "active_users": 0, "category": "Chain-spezifisch", "description": "Polygon Labs community"},
+    {"name": "UniSwap", "subscribers": 87664, "active_users": 0, "category": "DeFi", "description": "Largest onchain DEX marketplace"},
+    {"name": "MakerDAO", "subscribers": 37690, "active_users": 0, "category": "DeFi", "description": "Multi-Collateral Dai system / Sky protocol"},
+    {"name": "CryptoMars", "subscribers": 181394, "active_users": 0, "category": "Altcoins & Small Caps", "description": "Crypto markets discussion and analysis"},
+    {"name": "wallstreetbetscrypto", "subscribers": 184978, "active_users": 0, "category": "Altcoins & Small Caps", "description": "WSB-style crypto trading"},
+    {"name": "singularitynet", "subscribers": 14525, "active_users": 0, "category": "AI & DePIN", "description": "Decentralized AI network (AGIX/ASI)"},
+    {"name": "CryptoTrading", "subscribers": 14122, "active_users": 0, "category": "Trading & TA", "description": "All things related to crypto trading"},
+    {"name": "technicalanalysis", "subscribers": 65277, "active_users": 0, "category": "Trading & TA", "description": "Technical Analysis and price action discussion"},
+    {"name": "arbitrum", "subscribers": 22318, "active_users": 0, "category": "Chain-spezifisch", "description": "Arbitrum L2 Ethereum scaling"},
+    {"name": "SatoshiStreetDegens", "subscribers": 41370, "active_users": 0, "category": "Altcoins & Small Caps", "description": "Analysis of risky super-low market cap cryptos"},
+    {"name": "injective", "subscribers": 13951, "active_users": 0, "category": "Chain-spezifisch", "description": "Injective chain community"}
+  ],
+  "failed": ["avalanche", "Fetch_ai_community", "Render_Token", "pancakeswap", "Avaxnetwork", "FetchAI", "oceanprotocol_too_small_excluded"],
+  "excluded_too_small": [
+    {"name": "aave", "subscribers": 1844, "reason": "< 5000 subscribers"},
+    {"name": "DeFiChain", "subscribers": 11, "reason": "< 5000 subscribers"},
+    {"name": "solanadev", "subscribers": 3970, "reason": "< 5000 subscribers"},
+    {"name": "BaseProtocol", "subscribers": 401, "reason": "< 5000 subscribers"},
+    {"name": "oceanprotocol", "subscribers": 5344, "reason": "borderline, low activity"}
+  ],
+  "excluded_off_topic": [
+    {"name": "Daytrading", "subscribers": 5033383, "reason": "Not crypto-specific"},
+    {"name": "algotrading", "subscribers": 1837093, "reason": "Not crypto-specific"},
+    {"name": "NFT", "subscribers": 2728274, "reason": "NFT-focused, not crypto trading/AI"}
+  ],
+  "stats": {
+    "tested": 38,
+    "verified": 26,
+    "failed": 7,
+    "excluded_small": 5,
+    "excluded_offtopic": 3
+  }
+}

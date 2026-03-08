@@ -1,0 +1,163 @@
+[
+  {
+    "token": "NIGSOM",
+    "name": "Gavin Nigsom",
+    "score": 9,
+    "mc": 82851,
+    "url": "https://dexscreener.com/solana/cdky1jxjsgnvkjtld96zyi8bdgf2c2xke5a9uvgkqzra",
+    "criteria": {
+      "viral_story": true,
+      "emotional_trigger": true,
+      "mainstream_media": true,
+      "tiktok_viral": true,
+      "supply_structure": true,
+      "no_rug_signal": true,
+      "community_socials": false,
+      "narrative_strength": true,
+      "timing": true,
+      "mc_at_entry": true,
+      "wallet_distribution": false,
+      "first_token": false
+    },
+    "addedAt": "2026-02-24T06:26:12.527Z"
+  },
+  {
+    "token": "Sadie",
+    "name": "Dog saved by Grok",
+    "score": 8,
+    "mc": 42227,
+    "url": "https://dexscreener.com/solana/2t79dda56e8mvejuz2fts7cqmwcsukbzqdgzx8yjbfmy",
+    "criteria": {
+      "viral_story": true,
+      "emotional_trigger": true,
+      "mainstream_media": true,
+      "tiktok_viral": false,
+      "supply_structure": true,
+      "no_rug_signal": true,
+      "community_socials": false,
+      "narrative_strength": true,
+      "timing": true,
+      "mc_at_entry": true,
+      "wallet_distribution": false,
+      "first_token": true
+    },
+    "addedAt": "2026-02-24T06:26:12.527Z"
+  },
+  {
+    "token": "NEWSOM",
+    "name": "Gavin Newsom Memes",
+    "score": 8,
+    "mc": 15559,
+    "url": "https://dexscreener.com/solana/en22eedfiqbyujqdvej5nn4zv7fbsfakinbdyhfqqzna",
+    "criteria": {
+      "viral_story": true,
+      "emotional_trigger": true,
+      "mainstream_media": true,
+      "tiktok_viral": true,
+      "supply_structure": true,
+      "no_rug_signal": true,
+      "community_socials": false,
+      "narrative_strength": true,
+      "timing": true,
+      "mc_at_entry": true,
+      "wallet_distribution": false,
+      "first_token": false
+    },
+    "addedAt": "2026-02-24T06:26:12.527Z"
+  },
+  {
+    "token": "MENCHO",
+    "name": "El Mencho",
+    "score": 9,
+    "mc": 107575,
+    "url": "https://dexscreener.com/solana/9btf3smyrcf9rufehn8vtmd2bfezgrkhttb4ky3uzemr",
+    "criteria": {
+      "viral_story": true,
+      "emotional_trigger": true,
+      "mainstream_media": true,
+      "tiktok_viral": true,
+      "supply_structure": true,
+      "no_rug_signal": true,
+      "community_socials": false,
+      "narrative_strength": true,
+      "timing": true,
+      "mc_at_entry": true,
+      "wallet_distribution": false,
+      "first_token": false
+    },
+    "addedAt": "2026-02-24T06:26:12.527Z"
+  },
+  {
+    "token": "XING",
+    "name": "Xing Xing",
+    "address": "avsfihlzhjk6llvplrvdez9jvpv7bpgnpgh5qysbmtp1",
+    "pairAddress": "avsfihlzhjk6llvplrvdez9jvpv7bpgnpgh5qysbmtp1",
+    "dexId": "raydium",
+    "mc": 129510,
+    "liquidity": 32258,
+    "volume24h": 631420,
+    "priceUsd": "0.0001300",
+    "score": 10,
+    "criteria": {
+      "viral_story": true,
+      "emotional_trigger": true,
+      "mainstream_media": false,
+      "tiktok_viral": true,
+      "supply_structure": true,
+      "no_rug_signal": true,
+      "community_socials": true,
+      "narrative_strength": true,
+      "timing": true,
+      "mc_at_entry": true,
+      "wallet_distribution": true,
+      "first_token": true
+    },
+    "source": "manual_chris",
+    "note": "Chris: wird beobachtet, MEXC Listing Watch",
+    "addedAt": "2026-02-24T06:46:20.201817Z",
+    "scoredAt": "2026-02-24T06:46:20.201989Z"
+  },
+  {
+    "token": "Xingxing",
+    "name": "\u661f\u661f",
+    "address": "7NoFtDpmQvE9JsRv7o6zgYZJBEcixWumJaZsDoyrpump",
+    "score": 8,
+    "mc": 150183,
+    "url": "https://dexscreener.com/solana/avsfihlzhjk6llvplrvdez9jvpv7bpgnpgh5qysbmtp1",
+    "addedAt": "2026-02-24T07:24:11.418903+00:00",
+    "note": "8/12 - Strong story but -60% dump, 47h old, possible copycat"
+  },
+  {
+    "token": "TripleT",
+    "name": "Tung Tung Tung Sahur",
+    "address": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
+    "score": 8,
+    "mc": 79246,
+    "addedAt": "2026-02-24T09:39:11.729115+00:00",
+    "url": "https://dexscreener.com/solana/3kfcgj5r3zshw8htdbzjsrrksrymkvsmfhc4vo4iddxd"
+  },
+  {
+    "token": "SEAGULL",
+    "name": "The Revived Seagull",
+    "address": "BKwSZd5tUFC1SudnHbhjmqJ6Nk8n5vz1wVphb7Mupump",
+    "score": 9,
+    "mc_at_add": 11588,
+    "url": "https://dexscreener.com/solana/6ehaw6njxgnbafqkysjqgc1btcefztknk6sjhadpmeg8",
+    "addedAt": "2026-02-24T15:24:08.281497+00:00",
+    "story": "Seagull hit by ball during Istanbul football match, player gives CPR, bird revived. Viral today across mainstream media.",
+    "criteria": {
+      "viral_story": true,
+      "emotional_trigger": true,
+      "mainstream_media": true,
+      "tiktok_virality": true,
+      "supply_structure": false,
+      "no_rug_signal": true,
+      "community_socials": false,
+      "narrative_strength": true,
+      "timing": true,
+      "mc_at_entry": true,
+      "wallet_distribution": false,
+      "first_token": true
+    }
+  }
+]

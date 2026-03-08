@@ -1,0 +1,321 @@
+{
+  "date": "2026-03-06",
+  "results": [
+    {
+      "handle": "NFTEvening",
+      "status": "ACTIVE",
+      "followers": 80790,
+      "tweets": 7893,
+      "created": "Fri May 28 10:09:20 +0000 2021"
+    },
+    {
+      "handle": "Cryptointell",
+      "status": "ACTIVE",
+      "followers": 0,
+      "tweets": 0,
+      "created": "Mon Feb 18 18:35:04 +0000 2013"
+    },
+    {
+      "handle": "colinwu",
+      "status": "ACTIVE",
+      "followers": 79443,
+      "tweets": 8510,
+      "created": "Sun Nov 07 06:47:29 +0000 2021"
+    },
+    {
+      "handle": "cryptomanran",
+      "status": "ACTIVE",
+      "followers": 971387,
+      "tweets": 20555,
+      "created": "Mon Jul 20 14:33:19 +0000 2009"
+    },
+    {
+      "handle": "ASI_Alliance",
+      "status": "ACTIVE",
+      "followers": 96770,
+      "tweets": 2287,
+      "created": "Tue Mar 22 06:35:22 +0000 2022"
+    },
+    {
+      "handle": "ApeCoin",
+      "status": "ACTIVE",
+      "followers": 464002,
+      "tweets": 9174,
+      "created": "Wed Feb 02 23:32:18 +0000 2022"
+    },
+    {
+      "handle": "alpha_pls",
+      "status": "ACTIVE",
+      "followers": 134571,
+      "tweets": 12005,
+      "created": "Wed Oct 20 17:52:15 +0000 2021"
+    },
+    {
+      "handle": "HuobiGlobal",
+      "status": "ACTIVE",
+      "followers": 148918,
+      "tweets": 12554,
+      "created": "Sun Jul 10 08:58:07 +0000 2022"
+    },
+    {
+      "handle": "BitFlyerUSA",
+      "status": "ACTIVE",
+      "followers": 5294,
+      "tweets": 586,
+      "created": "Sun Feb 05 20:57:46 +0000 2017"
+    },
+    {
+      "handle": "benwehrman",
+      "status": "ACTIVE",
+      "followers": 43043,
+      "tweets": 53025,
+      "created": "Tue Jan 17 20:45:14 +0000 2012"
+    },
+    {
+      "handle": "dYdXprotocol",
+      "status": "ACTIVE",
+      "followers": 1139,
+      "tweets": 0,
+      "created": "Wed Feb 23 17:36:51 +0000 2022"
+    },
+    {
+      "handle": "beefifinance",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "dujunx",
+      "status": "ACTIVE",
+      "followers": 236379,
+      "tweets": 1985,
+      "created": "Sat Oct 24 23:00:03 +0000 2020"
+    },
+    {
+      "handle": "BitfinexLEO",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "glassnode",
+      "status": "ACTIVE",
+      "followers": 604495,
+      "tweets": 5307,
+      "created": "Fri Jul 27 12:28:36 +0000 2018"
+    },
+    {
+      "handle": "evan_van_ness",
+      "status": "ACTIVE",
+      "followers": 130534,
+      "tweets": 27616,
+      "created": "Sat Sep 11 13:55:00 +0000 2010"
+    },
+    {
+      "handle": "Excellion",
+      "status": "ACTIVE",
+      "followers": 363580,
+      "tweets": 77589,
+      "created": "Mon May 05 02:09:49 +0000 2008"
+    },
+    {
+      "handle": "CryptoISO20022",
+      "status": "ACTIVE",
+      "followers": 0,
+      "tweets": 0,
+      "created": "Sun May 01 19:38:03 +0000 2022"
+    },
+    {
+      "handle": "AstarNetwork",
+      "status": "ACTIVE",
+      "followers": 422739,
+      "tweets": 8628,
+      "created": "Thu Sep 12 06:44:45 +0000 2019"
+    },
+    {
+      "handle": "AriannaSimpson",
+      "status": "ACTIVE",
+      "followers": 124864,
+      "tweets": 12030,
+      "created": "Thu Mar 17 01:16:24 +0000 2011"
+    },
+    {
+      "handle": "CryptoTony__",
+      "status": "ACTIVE",
+      "followers": 565298,
+      "tweets": 128468,
+      "created": "Thu Aug 03 14:10:27 +0000 2017"
+    },
+    {
+      "handle": "1confirmation",
+      "status": "ACTIVE",
+      "followers": 28990,
+      "tweets": 6128,
+      "created": "Wed Jun 14 21:31:42 +0000 2017"
+    },
+    {
+      "handle": "heliusmobile",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "BarbarossaDeFi",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "dogecoin",
+      "status": "ACTIVE",
+      "followers": 4408159,
+      "tweets": 1361,
+      "created": "Sun Dec 08 08:16:34 +0000 2013"
+    },
+    {
+      "handle": "Elliotrades",
+      "status": "ACTIVE",
+      "followers": 850855,
+      "tweets": 19093,
+      "created": "Thu Jan 04 02:03:46 +0000 2018"
+    },
+    {
+      "handle": "HsakaTrades",
+      "status": "ACTIVE",
+      "followers": 605892,
+      "tweets": 23013,
+      "created": "Sat Dec 23 21:48:35 +0000 2017"
+    },
+    {
+      "handle": "DegenerateNews",
+      "status": "ACTIVE",
+      "followers": 423169,
+      "tweets": 33520,
+      "created": "Mon Mar 21 11:48:52 +0000 2022"
+    },
+    {
+      "handle": "Alchemy_Official",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "Amber_Group",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "ImmutableX",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "CryptoPotato_",
+      "status": "ACTIVE",
+      "followers": 0,
+      "tweets": 12,
+      "created": "Fri Sep 18 10:23:18 +0000 2020"
+    },
+    {
+      "handle": "flowtraders",
+      "status": "ACTIVE",
+      "followers": 7060,
+      "tweets": 1067,
+      "created": "Thu Nov 24 15:38:50 +0000 2011"
+    },
+    {
+      "handle": "dfinity",
+      "status": "ACTIVE",
+      "followers": 701256,
+      "tweets": 6673,
+      "created": "Thu Nov 17 02:08:18 +0000 2016"
+    },
+    {
+      "handle": "azukizen",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "evan_ss6",
+      "status": "ACTIVE",
+      "followers": 63377,
+      "tweets": 61702,
+      "created": "Sun Apr 10 03:10:20 +0000 2011"
+    },
+    {
+      "handle": "flipside_crypto",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "AnatBerner",
+      "status": "SUSPENDED/DELETED",
+      "followers": 0
+    },
+    {
+      "handle": "0xDeployer",
+      "status": "ACTIVE",
+      "followers": 41474,
+      "tweets": 9912,
+      "created": "Sun Jul 11 00:39:26 +0000 2021"
+    },
+    {
+      "handle": "aguilatrades",
+      "status": "ACTIVE",
+      "followers": 41636,
+      "tweets": 26,
+      "created": "Fri Oct 20 15:48:20 +0000 2023"
+    }
+  ],
+  "toRemove": [
+    "beefifinance",
+    "BitfinexLEO",
+    "heliusmobile",
+    "BarbarossaDeFi",
+    "Alchemy_Official",
+    "Amber_Group",
+    "ImmutableX",
+    "azukizen",
+    "flipside_crypto",
+    "AnatBerner"
+  ],
+  "lowFollowers": [
+    {
+      "handle": "Cryptointell",
+      "status": "ACTIVE",
+      "followers": 0,
+      "tweets": 0,
+      "created": "Mon Feb 18 18:35:04 +0000 2013"
+    },
+    {
+      "handle": "BitFlyerUSA",
+      "status": "ACTIVE",
+      "followers": 5294,
+      "tweets": 586,
+      "created": "Sun Feb 05 20:57:46 +0000 2017"
+    },
+    {
+      "handle": "dYdXprotocol",
+      "status": "ACTIVE",
+      "followers": 1139,
+      "tweets": 0,
+      "created": "Wed Feb 23 17:36:51 +0000 2022"
+    },
+    {
+      "handle": "CryptoISO20022",
+      "status": "ACTIVE",
+      "followers": 0,
+      "tweets": 0,
+      "created": "Sun May 01 19:38:03 +0000 2022"
+    },
+    {
+      "handle": "CryptoPotato_",
+      "status": "ACTIVE",
+      "followers": 0,
+      "tweets": 12,
+      "created": "Fri Sep 18 10:23:18 +0000 2020"
+    },
+    {
+      "handle": "flowtraders",
+      "status": "ACTIVE",
+      "followers": 7060,
+      "tweets": 1067,
+      "created": "Thu Nov 24 15:38:50 +0000 2011"
+    }
+  ]
+}

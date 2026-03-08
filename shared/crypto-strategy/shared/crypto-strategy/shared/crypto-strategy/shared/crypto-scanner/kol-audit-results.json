@@ -1,0 +1,1316 @@
+[
+  {
+    "handle": "0xHamz",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "DeFi/researcher",
+    "lang": "en"
+  },
+  {
+    "handle": "0xJeff_",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "0xSisyphus",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "DeFi/alpha",
+    "lang": "en"
+  },
+  {
+    "handle": "0xngmi",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "DeFi dev/DefiLlama",
+    "lang": "en"
+  },
+  {
+    "handle": "100trillionUSD",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "400K",
+    "category": "analyst/S2F model",
+    "lang": "en"
+  },
+  {
+    "handle": "APompliano",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "1.6M",
+    "category": "fund manager/macro",
+    "lang": "en"
+  },
+  {
+    "handle": "AltcoinSherpa",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "trader/altcoins",
+    "lang": "en"
+  },
+  {
+    "handle": "AutismCapital",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "alpha/memes",
+    "lang": "en"
+  },
+  {
+    "handle": "Bankless",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "400K",
+    "category": "media/DeFi",
+    "lang": "en"
+  },
+  {
+    "handle": "BarrySilbert",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "fund manager",
+    "lang": "en"
+  },
+  {
+    "handle": "Blockmagazin",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "15K",
+    "category": "news/media",
+    "lang": "de"
+  },
+  {
+    "handle": "CamiRusso",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "150K",
+    "category": "journalist",
+    "lang": "en"
+  },
+  {
+    "handle": "CathieDWood",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "1.5M",
+    "category": "fund manager/macro",
+    "lang": "en"
+  },
+  {
+    "handle": "CelestiaOrg",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "protocol/modular",
+    "lang": "en"
+  },
+  {
+    "handle": "ColdBloodShill",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "250K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "CredibleCrypto",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "350K",
+    "category": "trader/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "Cripto247",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "50K",
+    "category": "news/media",
+    "lang": "es"
+  },
+  {
+    "handle": "CriptoDinero",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "50K",
+    "category": "educator",
+    "lang": "es"
+  },
+  {
+    "handle": "CriptoNoticias",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "news/media",
+    "lang": "es"
+  },
+  {
+    "handle": "CriptoTendencia",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "30K",
+    "category": "news/trends",
+    "lang": "es"
+  },
+  {
+    "handle": "Criptomonedas_",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "50K",
+    "category": "news",
+    "lang": "es"
+  },
+  {
+    "handle": "CroissantEth",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "DeFi/alpha",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoCapital_V",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoCapo_",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "600K",
+    "category": "trader/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoCred",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoDiffer",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "data/analytics",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoGodJohn",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoHayes",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoKaleo",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "550K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoMaestro_",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "50K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoRank_io",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "data/analytics",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoSpanish",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "30K",
+    "category": "educator",
+    "lang": "es"
+  },
+  {
+    "handle": "CryptoTony__",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "CryptoWendyO",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "trader/content",
+    "lang": "en"
+  },
+  {
+    "handle": "Crypto_Birb",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "700K",
+    "category": "trader/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "DaanCrypto",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "350K",
+    "category": "trader/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "DeFi_Dad",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "DeFi educator",
+    "lang": "en"
+  },
+  {
+    "handle": "DeFianceCapital",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "fund manager",
+    "lang": "en"
+  },
+  {
+    "handle": "DefiIgnas",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "DefiLlama",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "DeFi data",
+    "lang": "en"
+  },
+  {
+    "handle": "DocumentingBTC",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "400K",
+    "category": "Bitcoin news",
+    "lang": "en"
+  },
+  {
+    "handle": "DonAlt",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "500K",
+    "category": "trader/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "Elliotrades",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "250K",
+    "category": "DeFi/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "EmberCN",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "EmperorBTC",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "trader/educator",
+    "lang": "en"
+  },
+  {
+    "handle": "ErgoBTC",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "50K",
+    "category": "on-chain analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "ErikVoorhees",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "500K",
+    "category": "founder/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "FrankResearcher",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "50K",
+    "category": "researcher",
+    "lang": "en"
+  },
+  {
+    "handle": "GCRClassic",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "trader/macro",
+    "lang": "en"
+  },
+  {
+    "handle": "GarethSoloway",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "trader/TA",
+    "lang": "en"
+  },
+  {
+    "handle": "GiganticRebirth",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "HossDE",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "20K",
+    "category": "trader/analyst",
+    "lang": "de"
+  },
+  {
+    "handle": "IntoTheBlock",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "150K",
+    "category": "on-chain analytics",
+    "lang": "en"
+  },
+  {
+    "handle": "InvestmentPunk",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "50K",
+    "category": "finance/crypto",
+    "lang": "de"
+  },
+  {
+    "handle": "IvanOnTech",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "400K",
+    "category": "educator/content",
+    "lang": "en"
+  },
+  {
+    "handle": "JasonYanowitz",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "150K",
+    "category": "analyst/Blockworks",
+    "lang": "en"
+  },
+  {
+    "handle": "JuanEnCripto",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "educator/content",
+    "lang": "es"
+  },
+  {
+    "handle": "JulianHosp",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "educator/DeFi",
+    "lang": "de"
+  },
+  {
+    "handle": "KaitoAI",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "150K",
+    "category": "AI/crypto analytics",
+    "lang": "en"
+  },
+  {
+    "handle": "KoroushAK",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "150K",
+    "category": "trader/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "KryptoKumpel",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "20K",
+    "category": "educator",
+    "lang": "de"
+  },
+  {
+    "handle": "LayerZero_Labs",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "500K",
+    "category": "protocol",
+    "lang": "en"
+  },
+  {
+    "handle": "LomahCrypto",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "MMCrypto",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "trader/content",
+    "lang": "de"
+  },
+  {
+    "handle": "Matidroid",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "30K",
+    "category": "trader/content",
+    "lang": "es"
+  },
+  {
+    "handle": "MessariCrypto",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "research/data",
+    "lang": "en"
+  },
+  {
+    "handle": "MilesDeutscher",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "500K",
+    "category": "trader/alpha",
+    "lang": "en"
+  },
+  {
+    "handle": "MoonOverlord",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "trader/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "MustStopMurad",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "Pentosh1",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "PeterLBrandt",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "700K",
+    "category": "trader/veteran",
+    "lang": "en"
+  },
+  {
+    "handle": "RaoulGMI",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "500K",
+    "category": "fund manager/macro",
+    "lang": "en"
+  },
+  {
+    "handle": "Rewkang",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "DeFi/fund manager",
+    "lang": "en"
+  },
+  {
+    "handle": "Route2FI",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "RunnerXBT",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "SOLBigBrain",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "Solana/alpha",
+    "lang": "en"
+  },
+  {
+    "handle": "SmartContracter",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "250K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "SolanaLegend",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "150K",
+    "category": "Solana/trader",
+    "lang": "en"
+  },
+  {
+    "handle": "TaschaLabs",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "analyst/macro",
+    "lang": "en"
+  },
+  {
+    "handle": "Tetranode",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "whale/DeFi",
+    "lang": "en"
+  },
+  {
+    "handle": "TheDeFiEdge",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "TheMoonCarl",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "analyst/content",
+    "lang": "en"
+  },
+  {
+    "handle": "Trader_XO",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "VitalikButerin",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "5M",
+    "category": "founder/ethereum",
+    "lang": "en"
+  },
+  {
+    "handle": "WuBlockchain",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "Zeneca_33",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "150K",
+    "category": "NFT/alpha",
+    "lang": "en"
+  },
+  {
+    "handle": "a16zcrypto",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "500K",
+    "category": "VC/fund",
+    "lang": "en"
+  },
+  {
+    "handle": "aantonop",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "700K",
+    "category": "educator/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "adam3us",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "Bitcoin OG",
+    "lang": "en"
+  },
+  {
+    "handle": "ai16zdao",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "AI/crypto",
+    "lang": "en"
+  },
+  {
+    "handle": "ai_9684xtpa",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "andrecronje",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "DeFi founder",
+    "lang": "en"
+  },
+  {
+    "handle": "ansem",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "Solana/alpha",
+    "lang": "en"
+  },
+  {
+    "handle": "balajis",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "900K",
+    "category": "tech/macro",
+    "lang": "en"
+  },
+  {
+    "handle": "bitcoinmagazine",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Bitcoin media",
+    "lang": "en"
+  },
+  {
+    "handle": "blknoiz06",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "150K",
+    "category": "trader/alpha",
+    "lang": "en"
+  },
+  {
+    "handle": "blocktrainer",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "50K",
+    "category": "educator/Bitcoin",
+    "lang": "de"
+  },
+  {
+    "handle": "boxmining",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "analyst/content",
+    "lang": "en"
+  },
+  {
+    "handle": "brian_armstrong",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "1M",
+    "category": "founder/coinbase",
+    "lang": "en"
+  },
+  {
+    "handle": "btcecho",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "30K",
+    "category": "news/media",
+    "lang": "de"
+  },
+  {
+    "handle": "cburniske",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "250K",
+    "category": "fund manager/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "cdixon",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "a16z partner",
+    "lang": "en"
+  },
+  {
+    "handle": "cobie",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "700K",
+    "category": "trader/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "coindesk",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Crypto media",
+    "lang": "en"
+  },
+  {
+    "handle": "cointelegraph",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Crypto media",
+    "lang": "en"
+  },
+  {
+    "handle": "cryptomanran",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "analyst/content",
+    "lang": "en"
+  },
+  {
+    "handle": "cz_binance",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Binance founder",
+    "lang": "en"
+  },
+  {
+    "handle": "davincij15",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "trader/Bitcoin OG",
+    "lang": "en"
+  },
+  {
+    "handle": "db_defi",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "drakefjustin",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Ethereum researcher Justin Drake",
+    "lang": "en"
+  },
+  {
+    "handle": "elonmusk",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Mentioned by nearly every whale",
+    "lang": "en"
+  },
+  {
+    "handle": "ericbalchunas",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Bloomberg ETF analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "finanzfluss",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "finance/crypto",
+    "lang": "de"
+  },
+  {
+    "handle": "gainzy222",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "trader/alpha",
+    "lang": "en"
+  },
+  {
+    "handle": "geiger_capital",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Macro finance",
+    "lang": "en"
+  },
+  {
+    "handle": "glassnode",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "250K",
+    "category": "on-chain analytics",
+    "lang": "en"
+  },
+  {
+    "handle": "hasufl",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "researcher/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "inversebrah",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "jimfan",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "AI researcher",
+    "lang": "en"
+  },
+  {
+    "handle": "johnedeaton1",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Crypto lawyer",
+    "lang": "en"
+  },
+  {
+    "handle": "laurashin",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "journalist",
+    "lang": "en"
+  },
+  {
+    "handle": "lookonchain",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "",
+    "lang": "en"
+  },
+  {
+    "handle": "marc_friedrich",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "macro/Bitcoin",
+    "lang": "de"
+  },
+  {
+    "handle": "marionawfal",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Web3 media",
+    "lang": "en"
+  },
+  {
+    "handle": "mrjasonchoi",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "fund manager/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "nansen_ai",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "250K",
+    "category": "on-chain analytics",
+    "lang": "en"
+  },
+  {
+    "handle": "nebraskangooner",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "200K",
+    "category": "trader",
+    "lang": "en"
+  },
+  {
+    "handle": "paradigm",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Major crypto VC, zachxbt connection",
+    "lang": "en"
+  },
+  {
+    "handle": "peterschiff",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Bitcoin bear",
+    "lang": "en"
+  },
+  {
+    "handle": "polymarket",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Prediction markets",
+    "lang": "en"
+  },
+  {
+    "handle": "punk6529",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "400K",
+    "category": "NFT/culture",
+    "lang": "en"
+  },
+  {
+    "handle": "roman_reher",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "30K",
+    "category": "Bitcoin educator",
+    "lang": "de"
+  },
+  {
+    "handle": "ryansadams",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Bankless co-founder",
+    "lang": "en"
+  },
+  {
+    "handle": "santimentfeed",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "150K",
+    "category": "on-chain analytics",
+    "lang": "en"
+  },
+  {
+    "handle": "sassal0x",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "Ethereum/DeFi",
+    "lang": "en"
+  },
+  {
+    "handle": "saylor",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "3M",
+    "category": "Bitcoin/macro",
+    "lang": "en"
+  },
+  {
+    "handle": "scottmelker",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "500K",
+    "category": "trader/analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "shawmakesmagic",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "AI/crypto dev",
+    "lang": "en"
+  },
+  {
+    "handle": "tier10k",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Market data",
+    "lang": "en"
+  },
+  {
+    "handle": "trustlessstate",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Bankless co-founder",
+    "lang": "en"
+  },
+  {
+    "handle": "virtuals_io",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "100K",
+    "category": "AI/crypto",
+    "lang": "en"
+  },
+  {
+    "handle": "watcherguru",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "Crypto news",
+    "lang": "en"
+  },
+  {
+    "handle": "whale_alert",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "400K",
+    "category": "whale watcher",
+    "lang": "en"
+  },
+  {
+    "handle": "willclemente",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "300K",
+    "category": "on-chain analyst",
+    "lang": "en"
+  },
+  {
+    "handle": "xcopyart",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "",
+    "category": "NFT artist",
+    "lang": "en"
+  },
+  {
+    "handle": "zachxbt",
+    "status": "UNCERTAIN",
+    "last_date": "",
+    "days_ago": null,
+    "followers": "600K",
+    "category": "on-chain sleuth",
+    "lang": "en"
+  }
+]

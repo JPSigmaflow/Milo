@@ -1,0 +1,7 @@
+{
+  "crypto": ["bitcoin", "btc", "ethereum", "eth", "solana", "sol", "memecoin", "meme coin", "pump", "moon", "degen", "rug", "airdrop", "presale"],
+  "influencers": ["elon", "musk", "trump", "vitalik", "cz", "sbf", "cathie wood", "michael saylor"],
+  "animals": ["cat", "dog", "doge", "shiba", "pepe", "frog", "monkey", "ape", "penguin", "hamster", "owl", "bear", "bull"],
+  "viral": ["viral", "trending", "breaking", "just in", "holy shit", "wtf", "insane", "crazy", "massive", "huge"],
+  "meme": ["wojak", "chad", "npc", "based", "cope", "seethe", "wagmi", "ngmi", "gm", "lfg", "hodl"]
+}

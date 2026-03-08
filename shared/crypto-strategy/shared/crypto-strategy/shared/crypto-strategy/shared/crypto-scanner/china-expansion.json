@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "created": "2026-02-17T22:31:00-05:00",
+    "purpose": "Chinese/CN crypto sources expansion",
+    "verification_method": "telegram t.me page scrape, X GraphQL API"
+  },
+  "verified_new_sources": {
+    "telegram": [
+      {
+        "handle": "wublock",
+        "name": "吴说区块链 新闻与深度",
+        "subscribers": 17064,
+        "language": "zh",
+        "type": "news",
+        "status": "verified"
+      },
+      {
+        "handle": "TechFlowPost",
+        "name": "深潮研习社",
+        "subscribers": 2820,
+        "language": "zh",
+        "type": "news/research",
+        "status": "verified"
+      },
+      {
+        "handle": "blocktempo",
+        "name": "BlockTempo 動區動趨",
+        "subscribers": 28626,
+        "language": "zh-TW",
+        "type": "news",
+        "status": "verified"
+      },
+      {
+        "handle": "cointime_cn",
+        "name": "Cointime中文资讯",
+        "subscribers": 4202,
+        "language": "zh",
+        "type": "news",
+        "status": "verified"
+      },
+      {
+        "handle": "bitpush",
+        "name": "比推BitpushNews",
+        "subscribers": 2685,
+        "language": "zh",
+        "type": "news",
+        "status": "verified"
+      },
+      {
+        "handle": "chainnewscn",
+        "name": "链闻社 LeadNotFollow",
+        "subscribers": 1825,
+        "language": "zh",
+        "type": "news",
+        "status": "verified"
+      },
+      {
+        "handle": "CryptoWesearch",
+        "name": "每日幣研 Crypto HK",
+        "subscribers": 6937,
+        "language": "zh-TW",
+        "type": "research",
+        "status": "verified"
+      },
+      {
+        "handle": "PANewsOfficial",
+        "name": "PANews Official Channel",
+        "subscribers": 1403,
+        "language": "zh/en/kr",
+        "type": "news",
+        "status": "verified"
+      }
+    ],
+    "x_twitter": [
+      {
+        "handle": "0xSunNFT",
+        "name": "0xSun",
+        "followers": 209507,
+        "language": "zh/en",
+        "type": "on-chain analyst/whale tracker",
+        "status": "verified"
+      },
+      {
+        "handle": "Bitwux",
+        "name": "BITWU.ETH",
+        "followers": 362284,
+        "language": "zh",
+        "type": "KOL/influencer",
+        "status": "verified"
+      },
+      {
+        "handle": "hexiecs",
+        "name": "冷静冷静再冷静",
+        "followers": 86965,
+        "language": "zh",
+        "type": "narrative engineer",
+        "status": "verified"
+      },
+      {
+        "handle": "dotyyds1234",
+        "name": "憨巴龙王",
+        "followers": 92347,
+        "language": "zh",
+        "type": "trader/KOL",
+        "status": "verified"
+      },
+      {
+        "handle": "0xNing0x",
+        "name": "NingNing",
+        "followers": 30384,
+        "language": "zh",
+        "type": "independent researcher",
+        "status": "verified"
+      },
+      {
+        "handle": "tmel0211",
+        "name": "Haotian | CryptoInsight",
+        "followers": 48104,
+        "language": "zh",
+        "type": "independent researcher",
+        "status": "verified"
+      },
+      {
+        "handle": "0xJamesXXX",
+        "name": "詹姆斯叉 | JamesX",
+        "followers": 44509,
+        "language": "zh",
+        "type": "advisor/investor",
+        "status": "verified"
+      },
+      {
+        "handle": "DeFi_Cheetah",
+        "name": "DeFi Cheetah",
+        "followers": 40583,
+        "language": "zh/en",
+        "type": "DeFi researcher",
+        "status": "verified"
+      },
+      {
+        "handle": "cmdefi",
+        "name": "CM (陈默)",
+        "followers": 55046,
+        "language": "zh",
+        "type": "DeFi OG/researcher",
+        "status": "verified"
+      },
+      {
+        "handle": "thecryptoskanda",
+        "name": "加密韋馱 Skanda",
+        "followers": 50998,
+        "language": "zh",
+        "type": "KOL/builder",
+        "status": "verified"
+      },
+      {
+        "handle": "Defi_Mochi",
+        "name": "Defi_Mochi",
+        "followers": 107833,
+        "language": "zh/en",
+        "type": "crypto insights",
+        "status": "verified"
+      },
+      {
+        "handle": "0xminion",
+        "name": "Minion",
+        "followers": 27914,
+        "language": "zh/en",
+        "type": "research/data",
+        "status": "verified"
+      },
+      {
+        "handle": "OdailyChina",
+        "name": "OdailyNews",
+        "followers": 71606,
+        "language": "zh/en",
+        "type": "media",
+        "status": "verified"
+      },
+      {
+        "handle": "MetaEraCN",
+        "name": "ME News",
+        "followers": 51527,
+        "language": "zh",
+        "type": "media/events",
+        "status": "verified"
+      },
+      {
+        "handle": "CryptoWesearch",
+        "name": "Crypto Wesearch 每日幣研",
+        "followers": 17517,
+        "language": "zh-TW",
+        "type": "media",
+        "status": "verified"
+      },
+      {
+        "handle": "SlowMist_Team",
+        "name": "SlowMist",
+        "followers": 88085,
+        "language": "zh/en",
+        "type": "security",
+        "status": "verified"
+      },
+      {
+        "handle": "Tokeninsight",
+        "name": "TokenInsight",
+        "followers": 20946,
+        "language": "zh/en",
+        "type": "ratings/research",
+        "status": "verified"
+      },
+      {
+        "handle": "ZhuSu",
+        "name": "Zhu Su",
+        "followers": 619760,
+        "language": "zh/en",
+        "type": "investor/KOL",
+        "status": "verified"
+      }
+    ]
+  },
+  "already_in_scanner": {
+    "telegram": ["TheBlockBeats", "ODaily_News", "ForesightNews", "ChainCatcher", "panewslab"],
+    "x": ["EmberCN", "WuBlockchain", "ai_9684xtpa"]
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Masterplan v3 — Teil 1: System-Architektur</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a0f;color:#e0e0e0;font-family:'Segoe UI',system-ui,sans-serif;padding:40px 60px;max-width:100%;margin:0 auto}
+h1{font-size:2.2em;background:linear-gradient(135deg,#f7931a,#ff6b35);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:8px}
+h2{font-size:1.5em;color:#f7931a;margin:30px 0 15px;border-bottom:2px solid #f7931a33;padding-bottom:8px}
+h3{font-size:1.1em;color:#64b5f6;margin:20px 0 10px}
+.subtitle{color:#888;font-size:1em;margin-bottom:30px}
+.card{background:#14141f;border:1px solid #2a2a3a;border-radius:12px;padding:24px;margin:15px 0}
+.card-highlight{border-color:#f7931a55;background:linear-gradient(135deg,#14141f,#1a1520)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th{background:#1a1a2e;color:#f7931a;text-align:left;padding:10px 12px;font-size:.85em}
+td{padding:8px 12px;border-bottom:1px solid #1a1a2e;font-size:.85em}
+tr:hover{background:#1a1a2e44}
+.tag{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.75em;font-weight:600}
+.tag-rt{background:#ff4444aa;color:#fff}
+.tag-5m{background:#ff9800aa;color:#fff}
+.tag-15m{background:#2196f3aa;color:#fff}
+.tag-1h{background:#4caf50aa;color:#fff}
+.stat-box{text-align:center;padding:20px;background:#1a1a2e;border-radius:10px}
+.stat-num{font-size:2.5em;font-weight:800;color:#f7931a}
+.stat-label{font-size:.8em;color:#888;margin-top:5px}
+.flow{background:#0d0d18;border:2px solid #2a2a3a;border-radius:12px;padding:20px;font-family:'Courier New',monospace;font-size:.85em;line-height:1.8;white-space:pre;overflow-x:auto}
+.badge{display:inline-block;background:#f7931a22;color:#f7931a;padding:4px 12px;border-radius:6px;font-size:.8em;margin:2px}
+.new{background:#4caf5033;color:#4caf50;padding:2px 8px;border-radius:4px;font-size:.7em;font-weight:700}
+.footer{text-align:center;color:#555;margin-top:40px;padding-top:20px;border-top:1px solid #1a1a2e;font-size:.85em}
+</style>
+</head>
+<body>
+
+<h1>🦁 MASTERPLAN v3.0 — Teil 1</h1>
+<div class="subtitle">System-Architektur • Kern-Tools • Scanning Universe | WEundMILO Crypto Trading • 11.02.2026</div>
+
+<div class="grid3" style="margin-bottom:20px">
+<div class="stat-box"><div class="stat-num">212+</div><div class="stat-label">Quellen über 8 Plattformen</div></div>
+<div class="stat-box"><div class="stat-num">3</div><div class="stat-label">Stufen: Scan → Analyse → Trade</div></div>
+<div class="stat-box"><div class="stat-num">$30-65</div><div class="stat-label">Betriebskosten / Monat</div></div>
+</div>
+
+<h2>🏗️ System-Architektur — 3-Stufen-System</h2>
+<div class="flow">╔══════════════════════════════════════════════════════════════════════════╗
+║                        MILO CRYPTO SYSTEM v3.0                         ║
+║                                                                         ║
+║   STUFE 1              STUFE 2              STUFE 3                    ║
+║   🔍 SCANNEN     →     🧠 ANALYSIEREN  →    ⚡ HANDELN                ║
+║                                                                         ║
+║   212+ Quellen         AI-Bewertung         On-Chain Execution         ║
+║   8 Plattformen        Scoring 1-10         6 Security Checks          ║
+║   + Viral Detection    Urgency Level        12-Punkt Decision Gate     ║
+║   + Pump.fun Monitor   Alert System         Button-Bestätigung         ║
+║   $0/Tag               ~$1/Tag              Per Trade                  ║
+║                                                                         ║
+║   Module: A (Filter) → B (Pipeline) → C (Risk) → D (Playbooks)        ║
+║           E (Decision Gate) → F (Viral-Trend-Detection) 🆕             ║
+╚══════════════════════════════════════════════════════════════════════════╝</div>
+
+<h2>🛠️ Kern-Tools</h2>
+<div class="grid2">
+<div class="card">
+<h3>📱 DexScreener</h3>
+<p>Live-Charts, neue Pools, Volume-Spikes, Token-Screener, Watchlist, Preis-Alerts</p>
+<p style="margin-top:8px"><span class="badge">Discovery</span><span class="badge">Triage</span><span class="badge">Monitoring</span></p>
+</div>
+<div class="card">
+<h3>👻 Phantom Wallet</h3>
+<p>Primäre Solana-Wallet, Jupiter-Swaps, Ledger-Anbindung, 3-Tier Wallet-Setup</p>
+<p style="margin-top:8px"><span class="badge">Execution</span><span class="badge">Sicherheit</span><span class="badge">Portfolio</span></p>
+</div>
+<div class="card">
+<h3>💹 MEXC Exchange</h3>
+<p>CEX-Trading für gelistete Coins, Spot-Orders, Portfolio-Management</p>
+<p style="margin-top:8px"><span class="badge">CEX Trading</span><span class="badge">Spot Orders</span></p>
+</div>
+<div class="card">
+<h3>🎰 Pump.fun <span class="new">NEU</span></h3>
+<p>Neue Token-Launches monitoren, Viral Meme Runner Trades, Bonding-Curve-Tracking</p>
+<p style="margin-top:8px"><span class="badge">Viral Plays</span><span class="badge">Launch Detection</span></p>
+</div>
+</div>
+
+<h3>🔒 3-Tier Wallet-Sicherheit</h3>
+<div class="card">
+<table>
+<tr><th>Tier</th><th>Zweck</th><th>Anteil</th><th>Sicherheit</th></tr>
+<tr><td>🧊 Cold (Ledger)</td><td>Langfrist-Holdings</td><td>80%</td><td>Hardware-Key, offline</td></tr>
+<tr><td>🌡️ Warm (Phantom+Ledger)</td><td>Trading</td><td>15%</td><td>Hardware-Signatur</td></tr>
+<tr><td>🔥 Hot (Burner)</td><td>Meme-Plays / PB4</td><td>5%</td><td>Expendable</td></tr>
+</table>
+</div>
+
+<h2>🔭 Scanning Universe — 212 Quellen</h2>
+
+<div class="grid2">
+<div class="card card-highlight">
+<h3>🐦 X/Twitter — 82 Accounts</h3>
+<table>
+<tr><th>Kategorie</th><th>Anzahl</th><th>Priorität</th></tr>
+<tr><td>🐋 Whale Tracker & On-Chain</td><td>10</td><td><span class="tag tag-rt">Echtzeit</span></td></tr>
+<tr><td>📢 Alpha Caller & Trader</td><td>20</td><td><span class="tag tag-5m">5min</span></td></tr>
+<tr><td>🐸 Memecoin Spezialisten</td><td>15</td><td><span class="tag tag-rt">Echtzeit</span></td></tr>
+<tr><td>🌏 Asia-Alpha</td><td>10</td><td><span class="tag tag-5m">5min</span></td></tr>
+<tr><td>🏦 VC / Fund Accounts</td><td>8</td><td><span class="tag tag-5m">5min</span></td></tr>
+<tr><td>🤖 AI / Narrative</td><td>6</td><td><span class="tag tag-rt">Echtzeit</span></td></tr>
+<tr><td>📰 Breaking News</td><td>9</td><td><span class="tag tag-rt">Echtzeit</span></td></tr>
+<tr><td>🔍 Scam-Aufdeckung</td><td>5</td><td><span class="tag tag-rt">Echtzeit</span></td></tr>
+<tr><td>🏛️ Politik & Macro</td><td>4</td><td><span class="tag tag-15m">15min</span></td></tr>
+</table>
+</div>
+<div class="card card-highlight">
+<h3>📱 Social Media — 68 Accounts</h3>
+<table>
+<tr><th>Plattform</th><th>Quellen</th><th>Fokus</th></tr>
+<tr><td>🎵 TikTok</td><td>26</td><td>Retail-Hype, Memecoin Viralität</td></tr>
+<tr><td>📸 Instagram</td><td>21</td><td>Retail-Sentiment, Meme-Kultur</td></tr>
+<tr><td>🎬 YouTube</td><td>21</td><td>Education, Deep-Dives, Narrative</td></tr>
+</table>
+<h3 style="margin-top:15px">💬 Communities — 54 Channels</h3>
+<table>
+<tr><th>Plattform</th><th>Quellen</th><th>Fokus</th></tr>
+<tr><td>🎮 Discord</td><td>16</td><td>Community Alpha, Launch Intel</td></tr>
+<tr><td>✈️ Telegram</td><td>22</td><td>Alerts, Alpha Calls, News</td></tr>
+<tr><td>🟠 Reddit</td><td>16</td><td>Sentiment, Virale Trends</td></tr>
+</table>
+</div>
+</div>
+
+<div class="card card-highlight" style="border-color:#4caf5055">
+<h3>🆕 Pump.fun / DexScreener — 8 Quellen <span class="new">NEU in v3</span></h3>
+<table>
+<tr><th>Quelle</th><th>Was</th><th>Priorität</th></tr>
+<tr><td>Pump.fun New Launches</td><td>Jeder neue Token-Launch</td><td><span class="tag tag-rt">Echtzeit</span></td></tr>
+<tr><td>Pump.fun Graduating</td><td>Tokens die Bonding Curve abschließen</td><td><span class="tag tag-rt">Echtzeit</span></td></tr>
+<tr><td>Pump.fun King of the Hill</td><td>Top-Token nach Momentum</td><td><span class="tag tag-rt">Echtzeit</span></td></tr>
+<tr><td>DexScreener New Pairs</td><td>Neue Liquidity Pools</td><td><span class="tag tag-rt">Echtzeit</span></td></tr>
+<tr><td>DexScreener Trending</td><td>Trending nach Volume/Txns</td><td><span class="tag tag-5m">5min</span></td></tr>
+<tr><td>DexScreener Boosted</td><td>Marketing-Signal</td><td><span class="tag tag-5m">5min</span></td></tr>
+<tr><td>Birdeye Trending</td><td>Solana Trending Metriken</td><td><span class="tag tag-5m">5min</span></td></tr>
+<tr><td>DEXTools Hot Pairs</td><td>Multi-Chain Hot Pairs</td><td><span class="tag tag-5m">5min</span></td></tr>
+</table>
+</div>
+
+<div class="card">
+<h3>🟠 Reddit Viral Content-Subs <span class="new">NEU — Viral Detection</span></h3>
+<p style="margin-bottom:10px;color:#aaa">Nicht-Crypto Subreddits wo virale Memes entstehen die zu Tokens werden (z.B. Lil Bit $BIT)</p>
+<table>
+<tr><th>Subreddit</th><th>Members</th><th>Warum</th></tr>
+<tr><td>r/all (Trending)</td><td>—</td><td>Top-Posts → Memes → Tokens</td></tr>
+<tr><td>r/funny</td><td>~55M</td><td>Virale Memes spawnen Tokens</td></tr>
+<tr><td>r/memes</td><td>~30M</td><td>Meme-Ursprung → Token-Match</td></tr>
+<tr><td>r/cats</td><td>~8M</td><td>Virale Tier-Fotos → Memecoins</td></tr>
+<tr><td>r/dogs</td><td>~6M</td><td>Doge-Style Tokens</td></tr>
+<tr><td>r/pics</td><td>~30M</td><td>Virale Bilder → Memecoin</td></tr>
+</table>
+</div>
+
+<h2>📊 Scan-Priorität Verteilung</h2>
+<div class="grid2" style="margin-bottom:20px">
+<div class="stat-box" style="border:2px solid #ff444466"><div class="stat-num" style="color:#ff4444">~40</div><div class="stat-label">Echtzeit-Quellen</div></div>
+<div class="stat-box" style="border:2px solid #ff980066"><div class="stat-num" style="color:#ff9800">~55</div><div class="stat-label">5-Minuten-Quellen</div></div>
+</div>
+<div class="grid2">
+<div class="stat-box" style="border:2px solid #2196f366"><div class="stat-num" style="color:#2196f3">~55</div><div class="stat-label">15-Minuten-Quellen</div></div>
+<div class="stat-box" style="border:2px solid #4caf5066"><div class="stat-num" style="color:#4caf50">~30</div><div class="stat-label">Stündliche Quellen</div></div>
+</div>
+
+<div class="footer">
+MASTERPLAN v3.0 — Teil 1 von 3 | WEundMILO Crypto Trading | Erstellt von Milo 🦁 | 11.02.2026
+</div>
+
+</body>
+</html>

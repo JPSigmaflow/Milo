@@ -1,0 +1,51 @@
+=== X-Scanner Run ===
+Time: Thu Mar  5 22:39:26 EST 2026
+Running with sample size: 30
+
+🔍 X Scanner v2 - Scanning 24 KOLs (from 1137 total)
+  ✅ @lookonchain: 3 tweets (0 new crypto mentions)
+  ✅ @whale_alert: 3 tweets (1 new crypto mentions)
+  ✅ @ZachXBT: 3 tweets (0 new crypto mentions)
+  ✅ @EmberCN: 3 tweets (0 new crypto mentions)
+  ✅ @ai_9684xtpa: 3 tweets (0 new crypto mentions)
+  ✅ @MustStopMurad: 3 tweets (0 new crypto mentions)
+  ✅ @blknoiz06: 3 tweets (0 new crypto mentions)
+  ✅ @HsakaTrades: 3 tweets (0 new crypto mentions)
+  ✅ @CryptoKaleo: 3 tweets (0 new crypto mentions)
+  ✅ @Pentoshi: 1 tweets (0 new crypto mentions)
+  ✅ @rajgokal: 3 tweets (1 new crypto mentions)
+  ✅ @SolJakey: 3 tweets (0 new crypto mentions)
+  ✅ @aixbt_agent: 3 tweets (0 new crypto mentions)
+  ✅ @milesdeutscher: 3 tweets (0 new crypto mentions)
+  ✅ @WatcherGuru: 3 tweets (0 new crypto mentions)
+  ✅ @woonomic: 0 tweets (0 new crypto mentions)
+  ✅ @CryptoDonAlt: 0 tweets (0 new crypto mentions)
+  ✅ @CryptoMichNL: 3 tweets (0 new crypto mentions)
+  ✅ @WeatherXM: 3 tweets (0 new crypto mentions)
+  ✅ @AndreCronjeTech: 3 tweets (2 new crypto mentions)
+  ✅ @AlgoFoundation: 3 tweets (0 new crypto mentions)
+  ✅ @CryptoSlate: 3 tweets (1 new crypto mentions)
+  ✅ @AriDavidPaul: 3 tweets (0 new crypto mentions)
+  ✅ @AstarNetwork: 3 tweets (1 new crypto mentions)
+
+✅ Scan complete:
+   New crypto mentions: 6
+   Coverage: 24/1137 KOLs (2.1%)
+   Output: /Users/milo/.openclaw/workspace/shared/crypto-scanner/data/x-scanner-output.json
+
+🎯 Sample mentions:
+
+  @whale_alert:            226,000,000 #USDC (225,977,400 USD) transferred from unknown wallet to unknown wallet
+
+
+h...
+  @rajgokal: all roads lead to solana...
+  @AndreCronjeTech: Flying Tulip's stablecoin $ftUSD currently yields 6.33% to holders. Rewards in $FT bought back from ...
+  @AndreCronjeTech: Made a dashboard to keep track of onchain $FT supply!...
+  @CryptoSlate: NEW SLATECAST  Tokenizing sports sounds like a meme, until you realize it can fund careers.
+
+In this...
+✅ Success
+📊 Found 6 new crypto mentions
+🚨 High activity (6 mentions) - consider ANALYST run
+

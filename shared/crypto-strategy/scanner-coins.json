@@ -2070,6 +2070,24 @@
     "updated_at": "2026-02-27 16:39:42"
   },
   {
+    "symbol": "PUMP",
+    "name": "Pump.fun Token",
+    "address": "N/A",
+    "chain": "Solana",
+    "narrative": "PumpFun Ecosystem",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 68,
+    "result": "watchlist",
+    "reason": "AI-Analyse: Multi-Source Whale-Akkumulation (5 Quellen: TheBlockBeats, ForesightNews, ChainCatcher, bitpush, PANews). Whale zog 8.535B PUMP ($1.6M) in 7h aus CEX, total 87.1B ($16.4M). Auf MEXC verfügbar. Risiko: Mittel (hohe Whale-Konzentration).",
+    "lesson_ref": null,
+    "source": "analyst-mar8-cron",
+    "source_channels": null,
+    "scanned_at": "2026-03-08 06:12:33",
+    "updated_at": "2026-03-08 06:12:33"
+  },
+  {
     "symbol": "AAVE",
     "name": "Aave Protocol",
     "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",

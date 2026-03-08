@@ -1,0 +1,16 @@
+# 30-Second Inspiring Women's Event Video
+
+CLIPS:
+8909 (9.5s) - The Connection + group
+8910 (6.6s) - The Voice (mic shot) 
+8911 (10.5s) - The Gathering (wide)
+8912 (5.7s) - The Table (laughing)
+
+STRUCTURE (30s total):
+0-7s: 8910 (The Voice - hero shot, trim to best 7s)
+7-14s: 8909 (Connection, best 7s)
+14-22s: 8912 (Table laughter, all 5.7s + hold)
+22-30s: 8911 (Wide gathering, best 8s)
+
+TRANSITIONS: Crossfade 0.5s between clips
+MUSIC: Inspiring, empowering, female energy

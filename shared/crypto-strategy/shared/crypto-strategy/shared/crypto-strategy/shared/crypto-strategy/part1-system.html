@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>MCS v2.0 — Part 1: System-Architektur</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #06090f; color: #c9d1d9; font-family: 'Inter', system-ui, sans-serif; padding: 40px; line-height: 1.6; min-width: 1200px; }
+
+  /* ─── HEADER ─── */
+  .header { text-align: center; padding: 48px 40px 40px; margin-bottom: 36px; background: linear-gradient(160deg, #0d1321 0%, #131a2e 50%, #0f1628 100%); border-radius: 20px; border: 1px solid rgba(99,102,241,0.15); position: relative; overflow: hidden; }
+  .header::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(ellipse at 30% 20%, rgba(99,102,241,0.06) 0%, transparent 50%), radial-gradient(ellipse at 70% 80%, rgba(6,182,212,0.04) 0%, transparent 50%); }
+  .header * { position: relative; }
+  .header .badge { display: inline-block; background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(6,182,212,0.2)); border: 1px solid rgba(99,102,241,0.3); color: #a5b4fc; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 5px 16px; border-radius: 20px; margin-bottom: 16px; }
+  .header h1 { font-size: 38px; font-weight: 900; letter-spacing: -1px; background: linear-gradient(135deg, #e0e7ff 0%, #a5b4fc 30%, #06b6d4 70%, #22d3ee 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 6px; }
+  .header .subtitle { color: #64748b; font-size: 14px; font-weight: 400; }
+  .header .kpis { display: flex; justify-content: center; gap: 48px; margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(99,102,241,0.1); }
+  .header .kpi .val { font-size: 30px; font-weight: 800; letter-spacing: -1px; }
+  .header .kpi .lbl { font-size: 10px; color: #475569; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; margin-top: 2px; }
+  .kpi .val.cyan { color: #22d3ee; }
+  .kpi .val.purple { color: #a78bfa; }
+  .kpi .val.red { color: #f87171; }
+  .kpi .val.amber { color: #fbbf24; }
+  .kpi .val.green { color: #34d399; }
+
+  /* ─── SECTION ─── */
+  .section { margin-bottom: 36px; }
+  .stitle { font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #6366f1; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+  .stitle::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, rgba(99,102,241,0.3), transparent); }
+  .stitle .num { background: #6366f1; color: #fff; font-size: 11px; width: 24px; height: 24px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 800; }
+
+  /* ─── CARDS ─── */
+  .card { background: #0d1117; border-radius: 14px; padding: 24px; border: 1px solid #1e293b; }
+  .card-header { font-size: 14px; font-weight: 700; color: #e2e8f0; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .card-header .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .dot.green { background: #34d399; }
+  .dot.red { background: #f87171; }
+  .dot.blue { background: #60a5fa; }
+  .dot.purple { background: #a78bfa; }
+  .dot.amber { background: #fbbf24; }
+
+  /* ─── GRID LAYOUTS ─── */
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+
+  /* ─── LISTS ─── */
+  .checklist { list-style: none; }
+  .checklist li { padding: 8px 0; font-size: 13.5px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid rgba(30,41,59,0.5); }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist .ic { font-size: 16px; flex-shrink: 0; width: 22px; text-align: center; }
+
+  /* ─── ALLOWED/FORBIDDEN ─── */
+  .rules-allowed { border-left: 3px solid #34d399; }
+  .rules-forbidden { border-left: 3px solid #f87171; }
+
+  /* ─── DATA TABLES ─── */
+  .dtable { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 13px; }
+  .dtable th { background: #161b22; color: #64748b; font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 10px 14px; text-align: left; }
+  .dtable th:first-child { border-radius: 8px 0 0 8px; }
+  .dtable th:last-child { border-radius: 0 8px 8px 0; }
+  .dtable td { padding: 10px 14px; border-bottom: 1px solid #1e293b; color: #94a3b8; }
+  .dtable td:first-child { color: #e2e8f0; font-weight: 600; }
+  .dtable tr:last-child td { border-bottom: none; }
+
+  /* ─── RISK ENGINE CARDS ─── */
+  .risk-metric { background: #0d1117; border-radius: 12px; padding: 18px 14px; text-align: center; border: 1px solid #1e293b; transition: border-color 0.2s; }
+  .risk-metric .val { font-size: 28px; font-weight: 900; letter-spacing: -1px; }
+  .risk-metric .lbl { font-size: 10px; color: #475569; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; margin-top: 4px; }
+  .risk-metric.highlight { border-color: rgba(248,113,113,0.3); background: linear-gradient(180deg, rgba(248,113,113,0.05), transparent); }
+
+  /* ─── PIPELINE ─── */
+  .pipeline { display: flex; gap: 6px; }
+  .pipe-step { flex: 1; background: #0d1117; border: 1px solid #1e293b; border-radius: 12px; padding: 18px 10px; text-align: center; position: relative; }
+  .pipe-step .pnum { font-size: 26px; font-weight: 900; color: #6366f1; opacity: 0.8; }
+  .pipe-step .pname { font-size: 12px; font-weight: 700; color: #e2e8f0; margin-top: 4px; }
+  .pipe-step .pdesc { font-size: 10px; color: #475569; margin-top: 3px; }
+  .pipe-step::after { content: '›'; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: #334155; font-size: 20px; font-weight: 900; z-index: 1; }
+  .pipe-step:last-child::after { display: none; }
+  .pipe-step:hover { border-color: rgba(99,102,241,0.3); }
+
+  /* ─── PLAYBOOK CARD ─── */
+  .playbook { background: #0d1117; border-radius: 14px; padding: 24px; border: 1px solid #1e293b; }
+  .playbook .pb-title { font-size: 17px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+  .playbook .pb-tags { margin-bottom: 14px; }
+  .playbook .tag { display: inline-block; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-right: 6px; letter-spacing: 0.3px; }
+  .tag.t-blue { background: rgba(6,182,212,0.15); color: #22d3ee; border: 1px solid rgba(6,182,212,0.2); }
+  .tag.t-purple { background: rgba(139,92,246,0.15); color: #a78bfa; border: 1px solid rgba(139,92,246,0.2); }
+  .tag.t-green { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.2); }
+  .tag.t-amber { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.2); }
+  .playbook .pb-grid { display: grid; grid-template-columns: 80px 1fr; gap: 0; font-size: 13px; }
+  .playbook .pb-grid .pb-label { color: #475569; font-weight: 600; padding: 7px 0; border-bottom: 1px solid #1e293b; }
+  .playbook .pb-grid .pb-val { color: #94a3b8; padding: 7px 0 7px 12px; border-bottom: 1px solid #1e293b; }
+  .playbook .pb-grid .pb-label:last-of-type,
+  .playbook .pb-grid .pb-val:last-of-type { border-bottom: none; }
+
+  /* ─── GATE GRID ─── */
+  .gate-item { background: #0d1117; border: 1px solid #1e293b; border-radius: 10px; padding: 14px 10px; text-align: center; }
+  .gate-item .gi { font-size: 22px; margin-bottom: 4px; }
+  .gate-item .gt { font-size: 11px; color: #64748b; font-weight: 500; line-height: 1.3; }
+  .gate-result { margin-top: 14px; text-align: center; padding: 14px; background: linear-gradient(135deg, rgba(52,211,153,0.08), rgba(99,102,241,0.08)); border: 1px solid rgba(52,211,153,0.2); border-radius: 10px; }
+  .gate-result span { font-size: 15px; font-weight: 800; color: #34d399; letter-spacing: 0.5px; }
+
+  /* ─── UNIVERSE TABLE ─── */
+  .source-grid { display: grid; grid-template-columns: 120px 1fr; gap: 0; font-size: 13px; }
+  .source-grid .sg-label { color: #64748b; font-weight: 600; padding: 8px 0; border-bottom: 1px solid #1e293b; }
+  .source-grid .sg-val { color: #94a3b8; padding: 8px 0 8px 12px; border-bottom: 1px solid #1e293b; }
+
+  /* ─── PORTFOLIO TABLE ─── */
+  .port-status { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; }
+  .port-status.review { background: rgba(251,191,36,0.15); color: #fbbf24; }
+
+  /* ─── FOOTER ─── */
+  .footer { text-align: center; margin-top: 44px; padding: 20px; color: #1e293b; font-size: 11px; letter-spacing: 0.5px; }
+  .footer strong { color: #334155; }
+
+  /* ─── SEPARATOR ─── */
+  .sep { height: 1px; background: linear-gradient(90deg, transparent, rgba(99,102,241,0.15), transparent); margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════ HEADER ══════════════════ -->
+<div class="header">
+  <div class="badge">Execution Dashboard · Teil 1/2</div>
+  <h1>🏗️ MILO CRYPTO SYSTEM v2.0</h1>
+  <div class="subtitle">System-Architektur & Playbooks — Stand: 11. Februar 2026</div>
+  <div class="kpis">
+    <div class="kpi"><div class="val cyan">$3.509</div><div class="lbl">Portfolio-Wert</div></div>
+    <div class="kpi"><div class="val purple">6</div><div class="lbl">Positionen</div></div>
+    <div class="kpi"><div class="val red">-20%</div><div class="lbl">Max Drawdown</div></div>
+    <div class="kpi"><div class="val amber">3/Wo</div><div class="lbl">Max Trades</div></div>
+    <div class="kpi"><div class="val green">5%</div><div class="lbl">Max/Position</div></div>
+  </div>
+</div>
+
+<!-- ══════════════════ SOCRATIC START ══════════════════ -->
+<div class="section">
+  <div class="stitle"><span class="num">1</span> Socratic Start — Grundregeln</div>
+  <div class="grid2">
+    <div class="card rules-allowed">
+      <div class="card-header"><span class="dot green"></span> ERLAUBT</div>
+      <ul class="checklist">
+        <li><span class="ic">✅</span> Spot-Trading auf MEXC + Raydium DEX</li>
+        <li><span class="ic">✅</span> Swing (2–14 Tage) + Position (2–12 Wochen)</li>
+        <li><span class="ic">✅</span> Kapitalerhalt + moderate Rendite (15–30% p.a.)</li>
+        <li><span class="ic">✅</span> Multi-Source-Bestätigung vor jedem Trade</li>
+        <li><span class="ic">✅</span> Button-Confirm durch Juri oder Chris</li>
+      </ul>
+    </div>
+    <div class="card rules-forbidden">
+      <div class="card-header"><span class="dot red"></span> VERBOTEN</div>
+      <ul class="checklist">
+        <li><span class="ic">🚫</span> Perpetuals, Options, Leverage — ausnahmslos</li>
+        <li><span class="ic">🚫</span> Intraday-Trading / Scalping</li>
+        <li><span class="ic">🚫</span> Meme-Zock ohne nachweisbare Utility</li>
+        <li><span class="ic">🚫</span> Honeypot-Tokens / Sell Tax > 5%</li>
+        <li><span class="ic">🚫</span> Unlocked LP / Anonyme Teams ohne Track Record</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ MODUL A: UNIVERSUM ══════════════════ -->
+<div class="section">
+  <div class="stitle"><span class="num">A</span> Thesis & Universum — Filter</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-header"><span class="dot blue"></span> Universe-Kriterien (alle müssen gelten)</div>
+      <table class="dtable">
+        <tr><th>Kriterium</th><th>Minimum</th><th>Quelle</th></tr>
+        <tr><td>Market Cap</td><td>> $1M</td><td>Coinpaprika / CoinGecko</td></tr>
+        <tr><td>24h Volumen</td><td>> $50k</td><td>Coinpaprika</td></tr>
+        <tr><td>Listing-Alter</td><td>> 30 Tage</td><td>Coinpaprika</td></tr>
+        <tr><td>DEX Liquidity</td><td>> $50k TVL</td><td>DexScreener / Raydium</td></tr>
+        <tr><td>Holder</td><td>> 1.000</td><td>On-Chain Explorer</td></tr>
+        <tr><td>Konzept</td><td>Schlüssig, kein Meme</td><td>Whitepaper / Docs</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="dot purple"></span> Datenquellen</div>
+      <div class="source-grid">
+        <div class="sg-label">Preis/Volumen</div><div class="sg-val">Coinpaprika API, CoinGecko</div>
+        <div class="sg-label">DEX-Daten</div><div class="sg-val">DexScreener, Raydium, Birdeye</div>
+        <div class="sg-label">On-Chain</div><div class="sg-val">Solscan, Etherscan</div>
+        <div class="sg-label">Social</div><div class="sg-val">Twitter/X, Discord, Telegram</div>
+        <div class="sg-label">Safety</div><div class="sg-val">RugCheck, TokenSniffer, GoPlus</div>
+      </div>
+      <div style="margin-top:16px;">
+        <div class="card-header" style="margin-bottom:10px;"><span class="dot red"></span> Hard-No Ausschlüsse</div>
+        <ul class="checklist" style="font-size:12.5px;">
+          <li><span class="ic">❌</span> Rebase/Elastic-Supply Tokens</li>
+          <li><span class="ic">❌</span> Sell Tax > 5%</li>
+          <li><span class="ic">❌</span> LP nicht gelockt / < 6 Monate</li>
+          <li><span class="ic">❌</span> Honeypot-Check failed</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ MODUL B: PIPELINE ══════════════════ -->
+<div class="section">
+  <div class="stitle"><span class="num">B</span> Pipeline — Idee → Trade (7 Stufen)</div>
+  <div class="pipeline">
+    <div class="pipe-step"><div class="pnum">1</div><div class="pname">Discovery</div><div class="pdesc">Quellen scannen, filtern</div></div>
+    <div class="pipe-step"><div class="pnum">2</div><div class="pname">Triage</div><div class="pdesc">MC, Vol, LP, Tax, Honeypot</div></div>
+    <div class="pipe-step"><div class="pnum">3</div><div class="pname">Deep-Dive</div><div class="pdesc">WP, Team, Tokenomics</div></div>
+    <div class="pipe-step"><div class="pnum">4</div><div class="pname">Setup</div><div class="pdesc">Playbook, Entry, SL, TP</div></div>
+    <div class="pipe-step"><div class="pnum">5</div><div class="pname">Execution</div><div class="pdesc">Order + Confirm</div></div>
+    <div class="pipe-step"><div class="pnum">6</div><div class="pname">Monitoring</div><div class="pdesc">Daily Check, Alerts</div></div>
+    <div class="pipe-step"><div class="pnum">7</div><div class="pname">Review</div><div class="pdesc">Journal & Lessons</div></div>
+  </div>
+</div>
+
+<!-- ══════════════════ MODUL C: RISK ENGINE ══════════════════ -->
+<div class="section">
+  <div class="stitle"><span class="num">C</span> Risk Engine — Nicht verhandelbar</div>
+  <div class="grid4">
+    <div class="risk-metric"><div class="val cyan">5%</div><div class="lbl">Max pro Position</div></div>
+    <div class="risk-metric"><div class="val amber">20%</div><div class="lbl">Max pro Sektor</div></div>
+    <div class="risk-metric highlight"><div class="val" style="color:#f87171;">-20%</div><div class="lbl">Portfolio Kill-Switch</div></div>
+    <div class="risk-metric"><div class="val green">≥ 2:1</div><div class="lbl">Min Risk:Reward</div></div>
+    <div class="risk-metric"><div class="val purple">6</div><div class="lbl">Max offene Positionen</div></div>
+    <div class="risk-metric"><div class="val amber">3/Wo</div><div class="lbl">Max neue Trades</div></div>
+    <div class="risk-metric highlight"><div class="val" style="color:#f87171;">-10%</div><div class="lbl">Max SL pro Position</div></div>
+    <div class="risk-metric"><div class="val green">$50k</div><div class="lbl">Min Liquidity</div></div>
+  </div>
+  <div style="margin-top:14px; padding:14px 18px; background:#0d1117; border:1px solid #1e293b; border-radius:10px; font-size:13px;">
+    <strong style="color:#a5b4fc;">📐 Positionsgrößen-Formel:</strong>
+    <code style="display:block; margin-top:6px; padding:10px; background:#161b22; border-radius:6px; color:#22d3ee; font-size:13px;">Positionsgröße = (Portfolio × 0.02) / (Entry − StopLoss)&nbsp;&nbsp;|&nbsp;&nbsp;Max: 5% Portfolio (~$175)</code>
+  </div>
+</div>
+
+<!-- ══════════════════ MODUL D: PLAYBOOKS ══════════════════ -->
+<div class="section">
+  <div class="stitle"><span class="num">D</span> Playbooks — Drei Strategien</div>
+  <div class="grid3">
+
+    <!-- Breakout -->
+    <div class="playbook">
+      <div class="pb-title">📊 Breakout</div>
+      <div class="pb-tags">
+        <span class="tag t-blue">Volumen > 2x Avg</span>
+        <span class="tag t-purple">R:R ≥ 2:1</span>
+      </div>
+      <div class="pb-grid">
+        <div class="pb-label">Entry</div><div class="pb-val">4h-Close über klar definierte Resistance</div>
+        <div class="pb-label">Stop-Loss</div><div class="pb-val">-5% bis -8% (Unterkante Breakout)</div>
+        <div class="pb-label">TP1</div><div class="pb-val">+10% → 50% Position raus</div>
+        <div class="pb-label">TP2</div><div class="pb-val">+20% → 30% Position raus</div>
+        <div class="pb-label">Trail</div><div class="pb-val">10% Trailing Stop → 20% Rest</div>
+        <div class="pb-label">Invalid.</div><div class="pb-val">Rückfall unter Resistance in 24h</div>
+        <div class="pb-label">Check</div><div class="pb-val">Vol ✓ RSI < 80 ✓ Kein News 24h ✓</div>
+      </div>
+    </div>
+
+    <!-- Pullback -->
+    <div class="playbook">
+      <div class="pb-title">📉 Pullback-to-Support</div>
+      <div class="pb-tags">
+        <span class="tag t-green">Trend-Following</span>
+        <span class="tag t-purple">R:R ≥ 2.5:1</span>
+      </div>
+      <div class="pb-grid">
+        <div class="pb-label">Entry</div><div class="pb-val">Bounce auf EMA21 / Support-Zone</div>
+        <div class="pb-label">Stop-Loss</div><div class="pb-val">Unter letztem Higher Low (-5–10%)</div>
+        <div class="pb-label">TP1</div><div class="pb-val">Letztes High (+8–15%)</div>
+        <div class="pb-label">TP2</div><div class="pb-val">Fibonacci Extension 1.618</div>
+        <div class="pb-label">Bedingung</div><div class="pb-val">Min. 2 Higher Lows + steigendes Vol</div>
+        <div class="pb-label">Invalid.</div><div class="pb-val">Break unter letztes HL (4h-Close)</div>
+        <div class="pb-label">Check</div><div class="pb-val">Trend ✓ RSI 40–60 ✓ Keine Divergenz ✓</div>
+      </div>
+    </div>
+
+    <!-- Catalyst -->
+    <div class="playbook">
+      <div class="pb-title">🚀 Catalyst Play</div>
+      <div class="pb-tags">
+        <span class="tag t-amber">Listing/Release</span>
+        <span class="tag t-purple">R:R ≥ 2:1</span>
+      </div>
+      <div class="pb-grid">
+        <div class="pb-label">Entry</div><div class="pb-val">24–72h VOR Event, bei Momentum</div>
+        <div class="pb-label">Stop-Loss</div><div class="pb-val">-8% vom Entry (eng, Event-Risk)</div>
+        <div class="pb-label">TP1</div><div class="pb-val">+15% VOR Event → 70% raus!</div>
+        <div class="pb-label">TP2</div><div class="pb-val">+30% Post-Event (nur bei Momentum)</div>
+        <div class="pb-label">Bedingung</div><div class="pb-val">Offizielle Ankündigung, 2+ Quellen</div>
+        <div class="pb-label">Invalid.</div><div class="pb-val">Event verschoben / Sell-the-News</div>
+        <div class="pb-label">Regel</div><div class="pb-val" style="color:#fbbf24; font-weight:700;">70% RAUS vor dem Event!</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ MODUL E: DECISION GATE ══════════════════ -->
+<div class="section">
+  <div class="stitle"><span class="num">E</span> Decision Gate — Go/No-Go (12/12 = GO)</div>
+  <div class="grid4">
+    <div class="gate-item"><div class="gi">🛡️</div><div class="gt">Honeypot-Check<br>bestanden</div></div>
+    <div class="gate-item"><div class="gi">💧</div><div class="gt">Liquidity<br>> $50k</div></div>
+    <div class="gate-item"><div class="gi">📊</div><div class="gt">Sell Tax<br>< 5%</div></div>
+    <div class="gate-item"><div class="gi">🔒</div><div class="gt">LP locked<br>> 6 Monate</div></div>
+    <div class="gate-item"><div class="gi">⭐</div><div class="gt">Deep-Dive Score<br>≥ 7/10</div></div>
+    <div class="gate-item"><div class="gi">📐</div><div class="gt">Risk:Reward<br>≥ 2:1</div></div>
+    <div class="gate-item"><div class="gi">📏</div><div class="gt">Positionsgröße<br>≤ 5% Portfolio</div></div>
+    <div class="gate-item"><div class="gi">🏗️</div><div class="gt">Sektor-Exposure<br>≤ 20%</div></div>
+    <div class="gate-item"><div class="gi">6️⃣</div><div class="gt">Max Positionen<br>nicht überschritten</div></div>
+    <div class="gate-item"><div class="gi">🎯</div><div class="gt">Stop-Loss<br>definiert</div></div>
+    <div class="gate-item"><div class="gi">📋</div><div class="gt">Playbook<br>ausgewählt</div></div>
+    <div class="gate-item"><div class="gi">✅</div><div class="gt">Juri/Chris<br>Confirm</div></div>
+  </div>
+  <div class="gate-result">
+    <span>12/12 = ✅ GO&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;< 12 = 🚫 NO-GO&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Keine Ausnahmen.</span>
+  </div>
+</div>
+
+<!-- ══════════════════ PORTFOLIO ══════════════════ -->
+<div class="section">
+  <div class="stitle">📦 Aktuelles Portfolio</div>
+  <div class="card">
+    <table class="dtable">
+      <tr><th>Coin</th><th>Exchange</th><th>Sektor</th><th>SL-Level</th><th>Status</th></tr>
+      <tr><td>RAIN</td><td>MEXC</td><td>AI / Data</td><td style="color:#fbbf24;">⏳ TBD</td><td><span class="port-status review">🔍 Review</span></td></tr>
+      <tr><td>LUNAI</td><td>MEXC</td><td>AI</td><td style="color:#fbbf24;">⏳ TBD</td><td><span class="port-status review">🔍 Review</span></td></tr>
+      <tr><td>VIRTUAL</td><td>MEXC</td><td>AI / Metaverse</td><td style="color:#fbbf24;">⏳ TBD</td><td><span class="port-status review">🔍 Review</span></td></tr>
+      <tr><td>GRIFFAIN</td><td>MEXC</td><td>AI / DeFi</td><td style="color:#fbbf24;">⏳ TBD</td><td><span class="port-status review">🔍 Review</span></td></tr>
+      <tr><td>DEAI</td><td>MEXC</td><td>AI</td><td style="color:#fbbf24;">⏳ TBD</td><td><span class="port-status review">🔍 Review</span></td></tr>
+      <tr><td>RAY</td><td>Raydium</td><td>DeFi / DEX</td><td style="color:#fbbf24;">⏳ TBD</td><td><span class="port-status review">🔍 Review</span></td></tr>
+    </table>
+    <div style="margin-top:12px; padding:10px 14px; background:rgba(251,191,36,0.06); border:1px solid rgba(251,191,36,0.15); border-radius:8px; font-size:12px; color:#fbbf24;">
+      ⚠️ <strong>Aktion:</strong> Alle SL-Levels müssen innerhalb von 24h definiert werden (→ Schritt 1 im Umsetzungsplan).
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <strong>MILO CRYPTO SYSTEM v2.0</strong> — Teil 1/2: System-Architektur & Playbooks<br>
+  Team: Juri · Chris · Milo &nbsp;|&nbsp; Nächster Review: KW 07/2026
+</div>
+
+</body>
+</html>

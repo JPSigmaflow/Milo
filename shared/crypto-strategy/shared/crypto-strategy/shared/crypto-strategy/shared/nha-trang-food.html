@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  padding: 40px;
+}
+h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #f7931a;
+  margin-bottom: 8px;
+}
+.subtitle {
+  text-align: center;
+  font-size: 22px;
+  color: #888;
+  margin-bottom: 36px;
+}
+.section-title {
+  font-size: 30px;
+  color: #64b5f6;
+  margin: 28px 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #2a2a3a;
+}
+.card {
+  background: #14141f;
+  border: 1px solid #2a2a3a;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+.num {
+  font-size: 36px;
+  font-weight: bold;
+  min-width: 52px;
+  text-align: center;
+  line-height: 1;
+  padding-top: 4px;
+}
+.market .num { color: #ff6b6b; }
+.resto .num { color: #ffd93d; }
+.bar .num { color: #6bcb77; }
+.info { flex: 1; }
+.name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.tag {
+  display: inline-block;
+  font-size: 16px;
+  padding: 2px 10px;
+  border-radius: 6px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.tag-street { background: #ff6b6b33; color: #ff6b6b; }
+.tag-seafood { background: #64b5f633; color: #64b5f6; }
+.tag-local { background: #ffd93d33; color: #ffd93d; }
+.tag-vibe { background: #6bcb7733; color: #6bcb77; }
+.tag-musttry { background: #f7931a33; color: #f7931a; }
+.desc {
+  font-size: 22px;
+  color: #bbb;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+.tip-box {
+  background: #1a1a2e;
+  border: 1px solid #f7931a55;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-top: 28px;
+  font-size: 22px;
+  color: #ffd93d;
+  line-height: 1.5;
+}
+.tip-box strong { color: #f7931a; }
+.footer {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 18px;
+  color: #555;
+}
+</style>
+</head>
+<body>
+
+<h1>🇻🇳 NHA TRANG FOOD GUIDE</h1>
+<p class="subtitle">Top 15 • Nachtmarkt, Restaurants & Bars</p>
+
+<div class="section-title">🏮 Chợ Đêm — Nachtmarkt Highlights</div>
+
+<div class="card market">
+  <div class="num">01</div>
+  <div class="info">
+    <div class="name">🥞 Bánh Xèo</div>
+    <span class="tag tag-street">Street Food</span><span class="tag tag-musttry">Must-Try</span>
+    <div class="desc">Knusprige vietnamesische Crêpes mit Garnelen, Schweinefleisch & Sprossen. Die Stände mit der längsten Schlange sind die besten!</div>
+  </div>
+</div>
+
+<div class="card market">
+  <div class="num">02</div>
+  <div class="info">
+    <div class="name">🦐 Gegrillte Seafood-Stände</div>
+    <span class="tag tag-seafood">Seafood</span><span class="tag tag-street">Street Food</span>
+    <div class="desc">Frische Muscheln, Garnelen, Tintenfisch & Hummer direkt vom Kohlegrill. Preise vorher verhandeln!</div>
+  </div>
+</div>
+
+<div class="card market">
+  <div class="num">03</div>
+  <div class="info">
+    <div class="name">🔥 Nem Nướng Ninh Hòa</div>
+    <span class="tag tag-local">Lokal-Spezialität</span><span class="tag tag-musttry">Must-Try</span>
+    <div class="desc">Gegrillte Schweinefleisch-Rollen — DIE Signature-Spezialität der Region. Gibt's nur hier so authentisch.</div>
+  </div>
+</div>
+
+<div class="card market">
+  <div class="num">04</div>
+  <div class="info">
+    <div class="name">🍜 Bún Chả Cá</div>
+    <span class="tag tag-local">Lokal-Spezialität</span><span class="tag tag-seafood">Seafood</span>
+    <div class="desc">Fisch-Nudelsuppe — DAS Nha Trang Original. Fischkuchen + Jellyfish in aromatischer Brühe.</div>
+  </div>
+</div>
+
+<div class="card market">
+  <div class="num">05</div>
+  <div class="info">
+    <div class="name">🥚 Bánh Căn</div>
+    <span class="tag tag-street">Street Food</span>
+    <div class="desc">Mini-Reiskuchen mit Wachtelei & Garnelen, gebacken in Tonformen. Perfekter Snack zwischendurch.</div>
+  </div>
+</div>
+
+<div class="card market">
+  <div class="num">06</div>
+  <div class="info">
+    <div class="name">🥖 Bánh Mì Nha Trang</div>
+    <span class="tag tag-street">Street Food</span><span class="tag tag-musttry">Must-Try</span>
+    <div class="desc">Vietnamesisches Baguette mit Schweinefleisch, Pâté, Kräutern & Chili. Jeder Stand hat sein eigenes Rezept.</div>
+  </div>
+</div>
+
+<div class="card market">
+  <div class="num">07</div>
+  <div class="info">
+    <div class="name">🍡 Chè — Süße Dessertsuppen</div>
+    <span class="tag tag-street">Street Food</span><span class="tag tag-vibe">Dessert</span>
+    <div class="desc">Bunte Dessert-Bowls mit Bohnen, Kokosmilch, Tapioka & Crushed Ice. Perfekt nach dem herzhaften Essen.</div>
+  </div>
+</div>
+
+<div class="section-title">🍽️ Top Restaurants</div>
+
+<div class="card resto">
+  <div class="num">08</div>
+  <div class="info">
+    <div class="name">🏮 Lanterns Vietnamese Restaurant</div>
+    <span class="tag tag-local">Authentisch</span><span class="tag tag-musttry">Must-Try</span>
+    <div class="desc">Top-bewertet auf allen Plattformen. Authentisch vietnamesisch, wunderschönes Ambiente mit Laternen.</div>
+  </div>
+</div>
+
+<div class="card resto">
+  <div class="num">09</div>
+  <div class="info">
+    <div class="name">🥩 Lac Canh Restaurant</div>
+    <span class="tag tag-local">Legende seit 1960s</span><span class="tag tag-musttry">Must-Try</span>
+    <div class="desc">Legendäres DIY-Grill-Restaurant. Mariniertes Beef, Garnelen & Tintenfisch am eigenen Kohlegrill am Tisch.</div>
+  </div>
+</div>
+
+<div class="card resto">
+  <div class="num">10</div>
+  <div class="info">
+    <div class="name">🐟 Yen's Restaurant</div>
+    <span class="tag tag-seafood">Seafood</span><span class="tag tag-local">Lokal-Favorit</span>
+    <div class="desc">Riesige Seafood-Auswahl zu lokalen Preisen. Nha Trang Einheimische lieben es — gutes Zeichen!</div>
+  </div>
+</div>
+
+<div class="card resto">
+  <div class="num">11</div>
+  <div class="info">
+    <div class="name">🌍 Mix Restaurant</div>
+    <span class="tag tag-vibe">Fusion</span>
+    <div class="desc">Griechisch-vietnamesische Fusion. Klingt verrückt, schmeckt genial. Rooftop mit Meerblick!</div>
+  </div>
+</div>
+
+<div class="card resto">
+  <div class="num">12</div>
+  <div class="info">
+    <div class="name">🦀 Nhà Hàng Hải Sản Phố</div>
+    <span class="tag tag-seafood">Seafood</span><span class="tag tag-local">Authentisch</span>
+    <div class="desc">Großes Seafood-Restaurant wo die Locals essen. Lebende Tiere im Tank auswählen, Zubereitung nach Wunsch.</div>
+  </div>
+</div>
+
+<div class="card resto">
+  <div class="num">13</div>
+  <div class="info">
+    <div class="name">🍲 Phở Hồng</div>
+    <span class="tag tag-local">Lokal-Favorit</span>
+    <div class="desc">Beste Phở in Nha Trang — perfekt für morgens oder als Late Night Snack. Brühe wird 12h gekocht.</div>
+  </div>
+</div>
+
+<div class="section-title">🍺 Bars & Chill</div>
+
+<div class="card bar">
+  <div class="num">14</div>
+  <div class="info">
+    <div class="name">🍺 Louisiane Brewhouse</div>
+    <span class="tag tag-vibe">Beach Vibes</span><span class="tag tag-seafood">Seafood</span>
+    <div class="desc">Direkt am Strand mit Pool! Eigenes Craft Beer + Seafood-Menü. Perfekt zum Absacken nach dem Markt.</div>
+  </div>
+</div>
+
+<div class="card bar">
+  <div class="num">15</div>
+  <div class="info">
+    <div class="name">🌅 Skylight Rooftop Bar</div>
+    <span class="tag tag-vibe">Rooftop</span><span class="tag tag-vibe">Panorama</span>
+    <div class="desc">Höchste Rooftop-Bar in Nha Trang mit 360°-Blick über die Bucht. Cocktails bei Sonnenuntergang — epic! 🔥</div>
+  </div>
+</div>
+
+<div class="tip-box">
+  💡 <strong>Pro-Tipps:</strong><br>
+  • Seafood-Preise IMMER vorher pro Kilo erfragen<br>
+  • Grab-App für Taxi nutzen (günstiger als Straßentaxis)<br>
+  • Nachtmarkt ab 18 Uhr, bestes Timing: 19–21 Uhr<br>
+  • Bar-Hopping: Nachtmarkt → Louisiane → Skylight 🍻
+</div>
+
+<p class="footer">🦁 Milo's Nha Trang Food Guide • Februar 2026</p>
+
+</body>
+</html>

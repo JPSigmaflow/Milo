@@ -1,0 +1,8 @@
+[2026-03-07 08:00:00] Comment Monitor Run
+Status: FAILED
+Error: Invalid OAuth access token - Cannot parse access token (Code 190)
+Tried: access_token and page_token from instagram-api.json
+Issue: Both tokens return OAuth error, likely expired or revoked
+Action needed: Token refresh required
+Comments checked: 0
+Replies sent: 0

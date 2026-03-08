@@ -1,0 +1,455 @@
+{
+  "new_accounts": [
+    {
+      "handle": "BitcoinArchive",
+      "followers": 1815941,
+      "tweets": 53144,
+      "category": "Bitcoin News",
+      "lang": "en"
+    },
+    {
+      "handle": "willywoo",
+      "followers": 1236261,
+      "tweets": 13106,
+      "category": "On-Chain Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "intocryptoverse",
+      "followers": 1164360,
+      "tweets": 27950,
+      "category": "Macro/Cycles",
+      "lang": "en"
+    },
+    {
+      "handle": "danheld",
+      "followers": 872109,
+      "tweets": 80078,
+      "category": "Crypto VC",
+      "lang": "en"
+    },
+    {
+      "handle": "TheCryptoDog",
+      "followers": 859360,
+      "tweets": 39318,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "CryptoMichNL",
+      "followers": 819623,
+      "tweets": 81674,
+      "category": "Trader/Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "WClemente",
+      "followers": 797076,
+      "tweets": 21754,
+      "category": "On-Chain Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "IncomeSharks",
+      "followers": 730217,
+      "tweets": 101473,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "markminervini",
+      "followers": 669673,
+      "tweets": 37476,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "maxkeiser",
+      "followers": 666930,
+      "tweets": 163365,
+      "category": "Bitcoin Macro",
+      "lang": "en"
+    },
+    {
+      "handle": "eliz883",
+      "followers": 604764,
+      "tweets": 82327,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "PeterMcCormack",
+      "followers": 603493,
+      "tweets": 71551,
+      "category": "Bitcoin Podcast",
+      "lang": "en"
+    },
+    {
+      "handle": "PrestonPysh",
+      "followers": 591653,
+      "tweets": 48225,
+      "category": "Bitcoin/Macro",
+      "lang": "en"
+    },
+    {
+      "handle": "TechDev_52",
+      "followers": 560665,
+      "tweets": 13517,
+      "category": "Technical Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "jackmallers",
+      "followers": 552283,
+      "tweets": 9098,
+      "category": "Bitcoin/Lightning",
+      "lang": "en"
+    },
+    {
+      "handle": "lopp",
+      "followers": 526320,
+      "tweets": 54416,
+      "category": "Bitcoin Security",
+      "lang": "en"
+    },
+    {
+      "handle": "JamesWynnReal",
+      "followers": 488883,
+      "tweets": 19380,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "Breedlove22",
+      "followers": 443272,
+      "tweets": 24561,
+      "category": "Bitcoin Philosophy",
+      "lang": "en"
+    },
+    {
+      "handle": "nic_carter",
+      "followers": 439032,
+      "tweets": 73511,
+      "category": "Bitcoin VC",
+      "lang": "en"
+    },
+    {
+      "handle": "AndreCronjeTech",
+      "followers": 438767,
+      "tweets": 128,
+      "category": "DeFi Founder",
+      "lang": "en"
+    },
+    {
+      "handle": "DylanLeClair",
+      "followers": 431956,
+      "tweets": 36453,
+      "category": "Bitcoin/On-Chain",
+      "lang": "en"
+    },
+    {
+      "handle": "DegenerateNews",
+      "followers": 422557,
+      "tweets": 33406,
+      "category": "Crypto News",
+      "lang": "en"
+    },
+    {
+      "handle": "saifedean",
+      "followers": 416744,
+      "tweets": 85749,
+      "category": "Bitcoin Economics",
+      "lang": "en"
+    },
+    {
+      "handle": "MuroCrypto",
+      "followers": 404996,
+      "tweets": 35269,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "alphatrends",
+      "followers": 390309,
+      "tweets": 56090,
+      "category": "Technical Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "JeffBooth",
+      "followers": 377859,
+      "tweets": 11305,
+      "category": "Bitcoin/Macro",
+      "lang": "en"
+    },
+    {
+      "handle": "BigCheds",
+      "followers": 373463,
+      "tweets": 218241,
+      "category": "Technical Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "BobLoukas",
+      "followers": 371314,
+      "tweets": 40107,
+      "category": "Cycle Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "Trader_Dante",
+      "followers": 336306,
+      "tweets": 64835,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "cryptorand",
+      "followers": 334586,
+      "tweets": 91291,
+      "category": "Trader/Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "mert",
+      "followers": 322145,
+      "tweets": 71518,
+      "category": "Solana Infra",
+      "lang": "en"
+    },
+    {
+      "handle": "TuurDemeester",
+      "followers": 308029,
+      "tweets": 67415,
+      "category": "Bitcoin Research",
+      "lang": "en"
+    },
+    {
+      "handle": "cryptoquant_com",
+      "followers": 287211,
+      "tweets": 6520,
+      "category": "On-Chain Analytics",
+      "lang": "en"
+    },
+    {
+      "handle": "ThinkingUSD",
+      "followers": 279007,
+      "tweets": 9484,
+      "category": "Trader/Macro",
+      "lang": "en"
+    },
+    {
+      "handle": "bbands",
+      "followers": 276911,
+      "tweets": 10292,
+      "category": "Technical Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "MartyBent",
+      "followers": 270515,
+      "tweets": 78683,
+      "category": "Bitcoin Media",
+      "lang": "en"
+    },
+    {
+      "handle": "gladstein",
+      "followers": 260986,
+      "tweets": 134769,
+      "category": "Bitcoin/Human Rights",
+      "lang": "en"
+    },
+    {
+      "handle": "CaitlinLong_",
+      "followers": 250254,
+      "tweets": 34400,
+      "category": "Crypto Banking",
+      "lang": "en"
+    },
+    {
+      "handle": "SimonDixonTwitt",
+      "followers": 247078,
+      "tweets": 63368,
+      "category": "Crypto Finance",
+      "lang": "en"
+    },
+    {
+      "handle": "TrueCrypto28",
+      "followers": 246921,
+      "tweets": 42104,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "SatoshiFlipper",
+      "followers": 240375,
+      "tweets": 109824,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "jespow",
+      "followers": 232004,
+      "tweets": 5819,
+      "category": "Kraken Founder",
+      "lang": "en"
+    },
+    {
+      "handle": "udiWertheimer",
+      "followers": 230836,
+      "tweets": 127121,
+      "category": "Bitcoin Dev",
+      "lang": "en"
+    },
+    {
+      "handle": "rendernetwork",
+      "followers": 229142,
+      "tweets": 12931,
+      "category": "DePIN/GPU",
+      "lang": "en"
+    },
+    {
+      "handle": "TraderLion",
+      "followers": 217954,
+      "tweets": 22328,
+      "category": "Trading Education",
+      "lang": "en"
+    },
+    {
+      "handle": "JanaCryptoQueen",
+      "followers": 214284,
+      "tweets": 357376,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "ercwl",
+      "followers": 168716,
+      "tweets": 56435,
+      "category": "Research/Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "FossGregfoss",
+      "followers": 167125,
+      "tweets": 32797,
+      "category": "Bitcoin/Macro",
+      "lang": "en"
+    },
+    {
+      "handle": "ZeroHedge_",
+      "followers": 155106,
+      "tweets": 38564,
+      "category": "Macro News",
+      "lang": "en"
+    },
+    {
+      "handle": "caprioleio",
+      "followers": 134306,
+      "tweets": 7753,
+      "category": "Quant Analyst",
+      "lang": "en"
+    },
+    {
+      "handle": "OGDfarmer",
+      "followers": 125992,
+      "tweets": 31576,
+      "category": "DeFi Farmer",
+      "lang": "en"
+    },
+    {
+      "handle": "CryptoJelleNL",
+      "followers": 115297,
+      "tweets": 81150,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "Cryptoyieldinfo",
+      "followers": 112759,
+      "tweets": 6745,
+      "category": "DeFi Yields",
+      "lang": "en"
+    },
+    {
+      "handle": "BagCalls",
+      "followers": 103150,
+      "tweets": 42840,
+      "category": "Altcoin Alpha",
+      "lang": "en"
+    },
+    {
+      "handle": "EvgenyGaevoy",
+      "followers": 95978,
+      "tweets": 9788,
+      "category": "Market Maker",
+      "lang": "en"
+    },
+    {
+      "handle": "RunnerXBT",
+      "followers": 94310,
+      "tweets": 13496,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "CamiRusso",
+      "followers": 93497,
+      "tweets": 13584,
+      "category": "Crypto Journalism",
+      "lang": "en"
+    },
+    {
+      "handle": "CryptoHornHairs",
+      "followers": 79771,
+      "tweets": 24255,
+      "category": "Trader",
+      "lang": "en"
+    },
+    {
+      "handle": "DeFianceCapital",
+      "followers": 59693,
+      "tweets": 201,
+      "category": "DeFi Fund",
+      "lang": "en"
+    },
+    {
+      "handle": "FrankResearcher",
+      "followers": 54693,
+      "tweets": 1199,
+      "category": "Protocol Research",
+      "lang": "en"
+    },
+    {
+      "handle": "ErgoBTC",
+      "followers": 23422,
+      "tweets": 8140,
+      "category": "On-Chain Analyst",
+      "lang": "en"
+    }
+  ],
+  "failed": [
+    "Sheldon_Sniper",
+    "ansem",
+    "0xHamz",
+    "Tetranode",
+    "SmartContracter",
+    "marc_friedrich",
+    "ai16zdao",
+    "akashnet_",
+    "ritual_net",
+    "OlasNetwork",
+    "CelestiaOrg",
+    "LayerZero_Labs",
+    "IntoTheBlock",
+    "0xJeff_",
+    "db_defi",
+    "CryptoQuant_BTC"
+  ],
+  "stats": {
+    "tested": 81,
+    "verified": 61,
+    "failed": 16,
+    "already_in_scanner": 0
+  }
+}

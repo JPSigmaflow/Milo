@@ -1,0 +1,7 @@
+2026-02-21 20:52:28 - SPELL DUAL-APPROVAL PROCESS
+Chris: APPROVED (SPELL_BUY_500)
+Juri: PENDING
+Price: /bin/zsh.000185
+Amount:  (~2.7M SPELL)
+Stop-Loss: -10% = 
+Status: Waiting for Juri approval

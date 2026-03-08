@@ -1,0 +1,32 @@
+{
+  "auftraege": [
+    {
+      "id": 1,
+      "datum": "2026-03-05",
+      "aufgabe": "Schöne Fotos von Milo und Lanna machen",
+      "details": "Regelmäßig tolle Momente der Hunde einfangen für Instagram",
+      "priority": "high",
+      "status": "ongoing",
+      "von": "Chris via Pomi",
+      "deadline": null,
+      "notes": "Basis-Aufgabe als Community-Mitarbeiterin"
+    },
+    {
+      "id": 2,
+      "datum": "2026-03-05",
+      "aufgabe": "Community-Engagement auf @pomesteam",
+      "details": "Kommentare beantworten, mit Followern interagieren",
+      "priority": "medium",
+      "status": "ongoing",
+      "von": "Chris via Pomi",
+      "deadline": null,
+      "notes": "Kontinuierliche Aufgabe"
+    }
+  ],
+  "stats": {
+    "total": 2,
+    "pending": 0,
+    "in_progress": 2,
+    "done": 0
+  }
+}
