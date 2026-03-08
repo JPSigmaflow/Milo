@@ -1674,6 +1674,24 @@
     "updated_at": "2026-03-06 03:42:17"
   },
   {
+    "symbol": "BLEND",
+    "name": "Fluent",
+    "address": "unknown",
+    "chain": "unknown",
+    "narrative": "DeFi/Infrastructure",
+    "market_cap": null,
+    "liquidity": null,
+    "volume_24h": null,
+    "score": 70,
+    "result": "watchlist",
+    "reason": "Coinbase listing roadmap angekündigt. MEXC verfügbar. Nur 1 Quelle aber hochwertige (Coinbase offiziell). Narrativ noch unklar. Potentieller Katalysator durch Coinbase listing.",
+    "lesson_ref": null,
+    "source": "analyst-mar7-coinbase-roadmap",
+    "source_channels": null,
+    "scanned_at": "2026-03-08 04:42:09",
+    "updated_at": "2026-03-08 04:42:09"
+  },
+  {
     "symbol": "IOTX",
     "name": "IoTeX Network",
     "address": "io1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqps833xv",
