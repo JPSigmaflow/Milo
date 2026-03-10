@@ -1419,7 +1419,7 @@ async function loadPumpfun() {
         </div>
         <div style="margin-top:10px">
           <div style="font-size:.65rem;color:var(--dim);font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px">Contract Address</div>
-          <div class="pf-contract">${c.contract||'–'}</div>
+          <div class="pf-contract">${c.contract||c.token_address||'–'}</div>
         </div>
         ${c.dexscreener ? `<div style="margin-top:8px"><a href="${c.dexscreener}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:6px 14px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--blue);text-decoration:none;font-size:.8rem;font-weight:600;transition:background .15s">📊 DexScreener</a></div>` : ''}
       </div>
