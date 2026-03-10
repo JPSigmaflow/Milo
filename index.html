@@ -1389,38 +1389,6 @@ async function loadPumpfun() {
   // Render bought + watchlist sections
   let html = '';
 
-  // BOUGHT section — portfolio-style card at top
-  if (boughtCoins.length) {
-    html += `<h3 style="color:var(--green);margin:12px 0 8px;font-size:1.1rem">💰 Gekauft (Phantom)</h3>`;
-    boughtCoins.forEach(c => {
-      const price = c.price || c.entry_price || 0;
-      const entry = c.entry_price || 0;
-      const pnl = entry > 0 ? ((price - entry) / entry * 100) : 0;
-      const amtMatch = (c.notes||'').match(/→\s*([\d,.]+)/);
-      const amt = amtMatch ? parseFloat(amtMatch[1].replace(',','')) : 0;
-      const val = amt * price;
-      const chg24 = c.change_24h || 0;
-      html += `<div style="background:var(--card);border:1px solid var(--green);border-radius:12px;padding:16px;margin:8px 0">
-        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:8px;align-items:center">
-          <div><span style="font-weight:700;font-size:1.1rem;color:var(--green)">${c.symbol}</span><br><span style="font-size:.7rem;color:var(--dim)">${c.name||''}</span></div>
-          <div style="text-align:right"><div style="font-size:.65rem;color:var(--dim)">PREIS</div><div style="font-size:.95rem">${fmtPrice(price)}</div></div>
-          <div style="text-align:right"><div style="font-size:.65rem;color:var(--dim)">ENTRY</div><div style="font-size:.95rem">${fmtPrice(entry)}</div></div>
-          <div style="text-align:right"><div style="font-size:.65rem;color:var(--dim)">P&L</div><div style="font-size:1.1rem;font-weight:700" class="${pnl>=0?'green':'red'}">${pnl>=0?'+':''}${fmt(pnl)}%</div></div>
-        </div>
-        <div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:.8rem">
-          <div><span style="color:var(--dim)">Menge:</span> ${amt.toLocaleString()} ${c.symbol}</div>
-          <div><span style="color:var(--dim)">Wert:</span> $${fmt(val)}</div>
-          <div><span style="color:var(--dim)">24h:</span> <span class="${chg24>=0?'green':'red'}">${chg24>=0?'+':''}${fmt(chg24)}%</span></div>
-        </div>
-        <div style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.75rem;color:var(--dim)">
-          <div>MC: ${fmtCompact(c.market_cap)}</div>
-          <div>Vol 24h: ${fmtCompact(c.volume_24h)}</div>
-        </div>
-        ${c.dexscreener ? `<div style="margin-top:8px"><a href="${c.dexscreener}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:6px 14px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--blue);text-decoration:none;font-size:.8rem;font-weight:600">📊 DexScreener</a></div>` : ''}
-      </div>`;
-    });
-  }
-
   // Watchlist section
   if (watchlistCoins.length) {
     html += `<h3 style="color:var(--blue);margin:12px 0 8px;font-size:1.1rem">👀 Watchlist</h3>`;
@@ -1428,6 +1396,39 @@ async function loadPumpfun() {
   }
 
   $('#pumpfunList').innerHTML = html;
+
+  // Inject bought coins card at the TOP (after innerHTML is set)
+  if (boughtCoins.length) {
+    let boughtHtml = `<h3 style="color:var(--green);margin:0 0 8px;font-size:1.1rem">💰 Gekauft (Phantom)</h3>`;
+    boughtCoins.forEach(c => {
+      const price = c.price || c.entry_price || 0;
+      const entry = c.entry_price || 0;
+      const pnl = entry > 0 ? ((price - entry) / entry * 100) : 0;
+      const amtMatch = (c.notes||'').match(/→\s*([\d,.]+)/);
+      const amt = amtMatch ? parseFloat(amtMatch[1].replace(',','')) : 0;
+      const val = amt * price;
+      const chg24 = parseFloat(c.change_24h) || 0;
+      boughtHtml += `<div style="background:var(--card);border:2px solid var(--green);border-radius:12px;padding:16px;margin:0 0 16px">
+        <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:8px;align-items:center">
+          <div><span style="font-weight:700;font-size:1.1rem;color:var(--green)">${c.symbol}</span><br><span style="font-size:.7rem;color:var(--dim)">${c.name||''}</span></div>
+          <div style="text-align:right"><div style="font-size:.6rem;color:var(--dim)">PREIS</div><div style="font-size:.95rem">${fmtPrice(price)}</div></div>
+          <div style="text-align:right"><div style="font-size:.6rem;color:var(--dim)">ENTRY</div><div style="font-size:.95rem">${fmtPrice(entry)}</div></div>
+          <div style="text-align:right"><div style="font-size:.6rem;color:var(--dim)">P&L</div><div style="font-size:1.1rem;font-weight:700" class="${pnl>=0?'green':'red'}">${pnl>=0?'+':''}${fmt(pnl)}%</div></div>
+        </div>
+        <div style="margin-top:10px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:.8rem">
+          <div><span style="color:var(--dim)">Menge:</span> ${amt.toLocaleString()}</div>
+          <div><span style="color:var(--dim)">Wert:</span> $${fmt(val)}</div>
+          <div><span style="color:var(--dim)">24h:</span> <span class="${chg24>=0?'green':'red'}">${chg24>=0?'+':''}${fmt(chg24)}%</span></div>
+        </div>
+        <div style="margin-top:6px;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:.75rem;color:var(--dim)">
+          <div>MC: ${fmtCompact(c.market_cap)}</div>
+          <div>Vol 24h: ${fmtCompact(c.volume_24h)}</div>
+        </div>
+        ${c.dexscreener ? `<div style="margin-top:8px"><a href="${c.dexscreener}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:6px 14px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--blue);text-decoration:none;font-size:.8rem;font-weight:600">📊 DexScreener</a></div>` : ''}
+      </div>`;
+    });
+    $('#pumpfunList').innerHTML = boughtHtml + $('#pumpfunList').innerHTML;
+  }
 
 }
 
