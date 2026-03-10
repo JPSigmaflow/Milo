@@ -1249,6 +1249,34 @@ async function loadPumpfun() {
     return;
   }
   const coins = pf.coins || [];
+
+  // Fetch live prices from DexScreener (batch: up to 30 addresses per call)
+  try {
+    const addresses = coins.filter(c => c.token_address).map(c => c.token_address);
+    const batches = [];
+    for (let i = 0; i < addresses.length; i += 30) batches.push(addresses.slice(i, i + 30));
+    for (const batch of batches) {
+      const dr = await fetch('https://api.dexscreener.com/latest/dex/tokens/' + batch.join(','));
+      const dd = await dr.json();
+      const priceMap = {};
+      (dd.pairs || []).forEach(p => {
+        const addr = p.baseToken?.address;
+        if (addr && !priceMap[addr]) priceMap[addr] = { price: parseFloat(p.priceUsd||0), change24h: p.priceChange?.h24 || 0, mc: p.marketCap || 0, vol: p.volume?.h24 || 0, liq: p.liquidity?.usd || 0 };
+      });
+      coins.forEach(c => {
+        const live = priceMap[c.token_address];
+        if (live) {
+          c.price = live.price;
+          c.change_24h = live.change24h;
+          c.market_cap = live.mc;
+          c.volume_24h = live.vol;
+          c.liquidity = live.liq;
+          if (c.entry_price && c.entry_price > 0) c.change_since_entry = ((live.price - c.entry_price) / c.entry_price * 100);
+        }
+      });
+    }
+  } catch(e) { console.warn('DexScreener fetch failed:', e); }
+
   const totalCoins = coins.length;
   const avgMC = totalCoins ? coins.reduce((s,c) => s + (c.market_cap||0), 0) / totalCoins : 0;
   const mexcPotential = coins.filter(c => c.mexc_watch).length;
