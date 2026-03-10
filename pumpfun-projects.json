@@ -1,8 +1,421 @@
 {
-  "7NoFtDpmQvE9JsRv7o6zgYZJBEcixWumJaZsDoyrpump": "星星 (XingXing) — einarmiger Makak aus China, viral auf TikTok/Douyin mit Millionen Views. Wikipedia-Eintrag vorhanden. Ähnliches Playbook wie PUNCH (Baby-Makak). Höchste Liquidity und Volume aller Pump.Fun Coins im Tracker. MEXC Listing Watch aktiv.",
-  "BKwSZd5tUFC1SudnHbhjmqJ6Nk8n5vz1wVphb7Mupump": "Revival-Story einer geretteten Möwe die viral ging. Erster Token zur Story (kein Copycat). Starke emotionale Resonanz auf Social Media mit Millionen Views. Klassisches Tier-Meme Playbook ähnlich MOODENG.",
-  "41HpD32jdC3JRVWDoD3j8rjHdNM4mjqmoSaCSZwdpump": "Politisches Satire-Meme rund um Gavin Newsom. Viral auf TikTok und X, Mainstream-Medien Coverage. Saubere Tokenomics, kein Rug-Signal. Hohes 24h Volume relativ zur MC — starkes Interesse.",
-  "6PFRozGuhLu9PBF8RhLQdmPj4aDZ1JeNi8YJ4XCLdbdx": "Original Seagull-Meme Token — First Mover zur viralen Möwen-Story. Erster Token (kein Copycat). MC noch extrem niedrig, sehr frühes Stadium. Niedrige Liquidity = hohes Risiko aber auch hohes Upside-Potential.",
-  "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": "Virales TikTok-Meme 'Tung Tung Tung Sahur'. Ursprung: Feb 2025 von @noxaasht — AI-generierter Holz-Stickman mit Baseballschläger. Sahur = Ramadan Vor-Dawn-Mahlzeit (indonesisch). Millionen Views auf TikTok, globaler Brainrot-Trend. Know Your Meme gelistet. Token: TRIPLET auf Pump.fun/Solana.",
-  "7NsEjbEmQuMruExUKE5knaCg3fJn9n9KtQGt1tbmpump": "Hund der durch Grok (xAI) gerettet wurde — virale Tier-Rettungsgeschichte. First Token zur Story, kein Copycat. Mainstream-Medien Coverage. Kein TikTok-Viral — einziger fehlender Social-Trigger."
+  "generated_at": "2026-03-10T23:51:11.809Z",
+  "predictions": [
+    {
+      "name": "Tung Tung Tung Sahur",
+      "symbol": "TRIPLET",
+      "contract": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
+      "dexscreener": "https://dexscreener.com/solana/3kfcgj5r3zshw8htdbzjsrrksrymkvsmfhc4vo4iddxd",
+      "score": 7,
+      "maxScore": 10,
+      "pct": 70,
+      "mc": 1884560,
+      "vol24h": 1244544.7,
+      "txns24h": 11034,
+      "liq": 146791.37,
+      "age": 14.592295185185185,
+      "criteria": {
+        "pumpfun": {
+          "pass": true,
+          "label": "Pump.fun",
+          "value": "✅"
+        },
+        "volume": {
+          "pass": true,
+          "label": "Vol >M",
+          "value": "$1245K"
+        },
+        "txns": {
+          "pass": true,
+          "label": "Txns >10K",
+          "value": "11,034"
+        },
+        "mc": {
+          "pass": true,
+          "label": "MC K-M",
+          "value": "$1885K"
+        },
+        "age": {
+          "pass": false,
+          "label": "Age 3-7d",
+          "value": "14.6d"
+        },
+        "liquidity": {
+          "pass": true,
+          "label": "Liq >5% MC",
+          "value": "7.8%"
+        },
+        "asia": {
+          "pass": false,
+          "label": "Asia Narrativ",
+          "value": "❌"
+        }
+      },
+      "is_bought": 1
+    },
+    {
+      "name": "咕咕嘎嘎",
+      "symbol": "gugugaga",
+      "contract": "6ngSN9zA32mShK5itfNVPsJvwADfiSDxiDbTUpwzpump",
+      "dexscreener": "https://dexscreener.com/solana/h1yp9d9vecg46feffpk3c5dlfawh9weus6jurh71dky",
+      "score": 5,
+      "maxScore": 10,
+      "pct": 50,
+      "mc": 73563,
+      "vol24h": 225915.8,
+      "txns24h": 4249,
+      "liq": 25099.58,
+      "age": 4.581263888888889,
+      "criteria": {
+        "pumpfun": {
+          "pass": true,
+          "label": "Pump.fun",
+          "value": "✅"
+        },
+        "volume": {
+          "pass": false,
+          "label": "Vol >M",
+          "value": "$226K"
+        },
+        "txns": {
+          "pass": false,
+          "label": "Txns >10K",
+          "value": "4,249"
+        },
+        "mc": {
+          "pass": false,
+          "label": "MC K-M",
+          "value": "$74K"
+        },
+        "age": {
+          "pass": true,
+          "label": "Age 3-7d",
+          "value": "4.6d"
+        },
+        "liquidity": {
+          "pass": true,
+          "label": "Liq >5% MC",
+          "value": "34.1%"
+        },
+        "asia": {
+          "pass": true,
+          "label": "Asia Narrativ",
+          "value": "✅"
+        }
+      },
+      "is_bought": 0
+    },
+    {
+      "name": "星星",
+      "symbol": "星星",
+      "contract": "7NoFtDpmQvE9JsRv7o6zgYZJBEcixWumJaZsDoyrpump",
+      "dexscreener": "https://dexscreener.com/solana/avsfihlzhjk6llvplrvdez9jvpv7bpgnpgh5qysbmtp1",
+      "score": 4,
+      "maxScore": 10,
+      "pct": 40,
+      "mc": 20139,
+      "vol24h": 8523,
+      "txns24h": 379,
+      "liq": 14592.56,
+      "age": 14.686010381944444,
+      "criteria": {
+        "pumpfun": {
+          "pass": true,
+          "label": "Pump.fun",
+          "value": "✅"
+        },
+        "volume": {
+          "pass": false,
+          "label": "Vol >M",
+          "value": "$9K"
+        },
+        "txns": {
+          "pass": false,
+          "label": "Txns >10K",
+          "value": "379"
+        },
+        "mc": {
+          "pass": false,
+          "label": "MC K-M",
+          "value": "$20K"
+        },
+        "age": {
+          "pass": false,
+          "label": "Age 3-7d",
+          "value": "14.7d"
+        },
+        "liquidity": {
+          "pass": true,
+          "label": "Liq >5% MC",
+          "value": "72.5%"
+        },
+        "asia": {
+          "pass": true,
+          "label": "Asia Narrativ",
+          "value": "✅"
+        }
+      },
+      "is_bought": 0
+    },
+    {
+      "name": "ruck",
+      "symbol": "ruck",
+      "contract": "DKqgMMtEiAMXR8iz4tpVXgnmL8Bgzbu4XPyUrZWrpump",
+      "dexscreener": "https://dexscreener.com/solana/55hkiqhswup2z8ggvoi7e4tjnzgnjw1ttahmb2kdhage",
+      "score": 2,
+      "maxScore": 10,
+      "pct": 20,
+      "mc": 136678,
+      "vol24h": 75484.14,
+      "txns24h": 1499,
+      "liq": 38218.48,
+      "age": 8.102645844907407,
+      "criteria": {
+        "pumpfun": {
+          "pass": true,
+          "label": "Pump.fun",
+          "value": "✅"
+        },
+        "volume": {
+          "pass": false,
+          "label": "Vol >M",
+          "value": "$75K"
+        },
+        "txns": {
+          "pass": false,
+          "label": "Txns >10K",
+          "value": "1,499"
+        },
+        "mc": {
+          "pass": false,
+          "label": "MC K-M",
+          "value": "$137K"
+        },
+        "age": {
+          "pass": false,
+          "label": "Age 3-7d",
+          "value": "8.1d"
+        },
+        "liquidity": {
+          "pass": true,
+          "label": "Liq >5% MC",
+          "value": "28.0%"
+        },
+        "asia": {
+          "pass": false,
+          "label": "Asia Narrativ",
+          "value": "❌"
+        }
+      },
+      "is_bought": 0
+    },
+    {
+      "name": "Pokémon Pokopia",
+      "symbol": "Pokémon Pokopia",
+      "contract": "8whH5tErGbDEiSBKWAHigJe3dXFa6YwdMDXESNrVpump",
+      "dexscreener": "https://dexscreener.com/solana/cc1quww2z6kcntf9haoo4xwbjxpqsr25n6nzsqrwtews",
+      "score": 2,
+      "maxScore": 10,
+      "pct": 20,
+      "mc": 38921,
+      "vol24h": 52194.41,
+      "txns24h": 1314,
+      "liq": 17760.91,
+      "age": 8.25892101851852,
+      "criteria": {
+        "pumpfun": {
+          "pass": true,
+          "label": "Pump.fun",
+          "value": "✅"
+        },
+        "volume": {
+          "pass": false,
+          "label": "Vol >M",
+          "value": "$52K"
+        },
+        "txns": {
+          "pass": false,
+          "label": "Txns >10K",
+          "value": "1,314"
+        },
+        "mc": {
+          "pass": false,
+          "label": "MC K-M",
+          "value": "$39K"
+        },
+        "age": {
+          "pass": false,
+          "label": "Age 3-7d",
+          "value": "8.3d"
+        },
+        "liquidity": {
+          "pass": true,
+          "label": "Liq >5% MC",
+          "value": "45.6%"
+        },
+        "asia": {
+          "pass": false,
+          "label": "Asia Narrativ",
+          "value": "❌"
+        }
+      },
+      "is_bought": 0
+    },
+    {
+      "name": "Aced Brett",
+      "symbol": "Aced Brett",
+      "contract": "FqeKiQrMmTq6wmuBwo3i6sum8AhaGfvnZAmWEcVEpump",
+      "dexscreener": "https://dexscreener.com/solana/7cks5ovpgcyz4znz3hbtrzngucgfqfn6az9ffdm2fcov",
+      "score": 2,
+      "maxScore": 10,
+      "pct": 20,
+      "mc": 82347,
+      "vol24h": 551.43,
+      "txns24h": 27,
+      "liq": 22362.36,
+      "age": 7.540201805555555,
+      "criteria": {
+        "pumpfun": {
+          "pass": true,
+          "label": "Pump.fun",
+          "value": "✅"
+        },
+        "volume": {
+          "pass": false,
+          "label": "Vol >M",
+          "value": "$1K"
+        },
+        "txns": {
+          "pass": false,
+          "label": "Txns >10K",
+          "value": "27"
+        },
+        "mc": {
+          "pass": false,
+          "label": "MC K-M",
+          "value": "$82K"
+        },
+        "age": {
+          "pass": false,
+          "label": "Age 3-7d",
+          "value": "7.5d"
+        },
+        "liquidity": {
+          "pass": true,
+          "label": "Liq >5% MC",
+          "value": "27.2%"
+        },
+        "asia": {
+          "pass": false,
+          "label": "Asia Narrativ",
+          "value": "❌"
+        }
+      },
+      "is_bought": 0
+    },
+    {
+      "name": "#SendBarron",
+      "symbol": "Barron",
+      "contract": "ctQPRPpLY52CeEfmJqUEhYQ6SmMVHitkU3KKEDUpump",
+      "dexscreener": "https://dexscreener.com/solana/85jy4gkkgyh1gn42ur3kfbztexovbnggtriqfqtgn1dm",
+      "score": 2,
+      "maxScore": 10,
+      "pct": 20,
+      "mc": 23477,
+      "vol24h": 24260.76,
+      "txns24h": 764,
+      "liq": 14479.33,
+      "age": 8.883537488425926,
+      "criteria": {
+        "pumpfun": {
+          "pass": true,
+          "label": "Pump.fun",
+          "value": "✅"
+        },
+        "volume": {
+          "pass": false,
+          "label": "Vol >M",
+          "value": "$24K"
+        },
+        "txns": {
+          "pass": false,
+          "label": "Txns >10K",
+          "value": "764"
+        },
+        "mc": {
+          "pass": false,
+          "label": "MC K-M",
+          "value": "$23K"
+        },
+        "age": {
+          "pass": false,
+          "label": "Age 3-7d",
+          "value": "8.9d"
+        },
+        "liquidity": {
+          "pass": true,
+          "label": "Liq >5% MC",
+          "value": "61.7%"
+        },
+        "asia": {
+          "pass": false,
+          "label": "Asia Narrativ",
+          "value": "❌"
+        }
+      },
+      "is_bought": 0
+    },
+    {
+      "name": "Chinese Brainrot",
+      "symbol": "Chinese Brainrot",
+      "contract": "5P4sZjYRbaawFZ6FyFgeaq1PYk57Bj5GL4UHXgnjpump",
+      "dexscreener": "https://dexscreener.com/solana/eztqanuzsb71gvtkimp9xsqt6olk8buxy1fqgcutlrgh",
+      "score": 2,
+      "maxScore": 10,
+      "pct": 20,
+      "mc": 26269,
+      "vol24h": 26943.27,
+      "txns24h": 708,
+      "liq": 14890.53,
+      "age": 7.102705266203704,
+      "criteria": {
+        "pumpfun": {
+          "pass": true,
+          "label": "Pump.fun",
+          "value": "✅"
+        },
+        "volume": {
+          "pass": false,
+          "label": "Vol >M",
+          "value": "$27K"
+        },
+        "txns": {
+          "pass": false,
+          "label": "Txns >10K",
+          "value": "708"
+        },
+        "mc": {
+          "pass": false,
+          "label": "MC K-M",
+          "value": "$26K"
+        },
+        "age": {
+          "pass": false,
+          "label": "Age 3-7d",
+          "value": "7.1d"
+        },
+        "liquidity": {
+          "pass": true,
+          "label": "Liq >5% MC",
+          "value": "56.7%"
+        },
+        "asia": {
+          "pass": false,
+          "label": "Asia Narrativ",
+          "value": "❌"
+        }
+      },
+      "is_bought": 0
+    }
+  ]
 }
