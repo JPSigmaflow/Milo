@@ -1426,6 +1426,12 @@ async function loadPumpfun() {
     html += '</div>';
   }
 
+  // BOUGHT section (top priority)
+  if (boughtCoins.length) {
+    html += `<h3 style="color:var(--green);margin:12px 0 8px;font-size:1.1rem">💰 Gekauft (Phantom)</h3>`;
+    html += renderCoinGroup(boughtCoins);
+  }
+
   // Watchlist section
   if (watchlistCoins.length) {
     html += `<h3 style="color:var(--blue);margin:12px 0 8px;font-size:1.1rem">👀 Watchlist</h3>`;
