@@ -1016,15 +1016,12 @@ async function injectBoughtCoins() {
         const dr = await fetch('https://api.dexscreener.com/latest/dex/tokens/' + c.token_address);
         const dd = await dr.json();
         const p = (dd.pairs||[])[0];
-        if (p) { c.price = parseFloat(p.priceUsd||0); c.change_24h = parseFloat(p.priceChange?.h24||0); c.market_cap = p.marketCap||0; c.volume_24h = p.volume?.h24||0; }
+        if (p) { c.price = parseFloat(p.priceUsd||0); c.change_24h = parseFloat(p.priceChange?.h24||0); c.market_cap = p.marketCap||0; c.volume_24h = p.volume?.h24||0; c.liq = parseFloat(p.liquidity?.usd||0); c.txns_buys = parseInt(p.txns?.h24?.buys||0); c.txns_sells = parseInt(p.txns?.h24?.sells||0); c.pair_url = p.url || ''; }
       } catch(e){}
     }
     let bh = `<div style="margin:0 0 20px">
-      <h3 style="color:var(--green);margin:0 0 12px;font-size:1.1rem">💰 Portfolio</h3>
-      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;padding:8px 12px;font-size:.7rem;color:var(--dim);text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border)">
-        <div>Coin</div><div style="text-align:right">Preis</div><div style="text-align:right">P&L%</div><div style="text-align:right;font-weight:700;color:var(--text)">Wert ↓</div><div style="text-align:right">24h</div>
-      </div>`;
-    bought.forEach(c => {
+      <h3 style="color:var(--green);margin:0 0 12px;font-size:1.1rem">💰 Portfolio</h3>`;
+    bought.forEach((c, idx) => {
       const price = c.price || c.entry_price || 0;
       const entry = c.entry_price || 0;
       const pnl = entry > 0 ? ((price - entry) / entry * 100) : 0;
@@ -1032,21 +1029,53 @@ async function injectBoughtCoins() {
       const amt = m ? parseFloat(m[1].replace(',','')) : 0;
       const val = amt * price;
       const ch24 = c.change_24h || 0;
-      bh += `<div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;padding:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;margin:6px 0;align-items:center;cursor:pointer" onclick="window.open('${c.dexscreener||'#'}','_blank')">
-        <div>
-          <span style="font-weight:700;font-size:1rem">${c.symbol}</span>
-          <span style="color:var(--dim);font-size:.65rem;margin-left:4px">▼</span>
-          <div style="font-size:.7rem;color:var(--dim)">${c.name||''}</div>
+      const buyDateM = (c.notes||'').match(/(\d{4}-\d{2}-\d{2})/);
+      const buyDate = buyDateM ? buyDateM[1] : '';
+      const uid = 'pf-bought-' + idx;
+      
+      bh += `<div id="${uid}" style="background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:0 0 8px">
+        <div onclick="document.getElementById('${uid}').classList.toggle('open')" style="display:grid;grid-template-columns:1.8fr 1fr 1fr;padding:14px 16px;cursor:pointer;align-items:center;gap:8px">
+          <div>
+            <div style="font-weight:700;font-size:1.1rem">${c.symbol}</div>
+            <div style="font-size:.7rem;color:var(--dim)">${c.name||''}</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.65rem;color:var(--dim)">Einkauf</div>
+            <div style="font-size:.9rem;font-weight:600">${fmtPrice(entry)}</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:.65rem;color:var(--dim)">P&L</div>
+            <div style="font-size:1.1rem;font-weight:700" class="${pnl>=0?'green':'red'}">${pnl>=0?'+':''}${pnl.toFixed(1)}%</div>
+          </div>
         </div>
-        <div style="text-align:right;font-size:.9rem;font-weight:500">${fmtPrice(price)}</div>
-        <div style="text-align:right;font-size:.9rem;font-weight:700" class="${pnl>=0?'green':'red'}">${pnl>=0?'+':''}${pnl.toFixed(2)}%</div>
-        <div style="text-align:right;font-size:.9rem;font-weight:700">$${val<1000?val.toFixed(2):val.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, '.')}</div>
-        <div style="text-align:right;font-size:.9rem;font-weight:500" class="${ch24>=0?'green':'red'}">${ch24>=0?'+':''}${ch24.toFixed(2)}%</div>
+        <div class="pf-bought-details" style="max-height:0;overflow:hidden;transition:max-height .3s ease;border-top:1px solid var(--border)">
+          <div style="padding:14px 16px">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;font-size:.85rem;margin:0 0 12px">
+              <div><span style="color:var(--dim)">Aktueller Kurs</span><br><span style="font-weight:600">${fmtPrice(price)}</span></div>
+              <div><span style="color:var(--dim)">24h</span><br><span class="${ch24>=0?'green':'red'}" style="font-weight:600">${ch24>=0?'+':''}${ch24.toFixed(2)}%</span></div>
+              <div><span style="color:var(--dim)">Wert</span><br><span style="font-weight:600">$${val<1000?val.toFixed(2):(val/1).toFixed(0)}</span></div>
+              <div><span style="color:var(--dim)">Menge</span><br><span style="font-weight:600">${amt.toLocaleString('de-DE')}</span></div>
+              <div><span style="color:var(--dim)">Market Cap</span><br><span style="font-weight:600">$${c.market_cap>=1e6?(c.market_cap/1e6).toFixed(2)+'M':(c.market_cap/1e3).toFixed(0)+'K'}</span></div>
+              <div><span style="color:var(--dim)">Liquidität</span><br><span style="font-weight:600">$${(c.liq||0)>=1e6?((c.liq||0)/1e6).toFixed(2)+'M':((c.liq||0)/1e3).toFixed(0)+'K'}</span></div>
+              <div><span style="color:var(--dim)">Gekauft am</span><br><span style="font-weight:600">${buyDate}</span></div>
+              <div><span style="color:var(--dim)">Buys/Sells 24h</span><br><span style="font-weight:600">${(c.txns_buys||0).toLocaleString()} / ${(c.txns_sells||0).toLocaleString()}</span></div>
+            </div>
+            <div style="font-family:monospace;font-size:.6rem;color:var(--dim);word-break:break-all;background:rgba(255,255,255,.03);padding:6px 8px;border-radius:6px;margin:0 0 10px">${c.token_address}</div>
+            <a href="${c.dexscreener||c.pair_url||'#'}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:rgba(0,230,118,.1);border:1px solid var(--green);border-radius:8px;color:var(--green);text-decoration:none;font-size:.85rem;font-weight:600">📊 DexScreener</a>
+          </div>
+        </div>
       </div>`;
     });
     bh += '</div>';
     const el = document.getElementById('pumpfunList');
     if (el) el.innerHTML = bh + el.innerHTML;
+    // Add CSS for open state
+    if (!document.getElementById('pf-bought-css')) {
+      const s = document.createElement('style');
+      s.id = 'pf-bought-css';
+      s.textContent = '.open .pf-bought-details{max-height:500px!important}';
+      document.head.appendChild(s);
+    }
   } catch(e) { console.warn('injectBoughtCoins error:', e); }
 }
 
