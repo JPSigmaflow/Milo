@@ -1474,12 +1474,12 @@ async function loadPumpfun() {
         return 1;
       });
       
-      out += `<div class="pf-score-section open" style="margin-top:16px;margin-bottom:6px;background:rgba(255,255,255,.04);border-radius:8px;border-left:3px solid ${scoreColor};overflow:hidden">
+      out += `<div class="pf-score-section" style="margin-top:16px;margin-bottom:6px;background:rgba(255,255,255,.04);border-radius:8px;border-left:3px solid ${scoreColor};overflow:hidden">
         <div class="pf-score-header" onclick="this.parentElement.classList.toggle('open')" style="padding:10px 12px;cursor:pointer;user-select:none;display:flex;justify-content:space-between;align-items:center">
           <div><span style="font-weight:700;font-size:.95rem;color:${scoreColor}">${starEmoji}Score ${score}/12</span> <span style="color:var(--dim);font-size:.75rem;margin-left:8px">${sortedCoins.length} Coin${sortedCoins.length>1?'s':''}</span></div>
-          <span class="pf-arrow" style="color:var(--dim);font-size:.8rem;transition:transform .25s;transform:rotate(180deg)">▼</span>
+          <span class="pf-arrow" style="color:var(--dim);font-size:.8rem;transition:transform .25s">▲</span>
         </div>
-        <div class="pf-score-content" style="max-height:5000px;overflow:hidden;transition:max-height .35s ease">
+        <div class="pf-score-content" style="max-height:0;overflow:hidden;transition:max-height .35s ease">
           <div style="font-size:.55rem;color:var(--dim);display:grid;grid-template-columns:1.6fr 1fr 1fr;padding:4px 12px;text-transform:uppercase;letter-spacing:1px;background:rgba(255,255,255,.03);margin-bottom:2px"><div>Coin</div><div style="text-align:right">Entry Preis</div><div style="text-align:right">Seit Entry</div></div>`;
 
     sortedCoins.forEach(c => {
