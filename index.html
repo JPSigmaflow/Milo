@@ -1049,13 +1049,70 @@ async function injectBoughtCoins() {
     if (el) el.innerHTML = bh + el.innerHTML;
   } catch(e) { console.warn('injectBoughtCoins error:', e); }
 }
+
+// MEXC LISTING PREDICTION
+async function loadMEXCPredictions() {
+  try {
+    const r = await fetch('https://raw.githubusercontent.com/JPSigmaflow/Milo/gh-pages/pumpfun-projects.json?t='+Date.now());
+    const data = await r.json();
+    const preds = data.predictions || [];
+    if (!preds.length) return;
+    
+    let h = `<div style="margin:20px 0">
+      <div style="display:flex;align-items:center;gap:8px;margin:0 0 16px">
+        <span style="color:#a855f7;font-weight:700;font-size:1.1rem">Pump</span>
+        <span style="font-size:1.2rem">🪙</span>
+      </div>
+      <h3 style="margin:0 0 16px;font-size:1.2rem;font-weight:700">📊 MEXC LISTING PREDICTION STATUS</h3>`;
+    
+    preds.forEach((p, i) => {
+      const pct = p.pct;
+      const barColor = pct >= 70 ? '#00e676' : pct >= 40 ? '#ffa726' : '#ef5350';
+      const statusText = pct >= 70 ? '🔥 HIGH' : pct >= 40 ? '⚡ MEDIUM' : '💤 LOW';
+      const statusColor = pct >= 70 ? 'var(--green)' : pct >= 40 ? 'var(--orange)' : 'var(--dim)';
+      
+      // Criteria dots
+      const cr = p.criteria;
+      const critHtml = Object.entries(cr).map(([k,v]) => {
+        const dot = v.pass ? '🟢' : '🔴';
+        return `<span style="font-size:.7rem;white-space:nowrap" title="${v.label}: ${v.value}">${dot} ${v.label}</span>`;
+      }).join(' &nbsp; ');
+      
+      h += `<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin:0 0 10px;${p.is_bought?'border-left:3px solid var(--green)':''}">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin:0 0 8px">
+          <div>
+            <span style="font-weight:700;font-size:1rem">${p.symbol}</span>
+            <span style="color:var(--dim);font-size:.75rem;margin-left:6px">${p.name}</span>
+            ${p.is_bought ? '<span style="background:rgba(0,230,118,.15);color:var(--green);font-size:.6rem;padding:2px 6px;border-radius:4px;margin-left:6px;font-weight:600">BOUGHT</span>' : ''}
+          </div>
+          <span style="color:${statusColor};font-weight:700;font-size:.85rem">${statusText} ${p.score}/${p.maxScore}</span>
+        </div>
+        <div style="background:rgba(255,255,255,.06);border-radius:6px;height:8px;overflow:hidden;margin:0 0 10px">
+          <div style="height:100%;width:${pct}%;background:${barColor};border-radius:6px;transition:width .5s"></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 12px;margin:0 0 8px">${critHtml}</div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px;font-size:.75rem;color:var(--dim)">
+          <div>MC: <span style="color:var(--text)">$${p.mc>=1e6?(p.mc/1e6).toFixed(2)+'M':(p.mc/1e3).toFixed(0)+'K'}</span></div>
+          <div>Vol: <span style="color:var(--text)">$${p.vol24h>=1e6?(p.vol24h/1e6).toFixed(2)+'M':(p.vol24h/1e3).toFixed(0)+'K'}</span></div>
+          <div>Txns: <span style="color:var(--text)">${p.txns24h.toLocaleString()}</span></div>
+          <div>Age: <span style="color:var(--text)">${p.age.toFixed(1)}d</span></div>
+        </div>
+      </div>`;
+    });
+    
+    h += `<div style="font-size:.7rem;color:var(--dim);margin-top:8px;text-align:right">Stand: ${new Date(data.generated_at).toLocaleString('de-DE')} | Basierend auf 我的刀盾 MEXC Pattern</div></div>`;
+    
+    const el = document.getElementById('pumpfunList');
+    if (el) el.innerHTML += h;
+  } catch(e) { console.warn('MEXC predictions error:', e); }
+}
 window.switchTab = function(tab) {
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
   document.querySelector(`.tab-btn[onclick*="${tab}"]`).classList.add('active');
   document.getElementById('tab-' + tab).classList.add('active');
   if (tab === 'stocks' && !stocksLoaded) { stocksLoaded = true; loadStocks(); }
-  if (tab === 'pumpfun' && !pumpfunLoaded) { pumpfunLoaded = true; loadPumpfun().then(() => injectBoughtCoins()).catch(()=>{}); }
+  if (tab === 'pumpfun' && !pumpfunLoaded) { pumpfunLoaded = true; loadPumpfun().then(() => { injectBoughtCoins(); loadMEXCPredictions(); }).catch(()=>{}); }
 };
 
 // STOCKS
