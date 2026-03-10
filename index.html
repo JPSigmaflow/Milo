@@ -1061,6 +1061,17 @@ async function injectBoughtCoins() {
               <div><span style="color:var(--dim)">Buys/Sells 24h</span><br><span style="font-weight:600">${(c.txns_buys||0).toLocaleString()} / ${(c.txns_sells||0).toLocaleString()}</span></div>
             </div>
             <div style="font-family:monospace;font-size:.6rem;color:var(--dim);word-break:break-all;background:rgba(255,255,255,.03);padding:6px 8px;border-radius:6px;margin:0 0 10px">${c.token_address}</div>
+            <div style="margin:0 0 14px;padding:12px;background:rgba(255,255,255,.03);border-radius:8px;border:1px solid rgba(255,255,255,.06)">
+              <div style="font-weight:700;font-size:.85rem;margin:0 0 8px;color:var(--blue)">📋 Projekt</div>
+              <div style="font-size:.8rem;color:var(--dim);line-height:1.6">${c.name||c.symbol}</div>
+              <div style="font-size:.75rem;color:var(--dim);margin-top:6px">${c.notes ? c.notes.replace(/BOUGHT.*?\|/g,'').trim() : 'Meme Coin auf Pump.fun'}</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;margin-top:10px;font-size:.8rem">
+                <div><span style="color:var(--dim)">Chain</span><br><span style="font-weight:600">Solana</span></div>
+                <div><span style="color:var(--dim)">Kategorie</span><br><span style="font-weight:600">${c.category ? c.category.charAt(0).toUpperCase()+c.category.slice(1) : 'Meme'}</span></div>
+                <div><span style="color:var(--dim)">V1 Score</span><br><span style="font-weight:600">${c.score||'-'}/12</span></div>
+                <div><span style="color:var(--dim)">ATH</span><br><span style="font-weight:600;color:var(--green)">${c.ath_price ? fmtPrice(c.ath_price) : '-'}</span></div>
+              </div>
+            </div>
             <a href="${c.dexscreener||c.pair_url||'#'}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:rgba(0,230,118,.1);border:1px solid var(--green);border-radius:8px;color:var(--green);text-decoration:none;font-size:.85rem;font-weight:600">📊 DexScreener</a>
           </div>
         </div>
