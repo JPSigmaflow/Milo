@@ -1358,75 +1358,11 @@ async function loadPumpfun() {
     return out;
   } // end renderCoinGroup
 
-  // Portfolio section for bought coins
+  // Render bought + watchlist sections
   let html = '';
-  if (boughtCoins.length) {
-    html += `<div style="margin-bottom:24px">
-      <h3 style="color:var(--orange);margin:12px 0 8px;font-size:1.1rem">💰 Portfolio</h3>
-      <div class="pump-portfolio-hdr" style="font-size:.6rem;color:var(--dim);display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr 0.8fr;padding:8px 12px;text-transform:uppercase;letter-spacing:1px;background:rgba(255,255,255,.06);border-radius:8px 8px 0 0">
-        <div>Coin</div><div style="text-align:right">Preis</div><div style="text-align:right">Entry</div><div style="text-align:right">P&L%</div><div style="text-align:right">Wert</div><div style="text-align:right">24H</div>
-      </div>`;
-    boughtCoins.forEach(c => {
-      const price = c.price || c.entry_price || 0;
-      const entry = c.entry_price || 0;
-      const pnl = entry > 0 ? ((price - entry) / entry * 100) : 0;
-      // Extract amount from notes: "BOUGHT | 1.25139 SOL → 191123.07 TRIPLET"
-      const amtMatch = (c.notes||'').match(/→\s*([\d,.]+)/);
-      const amount = amtMatch ? parseFloat(amtMatch[1].replace(',','')) : 0;
-      const value = amount * price;
-      const chg24 = c.change_24h || 0;
-
-      html += `<div class="pf-card" onclick="this.classList.toggle('open')" style="border-top:none">
-      <div class="pump-portfolio-row" style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr 0.8fr;padding:10px 12px;align-items:center;cursor:pointer">
-        <div><span style="font-weight:700;font-size:.95rem">${c.symbol}</span> <span class="pf-arrow">▼</span><br><span style="font-size:.65rem;color:var(--dim)">${c.name||''}</span></div>
-        <div style="text-align:right;font-size:.9rem">${fmtPrice(price)}</div>
-        <div style="text-align:right;font-size:.9rem;color:var(--dim)">${fmtPrice(entry)}</div>
-        <div style="text-align:right;font-size:1rem;font-weight:700" class="${pnl>=0?'green':'red'}">${pnl>=0?'+':''}${fmt(pnl)}%</div>
-        <div style="text-align:right;font-size:.9rem;font-weight:600">$${fmt(value)}</div>
-        <div style="text-align:right;font-size:.8rem;font-weight:600" class="${chg24>=0?'green':'red'}">${chg24>=0?'+':''}${fmt(chg24)}%</div>
-      </div>
-      <div class="pf-details">
-        <div class="pf-detail-grid" style="padding:10px 0">
-          <div class="pf-detail-box">
-            <h4 style="color:var(--blue)">Position</h4>
-            <p><strong>Menge:</strong> ${amount.toLocaleString()} ${c.symbol}</p>
-            <p><strong>Invest:</strong> ~$${fmt(amount * entry)}</p>
-            <p><strong>Wert:</strong> $${fmt(value)}</p>
-            <p><strong>P&L:</strong> <span class="${pnl>=0?'green':'red'}">$${fmt(value - amount * entry)}</span></p>
-          </div>
-          <div class="pf-detail-box">
-            <h4 style="color:var(--blue)">Marktdaten</h4>
-            <p><strong>MC:</strong> ${fmtCompact(c.mc||c.market_cap)}</p>
-            <p><strong>Volume 24h:</strong> ${fmtCompact(c.volume_24h)}</p>
-            <p><strong>Liquidity:</strong> ${fmtCompact(c.liquidity)}</p>
-            <p><strong>Score:</strong> ${c.score||0}/12</p>
-          </div>
-          <div class="pf-detail-box">
-            <h4 style="color:var(--orange)">Kriterien (${c.score||0}/12)</h4>
-            ${c.criteria ? Object.entries(c.criteria).map(([k,v]) => {
-              const labels = {viral_story:'Virale Story',emotional_trigger:'Emotionaler Trigger',mainstream_media:'Mainstream-Medien',tiktok_virality:'TikTok/Social Viral',tiktok_viral:'TikTok/Social Viral',supply_structure:'Supply-Struktur',no_rug_signal:'Kein Rug-Signal',community_socials:'Community/Socials',narrative_strength:'Narrativ-Stärke',timing:'Timing',mc_at_entry:'MC bei Entry',mc_entry:'MC bei Entry',wallet_distribution:'Wallet-Verteilung',first_token:'Erster Token'};
-              return `<p style="margin:2px 0"><span style="color:${v?'var(--green)':'var(--red)'};font-weight:700">${v?'✅':'❌'}</span> ${labels[k]||k}</p>`;
-            }).join('') : '<p>Keine Daten</p>'}
-          </div>
-          <div class="pf-detail-box">
-            <h4 style="color:var(--green)">Projekt</h4>
-            <p>${c.project_info||c.notes||'–'}</p>
-            <p style="margin-top:8px"><strong>Wallet:</strong> Phantom @xlgeneration</p>
-            <p><strong>Chain:</strong> ${c.chain||'Solana'}</p>
-            <p><strong>Kategorie:</strong> ${c.category||'meme'}</p>
-          </div>
-        </div>
-        <div style="margin:4px 0 10px"><div style="font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px">Contract Address</div><div class="pf-contract">${c.contract||'–'}</div></div>
-        <div style="margin-bottom:10px;display:flex;gap:8px">
-          ${c.dexscreener ? `<a href="${c.dexscreener}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:var(--header-bg);border:1px solid var(--border);border-radius:8px;color:var(--blue);text-decoration:none;font-size:.85rem;font-weight:600">📊 DexScreener</a>` : ''}
-        </div>
-      </div>
-    </div>`;
-    });
-    html += '</div>';
-  }
 
   // BOUGHT section (top priority)
+
   if (boughtCoins.length) {
     html += `<h3 style="color:var(--green);margin:12px 0 8px;font-size:1.1rem">💰 Gekauft (Phantom)</h3>`;
     html += renderCoinGroup(boughtCoins);
