@@ -1397,6 +1397,18 @@ async function loadPumpfun() {
 
   $('#pumpfunList').innerHTML = html;
 
+  // Fetch individual prices for bought coins (batch may miss some)
+  for (const c of boughtCoins) {
+    if (!c.price && c.token_address) {
+      try {
+        const dr = await fetch('https://api.dexscreener.com/latest/dex/tokens/' + c.token_address);
+        const dd = await dr.json();
+        const p = (dd.pairs||[])[0];
+        if (p) { c.price = parseFloat(p.priceUsd||0); c.change_24h = p.priceChange?.h24||0; c.market_cap = p.marketCap||0; c.volume_24h = p.volume?.h24||0; c.change_since_entry = c.entry_price > 0 ? ((c.price - c.entry_price) / c.entry_price * 100) : 0; }
+      } catch(e) {}
+    }
+  }
+
   // Inject bought coins card at the TOP (after innerHTML is set)
   if (boughtCoins.length) {
     let boughtHtml = `<h3 style="color:var(--green);margin:0 0 8px;font-size:1.1rem">💰 Gekauft (Phantom)</h3>`;
