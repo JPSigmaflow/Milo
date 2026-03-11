@@ -1097,12 +1097,36 @@ async function loadMEXCPredictions() {
     const data = await r.json();
     const preds = data.predictions || [];
     if (!preds.length) return;
+
+    // Fetch live data for each coin
+    const addresses = preds.map(p => p.contract).filter(Boolean);
+    const liveMap = {};
+    try {
+      for (let i = 0; i < addresses.length; i += 30) {
+        const batch = addresses.slice(i, i + 30);
+        const dr = await fetch('https://api.dexscreener.com/latest/dex/tokens/' + batch.join(','));
+        const dd = await dr.json();
+        (dd.pairs || []).forEach(p => {
+          const addr = p.baseToken?.address;
+          if (addr && !liveMap[addr]) liveMap[addr] = {
+            price: parseFloat(p.priceUsd||0),
+            mc: parseFloat(p.marketCap||0),
+            vol24h: parseFloat(p.volume?.h24||0),
+            liq: parseFloat(p.liquidity?.usd||0),
+            change24h: parseFloat(p.priceChange?.h24||0),
+            buys24h: parseInt(p.txns?.h24?.buys||0),
+            sells24h: parseInt(p.txns?.h24?.sells||0),
+            txns24h: parseInt(p.txns?.h24?.buys||0) + parseInt(p.txns?.h24?.sells||0),
+            pairUrl: p.url || '',
+            fdv: parseFloat(p.fdv||0),
+            priceChange1h: parseFloat(p.priceChange?.h1||0),
+            priceChange6h: parseFloat(p.priceChange?.h6||0)
+          };
+        });
+      }
+    } catch(e) { console.warn('DexScreener fetch for MEXC predictions:', e); }
     
     let h = `<div style="margin:20px 0">
-      <div style="display:flex;align-items:center;gap:8px;margin:0 0 16px">
-        <span style="color:#a855f7;font-weight:700;font-size:1.1rem">Pump</span>
-        <span style="font-size:1.2rem">🪙</span>
-      </div>
       <h3 style="margin:0 0 16px;font-size:1.2rem;font-weight:700">📊 MEXC LISTING PREDICTION STATUS</h3>`;
     
     preds.forEach((p, i) => {
@@ -1110,40 +1134,76 @@ async function loadMEXCPredictions() {
       const barColor = pct >= 70 ? '#00e676' : pct >= 40 ? '#ffa726' : '#ef5350';
       const statusText = pct >= 70 ? '🔥 HIGH' : pct >= 40 ? '⚡ MEDIUM' : '💤 LOW';
       const statusColor = pct >= 70 ? 'var(--green)' : pct >= 40 ? 'var(--orange)' : 'var(--dim)';
-      
-      // Criteria dots
+      const uid = 'mexc-pred-' + i;
+      const live = liveMap[p.contract] || {};
       const cr = p.criteria;
-      const critHtml = Object.entries(cr).map(([k,v]) => {
-        const dot = v.pass ? '🟢' : '🔴';
-        return `<span style="font-size:.7rem;white-space:nowrap" title="${v.label}: ${v.value}">${dot} ${v.label}</span>`;
-      }).join(' &nbsp; ');
       
-      h += `<div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px;margin:0 0 10px;${p.is_bought?'border-left:3px solid var(--green)':''}">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin:0 0 8px">
+      h += `<div id="${uid}" style="background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:0 0 8px;${p.is_bought?'border-left:3px solid var(--green)':''}">
+        <div onclick="document.getElementById('${uid}').classList.toggle('open')" style="display:grid;grid-template-columns:1.8fr 1fr 1fr;padding:14px 16px;cursor:pointer;align-items:center;gap:8px">
           <div>
-            <span style="font-weight:700;font-size:1rem">${p.symbol}</span>
-            <span style="color:var(--dim);font-size:.75rem;margin-left:6px">${p.name}</span>
-            ${p.is_bought ? '<span style="background:rgba(0,230,118,.15);color:var(--green);font-size:.6rem;padding:2px 6px;border-radius:4px;margin-left:6px;font-weight:600">BOUGHT</span>' : ''}
+            <div style="font-weight:700;font-size:1.05rem">${p.symbol}</div>
+            <div style="font-size:.7rem;color:var(--dim)">${p.name}</div>
           </div>
-          <span style="color:${statusColor};font-weight:700;font-size:.85rem">${statusText} ${p.score}/${p.maxScore}</span>
+          <div style="text-align:center">
+            <div style="background:rgba(255,255,255,.06);border-radius:6px;height:6px;overflow:hidden">
+              <div style="height:100%;width:${pct}%;background:${barColor};border-radius:6px"></div>
+            </div>
+            <div style="font-size:.7rem;color:var(--dim);margin-top:2px">${p.score}/${p.maxScore}</div>
+          </div>
+          <div style="text-align:right">
+            <span style="color:${statusColor};font-weight:700;font-size:.85rem">${statusText}</span>
+          </div>
         </div>
-        <div style="background:rgba(255,255,255,.06);border-radius:6px;height:8px;overflow:hidden;margin:0 0 10px">
-          <div style="height:100%;width:${pct}%;background:${barColor};border-radius:6px;transition:width .5s"></div>
-        </div>
-        <div style="display:flex;flex-wrap:wrap;gap:6px 12px;margin:0 0 8px">${critHtml}</div>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px;font-size:.75rem;color:var(--dim)">
-          <div>MC: <span style="color:var(--text)">$${p.mc>=1e6?(p.mc/1e6).toFixed(2)+'M':(p.mc/1e3).toFixed(0)+'K'}</span></div>
-          <div>Vol: <span style="color:var(--text)">$${p.vol24h>=1e6?(p.vol24h/1e6).toFixed(2)+'M':(p.vol24h/1e3).toFixed(0)+'K'}</span></div>
-          <div>Txns: <span style="color:var(--text)">${p.txns24h.toLocaleString()}</span></div>
-          <div>Age: <span style="color:var(--text)">${p.age.toFixed(1)}d</span></div>
+        <div class="mexc-pred-details" style="max-height:0;overflow:hidden;transition:max-height .35s ease;border-top:1px solid var(--border)">
+          <div style="padding:14px 16px">
+
+            <div style="margin:0 0 14px;padding:10px 12px;background:rgba(255,255,255,.03);border-radius:8px;border:1px solid rgba(255,255,255,.06)">
+              <div style="font-weight:700;font-size:.8rem;margin:0 0 8px;color:var(--blue)">📋 Projekt</div>
+              <div style="font-size:.85rem;font-weight:600">${p.name}</div>
+              <div style="font-size:.75rem;color:var(--dim);margin-top:4px">Chain: Solana · Pump.fun Meme Coin</div>
+            </div>
+
+            <div style="margin:0 0 14px;padding:10px 12px;background:rgba(255,255,255,.03);border-radius:8px;border:1px solid rgba(255,255,255,.06)">
+              <div style="font-weight:700;font-size:.8rem;margin:0 0 8px;color:var(--green)">💹 Marktdaten (Live)</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 16px;font-size:.85rem">
+                <div><span style="color:var(--dim)">Kurs</span><br><span style="font-weight:600">${live.price ? fmtPrice(live.price) : '-'}</span></div>
+                <div><span style="color:var(--dim)">Market Cap</span><br><span style="font-weight:600">$${live.mc>=1e6?(live.mc/1e6).toFixed(2)+'M':(live.mc/1e3).toFixed(0)+'K'}</span></div>
+                <div><span style="color:var(--dim)">Volume 24h</span><br><span style="font-weight:600">$${live.vol24h>=1e6?(live.vol24h/1e6).toFixed(2)+'M':(live.vol24h/1e3).toFixed(0)+'K'}</span></div>
+                <div><span style="color:var(--dim)">Liquidität</span><br><span style="font-weight:600">$${live.liq>=1e6?(live.liq/1e6).toFixed(2)+'M':(live.liq/1e3).toFixed(0)+'K'}</span></div>
+                <div><span style="color:var(--dim)">24h</span><br><span class="${(live.change24h||0)>=0?'green':'red'}" style="font-weight:600">${(live.change24h||0)>=0?'+':''}${(live.change24h||0).toFixed(2)}%</span></div>
+                <div><span style="color:var(--dim)">Buys / Sells</span><br><span style="font-weight:600">${(live.buys24h||0).toLocaleString()} / ${(live.sells24h||0).toLocaleString()}</span></div>
+              </div>
+            </div>
+
+            <div style="margin:0 0 14px;padding:10px 12px;background:rgba(255,255,255,.03);border-radius:8px;border:1px solid rgba(255,255,255,.06)">
+              <div style="font-weight:700;font-size:.8rem;margin:0 0 10px;color:#a855f7">🎯 MEXC Kriterien (${p.score}/${p.maxScore})</div>
+              ${Object.entries(cr).map(([k,v]) => {
+                const icon = v.pass ? '🟢' : '🔴';
+                return `<div style="display:flex;justify-content:space-between;align-items:center;padding:4px 0;font-size:.8rem;border-bottom:1px solid rgba(255,255,255,.04)">
+                  <span>${icon} ${v.label}</span>
+                  <span style="color:${v.pass?'var(--green)':'var(--red)'};font-weight:600">${v.value}</span>
+                </div>`;
+              }).join('')}
+            </div>
+
+            <div style="font-family:monospace;font-size:.6rem;color:var(--dim);word-break:break-all;background:rgba(255,255,255,.03);padding:6px 8px;border-radius:6px;margin:0 0 10px">${p.contract}</div>
+            <a href="${p.dexscreener || (live.pairUrl ? live.pairUrl : 'https://dexscreener.com/solana/'+p.contract)}" target="_blank" style="display:inline-flex;align-items:center;gap:4px;padding:8px 16px;background:rgba(0,230,118,.1);border:1px solid var(--green);border-radius:8px;color:var(--green);text-decoration:none;font-size:.85rem;font-weight:600">📊 DexScreener</a>
+          </div>
         </div>
       </div>`;
     });
     
-    h += `<div style="font-size:.7rem;color:var(--dim);margin-top:8px;text-align:right">Stand: ${new Date(data.generated_at).toLocaleString('de-DE')} | Basierend auf 我的刀盾 MEXC Pattern</div></div>`;
+    h += `<div style="font-size:.65rem;color:var(--dim);margin-top:8px;text-align:right">Stand: ${new Date(data.generated_at).toLocaleString('de-DE')} · Basierend auf 我的刀盾 MEXC Pattern</div></div>`;
     
     const el = document.getElementById('pumpfunList');
     if (el) el.innerHTML += h;
+    // CSS for open state
+    if (!document.getElementById('mexc-pred-css')) {
+      const s = document.createElement('style');
+      s.id = 'mexc-pred-css';
+      s.textContent = '.open .mexc-pred-details{max-height:2000px!important}';
+      document.head.appendChild(s);
+    }
   } catch(e) { console.warn('MEXC predictions error:', e); }
 }
 window.switchTab = function(tab) {
