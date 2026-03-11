@@ -1139,19 +1139,23 @@ async function loadMEXCPredictions() {
       const cr = p.criteria;
       
       h += `<div id="${uid}" style="background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:0 0 8px;${p.is_bought?'border-left:3px solid var(--green)':''}">
-        <div onclick="document.getElementById('${uid}').classList.toggle('open')" style="display:grid;grid-template-columns:1.8fr 1fr 1fr;padding:14px 16px;cursor:pointer;align-items:center;gap:8px">
+        <div onclick="document.getElementById('${uid}').classList.toggle('open')" style="display:grid;grid-template-columns:1.6fr 0.8fr 0.8fr 1fr;padding:14px 16px;cursor:pointer;align-items:center;gap:6px">
           <div>
             <div style="font-weight:700;font-size:1.05rem">${p.symbol}</div>
             <div style="font-size:.7rem;color:var(--dim)">${p.name}</div>
           </div>
-          <div style="text-align:center">
-            <div style="background:rgba(255,255,255,.06);border-radius:6px;height:6px;overflow:hidden">
-              <div style="height:100%;width:${pct}%;background:${barColor};border-radius:6px"></div>
-            </div>
-            <div style="font-size:.7rem;color:var(--dim);margin-top:2px">${p.score}/${p.maxScore}</div>
+          <div style="text-align:right">
+            <div style="font-size:.6rem;color:var(--dim)">Entry</div>
+            <div style="font-size:.8rem">${fmtPrice(p.entry_price||0)}</div>
           </div>
           <div style="text-align:right">
-            <span style="color:${statusColor};font-weight:700;font-size:.85rem">${statusText}</span>
+            ${(() => { const ep = p.entry_price||0; const cp = live.price||0; const chg = ep > 0 ? ((cp-ep)/ep*100) : 0; return '<div style="font-size:.6rem;color:var(--dim)">Seit Kauf</div><div style="font-size:.95rem;font-weight:700" class="'+(chg>=0?'green':'red')+'">'+(chg>=0?'+':'')+chg.toFixed(1)+'%</div>'; })()}
+          </div>
+          <div style="text-align:right">
+            <div style="background:rgba(255,255,255,.06);border-radius:6px;height:5px;overflow:hidden;margin:0 0 3px">
+              <div style="height:100%;width:${pct}%;background:${barColor};border-radius:6px"></div>
+            </div>
+            <span style="color:${statusColor};font-weight:600;font-size:.7rem">${statusText} ${p.score}/${p.maxScore}</span>
           </div>
         </div>
         <div class="mexc-pred-details" style="max-height:0;overflow:hidden;transition:max-height .35s ease;border-top:1px solid var(--border)">
