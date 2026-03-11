@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-10T23:49:36Z",
+  "exported_at": "2026-03-11T14:34:00Z",
   "criteria_version": "2.0.0",
   "total_tracked": 8,
   "min_score": 7,
@@ -22,7 +22,7 @@
       "outcome_14d": null,
       "outcome_final": null,
       "category": "meme",
-      "notes": "BOUGHT | 1.25139 SOL → 191123.07 TRIPLET | 2026-03-01 09:07 | Phantom @xlgeneration",
+      "notes": "BOUGHT | 1.25139 SOL \u2192 191123.07 TRIPLET | 2026-03-01 09:07 | Phantom @xlgeneration",
       "contract": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
       "is_bought": 1,
       "buy_amount_sol": 1.25139,
@@ -33,7 +33,7 @@
       "id": 1,
       "chain": "solana",
       "token_address": "6ngSN9zA32mShK5itfNVPsJvwADfiSDxiDbTUpwzpump",
-      "name": "咕咕嘎嘎",
+      "name": "\u5495\u5495\u560e\u560e",
       "symbol": "gugugaga",
       "added_at": "2026-03-06 04:54:10",
       "score": 9,
@@ -79,8 +79,8 @@
       "id": 7,
       "chain": "solana",
       "token_address": "8whH5tErGbDEiSBKWAHigJe3dXFa6YwdMDXESNrVpump",
-      "name": "Pokémon Pokopia",
-      "symbol": "Pokémon Pokopia",
+      "name": "Pok\u00e9mon Pokopia",
+      "symbol": "Pok\u00e9mon Pokopia",
       "added_at": "2026-03-02T17:38:20.670Z",
       "score": 10,
       "status": "active",
@@ -171,8 +171,8 @@
       "id": 8,
       "chain": "solana",
       "token_address": "7NoFtDpmQvE9JsRv7o6zgYZJBEcixWumJaZsDoyrpump",
-      "name": "星星",
-      "symbol": "星星",
+      "name": "\u661f\u661f",
+      "symbol": "\u661f\u661f",
       "added_at": "2026-02-24T07:23:20.512Z",
       "score": 8,
       "status": "active",
@@ -190,5 +190,7 @@
       "v2_score": 0,
       "is_bought": 0
     }
-  ]
+  ],
+  "sol_free": 1.28316,
+  "sol_usd": 111.19
 }
