@@ -1,234 +1,255 @@
 {
-  "exported_at": "2026-03-05T22:00:59.587453-05:00",
+  "exported_at": "2026-03-11T04:50:54.285914-04:00",
   "bots": [
     {
-      "name": "MiloCoach",
-      "emoji": "🧘",
-      "state": "degraded",
-      "score": 68.6,
-      "infra_ok": 2,
-      "infra_total": 2,
-      "kpis": [
-        {
-          "name": "Yoga Reminder (7:00)",
-          "status": "fail",
-          "score": 7.7,
-          "detail": "⚠ 48.0h ago (max 26h)",
-          "age_h": 48.0,
-          "max_h": 26,
-          "weight": 33
-        },
-        {
-          "name": "Daily Reflection (9:00)",
-          "status": "ok",
-          "score": 97.7,
-          "detail": "2.0h ago (max 26h)",
-          "age_h": 2.0,
-          "max_h": 26,
-          "weight": 34
-        },
-        {
-          "name": "Abend-Affirmation (21:30)",
-          "status": "ok",
-          "score": 99.4,
-          "detail": "0.5h ago (max 26h)",
-          "age_h": 0.5,
-          "max_h": 26,
-          "weight": 33
-        }
-      ]
-    },
-    {
-      "name": "Pomi",
-      "emoji": "🍟",
-      "state": "degraded",
-      "score": 71.5,
-      "infra_ok": 5,
-      "infra_total": 5,
-      "kpis": [
-        {
-          "name": "Instagram Post < 48h",
-          "status": "fail",
-          "score": 20.0,
-          "detail": "⚠ Last post: 2026-03-02 (94h ago, max 48h)",
-          "age_h": 94.0,
-          "max_h": 48,
-          "weight": 30
-        },
-        {
-          "name": "Engagement-Paket heute",
-          "status": "ok",
-          "score": 97.7,
-          "detail": "2.0h ago (max 26h)",
-          "age_h": 2.0,
-          "max_h": 26,
-          "weight": 25
-        },
-        {
-          "name": "Kommentare beantwortet",
-          "status": "ok",
-          "score": 97.7,
-          "detail": "2.0h ago (max 26h)",
-          "age_h": 2.0,
-          "max_h": 26,
-          "weight": 20
-        },
-        {
-          "name": "Daily Report gesendet",
-          "status": "ok",
-          "score": 86.2,
-          "detail": "12.0h ago (max 26h)",
-          "age_h": 12.0,
-          "max_h": 26,
-          "weight": 25
-        }
-      ]
-    },
-    {
-      "name": "Pump",
-      "emoji": "🎰",
-      "state": "down",
-      "score": 96.5,
-      "infra_ok": 5,
-      "infra_total": 6,
-      "kpis": [
-        {
-          "name": "AI Evaluation läuft (< 1h)",
-          "status": "ok",
-          "score": 95.0,
-          "detail": "0.2h ago (max 1h)",
-          "age_h": 0.2,
-          "max_h": 1,
-          "weight": 35
-        },
-        {
-          "name": "Price Tracker aktuell",
-          "status": "ok",
-          "score": 94.5,
-          "detail": "0.7h ago (max 4h)",
-          "age_h": 0.7,
-          "max_h": 4,
-          "weight": 30
-        },
-        {
-          "name": "Dashboard Export aktuell",
-          "status": "ok",
-          "score": 99.6,
-          "detail": "0.1h ago",
-          "age_h": 0.1,
-          "max_h": null,
-          "weight": 35
-        }
-      ]
-    },
-    {
-      "name": "Guardian",
-      "emoji": "📊",
-      "state": "down",
-      "score": 58.4,
-      "infra_ok": 4,
-      "infra_total": 5,
-      "kpis": [
-        {
-          "name": "Portfolio-Preise aktuell (< 4h)",
-          "status": "fail",
-          "score": 0.0,
-          "detail": "Cron 'portfolio-monitor' not found",
-          "age_h": null,
-          "max_h": null,
-          "weight": 40
-        },
-        {
-          "name": "DB↔MEXC Konsistenz (< 24h)",
-          "status": "ok",
-          "score": 95.0,
-          "detail": "4.0h ago (max 24h)",
-          "age_h": 4.0,
-          "max_h": 24,
-          "weight": 30
-        },
-        {
-          "name": "Dashboard nach Update exportiert",
-          "status": "ok",
-          "score": 99.6,
-          "detail": "0.1h ago",
-          "age_h": 0.1,
-          "max_h": null,
-          "weight": 30
-        }
-      ]
-    },
-    {
-      "name": "Analyst",
-      "emoji": "📡",
-      "state": "down",
-      "score": 94.5,
-      "infra_ok": 4,
-      "infra_total": 6,
-      "kpis": [
-        {
-          "name": "Scanner-Analyse (< 6h)",
-          "status": "ok",
-          "score": 98.3,
-          "detail": "0.3h ago (max 6h)",
-          "age_h": 0.3,
-          "max_h": 6,
-          "weight": 30
-        },
-        {
-          "name": "Perplexity Insights heute",
-          "status": "ok",
-          "score": 95.0,
-          "detail": "2.0h ago (max 12h)",
-          "age_h": 2.0,
-          "max_h": 12,
-          "weight": 25
-        },
-        {
-          "name": "KOL Scanner Audit heute",
-          "status": "ok",
-          "score": 99.9,
-          "detail": "0.0h ago (max 6h)",
-          "age_h": 0.0,
-          "max_h": 6,
-          "weight": 20
-        },
-        {
-          "name": "Overall Score Bewertung",
-          "status": "ok",
-          "score": 85.0,
-          "detail": "13.0h ago (max 26h)",
-          "age_h": 13.0,
-          "max_h": 26,
-          "weight": 25
-        }
-      ]
-    },
-    {
-      "name": "🛡️ Sentinel",
-      "emoji": "🤖",
+      "name": "🧘 MiloCoach",
       "state": "ok",
-      "score": 96.9,
-      "infra_ok": 3,
-      "infra_total": 3,
-      "kpis": [
+      "score": 97,
+      "infra": "10/10",
+      "checks": [
         {
-          "name": "VDA Audit (wöchentlich)",
-          "status": "ok",
-          "score": 95.7,
-          "detail": "24.0h ago (max 168h)",
-          "age_h": 24.0,
-          "max_h": 168,
-          "weight": 50
+          "label": "Juri Yoga Reminder 7AM",
+          "ok": true,
+          "age_h": 21.8,
+          "threshold_h": 26
         },
         {
-          "name": "Team Gesamt-Audit (14d)",
-          "status": "ok",
-          "score": 98.0,
-          "detail": "24.0h ago (max 360h)",
-          "age_h": 24.0,
-          "max_h": 360,
-          "weight": 50
+          "label": "Lera Daily Ideas",
+          "ok": true,
+          "age_h": 20.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Juri Water Reminder 10AM",
+          "ok": true,
+          "age_h": 18.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Lera Midday Check-in",
+          "ok": true,
+          "age_h": 15.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Juri Water Reminder 2PM",
+          "ok": true,
+          "age_h": 14.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Lera Afternoon Status",
+          "ok": true,
+          "age_h": 12.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Juri Water Reminder 6PM",
+          "ok": true,
+          "age_h": 10.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Lera Evening Check-in",
+          "ok": true,
+          "age_h": 8.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Juri Abend-Affirmation 21:30",
+          "ok": true,
+          "age_h": 7.3,
+          "threshold_h": 26
+        },
+        {
+          "label": "Lera Monday Kickoff",
+          "ok": true,
+          "age_h": 44.8,
+          "threshold_h": 26
+        }
+      ]
+    },
+    {
+      "name": "🍟 Pomi",
+      "state": "ok",
+      "score": 97,
+      "infra": "5/5",
+      "checks": [
+        {
+          "label": "PomesTeam Comment Monitor & Reply",
+          "ok": true,
+          "age_h": 1.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "PomesTeam Daily Execution Report",
+          "ok": true,
+          "age_h": 17.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "PomesTeam Engagement-Paket für Chris",
+          "ok": true,
+          "age_h": 7.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "PomesTeam Self-Comment Magnet",
+          "ok": true,
+          "age_h": 9.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "PomesTeam Hashtag-Performance-Analyse",
+          "ok": true,
+          "age_h": 66.8,
+          "threshold_h": 26
+        }
+      ]
+    },
+    {
+      "name": "🎰 Pump",
+      "state": "ok",
+      "score": 97,
+      "infra": "3/4",
+      "checks": [
+        {
+          "label": "PumpWatch — AI Evaluator (30 Min)",
+          "ok": true,
+          "age_h": 0.4,
+          "threshold_h": 26
+        },
+        {
+          "label": "Viral Scanner (alle 6h)",
+          "ok": true,
+          "age_h": 2.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Pump.Fun V2 Daily Report",
+          "ok": false,
+          "age_h": null,
+          "threshold_h": 26
+        },
+        {
+          "label": "PumpWatch — MEXC Listing Check (daily)",
+          "ok": true,
+          "age_h": 16.8,
+          "threshold_h": 26
+        }
+      ]
+    },
+    {
+      "name": "📊 Guardian",
+      "state": "degraded",
+      "score": 72,
+      "infra": "3/4",
+      "checks": [
+        {
+          "label": "WEundMILO Session Auto-Reset",
+          "ok": true,
+          "age_h": 0.1,
+          "threshold_h": 26
+        },
+        {
+          "label": "dashboard-auto-push",
+          "ok": true,
+          "age_h": 0.3,
+          "threshold_h": 26
+        },
+        {
+          "label": "Consistency Check DB↔MEXC (K3)",
+          "ok": false,
+          "age_h": 4.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Daily DB Backup (K2)",
+          "ok": true,
+          "age_h": 1.8,
+          "threshold_h": 26
+        }
+      ]
+    },
+    {
+      "name": "📡 Analyst",
+      "state": "degraded",
+      "score": 72,
+      "infra": "7/9",
+      "checks": [
+        {
+          "label": "Alpha Watch Monitor",
+          "ok": true,
+          "age_h": 0.1,
+          "threshold_h": 26
+        },
+        {
+          "label": "ANALYST - AI Scanner Analyse",
+          "ok": true,
+          "age_h": 0.2,
+          "threshold_h": 26
+        },
+        {
+          "label": "Deep Research — AI Revolution (5 Funde)",
+          "ok": true,
+          "age_h": 20.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Deep Research — Robotik & Humanoid (5 Fu",
+          "ok": false,
+          "age_h": 20.3,
+          "threshold_h": 26
+        },
+        {
+          "label": "Stock Price Check & Alerts",
+          "ok": true,
+          "age_h": 12.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Daily Perplexity Insights",
+          "ok": false,
+          "age_h": 19.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Overall Score Bewertung",
+          "ok": true,
+          "age_h": 19.3,
+          "threshold_h": 26
+        },
+        {
+          "label": "Tung Tung News Scan",
+          "ok": true,
+          "age_h": 8.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "KOL Scanner Audit + Expansion (Daily)",
+          "ok": true,
+          "age_h": 6.1,
+          "threshold_h": 26
+        }
+      ]
+    },
+    {
+      "name": "🤖 Sentinel",
+      "state": "down",
+      "score": 35,
+      "infra": "1/2",
+      "checks": [
+        {
+          "label": "SENTINEL VDA 6.3 Audit (bi-weekly)",
+          "ok": true,
+          "age_h": 118.8,
+          "threshold_h": 26
+        },
+        {
+          "label": "Sentinel — Team-Gesamtstatus (14-Tage)",
+          "ok": false,
+          "age_h": 150.9,
+          "threshold_h": 26
         }
       ]
     }
