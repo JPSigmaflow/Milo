@@ -51,7 +51,11 @@
           "value": "❌"
         }
       },
-      "is_bought": 1
+      "is_bought": 1,
+      "description": "Meme Coin basierend auf dem viralen \"Tung Tung Tung Sahur\" Sound-Meme aus TikTok/Instagram Reels. Ramadan-bezogener Weck-Sound der weltweit viral ging.",
+      "website": "https://triplet.site/",
+      "twitter": "https://x.com/i/communities/2026209182526149110",
+      "image": "https://cdn.dexscreener.com/cms/images/BjbdHhhXQWwUJ8cu?width=800&height=800&quality=95&format=auto"
     },
     {
       "name": "咕咕嘎嘎",
@@ -103,7 +107,11 @@
           "value": "✅"
         }
       },
-      "is_bought": 0
+      "is_bought": 0,
+      "description": "咕咕嘎嘎 — Chinesisches Meme-Projekt mit starker Präsenz auf Douyin (China TikTok) und BiliBili. Typisches Asia-Viral-Narrativ mit Baby-Sprache Thema.",
+      "website": "https://www.douyin.com/jingxuan/search/%E5%92%95%E5%92%95%E5%98%8E%E5%98%8E",
+      "twitter": "https://x.com/i/communities/2028927971638001700",
+      "image": "https://cdn.dexscreener.com/cms/images/JM34BtZdUfmf8o18?width=800&height=800&quality=95&format=auto"
     },
     {
       "name": "星星",
@@ -155,7 +163,11 @@
           "value": "✅"
         }
       },
-      "is_bought": 0
+      "is_bought": 0,
+      "description": "星星 (Xingxing) — Affen-Charakter Meme aus TikTok. \"Star Star the Monkey\" mit eigener TikTok-Community und X-Gruppe.",
+      "website": "https://www.tiktok.com/@xingxing.themonkey",
+      "twitter": "https://x.com/i/communities/2025469696087355835",
+      "image": "https://cdn.dexscreener.com/cms/images/P31JqbOpYb9Qvblt?width=800&height=800&quality=95&format=auto"
     },
     {
       "name": "ruck",
@@ -207,7 +219,11 @@
           "value": "❌"
         }
       },
-      "is_bought": 0
+      "is_bought": 0,
+      "description": "Ruck — Community-getriebener Meme Coin. Verbunden mit der Moltbook-Plattform und einer wachsenden X-Community.",
+      "website": "https://www.moltbook.com/post/36ea8518-9a8c-4def-b42e-e1aecd72d55c",
+      "twitter": "https://x.com/i/communities/2030430272987255225",
+      "image": "https://cdn.dexscreener.com/cms/images/6W5_rtEmCGJLELvL?width=800&height=800&quality=95&format=auto"
     },
     {
       "name": "Pokémon Pokopia",
@@ -259,7 +275,11 @@
           "value": "❌"
         }
       },
-      "is_bought": 0
+      "is_bought": 0,
+      "description": "Meme Coin inspiriert vom neuen Pokémon Pokopia Spiel, das laut Forbes den besten Metacritic-Score 2026 erreichte. Gaming-Hype-Narrativ.",
+      "website": "https://www.forbes.com/sites/paultassi/2026/03/02/pokemon-pokopia-reviews-give-it-the-best-metacritic-score-of-the-year/",
+      "twitter": "https://x.com/i/communities/2028493706605604910",
+      "image": "https://cdn.dexscreener.com/cms/images/AaBfCzyjuyDTOVie?width=800&height=800&quality=95&format=auto"
     },
     {
       "name": "Aced Brett",
@@ -311,7 +331,11 @@
           "value": "❌"
         }
       },
-      "is_bought": 0
+      "is_bought": 0,
+      "description": "Spin-off vom bekannten Brett (Based) Meme auf Solana. Brett's Business-Charakter mit eigener Website und Telegram-Community.",
+      "website": "https://brettsbiz.com/",
+      "twitter": "https://x.com/bretts_biz",
+      "image": "https://cdn.dexscreener.com/cms/images/CmJlLksIZmFhmnxX?width=800&height=800&quality=95&format=auto"
     },
     {
       "name": "#SendBarron",
@@ -363,7 +387,11 @@
           "value": "❌"
         }
       },
-      "is_bought": 0
+      "is_bought": 0,
+      "description": "#SendBarron — Politischer Meme Coin rund um Barron Trump. \"Draft Barron Trump\" Bewegung mit TikTok-Viralität und eigener Website.",
+      "website": "https://www.draftbarrontrump.com/",
+      "twitter": "https://twitter.com/i/communities/2029305918232641668",
+      "image": "https://cdn.dexscreener.com/cms/images/IcLHfFp7Y1UesQ3L?width=800&height=800&quality=95&format=auto"
     },
     {
       "name": "Chinese Brainrot",
@@ -415,7 +443,11 @@
           "value": "❌"
         }
       },
-      "is_bought": 0
+      "is_bought": 0,
+      "description": "Chinese Brainrot — Meme Coin der die chinesische \"Brainrot\"-Meme-Kultur auf Solana bringt. Community auf X und Telegram, eigene Website chineserot.fun.",
+      "website": "http://www.chineserot.fun/",
+      "twitter": "https://x.com/chineserotcto",
+      "image": "https://cdn.dexscreener.com/cms/images/-lv7iv-J3UrEZd4k?width=800&height=800&quality=95&format=auto"
     }
   ]
 }
