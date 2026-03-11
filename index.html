@@ -1529,16 +1529,8 @@ async function loadPumpfun() {
     return out;
   } // end renderCoinGroup
 
-  // Render bought + watchlist sections
-  let html = '';
-
-  // Watchlist section
-  if (watchlistCoins.length) {
-    html += `<h3 style="color:var(--blue);margin:12px 0 8px;font-size:1.1rem">👀 Watchlist</h3>`;
-    html += renderCoinGroup(watchlistCoins);
-  }
-
-  $('#pumpfunList').innerHTML = html;
+  // V1 Watchlist removed — only Portfolio + MEXC Prediction remain
+  $('#pumpfunList').innerHTML = '';
 
   // Bought coins injection is handled by injectBoughtCoins() called after loadPumpfun()
 
