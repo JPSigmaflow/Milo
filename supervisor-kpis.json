@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-03-11T13:16:55Z",
+  "exported_at": "2026-03-12T01:01:00Z",
   "bots": [
     {
       "name": "MiloCoach",
@@ -7,82 +7,82 @@
       "score": 100,
       "infra": "10/10",
       "checks": [
-        { "label": "Juri Yoga 7AM", "ok": true, "age_h": 2.3, "threshold_h": 24 },
-        { "label": "Juri Water 10AM", "ok": true, "age_h": 23.3, "threshold_h": 24 },
-        { "label": "Juri Water 2PM", "ok": true, "age_h": 19.3, "threshold_h": 24 },
-        { "label": "Juri Water 6PM", "ok": true, "age_h": 15.3, "threshold_h": 24 },
-        { "label": "Juri Abend 21:30", "ok": true, "age_h": 11.8, "threshold_h": 24 },
-        { "label": "Lera Daily Ideas", "ok": true, "age_h": 1.3, "threshold_h": 24 },
-        { "label": "Lera Midday", "ok": true, "age_h": 20.3, "threshold_h": 24 },
-        { "label": "Lera Afternoon", "ok": true, "age_h": 17.3, "threshold_h": 24 },
-        { "label": "Lera Evening", "ok": true, "age_h": 13.3, "threshold_h": 24 },
-        { "label": "Lera Monday Kickoff", "ok": true, "age_h": 49.3, "threshold_h": 168 }
+        {"label": "Juri Yoga 7AM", "ok": true, "age_h": 14.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Juri Water 10AM", "ok": true, "age_h": 11.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Juri Water 2PM", "ok": true, "age_h": 7.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Juri Water 6PM", "ok": true, "age_h": 3.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Juri Abend-Affirmation", "ok": true, "age_h": 23.5, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Lera Daily Ideas", "ok": true, "age_h": 13.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Lera Midday Check-in", "ok": true, "age_h": 8.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Lera Afternoon Status", "ok": true, "age_h": 5.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Lera Evening Check-in", "ok": true, "age_h": 1.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Lera Monday Kickoff", "ok": true, "age_h": 61.0, "threshold_h": 170, "consecutive_errors": 0}
       ]
     },
     {
       "name": "Pomi",
-      "state": "ok",
-      "score": 100,
-      "infra": "5/5",
+      "state": "degraded",
+      "score": 69,
+      "infra": "4/5",
       "checks": [
-        { "label": "Comment Monitor", "ok": true, "age_h": 6.3, "threshold_h": 12 },
-        { "label": "Daily Report", "ok": true, "age_h": 22.3, "threshold_h": 24 },
-        { "label": "Engagement-Paket", "ok": true, "age_h": 12.3, "threshold_h": 24 },
-        { "label": "Self-Comment Magnet", "ok": true, "age_h": 14.2, "threshold_h": 48 },
-        { "label": "Hashtag-Analyse", "ok": true, "age_h": 71.3, "threshold_h": 168 }
+        {"label": "Comment Monitor & Reply", "ok": true, "age_h": 12.0, "threshold_h": 10, "consecutive_errors": 0},
+        {"label": "Engagement-Paket", "ok": true, "age_h": 24.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Self-Comment Magnet", "ok": true, "age_h": 25.9, "threshold_h": 50, "consecutive_errors": 0},
+        {"label": "Execution Report", "ok": false, "age_h": 10.0, "threshold_h": 25, "consecutive_errors": 1},
+        {"label": "Hashtag-Analyse", "ok": true, "age_h": 83.0, "threshold_h": 170, "consecutive_errors": 0}
       ]
     },
     {
       "name": "Pump",
-      "state": "degraded",
-      "score": 72,
+      "state": "down",
+      "score": 32,
       "infra": "3/5",
       "checks": [
-        { "label": "AI Evaluator 30min", "ok": true, "age_h": 0.3, "threshold_h": 1 },
-        { "label": "V2 Daily Report", "ok": false, "age_h": null, "threshold_h": 24 },
-        { "label": "MEXC Listing Check", "ok": true, "age_h": 21.2, "threshold_h": 24 },
-        { "label": "Validation Tracker", "ok": true, "age_h": 17.2, "threshold_h": 24 },
-        { "label": "Viral Scanner 6h", "ok": false, "age_h": 1.3, "threshold_h": 6 }
+        {"label": "PumpWatch AI Evaluator", "ok": true, "age_h": 0.1, "threshold_h": 1, "consecutive_errors": 0},
+        {"label": "MEXC Listing Check", "ok": true, "age_h": 9.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "V2 Daily Report", "ok": false, "age_h": 11.8, "threshold_h": 25, "consecutive_errors": 1},
+        {"label": "Validation Tracker", "ok": true, "age_h": 5.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Viral Scanner", "ok": false, "age_h": 1.0, "threshold_h": 8, "consecutive_errors": 3}
       ]
     },
     {
       "name": "Guardian",
       "state": "degraded",
-      "score": 72,
+      "score": 65,
       "infra": "4/5",
       "checks": [
-        { "label": "Consistency Check", "ok": false, "age_h": 3.3, "threshold_h": 6 },
-        { "label": "dashboard-auto-push", "ok": true, "age_h": 0.7, "threshold_h": 1 },
-        { "label": "DB Backup", "ok": true, "age_h": 6.3, "threshold_h": 24 },
-        { "label": "WEundMILO Reset", "ok": true, "age_h": 0.3, "threshold_h": 0.5 },
-        { "label": "Crypto Portfolio Monitor", "ok": true, "age_h": 1.2, "threshold_h": 2 }
+        {"label": "Consistency Check", "ok": false, "age_h": 3.0, "threshold_h": 8, "consecutive_errors": 8},
+        {"label": "dashboard-auto-push", "ok": true, "age_h": 0.5, "threshold_h": 1, "consecutive_errors": 0},
+        {"label": "DB Backup", "ok": true, "age_h": 18.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "WEundMILO Session Reset", "ok": true, "age_h": 0.1, "threshold_h": 0.5, "consecutive_errors": 0},
+        {"label": "Portfolio Monitor", "ok": true, "age_h": 0.9, "threshold_h": 3, "consecutive_errors": 0}
       ]
     },
     {
       "name": "Analyst",
-      "state": "degraded",
-      "score": 88,
-      "infra": "8/9",
+      "state": "ok",
+      "score": 100,
+      "infra": "9/9",
       "checks": [
-        { "label": "Stock Price Check", "ok": true, "age_h": 17.3, "threshold_h": 2 },
-        { "label": "Perplexity Insights", "ok": false, "age_h": 24.2, "threshold_h": 24 },
-        { "label": "Overall Score", "ok": true, "age_h": 23.8, "threshold_h": 24 },
-        { "label": "AI Scanner 30min", "ok": true, "age_h": 0.6, "threshold_h": 1 },
-        { "label": "Alpha Watch 15min", "ok": true, "age_h": 0.5, "threshold_h": 0.5 },
-        { "label": "Tung Tung News", "ok": true, "age_h": 13.2, "threshold_h": 24 },
-        { "label": "KOL Scanner Daily", "ok": true, "age_h": 10.5, "threshold_h": 24 },
-        { "label": "Deep Research AI", "ok": true, "age_h": 1.2, "threshold_h": 24 },
-        { "label": "Deep Research Robotik", "ok": true, "age_h": 0.8, "threshold_h": 24 }
+        {"label": "Stock Price Check", "ok": true, "age_h": 5.0, "threshold_h": 2, "consecutive_errors": 0},
+        {"label": "Deep Research AI", "ok": true, "age_h": 13.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Deep Research Robotik", "ok": true, "age_h": 12.5, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Perplexity Insights", "ok": true, "age_h": 12.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "Overall Score", "ok": true, "age_h": 11.5, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "ANALYST Scanner", "ok": true, "age_h": 0.2, "threshold_h": 1, "consecutive_errors": 0},
+        {"label": "Alpha Watch Monitor", "ok": true, "age_h": 0.3, "threshold_h": 0.5, "consecutive_errors": 0},
+        {"label": "Tung Tung News", "ok": true, "age_h": 1.0, "threshold_h": 25, "consecutive_errors": 0},
+        {"label": "KOL Scanner Audit", "ok": true, "age_h": 22.2, "threshold_h": 25, "consecutive_errors": 0}
       ]
     },
     {
       "name": "Sentinel",
       "state": "down",
-      "score": 50,
+      "score": 25,
       "infra": "1/2",
       "checks": [
-        { "label": "VDA 6.3 Audit", "ok": true, "age_h": 123.3, "threshold_h": 168 },
-        { "label": "Team-Gesamtstatus 14d", "ok": false, "age_h": 155.4, "threshold_h": 336 }
+        {"label": "VDA 6.3 Audit", "ok": true, "age_h": 135.0, "threshold_h": 170, "consecutive_errors": 0},
+        {"label": "Team-Gesamtstatus", "ok": false, "age_h": 167.1, "threshold_h": 340, "consecutive_errors": 1}
       ]
     }
   ]
